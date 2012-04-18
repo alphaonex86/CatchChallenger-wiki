@@ -1,38 +1,5 @@
-= Threads =
-== Why not use all the cpu? ==
-* Use all the cpu mean have big lock on the general data. It slow down all the thread operations, use system time, have dead lock, ...
-* That's structure allow good data locality, then good usage of the cpu cache.
-* All task have one thread, that's allow task isolation, and prevent performance lost on preampt (disk access, wait db, ...)
-
-== General organisation (new) ==
-* The heavy action is async by epoll
-* Buffer and epoll to prevent blocking socket access
-* broad cast thread: all broad cast object interconnected, complexity: O(n), where n is all player, limited by ddos and cpu usage mutualised to forge onetime the packet
+= Thread for a client =
+* Heavy load thread: Thread to get file, access to mysql, load the map, return to the sender the data done by the query, all where it can be blocked lot of time
+* Thread to read and parse on the network packet
+* broad cast thread: all broad cast object interconnected, complexity: O(n), where n is all player, broadcast too the player disconnection and send it to ''map management thread''
 * map management thread: local map management object interconnected, complexity: O(n) for local player, but in normal case O(n^2) for all players see the other player, where n is local player
-* '''Similar to old structure BUT WITHOUT THREADS''', see [[Virtual_machine_on_GPU#Multi_thread_anti_pattern|Virtual machine on GPU]]
-[[File:server-threads.png]]
-
-= Visibility =
-For now it's just calculated on the local map.
-
-But after, each player will have near clients near him self. Send the move to it. this list is updated frenquently and not at each move parsed (mainly to fast the move parsing).
-
-= Start procedure =
-* send protocol
-* login
-* sync the file for the datapack
-* inventory
-* monster
-* play
-
-= Benchmark =
-== Single benchmark ==
-Is used to profile specific code. Not implemented for now into catchchallenger, but can be useful to test and develop the visibility algorithm. 
-== General benchmark ==
-Is used to profile the normal usage, with step, chat usage, and all used into the normal play.
-
-Implemented into catchchallenger. Useful to know the general memory usage, ... But have few variety of action do (only step for now).
-
-= Game server =
-== Startup procedure ==
-The game server start up first as sequential, after it switch to event mode to support the SQL async return.
