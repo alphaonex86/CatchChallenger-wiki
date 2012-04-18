@@ -1,72 +1,8 @@
-This wiki show all documents and technical informations. CatchChallenger is perfect engine/protocol, or server/client implementation if you want do old scoll game, 2D game, platform game.
+'''MediaWiki has been successfully installed.'''
 
-= Algorithm, protocol and format =
-== Format ==
-* [[Map format]] and [[Procedural generation]]
-* [[File format]]
+Consult the [//meta.wikimedia.org/wiki/Help:Contents User's Guide] for information on using the wiki software.
 
-== Protocol ==
-* [[General protocol]] ([[Protocol messages table]]) and [[Compression]]
-
-== Algorithm ==
-* [[Visibility players calculating with delay]]
-* [[Visibility algorithm]]
-* [[Others algorithms]]
-* [[Choices]] and [[Technologies used]], [[Compilation, JIT, preprocessor]]
-== Server ==
-* [[Server architecture]] and [[Databases]]
-* [[Server/Client link]]
-* [[CatchChallenger as static lib]]
-* [[Security]]
-* [[Server internal variable]] and [[Variables types]], [[Player types]]
-
-== Client ==
-* [[Animations]]
-* [[Path finding and area]] and [[Multiple layer merging]]
-* [[Client next major features]]
-
-== Datapack ==
-* [[Datapack's mirrors]]
-* [[Datapack compression]]
-* [[Generated content]]
-== Other ==
-* [[Convert version 1 to 2]]
-* [[Virtual world]]
-* [[Bot conception]]
-
-= IRL/work =
-* [[Actual performance]]
-* [[Other game usage]]
-* [[CatchChallenger vs other]]
-* [[Benchmarks]]
-* [[Tools]]
-* [[Game mode]]
-* [[Linux kernel API change]]
-* [[Platform]]
-* [[Scalability, data locality and decentralisation]]
-* [[Failure support]]
-* [[Datapack guideline]]
-* [[Virtual machine on GPU]]
-
-= Usage and installation =
-* [[Server requirements]]
-* [[Server under DDOS]]
-* [[Client requirements]]
-* [[Command]]
-* [[Server/Client with TOR]]
-* [[Server/Client with I2P]]
-* [[Gateway I2P to normal web]]
-* [[Secret Hiding Places for your server]]
-* [[Server on ROM]]
-* [[Host your projet on I2P with git.repo.i2p]]
-* [[Portable datacenter]]
-* [[Datacenter in bolivia]]
-* [[Server split]]
-* [[Types of servers]]
-
-= Gameplay =
-* [[Trade]]
-* [[Farm]]
-
-= Files =
-* [[Sources]]
+== Getting started ==
+* [//www.mediawiki.org/wiki/Manual:Configuration_settings Configuration settings list]
+* [//www.mediawiki.org/wiki/Manual:FAQ MediaWiki FAQ]
+* [https://lists.wikimedia.org/mailman/listinfo/mediawiki-announce MediaWiki release mailing list]
