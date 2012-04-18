@@ -1,0 +1,7 @@
+Map format: tmx
+
+Editor: tmx map editor (see lib tiled)
+
+Support into the server: xml with pre-calculate the collision/water zone
+
+Support into the client: lib tiled for QGraphicView or QML
