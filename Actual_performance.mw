@@ -1,4 +1,8 @@
-Actual performance on '''19 April 2012''' is with benchmark of 200 with GUI:
-* Ram used '''by player ~15KB'''
+Actual performance on '''19 April 2012''' is with benchmark of '''200''' with GUI:
+* Ram used under linux: 22MB
 * '''Cpu: 4%''' on core i5 750
-* 5.5MB user as base of work under linux.
+
+Actual performance on '''20 April 2012''' is with benchmark of '''400''' with GUI:
+* Ram used under linux: 70MB
+* '''Cpu: 20%''' on core i5 750
+* 11B/s in upload, 12KB/s in download
