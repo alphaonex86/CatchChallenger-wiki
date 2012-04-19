@@ -1,3 +1,5 @@
+= Base format =
+
 Map format: tmx
 
 Editor: tmx map editor (see lib tiled)
@@ -5,3 +7,69 @@ Editor: tmx map editor (see lib tiled)
 Support into the server: xml with pre-calculate the collision/water zone
 
 Support into the client: lib tiled for QGraphicView or QML
+
+= Map content =
+== General map content ==
+Here described the map format, into the tmx
+type: city, outside, cave, inside, arena
+dayMonster: 78,90,15-24;79,10,20-24; (each monster separated by ";", and as format: id, % of chance, level)
+nightMonster: 78,90,15-24;79,10,20-24; (each monster separated by ";", and as format: id, % of chance, level)
+waterMonster: 78,90,15-24;79,10,20-24; (each monster separated by ";", and as format: id, % of chance, level)
+wildProbability: 10
+
+The object and layer is described above.
+
+The '''0,0''' is at '''left and top''' for this protocol.
+The size should be egal as '''40,40'''
+
+== Layer ==
+* '''WalkBehind:''' do player image behind this layer
+* '''Collisions:''' the player have collision with this layer
+* '''Water:''' The player have collision with this layer, but can swim it
+* '''Walkable:''' Can walk on this layer, this the bottom layer
+* '''LedgesRight:''' border to jump, the player will jump left to right
+* '''LedgesLeft:''' border to jump, the player will jump right to left
+* '''LedgesDown:''' border to jump, the player will jump up to down
+
+== Object ==
+It's on layer Object with name: Object, Name: what you want
+
+'''[bot-text]'''
+* Type: bot-text
+* text: Xml script
+* Optional:
+* move: x,y;x,y;...;x,y
+* look_you: false (default: true)
+
+'''[sign]'''
+* Type: sign
+* text: Xml text
+
+== Teleportation ==
+It's layer Object with name "Tp", only visible on map editor:
+
+'''[Tp on push]'''
+* Type: tp on push
+* map: [map name]
+* x, y: cordon
+* orientation: top (top,bottom,left,right)
+
+'''[Tp on it]'''
+* Type: tp on it (when the player is fully on it)
+* map: [map name]
+* x, y: cordon
+* orientation: top (top,bottom,left,right)
+
+'''[Border]'''
+* Type: border
+* map: [map name]
+* Need correspond with the other border on the corresponding map
+
+'''[spawn]'''
+* Type: spawn
+
+'''[door]'''
+* Type: door
+* orientation: top (top, bottom, left, right)
+* map: [file name]
+* x & y: cordon on the new map
