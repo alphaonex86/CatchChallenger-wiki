@@ -36,3 +36,10 @@ query server -> client without reply
 * '''C200000005''' chat
 * '''C200000008''' kicked/ban and reason
 * '''C200000009''' Player number
+
+= Latency =
+* All the query with reply is identified by return code, then multiple query ca&n be send, it will never be blocking.
+* Never ask the server reply because the reply is based on the random. A random list is used, and both client and server do the calculate (minimize bandwidth, and not slow down)
+* Send the previous step do and new direction. Then the server can check all move into one direction (more fast), and the request on the network is grouped. The client when receive the other player move, put the other player at the good position, and do moving at the right direction. With this, if latency is < a ms to do a step is always invisible. And if latency < at time to do all the step into a direction, is invisible too
+* All the network traffic shouldn't be instant, then latency can be added to compress the data. Very useful because this protocol have high level of compression.
+* All heavy task is isolated into a thread to not slow down the quick task
