@@ -5,3 +5,34 @@ Firstly query type 8Bits to the first type and if needed 32Bits for the sub type
 
 = Cutting packet =
 The tpc/ip protocol split the packet into lot of small packet. Warning, you need recompose the query.
+
+= Order type =
+query client -> server with reply
+* '''01''' Protocol
+* '''0200000005''' Random seed list (step + pkmn and other)
+* '''0200000006''' Invite to the trade + push new object to the trade (with sell/buy too)
+* '''0200000008''' Give bot craft recipe and object, and define the price + taxe
+* '''020000000C''' Send datapack file list
+* '''03''' Get first data and send the login
+
+query client -> server without reply
+* '''40''' Send position + direction '''''(Fast)'''''
+* '''41''' Reply to server query
+* '''4200000003''' Chat
+* '''4200000004''' Fight attack/object used
+* '''4200000005''' Usage of object
+* '''4200000009''' Send country code (en,fr, ...)
+* '''420000000A''' Add players info to watch
+* '''420000000B''' Remove players info to watch
+
+query server -> client with reply
+* '''8000000001''' Battle request
+
+query server -> client without reply
+* '''C0''' Position + direction of other player '''''(Fast)'''''
+* '''C1''' Reply to client query
+* '''C200000002''' update of the player info
+* '''C200000003''' update file
+* '''C200000005''' chat
+* '''C200000008''' kicked/ban and reason
+* '''C200000009''' Player number
