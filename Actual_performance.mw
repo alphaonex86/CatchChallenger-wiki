@@ -1,6 +1,7 @@
 Actual performance on '''19 April 2012''' is with benchmark of '''200''' with GUI:
 * Ram used under linux: 22MB
 * '''Cpu: 4%''' on core i5 750
+* 11B/s in upload, 6KB/s in download
 
 Actual performance on '''20 April 2012''' is with benchmark of '''400''' with GUI:
 * Ram used under linux: 70MB
