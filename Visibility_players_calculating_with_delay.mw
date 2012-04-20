@@ -1,71 +1,8 @@
 = Introduction =
-This can applied to all similar 2D tile game. Is very useful for the performance because it group some calculating and it limit the displayed players.
-
-Drop global position system to drop the maximum map limit, maximum group for map width/height.
-
-This algorithm support partial map, you can keep large hole with border as map.
-
+This can applied to all similar 2D tile game. Is very useful for the performance.
 = Algorithm =
-The player list of visibility is calculated as delayed of the move, instant for the insert/remove. To not reload all the distance list, keep all the list. Ignore very far player, and no store it.
-
-The visibility distance is limited by maximum_distance_visibility and the number of player displayed.
-
-For the local player only ('''all relative to the current player'''):
-* Visible player list (player pointer + distance):
- while(visible list size < max_visible_player)
-   add to visible list group by group, but to keep lower than max_visible_player
-* maximum_distance_visibility: screen radius + number of step before calculation * 1~2.5 (most case 1, but to be exact 2 due to walking to converging, 2.5 to have security)
-* max_visible_player: 30
-* maximum_player_calculation: 50
-
-Distance calculation for the top map: (x+offset)-other_player_x and y+(top map height-other_player_y)
-
-== Distance calculation ==
-Call at frequency of (step delay * number of step before calculation), mainly 200ms * 5 = 1s.
- if(current map client > '''maximum_player_calculation''')
- {
-   send remove order
-   empty visibility list
- }
- else if(current map client) > '''max_visible_player''' || current map client + near map client) > '''maximum_player_calculation''')
-   Calculate all new distances (group by distances), on current map, temporary list keep all lower than maximum_distance_visibility
- else
-   Calculate all new distances (group by distances), on current map + near map, temporary list keep all lower than maximum_distance_visibility
- Do the new Visible player list with '''max_visible_player'''
- visibility limited = if have not displayed all the player;
- if (one entry is not into the previous list)
-   send insert order
- if (one entry is not into the new list)
-   send remove order
-
+== Move ==
 == Remove ==
- if(into visible list)
-    Then send remove to player && remove from visible player list;
 == Insert ==
- Calculate the distance
- if(distance > maximum_distance_visibility || (distance > more far group && visibility limited == true))
-   return;
- if(visible player list size() +1 > max_visible_player)
- {
-   remove the more far group and send remove order
-   visibility limited = true;
-   if(distance = more far group)
-     return;
- }
- Insert into visible player list && send insert order
-
-== Complexity ==
-* To send the move: o(n^2), where n is visibility list size, then limited to max_visible_player
-* Distance calculation: o(n^2), where n is player present on the map and then with calculation distance, then limited to maximum_player_calculation
-* Worse case: o(max_visible_player^2)+o(maximum_player_calculation^2)/number of step before calculation
-
-
-[[File:catchchallenger-visibility-complexity.png]]
-* <span style="color:blue">Blue</span>: Where number of player < max_visible_player (here: < 30 players)
-* <span style="color:red">Red</span>: Where player number < maximum_player_calculation (here: < 50 players)
-* <span style="color:orange">Yellow</span>: Stop calculate because player number > maximum_player_calculation
-
-'''''To have instant remove, you need store number of player ^ 3 into you memory, else you need remove on all the map, and it's complexity with all the player.''''' Due to multi-map problem.
-
-
-<del>To optimize, you can calculate the distance only if player number need be limited.</del> Wrong because it win few performance, and don't use max visibility.
+=== Come from interior ===
+=== Come from exterior ===
