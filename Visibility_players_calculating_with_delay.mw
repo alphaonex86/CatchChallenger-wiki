@@ -41,4 +41,4 @@ Call at frequency of (step speed * 5), mainly 200ms * 5 = 1s.
 
 == Complexity ==
 * To send the move: o(n^2), where n is visibility list size, then limited to max_visible_player
-* Distance calculation (5s): o(n^2), where n is (visibility list size + not so far), then limited to max_visible_player
+* Distance calculation (5s): o(n^2), where n is (calculated player visibility), then limited to max_visible_player
