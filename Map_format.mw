@@ -11,11 +11,11 @@ Support into the client: lib tiled for QGraphicView or QML
 = Map content =
 == General map content ==
 Here described the map format, into the tmx
-type: city, outside, cave, inside, arena
-dayMonster: 78,90,15-24;79,10,20-24; (each monster separated by ";", and as format: id, % of chance, level)
-nightMonster: 78,90,15-24;79,10,20-24; (each monster separated by ";", and as format: id, % of chance, level)
-waterMonster: 78,90,15-24;79,10,20-24; (each monster separated by ";", and as format: id, % of chance, level)
-wildProbability: 10
+* '''type''': city, outside, cave, inside, arena
+* '''dayMonster''': 78,90,15-24;79,10,20-24; (each monster separated by ";", and as format: id, % of chance, level)
+* '''nightMonster''': 78,90,15-24;79,10,20-24; (each monster separated by ";", and as format: id, % of chance, level)
+* '''waterMonster''': 78,90,15-24;79,10,20-24; (each monster separated by ";", and as format: id, % of chance, level)
+* '''wildProbability''': 10
 
 The object and layer is described above.
 
