@@ -3,31 +3,29 @@ This can applied to all similar 2D tile game. Is very useful for the performance
 = Algorithm =
 The player list of visibility is calculated as delayed of the move, instant for the insert/remove. To not reload all the distance list, keep all the list. Ignore very far player, and no store it.
 
+The visibility distance is limited by maximum_distance_visibility and the number of player displayed.
+
 For the local player only ('''all relative to the current player'''):
-* Need get players (multiple) into group identified by distance
-* Need get distance for a player, '''relative to the current player'''
-* Visible player list:
+* Visible player list (player pointer + distance):
  while(list size < 50)
- add to visible list group by group, but to keep lower than 50
+   add to visible list group by group, but to keep lower than 50
 == Move calculation ==
 Call at frequency of 5s.
- Calculate all new distances into distance group
- Look which group will be displayed
- if(into distance group displayed is not into the visible list)
-   insert into the visible list && send insert order
- if(into distance group not displayed is into the visible list)
-   remove into the visible list && send remove order
+ Calculate all new distances (group by distances), tempory keep all lower than maximum_distance_visibility
+ Do the new Visible player list
+ if (one entry is not into the previous list)
+   send insert order
+ if (one entry is not into the new list)
+   send remove order
 == Remove ==
  if(into visible list)
     Then send remove to player && remove from visible player list;
- Remove from player list && group id for the player
 == Insert ==
  Calculate the distance
- Insert into list to get the group id by player
- Insert into players list by group id
- if(current group is into the visibility list)
-   insert the current player into the visibility list
-   if(now the group is too bigger to be displayed)
-     remove the group from visibility list
-   else
-     send the new insert to the player
+ if(visible player list size() +1 > 50 item)
+ {
+   remove the more far group and send remove order
+   if(distance = more far group)
+     return;
+ }
+ Insert into visible player list && send insert order
