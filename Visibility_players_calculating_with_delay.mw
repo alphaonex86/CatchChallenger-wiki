@@ -11,12 +11,13 @@ For the local player only ('''all relative to the current player'''):
    add to visible list group by group, but to keep lower than 50
 == Move calculation ==
 Call at frequency of 5s.
- Calculate all new distances (group by distances), tempory keep all lower than maximum_distance_visibility
+ Calculate all new distances (group by distances), temporary list keep all lower than maximum_distance_visibility
  Do the new Visible player list
  if (one entry is not into the previous list)
    send insert order
  if (one entry is not into the new list)
    send remove order
+
 == Remove ==
  if(into visible list)
     Then send remove to player && remove from visible player list;
