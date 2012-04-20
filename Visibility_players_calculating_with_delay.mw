@@ -15,7 +15,7 @@ Call at frequency of (step speed * number of step before calculation), mainly 20
  if(current map client > max_visible_player || (current map client + near map client) > max_visible_player)
    Calculate all new distances (group by distances), on current map, temporary list keep all lower than maximum_distance_visibility
  else
-   Calculate all new distances (group by distances), on current map, temporary list keep all lower than maximum_distance_visibility
+   Calculate all new distances (group by distances), on current + near map, temporary list keep all lower than maximum_distance_visibility
  Do the new Visible player list
  visibility limited = if have not displayed all the player;
  if (one entry is not into the previous list)
