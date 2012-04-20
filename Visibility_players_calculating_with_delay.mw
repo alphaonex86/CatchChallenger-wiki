@@ -12,7 +12,12 @@ For the local player only ('''all relative to the current player'''):
 * maximum_distance_visibility: screen radius + number of step before calculation * (speed step * 2 -> opposed speed) * 1.5 (security)
 == Distance calculation (step speed * number of step before calculation) ==
 Call at frequency of (step speed * number of step before calculation), mainly 200ms * 5 = 1s.
- if(current map client > max_visible_player || (current map client + near map client) > max_visible_player)
+ if(current map client > max_visible_player)
+ {
+   send remove order
+   empty visibility list
+ }
+ else if(current map client + near map client) > max_visible_player)
    Calculate all new distances (group by distances), on current map, temporary list keep all lower than maximum_distance_visibility
  else
    Calculate all new distances (group by distances), on current + near map, temporary list keep all lower than maximum_distance_visibility
