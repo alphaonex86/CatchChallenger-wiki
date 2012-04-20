@@ -7,11 +7,14 @@ For the local player only:
 * Need get players (multiple) into group identified by id
 * Need get group id for a player
 * Visible player list:
-  clean visible list
-  while(list size < 50)
-  add to visible list group by group, but to keep lower than 50
+ clean visible list
+ while(list size < 50)
+ add to visible list group by group, but to keep lower than 50
 == Move ==
 == Remove ==
+ if(into visible list)
+    Then send remove to player && remove from visible player list;
+ Remove from player list && group id for the player
 == Insert ==
 === Come from interior ===
 === Come from exterior ===
