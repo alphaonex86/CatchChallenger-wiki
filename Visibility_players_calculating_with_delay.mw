@@ -1,7 +1,7 @@
 = Introduction =
 This can applied to all similar 2D tile game. Is very useful for the performance because it group some calculating and it limit the displayed player.
 = Algorithm =
-The player list of visibility is calculated as delayed of the move, instant for the insert/remove. To not reload all the distance list, keep all the list.
+The player list of visibility is calculated as delayed of the move, instant for the insert/remove. To not reload all the distance list, keep all the list. Ignore very far player, and no store it.
 
 For the local player only ('''all relative to the current player'''):
 * Need get players (multiple) into group identified by distance
@@ -10,6 +10,7 @@ For the local player only ('''all relative to the current player'''):
  while(list size < 50)
  add to visible list group by group, but to keep lower than 50
 == Move calculation ==
+Call at frequency of 5s.
  Calculate all new distances into distance group
  Look which group will be displayed
  if(into distance group displayed is not into the visible list)
