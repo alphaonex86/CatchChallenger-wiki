@@ -10,18 +10,20 @@ For the local player only ('''all relative to the current player'''):
  while(visible list size < max_visible_player)
    add to visible list group by group, but to keep lower than max_visible_player
 * maximum_distance_visibility: screen radius + number of step before calculation * (speed step * 2 -> opposed speed) * 1.5 (security)
-== Distance calculation (step speed * number of step before calculation) ==
+* max_visible_player: 30
+* maximum_player_calculation: 50
+== Distance calculation ==
 Call at frequency of (step speed * number of step before calculation), mainly 200ms * 5 = 1s.
- if(current map client > max_visible_player)
+ if(current map client > '''maximum_player_calculation''')
  {
    send remove order
    empty visibility list
  }
- else if(current map client + near map client) > max_visible_player)
+ else if(current map client + near map client) > '''maximum_player_calculation''')
    Calculate all new distances (group by distances), on current map, temporary list keep all lower than maximum_distance_visibility
  else
-   Calculate all new distances (group by distances), on current + near map, temporary list keep all lower than maximum_distance_visibility
- Do the new Visible player list
+   Calculate all new distances (group by distances), on current map + near map, temporary list keep all lower than maximum_distance_visibility
+ Do the new Visible player list with '''max_visible_player'''
  visibility limited = if have not displayed all the player;
  if (one entry is not into the previous list)
    send insert order
@@ -46,4 +48,4 @@ Call at frequency of (step speed * number of step before calculation), mainly 20
 
 == Complexity ==
 * To send the move: o(n^2), where n is visibility list size, then limited to max_visible_player
-* Distance calculation (5s): o(n^2), where n is (calculated player visibility), then limited to max_visible_player
+* Distance calculation: o(n^2), where n is player present on the map and then with calculation distance, then limited to maximum_player_calculation
