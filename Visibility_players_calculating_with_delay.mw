@@ -3,20 +3,24 @@ This can applied to all similar 2D tile game. Is very useful for the performance
 = Algorithm =
 The player list of visibility is calculated as delayed of the move, instant for the insert/remove. To not reload all the distance list, keep all the list.
 
-For the local player only:
-* Need get players (multiple) into group identified by id
-* Need get group id for a player
+For the local player only ('''all relative to the current player'''):
+* Need get players (multiple) into group identified by distance
+* Need get distance for a player, '''relative to the current player'''
 * Visible player list:
- clean visible list
  while(list size < 50)
  add to visible list group by group, but to keep lower than 50
-== Move ==
+== Move calculation ==
+ Calculate all new distances into distance group
+ Look which group will be displayed
+ if(into distance group displayed is not into the visible list)
+   insert into the visible list && send insert order
+ if(into distance group not displayed is into the visible list)
+   remove into the visible list && send remove order
 == Remove ==
  if(into visible list)
     Then send remove to player && remove from visible player list;
  Remove from player list && group id for the player
 == Insert ==
-=== Come from interior ===
  Calculate the distance
  Insert into list to get the group id by player
  Insert into players list by group id
@@ -26,4 +30,3 @@ For the local player only:
      remove the group from visibility list
    else
      send the new insert to the player
-=== Come from exterior ===
