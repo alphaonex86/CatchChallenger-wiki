@@ -13,6 +13,7 @@ For the local player only ('''all relative to the current player'''):
 Call at frequency of 5s.
  Calculate all new distances (group by distances), temporary list keep all lower than maximum_distance_visibility
  Do the new Visible player list
+ visibility limited = if have not displayed all the player;
  if (one entry is not into the previous list)
    send insert order
  if (one entry is not into the new list)
@@ -23,9 +24,12 @@ Call at frequency of 5s.
     Then send remove to player && remove from visible player list;
 == Insert ==
  Calculate the distance
+ if(distance > maximum_distance_visibility || (distance > more far group && visibility limited == true))
+   return;
  if(visible player list size() +1 > 50 item)
  {
    remove the more far group and send remove order
+   visibility limited = true;
    if(distance = more far group)
      return;
  }
