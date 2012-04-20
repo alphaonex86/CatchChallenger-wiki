@@ -65,9 +65,6 @@ It's layer Object with name "Tp", only visible on map editor:
 * map: [map name]
 * Need correspond with the other border on the corresponding map
 
-'''[spawn]'''
-* Type: spawn
-
 '''[door]'''
 * Type: door
 * orientation: top (top, bottom, left, right)
