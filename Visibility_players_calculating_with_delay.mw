@@ -17,4 +17,13 @@ For the local player only:
  Remove from player list && group id for the player
 == Insert ==
 === Come from interior ===
+ Calculate the distance
+ Insert into list to get the group id by player
+ Insert into players list by group id
+ if(current group is into the visibility list)
+   insert the current player into the visibility list
+   if(now the group is too bigger to be displayed)
+     remove the group from visibility list
+   else
+     send the new insert to the player
 === Come from exterior ===
