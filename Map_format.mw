@@ -8,6 +8,8 @@ Support into the server: xml with pre-calculate the collision/water zone
 
 Support into the client: lib tiled for QGraphicView or QML
 
+The spawn point is useless, when map change, your are teleported at the middle. If you are blocked ask to the administrator, command to random teleport to low level village will be implanted too.
+
 = Map content =
 == General map content ==
 Here described the map format, into the tmx
