@@ -1,6 +1,7 @@
 = Introduction =
 This can applied to all similar 2D tile game. Is very useful for the performance.
 = Algorithm =
+The player list of visibility is calculated as delayed of the move, instant for the insert/remove. To not reload all the distance list, keep all the list.
 == Move ==
 == Remove ==
 == Insert ==
