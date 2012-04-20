@@ -1,5 +1,5 @@
 = Introduction =
-This can applied to all similar 2D tile game. Is very useful for the performance because it group some calculating and it limit the displayed player.
+This can applied to all similar 2D tile game. Is very useful for the performance because it group some calculating and it limit the displayed players.
 = Algorithm =
 The player list of visibility is calculated as delayed of the move, instant for the insert/remove. To not reload all the distance list, keep all the list. Ignore very far player, and no store it.
 
