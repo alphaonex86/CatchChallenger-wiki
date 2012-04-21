@@ -18,7 +18,7 @@ For the local player only ('''all relative to the current player'''):
 * max_visible_player: 30
 * maximum_player_calculation: 50
 
-x,y for player is give on the global system, it's x,y of the current_map + x,y of the player on this map.
+Distance calculation for the top map: (x+offset)-other_player_x and y+(top map height-other_player_y)
 
 == Distance calculation ==
 Call at frequency of (step delay * number of step before calculation), mainly 200ms * 5 = 1s.
@@ -92,3 +92,5 @@ Then for 50 player on the map, 8 map near, 40x40 size, on 64Bits computer, with 
 * 8*50 = 400B
 * 2*4 = 8B
 The total is near than: 706 for minor data + 1KB for property + 25 KB for tile cache = 27KB (92% by tile cache, tile cache can be compressed but it will use more cpu)
+
+The implementation is limited to 65535 of large
