@@ -1,5 +1,8 @@
 = Introduction =
 This can applied to all similar 2D tile game. Is very useful for the performance because it group some calculating and it limit the displayed players.
+
+To calculate distance, you need group map by visibility, and each map have global x,y for their group.
+
 = Algorithm =
 The player list of visibility is calculated as delayed of the move, instant for the insert/remove. To not reload all the distance list, keep all the list. Ignore very far player, and no store it.
 
@@ -12,6 +15,8 @@ For the local player only ('''all relative to the current player'''):
 * maximum_distance_visibility: screen radius + number of step before calculation * 1~2.5 (most case 1, but to be exact 2 due to walking to converging, 2.5 to have security)
 * max_visible_player: 30
 * maximum_player_calculation: 50
+
+x,y for player is give on the global system, it's x,y of the current_map + x,y of the player on this map.
 
 == Distance calculation ==
 Call at frequency of (step delay * number of step before calculation), mainly 200ms * 5 = 1s.
