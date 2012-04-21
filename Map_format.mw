@@ -63,7 +63,7 @@ It's layer Object with name "Tp", only visible on map editor:
 * orientation: top (top,bottom,left,right)
 
 '''[Border]'''
-* Type: border
+* Type: border-top, border-bottom, border-left, border-right
 * map: [map name]
 * Need correspond with the other border on the corresponding map
 
