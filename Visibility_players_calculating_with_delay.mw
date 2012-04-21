@@ -50,3 +50,9 @@ Call at frequency of (step delay * number of step before calculation), mainly 20
 * To send the move: o(n^2), where n is visibility list size, then limited to max_visible_player
 * Distance calculation: o(n^2), where n is player present on the map and then with calculation distance, then limited to maximum_player_calculation
 * Worse case: o(max_visible_player^2)+o(maximum_player_calculation^2)/number of step before calculation
+
+
+[[File:catchchallenger-visibility-complexity.png]]
+* Blue: Where number of player < max_visible_player
+* Red: Where player number < maximum_player_calculation
+* Yellow: Stop calculate because player number > maximum_player_calculation
