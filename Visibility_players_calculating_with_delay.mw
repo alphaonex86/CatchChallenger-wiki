@@ -54,6 +54,6 @@ Call at frequency of (step delay * number of step before calculation), mainly 20
 
 
 [[File:catchchallenger-visibility-complexity.png]]
-* Blue: Where number of player < max_visible_player
-* Red: Where player number < maximum_player_calculation
-* Yellow: Stop calculate because player number > maximum_player_calculation
+* <span style="color:blue">Blue</span>: Where number of player < max_visible_player (here: < 30 players)
+* <span style="color:red">Red</span>: Where player number < maximum_player_calculation (here: < 50 players)
+* <span style="color:orange">Yellow</span>: Stop calculate because player number > maximum_player_calculation
