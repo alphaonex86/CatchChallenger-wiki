@@ -1,7 +1,7 @@
 = Introduction =
 This can applied to all similar 2D tile game. Is very useful for the performance because it group some calculating and it limit the displayed players.
 
-To calculate distance, you need group map by visibility, and each map have global x,y for their group.
+Drop global position system to drop the maximum map limit, maximum group for map width/height.
 
 This algorithm support partial map, you can keep large hole with border as map.
 
@@ -92,5 +92,3 @@ Then for 50 player on the map, 8 map near, 40x40 size, on 64Bits computer, with 
 * 8*50 = 400B
 * 2*4 = 8B
 The total is near than: 706 for minor data + 1KB for property + 25 KB for tile cache = 27KB (92% by tile cache, tile cache can be compressed but it will use more cpu)
-
-The implementation is limited to 65535 of large
