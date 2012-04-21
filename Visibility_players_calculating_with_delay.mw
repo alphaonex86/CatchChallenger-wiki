@@ -3,6 +3,8 @@ This can applied to all similar 2D tile game. Is very useful for the performance
 
 To calculate distance, you need group map by visibility, and each map have global x,y for their group.
 
+This algorithm support partial map, you can keep large hole with border as map.
+
 = Algorithm =
 The player list of visibility is calculated as delayed of the move, instant for the insert/remove. To not reload all the distance list, keep all the list. Ignore very far player, and no store it.
 
@@ -62,3 +64,31 @@ Call at frequency of (step delay * number of step before calculation), mainly 20
 * <span style="color:blue">Blue</span>: Where number of player < max_visible_player (here: < 30 players)
 * <span style="color:red">Red</span>: Where player number < maximum_player_calculation (here: < 50 players)
 * <span style="color:orange">Yellow</span>: Stop calculate because player number > maximum_player_calculation
+
+= Implementation =
+For each map it use into memory:
+* QHash<QString,Map_final> + QHash<quint32,Map_final *>, to have indexed search
+* bool size * width * height * 2 (walkable + water)
+* 4 pointer for the border
+* pointer size * near map
+* QHash<quint32,Map_final *> * (number of door + tp)
+* QString for the map file name, to have the reverse
+* size of quint16 * 2 for width + height
+* QHash<QString,QVariant> * number of property, to keep the current map property
+* size of quint32 for the group
+* size of ClientMapManagement pointer by the number of player on this map
+* sizeof quint32 to have the current map coordinates into their group
+
+Then for 50 player on the map, 8 map near, 40x40 size, on 64Bits computer, with 5 doors:
+* 16*4 + 8 = 72B
+* 8*40*40*2= 25.6 KB
+* 8*4 = 32B
+* 8*8 = 64B
+* (4+8)*5 = 60B
+* 16*4 = 64B
+* 2*2 = 4B
+* ~1KB
+* 2B
+* 8*50 = 400B
+* 2*4 = 8B
+The total is near than: 706 for minor data + 1KB for property + 25 KB for tile cache = 27KB (92% by tile cache, tile cache can be compressed but it will use more cpu)
