@@ -36,6 +36,7 @@ query server -> client without reply
 * '''C200000005''' chat
 * '''C200000008''' kicked/ban and reason
 * '''C200000009''' Player number
+* '''C20000000A''' Remove all other player on the map
 
 = Latency =
 * All the query with reply is identified by return code, then multiple query ca&n be send, it will never be blocking.
