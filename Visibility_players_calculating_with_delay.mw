@@ -66,3 +66,5 @@ Call at frequency of (step delay * number of step before calculation), mainly 20
 * <span style="color:orange">Yellow</span>: Stop calculate because player number > maximum_player_calculation
 
 '''''To have instant remove, you need store number of player ^ 3 into you memory, else you need remove on all the map, and it's complexity with all the player.''''' Due to multi-map problem.
+
+To optimize, you can calculate the distance only if player number need be limited.
