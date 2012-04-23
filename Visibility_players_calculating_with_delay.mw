@@ -66,29 +66,3 @@ Call at frequency of (step delay * number of step before calculation), mainly 20
 * <span style="color:orange">Yellow</span>: Stop calculate because player number > maximum_player_calculation
 
 '''''To have instant remove, you need store number of player ^ 3 into you memory, else you need remove on all the map, and it's complexity with all the player.''''' Due to multi-map problem.
-
-= Implementation =
-For each map it use into memory:
-* QHash<QString,Map_final> + QHash<quint32,Map_final *>, to have indexed search
-* bool size * width * height * 2 (walkable + water)
-* 4 pointer + 4 * 2 * quint32 for the border
-* pointer size * near map
-* QHash<quint32,Map_final *> * (number of door + tp)
-* QString for the map file name, to have the reverse
-* size of quint16 * 2 for width + height
-* QHash<QString,QVariant> * number of property, to keep the current map property
-* size of quint32 for the group
-* size of ClientMapManagement pointer by the number of player on this map
-
-Then for 50 player on the map, 8 map near, 40x40 size, on 64Bits computer, with 5 doors:
-* 16*4 + 8 = 72B
-* 8*40*40*2= 25.6 KB
-* 8*4 + 4*2*4 = 64B
-* 8*8 = 64B
-* (4+8)*5 = 60B
-* 16*4 = 64B
-* 2*2 = 4B
-* ~1KB
-* 2B
-* 8*50 = 400B
-The total is near than: 730 for minor data + 1KB for property + 25 KB for tile cache = 27KB (92% by tile cache, tile cache can be compressed but it will use more cpu)
