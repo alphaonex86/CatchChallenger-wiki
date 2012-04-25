@@ -1,28 +1,12 @@
 = Hardware =
 You can host 200 player with simple dual core and 1GB of memory. Less than 20 should work everywhere (mobile device, tablet, computer older up to 15 years old). You can tune at compilation and runtime some options. See software part.
-
-* Arm supported, without FP (floating number)
-
 = Software =
 * You need Qt + Qt mysql database (under Windows mysql*.lib and qt plugin).
 * Mysql database, can be slow, the server have not important slowdown when mysql or file access is slow.
 * Disk space: 50MB for the main server application (~7MB used actually) + your datapack size
 = Server connection =
-== By player ==
 * Upload by player: Count 50B/s by players displayed and witch change every time of direction (will depends of server visibility calculation algorithm) + 50B/s for the rest + 100B for player info requested and replied (mainly new displayed player on the map)
 * Download by player: 50B/s
-== General ==
 With 20 player, all displayed, the total are:
-* Upload: It's 20KB/s for all move change, +1KB/s for other, +10KB/s for 5 player insertion by seconds: 31KB/s Max (should be more near than 5~10KB/s)
+* Upload: It's 20KB/s for all move change, +1KB/s for other, +10KB/s for 5 player insertion by seconds: 31KB/s
 * Download by player: 1KB/s
-== Type ==
-Then for small server, ADSL connection can be used. Don't use wifi or mobile connection, the mobile delay is bad (but in this case, the latency will compact more the protocol on map move).
-
-To play with lot of player count 550KB/s (5Mbps) for 1000 player, all visible. 100Mbps seam good for 65535 players (the server limit).
-
-== Embedded ==
-To Work as Embedded:
-* #define CATCHCHALLENGER_MAXBDQUERIES 64
-* #define CATCHCHALLENGER_BIGBUFFERSIZE 512*1024
-* #define EPOLLCATCHCHALLENGERSERVERNOCOMPRESSION
-* Disable internal datapack sync, only with http mirror
