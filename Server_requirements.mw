@@ -1,0 +1,12 @@
+= Hardware =
+You can host 200 player with simple dual core and 1GB of memory. Less than 20 should work everywhere (mobile device, tablet, computer older up to 15 years old). You can tune at compilation and runtime some options. See software part.
+= Software =
+* You need Qt + Qt mysql database (under Windows mysql*.lib and qt plugin).
+* Mysql database, can be slow, the server have not important slowdown when mysql or file access is slow.
+* Disk space: 50MB for the main server application (~7MB used actually) + your datapack size
+= Server connection =
+* Upload by player: Count 50B/s by players displayed and witch change every time of direction (will depends of server visibility calculation algorithm) + 50B/s for the rest + 100B for player info requested and replied (mainly new displayed player on the map)
+* Download by player: 50B/s
+With 20 player, all displayed, the total are:
+* Upload: It's 20KB/s for all move change, +1KB/s for other, +10KB/s for 5 player insertion by seconds: 31KB/s
+* Download by player: 1KB/s
