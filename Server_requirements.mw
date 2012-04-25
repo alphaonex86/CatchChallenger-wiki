@@ -10,3 +10,6 @@ You can host 200 player with simple dual core and 1GB of memory. Less than 20 sh
 With 20 player, all displayed, the total are:
 * Upload: It's 20KB/s for all move change, +1KB/s for other, +10KB/s for 5 player insertion by seconds: 31KB/s Max (should be more near than 5~10KB/s)
 * Download by player: 1KB/s
+Count 550KB/s (5Mbps) for 1000 player, all visibles.
+
+Then for small server, adsl connection can be used. Don't use wifi or mobile connection, the mobile delay is bad (but in this case, the latency will compact more the protocol).
