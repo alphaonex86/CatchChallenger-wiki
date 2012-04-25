@@ -1,12 +1,17 @@
 This wiki show all documents and technical informations.
 
-* [[Server requirements]]
-* [[Client requirements]]
-* [[Unit into the game]]
-* [[Screenshot]]
-* [[Server architecture]]
+= Algorithm, protocol and format =
 * [[Map format]]
 * [[General protocol]]
-* [[Actual performance]]
 * [[Visibility players calculating with delay]]
 * [[Visibility players calculating without delay]]
+* [[Server architecture]]
+* [[Unit into the game]]
+= IRL =
+* [[Screenshot]]
+* [[Actual performance]]
+= Usage and installation =
+* [[Server requirements]]
+* [[Client requirements]]
+= Files =
+* [[Sources]]
