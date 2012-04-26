@@ -7,10 +7,9 @@ Firstly query type 8Bits to the first type and if needed 32Bits for the sub type
 The tpc/ip protocol split the packet into lot of small packet. Warning, you need recompose the query.
 
 = Order type =
+== General ==
 query client -> server with reply
 * '''01''' Protocol
-* '''020006''' Invite to the trade + push new object to the trade (with sell/buy too)
-* '''020008''' Give bot craft recipe and object, and define the price + taxe
 * '''02000C''' Send datapack file list
 * '''03''' Get first data and send the login
 
@@ -18,10 +17,28 @@ query client -> server without reply
 * '''40''' Send position + direction '''''(Fast)'''''
 * '''41''' Reply to server query
 * '''420003''' Chat
-* '''420004''' Fight attack/object used
-* '''420005''' Usage of object
 * '''42000A''' Add players info to watch
 * '''42000B''' Remove players info to watch
+
+query server -> client without reply
+* '''C0''' Position + direction of other player '''''(Fast)'''''
+* '''C1''' Reply to client query
+* '''C20001''' Random seed list (with type to group by random seed list)
+* '''C20002''' update of the player info
+* '''C20003''' update file
+* '''C20005''' chat
+* '''C20008''' kicked/ban and reason
+* '''C20009''' Player number
+* '''C2000A''' Remove all other player on the map
+
+== Specific to catchchallenger ==
+query client -> server with reply
+* '''020006''' Invite to the trade + push new object to the trade (with sell/buy too)
+* '''020008''' Give bot craft recipe and object, and define the price + taxe
+
+query client -> server without reply
+* '''420004''' Fight attack/object used
+* '''420005''' Usage of object
 
 query server -> client with reply
 * '''800001''' Battle request
@@ -46,3 +63,6 @@ query server -> client without reply
 
 = Map position/move =
 All is done to have multiple algorithm into the server, you can calculate that's by chunk of map, by map, or other way.
+
+= Usage into other game =
+[[File:catchchallenger-base-into-other-game.png]]
