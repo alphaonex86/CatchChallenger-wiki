@@ -32,6 +32,7 @@ The size should be egal as '''40,40'''
 * '''LedgesRight:''' border to jump, the player will jump left to right
 * '''LedgesLeft:''' border to jump, the player will jump right to left
 * '''LedgesDown:''' border to jump, the player will jump up to down
+* '''Grass:''' grass, where have random chance to find a monster
 
 == Object ==
 It's on layer Object with name: Object, Name: what you want
