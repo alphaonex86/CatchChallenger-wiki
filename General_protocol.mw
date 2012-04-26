@@ -43,17 +43,6 @@ query client -> server without reply
 query server -> client with reply
 * '''800001''' Battle request
 
-query server -> client without reply
-* '''C0''' Position + direction of other player '''''(Fast)'''''
-* '''C1''' Reply to client query
-* '''C20001''' Random seed list (step + pkmn and other)
-* '''C20002''' update of the player info
-* '''C20003''' update file
-* '''C20005''' chat
-* '''C20008''' kicked/ban and reason
-* '''C20009''' Player number
-* '''C2000A''' Remove all other player on the map
-
 = Latency =
 * All the query with reply is identified by return code, then multiple query ca&n be send, it will never be blocking.
 * Never ask the server reply because the reply is based on the random. '''A random list is used''' (and send by the server to the client), and both '''client and server do the calculate''' (minimize bandwidth, and not slow down)
