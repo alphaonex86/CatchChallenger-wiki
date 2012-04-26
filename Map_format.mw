@@ -51,19 +51,19 @@ It's on layer Object with name: Object, Name: what you want
 == Teleportation ==
 It's layer Object with name "Tp", only visible on map editor:
 
-'''[Tp on push]'''
-* Type: tp on push
+'''[teleport on push]'''
+* Type: teleport on push
 * map: [map name]
 * x, y: cordon
 * orientation: top (top,bottom,left,right)
 
-'''[Tp on it]'''
-* Type: tp on it (when the player is fully on it)
+'''[teleport on it]'''
+* Type: teleport on it (when the player is fully on it)
 * map: [map name]
 * x, y: cordon
 * orientation: top (top,bottom,left,right)
 
-'''[Border]'''
+'''[border]'''
 * Type: border-top, border-bottom, border-left, border-right
 * map: [map name]
 * Need correspond with the other border on the corresponding map
