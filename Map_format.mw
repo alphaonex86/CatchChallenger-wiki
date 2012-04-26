@@ -55,13 +55,11 @@ It's layer Object with name "Tp", only visible on map editor:
 * Type: teleport on push
 * map: [map name]
 * x, y: cordon
-* orientation: top (top,bottom,left,right)
 
 '''[teleport on it]'''
 * Type: teleport on it (when the player is fully on it)
 * map: [map name]
 * x, y: cordon
-* orientation: top (top,bottom,left,right)
 
 '''[border]'''
 * Type: border-top, border-bottom, border-left, border-right
@@ -69,8 +67,7 @@ It's layer Object with name "Tp", only visible on map editor:
 * Need correspond with the other border on the corresponding map
 
 '''[door]'''
-* Type: door
-* orientation: top (top, bottom, left, right)
+* Type: door 
 * map: [file name]
 * x & y: cordon on the new map
 
