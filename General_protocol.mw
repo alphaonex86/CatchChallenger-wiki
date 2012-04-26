@@ -9,7 +9,6 @@ The tpc/ip protocol split the packet into lot of small packet. Warning, you need
 = Order type =
 query client -> server with reply
 * '''01''' Protocol
-* '''020005''' Random seed list (step + pkmn and other)
 * '''020006''' Invite to the trade + push new object to the trade (with sell/buy too)
 * '''020008''' Give bot craft recipe and object, and define the price + taxe
 * '''02000C''' Send datapack file list
@@ -30,6 +29,7 @@ query server -> client with reply
 query server -> client without reply
 * '''C0''' Position + direction of other player '''''(Fast)'''''
 * '''C1''' Reply to client query
+* '''C20001''' Random seed list (step + pkmn and other)
 * '''C20002''' update of the player info
 * '''C20003''' update file
 * '''C20005''' chat
