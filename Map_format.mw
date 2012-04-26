@@ -49,7 +49,9 @@ It's on layer Object with name: Object, Name: what you want
 * text: Xml text
 
 == Teleportation ==
-It's layer Object with name "Tp", only visible on map editor:
+It's layer Object with name "Tp", only visible on map editor.
+
+'''Warning:''' For the protocol, it's like you walk over the teleport tile, but if you continue to press the key, not send interruption (keep last direction = before distance + after distance).
 
 '''[teleport on push]'''
 * Type: teleport on push
