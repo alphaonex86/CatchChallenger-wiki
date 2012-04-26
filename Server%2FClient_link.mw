@@ -1,0 +1,4 @@
+The server and client have shared code. To be sure to have the same algorithm and not send by network (both server and client calculate the same, then no network communication needed)
+
+= Single player case =
+That's allow to do single player game too.
