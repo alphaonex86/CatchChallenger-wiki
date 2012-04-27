@@ -7,3 +7,7 @@ Actual performance on '''20 April 2012''' is with benchmark of '''400''' with GU
 * Ram used under linux: 70MB
 * '''Cpu: 20%''' on core i5 750
 * 11B/s in upload, 12KB/s in download
+
+Pass 100% of cpu -> 70% when I uncomment into the .pro file:
+ QMAKE_CFLAGS="-pipe -march=native -O2 -fomit-frame-pointer -floop-block -floop-interchange -fgraphite -funroll-loops"
+ QMAKE_CXXFLAGS="-pipe -march=native -O2 -fomit-frame-pointer -floop-block -floop-interchange -fgraphite -funroll-loops"
