@@ -11,7 +11,7 @@ The tpc/ip protocol split the packet into lot of small packet. Warning, you need
 query client -> server with reply
 * '''01''' Protocol
 * '''02000C''' Send datapack file list
-* '''03''' Get first data and send the login
+* '''020001''' Get first data and send the login
 
 query client -> server without reply
 * '''40''' Send position + direction '''''(Fast)'''''
