@@ -10,8 +10,8 @@ The tpc/ip protocol split the packet into lot of small packet. Warning, you need
 == General ==
 query client -> server with reply
 * '''01''' Protocol
-* '''02000C''' Send datapack file list
 * '''020001''' Get first data and send the login
+* '''02000C''' Send datapack file list
 
 query client -> server without reply
 * '''40''' Send position + direction '''''(Fast)'''''
