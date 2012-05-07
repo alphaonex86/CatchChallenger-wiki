@@ -65,4 +65,4 @@ The compression can be:
 * lz4 by [[Lz4CompressionTcpSocket for Qt]]: Have very small cpu overhead, but worse compression ratio than zlib/gzip, lz4hc use few more cpu but remain with worse compression ratio than zlib/gzip.
 * None: No compression overhead, but some query can use lot of bandwidth
 
-It's compression for QTcpSocket/QSslSocket, and this compression can be hot added/removed.
+It's compression for QTcpSocket/QSslSocket, and this compression can be hot added/removed. This class are adapted to streaming, that's: that's mean infinity volume, random data append, data re-composition, the data send at the compression is directly compressed and send (no wait more data to send). It's perfect to real time communication.
