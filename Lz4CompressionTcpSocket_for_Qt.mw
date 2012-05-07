@@ -1,0 +1,10 @@
+Lz4CompressionTcpSocket is class into Qt, designed to general purpose compression for tcp socket.
+
+= Code =
+
+It use for now remaked code from the C version of lz4 and lz4hc. But this remake allow support randomly data append (found on tcp socket). The version of lz4hc have same decoder of lz4 because it have same binary format, only the compression ratio is better.
+
+= Project using it =
+
+* It shipped with debug-devel [https://github.com/alphaonex86/debug-devel] firstly. It's project to send raw data as hexa or text on socket. The data transmitted can be compressed into various format.
+* I'm looking for include into catchchallenger by clean way, of kind is the server which choose the compression type/level/chunk.
