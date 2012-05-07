@@ -61,6 +61,8 @@ At the protocole supported or not reply, the server will send too the compressio
 
 The compression can be:
 * Zlib: To save bandwidth at exchange of cpu
-* Gzip: like Zlib but better ratio
+* Gzip: like Zlib but better ratio, and use more cpu
 * lz4 by [[Lz4CompressionTcpSocket for Qt]]: Have very small cpu overhead, but worse compression ratio than zlib/gzip, lz4hc use few more cpu but remain with worse compression ratio than zlib/gzip.
 * None: No compression overhead, but some query can use lot of bandwidth
+
+It's compression for QTcpSocket/QSslSocket, and this compression can be hot added/removed.
