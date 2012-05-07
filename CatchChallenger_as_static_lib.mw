@@ -1,12 +1,3 @@
 CatchChallenger code, protocol is very modular. It's very powerful on 2D game, turn by turn, platform, as mmorpg. You can run old you old best seller game, with all modern usage, and at the large number of players with few resources.
 
 You can implement only the map move, or game on the map (fight monster on platform game).
-
-= Why static and not dynamic? =
-* It's to have all in one client or server.
-* Not lot of files, be sure as the version is compatible because it included and can't be moved.
-* To prevent any kind of performance lost too.
-* To have more optimization, thanks to the link time optimizer for the last gcc
-
-= Organisation =
-[[File:lib-catchchallenger-dependency.png]]
