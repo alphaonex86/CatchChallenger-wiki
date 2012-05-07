@@ -1,4 +1,4 @@
-Lz4CompressionTcpSocket is class into Qt, designed to general purpose compression for tcp socket.
+Lz4CompressionTcpSocket is class into Qt, designed to general purpose compression for tcp socket (compression for QTcpSocket/QSslSocket).
 
 = Code =
 
