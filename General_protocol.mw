@@ -55,3 +55,12 @@ All is done to have multiple algorithm into the server, you can calculate that's
 
 = Usage into other game =
 [[File:catchchallenger-base-into-other-game.png]]
+
+= Compression =
+At the protocole supported or not reply, the server will send too the compression used, chunk size, and compression level. After this, the compression switch to the compression. The compression can be none.
+
+The compression can be:
+* Zlib: To save bandwidth at exchange of cpu
+* Gzip: like Zlib but better ratio
+* lz4 by [[Lz4CompressionTcpSocket for Qt]]: Have very small cpu overhead, but worse compression ratio than zlib/gzip, lz4hc use few more cpu but remain with worse compression ratio than zlib/gzip.
+* None: No compression overhead, but some query can use lot of bandwidth
