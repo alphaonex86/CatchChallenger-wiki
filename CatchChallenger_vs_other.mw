@@ -1,164 +1,32 @@
-This is just for me, to have comparaison.
-
 = Server =
 ==General information==
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
 ! style="width: 12em" |
-! Cost (USD)
-! Software license
-! Open source
-! Multilingual
-! Programming language
-! Datapack
-! Datapack backend
-! User data management
-|-
-| CatchChallenger
-| {{Free}}
-| GPL3
-| {{Yes}}
-| {{Yes}}
-| C++, lib: Qt
-| {{Yes}}
-| File
-| MySQL/SQLite/Postgresql/...(1)
-|-
-| Minecraft
-| {{Free}}
-| {{Proprietary}}
-| {{No}}
-| {{Yes}}
-| Java
-| {{Yes}}
-| File
-| File
-|-
-| Terraria
-| {{Free}}
-| {{Proprietary}}
-| {{No}}
-| {{Yes}}
-| .Net
-| Na
-| File
-| File
-|-
-| Lineage (l2jfree)
-| {{Free}}
-| GPL3
-| {{Yes}}
-| {{No}}
-| Java
-| {{Partial}}
-| File
-| Mysql
-|-
-| rathena
-| {{Free}}
-| GPL3
-| {{Yes}}
-| {{No}}
-| C
-| {{Partial}}
-| File
-| Mysql
-|-
-| PWO
-| Not accessible
-| {{Proprietary}}
-| {{No}}
-| ???
-| C/Visual studio
-| {{Partial}}
-| ???
-| ???
-|-class="sortbottom"
-! style="width: 12em" |
-! Cost (USD)
-! Software license
-! Open source
-! Multilingual
-! Programming language
-! Datapack
-! Datapack backend
-! User data management
-|}
-
-* 1) In high performance server for now only postgresql is supported, in Qt version all the Qt database is supported: IBM DB2 (version 7.1 and above), Borland InterBase, '''MySQL''', '''Oracle''' Call Interface Driver, Open Database Connectivity ('''ODBC''') - Microsoft SQL Server and other ODBC-compliant databases, '''PostgreSQL''' (versions 7.3 and above), '''SQLite''' version 2, SQLite version 3, SQLite version 3 for Symbian SQL Database, .. see [[Database support]]
-
-==Performance==
-{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! style="width: 12em" |
 ! Max players mutually visible
 ! Max players
 ! Cpu at idle
 ! Memory at idle
 ! Memory at 100 players
-! Datapack mirror support (3)
-! Cluster + C10K/C10M solved
-! I2P/TOR supported and fluid
+! Cost (USD)
+! Software license
+! Open source
+! Multilingual
+! Programming language
+! [[Data management|Data backend]]
 |-
 | CatchChallenger
-| style="background: #90ff90; color: black;" | 65535 (1)
-| style="background: #90ff90; color: black;" | 65535 (2) * Number of server node
-| style="background: #90ff90; color: black;" | 0%
-| 3MB
-| 3MB at idle + 200KB
+| 400
+| 100 000
+| 0%
+| 5MB
+| 10MB
+| 0$/month
+| GPL3
 | {{Yes}}
 | {{Yes}}
-| {{Yes}}
-|-
-| Minecraft
-| ???
-| <500
-| 3%
-| 42MB
-| ???
-| NA
-| ???
-| {{Partial}}
-|-
-| Terraria
-| 255 supported
-| 255 supported
-| 0%
-| 800MB
-| ???
-| NA
-| ???
-| {{Partial}}
-|-
-| Lineage (l2jfree)
-| ???
-| ???
-| 0%
-| ???
-| ???
-| {{Partial}}
-| {{Partial}}
-| {{Partial}}
-|-
-| rathena
-| ???
-| ???
-| 0%
-| 271MB (<span style="background: #90ff90; color: black;">5MB for non map server</span>)
-| ???
-| ???
-| ???
-| ???
-|-
-| PWO
-| <50
-| Big lag after 1000
-| ???
-| ???
-| ???
-| {{Partial}}
-| {{No}}
-| ???
+| Qt
+| [[MySQL]]
 |-class="sortbottom"
 ! style="width: 12em" |
 ! Max players mutually visible
@@ -166,222 +34,13 @@ This is just for me, to have comparaison.
 ! Cpu at idle
 ! Memory at idle
 ! Memory at 100 players
-! Datapack mirror support (3)
-! Cluster + C10K/C10M solved
-! I2P/TOR supported and fluid
+! Cost (USD)
+! Software license
+! Open source
+! Multilingual
+! Programming language
+! [[Data management|Data backend]]
 |}
-{{note}}The max player is see on correct configuration, it's the benchmarked value on core i5 750, 4GB of memory.
-Here the important is the coefficient director between the idle and 100 players.
-
-* 1) With correct settings
-* 2) 16Bits, performance will depends of the settings, but work well on 25 years old computer for 65535 player
-* 3) but optional
 
 = Protocol =
-{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! style="width: 12em" |
-! Crypted
-! Move of other player not impacted by latency
-! Multilingual
-! Compression
-! Datapack updating
-! Multiple datapack
-|-
-| CatchChallenger
-| style="background: #90ff90; color: black;" | Yes (1)
-| {{Yes}}
-| {{Yes}}
-| {{Yes}}
-| {{Yes}}
-| {{Yes}}
-|-
-| Minecraft
-| ???
-| {{Yes}}
-| NA
-| {{No}}
-| NA
-| {{Yes}}
-|-
-| Terraria
-| ???
-| ???
-| NA
-| {{No}}
-| NA
-| {{Yes}}
-|-
-| Lineage (l2jfree)
-| ???
-| {{Yes}}
-| ???
-| {{No}}
-| {{No}}
-| {{Partial}}
-|-class="sortbottom"
-! style="width: 12em" |
-! Asynchronous
-! Move of other player not impacted by latency
-! Multilingual
-! Compression
-! Datapack updating
-! Multiple datapack
-|}
-
-* 1) SSL/TLS + certificate, Token for clear connection, P2P crypted if use I2P, ...
-
 = Client =
-{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! style="width: 12em" |
-! Cost (USD)
-! Software license
-! Open source
-! Multilingual
-! Programming language
-! Multiples servers
-! Datapack cache
-! Datapack by servers
-! OS
-|-
-| CatchChallenger
-| {{Free}}
-| GPL3
-| {{Yes}}
-| {{Yes}}
-| C++, lib: Qt Quick 2 (then OpenGl)
-| {{Yes}}
-| {{Yes}}
-| {{Yes}}
-| Windows/Linux/Mac/Others
-|-
-| Minecraft
-| 20$
-| {{Proprietary}}
-| {{No}}
-| {{Yes}}
-| Java
-| {{Yes}}
-| NA
-| NA
-| Windows/Linux/Mac/Others
-|-
-| Terraria
-| 20$
-| {{Proprietary}}
-| {{No}}
-| {{Yes}}
-| .Net
-| {{Yes}}
-| NA
-| NA
-| Windows
-|-
-| Lineage
-| 20$
-| {{Proprietary}}
-| {{No}}
-| {{No}}
-| C/OpenGL
-| {{Partial}}
-| NA
-| NA
-| Windows
-|-
-| PWO
-| {{Free}}
-| {{Proprietary}}
-| {{No}}
-| ???
-| C/OpenGL/Visual studio <span style="background:#ff9090;color:black;">(not work under wine)</span>
-| {{No}}
-| {{Yes}}
-| NA
-| Windows
-|-class="sortbottom"
-! style="width: 12em" |
-! Cost (USD)
-! Software license
-! Open source
-! Multilingual
-! Programming language
-! Multiples servers
-! Datapack cache
-! Datapack by servers
-! OS
-|}
-
-= Datapack =
-{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! style="width: 12em" |
-! Multi-languages
-! Full
-! Unique format
-! Correct image
-! Correct data
-! Structured data
-! Accessible
-! Optional data
-|-
-| CatchChallenger
-| {{Yes}}
-| {{Yes}}
-| {{Yes}}
-| {{Yes}}
-| {{Yes}}
-| {{Yes}}
-| {{Yes}}
-| {{Yes}}
-|-
-| Pokenet
-| {{Partial}}
-| {{No}}
-| {{No}}
-| {{Partial}}
-| {{No}}
-| {{Partial}}
-| {{Yes}}
-| ???
-|-
-| Pokemonium
-| {{Partial}}
-| {{No}}
-| {{No}}
-| {{Partial}}
-| {{No}}
-| {{Partial}}
-| {{Yes}}
-| ???
-|-
-| PWO
-| {{No}}
-| {{No}}
-| {{Partial}}
-| {{No}}
-| {{No}}
-| {{No}}
-| {{No}}
-| {{No}}
-|-class="sortbottom"
-! style="width: 12em" |
-! Multi-languages
-! Full
-! Unique format
-! Correct image
-! Correct data
-! Structured data
-! Accessible
-! Optional data
-|}
-
-[[File:catchchallenger-server-hardware.jpg|400px|thumb|CatchChallenger server hardware requirement]]
-
-* <span style="background: #ffc65d; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" class="table-proprietary"|{{{1|[[Proprietary software|Proprietary]]}}}>'''Full:''' All the intellectual property/logic, ... is into it and you can mount a server with the datapack downloaded on the client (then include too, bot, door, ...). That's minimize the RTT, improve the backup, minimize the communication, ...</span>
-* '''Unique format:''' Usage only of one type of file (.ini, .xml, ...) not multiple
-* '''Correct image:''' Use png with alpha (not color as transparency), no .bmp or other bad/buggy format, don't need read external offset to use it
-* '''Correct data:''' No data duplication, no useless data or obsolete data
-* '''Structured data:''' You known easily with what is linked, no bot string list without context and bot id to identify
-* '''Accessible:''' No more binary data as utile (you need have to access of most data by text editor or common editor)
-* '''Optional data:''' Can have optional data like interface skin, defaulted by the application when not found. Usefull to have light datapack. Can add extra info about the monster, bot, ...
