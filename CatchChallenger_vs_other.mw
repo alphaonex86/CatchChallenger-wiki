@@ -3,11 +3,6 @@
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
 ! style="width: 12em" |
-! Max players mutually visible
-! Max players
-! Cpu at idle
-! Memory at idle
-! Memory at 100 players
 ! Cost (USD)
 ! Software license
 ! Open source
@@ -18,11 +13,6 @@
 ! User data management
 |-
 | CatchChallenger
-| style="background: #90ff90; color: black;" | 400
-| style="background: #90ff90; color: black;" | 100 000
-| style="background: #90ff90; color: black;" | 0%
-| style="background: #90ff90; color: black;" | 5MB
-| style="background: #90ff90; color: black;" | 10MB
 | 0$/month
 | GPL3
 | {{Yes}}
@@ -33,11 +23,6 @@
 | MySQL/Postgresql
 |-class="sortbottom"
 ! style="width: 12em" |
-! Max players mutually visible
-! Max players
-! Cpu at idle
-! Memory at idle
-! Memory at 100 players
 ! Cost (USD)
 ! Software license
 ! Open source
@@ -46,6 +31,31 @@
 ! Datapack
 ! Datapack backend
 ! User data management
+|}
+
+==Performance==
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Max players mutually visible
+! Max players
+! Cpu at idle
+! Memory at idle
+! Memory at 100 players
+|-
+| CatchChallenger
+| style="background: #90ff90; color: black;" | 400
+| style="background: #90ff90; color: black;" | 100 000
+| style="background: #90ff90; color: black;" | 0%
+| style="background: #90ff90; color: black;" | 5MB
+| style="background: #90ff90; color: black;" | 10MB
+|-class="sortbottom"
+! style="width: 12em" |
+! Max players mutually visible
+! Max players
+! Cpu at idle
+! Memory at idle
+! Memory at 100 players
 |}
 {{note}}The max player is see on correct configuration, it's the benchmarked value on core i5 750, 4GB of memory.
 
