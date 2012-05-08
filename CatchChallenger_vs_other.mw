@@ -47,7 +47,7 @@
 ! Datapack backend
 ! User data management
 |}
-{{note}} The max player is see on correct configuration, it's the benchmarked value on core i5 750, 4GB of memory.
+{{note}}The max player is see on correct configuration, it's the benchmarked value on core i5 750, 4GB of memory.
 
 = Protocol =
 = Client =
