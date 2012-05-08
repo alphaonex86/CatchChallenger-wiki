@@ -13,7 +13,9 @@
 ! Open source
 ! Multilingual
 ! Programming language
-! [[Data management|Data backend]]
+! Datapack
+! Datapack backend
+! User data management
 |-
 | CatchChallenger
 | 400
@@ -26,7 +28,9 @@
 | {{Yes}}
 | {{Yes}}
 | Qt
-| [[MySQL]]
+| {{Yes}}
+| File
+| MySQL/Postgresql
 |-class="sortbottom"
 ! style="width: 12em" |
 ! Max players mutually visible
@@ -39,7 +43,9 @@
 ! Open source
 ! Multilingual
 ! Programming language
-! [[Data management|Data backend]]
+! Datapack
+! Datapack backend
+! User data management
 |}
 
 = Protocol =
