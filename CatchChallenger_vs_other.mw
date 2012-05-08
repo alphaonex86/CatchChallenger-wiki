@@ -13,7 +13,7 @@
 ! User data management
 |-
 | CatchChallenger
-| 0$/month
+| {{Free}}
 | GPL3
 | {{Yes}}
 | {{Yes}}
@@ -82,6 +82,7 @@
 ! Asynchronous
 ! Move of other player not impacted by latency
 ! Random list to prevent packet for random event
+! Multilingual
 ! Compression
 ! Crypted
 ! Datapack updating
@@ -93,13 +94,51 @@
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
+| {{Yes}}
 |-class="sortbottom"
 ! style="width: 12em" |
 ! Asynchronous
 ! Move of other player not impacted by latency
 ! Random list to prevent packet for random event
+! Multilingual
 ! Compression
 ! Crypted
 ! Datapack updating
 |}
+
 = Client =
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Cost (USD)
+! Software license
+! Open source
+! Multilingual
+! Programming language
+! Multiples servers
+! Datapack cache
+! Datapack by servers
+! OS
+|-
+| CatchChallenger
+| {{Free}}
+| GPL3
+| {{Yes}}
+| {{Yes}}
+| Qt/QML
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| Windows/Linux/Mac/Others
+|-class="sortbottom"
+! style="width: 12em" |
+! Cost (USD)
+! Software license
+! Open source
+! Multilingual
+! Programming language
+! Multiples servers
+! Datapack cache
+! Datapack by servers
+! OS
+|}
