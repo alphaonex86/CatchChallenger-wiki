@@ -55,6 +55,7 @@ All is done to have multiple algorithm into the server, you can calculate that's
 
 = Usage into other game =
 [[File:catchchallenger-base-into-other-game.png]]
+See: [[Other game usage]]
 
 = Compression =
 At the protocole supported or not reply, the server will send too the compression used, chunk size, and compression level. After this, the compression switch to the compression. The compression can be none.
