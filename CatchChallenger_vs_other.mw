@@ -1,0 +1,46 @@
+= Server =
+==General information==
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Max players mutually visible
+! Max players
+! Cpu at idle
+! Memory at idle
+! Memory at 100 players
+! Cost (USD)
+! Software license
+! Open source
+! Multilingual
+! Programming language
+! [[Data management|Data backend]]
+|-
+| CatchChallenger
+| 400
+| 100 000
+| 0%
+| 5MB
+| 10MB
+| 0$/month
+| GPL3
+| {{Yes}}
+| {{Yes}}
+| Qt
+| [[MySQL]]
+|-class="sortbottom"
+! style="width: 12em" |
+! Max players mutually visible
+! Max players
+! Cpu at idle
+! Memory at idle
+! Memory at 100 players
+! Cost (USD)
+! Software license
+! Open source
+! Multilingual
+! Programming language
+! [[Data management|Data backend]]
+|}
+
+= Protocol =
+= Client =
