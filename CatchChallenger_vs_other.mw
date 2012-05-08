@@ -41,6 +41,16 @@
 | {{Yes}}
 | File
 | File
+|-
+| Lineage (l2jfree)
+| {{Free}}
+| GPL
+| {{Yes}}
+| {{No}}
+| Java
+| {{Partial}}
+| File
+| Mysql
 |-class="sortbottom"
 ! style="width: 12em" |
 ! Cost (USD)
