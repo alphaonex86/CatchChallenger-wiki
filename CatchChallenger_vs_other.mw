@@ -60,4 +60,30 @@
 {{note}}The max player is see on correct configuration, it's the benchmarked value on core i5 750, 4GB of memory.
 
 = Protocol =
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Asynchronous
+! Move of other player not impacted by latency
+! Random list to prevent packet for random event
+! Compression
+! Crypted
+! Datapack updating
+|-
+| CatchChallenger
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|-class="sortbottom"
+! style="width: 12em" |
+! Asynchronous
+! Move of other player not impacted by latency
+! Random list to prevent packet for random event
+! Compression
+! Crypted
+! Datapack updating
+|}
 = Client =
