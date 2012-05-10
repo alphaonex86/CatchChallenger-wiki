@@ -382,7 +382,7 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 |-
 | 2
 | 0.4MB
-| 
+| 1.9MB
 | 
 | 
 | 
@@ -470,6 +470,7 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 ! lz4
 ! lzop
 |}
+
 == Memory requirements on decompression ==
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
