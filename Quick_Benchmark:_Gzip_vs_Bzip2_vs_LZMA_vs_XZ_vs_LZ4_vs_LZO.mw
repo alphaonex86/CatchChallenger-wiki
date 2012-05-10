@@ -12,3 +12,34 @@ Tests were run on a desktop:
 * CFLAGS: -pipe -O2 -g -floop-block -floop-interchange -fgraphite
 * bzip2-1.0.6-r3, xz-utils-5.0.3, gzip-1.4
 Only normal mode will be tested firstly.
+
+= The test results =
+Note: The first column with numbers 1..9 indicates the compression setting passed to gzip, bzip2 and lzmash (e.g. "gzip -9").
+
+== Compressed file size in bytes ==
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! gzip
+! bzip2
+! lzma
+! lzma -e
+! xz
+! xz -e
+|-
+| 1
+| ???
+| ???
+| ???
+| ???
+| ???
+| ???
+|-class="sortbottom"
+! style="width: 12em" |
+! gzip
+! bzip2
+! lzma
+! lzma -e
+! xz
+! xz -e
+|}
