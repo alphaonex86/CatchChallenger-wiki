@@ -68,4 +68,4 @@ The compression can be:
 
 It's compression for QTcpSocket/QSslSocket, and this compression can be hot added/removed. This class are adapted to streaming, that's: that's mean infinity volume, random data append, data re-composition, the data send at the compression is directly compressed and send (no wait more data to send). It's perfect to real time communication.
 
-See too: [[Quick Benchmark: Gzip vs Bzip2 vs LZMA vs XZ]]
+See too: [[Quick Benchmark: Gzip vs Bzip2 vs LZMA vs XZ vs LZ4 vs LZO]]
