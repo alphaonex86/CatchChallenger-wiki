@@ -2,6 +2,7 @@
 I have selected:
 * Source of the kernel to test source compression
 * Binary application
+* Stream protocol with flush
 
 = Test conditions =
 Tests were run on a desktop:
