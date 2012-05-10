@@ -27,6 +27,8 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 ! lzma -e
 ! xz
 ! xz -e
+! lz4
+! lzop
 |-
 | 1
 | 124875819 (120M)
@@ -35,6 +37,8 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 | 72042179 (69M)
 | 85630688 (82M)
 | 72069084 (69M)
+| 165844264 (159M)
+| 168012430 (161M)
 |-class="sortbottom"
 ! style="width: 12em" |
 ! gzip
@@ -43,6 +47,8 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 ! lzma -e
 ! xz
 ! xz -e
+! lz4
+! lzop
 |}
 == Compression time ==
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
@@ -54,6 +60,8 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 ! lzma -e
 ! xz
 ! xz -e
+! lz4
+! lzop
 |-
 | 1
 | 8.1s
@@ -70,6 +78,8 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 ! lzma -e
 ! xz
 ! xz -e
+! lz4
+! lzop
 |}
 == Decompression time ==
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
@@ -81,6 +91,8 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 ! lzma -e
 ! xz
 ! xz -e
+! lz4
+! lzop
 |-
 | 1
 | 3.5s
@@ -97,6 +109,8 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 ! lzma -e
 ! xz
 ! xz -e
+! lz4
+! lzop
 |}
 == Memory requirements on compression ==
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
@@ -108,6 +122,8 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 ! lzma -e
 ! xz
 ! xz -e
+! lz4
+! lzop
 |-
 | 1
 | 0.4MB
@@ -116,6 +132,8 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 | 12.6MB
 | 8.3MB
 | 12.5MB
+| 12MB
+| 0.7MB
 |-class="sortbottom"
 ! style="width: 12em" |
 ! gzip
@@ -124,6 +142,8 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 ! lzma -e
 ! xz
 ! xz -e
+! lz4
+! lzop
 |}
 == Memory requirements on decompression ==
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
@@ -135,6 +155,8 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 ! lzma -e
 ! xz
 ! xz -e
+! lz4
+! lzop
 |-
 | 1
 | 0.1MB
@@ -143,6 +165,8 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 | 1MB
 | 1MB
 | 1MB
+| 13MB
+| 0.2MB
 |-class="sortbottom"
 ! style="width: 12em" |
 ! gzip
@@ -151,4 +175,16 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 ! lzma -e
 ! xz
 ! xz -e
+! lz4
+! lzop
 |}
+
+Cli used for -1 compression:
+* time gzip -1 linux-3.3.tar;du -ksh linux-3.3.tar*;ls -l linux-3.3.tar*;time gunzip linux-3.3.tar*
+* time bzip2 -1 linux-3.3.tar;du -ksh linux-3.3.tar*;ls -l linux-3.3.tar*;time bunzip2 linux-3.3.tar.bz2
+* time lzma -1 linux-3.3.tar;du -ksh linux-3.3.tar*;ls -l linux-3.3.tar*;read PAUSe;time unlzma linux-3.3.tar*
+* time lzma -e -1 linux-3.3.tar;du -ksh linux-3.3.tar*;ls -l linux-3.3.tar*;read PAUSe;time unlzma linux-3.3.tar*
+* time xz -1 linux-3.3.tar;du -ksh linux-3.3.tar*;ls -l linux-3.3.tar*;read PAUSe;time unxz linux-3.3.tar*
+* time xz -e -1 linux-3.3.tar;du -ksh linux-3.3.tar*;ls -l linux-3.3.tar*;read PAUSe;time unxz linux-3.3.tar*
+* time /home/user/lz4-read-only/lz4demo64 -c0 linux-3.3.tar linux-3.3.tar.lz4;du -ksh linux-3.3.tar*;ls -l linux-3.3.tar*;read PAUSe;time /home/user/lz4-read-only/lz4demo64 -d linux-3.3.tar.lz4 linux-3.3.tar;rm linux-3.3.tar.*
+* time lzop -1 linux-3.3.tar;rm linux-3.3.tar;du -ksh linux-3.3.tar*;ls -l linux-3.3.tar*;read PAUSe;time lzop -d linux-3.3.tar*;rm linux-3.3.tar.*
