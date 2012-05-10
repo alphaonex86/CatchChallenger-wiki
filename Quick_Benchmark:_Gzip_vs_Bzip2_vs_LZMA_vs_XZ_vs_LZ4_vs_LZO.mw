@@ -16,6 +16,7 @@ Only normal mode will be tested firstly.
 = The test results =
 Note: The first column with numbers 1..9 indicates the compression setting passed to gzip, bzip2 and lzmash (e.g. "gzip -9").
 
+Tarball mode from linux-3.3, original size: 466083840 (445M)
 == Compressed file size in bytes ==
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
@@ -28,8 +29,116 @@ Note: The first column with numbers 1..9 indicates the compression setting passe
 ! xz -e
 |-
 | 1
+| 124875819 (120M)
+| 93997047 (90M)
 | ???
 | ???
+| ???
+| ???
+|-class="sortbottom"
+! style="width: 12em" |
+! gzip
+! bzip2
+! lzma
+! lzma -e
+! xz
+! xz -e
+|}
+== Compression time ==
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! gzip
+! bzip2
+! lzma
+! lzma -e
+! xz
+! xz -e
+|-
+| 1
+| 8.1s
+| 58.3s
+| ???
+| ???
+| ???
+| ???
+|-class="sortbottom"
+! style="width: 12em" |
+! gzip
+! bzip2
+! lzma
+! lzma -e
+! xz
+! xz -e
+|}
+== Decompression time ==
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! gzip
+! bzip2
+! lzma
+! lzma -e
+! xz
+! xz -e
+|-
+| 1
+| 3.5s
+| 15.5s
+| ???
+| ???
+| ???
+| ???
+|-class="sortbottom"
+! style="width: 12em" |
+! gzip
+! bzip2
+! lzma
+! lzma -e
+! xz
+! xz -e
+|}
+== Memory requirements on compression ==
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! gzip
+! bzip2
+! lzma
+! lzma -e
+! xz
+! xz -e
+|-
+| 1
+| 0.4MB
+| 1.1MB
+| ???
+| ???
+| ???
+| ???
+|-class="sortbottom"
+! style="width: 12em" |
+! gzip
+! bzip2
+! lzma
+! lzma -e
+! xz
+! xz -e
+|}
+== Memory requirements on decompression ==
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! gzip
+! bzip2
+! lzma
+! lzma -e
+! xz
+! xz -e
+|-
+| 1
+| 0.1MB
+| 0.3MB
 | ???
 | ???
 | ???
