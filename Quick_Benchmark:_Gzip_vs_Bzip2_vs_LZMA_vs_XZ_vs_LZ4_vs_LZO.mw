@@ -7,6 +7,7 @@ I have selected:
 Tests were run on a desktop:
 * Intel Core i5 CPU 750 at 2.67GHz
 * 8GB of DDR3 memory
+* tmpfs as ram disk is used
 * Linux kernel 3.3.2, gentoo amd64
 * CFLAGS: -pipe -O2 -g -floop-block -floop-interchange -fgraphite
 * bzip2-1.0.6-r3, xz-utils-5.0.3, gzip-1.4
