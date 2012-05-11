@@ -58,7 +58,7 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 | 79586568 (76MB)
 | 69029204 (66MB)
 | 165844264 (159M)
-| 168012430 (161M)
+| 166987891 (160M)
 |-
 | 5
 | 102328357 (98M)
@@ -100,6 +100,7 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 ! lz4
 ! lzop
 |}
+
 == Compression time ==
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
