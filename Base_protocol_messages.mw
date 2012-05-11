@@ -25,5 +25,7 @@
 = Details =
 == Client &rarr; Server with reply ==
 === 020001 ===
+At the connection, send the protocol supported, <span style="font-weight: bold">before all!</span><br />query type: <span style="color: #8040FF">020001</span>, query number: <span style="color: #0000FF">01</span>, <span style="font-style: italic"><span style="color: #40BF00">&quot;catchchallenger-0.0.0.1&quot;</span></span>
+
 == Client &rarr; Server without reply ==
 == Server &rarr; Client without reply ==
