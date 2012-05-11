@@ -75,8 +75,8 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 | 80197758 (77M)
 | 67276420 (65M)
 | 66868212 (64M)
-| 
-| 
+| 67294092 (65M)
+| 66852780 (64M)
 | -
 | 116205578 (111M)
 |-
@@ -159,8 +159,8 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 | 1m2s
 | 4m14s
 | 5m52s
-| 
-| 
+| 4m13s
+| 5m57s
 | -
 | 35s
 |-
@@ -242,8 +242,8 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 | 15s
 | 5.3s
 | 5.3s
-| 
-| 
+| 5.9s
+| 5.8s
 | -
 | 1.3s
 |-
