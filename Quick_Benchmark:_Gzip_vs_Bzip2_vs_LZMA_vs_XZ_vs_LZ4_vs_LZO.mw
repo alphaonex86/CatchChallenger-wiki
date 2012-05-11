@@ -1,7 +1,6 @@
 = Selected archives =
 I have selected:
 * Source of the kernel to test source compression
-* Binary application
 * Stream protocol with flush
 
 = Test conditions =
@@ -83,7 +82,7 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 |-
 | 9
 | 99740486 (96M)
-| 
+| 78963640 (76M)
 | 
 | 
 | 
@@ -166,7 +165,7 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 |-
 | 9
 | 33s
-| 
+| 1m3s
 | 
 | 
 | 
@@ -249,7 +248,7 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 |-
 | 9
 | 3s
-| 
+| 15s
 | 
 | 
 | 
@@ -313,7 +312,7 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 | 5
 | 0.4MB
 | 4.2MB
-| 
+| 93MB
 | 
 | 
 | 
@@ -332,7 +331,7 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 |-
 | 9
 | 0.4MB
-| 
+| 7.2MB
 | 
 | 
 | 
@@ -416,7 +415,7 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 |-
 | 9
 | 0.1MB
-| 
+| 3.4MB
 | 
 | 
 | 
