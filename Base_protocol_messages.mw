@@ -1,6 +1,6 @@
 = General =
 == Client &rarr; Server with reply ==
-* '''020001''' Protocol
+* '''[[Base_protocol_messages#020001|020001]]''' Protocol
 * '''020002''' Get first data and send the login
 * '''02000C''' Send datapack file list
 
@@ -21,3 +21,9 @@
 * '''C20008''' kicked/ban and reason
 * '''C20009''' Player number
 * '''C2000A''' Remove all other player on the map
+
+= Details =
+== Client &rarr; Server with reply ==
+=== 020001 ===
+== Client &rarr; Server without reply ==
+== Server &rarr; Client without reply ==
