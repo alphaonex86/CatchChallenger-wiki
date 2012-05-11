@@ -1,0 +1,23 @@
+= General =
+== Client &rarr; Server with reply ==
+* '''020001''' Protocol
+* '''020002''' Get first data and send the login
+* '''02000C''' Send datapack file list
+
+== Client &rarr; Server without reply ==
+* '''40''' Send position + direction '''''(Fast)'''''
+* '''41''' Reply to server query
+* '''420003''' Chat
+* '''42000A''' Add players info to watch
+* '''42000B''' Remove players info to watch
+
+== Server &rarr; Client without reply ==
+* '''C0''' Position + direction of other player '''''(Fast)'''''
+* '''C1''' Reply to client query
+* '''C20001''' Random seed list (with type to group by random seed list)
+* '''C20002''' update of the player info
+* '''C20003''' update file
+* '''C20005''' chat
+* '''C20008''' kicked/ban and reason
+* '''C20009''' Player number
+* '''C2000A''' Remove all other player on the map
