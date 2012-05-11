@@ -6,7 +6,17 @@ Firstly query type 8Bits to the first type and if needed 32Bits for the sub type
 = Cutting packet =
 The tpc/ip protocol split the packet into lot of small packet. Warning, you need recompose the query.
 
-= Order type =
+= Messages composition =
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+| Main code type
+| Sub code type (optional)
+| Packet size (for packet without fixed size)
+| Packet content
+|}
+
+{{note}}: Packet size with: XX if for <255 message size, 0000XXXX is for <64K size, 00000000XXXXXXXX if for the rest.
+
+= Messages type =
 [[Base protocol messages]]
 
 == Specific to catchchallenger ==
