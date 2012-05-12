@@ -1,5 +1,18 @@
 = General =
 == Client &rarr; Server with reply ==
+= Messages composition =
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Packet size
+! Data
+|-
+| style="background: #90ff90; color: black;" | 02
+| style="background: #ffcc00; color: black;" | 0001
+| {{Yes}}
+| [[Base_protocol_messages#020001|Protocol initialization]]
+|}
 * '''[[Base_protocol_messages#020001|020001]]''' Protocol
 * '''020002''' Get first data and send the login
 * '''02000C''' Send datapack file list
