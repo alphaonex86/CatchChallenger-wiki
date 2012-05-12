@@ -13,7 +13,6 @@
 | {{Yes}}
 | [[Base_protocol_messages#020001|Protocol initialization]]
 |}
-* '''[[Base_protocol_messages#020001|020001]]''' Protocol
 * '''020002''' Get first data and send the login
 * '''02000C''' Send datapack file list
 
@@ -39,6 +38,15 @@
 == Client &rarr; Server with reply ==
 === 020001 ===
 At the connection, send the protocol supported, <span style="font-weight: bold">before all!</span><br />query type: <span style="color: #8040FF">020001</span>, query number: <span style="color: #0000FF">01</span>, <span style="font-style: italic"><span style="color: #40BF00">&quot;catchchallenger-0.0.0.1&quot;</span></span>
+ <span style="color: #8040FF">020001</span><span style="color: #0000FF">01</span><span style="color: #FFBF00">00000022</span><span style="color: #40BF00">0070006f006b006500630072006100660074002d0030002e0030002e0030002e0031</span>
+
+
+Server -&gt; Client: reply to the query from the client <span style="color: #BF8000">C1</span> with id <span style="color: #0000FF">01</span>, <span style="color: #40BFFF">01</span> (is supported)
+ <span style="color: #BF8000">C1</span><span style="color: #0000FF">01</span><span style="color: #40BFFF">01</span>
+Server -&gt; Client: reply to the query from the client <span style="color: #BF8000">C1</span> with id <span style="color: #0000FF">01</span>,<span style="color: #40BFFF">02</span> (protocol not supported)
+ <span style="color: #BF8000">C1</span><span style="color: #0000FF">01</span><span style="color: #40BFFF">02</span>
+Server -&gt; Client: reply to the query from the client <span style="color: #BF8000">C1</span> with id <span style="color: #0000FF">01</span>,<span style="color: #40BFFF">03</span>, <span style="font-style: italic"><span style="color: #40BF00">&quot;Server full&quot;</span></span>
+ <span style="color: #BF8000">C1</span><span style="color: #0000FF">01</span><span style="color: #40BFFF">03</span><span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">00700072006f0074006f0063006f006c0020006e006f007400200073007500700070006f0072007400650064</span>
 
 == Client &rarr; Server without reply ==
 == Server &rarr; Client without reply ==
