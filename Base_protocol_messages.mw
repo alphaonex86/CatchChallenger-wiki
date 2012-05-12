@@ -162,8 +162,8 @@ Server -&gt; Client: reply to the query, reply list (<span style="color: #FF4000
 
 == Client &rarr; Server without reply ==
 === 40 ===
-Client -&gt; Server: query type: <span style="color: #8040FF">40</span>, previous moved unit: <span style="color: #0000FF">06</span>, direction: <span style="color: #FF4000">02</span>
- <span style="color: #8040FF">40</span><span style="color: #0000FF">06</span><span style="color: #FF4000">02</span>
+Client -&gt; Server: previous moved unit: <span style="color: #0000FF">06</span>, direction: <span style="color: #FF4000">02</span>
+ <span style="color: #0000FF">06</span><span style="color: #FF4000">02</span>
 direction def:
 * <span style="color: #FF4000">01</span> = look at top
 * <span style="color: #FF4000">02</span> = look at right
@@ -175,25 +175,26 @@ direction def:
 * <span style="color: #FF4000">08</span> = move at left
 === 41 ===
 === 420003 ===
-Client -&gt; Server: query type: <span style="color: #8040FF">420003</span>, chat type: <span style="color: #FF4000">02</span>, text: <span style="color: #40BF00">&quot;hello&quot;</span>
- <span style="color: #8040FF">420003</span><span style="color: #FF4000">02</span><span style="color: #FFBF00">0000000a</span><span style="color: #40BF00">00680065006c006c006f</span>
-Client -&gt; Server: query type: <span style="color: #8040FF">420003</span>, chat type: <span style="color: #FF4000">06</span>, text: <span style="color: #40BF00">&quot;hello&quot;</span>, player name: <span style="color: #40BF00">&quot;toto&quot;</span>
- <span style="color: #8040FF">420003</span><span style="color: #FF4000">06</span><span style="color: #FFBF00">0000000a</span><span style="color: #40BF00">00680065006c006c006f</span><span style="color: #FFBF00">00000008</span><span style="color: #40BF00">0074006f0074006f</span>
+Client -&gt; Server: chat type: <span style="color: #FF4000">02</span>, text: <span style="color: #40BF00">&quot;hello&quot;</span>
+ <span style="color: #FF4000">02</span><span style="color: #FFBF00">0000000a</span><span style="color: #40BF00">00680065006c006c006f</span>
+{{Note}}The server will not return sended string to minimize the bandwidth.
+
 Chat type:
 * <span style="color: #FF4000">02</span> = all (global)
 * <span style="color: #FF4000">03</span> = clan
 * <span style="color: #FF4000">06</span> = to player
 === 42000A ===
-Add players info to watch:<br />query type: <span style="color: #8040FF">42000A</span>, type player query: <span style="color: #FF4000">02</span>, number to player to watch: <span style="color: #FFBF00">0001</span><br />
+Add players info to watch:<br />
+type player query: <span style="color: #FF4000">02</span>, number to player to watch: <span style="color: #FFBF00">0001</span><br />
 * <span style="color: #BFBF40">00002152</span>
- <span style="color: #8040FF">42000A</span><span style="color: #FF4000">02</span><span style="color: #FFBF00">0001</span><span style="color: #BFBF40">00002152</span>
+ <span style="color: #FF4000">02</span><span style="color: #FFBF00">0001</span><span style="color: #BFBF40">00002152</span>
 type player query:
 * <span style="color: #FF0040">01</span> permanent
 * <span style="color: #FF0040">02</span> on demand
 === 42000B ===
-Remove players info to watch: query type: <span style="color: #8040FF">42000B</span>, number to player to watch: <span style="color: #FFBF00">0001</span>
+Remove players info to watch:<br />number to player to remove from watch: <span style="color: #FFBF00">0001</span>
 * <span style="color: #BFBF40">00002152</span>
- <span style="color: #8040FF">42000B</span><span style="color: #FFBF00">0001</span><span style="color: #BFBF40">00002152</span>
+ <span style="color: #FFBF00">0001</span><span style="color: #BFBF40">00002152</span>
 
 == Server &rarr; Client without reply ==
 
