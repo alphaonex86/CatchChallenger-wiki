@@ -10,7 +10,7 @@ The tpc/ip protocol split the packet into lot of small packet. Warning, you need
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 | style="background: #90ff90; color: black;" | Main code type
 | style="background: #ffcc00; color: black;" | Sub code type (optional)
-| style="background: #00E6FF; color: black;" | Packet size (for packet without fixed size)
+| style="background: #77eeFF; color: black;" | Packet size (for packet without fixed size)
 | Packet content
 |}
 
