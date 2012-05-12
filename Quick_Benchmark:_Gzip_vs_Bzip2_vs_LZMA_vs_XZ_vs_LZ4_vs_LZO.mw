@@ -444,3 +444,130 @@ Cli used for -1 compression:
 * time xz -e -1 linux-3.3.tar;du -ksh linux-3.3.tar*;ls -l linux-3.3.tar*;read PAUSe;time unxz linux-3.3.tar*
 * time /home/user/lz4-read-only/lz4demo64 -c0 linux-3.3.tar linux-3.3.tar.lz4;du -ksh linux-3.3.tar*;ls -l linux-3.3.tar*;read PAUSe;time /home/user/lz4-read-only/lz4demo64 -d linux-3.3.tar.lz4 linux-3.3.tar;rm linux-3.3.tar.*
 * time lzop -1 linux-3.3.tar;rm linux-3.3.tar;du -ksh linux-3.3.tar*;ls -l linux-3.3.tar*;read PAUSe;time lzop -d linux-3.3.tar*;rm linux-3.3.tar.*
+= Stream test =
+
+== Time to compress ==
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! gzip
+! zlib
+! lz4
+! lz4hc
+! none
+|-
+| 1 
+| 376
+| 368
+| 
+|
+| 10
+|-
+| 2
+| 371
+| 391
+| 
+|
+|
+|-
+| 3
+| 378
+| 362
+| 
+|
+|
+|-
+| 5
+| 390
+| 392
+| 
+|
+|
+|-
+| 7
+| 389
+| 387
+| 
+|
+|
+|-
+| 9
+| 393
+| 384
+| 
+|
+|
+|-class="sortbottom"
+! style="width: 12em" |
+! gzip
+! zlib
+! lz4
+! lz4hc
+! none
+|}
+
+== Time to decompress ==
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! gzip
+! zlib
+! lz4
+! lz4hc
+! none
+|-
+| 1
+| 1797
+| 1778
+| 
+| 
+| 9
+|-
+| 2
+| 1841
+| 1831
+| 
+|
+|
+|-
+| 3
+| 1771
+| 1780
+| 
+|
+|
+|-
+| 5
+| 1806
+| 1960
+| 
+|
+|
+|-
+| 7
+| 1861
+| 1851
+| 
+|
+|
+|-
+| 9
+| 1835
+| 1806
+| 
+|
+|
+|-class="sortbottom"
+! style="width: 12em" |
+! gzip
+! zlib
+! lz4
+! lz4hc
+! none
+|}
+Messured with:
+ timespec tstart,tstop;
+ clock_gettime(CLOCK_REALTIME, &tstart);
+ //compression/decompression
+ clock_gettime(CLOCK_REALTIME, &tstop);
+ compressionTime+=((quint64)tstop.tv_sec * 1000000LL + (quint64)tstop.tv_nsec / 1000LL)-((quint64)tstart.tv_sec * 1000000LL + (quint64)tstart.tv_nsec / 1000LL);
