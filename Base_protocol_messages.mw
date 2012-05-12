@@ -274,7 +274,13 @@ Chat type:
 * <span style="color: #FF4000">08</span> = system importance: high
 
 === C20008 ===
-Server -&gt; Client: query type: <span style="color: #8040FF">C20008</span>, type: <span style="color: #FF4000">02</span>, <span style="color: #40BF00">&quot;toto&quot;</span><br /><blockquote class="uncited"><div><span style="color: #8040FF">C20008</span><span style="color: #FF4000">02</span><span style="color: #FFBF00">00000010</span><span style="color: #40BF00">006d006100700020006e0061006d0065</span></div></blockquote><br /><br />orientation def:<br /><ul><li><span style="color: #FF4000">01</span> = kicked</li><li><span style="color: #FF4000">02</span> = ban</li><li><span style="color: #FF4000">03</span> = disconnected</li></ul>
+Server -&gt; Client: query type: <span style="color: #8040FF">C20008</span>, type: <span style="color: #FF4000">02</span>, <span style="color: #40BF00">&quot;toto&quot;</span>
+<span style="color: #8040FF">C20008</span><span style="color: #FF4000">02</span><span style="color: #FFBF00">00000010</span><span style="color: #40BF00">006d006100700020006e0061006d0065</span>
+
+orientation def:
+* <span style="color: #FF4000">01</span> = kicked
+* <span style="color: #FF4000">02</span> = ban
+* <span style="color: #FF4000">03</span> = disconnected
 
 === C20009 ===
 Server -&gt; Client: query type: <span style="color: #8040FF">C20009</span>, current: <span style="color: #FF4000">0002</span>, max: <span style="color: #40BF00">0064</span> (then 100 in decimal)<br /><blockquote class="uncited"><div><span style="color: #8040FF">C20009</span><span style="color: #FF4000">0002</span><span style="color: #40BF00">0064</span></div></blockquote>
