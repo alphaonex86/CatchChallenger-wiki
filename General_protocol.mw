@@ -14,7 +14,9 @@ The tpc/ip protocol split the packet into lot of small packet. Warning, you need
 | Packet content
 |}
 
-{{note}}: Packet size with: XX if for <255 message size, 0000XXXX is for <64K size, 00000000XXXXXXXX if for the rest.
+{{note}}: The packet size definition can varies:
+Mode small: Packet size with: XX if for <255 message size, 0000XXXX is for <64K size, 00000000XXXXXXXX if for the rest. (Interesting for raw protocol for 4x packet < 255Bytes than <64BKB)
+Mode big: Packet size with: 00XX if for <255 message size, XXXX is for <64K size, 00000000XXXXXXXX if for the rest. (Interesting for raw protocol for 4x packet < 255Bytes than <64BKB)
 
 = Messages type =
 [[Base protocol messages]]
