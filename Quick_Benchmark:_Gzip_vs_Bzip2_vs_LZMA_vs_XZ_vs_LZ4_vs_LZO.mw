@@ -593,3 +593,4 @@ Messured with:
 ! lz4hc
 ! none
 |}
+The socket is always used as full duplex, then it's compression + decompression memory.
