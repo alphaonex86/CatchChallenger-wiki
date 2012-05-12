@@ -283,7 +283,8 @@ orientation def:
 * <span style="color: #FF4000">03</span> = disconnected
 
 === C20009 ===
-Server -&gt; Client: query type: <span style="color: #8040FF">C20009</span>, current: <span style="color: #FF4000">0002</span>, max: <span style="color: #40BF00">0064</span> (then 100 in decimal)<br /><blockquote class="uncited"><div><span style="color: #8040FF">C20009</span><span style="color: #FF4000">0002</span><span style="color: #40BF00">0064</span></div></blockquote>
+Server -&gt; Client: query type: <span style="color: #8040FF">C20009</span>, current: <span style="color: #FF4000">0002</span>, max: <span style="color: #40BF00">0064</span> (then 100 in decimal)
+ <span style="color: #8040FF">C20009</span><span style="color: #FF4000">0002</span><span style="color: #40BF00">0064</span>
 
 === C2000A ===
 Remove all other player on the map: (Better than remove each id)<br />query type: <span style="color: #8040FF">C2000A</span>
