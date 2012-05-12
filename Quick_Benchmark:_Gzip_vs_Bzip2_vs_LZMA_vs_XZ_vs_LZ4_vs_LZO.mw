@@ -13,7 +13,7 @@ Tests were run on a desktop:
 * bzip2-1.0.6-r3, xz-utils-5.0.3, gzip-1.4
 Only normal mode will be tested firstly.
 
-= The test results =
+= The file test results =
 Note: The first column with numbers 1..9 indicates the compression setting passed to gzip, bzip2 and lzmash (e.g. "gzip -9").
 
 Tarball mode from linux-3.3, original size: 466083840 (445M)
