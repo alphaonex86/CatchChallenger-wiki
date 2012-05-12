@@ -21,6 +21,15 @@ Choose do by server at the [[Base_protocol_messages#020001|protocol initializati
 
 The size is not calculated on variable into message, because it will be call lot of, to recompose the message, then big lost of performance.
 
+== Compression with size header needed ==
+In case of compression with size header needed (lz4), the format is:
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+| style="background: #77eeFF; color: black;" | Packet size
+| style="background: #90ff90; color: black;" | Main code type
+| style="background: #ffcc00; color: black;" | Sub code type (optional)
+| Packet content
+|}
+
 = Messages type =
 [[Base protocol messages]]
 
