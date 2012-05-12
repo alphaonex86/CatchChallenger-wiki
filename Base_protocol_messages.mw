@@ -287,4 +287,4 @@ Server -&gt; Client: query type: <span style="color: #8040FF">C20009</span>, cur
  <span style="color: #8040FF">C20009</span><span style="color: #FF4000">0002</span><span style="color: #40BF00">0064</span>
 
 === C2000A ===
-Remove all other player on the map: (Better than remove each id)<br />query type: <span style="color: #8040FF">C2000A</span>
+Remove all other player on the map: (Better than remove each id) query type: <span style="color: #8040FF">C2000A</span>
