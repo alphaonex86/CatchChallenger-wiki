@@ -37,6 +37,8 @@
 = Details =
 == Client &rarr; Server with reply ==
 === 020001 ===
+{{Note}}This first packet is send as raw + big (see [[General_protocol#Messages_composition]])
+
 At the connection, send the protocol supported, <span style="font-weight: bold">before all!</span><br />query type: <span style="color: #8040FF">020001</span>, query number: <span style="color: #0000FF">01</span>, <span style="font-style: italic"><span style="color: #40BF00">&quot;catchchallenger-0.0.0.1&quot;</span></span>
  <span style="color: #8040FF">020001</span><span style="color: #0000FF">01</span><span style="color: #FFBF00">00000022</span><span style="color: #40BF00">0070006f006b006500630072006100660074002d0030002e0030002e0030002e0031</span>
 
@@ -44,6 +46,7 @@ At the connection, send the protocol supported, <span style="font-weight: bold">
 Server -&gt; Client: reply to the query from the client <span style="color: #BF8000">C1</span> with id <span style="color: #0000FF">01</span>, <span style="color: #40BFFF">01</span> (is supported), compression used <span style="color: #40BF00">04</span> (gzip), size format <span style="color: #FF0000">01</span> (small: see [[General_protocol#Messages_composition]])
  <span style="color: #BF8000">C1</span><span style="color: #0000FF">01</span><span style="color: #40BFFF">01</span><span style="color: #40BF00">04</span><span style="color: #FF0000">01</span>
 {{Note}}Compression used:
+* <span style="color: #40BF00">00</span> raw
 * <span style="color: #40BF00">01</span> lz4
 * <span style="color: #40BF00">02</span> lz4hc
 * <span style="color: #40BF00">03</span> zlib
@@ -53,6 +56,8 @@ Server -&gt; Client: reply to the query from the client <span style="color: #BF8
  <span style="color: #BF8000">C1</span><span style="color: #0000FF">01</span><span style="color: #40BFFF">02</span>
 Server -&gt; Client: reply to the query from the client <span style="color: #BF8000">C1</span> with id <span style="color: #0000FF">01</span>,<span style="color: #40BFFF">03</span>, <span style="font-style: italic"><span style="color: #40BF00">&quot;Server full&quot;</span></span>
  <span style="color: #BF8000">C1</span><span style="color: #0000FF">01</span><span style="color: #40BFFF">03</span><span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">00700072006f0074006f0063006f006c0020006e006f007400200073007500700070006f0072007400650064</span>
+
+{{Note}}After this, all communication is into the packet size + compression mode send by the protocol.
 
 == Client &rarr; Server without reply ==
 == Server &rarr; Client without reply ==
