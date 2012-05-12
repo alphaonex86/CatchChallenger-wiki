@@ -19,6 +19,8 @@ The tpc/ip protocol split the packet into lot of small packet. Warning, you need
 * Mode big: Packet size with: 00XX if for <255 message size, XXXX is for <64K size, 00000000XXXXXXXX if for the rest. (Interesting for raw protocol for 4x packet < 255Bytes than <64BKB)
 Choose do by server at the [[Base_protocol_messages#020001|protocol initialization]].
 
+The size is not calculated on variable into message, because it will be call lot of, to recompose the message, then big lost of performance.
+
 = Messages type =
 [[Base protocol messages]]
 
