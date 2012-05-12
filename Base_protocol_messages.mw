@@ -281,7 +281,7 @@ Chat type:
 
 === C20008 ===
 Server -&gt; Client: type: <span style="color: #FF4000">02</span>, <span style="color: #40BF00">&quot;toto&quot;</span>
-<span style="color: #FF4000">02</span><span style="color: #FFBF00">00000010</span><span style="color: #40BF00">006d006100700020006e0061006d0065</span>
+ <span style="color: #FF4000">02</span><span style="color: #FFBF00">00000010</span><span style="color: #40BF00">006d006100700020006e0061006d0065</span>
 
 orientation def:
 * <span style="color: #FF4000">01</span> = kicked
