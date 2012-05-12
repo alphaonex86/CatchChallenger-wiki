@@ -15,8 +15,9 @@ The tpc/ip protocol split the packet into lot of small packet. Warning, you need
 |}
 
 {{note}}: The packet size definition can varies:
-Mode small: Packet size with: XX if for <255 message size, 0000XXXX is for <64K size, 00000000XXXXXXXX if for the rest. (Interesting for raw protocol for 4x packet < 255Bytes than <64BKB)
-Mode big: Packet size with: 00XX if for <255 message size, XXXX is for <64K size, 00000000XXXXXXXX if for the rest. (Interesting for raw protocol for 4x packet < 255Bytes than <64BKB)
+* Mode small: Packet size with: XX if for <255 message size, 0000XXXX is for <64K size, 00000000XXXXXXXX if for the rest. (Interesting for raw protocol for 4x packet < 255Bytes than <64BKB)
+* Mode big: Packet size with: 00XX if for <255 message size, XXXX is for <64K size, 00000000XXXXXXXX if for the rest. (Interesting for raw protocol for 4x packet < 255Bytes than <64BKB)
+Choose do by server at the protocol initialization.
 
 = Messages type =
 [[Base protocol messages]]
@@ -55,6 +56,7 @@ The compression can be:
 * Gzip: like Zlib but better ratio, and use more cpu
 * lz4 by [[Lz4CompressionTcpSocket for Qt]]: Have very small cpu overhead, but worse compression ratio than zlib/gzip, lz4hc use few more cpu but remain with worse compression ratio than zlib/gzip.
 * None: No compression overhead, but some query can use lot of bandwidth
+Choose do by server at the protocol initialization.
 
 It's compression for QTcpSocket/QSslSocket, and this compression can be hot added/removed. This class are adapted to streaming, that's: that's mean infinity volume, random data append, data re-composition, the data send at the compression is directly compressed and send (no wait more data to send). It's perfect to real time communication.
 
