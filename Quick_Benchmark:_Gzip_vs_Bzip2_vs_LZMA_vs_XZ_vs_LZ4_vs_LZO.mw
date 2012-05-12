@@ -571,3 +571,25 @@ Messured with:
  //compression/decompression
  clock_gettime(CLOCK_REALTIME, &tstop);
  compressionTime+=((quint64)tstop.tv_sec * 1000000LL + (quint64)tstop.tv_nsec / 1000LL)-((quint64)tstart.tv_sec * 1000000LL + (quint64)tstart.tv_nsec / 1000LL);
+
+== Memory used ==
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! gzip
+! zlib
+! lz4
+! lz4hc
+! none
+|-
+| 0.5MB
+| 0.5MB
+| 0MB
+| 0MB
+| 0MB
+|-class="sortbottom"
+! gzip
+! zlib
+! lz4
+! lz4hc
+! none
+|}
