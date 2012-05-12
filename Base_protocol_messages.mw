@@ -41,8 +41,14 @@ At the connection, send the protocol supported, <span style="font-weight: bold">
  <span style="color: #8040FF">020001</span><span style="color: #0000FF">01</span><span style="color: #FFBF00">00000022</span><span style="color: #40BF00">0070006f006b006500630072006100660074002d0030002e0030002e0030002e0031</span>
 
 
-Server -&gt; Client: reply to the query from the client <span style="color: #BF8000">C1</span> with id <span style="color: #0000FF">01</span>, <span style="color: #40BFFF">01</span> (is supported)
- <span style="color: #BF8000">C1</span><span style="color: #0000FF">01</span><span style="color: #40BFFF">01</span>
+Server -&gt; Client: reply to the query from the client <span style="color: #BF8000">C1</span> with id <span style="color: #0000FF">01</span>, <span style="color: #40BFFF">01</span> (is supported), compression used <span style="color: #40BF00">04</span> (gzip), size format <span style="color: #FF0000">01</span> (small: see [[General_protocol#Messages_composition]])
+ <span style="color: #BF8000">C1</span><span style="color: #0000FF">01</span><span style="color: #40BFFF">01</span><span style="color: #40BF00">04</span><span style="color: #FF0000">01</span>
+{{Note}}Compression used:
+* <span style="color: #40BF00">01</span> lz4
+* <span style="color: #40BF00">02</span> lz4hc
+* <span style="color: #40BF00">03</span> zlib
+* <span style="color: #40BF00">04</span> gzip
+
 Server -&gt; Client: reply to the query from the client <span style="color: #BF8000">C1</span> with id <span style="color: #0000FF">01</span>,<span style="color: #40BFFF">02</span> (protocol not supported)
  <span style="color: #BF8000">C1</span><span style="color: #0000FF">01</span><span style="color: #40BFFF">02</span>
 Server -&gt; Client: reply to the query from the client <span style="color: #BF8000">C1</span> with id <span style="color: #0000FF">01</span>,<span style="color: #40BFFF">03</span>, <span style="font-style: italic"><span style="color: #40BF00">&quot;Server full&quot;</span></span>
