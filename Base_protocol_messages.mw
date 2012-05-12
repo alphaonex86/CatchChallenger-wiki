@@ -147,15 +147,15 @@ Server -&gt; Client: reply to the query, <span style="color: #FF4000">02</span> 
 After the server will send tp command to set the first position
 
 === 02000C ===
-Send file name and md5 of the file requested:<br />query type: <span style="color: #8040FF">02000C</span>, query number: <span style="color: #0000FF">02</span>, number to file: <span style="color: #FF4000">00000003</span>, after is file and their mtime timestamps (second since 1/1/1970 in 64Bits):
+Send file name and md5 of the file requested:<br />number to file: <span style="color: #FF4000">00000003</span>, after is file and their mtime timestamps (second since 1/1/1970 in 64Bits):
 * <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span> <span style="color: #FF4000">4ED3C1D3</span>
 * <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span> <span style="color: #FF4000">4ED3C1D3</span>
 * <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span> <span style="color: #FF4000">4ED3C1D3</span>
- <span style="color: #8040FF">02000C</span><span style="color: #0000FF">02</span><span style="color: #FF4000">00000003</span>
+ <span style="color: #FF4000">00000003</span>
  <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span><span style="color: #FF4000">4ED3C1D3</span>
  <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span><span style="color: #FF4000">4ED3C1D3</span>
  <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span><span style="color: #FF4000">4ED3C1D3</span>
-Server -&gt; Client: reply to the query from the client <span style="color: #BF8000">C1</span> with id <span style="color: #0000FF">02</span>, reply list (01 to found, 02 to delete):
+Server -&gt; Client: reply to the query, reply list (<span style="color: #FF4000">01</span> to found, <span style="color: #FF4000">02</span> to delete):
 * <span style="color: #FF4000">01</span>
 * <span style="color: #FF4000">02</span>
 * <span style="color: #FF4000">01</span>
