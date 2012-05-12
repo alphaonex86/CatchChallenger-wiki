@@ -138,12 +138,12 @@ Server -&gt; Client: reply to the query from the client <span style="color: #40B
 {{Note}}After this, all communication is into the packet size + compression mode send by the protocol.
 
 === 020002 ===
-Get the first position and direction, and send login clear and pass sha1:<br />query type: <span style="color: #8040FF">020002</span>, query number: <span style="color: #0000FF">03</span>, <span style="color: #40BF00">&quot;toto&quot;</span>, <span style="color: #FF0040">da39a3ee5e6b4b0d3255bfef95601890afd80709</span><br />
- <span style="color: #8040FF">020002</span><span style="color: #0000FF">03</span><span style="color: #FFBF00">00000008</span><span style="color: #40BF00">0074006f0074006f</span><span style="color: #FF0040">da39a3ee5e6b4b0d3255bfef95601890afd80709</span>
-Server -&gt; Client: reply to the query from the client <span style="color: #BF8000">C1</span> with id <span style="color: #0000FF">03</span>, <span style="color: #FF4000">01</span> (something is wrong), <span style="color: #40BF00">&quot;bad login&quot;</span> (or other server error)
- <span style="color: #BF8000">C1</span><span style="color: #0000FF">03</span><span style="color: #FF4000">01</span><span style="color: #FFBF00">00000012</span><span style="color: #40BF00">0062006100640020006c006f00670069006e</span>
-Server -&gt; Client: reply to the query from the client <span style="color: #BF8000">C1</span> with id <span style="color: #0000FF">03</span>, <span style="color: #FF4000">02</span> (all is good), player id: <span style="color: #BFBF40">00002152</span> (see [[Base_protocol_messages#C20002|update of the player info]] to have the full info)
- <span style="color: #BF8000">C1</span><span style="color: #0000FF">03</span><span style="color: #FF4000">02</span><span style="color: #BFBF40">00002152</span>
+Get the first position and direction, and send login clear and pass sha1:<br /><span style="color: #40BF00">&quot;toto&quot;</span>, <span style="color: #FF0040">da39a3ee5e6b4b0d3255bfef95601890afd80709</span><br />
+ <span style="color: #FFBF00">00000008</span><span style="color: #40BF00">0074006f0074006f</span><span style="color: #FF0040">da39a3ee5e6b4b0d3255bfef95601890afd80709</span>
+Server -&gt; Client: reply to the query, <span style="color: #FF4000">01</span> (something is wrong), <span style="color: #40BF00">&quot;bad login&quot;</span> (or other server error)
+ <span style="color: #FF4000">01</span><span style="color: #FFBF00">00000012</span><span style="color: #40BF00">0062006100640020006c006f00670069006e</span>
+Server -&gt; Client: reply to the query, <span style="color: #FF4000">02</span> (all is good), player id: <span style="color: #BFBF40">00002152</span> (see [[Base_protocol_messages#C20002|update of the player info]] to have the full info)
+ <span style="color: #FF4000">02</span><span style="color: #BFBF40">00002152</span>
 After the server will send tp command to set the first position
 
 === 02000C ===
