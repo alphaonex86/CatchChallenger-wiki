@@ -596,7 +596,8 @@ Messured with:
 The socket is always used as full duplex, then it's compression + decompression memory.
 
 == Compression ratio ==
-It's transferred size/raw size (lower is better):
+It's transferred size/raw size (lower is better)
+== With the benchmark application ==
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
 ! gzip
