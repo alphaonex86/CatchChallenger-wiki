@@ -597,7 +597,7 @@ The socket is always used as full duplex, then it's compression + decompression 
 
 == Compression ratio ==
 It's transferred size/raw size (lower is better)
-== With the benchmark application ==
+=== With the benchmark application ===
 Uploaded at: https://github.com/alphaonex86/debug-devel/tree/master/QTcpCompressionBenchmark
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
@@ -619,3 +619,4 @@ Uploaded at: https://github.com/alphaonex86/debug-devel/tree/master/QTcpCompress
 ! lz4hc
 ! none
 |}
+The most over-head of small packet (3Bytes) is drop by high compression with zlib/gzip for the big packet.
