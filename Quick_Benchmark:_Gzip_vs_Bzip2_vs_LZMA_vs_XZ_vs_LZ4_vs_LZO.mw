@@ -594,3 +594,26 @@ Messured with:
 ! none
 |}
 The socket is always used as full duplex, then it's compression + decompression memory.
+
+== Compression ratio ==
+It's transferred size/raw size (lower is better):
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! gzip
+! zlib
+! lz4
+! lz4hc
+! none
+|-
+| 0.99
+| 0.97
+| 1.59
+| 1.59
+| 1
+|-class="sortbottom"
+! gzip
+! zlib
+! lz4
+! lz4hc
+! none
+|}
