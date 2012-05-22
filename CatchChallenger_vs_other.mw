@@ -127,6 +127,10 @@
 | CatchChallenger
 | {{Yes}}
 | {{Yes}}
+|-
+| rathena
+| {{Partial}}
+| {{No}}
 |-class="sortbottom"
 ! style="width: 12em" |
 ! Thread to isolate the slow code
