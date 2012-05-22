@@ -51,6 +51,16 @@
 | {{Partial}}
 | File
 | Mysql
+|-
+| rathena
+| {{Free}}
+| GPL3
+| {{Yes}}
+| {{No}}
+| C
+| {{Partial}}
+| File
+| Mysql
 |-class="sortbottom"
 ! style="width: 12em" |
 ! Cost (USD)
