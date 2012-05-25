@@ -17,7 +17,7 @@
 | GPL3
 | {{Yes}}
 | {{Yes}}
-| Qt
+| C++/Qt
 | {{Yes}}
 | File
 | MySQL/Postgresql
@@ -224,7 +224,7 @@
 | GPL3
 | {{Yes}}
 | {{Yes}}
-| Qt/QML
+| C++/Qt/QML
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
