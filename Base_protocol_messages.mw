@@ -104,12 +104,12 @@
 | style="background: #90ff90; color: black;" | C3
 | 
 | {{No}}
-| [[Base_protocol_messages#C20009|Player number]]
+| [[Base_protocol_messages#C3|Player number]]
 |-
 | style="background: #90ff90; color: black;" | C4
 | 
 | {{No}}
-| [[Base_protocol_messages#C2000A|Remove all other player on the map]]
+| [[Base_protocol_messages#C4|Remove all other player on the map]]
 |}
 
 = Details =
