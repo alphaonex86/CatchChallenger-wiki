@@ -1,5 +1,8 @@
 = Hardware =
 You can host 200 player with simple dual core and 1GB of memory. Less than 20 should work everywhere (mobile device, tablet, computer older up to 15 years old). You can tune at compilation and runtime some options. See software part.
+
+* Arm supported, without FP (floating number)
+
 = Software =
 * You need Qt + Qt mysql database (under Windows mysql*.lib and qt plugin).
 * Mysql database, can be slow, the server have not important slowdown when mysql or file access is slow.
