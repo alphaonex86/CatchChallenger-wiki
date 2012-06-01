@@ -1,6 +1,5 @@
 = General =
 == Client &rarr; Server with reply ==
-= Messages composition =
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
 ! Main code type
@@ -39,7 +38,7 @@
 |-
 | style="background: #90ff90; color: black;" | 41
 | 
-| {{Yes}}
+| Depands
 | [[Base_protocol_messages#41|Reply to server query]]
 |-
 | style="background: #90ff90; color: black;" | 42
@@ -73,7 +72,7 @@
 |-
 | style="background: #90ff90; color: black;" | C1
 | 
-| {{Yes}}
+| Depands
 | [[Base_protocol_messages#C1|Reply to client query]]
 |-
 | style="background: #90ff90; color: black;" | C2
