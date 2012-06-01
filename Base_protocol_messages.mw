@@ -34,7 +34,7 @@
 |-
 | style="background: #90ff90; color: black;" | 40
 | 
-| {{No}}
+| {{Yes}}
 | [[Base_protocol_messages#40|Send position + direction]] '''''(Fast)'''''
 |-
 | style="background: #90ff90; color: black;" | 41
