@@ -101,13 +101,13 @@
 | {{Yes}}
 | [[Base_protocol_messages#C20008|kicked/ban and reason]]
 |-
-| style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 0009
+| style="background: #90ff90; color: black;" | C3
+| 
 | {{No}}
 | [[Base_protocol_messages#C20009|Player number]]
 |-
-| style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 000A
+| style="background: #90ff90; color: black;" | C4
+| 
 | {{No}}
 | [[Base_protocol_messages#C2000A|Remove all other player on the map]]
 |}
