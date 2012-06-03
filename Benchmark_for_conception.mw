@@ -1,0 +1,26 @@
+= Connection system =
+== Connection by seconds ==
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Thread: 1, previous connection: 10000
+! Thread: 8, previous connection: 10000
+! Thread: 64, previous connection: 10000
+! Thread: 64, previous connection: 1000
+! Thread: 64, previous connection: 100
+|-
+| Qt4
+| 526316
+| 526316
+| 526316
+| 500000
+| 526316
+|-
+| Qt5
+| 476190
+| 500000
+| 500000
+| 500000
+| 500000
+|}
+= Messages system =
