@@ -1,5 +1,6 @@
 = Connection system =
 == Connection by seconds ==
+Greater is better
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
 ! style="width: 12em" |
@@ -23,4 +24,108 @@
 | 500000
 | 500000
 |}
-= Messages system =
+== Time to disconnect ==
+Lower is better
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Thread: 1, previous connection: 10000
+! Thread: 8, previous connection: 10000
+! Thread: 64, previous connection: 10000
+! Thread: 64, previous connection: 1000
+! Thread: 64, previous connection: 100
+|-
+| Qt4
+| 1.35
+| 1.375
+| 1.369
+| 0.888
+| 0.817
+|-
+| Qt5
+| 1.469
+| 1.495
+| 1.51
+| 0.993
+| 0.933
+|}
+
+= Messages =
+The signals/slots are connected by: Qt::QueuedConnection like for threaded usage.
+== Messages send ==
+Greater is better
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Thread: 1, previous connection: 10000
+! Thread: 8, previous connection: 10000
+! Thread: 64, previous connection: 10000
+! Thread: 64, previous connection: 1000
+! Thread: 64, previous connection: 100
+|-
+| Qt4
+| 169870
+| 171612
+| 172446
+| 175223
+| 174128
+|-
+| Qt5
+| 275285
+| 279835
+| 277826
+| 277117
+| 274924
+|}
+Here we can see '''+60% of performance''' when we use Qt5.
+== Cpu usage ==
+The value is in ms, lower is better
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Thread: 1, previous connection: 10000
+! Thread: 8, previous connection: 10000
+! Thread: 64, previous connection: 10000
+! Thread: 64, previous connection: 1000
+! Thread: 64, previous connection: 100
+|-
+| Qt4
+| 1050
+| 1030
+| 910
+| 810
+| 970
+|-
+| Qt5
+| 910
+| 830
+| 810
+| 870
+| 880
+|}
+== System cpu usage ==
+The value is in ms, lower is better
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Thread: 1, previous connection: 10000
+! Thread: 8, previous connection: 10000
+! Thread: 64, previous connection: 10000
+! Thread: 64, previous connection: 1000
+! Thread: 64, previous connection: 100
+|-
+| Qt4
+| 280
+| 250
+| 300
+| 350
+| 320
+|-
+| Qt5
+| 200
+| 260
+| 270
+| 230
+| 210
+|}
+Qt5 seam have performance, but due to fluctuation of the benchmark, is better of not trust on it.
