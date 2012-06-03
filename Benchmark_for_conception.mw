@@ -79,13 +79,14 @@ Greater is better
 | 174128
 |-
 | Qt5
-| 275285
-| 279835
-| 277826
-| 277117
-| 274924
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 275285
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 279835
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 277826
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 277117
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 274924
 |}
 Here we can see '''+60% of performance''' when we use Qt5.
+
 == Cpu usage ==
 The value is in ms, lower is better
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
