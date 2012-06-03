@@ -25,7 +25,7 @@ Greater is better
 | 500000
 |}
 == Time to disconnect ==
-Lower is better
+Lower is better, the time is in second.
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
 ! style="width: 12em" |
@@ -42,8 +42,8 @@ Lower is better
 | 1.35
 | 1.375
 | 1.369
-| '''11.6'''
-| '''103'''
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | '''11.6'''
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | '''103'''
 | 0.888
 | 0.817
 |-
@@ -51,12 +51,12 @@ Lower is better
 | 1.469
 | 1.495
 | 1.51
-| '''12.5'''
-| '''117'''
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | '''12.5'''
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | '''117'''
 | 0.993
 | 0.933
 |}
-Is this case with catchchallenger with just 1000 client (each client need ~ 1000 connection inter-thread)
+Is this case with catchchallenger with just 1000 client (each client need ~ 1000 connection inter-thread), your server is out, it use 117s to disconnect a client (and potential free during this time).
 
 = Messages =
 The signals/slots are connected by: Qt::QueuedConnection like for threaded usage.
