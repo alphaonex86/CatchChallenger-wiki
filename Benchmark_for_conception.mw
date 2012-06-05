@@ -104,7 +104,7 @@ Lower is better, the time is in second. this->disconnect();
 | 0.583
 | style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0
 |}
-Is this case with catchchallenger with just 1000 client (each client need ~ 1000 connection inter-thread), your server is out, it use 117s to disconnect a client (and potential free during this time).
+Is this case with catchchallenger with just 1000 client (each client need ~ 1000 connection inter-thread), your server is out, it use 117s to disconnect a client (and potential free during this time). Not depands of number of signals/slots defined into the class with Qt5.
 
 = Messages =
 The signals/slots are connected by: Qt::QueuedConnection like for threaded usage.
