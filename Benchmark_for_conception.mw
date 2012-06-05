@@ -97,7 +97,7 @@ Lower is better, the time is in second. this->disconnect();
 ! style="width: 12em" |
 ! Where 10000000 connections already setup
 ! Where 30000000 connections already setup
-! 1000000 connections for other objects
+! 10000000 connections for other objects
 |-
 | Qt5 (new syntax)
 | 0.205
