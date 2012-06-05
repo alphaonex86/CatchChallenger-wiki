@@ -10,12 +10,19 @@ Greater is better
 ! Thread: 64, previous connection: 1000
 ! Thread: 64, previous connection: 100
 |-
-| Qt4
+| Qt4 with 2 slots + 2 signals
 | 526316
 | 526316
 | 526316
 | 500000
 | 526316
+|-
+| Qt4 with 1000 slots + 1000 signals
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 31645
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 31645
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 31545
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 31746
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 31446
 |-
 | Qt5 (old syntax)
 | 476190
@@ -24,13 +31,21 @@ Greater is better
 | 500000
 | 500000
 |-
-| Qt5 (new syntax)
+| Qt5 (new syntax) with 2 slots + 2 signals
+| 909091
+| 909091
+| 1000000
+| 1000000
+| 909091
+|-
+| Qt5 (new syntax) with 1000 slots + 1000 signals
 | 909091
 | 909091
 | 1000000
 | 1000000
 | 909091
 |}
+
 == Time to disconnect ==
 === With arguments ===
 Lower is better, the time is in second. Try disconnect(sender,SIGNAL(),receiver,SLOT());
