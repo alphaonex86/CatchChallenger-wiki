@@ -32,7 +32,8 @@ Greater is better
 | 909091
 |}
 == Time to disconnect ==
-Lower is better, the time is in second.
+=== With arguments ===
+Lower is better, the time is in second. Try disconnect(sender,SIGNAL(),receiver,SLOT());
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
 ! style="width: 12em" |
@@ -71,6 +72,22 @@ Lower is better, the time is in second.
 | style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | '''212'''
 | 0.993
 | 0.93
+|}
+Is this case with catchchallenger with just 1000 client (each client need ~ 1000 connection inter-thread), your server is out, it use 117s to disconnect a client (and potential free during this time).
+
+=== Without arguments ===
+Lower is better, the time is in second. this->disconnect();
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Where 100000 connections already setup
+! Where 1000000 connections already setup
+! 1000000 connections for other objects
+|-
+| Qt5 (new syntax)
+| 0.122
+| 1.92
+| 0
 |}
 Is this case with catchchallenger with just 1000 client (each client need ~ 1000 connection inter-thread), your server is out, it use 117s to disconnect a client (and potential free during this time).
 
