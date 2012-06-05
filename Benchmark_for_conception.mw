@@ -32,11 +32,11 @@ Greater is better
 | 500000
 |-
 | Qt5 (new syntax) with 2 slots + 2 signals
-| 909091
-| 909091
-| 1000000
-| 1000000
-| 909091
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 909091
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 909091
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1000000
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1000000
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 909091
 |-
 | Qt5 (new syntax) with 1000 slots + 1000 signals
 | style="background:#FFD4D4; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 500000
