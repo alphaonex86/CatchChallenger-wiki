@@ -133,7 +133,7 @@ Greater is better
 | style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 277117
 | style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 274924
 |}
-Here we can see '''+60% of performance''' when we use Qt5.
+Here we can see '''+60% of performance''' when we use Qt5. Any change in any version of Qt if have 2 or 1000 signals/slots declared on the class.
 
 == Cpu usage ==
 The value is in ms, lower is better
