@@ -26,7 +26,7 @@ The size is not calculated on variable into message, because it will be call lot
 | style="background: #90ff90; color: black;" | Main code type (8Bits)
 | style="background: #ffcc00; color: black;" | Sub code type (16Bits, optional)
 | style="background: #77eeFF; color: black;" | Packet size (for packet without fixed size)
-| style="background: #FFCDCD; color: black;" | Size of compressed data (32Bits)
+| style="background: #FFCDCD; color: black;" | Size of compressed data
 | Compressed packet content
 |}
 {{note}}In case of  no compression, like data no compressible:
