@@ -8,9 +8,9 @@ The tpc/ip protocol split the packet into lot of small packet. Warning, you need
 
 = Messages composition =
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-| style="background: #90ff90; color: black;" | Main code type
-| style="background: #ffcc00; color: black;" | Sub code type (optional)
-| style="background: #77eeFF; color: black;" | Packet size (for packet without fixed size)
+| style="background: #90ff90; color: black;" | Main code type (8Bits)
+| style="background: #ffcc00; color: black;" | Sub code type (16Bits, optional)
+| style="background: #77eeFF; color: black;" | Packet size (32Bits, for packet without fixed size)
 | Packet content
 |}
 
@@ -23,10 +23,10 @@ The size is not calculated on variable into message, because it will be call lot
 
 {{note}}In case of compression, the 32Bits size of compressed message is appends to decompressed size. But is active only if the size the greater than a limit [[Base_protocol_messages#020001|protocol initialization]].
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-| style="background: #90ff90; color: black;" | Main code type
-| style="background: #ffcc00; color: black;" | Sub code type (optional)
-| style="background: #77eeFF; color: black;" | Packet size (for packet without fixed size)
-| style="background: #FFCDCD; color: black;" | Size of compressed data
+| style="background: #90ff90; color: black;" | Main code type (8Bits)
+| style="background: #ffcc00; color: black;" | Sub code type (16Bits, optional)
+| style="background: #77eeFF; color: black;" | Packet size (32Bits, for packet without fixed size)
+| style="background: #FFCDCD; color: black;" | Size of compressed data (32Bits)
 | Compressed packet content
 |}
 {{note}}In case of  no compression, like data no compressible:
