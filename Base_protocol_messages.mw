@@ -147,9 +147,13 @@ At the connection, send the protocol supported, <span style="font-weight: bold">
 
 {{Note}}After this, all communication is into the packet size + compression mode send by the protocol.
 
+[[Base_protocol_messages#Reply_020001|See reply to this query]]
+
 === 020002 ===
 Get the first position and direction, and send login clear and pass sha1:<br /><span style="color: #40BF00">&quot;toto&quot;</span>, <span style="color: #FF0040">da39a3ee5e6b4b0d3255bfef95601890afd80709</span><br />
  <span style="color: #FFBF00">00000008</span><span style="color: #40BF00">0074006f0074006f</span><span style="color: #FF0040">da39a3ee5e6b4b0d3255bfef95601890afd80709</span>
+
+[[Base_protocol_messages#Reply_020008|See reply to this query]]
 
 === 02000C ===
 Send file name and md5 of the file requested:<br />number to file: <span style="color: #FF4000">00000003</span>, after is file and their mtime timestamps (second since 1/1/1970 in 64Bits):
@@ -160,6 +164,8 @@ Send file name and md5 of the file requested:<br />number to file: <span style="
  <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span><span style="color: #FF4000">4ED3C1D3</span>
  <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span><span style="color: #FF4000">4ED3C1D3</span>
  <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span><span style="color: #FF4000">4ED3C1D3</span>
+
+[[Base_protocol_messages#Reply_02000C|See reply to this query]]
 
 == Client &rarr; Server without reply ==
 === 40 ===
