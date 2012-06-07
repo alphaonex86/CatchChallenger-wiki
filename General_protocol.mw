@@ -15,7 +15,7 @@ The tpc/ip protocol split the packet into lot of small packet. Warning, you need
 |}
 
 {{note}}: The packet size definition can varies:
-* '''0x01:''' Mode small: Packet size with: XX if for <255 message size, 00XXXX is for <64KB size, 000000XXXXXXXX if for the rest. (Interesting for raw protocol for 4x packet < 255Bytes than <64KB)
+* '''0x01:''' Mode small: Packet size with: XX if for <255 message size, 00XXXX is for <64KB size, 0000XXXXXXXX if for the rest. (Interesting for raw protocol for 4x packet < 255Bytes than <64KB)
 * '''0x02:''' Mode big: Packet size with: 00XX if for <255 message size, XXXX is for <64KB size, 0000XXXXXXXX if for the rest. (Interesting for raw protocol for 4x packet < 255Bytes than <64KB)
 Choose do by server at the [[Base_protocol_messages#020001|protocol initialization]].
 
