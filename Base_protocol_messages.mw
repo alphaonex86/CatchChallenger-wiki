@@ -40,7 +40,7 @@
 | style="background: #90ff90; color: black;" | 41
 | 
 | style="background: #9CF6FF; color: black;" | Depands
-| [[Base_protocol_messages#41|Reply to server query]]
+| [[Base_protocol_messages#41|Reply to server query]] ([[Base_protocol_messages#Reply|See reply]])
 |-
 | style="background: #90ff90; color: black;" | 42
 | style="background: #ffcc00; color: black;" | 0003
@@ -74,7 +74,7 @@
 | style="background: #90ff90; color: black;" | C1
 | 
 | style="background: #9CF6FF; color: black;" | Depands
-| [[Base_protocol_messages#C1|Reply to client query]]
+| [[Base_protocol_messages#C1|Reply to client query]] ([[Base_protocol_messages#Reply|See reply]])
 |-
 | style="background: #90ff90; color: black;" | C2
 | style="background: #ffcc00; color: black;" | 0001
@@ -110,6 +110,31 @@
 | 
 | {{No}}
 | [[Base_protocol_messages#C4|Remove all other player on the map]]
+|}
+
+= Reply =
+== Server &rarr; Client ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type of the query
+! Sub code type of the query
+! Packet size for the reply
+! Query
+|-
+| style="background: #90ff90; color: black;" | 02
+| style="background: #ffcc00; color: black;" | 0001
+| {{Yes}}
+| [[Base_protocol_messages#Reply_020001|Protocol initialization]]
+|-
+| style="background: #90ff90; color: black;" | 02
+| style="background: #ffcc00; color: black;" | 0002
+| {{Yes}}
+| [[Base_protocol_messages#Reply_020002|Get first data and send the login]]
+|-
+| style="background: #90ff90; color: black;" | 02
+| style="background: #ffcc00; color: black;" | 000C
+| {{Yes}}
+| [[Base_protocol_messages#Reply_02000C|Send datapack file list]]
 |}
 
 = Details =
