@@ -22,6 +22,7 @@
 | {{Yes}}
 | [[Base_protocol_messages#02000C|Send datapack file list]]
 |}
+{{Note}}All the main code in this column is considered as reply.
 
 == Client &rarr; Server without reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
