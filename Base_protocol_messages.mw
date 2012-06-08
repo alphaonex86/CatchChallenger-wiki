@@ -4,26 +4,26 @@
 |-
 ! Main code type
 ! Sub code type
-! Packet size
 ! Query number
+! Packet size
 ! Data
 |-
 | style="background: #90ff90; color: black;" | 02
 | style="background: #ffcc00; color: black;" | 0001
-| {{Yes}}
 | XX
+| {{Yes}}
 | [[Base_protocol_messages#020001|Protocol initialization]]
 |-
 | style="background: #90ff90; color: black;" | 02
 | style="background: #ffcc00; color: black;" | 0002
-| {{Yes}}
 | XX
+| {{Yes}}
 | [[Base_protocol_messages#020002|Get first data and send the login]]
 |-
 | style="background: #90ff90; color: black;" | 02
 | style="background: #ffcc00; color: black;" | 000C
-| {{Yes}}
 | XX
+| {{Yes}}
 | [[Base_protocol_messages#02000C|Send datapack file list]]
 |}
 {{Note}}All the main code in this column is considered as reply.
@@ -33,31 +33,37 @@
 |-
 ! Main code type
 ! Sub code type
+! Query number
 ! Packet size
 ! Data
 |-
 | style="background: #90ff90; color: black;" | 40
+| 
 | 
 | {{No}}
 | [[Base_protocol_messages#40|Send position + direction]] '''''(Fast)'''''
 |-
 | style="background: #90ff90; color: black;" | 41
 | 
+| XX
 | style="background: #9CF6FF; color: black;" | Depands
 | [[Base_protocol_messages#41|Reply to server query]] ([[Base_protocol_messages#Reply|See reply]])
 |-
 | style="background: #90ff90; color: black;" | 42
 | style="background: #ffcc00; color: black;" | 0003
+| 
 | {{Yes}}
 | [[Base_protocol_messages#420003|Chat]]
 |-
 | style="background: #90ff90; color: black;" | 42
 | style="background: #ffcc00; color: black;" | 000A
+| 
 | {{Yes}}
 | [[Base_protocol_messages#42000A|Add players info to watch]]
 |-
 | style="background: #90ff90; color: black;" | 42
 | style="background: #ffcc00; color: black;" | 000B
+| 
 | {{Yes}}
 | [[Base_protocol_messages#42000B|Remove players info to watch]]
 |}
@@ -67,6 +73,7 @@
 |-
 ! Main code type
 ! Sub code type
+! Query number
 ! Packet size
 ! Data
 |-
@@ -77,40 +84,48 @@
 |-
 | style="background: #90ff90; color: black;" | C1
 | 
+| XX
 | style="background: #9CF6FF; color: black;" | Depands
 | [[Base_protocol_messages#C1|Reply to client query]] ([[Base_protocol_messages#Reply|See reply]])
 |-
 | style="background: #90ff90; color: black;" | C2
 | style="background: #ffcc00; color: black;" | 0001
+| 
 | {{Yes}}
 | [[Base_protocol_messages#C20001|Random seed list]]
 |-
 | style="background: #90ff90; color: black;" | C2
 | style="background: #ffcc00; color: black;" | 0002
+| 
 | {{Yes}}
 | [[Base_protocol_messages#C20002|update of the player info]]
 |-
 | style="background: #90ff90; color: black;" | C2
 | style="background: #ffcc00; color: black;" | 0003
+| 
 | {{Yes}}
 | [[Base_protocol_messages#C2003|update file]]
 |-
 | style="background: #90ff90; color: black;" | C2
 | style="background: #ffcc00; color: black;" | 0005
+| 
 | {{Yes}}
 | [[Base_protocol_messages#C20005|chat]]
 |-
 | style="background: #90ff90; color: black;" | C2
 | style="background: #ffcc00; color: black;" | 0008
+| 
 | {{Yes}}
 | [[Base_protocol_messages#C20008|kicked/ban and reason]]
 |-
 | style="background: #90ff90; color: black;" | C3
 | 
+| 
 | {{No}}
 | [[Base_protocol_messages#C3|Player number]]
 |-
 | style="background: #90ff90; color: black;" | C4
+| 
 | 
 | {{No}}
 | [[Base_protocol_messages#C4|Remove all other player on the map]]
