@@ -5,21 +5,25 @@
 ! Main code type
 ! Sub code type
 ! Packet size
+! Query number
 ! Data
 |-
 | style="background: #90ff90; color: black;" | 02
 | style="background: #ffcc00; color: black;" | 0001
 | {{Yes}}
+| XX
 | [[Base_protocol_messages#020001|Protocol initialization]]
 |-
 | style="background: #90ff90; color: black;" | 02
 | style="background: #ffcc00; color: black;" | 0002
 | {{Yes}}
+| XX
 | [[Base_protocol_messages#020002|Get first data and send the login]]
 |-
 | style="background: #90ff90; color: black;" | 02
 | style="background: #ffcc00; color: black;" | 000C
 | {{Yes}}
+| XX
 | [[Base_protocol_messages#02000C|Send datapack file list]]
 |}
 {{Note}}All the main code in this column is considered as reply.
