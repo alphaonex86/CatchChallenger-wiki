@@ -37,11 +37,6 @@
 | {{No}}
 | [[Base_protocol_messages#40|Send position + direction]] '''''(Fast)'''''
 |-
-| style="background: #90ff90; color: black;" | 41
-| 
-| style="background: #9CF6FF; color: black;" | Depands
-| [[Base_protocol_messages#41|Reply to server query]] ([[Base_protocol_messages#Reply|See reply]])
-|-
 | style="background: #90ff90; color: black;" | 42
 | style="background: #ffcc00; color: black;" | 0003
 | {{Yes}}
@@ -56,6 +51,16 @@
 | style="background: #ffcc00; color: black;" | 000B
 | {{Yes}}
 | [[Base_protocol_messages#42000B|Remove players info to watch]]
+|-
+| style="background: #90ff90; color: black;" | 50
+| 
+| {{Yes}}
+| [[Base_protocol_messages#41|Reply to server query]] with size ([[Base_protocol_messages#Reply|See reply]])
+|-
+| style="background: #90ff90; color: black;" | 51
+| 
+| {{No}}
+| [[Base_protocol_messages#41|Reply to server query]] without size ([[Base_protocol_messages#Reply|See reply]])
 |}
 
 == Server &rarr; Client without reply ==
@@ -70,11 +75,6 @@
 | 
 | {{Yes}}
 | [[Base_protocol_messages#C0|Position + direction of other player]] '''''(Fast)'''''
-|-
-| style="background: #90ff90; color: black;" | C1
-| 
-| style="background: #9CF6FF; color: black;" | Depands
-| [[Base_protocol_messages#C1|Reply to client query]] ([[Base_protocol_messages#Reply|See reply]])
 |-
 | style="background: #90ff90; color: black;" | C2
 | style="background: #ffcc00; color: black;" | 0001
@@ -110,6 +110,16 @@
 | 
 | {{No}}
 | [[Base_protocol_messages#C4|Remove all other player on the map]]
+|-
+| style="background: #90ff90; color: black;" | D0
+| 
+| {{Yes}}
+| [[Base_protocol_messages#C1|Reply to client query]] with size ([[Base_protocol_messages#Reply|See reply]])
+|-
+| style="background: #90ff90; color: black;" | D1
+| 
+| {{No}}
+| [[Base_protocol_messages#C1|Reply to client query]] without size ([[Base_protocol_messages#Reply|See reply]])
 |}
 
 = Reply =
