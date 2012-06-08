@@ -246,8 +246,6 @@ For the case of try group the insert/move by set into type other player def othe
 * 250 player with 1 move) Send as group of player: 2B+7B*250=1752B
 Then ~10% of win. In case of 250 with one move, It's ~13% too. It do very big server overhead.
 
-=== C1 ===
-
 === C20001 ===
 Server -&gt; Client: random bytes: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX[...]XXXXXXXXXXX</span>
 
