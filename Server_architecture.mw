@@ -16,3 +16,11 @@ But after, each player will have near clients near him self. Send the move to it
 * inventory
 * monster
 * play
+
+= Benchmark =
+== Single benchmark ==
+Is used to profile specific code. Not implemented for now into catchchallenger, but can be useful to test and develop the visibility algorithm. 
+== General benchmark ==
+Is used to profile the normal usage, with step, chat usage, and all used into the normal play.
+
+Implemented into catchchallenger. Useful to know the general memory usage, ... But have few variety of action do (only step for now).
