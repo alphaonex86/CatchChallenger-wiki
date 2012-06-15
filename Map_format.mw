@@ -73,6 +73,12 @@ It's layer Object with name "Tp", only visible on map editor.
 * map: [file name]
 * x & y: cordon on the new map
 
+'''[rescue]'''
+* Type: set the point to respawn if the monsters at the next heal.
+
+'''[bot spawn]'''
+* Type: set the point to spawn bot
+
 = Implementation =
 For each map it use into memory:
 * QHash<QString,Map_final> + QHash<quint32,Map_final *>, to have indexed search
