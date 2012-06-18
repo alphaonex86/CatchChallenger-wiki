@@ -1,0 +1,15 @@
+The command:
+* Kick a player
+ /kick [pseudo]
+
+* stop the server
+ /stop
+
+* restart the server
+ /restart
+
+* add bots
+ /addbots [number]
+
+* remove all bots
+ /removebots
