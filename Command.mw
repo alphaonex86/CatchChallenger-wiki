@@ -1,4 +1,3 @@
-= Admin =
 The command:
 * Kick a player
  /kick [pseudo]
@@ -9,45 +8,8 @@ The command:
 * restart the server
  /restart
 
-* send system chat message
- /chat system text
+* add bots
+ /addbots [number]
 
-* send important system chat message
- /chat system_important text
-
-* Set rights, type can be normal, premium, dev, admin
- /setrights [pseudo] [type:normal|premium|gm|dev]
-
-* Set the event value
- /setevent [event name] [event value]
-
-* Teleport player to player
- /tp [player1] [player2]
-
-* Go to a map
- /goto [map] x y
-
-* Give an object
- /give objectId player [quantity=1]
-
-* Take an object
- /take objectId player [quantity=1]
-
-= Player =
-* Get the player number
- /playernumber
-
-* Get the player list
- /playerlist
-
-* Trade
- /trade [player]
-
-* Battle
- /battle [player]
-
-= Admin + debug =
-This is valid only if the server was compiled with the debug flags: '''CATCHCHALLENGER_SERVER_DEBUG_COMMAND''', see ''VariableServer.h''
-
-* Request more id (on game server it's monster and clan id)
- /debug moreid
+* remove all bots
+ /removebots
