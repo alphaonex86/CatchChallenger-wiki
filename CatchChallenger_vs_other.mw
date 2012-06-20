@@ -126,6 +126,7 @@
 ! Memory at 100 players
 |}
 {{note}}The max player is see on correct configuration, it's the benchmarked value on core i5 750, 4GB of memory.
+Here the important is the coefficient director between the idle and 100 players.
 
 = Protocol =
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
