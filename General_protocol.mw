@@ -1,7 +1,6 @@
 = Protocol content =
-The used encoding is the unicode (utf16), where each char is encoded into 16Bits in big endian.
-
-Firstly query type 8Bits to the first type and if needed 32Bits for the sub type, query number as short unsigned 8Bits (if query with reply), after the specific part.
+The protocol is binary protocol.
+For the string: The encoding is the unicode (utf16) in big endian.
 
 = Cutting packet =
 The tpc/ip protocol split the packet into lot of small packet. Warning, you need recompose the query.
