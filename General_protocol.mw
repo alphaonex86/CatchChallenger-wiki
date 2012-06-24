@@ -54,6 +54,7 @@ query server -> client with reply
 * '''Send the previous step do and new direction'''. Then the server can check all move into one direction (more fast), and the request on the network is grouped. The client when receive the other player move, put the other player at the good position, and do moving at the right direction. With this, if latency is < a ms to do a step is always invisible. And if latency < at time to do all the step into a direction, is invisible too
 * All the network traffic shouldn't be instant, then latency can be added to '''compress the data'''. Very useful because this protocol have high level of compression.
 * All heavy '''task is isolated into a thread''' to not slow down the quick task
+[[File:random-list.png]]
 
 = Map position/move =
 All is done to have multiple algorithm into the server, you can calculate that's by chunk of map, by map, or other way.
