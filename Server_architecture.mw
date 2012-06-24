@@ -3,6 +3,8 @@
 * Thread to read and parse on the network packet
 * broad cast thread: all broad cast object interconnected, complexity: O(n), where n is all player, broadcast too the player disconnection and send it to ''map management thread''
 * map management thread: local map management object interconnected, complexity: O(n) for local player, but in normal case O(n^2) for all players see the other player, where n is local player
+...
+[[File:server-threads.png]]
 
 = Visibility =
 For now it's just calculated on the local map.
