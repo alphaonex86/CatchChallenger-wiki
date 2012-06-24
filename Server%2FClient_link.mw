@@ -4,7 +4,11 @@ Example:
 * You walk into the grass, thanks to the random list pre-loaded by the client, the client and server have same random list, and use number to do the random match into the grass
 * When it's append, both client and server know it, and switch into match mode, without any communication
 * Both use the same random list to define the details (monster, level, ...)
-No communication to random step into the grass, no to start the match
+No communication to random step into the grass, no to start the match.
+
+See the [[Server/Client_link#Random list|random list]].
 
 = Single player case =
 That's allow to do single player game too.
+
+= Random list =
