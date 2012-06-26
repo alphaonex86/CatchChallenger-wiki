@@ -54,6 +54,7 @@ query server -> client with reply
 * All the network traffic shouldn't be instant, then latency can be added to '''compress the data'''. Very useful because this protocol have high level of compression.
 * All heavy '''task is isolated into a thread''' to not slow down the quick task
 [[File:random-list.png]]
+The client NEVER wait a reply.
 
 = Map position/move =
 All is done to have multiple algorithm into the server, you can calculate that's by chunk of map, by map, or other way.
