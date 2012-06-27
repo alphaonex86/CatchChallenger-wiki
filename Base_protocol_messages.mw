@@ -294,14 +294,14 @@ Server -&gt; Client: <span style="color: #40BF00">&quot;file name&quot;</span>, 
  <span style="color: #FFBF00">00000012</span><span style="color: #40BF00">0062006100640020006c006f00670069006e</span><span style="color: #FF4000">00000050</span><span style="color: #FF4000">4ED3C1D3</span><span style="color: #40BFFF">XXXXXXXXXXXXXXXX[...]XXXXXXXXXX</span>
 
 === C20005 ===
-Server -&gt; Client: player id: <span style="color: #BFBF40">00002152</span>, chat type: <span style="color: #FF4000">02</span>, text: <span style="color: #40BF00">&quot;hello&quot;</span>
- <span style="color: #BFBF40">00002152</span><span style="color: #FF4000">01</span><span style="color: #FFBF00">0000000a</span><span style="color: #40BF00">00680065006c006c006f</span>
-Chat type:
-* <span style="color: #FF4000">02</span> = all (global)
-* <span style="color: #FF4000">03</span> = clan
-* <span style="color: #FF4000">06</span> = to player
-* <span style="color: #FF4000">07</span> = system
-* <span style="color: #FF4000">08</span> = system importance: high
+Server -&gt; Client
+*  for player: chat type: <span style="color: #FF4000">02</span>, text: <span style="color: #40BF00">&quot;hello&quot;</span>, player pseudo: <span style="color: #40BF00">&quot;toto&quot;</span>, status: <span style="color: #40BFFF">01</span>
+ <span style="color: #FF4000">02</span><span style="color: #FFBF00">0000000a</span><span style="color: #40BF00">00680065006c006c006f</span><span style="color: #FFBF00">00000008</span><span style="color: #40BF00">0074006f0074006f</span><span style="color: #40BFFF">01</span>
+*  for system: chat type: <span style="color: #FF4000">07</span>, text: <span style="color: #40BF00">&quot;The server will be rebooted&quot;</span>
+ <span style="color: #FF4000">07</span><span style="color: #FFBF00">00000036</span><span style="color: #40BF00">0054006800650020007300650072007600650072002000770069006c006c0020006200650020007200650062006f006f007400650064</span>
+
+{{Chat_Type}}
+{{Player_type}}
 
 === C20008 ===
 Server -&gt; Client: type: <span style="color: #FF4000">02</span>, <span style="color: #40BF00">&quot;toto&quot;</span>
