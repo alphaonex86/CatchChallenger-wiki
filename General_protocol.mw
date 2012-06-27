@@ -20,18 +20,6 @@ Choose do by server at the [[Base_protocol_messages#020001|protocol initializati
 
 The size is not calculated on variable into message, because it will be call lot of, to recompose the message, then big lost of performance.
 
-== In case of compression ==
-The size of compressed message is appends to decompressed size. But is active only if the size the greater than a limit [[Base_protocol_messages#020001|protocol initialization]].
-{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-| style="background: #90ff90; color: black;" | Main code type (8Bits)
-| style="background: #ffcc00; color: black;" | Sub code type (16Bits, optional)
-| style="background: #77eeFF; color: black;" | Packet size (for packet without fixed size)
-| style="background: #FFCDCD; color: black;" | Size of compressed data
-| Compressed packet content
-|}
-{{note}}In case of  no compression, like data no compressible:
- Size of compressed data == Packet size
-
 = Messages type =
 * [[Base protocol messages]]
 * [[CatchChallenger specific messages]]
