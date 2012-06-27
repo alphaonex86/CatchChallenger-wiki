@@ -205,10 +205,8 @@ Client -&gt; Server: chat type: <span style="color: #FF4000">02</span>, text: <s
  <span style="color: #FF4000">02</span><span style="color: #FFBF00">0000000a</span><span style="color: #40BF00">00680065006c006c006f</span>
 {{Note}}The server will not return sended string to minimize the bandwidth.
 
-Chat type:
-* <span style="color: #FF4000">02</span> = all (global)
-* <span style="color: #FF4000">03</span> = clan
-* <span style="color: #FF4000">06</span> = to player
+{{Chat_Type}}
+
 === 42000A ===
 Add players info to watch:<br />
 type player query: <span style="color: #FF4000">02</span>, number to player to watch: <span style="color: #FFBF00">0001</span><br />
