@@ -34,18 +34,7 @@ The size of compressed message is appends to decompressed size. But is active on
 
 = Messages type =
 [[Base protocol messages]]
-
-== Specific to catchchallenger ==
-query client -> server with reply
-* '''020006''' Invite to the trade + push new object to the trade (with sell/buy too)
-* '''020008''' Give bot craft recipe and object, and define the price + taxe
-
-query client -> server without reply
-* '''420004''' Fight attack/object used
-* '''420005''' Usage of object
-
-query server -> client with reply
-* '''800001''' Battle request
+[[CatchChallenger specific messages]]
 
 = Latency =
 * All the query with reply is identified by return code, then multiple query ca&n be send, it will never be blocking.
