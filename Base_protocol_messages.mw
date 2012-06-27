@@ -54,18 +54,6 @@
 | 
 | {{Yes}}
 | [[Base_protocol_messages#420003|Chat]]
-|-
-| style="background: #90ff90; color: black;" | 42
-| style="background: #ffcc00; color: black;" | 000A
-| 
-| {{Yes}}
-| [[Base_protocol_messages#42000A|Add players info to watch]]
-|-
-| style="background: #90ff90; color: black;" | 42
-| style="background: #ffcc00; color: black;" | 000B
-| 
-| {{Yes}}
-| [[Base_protocol_messages#42000B|Remove players info to watch]]
 |}
 
 == Server &rarr; Client without reply ==
