@@ -33,8 +33,8 @@ The size of compressed message is appends to decompressed size. But is active on
  Size of compressed data == Packet size
 
 = Messages type =
-[[Base protocol messages]]
-[[CatchChallenger specific messages]]
+* [[Base protocol messages]]
+* [[CatchChallenger specific messages]]
 
 = Latency =
 * All the query with reply is identified by return code, then multiple query ca&n be send, it will never be blocking.
