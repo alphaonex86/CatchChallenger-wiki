@@ -296,17 +296,12 @@ Remove all other player on the map: (Better than remove each id)
 = Reply =
 == Server &rarr; Client reply ==
 === Reply 020001 ===
-<span style="color: #40BFFF">01</span> (is supported), compression used <span style="color: #40BF00">04</span> (gzip), size format for upload <span style="color: #FF0000">01</span> (client -> server, small: see [[General_protocol#Messages_composition|Messages composition]]), size format for download <span style="color: #FF0000">02</span> (server -> client, big: see [[General_protocol#Messages_composition|Messages composition]]), compression after the size: <span style="color: #FFBF00">00000200</span> (512B)
- <span style="color: #40BFFF">01</span><span style="color: #40BF00">04</span><span style="color: #FF0000">01</span><span style="color: #FF0000">02</span><span style="color: #FFBF00">00000200</span>
-{{Note}}Compression used:
-* <span style="color: #40BF00">00</span> raw
-* <span style="color: #40BF00">01</span> lz4
-* <span style="color: #40BF00">02</span> lz4hc
-* <span style="color: #40BF00">03</span> zlib
-* <span style="color: #40BF00">04</span> gzip
+<span style="color: #40BFFF">01</span> (is supported), size format for upload <span style="color: #FF0000">01</span> (client -> server, small: see [[General_protocol#Messages_composition|Messages composition]]), size format for download <span style="color: #FF0000">02</span> (server -> client, big: see [[General_protocol#Messages_composition|Messages composition]])
+ <span style="color: #40BFFF">01</span><span style="color: #FF0000">01</span><span style="color: #FF0000">02</span>
 
 <span style="color: #40BFFF">02</span> (protocol not supported)
  <span style="color: #40BFFF">02</span>
+
 <span style="color: #40BFFF">03</span>, <span style="font-style: italic"><span style="color: #40BF00">&quot;Server full&quot;</span></span>
  <span style="color: #40BFFF">03</span><span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">00700072006f0074006f0063006f006c0020006e006f007400200073007500700070006f0072007400650064</span>
 
