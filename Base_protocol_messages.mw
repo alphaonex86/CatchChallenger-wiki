@@ -56,6 +56,22 @@
 | [[Base_protocol_messages#420003|Chat]]
 |}
 
+== Server &rarr; Client with reply ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+|-
+| style="background: #90ff90; color: black;" | 79
+| style="background: #ffcc00; color: black;" | 0001
+| XX
+| {{Yes}}
+| [[Base_protocol_messages#790001|Teleport the player]]
+|}
+
 == Server &rarr; Client without reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
