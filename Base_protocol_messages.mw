@@ -146,7 +146,7 @@
 ! Query
 |-
 | style="background: #90ff90; color: black;" | 79
-| 
+| style="background: #ffcc00; color: black;" | 0001
 | {{No}}
 | [[Base_protocol_messages#Reply_790001|Teleport the player]]
 |}
