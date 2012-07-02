@@ -205,7 +205,7 @@ Here the important is the coefficient director between the idle and 100 players.
 | GPL3
 | {{Yes}}
 | {{Yes}}
-| C++/Qt/QML
+| C++/Qt/Boost + Qt Quick?/QML?/OpenGL?/SFML2?
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
