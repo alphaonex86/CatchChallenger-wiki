@@ -39,7 +39,7 @@ All is done to have multiple algorithm into the server, you can calculate that's
 
 The choice is do of display number of player will depends of the max player. To minimize into 8Bits the number if max player < 255, else 16Bits.
 
-The coordinates is limited to 8Bits.
+The coordinates is limited to 8Bits. And map map into utf8, with 8Bits of size header.
 
 = Usage into other game =
 [[File:catchchallenger-base-into-other-game.png]]
