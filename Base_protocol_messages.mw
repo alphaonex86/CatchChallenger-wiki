@@ -190,7 +190,7 @@ At the connection, send the protocol supported, <span style="font-weight: bold">
 Get the first position and direction, and send login clear and pass sha1:<br /><span style="color: #40BF00">&quot;toto&quot;</span>, <span style="color: #FF0040">da39a3ee5e6b4b0d3255bfef95601890afd80709</span><br />
  <span style="color: #FFBF00">00000008</span><span style="color: #40BF00">0074006f0074006f</span><span style="color: #FF0040">da39a3ee5e6b4b0d3255bfef95601890afd80709</span>
 
-[[Base_protocol_messages#Reply_020008|See reply to this query]]
+[[Base_protocol_messages#Reply_020002|See reply to this query]]
 
 === 02000C ===
 Send file name and timestamps (second since 1/1/1970 in 32Bits) of the file requested:<br />number to file: <span style="color: #FF4000">00000003</span>:
