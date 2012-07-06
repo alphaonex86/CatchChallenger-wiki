@@ -37,6 +37,8 @@ The client NEVER wait a reply.
 = Map position/move =
 All is done to have multiple algorithm into the server, you can calculate that's by chunk of map, by map, or other way.
 
+The choice is do of display max 255 player. To minimize into 8Bits the number.
+
 = Usage into other game =
 [[File:catchchallenger-base-into-other-game.png]]
 See: [[Other game usage]]
