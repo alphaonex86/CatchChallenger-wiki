@@ -340,8 +340,8 @@ Remove all other player on the map: (Better than remove each id)
 === Reply 020002 ===
 <span style="color: #FF4000">01</span> (something is wrong), <span style="color: #40BF00">&quot;bad login&quot;</span> (or other server error)
  <span style="color: #FF4000">01</span><span style="color: #FFBF00">00000012</span><span style="color: #40BF00">0062006100640020006c006f00670069006e</span>
-<span style="color: #FF4000">02</span> (all is good), player id: <span style="color: #BFBF40">00002152</span> (see [[Base_protocol_messages#C20002|update of the player info]] to have the full info)
- <span style="color: #FF4000">02</span><span style="color: #BFBF40">00002152</span>
+<span style="color: #FF4000">02</span> (all is good), player id: <span style="color: #BFBF40">00002152</span> (see [[Base_protocol_messages#C20002|update of the player info]] to have the full info), max player: <span style="color: #40BF00">0064</span> (then 100 in decimal)
+ <span style="color: #FF4000">02</span><span style="color: #BFBF40">00002152</span><span style="color: #40BF00">0064</span>
 After the server will send tp command to set the first position
 
 === Reply 02000C ===
