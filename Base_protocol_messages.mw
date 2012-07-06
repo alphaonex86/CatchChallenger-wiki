@@ -225,7 +225,16 @@ Client -&gt; Server: chat type: <span style="color: #FF4000">02</span>, text: <s
 Server -&gt; Client:
 * type other player def: <span style="color: #40BFFF">01</span> (insert), number of map: <span style="color: #FF4000">01</span>
 ** <span style="color: #40BF00">&quot;map name&quot;</span> (UTF8 + 8Bits of size header), number of player: {{Number_of_player}}:
-*** player id: {{Player_id}}, , local x: {{Player_x}}, local y: {{Player_y}}, direction: <span style="color: #FF4000">02</span> (can be spawn walking when this wall go into screen), speed: <span style="color: #40BFFF">04</span> (50ms*4, see [[Unit into the game]])
+*** player id: {{Player_id}}, information:
+**** local x: {{Player_x}}
+**** local y: {{Player_y}}
+**** direction: <span style="color: #FF4000">02</span> (can be spawn walking when this wall go into screen)*
+**** speed: <span style="color: #40BFFF">04</span> (50ms*4, see [[Unit into the game]])
+**** pseudo: <span style="color: #40BF00">&quot;toto&quot;</span>
+**** clan: <span style="color: #FF4000">0001</span>
+**** skin: <span style="color: #40BF00">&quot;skin name&quot;</span>
+**** status: <span style="color: #40BFFF">01</span>
+
 * type other player def: <span style="color: #40BFFF">02</span> (move), number of player: {{Number_of_player}}
 ** player id: {{Player_id}}, move with list size (<span style="color: #FFBF00">02</span>):
 *** previous moved unit: <span style="color: #0000FF">06</span>, direction: <span style="color: #FF4000">02</span>
