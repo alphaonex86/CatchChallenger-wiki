@@ -239,7 +239,7 @@ Server -&gt; Client:
  <span style="color: #40BFFF">02</span> <span style="color: #FF4000">0001</span>
  <span style="color: #BFBF40">2153</span><span style="color: #FFBF00">02</span><span style="color: #0000FF">06</span><span style="color: #FF4000">02</span><span style="color: #0000FF">08</span><span style="color: #FF4000">01</span>
  <span style="color: #40BFFF">03</span> <span style="color: #FF4000">0001</span> <span style="color: #BFBF40">2154</span>
-{{definition}}
+{{Direction_definition}}
 type other player def:
 * <span style="color: #40BFFF">01</span> = first position definition
 * <span style="color: #40BFFF">02</span> = movement definition
