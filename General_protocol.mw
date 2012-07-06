@@ -2,6 +2,8 @@
 * The protocol is binary protocol.
 * For the string for the user input/output: The encoding is the unicode (utf16) in big endian + 32Bits of size header.
 * For the string for datapack/file path, player pseudo, player skin: The encoding is the unicode (utf8) in big endian + 8Bits of size header.
+* The monitoring of the player is heavy in bandwidth and resources, then it will not applied.
+* The on demand player information return all the information and is heavy with the bandwidth, and the cache will be dirty due to the number of file to create to the player (4Billons or more), and disable the player id minimization.
 
 = Cutting packet =
 The tpc/ip protocol split the packet into lot of small packet. Warning, you need recompose the query.
