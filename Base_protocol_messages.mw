@@ -228,12 +228,11 @@ Server -&gt; Client:
 *** player id: {{Player_id}}, information:
 **** local x: {{Player_x}}
 **** local y: {{Player_y}}
-**** direction: <span style="color: #FF4000">02</span> (can be spawn walking when this wall go into screen)*
+**** direction | status: <span style="color: #FF4000">02</span> can be spawn walking, and do | with: <span style="color: #40BFFF">10</span> to the player status = <span style="color: #800080">12</span>
 **** speed: <span style="color: #40BFFF">04</span> (50ms*4, see [[Unit into the game]])
 **** pseudo: <span style="color: #40BF00">&quot;toto&quot;</span>
-**** clan: <span style="color: #FF4000">0001</span>
+**** clan: <span style="color: #FF4000">01</span>
 **** skin: <span style="color: #40BF00">&quot;skin name&quot;</span>
-**** <del>status: <span style="color: #40BFFF">11</span></del> Not put for normal player to save bandwith
 
 * type other player def: <span style="color: #40BFFF">02</span> (move), number of player: {{Number_of_player}}
 ** player id: {{Player_id}}, move with list size (<span style="color: #FFBF00">02</span>):
@@ -243,7 +242,7 @@ Server -&gt; Client:
 ** player id: {{Player_id}}
 
  <span style="color: #40BFFF">01</span> <span style="color: #FF4000">01</span> <span style="color: #FFBF00">10</span><span style="color: #40BF00">6d6170206e616d65</span> <span style="color: #FF4000">0001</span>
- <span style="color: #BFBF40">2152</span><span style="color: #40BFFF">02</span><span style="color: #FFBF00">02</span><span style="color: #FF4000">02</span><span style="color: #40BFFF">04</span> <span style="color: #FFBF00">08</span><span style="color: #40BF00">746f746f</span> <span style="color: #FF4000">0001</span> <span style="color: #FFBF00">12</span><span style="color: #40BF00">736b696e206e616d65</span>
+ <span style="color: #BFBF40">2152</span><span style="color: #40BFFF">02</span><span style="color: #FFBF00">02</span><span style="color: #800080">12</span><span style="color: #40BFFF">04</span> <span style="color: #FFBF00">08</span><span style="color: #40BF00">746f746f</span> <span style="color: #FF4000">01</span> <span style="color: #FFBF00">12</span><span style="color: #40BF00">736b696e206e616d65</span>
  <span style="color: #40BFFF">02</span> <span style="color: #FF4000">0001</span>
  <span style="color: #BFBF40">2153</span><span style="color: #FFBF00">02</span><span style="color: #0000FF">06</span><span style="color: #FF4000">02</span><span style="color: #0000FF">08</span><span style="color: #FF4000">01</span>
  <span style="color: #40BFFF">03</span> <span style="color: #FF4000">0001</span> <span style="color: #BFBF40">2154</span>
