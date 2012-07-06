@@ -203,15 +203,8 @@ This packet is compressed.
 === 40 ===
 Client -&gt; Server: previous moved unit: <span style="color: #0000FF">06</span>, direction: <span style="color: #FF4000">02</span>
  <span style="color: #0000FF">06</span><span style="color: #FF4000">02</span>
-direction def:
-* <span style="color: #FF4000">01</span> = look at top
-* <span style="color: #FF4000">02</span> = look at right
-* <span style="color: #FF4000">03</span> = look at bottom
-* <span style="color: #FF4000">04</span> = look at left
-* <span style="color: #FF4000">05</span> = move at top
-* <span style="color: #FF4000">06</span> = move at right
-* <span style="color: #FF4000">07</span> = move at bottom
-* <span style="color: #FF4000">08</span> = move at left
+{{Direction definition}}
+
 === 420003 ===
 Client -&gt; Server: chat type: <span style="color: #FF4000">02</span>, text: <span style="color: #40BF00">&quot;hello&quot;</span>
  <span style="color: #FF4000">02</span><span style="color: #FFBF00">0000000a</span><span style="color: #40BF00">00680065006c006c006f</span>
