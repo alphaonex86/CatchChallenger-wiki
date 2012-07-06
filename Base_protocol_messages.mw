@@ -228,12 +228,16 @@ Client -&gt; Server: chat type: <span style="color: #FF4000">02</span>, text: <s
 == Server &rarr; Client without reply ==
 
 === C0 ===
-Server -&gt; Client: number of player near: <span style="color: #FF4000">0003</span>:
-* type other player def: <span style="color: #40BFFF">01</span>, player id: <span style="color: #BFBF40">00002152</span>, <span style="color: #40BF00">&quot;map name&quot;</span>, local x: <span style="color: #40BFFF">0002</span>, local y: <span style="color: #FFBF00">0002</span>, direction: <span style="color: #FF4000">02</span> (can be spawn walking when this wall go into screen), speed: <span style="color: #40BFFF">00C8</span> (200ms, see [[Unit into the game]])
-* type other player def: <span style="color: #40BFFF">02</span>, player id: <span style="color: #BFBF40">00002153</span>, move with list size (<span style="color: #FFBF00">02</span>):
-** previous moved unit: <span style="color: #0000FF">06</span>, direction: <span style="color: #FF4000">02</span>
-** previous moved unit: <span style="color: #0000FF">08</span>, direction: <span style="color: #FF4000">01</span>
-* type other player def: <span style="color: #40BFFF">03</span>, player id: <span style="color: #BFBF40">00002154</span>
+Server -&gt; Client:
+* type other player def: <span style="color: #40BFFF">01</span> (insert), number of map: <span style="color: #FF4000">01</span>
+** <span style="color: #40BF00">&quot;map name&quot;</span>, number of player: {{Number_of_player}}:
+*** player id: {{Player_id}}, , local x: {{Player_x}}, local y: {{Player_y}}, direction: <span style="color: #FF4000">02</span> (can be spawn walking when this wall go into screen), speed: <span style="color: #40BFFF">04</span> (50ms*4, see [[Unit into the game]])
+* type other player def: <span style="color: #40BFFF">02</span> (move), number of player: {{Number_of_player}}
+** player id: {{Player_id}}, move with list size (<span style="color: #FFBF00">02</span>):
+*** previous moved unit: <span style="color: #0000FF">06</span>, direction: <span style="color: #FF4000">02</span>
+*** previous moved unit: <span style="color: #0000FF">08</span>, direction: <span style="color: #FF4000">01</span>
+* type other player def: <span style="color: #40BFFF">03</span> (delete), number of player: {{Number_of_player}}:
+** player id: {{Player_id}}
 
  <span style="color: #FF4000">0003</span>
  <span style="color: #40BFFF">01</span> <span style="color: #BFBF40">00002152</span><span style="color: #FFBF00">00000008</span><span style="color: #40BF00">0074006f0074006f</span><span style="color: #40BFFF">0002</span><span style="color: #FFBF00">0002</span><span style="color: #FF4000">02</span><span style="color: #40BFFF">00C8</span>
