@@ -316,8 +316,8 @@ orientation def:
 * <span style="color: #FF4000">03</span> = disconnected
 
 === C3 ===
-Server -&gt; Client: current: <span style="color: #FF4000">0002</span>, max: <span style="color: #40BF00">0064</span> (then 100 in decimal)
- <span style="color: #FF4000">0002</span><span style="color: #40BF00">0064</span>
+Server -&gt; Client: current: <span style="color: #FF4000">0002</span>
+ <span style="color: #FF4000">0002</span>
 
 === C4 ===
 Remove all other player on the map: (Better than remove each id)
