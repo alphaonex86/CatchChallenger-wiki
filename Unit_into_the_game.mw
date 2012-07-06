@@ -1,2 +1,2 @@
-* The speed is expressed into ms to pass to the next tile
+* The speed is expressed into 100ms to pass to the next tile
 * The position is expressed on x,y of tile. x=0 is at the left, y=0 is at top
