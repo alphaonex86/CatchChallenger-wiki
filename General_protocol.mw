@@ -1,6 +1,7 @@
 = Protocol content =
-The protocol is binary protocol.
-For the string: The encoding is the unicode (utf16) in big endian.
+* The protocol is binary protocol.
+* For the string for the user input/output: The encoding is the unicode (utf16) in big endian + 32Bits of size header.
+* For the string for datapack/file path, player pseudo, player skin: The encoding is the unicode (utf8) in big endian + 8Bits of size header.
 
 = Cutting packet =
 The tpc/ip protocol split the packet into lot of small packet. Warning, you need recompose the query.
