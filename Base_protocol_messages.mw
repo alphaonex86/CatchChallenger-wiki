@@ -261,6 +261,8 @@ type other player def:
 * <span style="color: #40BFFF">02</span> = movement definition
 * <span style="color: #40BFFF">03</span> = player is dropped
 
+{{Player_type}}
+
 === C20001 ===
 Server -&gt; Client: random bytes: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX[...]XXXXXXXXXXX</span>
 
@@ -288,7 +290,7 @@ Server -&gt; Client: number of player info to update: <span style="color: #FF400
  <span style="color: #BFBF40">00002152</span><span style="color: #FFBF00">00000008</span><span style="color: #40BF00">0074006f0074006f</span><span style="color: #FFBF00">0000000c</span><span style="color: #40BF00">006d00610073007400650072</span><span style="color: #FF4000">0001</span><span style="color: #40BFFF">01</span><span style="color: #FFBF00">00000012</span><span style="color: #40BF00">0073006b0069006e0020006e0061006d0065</span>
  <span style="color: #BFBF40">00002153</span><span style="color: #FFBF00">00000008</span><span style="color: #40BF00">0074006f0074006f</span><span style="color: #FFBF00">0000000c</span><span style="color: #40BF00">006d00610073007400650072</span><span style="color: #FF4000">0001</span><span style="color: #40BFFF">01</span><span style="color: #FFBF00">00000012</span><span style="color: #40BF00">0073006b0069006e0020006e0061006d0065</span>
  <span style="color: #40BFFF">0000</span>
-{{Player_status}}
+{{Player_type}}
 
 === C20003 ===
 Server -&gt; Client: <span style="color: #40BF00">&quot;file name&quot;</span>, file size: <span style="color: #FF4000">00000050</span>, last modification time stamps: <span style="color: #FF4000">4ED3C1D3</span>, data: <span style="color: #40BFFF">XXXXXXXXXXXXXXXX[...]XXXXXXXXXX</span>
@@ -319,7 +321,6 @@ Server -&gt; Client: current: <span style="color: #FF4000">0002</span>
 
 === C4 ===
 Remove all other player on the map: (Better than remove each id)
-
 
 = Reply =
 == Server &rarr; Client reply ==
