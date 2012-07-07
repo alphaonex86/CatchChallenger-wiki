@@ -2,54 +2,94 @@
 * Why not have choice send text from the server dynamically?
 Because that's do more traffic (mainly static), useless for signs, need choose the right translation, ... You need wait the server, you need translation part on the server, ... the it's not very powerful.
 * No object using during a fight/battle into PvP, because can be an infinite battle (potion usage).
-* '''All the bot battle info (monsters, level, attack, ...) is implicit, see the general protocol description'''
-
 = General =
 == Client &rarr; Server with reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Packet Code
+! Main code type
+! Sub code type
+! Query number
+! Packet size
 ! Data
-! Source
-! Destination
-! Fixed Query size
-! Fixed Reply size
 |-
+| style="background: #90ff90; color: black;" | 03
+| style="background: #ffcc00; color: black;" | 0001
+| XX
+| {{Yes}}
+| [[CatchChallenger_specific_messages#030001|Request a player battle]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
-== Client &rarr; Server ==
+== Client &rarr; Server without reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Packet Code
+! Main code type
+! Sub code type
+! Query number
+! Packet size
 ! Data
-! Source
-! Destination
-! Fixed Message size
-{{Template:Battle_messages_Client_Server}}
+|-
+| style="background: #90ff90; color: black;" | 43
+| style="background: #ffcc00; color: black;" | 0001
+| 
+| {{Yes}}
+| [[CatchChallenger_specific_messages#430001|Use an object/recipe]]
+|-
+| style="background: #90ff90; color: black;" | 44
+| 
+| 
+| {{No}}
+| [[CatchChallenger_specific_messages#44|Use an attack of a monster]]
 |}
 
 == Server &rarr; Client with reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Packet Code
+! Main code type
+! Sub code type
+! Query number
+! Packet size
 ! Data
-! Source
-! Destination
-! Fixed Query size
-! Fixed Reply size
-{{Template:Battle_messages_Server_Client_Reply}}
+|-
+| style="background: #90ff90; color: black;" | 80
+| style="background: #ffcc00; color: black;" | 0001
+| XX
+| {{Yes}}
+| [[CatchChallenger_specific_messages#080001|Another player request a battle]]
+|-
+| style="background: #90ff90; color: black;" | 80
+| style="background: #ffcc00; color: black;" | 0002
+| XX
+| {{Yes}}
+| [[CatchChallenger_specific_messages#080002|Another player request a trade]]
 |}
 
-== Server &rarr; Client ==
+== Server &rarr; Client without reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Packet Code
+! Main code type
+! Sub code type
+! Query number
+! Packet size
 ! Data
-! Source
-! Destination
-! Fixed Message size
-{{Template:Battle_messages_Server_Client}}
+|-
+| style="background: #90ff90; color: black;" | C5
+| style="background: #ffcc00; color: black;" | 0002
+| 
+| {{Yes}}
+| [[CatchChallenger_specific_messages#C50002|Send the monsters]]
+|-
+| style="background: #90ff90; color: black;" | C5
+| style="background: #ffcc00; color: black;" | 0006
+| 
+| {{Yes}}
+| [[CatchChallenger_specific_messages#C50006|The other player use an attack]] (battle)
+|-
+| style="background: #90ff90; color: black;" | C5
+| style="background: #ffcc00; color: black;" | 0007
+| 
+| {{Yes}}
+| [[CatchChallenger_specific_messages#C50007|Push the monsters list of the other player]] (battle)
 |}
 
 = Reply =
@@ -61,10 +101,10 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Packet size for the reply
 ! Query
 |-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 01
+| style="background: #90ff90; color: black;" | 03
+| style="background: #ffcc00; color: black;" | 0001
 | {{No}}
-| [[Battle_messages#Reply_1001|Request a player battle]]
+| [[CatchChallenger_specific_messages#Reply_030001|Request a player battle]]
 |}
 == Client &rarr; Server ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
@@ -74,84 +114,8 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Packet size for the reply
 ! Query
 |-
-| style="background: #90ff90; color: black;" | 90
-| style="background: #ffcc00; color: black;" | 01
+| style="background: #90ff90; color: black;" | 80
+| style="background: #ffcc00; color: black;" | 0001
 | {{No}}
-| [[Battle_messages#Reply_9001|Another player request a battle]]
+| [[CatchChallenger_specific_messages#Reply_030001|Another player request a battle]]
 |}
-
-= Details =
-== Server &rarr; Client without reply ==
-=== E006 ===
-Send <span style="color: #FF4000">01</span> attack return.
-
-* doByTheCurrentMonster: <span style="color: #FF4000">01</span> (01 yes, 00 no)
-* Case number: <span style="color: #FF4000">01</span> (01 normal attack, 02 monster change, 03 item used)
-
-After send one of this case, depands on case number:
-
-==== Normal attack ====
-* success: <span style="color: #FF4000">01</span> (01 yes, 00 no)
-* attack: <span style="color: #40BF00">0001</span>
-* QList<BuffEffect> addBuffEffectMonster
-* QList<BuffEffect> removeBuffEffectMonster
-* QList<LifeEffectReturn> lifeEffectMonster
-* QList<LifeEffectReturn> buffLifeEffectMonster
-
-==== Monster change ====
-* monster place: <span style="color: #7B00FF">01</span>
-* monsters: <span style="color: #FF4000">0001</span>
-* level: <span style="color: #40BF00">01</span>
-* hp: <span style="color: #FFBF00">00000001</span>
-* captured_with: <span style="color: #40BF00">0001</span>
-* gender: <span style="color: #FF4000">01</span>
-* size of list of the buff monsters: <span style="color: #7B00FF">00000001</span>
-** buff: <span style="color: #40BF00">01</span>
-** buff level: <span style="color: #FF4000">01</span>
-
-==== Item usage ====
-* on_current_monster: <span style="color: #FF4000">01</span> (01 yes, 00 no)
-* item: <span style="color: #40BF00">00000001</span>
-
-=== E008 ===
-Pseudo and skin id is send to have the details.
-
-Number of monster: <span style="color: #A600FF">01</span>, Stat of the monster: <span style="color: #FFBF00">01</span>, monster place <span style="color: #0000FF">01</span>:
-* monsters: <span style="color: #FF4000">00000001</span>
-* level: <span style="color: #40BF00">01</span>
-* hp: <span style="color: #FFBF00">00000001</span>
-* captured_with: <span style="color: #40BF00">00000001</span>
-* gender: <span style="color: #FF4000">01</span>
-* size of list of the buff monsters: <span style="color: #7B00FF">00000001</span>
-** buff: <span style="color: #40BF00">00000001</span>
-** buff level: <span style="color: #FF4000">01</span>
-
- <span style="color: #A600FF">01</span><span style="color: #FFBF00">01</span><span style="color: #0000FF">01</span><span style="color: #FF4000">00000001</span><span style="color: #40BF00">01</span><span style="color: #FFBF00">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FF4000">01</span><span style="color: #7B00FF">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FF4000">01</span>
-
-Stat of the monster:
-* 0x01: ready for battle
-* 0x02: not able to battle
-
-=== E009 ===
-Server -&gt; Client: random bytes: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX[...]XXXXXXXXXXX</span>
-
- <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX[...]XXXXXXXXXXX</span>
-
-== Client &rarr; Server without reply ==
-=== 6004 ===
-Monster position: <span style="color: #40BFFF">01</span>, skill: <span style="color: #94CF00">0001</span>
-
-=== 6007 ===
-Start a requested bot fight, with bot fightId: <span style="color: #40BFFF">0001</span>
-
-=== 6008 ===
-* Monster action: <span style="color: #FF4000">01</span> (0x01 = up, 0x02 = down)
-* Monster number: <span style="color: #40BF00">01</span> (1 to X)
-
-=== 6009 ===
-* Monster position: <span style="color: #FF4000">01</span>
-
-=== 61 ===
-Attack id: <span style="color: #40BFFF">0001</span>
-
- <span style="color: #40BFFF">0001</span>
