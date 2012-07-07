@@ -58,12 +58,6 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | XX
 | {{Yes}}
 | [[CatchChallenger_specific_messages#080001|Another player request a battle]]
-|-
-| style="background: #90ff90; color: black;" | 80
-| style="background: #ffcc00; color: black;" | 0002
-| XX
-| {{Yes}}
-| [[CatchChallenger_specific_messages#080002|Another player request a trade]]
 |}
 
 == Server &rarr; Client without reply ==
