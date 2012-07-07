@@ -6,415 +6,85 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 == Client &rarr; Server with reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Packet Code
+! Main code type
+! Sub code type
+! Query number
+! Packet size
 ! Data
-! Source
-! Destination
-! Fixed Query size
-! Fixed Reply size
-{{Template:Inventory_messages_Client_Server_Reply}}
+|-
+| style="background: #90ff90; color: black;" | 03
+| style="background: #ffcc00; color: black;" | 0003
+| XX
+| {{Yes}}
+| [[CatchChallenger_specific_messages#030003|Stock objects]]
+|-
+| style="background: #90ff90; color: black;" | 03
+| style="background: #ffcc00; color: black;" | 0004
+| XX
+| {{Yes}}
+| [[CatchChallenger_specific_messages#030004|Object list can be withdraw]]
+|-
+| style="background: #90ff90; color: black;" | 03
+| style="background: #ffcc00; color: black;" | 0005
+| XX
+| {{Yes}}
+| [[CatchChallenger_specific_messages#030005|Withdraw an object]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
-== Client &rarr; Server ==
-{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! Packet Code
-! Data
-! Source
-! Destination
-! Fixed Message size
-{{Template:Inventory_messages_Client_Server}}
-|}
-
-== Server &rarr; Client with reply ==
-{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! Packet Code
-! Data
-! Source
-! Destination
-! Fixed Query size
-! Fixed Reply size
-{{Template:Inventory_messages_Server_Client_Reply}}
-|}
-
-== Server &rarr; Client ==
-{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! Packet Code
-! Data
-! Source
-! Destination
-! Fixed Message size
-{{Template:Inventory_messages_Server_Client}}
-|}
-
-= Reply =
-== Server &rarr; Client ==
-{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! Main code type of the query
-! Sub code type of the query
-! Packet size for the reply
-! Query
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 03
-| {{No}}
-| [[Inventory_messages#Reply_1003|Stock objects]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 04
-| {{Yes}}
-| [[Inventory_messages#Reply_1004|Ask object list to receive]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 05
-| {{Yes}}
-| [[Inventory_messages#Reply_1005|Withdraw an object]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 06
-| {{No}}
-| [[Inventory_messages#Reply_1006|Use seed into dirt]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 07
-| {{No}}
-| [[Inventory_messages#Reply_1007|Collect mature plant]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 08
-| {{No}}
-| [[Inventory_messages#Reply_1008|Usage of recipe]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 09
-| {{No}}
-| [[Inventory_messages#Reply_1009|Use object]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0A
-| {{Yes}}
-| [[Inventory_messages#Reply_100A|Get shop list]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0B
-| {{Yes}}
-| [[Inventory_messages#Reply_100B|Buy object]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0C
-| {{Yes}}
-| [[Inventory_messages#Reply_100C|Sell object]]
-|}
-
-== Client &rarr; Server ==
-{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! Main code type of the query
-! Sub code type of the query
-! Packet size for the reply
-! Query
-|-
-| style="background: #90ff90; color: black;" | 80
-| style="background: #ffcc00; color: black;" | 01
-| {{No}}
-| [[Inventory_messages#Reply_8001|Another player request a trade]]
-|}
-
-= Details =
-== Client &rarr; Server with reply ==
-=== 1006 ===
-Send the plant id <span style="color: #FF4000">02</span>
- <span style="color: #FF4000">02</span>
-
-[[Inventory_messages#Reply_1006|See reply to this query]]
-=== 1007 ===
-This query have null size
-
-[[Inventory_messages#Reply_100007|See reply to this query]]
-
-=== 1008 ===
-Use the recipe id: <span style="color: #FFBF00">0001</span>
-
-[[Inventory_messages#Reply_1008|See reply to this query]]
-
-=== 1009 ===
-Send the object used: <span style="color: #FF4000">0003</span>
-Not fixed size because future arguments can be added, like on what is applied the object.
-
-[[Inventory_messages#Reply_1009|See reply to this query]]
-
-=== 100A ===
-Shop id: <span style="color: #A600FF">0001</span>
-
-[[Inventory_messages#Reply_100A|See reply to this query]]
-
-=== 100B ===
-Shop id: <span style="color: #A600FF">0001</span>, Buy object: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
-
-[[Inventory_messages#Reply_100B|See reply to this query]]
-
-=== 100C ===
-Shop id: <span style="color: #A600FF">0001</span>, Sell object: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
-
-[[Inventory_messages#Reply_100C|See reply to this query]]
-
-=== 100D ===
-Factory id: <span style="color: #A600FF">0001</span>
-
-[[Inventory_messages#Reply_100D|See reply to this query]]
-
-=== 100E ===
-Factory id: <span style="color: #A600FF">0001</span>, Buy object: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
-
-[[Inventory_messages#Reply_100E|See reply to this query]]
-
-=== 100F ===
-Factory id: <span style="color: #A600FF">0001</span>, Sell object: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
-
-[[Inventory_messages#Reply_100F|See reply to this query]]
-
-=== 1010 ===
-Get the market list '''(Unique id to ident even if the position have changed)'''
-
-[[Inventory_messages#Reply_1010|See reply to this query]]
-
-=== 1011 ===
-Buy into the market, type: <span style="color: #A600FF">01</span> (01 object, 02 monster), Object/marketObjectUniqueId: <span style="color: #FFBF00">00000001</span> '''(To ident event if the position have changed''', implie search at server), quantity if object: <span style="color: #40BF00">00000001</span>
-
-[[Inventory_messages#Reply_1011|See reply to this query]]
-
-=== 1012 ===
-Put the object/monster on the market: <span style="color: #A600FF">01</span> (01 object, 02 monster), if object:
-* Sell object: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">0000000000000003</span>
-Or if monster:
-* Sell monster, monster index: <span style="color: #FFBF00">01</span>, price: <span style="color: #FF4000">0000000000000003</span>
-
-[[Inventory_messages#Reply_1012|See reply to this query]]
-
-=== 1013 ===
-Withdraw cash
-
-[[Inventory_messages#Reply_1013|Withdraw cash]]
-
-=== 1014 ===
-Withdraw the object/monster on the market: <span style="color: #A600FF">01</span> (01 object, 02 monster), if object:
-* Object: <span style="color: #FFBF00">0001</span> '''(To ident even if the position have changed''', imply search at server), quantity: <span style="color: #40BF00">00000001</span>
-Or if monster:
-* marketMonsterUniqueId: <span style="color: #FFBF00">00000001</span> '''(To ident even if the position have changed''', imply search at server)
-
-[[Inventory_messages#Reply_1014|See reply to this query]]
-
 == Client &rarr; Server without reply ==
-=== 5002 ===
-Destroy the object id: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>
-
-=== 5003 ===
-Type: <span style="color: #9D007B">01</span> (cash), quantity: <span style="color: #40BF00">0000000000000001</span>
-Type: <span style="color: #9D007B">02</span> (item), item: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>
-Type: <span style="color: #9D007B">03</span> (monster), monster id: <span style="color: #40BF00">00000001</span>
-
-=== 5006 ===
-* Cash to withdraw: <span style="color: #FF0000">00000000 00000001</span> if negative, the absolute value is to deposite.
-* List of item to withdraw: <span style="color: #5544DD">0001</span>
-** Item: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span> if negative, the absolute value is to deposite.
-* List of monster to withdraw: <span style="color: #5544DD">01</span>
-** Monster id: <span style="color: #FFBF00">00000001</span>
-* List of monster to deposite: <span style="color: #5544DD">01</span>
-** Monster id: <span style="color: #FFBF00">00000001</span>
-
-=== 5008 ===
-Send the plant id <span style="color: #FF4000">02</span>
-
-=== 5009 ===
-This query have null size
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+|-
+| style="background: #90ff90; color: black;" | 43
+| style="background: #ffcc00; color: black;" | 0001
+| 
+| {{Yes}}
+| [[CatchChallenger_specific_messages#430001|Use an object/recipe]]
+|}
 
 == Server &rarr; Client without reply ==
-=== D001 ===
-Send item list size <span style="color: #FF4000">0002</span>, and the object:
-* Id: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>
-* Id: <span style="color: #FFBF00">0002</span>, quantity: <span style="color: #40BF00">00000005</span>
-Send warehouse item list size <span style="color: #FF4000">00000002</span>, and the object:
-* Id: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>
-* Id: <span style="color: #FFBF00">0002</span>, quantity: <span style="color: #40BF00">00000005</span>
-
-=== D002 ===
-Add list size <span style="color: #FF4000">0002</span>, and the object:
-* Id: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>
-* Id: <span style="color: #FFBF00">0002</span>, quantity: <span style="color: #40BF00">00000005</span>
-
-=== D003 ===
-Remove list size <span style="color: #FF4000">0002</span>, and the object:
-* Id: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>
-* Id: <span style="color: #FFBF00">0002</span>, quantity: <span style="color: #40BF00">00000005</span>
-
-=== D004 ===
-Type: <span style="color: #9D007B">01</span> (cash), quantity: <span style="color: #40BF00">0000000000000001</span>
- <span style="color: #9D007B">01</span><span style="color: #40BF00">0000000000000001</span>
-Type: <span style="color: #9D007B">02</span> (item), item: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>
- <span style="color: #9D007B">02</span><span style="color: #FFBF00">0001</span><span style="color: #40BF00">00000001</span>
-Type: <span style="color: #9D007B">03</span> (monster)
-* monsters id in db: <span style="color: #FF4000">00000001</span>
-* monsters: <span style="color: #FF4000">0001</span>
-* level: <span style="color: #40BF00">01</span>
-* remaining_xp: <span style="color: #008080">00000001</span>
-* hp: <span style="color: #FFBF00">00000001</span>
-* sp: <span style="color: #FF00FF">00000001</span>
-* captured_with: <span style="color: #40BF00">0001</span>
-* gender: <span style="color: #FF4000">01</span>
-* egg_step: <span style="color: #FFBF00">00000000</span> (is mature if = 0)
-* size of list of the buff monsters: <span style="color: #7B00FF">00000001</span>
-** buff: <span style="color: #40BF00">01</span>
-** buff level: <span style="color: #FF4000">01</span>
-* size of list of the skills monsters: <span style="color: #7B00FF">00000001</span>
-** skill: <span style="color: #40BF00">0001</span>
-** skill level: <span style="color: #FF4000">01</span>
-
-=== D1 ===
-Send list size <span style="color: #FF4000">0001</span>, and the plant:
-* {{Map_id}}, x: <span style="color: #40BFFF">01</span>, y: <span style="color: #FFBF00">01</span>, plant: <span style="color: #FF4000">01</span>, seconds to mature: <span style="color: #FFBF00">0064</span> (100s)
- <span style="color: #FF4000">0001</span><span style="color: #FFBF00">10</span><span style="color: #40BFFF">01</span><span style="color: #FFBF00">01</span><span style="color: #FF4000">01</span><span style="color: #FFBF00">0064</span>
-
-=== D2 ===
-Send list size <span style="color: #FF4000">0001</span>, and the plant:
-* {{Map_id}}, x: <span style="color: #40BFFF">01</span>, y: <span style="color: #FFBF00">01</span>
- <span style="color: #FF4000">0001</span><span style="color: #FFBF00">10</span><span style="color: #40BFFF">01</span><span style="color: #FFBF00">01</span>
-
-== Server &rarr; Client with reply ==
-=== 800001 ===
-Trade is requested by: <span style="color: #40BF00">player</span> (UTF8 + 8Bits header), skin: <span style="color: #FF4000">00</span>
-
-Note: only once at time.
-
- <span style="color: #FFBF00">08</span><span style="color: #40BF00">746f746f</span><span style="color: #FF4000">00</span>
-{{Skin}}
-
-[[Inventory_messages#Reply_800001|See reply to this query]]
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+|-
+| style="background: #90ff90; color: black;" | C5
+| style="background: #ffcc00; color: black;" | 0001
+| 
+| {{Yes}}
+| [[CatchChallenger_specific_messages#C50001|Send the inventory]] 
+|}
 
 = Reply =
-== Server &rarr; Client reply ==
-=== Reply 1006 ===
-<span style="color: #40BFFF">01</span> (correctly planted)
- <span style="color: #40BFFF">01</span>
-
-<span style="color: #40BFFF">02</span> (impossible)
- <span style="color: #40BFFF">02</span>
-=== Reply 100007 ===
-<span style="color: #40BFFF">01</span> (correctly collected)
- <span style="color: #40BFFF">01</span>
-
-<span style="color: #40BFFF">02</span> (empty dirt)
- <span style="color: #40BFFF">02</span>
-
-<span style="color: #40BFFF">03</span> (owned by another player)
- <span style="color: #40BFFF">03</span>
-
-<span style="color: #40BFFF">04</span> (impossible)
- <span style="color: #40BFFF">04</span>
-
-=== Reply 100008 ===
-<span style="color: #40BFFF">01</span> (correctly crafted)
- <span style="color: #40BFFF">01</span>
-
-<span style="color: #40BFFF">02</span> (can't be used, and '''materials not consumed''')
- <span style="color: #40BFFF">02</span>
-
-<span style="color: #40BFFF">03</span> (failed to craft, '''materials consumed''')
- <span style="color: #40BFFF">03</span>
-
-=== Reply 1009 ===
-'''If is a special object, have extra args, see bellow'''
-
-The reply can be one of this:
-* <span style="color: #40BFFF">01</span> is correctly used
-* <span style="color: #40BFFF">02</span> failed to use with consumption of the object
-* <span style="color: #40BFFF">03</span> failed to use without consumption of the object
-
-=== Reply 100A ===
-Why resend the object list? Because some object can be disabled by the server. Allow global trade where the player can sell/buy to other player.
-
-Get shop list size: <span style="color: #FF4000">0003</span>
-* object: <span style="color: #FFBF00">0001</span>, price: <span style="color: #FF4000">00000003</span>, quantity: <span style="color: #40BF00">00000000</span> (0 = infinity)
-
-=== Reply 100B ===
-The reply can be one of this:
-* <span style="color: #40BFFF">01</span> Purchased
-* <span style="color: #40BFFF">02</span> Purchased at better price, price: <span style="color: #FF4000">00000003</span>
-* <span style="color: #40BFFF">03</span> Have not the quantity
-* <span style="color: #40BFFF">04</span> Price have changed
-
-=== Reply 100C ===
-The reply can be one of this:
-* <span style="color: #40BFFF">01</span> Sold
-* <span style="color: #40BFFF">02</span> Sold at better price, price: <span style="color: #FF4000">00000003</span>
-* <span style="color: #40BFFF">03</span> Can't sold this quantity
-* <span style="color: #40BFFF">04</span> Price have changed
-
-=== Reply 100D ===
-Why resend the object list? Because some object can be disabled by the server. Allow global trade where the player can sell/buy to other player.
-
-Get factory resources list size: <span style="color: #FF4000">00000001</span>
-* object: <span style="color: #FFBF00">0001</span>, price: <span style="color: #FF4000">00000003</span>, quantity: <span style="color: #40BF00">00000005</span>
-Get factory products list size: <span style="color: #FF4000">00000001</span>
-* object: <span style="color: #FFBF00">0002</span>, price: <span style="color: #FF4000">00000015</span>, quantity: <span style="color: #40BF00">00000001</span>
-
-=== Reply 100E ===
-The reply can be one of this:
-* <span style="color: #40BFFF">01</span> Purchased
-* <span style="color: #40BFFF">02</span> Purchased at better price, price: <span style="color: #FF4000">00000003</span>
-* <span style="color: #40BFFF">03</span> Have not the quantity
-* <span style="color: #40BFFF">04</span> Price have changed
-
-=== Reply 100F ===
-The reply can be one of this:
-* <span style="color: #40BFFF">01</span> Sold
-* <span style="color: #40BFFF">02</span> Sold at better price, price: <span style="color: #FF4000">00000003</span>
-* <span style="color: #40BFFF">03</span> Can't sold this quantity
-* <span style="color: #40BFFF">04</span> Price have changed
-
-=== Reply 1010 ===
-Price into the market: <span style="color: #FF4000">0000000000000003</span>
-
-List of object, size list <span style="color: #A600FF">00000001</span>:
-* Object unique id: <span style="color: #FFBF00">00000001</span> '''(To ident even if the position have changed''', imply search at server), Object id: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">0000000000000003</span>
-List of monster, size list <span style="color: #A600FF">00000001</span>:
-* Monster unique id: <span style="color: #FFBF00">00000001</span> '''(To ident even if the position have changed''', imply search at server)', Monster: <span style="color: #40BF00">0001</span>, level: <span style="color: #FF4000">03</span>, price: <span style="color: #FF4000">0000000000000003</span>
-List of object of current player, size list <span style="color: #A600FF">00000001</span>:
-* Object unique id: <span style="color: #FFBF00">00000001</span> '''(To ident even if the position have changed''', imply search at server), Object id: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">0000000000000003</span>
-List of monster of current player, size list <span style="color: #A600FF">00000001</span>:
-* Monster unique id: <span style="color: #FFBF00">00000001</span> '''(To ident even if the position have changed''', imply search at server), Monster: <span style="color: #40BF00">0001</span>, level: <span style="color: #FF4000">03</span>, price: <span style="color: #FF4000">0000000000000003</span>
-
-=== Reply 1011 ===
-The reply can be one of this:
-* <span style="color: #40BFFF">01</span> Buy done
-* <span style="color: #40BFFF">02</span> Can't buy this quantity
-* <span style="color: #40BFFF">03</span> Buy failed
-If Monster: send player monster
-
-=== Reply 1012 ===
-The reply can be one of this:
-* <span style="color: #40BFFF">01</span> Put ok
-* <span style="color: #40BFFF">02</span> Put failed
-
-=== Reply 1013 ===
-Cash returned: <span style="color: #40BFFF">0000000000000001</span>
-
-=== Reply 1014 ===
-The reply can be one of this:
-* <span style="color: #40BFFF">01</span> Withdraw object/monster ok
-* <span style="color: #40BFFF">02</span> Withdraw object/monster failed
-* Type: <span style="color: #FFBF00">01</span> (01 object, 02 monster)
-If Object:
-** Object: <span style="color: #40BF00">0001</span>, quantity: <span style="color: #FF4000">03</span>
-If Monster: send player monster
-
-== Client &rarr; Server reply ==
-=== Reply 8001 ===
-<span style="color: #40BFFF">01</span> (accepted)
- <span style="color: #40BFFF">01</span>
-
-<span style="color: #40BFFF">02</span> (refused)
- <span style="color: #40BFFF">02</span>
+== Server &rarr; Client ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type of the query
+! Sub code type of the query
+! Packet size for the reply
+! Query
+|-
+| style="background: #90ff90; color: black;" | 03
+| style="background: #ffcc00; color: black;" | 0003
+| {{No}}
+| [[CatchChallenger_specific_messages#Reply_030003|Stock objects]]
+|-
+| style="background: #90ff90; color: black;" | 03
+| style="background: #ffcc00; color: black;" | 0004
+| {{Yes}}
+| [[CatchChallenger_specific_messages#Reply_030004|Ask object list to receive]]
+|-
+| style="background: #90ff90; color: black;" | 03
+| style="background: #ffcc00; color: black;" | 0005
+| {{Yes}}
+| [[CatchChallenger_specific_messages#Reply_030005|Withdraw an object]]
+|}
