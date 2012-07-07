@@ -294,7 +294,7 @@ Remove all other player on the map: (Better than remove each id)
 <span style="color: #40BFFF">03</span>, <span style="font-style: italic"><span style="color: #40BF00">&quot;Server full&quot;</span></span>
  <span style="color: #40BFFF">03</span><span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">00700072006f0074006f0063006f006c0020006e006f007400200073007500700070006f0072007400650064</span>
 
-{{Note}}After this, all communication is into the packet size + compression mode send by the protocol.
+{{Note}}After this, all communication is into the packet size mode send by the protocol.
 
 === Reply 020002 ===
 <span style="color: #FF4000">01</span> (something is wrong), <span style="color: #40BF00">&quot;bad login&quot;</span> (or other server error)
