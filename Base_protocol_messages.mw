@@ -216,7 +216,7 @@ Client -&gt; Server: chat type: <span style="color: #FF4000">02</span>, text: <s
 
 === C0 ===
 Server -&gt; Client:
-* type other player def: <span style="color: #40BFFF">01</span> (insert), number of map: <span style="color: #FF4000">01</span>
+* type other player def: number of map: <span style="color: #FF4000">01</span>
 ** <span style="color: #40BF00">&quot;map name&quot;</span> (UTF8 + 8Bits of size header), number of player: {{Number_of_player}}:
 *** player id: {{Player_id}}, information:
 **** local x: {{Player_x}}
@@ -226,25 +226,19 @@ Server -&gt; Client:
 **** pseudo: <span style="color: #40BF00">&quot;toto&quot;</span> (UTF8 + 8Bits of size header)
 **** clan: <span style="color: #FF4000">01</span>
 **** skin: <span style="color: #40BF00">&quot;skin name&quot;</span> (UTF8 + 8Bits of size header)
-
-* type other player def: <span style="color: #40BFFF">02</span> (move), number of player: {{Number_of_player}}
+* type other player def: number of player: {{Number_of_player}}
 ** player id: {{Player_id}}, move with list size (<span style="color: #FFBF00">02</span>):
 *** previous moved unit: <span style="color: #0000FF">06</span>, direction: <span style="color: #FF4000">02</span>
 *** previous moved unit: <span style="color: #0000FF">08</span>, direction: <span style="color: #FF4000">01</span>
-* type other player def: <span style="color: #40BFFF">03</span> (delete), number of player: {{Number_of_player}}:
+* type other player def: number of player: {{Number_of_player}}:
 ** player id: {{Player_id}}
 
- <span style="color: #40BFFF">01</span> <span style="color: #FF4000">01</span> <span style="color: #FFBF00">10</span><span style="color: #40BF00">6d6170206e616d65</span> <span style="color: #FF4000">0001</span>
+ <span style="color: #FF4000">01</span> <span style="color: #FFBF00">10</span><span style="color: #40BF00">6d6170206e616d65</span> <span style="color: #FF4000">0001</span>
  <span style="color: #BFBF40">2152</span><span style="color: #40BFFF">02</span><span style="color: #FFBF00">02</span><span style="color: #800080">12</span><span style="color: #40BFFF">04</span> <span style="color: #FFBF00">08</span><span style="color: #40BF00">746f746f</span> <span style="color: #FF4000">01</span> <span style="color: #FFBF00">12</span><span style="color: #40BF00">736b696e206e616d65</span>
- <span style="color: #40BFFF">02</span> <span style="color: #FF4000">0001</span>
+ <span style="color: #FF4000">0001</span>
  <span style="color: #BFBF40">2153</span><span style="color: #FFBF00">02</span><span style="color: #0000FF">06</span><span style="color: #FF4000">02</span><span style="color: #0000FF">08</span><span style="color: #FF4000">01</span>
- <span style="color: #40BFFF">03</span> <span style="color: #FF4000">0001</span> <span style="color: #BFBF40">2154</span>
+ <span style="color: #FF4000">0001</span> <span style="color: #BFBF40">2154</span>
 {{Direction_definition}}
-type other player def:
-* <span style="color: #40BFFF">01</span> = first position definition
-* <span style="color: #40BFFF">02</span> = movement definition
-* <span style="color: #40BFFF">03</span> = player is dropped
-
 {{Player_type}}
 
 === C20001 ===
