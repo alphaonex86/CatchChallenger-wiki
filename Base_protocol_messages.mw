@@ -223,9 +223,9 @@ Server -&gt; Client:
 **** local y: {{Player_y}}
 **** direction | status: <span style="color: #FF4000">02</span> can be spawn walking, and do | with: <span style="color: #40BFFF">10</span> to the player status = <span style="color: #800080">12</span>
 **** speed: <span style="color: #40BFFF">04</span> (50ms*4, see [[Unit into the game]])
-**** pseudo: <span style="color: #40BF00">&quot;toto&quot;</span>
+**** pseudo: <span style="color: #40BF00">&quot;toto&quot;</span> (UTF8 + 8Bits of size header)
 **** clan: <span style="color: #FF4000">01</span>
-**** skin: <span style="color: #40BF00">&quot;skin name&quot;</span>
+**** skin: <span style="color: #40BF00">&quot;skin name&quot;</span> (UTF8 + 8Bits of size header)
 
 * type other player def: <span style="color: #40BFFF">02</span> (move), number of player: {{Number_of_player}}
 ** player id: {{Player_id}}, move with list size (<span style="color: #FFBF00">02</span>):
