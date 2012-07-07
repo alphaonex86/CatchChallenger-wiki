@@ -2,89 +2,19 @@
 * Why not have choice send text from the server dynamically?
 Because that's do more traffic (mainly static), useless for signs, need choose the right translation, ... You need wait the server, you need translation part on the server, ... the it's not very powerful.
 * No object using during a fight/battle into PvP, because can be an infinite battle (potion usage).
-* Trade out of the inventory because can trade too money, or something not into the inventory
-
 = General =
-== Client &rarr; Server with reply ==
-{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! Packet Code
-! Data
-! Source
-! Destination
-! Fixed Query size
-! Fixed Reply size
-|}
-{{Note}}All the main code in this column is considered query with needed reply.
-
-== Client &rarr; Server ==
-{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! Packet Code
-! Data
-! Source
-! Destination
-! Fixed Message size
-{{Template:Others_messages_Client_Server}}
-|}
-
-== Server &rarr; Client with reply ==
-{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! Packet Code
-! Data
-! Source
-! Destination
-! Fixed Query size
-! Fixed Reply size
-|}
-
-== Server &rarr; Client ==
-{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! Packet Code
-! Data
-! Source
-! Destination
-! Fixed Message size
-{{Template:Others_messages_Server_Client}}
-|}
-
 == Client &rarr; Server without reply ==
-=== 6a01 ===
-Start quest with id: <span style="color: #FFBF00">0001</span>
- <span style="color: #FFBF00">0001</span>
-
-=== 6a02 ===
-Finish quest with id: <span style="color: #FFBF00">0001</span>
- <span style="color: #FFBF00">0001</span>
-
-=== 6a03 ===
-Cancel quest with id: <span style="color: #FFBF00">0001</span>
- <span style="color: #FFBF00">0001</span>
-
-=== 6a04 ===
-Next step for quest with id: <span style="color: #FFBF00">0001</span>
- <span style="color: #FFBF00">0001</span>
-
-=== 6a05 ===
-Cancel: <span style="color: #FFBF00">00</span> (no, 0x01 for yes)
-
-== Server &rarr; Client without reply ==
-=== F001 ===
-==== You are not a clan leader to start it ====
-You are not a clan leader to start it: <span style="color: #FF0000">01</span>
-==== You clan leader have start into another city ====
-You are not a clan leader to start it: <span style="color: #FF0000">02</span>, city code name: <span style="color: #40BF00">toto</span>
-==== Previous city capture not finished ====
-Previous city capture not finished: <span style="color: #FF0000">03</span>
-==== Capture have start immediatly ====
-The capture have start: <span style="color: #FF0000">04</span>, number of player: <span style="color: #FFBF00">0001</span>, number of clan: <span style="color: #40BF00">0001</span>
-
-Fight id: <span style="color: #BF00FF">00000001</span> or nothing to send agains player via: http://catchchallenger.first-world.info/wiki/Battle_messages#E00008
-==== Capture have start in differed ====
-It's mostly because need wait free player to fight with him.
-
-The capture have start: <span style="color: #FF0000">05</span>, number of player: <span style="color: #FFBF00">0001</span>, number of clan: <span style="color: #40BF00">0001</span>
-==== You win ====
-Your clan have win the city: <span style="color: #FF0000">06</span>
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+|-
+| style="background: #90ff90; color: black;" | 43
+| style="background: #ffcc00; color: black;" | 0005
+| 
+| {{Yes}}
+| [[CatchChallenger_specific_messages#430005|Quest action]] (accept, finish, cancel)
+|}
