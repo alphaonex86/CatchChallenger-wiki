@@ -1,0 +1,90 @@
+= Choice =
+* Why not have choice send text from the server dynamically?
+Because that's do more traffic (mainly static), useless for signs, need choose the right translation, ... You need wait the server, you need translation part on the server, ... the it's not very powerful.
+* No object using during a fight/battle into PvP, because can be an infinite battle (potion usage).
+= General =
+== Client &rarr; Server with reply ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+|-
+| style="background: #90ff90; color: black;" | 03
+| style="background: #ffcc00; color: black;" | 0003
+| XX
+| {{Yes}}
+| [[CatchChallenger_specific_messages#030003|Stock objects]]
+|-
+| style="background: #90ff90; color: black;" | 03
+| style="background: #ffcc00; color: black;" | 0004
+| XX
+| {{Yes}}
+| [[CatchChallenger_specific_messages#030004|Object list can be withdraw]]
+|-
+| style="background: #90ff90; color: black;" | 03
+| style="background: #ffcc00; color: black;" | 0005
+| XX
+| {{Yes}}
+| [[CatchChallenger_specific_messages#030005|Withdraw an object]]
+|}
+{{Note}}All the main code in this column is considered query with needed reply.
+
+== Client &rarr; Server without reply ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+|-
+| style="background: #90ff90; color: black;" | 43
+| style="background: #ffcc00; color: black;" | 0001
+| 
+| {{Yes}}
+| [[CatchChallenger_specific_messages#430001|Use an object/recipe]]
+|}
+
+== Server &rarr; Client without reply ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+|-
+| style="background: #90ff90; color: black;" | C5
+| style="background: #ffcc00; color: black;" | 0001
+| 
+| {{Yes}}
+| [[CatchChallenger_specific_messages#C50001|Send the inventory]] 
+|}
+
+= Reply =
+== Server &rarr; Client ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type of the query
+! Sub code type of the query
+! Packet size for the reply
+! Query
+|-
+| style="background: #90ff90; color: black;" | 03
+| style="background: #ffcc00; color: black;" | 0003
+| {{No}}
+| [[CatchChallenger_specific_messages#Reply_030003|Stock objects]]
+|-
+| style="background: #90ff90; color: black;" | 03
+| style="background: #ffcc00; color: black;" | 0004
+| {{Yes}}
+| [[CatchChallenger_specific_messages#Reply_030004|Ask object list to receive]]
+|-
+| style="background: #90ff90; color: black;" | 03
+| style="background: #ffcc00; color: black;" | 0005
+| {{Yes}}
+| [[CatchChallenger_specific_messages#Reply_030005|Withdraw an object]]
+|}
