@@ -1,0 +1,20 @@
+= Choice =
+* Why not have choice send text from the server dynamically?
+Because that's do more traffic (mainly static), useless for signs, need choose the right translation, ... You need wait the server, you need translation part on the server, ... the it's not very powerful.
+* No object using during a fight/battle into PvP, because can be an infinite battle (potion usage).
+= General =
+== Client &rarr; Server without reply ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+|-
+| style="background: #90ff90; color: black;" | 43
+| style="background: #ffcc00; color: black;" | 0005
+| 
+| {{Yes}}
+| [[CatchChallenger_specific_messages#430005|Quest action]] (accept, finish, cancel)
+|}
