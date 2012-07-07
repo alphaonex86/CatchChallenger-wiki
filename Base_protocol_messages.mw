@@ -176,7 +176,7 @@
 At the connection, send the protocol supported, <span style="font-weight: bold">before all!</span><br />query type: query number: <span style="font-style: italic"><span style="color: #40BF00">&quot;catchchallenger-0.0.0.1&quot;</span></span>
  <span style="color: #FFBF00">00000022</span><span style="color: #40BF00">0070006f006b006500630072006100660074002d0030002e0030002e0030002e0031</span>
 
-{{Note}}After this, all communication is into the packet size + compression mode send by the protocol.
+{{Note}}After this, all communication is into the packet size mode send by the protocol.
 
 [[Base_protocol_messages#Reply_020001|See reply to this query]]
 
