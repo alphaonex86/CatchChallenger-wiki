@@ -29,4 +29,4 @@ The command:
  /goto [map] x y
 
 * Set rights, type can be normal, premium, dev, admin
- /rights [type]
+ /rights [pseudo] [type]
