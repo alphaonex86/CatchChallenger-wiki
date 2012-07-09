@@ -281,7 +281,7 @@ Remove all other player on the map: (Better than remove each id)
 == Server &rarr; Client reply ==
 === Reply 020001 ===
 <span style="color: #40BFFF">01</span> (is supported)
- <span style="color: #40BFFF">01</span><span style="color: #FF0000">01</span><span style="color: #FF0000">02</span>
+ <span style="color: #40BFFF">01</span>
 
 <span style="color: #40BFFF">02</span> (protocol not supported)
  <span style="color: #40BFFF">02</span>
