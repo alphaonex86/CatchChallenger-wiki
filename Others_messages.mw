@@ -12,9 +12,9 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Packet size
 ! Data
 |-
-| style="background: #90ff90; color: black;" | 43
+| style="background: #90ff90; color: black;" | 50
 | style="background: #ffcc00; color: black;" | 0005
 | 
 | {{Yes}}
-| [[CatchChallenger_specific_messages#430005|Quest action]] (accept, finish, cancel)
+| [[CatchChallenger_specific_messages#500005|Quest action]] (accept, finish, cancel)
 |}
