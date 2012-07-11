@@ -18,7 +18,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #ffcc00; color: black;" | 0001
 | XX
 | {{Yes}}
-| [[CatchChallenger_specific_messages#030001|Request a player battle]]
+| [[CatchChallenger_specific_messages#100001|Request a player battle]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
@@ -35,13 +35,13 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #ffcc00; color: black;" | 0001
 | 
 | {{Yes}}
-| [[CatchChallenger_specific_messages#430001|Use an object/recipe]]
+| [[CatchChallenger_specific_messages#500001|Use an object/recipe]]
 |-
 | style="background: #90ff90; color: black;" | 51
 | 
 | 
 | {{No}}
-| [[CatchChallenger_specific_messages#44|Use an attack of a monster]]
+| [[CatchChallenger_specific_messages#51|Use an attack of a monster]]
 |}
 
 == Server &rarr; Client with reply ==
@@ -57,7 +57,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #ffcc00; color: black;" | 0001
 | XX
 | {{Yes}}
-| [[CatchChallenger_specific_messages#080001|Another player request a battle]]
+| [[CatchChallenger_specific_messages#900001|Another player request a battle]]
 |}
 
 == Server &rarr; Client without reply ==
@@ -106,7 +106,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 0001
 | {{No}}
-| [[CatchChallenger_specific_messages#Reply_030001|Request a player battle]]
+| [[CatchChallenger_specific_messages#Reply_100001|Request a player battle]]
 |}
 == Client &rarr; Server ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
@@ -119,5 +119,5 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #90ff90; color: black;" | 90
 | style="background: #ffcc00; color: black;" | 0001
 | {{No}}
-| [[CatchChallenger_specific_messages#Reply_030001|Another player request a battle]]
+| [[CatchChallenger_specific_messages#Reply_900001|Another player request a battle]]
 |}
