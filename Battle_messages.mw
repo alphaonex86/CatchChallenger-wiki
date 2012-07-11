@@ -69,29 +69,29 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Packet size
 ! Data
 |-
-| style="background: #90ff90; color: black;" | C5
+| style="background: #90ff90; color: black;" | D0
 | style="background: #ffcc00; color: black;" | 0002
 | 
 | {{Yes}}
-| [[CatchChallenger_specific_messages#C50002|Send the monsters of current player]]
+| [[CatchChallenger_specific_messages#D00002|Send the monsters of current player]]
 |-
-| style="background: #90ff90; color: black;" | C5
+| style="background: #90ff90; color: black;" | D0
 | style="background: #ffcc00; color: black;" | 0008
 | 
 | {{Yes}}
-| [[CatchChallenger_specific_messages#C50002|Send the monsters of the other player]]
+| [[CatchChallenger_specific_messages#D00002|Send the monsters of the other player]]
 |-
-| style="background: #90ff90; color: black;" | C5
+| style="background: #90ff90; color: black;" | D0
 | style="background: #ffcc00; color: black;" | 0006
 | 
 | {{Yes}}
-| [[CatchChallenger_specific_messages#C50006|The other player use an attack]] (battle)
+| [[CatchChallenger_specific_messages#D00006|The other player use an attack]] (battle)
 |-
-| style="background: #90ff90; color: black;" | C5
+| style="background: #90ff90; color: black;" | D0
 | style="background: #ffcc00; color: black;" | 0007
 | 
 | {{Yes}}
-| [[CatchChallenger_specific_messages#C50007|Push the monsters list of the other player]] (battle)
+| [[CatchChallenger_specific_messages#D00007|Push the monsters list of the other player]] (battle)
 |}
 
 = Reply =
