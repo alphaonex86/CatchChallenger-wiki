@@ -12,19 +12,19 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Packet size
 ! Data
 |-
-| style="background: #90ff90; color: black;" | 03
+| style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 0003
 | XX
 | {{Yes}}
 | [[CatchChallenger_specific_messages#030003|Stock objects]]
 |-
-| style="background: #90ff90; color: black;" | 03
+| style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 0004
 | XX
 | {{Yes}}
 | [[CatchChallenger_specific_messages#030004|Object list can be withdraw]]
 |-
-| style="background: #90ff90; color: black;" | 03
+| style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 0005
 | XX
 | {{Yes}}
@@ -41,7 +41,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Packet size
 ! Data
 |-
-| style="background: #90ff90; color: black;" | 43
+| style="background: #90ff90; color: black;" | 50
 | style="background: #ffcc00; color: black;" | 0001
 | 
 | {{Yes}}
@@ -73,17 +73,17 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Packet size for the reply
 ! Query
 |-
-| style="background: #90ff90; color: black;" | 03
+| style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 0003
 | {{No}}
 | [[CatchChallenger_specific_messages#Reply_030003|Stock objects]]
 |-
-| style="background: #90ff90; color: black;" | 03
+| style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 0004
 | {{Yes}}
 | [[CatchChallenger_specific_messages#Reply_030004|Ask object list to receive]]
 |-
-| style="background: #90ff90; color: black;" | 03
+| style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 0005
 | {{Yes}}
 | [[CatchChallenger_specific_messages#Reply_030005|Withdraw an object]]
