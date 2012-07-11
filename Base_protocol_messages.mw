@@ -291,6 +291,32 @@ Server -&gt; Client: current: <span style="color: #FF4000">0002</span>
 === C4 ===
 Remove all other player on the map: (Better than remove each id)
 
+
+=== C5 ===
+Server -&gt; Client, mainly user to drop the over move:
+* number of player: {{Number_of_player}}:
+** player id: {{Player_id}}, information:
+*** local x: {{Player_x}}
+*** local y: {{Player_y}}
+*** direction: <span style="color: #FF4000">02</span> can be spawn walking
+
+ <span style="color: #FF4000">0001</span>
+ <span style="color: #BFBF40">2152</span><span style="color: #40BFFF">02</span><span style="color: #FFBF00">02</span><span style="color: #FF4000">02</span>
+{{Direction_definition}}
+
+=== C6 ===
+Server -&gt; Client, mainly used of the teleportation:
+* type other player def: number of map: <span style="color: #FF4000">01</span>
+** <span style="color: #40BF00">&quot;map name&quot;</span> (UTF8 + 8Bits of size header), number of player: {{Number_of_player}}:
+*** player id: {{Player_id}}, information:
+**** local x: {{Player_x}}
+**** local y: {{Player_y}}
+**** direction: <span style="color: #FF4000">02</span> can be spawn walking
+
+ <span style="color: #FF4000">01</span> <span style="color: #FFBF00">10</span><span style="color: #40BF00">6d6170206e616d65</span> <span style="color: #FF4000">0001</span>
+ <span style="color: #BFBF40">2152</span><span style="color: #40BFFF">02</span><span style="color: #FFBF00">02</span><span style="color: #800080">12</span><span style="color: #40BFFF">04</span> <span style="color: #FFBF00">08</span><span style="color: #40BF00">746f746f</span> <span style="color: #FF4000">01</span> <span style="color: #FFBF00">12</span><span style="color: #40BF00">736b696e206e616d65</span>
+{{Direction_definition}}
+
 = Reply =
 == Server &rarr; Client reply ==
 === Reply 020001 ===
