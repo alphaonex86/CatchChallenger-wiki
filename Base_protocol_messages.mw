@@ -133,7 +133,13 @@
 | 
 | 
 | {{Yes}}
-| [[Base_protocol_messages#C5|Reinser player]] '''''(Fast)'''''
+| [[Base_protocol_messages#C5|Reinser player on same map]] '''''(Fast)'''''
+|-
+| style="background: #90ff90; color: black;" | C6
+| 
+| 
+| {{Yes}}
+| [[Base_protocol_messages#C5|Reinser player on other map]] '''''(Fast)'''''
 |}
 
 = Reply =
