@@ -14,7 +14,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Packet size
 ! Data
 |-
-| style="background: #90ff90; color: black;" | 03
+| style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 0001
 | XX
 | {{Yes}}
@@ -31,13 +31,13 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Packet size
 ! Data
 |-
-| style="background: #90ff90; color: black;" | 43
+| style="background: #90ff90; color: black;" | 50
 | style="background: #ffcc00; color: black;" | 0001
 | 
 | {{Yes}}
 | [[CatchChallenger_specific_messages#430001|Use an object/recipe]]
 |-
-| style="background: #90ff90; color: black;" | 44
+| style="background: #90ff90; color: black;" | 51
 | 
 | 
 | {{No}}
@@ -53,7 +53,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Packet size
 ! Data
 |-
-| style="background: #90ff90; color: black;" | 80
+| style="background: #90ff90; color: black;" | 90
 | style="background: #ffcc00; color: black;" | 0001
 | XX
 | {{Yes}}
@@ -103,7 +103,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Packet size for the reply
 ! Query
 |-
-| style="background: #90ff90; color: black;" | 03
+| style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 0001
 | {{No}}
 | [[CatchChallenger_specific_messages#Reply_030001|Request a player battle]]
@@ -116,7 +116,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Packet size for the reply
 ! Query
 |-
-| style="background: #90ff90; color: black;" | 80
+| style="background: #90ff90; color: black;" | 90
 | style="background: #ffcc00; color: black;" | 0001
 | {{No}}
 | [[CatchChallenger_specific_messages#Reply_030001|Another player request a battle]]
