@@ -73,7 +73,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #ffcc00; color: black;" | 0001
 | 
 | {{Yes}}
-| [[Base_protocol_messages#D00001|Random seed list]]
+| [[Battle_messages#D00001|Random seed list]]
 |-
 | style="background: #90ff90; color: black;" | D0
 | style="background: #ffcc00; color: black;" | 0002
