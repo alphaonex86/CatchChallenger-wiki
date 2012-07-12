@@ -314,7 +314,7 @@ Server -&gt; Client, mainly used of the teleportation:
 **** direction: <span style="color: #FF4000">02</span> can be spawn walking
 
  <span style="color: #FF4000">01</span> <span style="color: #FFBF00">10</span><span style="color: #40BF00">6d6170206e616d65</span> <span style="color: #FF4000">0001</span>
- <span style="color: #BFBF40">2152</span><span style="color: #40BFFF">02</span><span style="color: #FFBF00">02</span><span style="color: #800080">12</span><span style="color: #40BFFF">04</span> <span style="color: #FFBF00">08</span><span style="color: #40BF00">746f746f</span> <span style="color: #FF4000">01</span> <span style="color: #FFBF00">12</span><span style="color: #40BF00">736b696e206e616d65</span>
+ <span style="color: #BFBF40">2152</span><span style="color: #40BFFF">02</span><span style="color: #FFBF00">02</span><span style="color: #FF4000">02</span>
 {{Direction_definition}}
 
 = Reply =
