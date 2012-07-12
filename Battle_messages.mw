@@ -130,7 +130,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 
 = Details =
 == Server &rarr; Client without reply ==
-=== D00001 ===
+=== D00009 ===
 Server -&gt; Client: random bytes: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX[...]XXXXXXXXXXX</span>
 
  <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX[...]XXXXXXXXXXX</span>
