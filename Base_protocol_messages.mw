@@ -94,12 +94,6 @@
 | [[Base_protocol_messages#C1|Reply to client query]] ([[Base_protocol_messages#Reply|See reply]])
 |-
 | style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 0001
-| 
-| {{Yes}}
-| [[Base_protocol_messages#C20001|Random seed list]]
-|-
-| style="background: #90ff90; color: black;" | C2
 | style="background: #ffcc00; color: black;" | 0003
 | 
 | {{Yes}}
