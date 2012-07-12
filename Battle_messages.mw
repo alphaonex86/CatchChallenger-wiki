@@ -18,7 +18,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #ffcc00; color: black;" | 0001
 | XX
 | {{Yes}}
-| [[CatchChallenger_specific_messages#100001|Request a player battle]]
+| [[Battle_messages#100001|Request a player battle]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
@@ -35,13 +35,13 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #ffcc00; color: black;" | 0001
 | 
 | {{Yes}}
-| [[CatchChallenger_specific_messages#500001|Use an object/recipe]]
+| [[Battle_messages#500001|Use an object/recipe]]
 |-
 | style="background: #90ff90; color: black;" | 51
 | 
 | 
 | {{No}}
-| [[CatchChallenger_specific_messages#51|Use an attack of a monster]]
+| [[Battle_messages#51|Use an attack of a monster]]
 |}
 
 == Server &rarr; Client with reply ==
@@ -57,7 +57,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #ffcc00; color: black;" | 0001
 | XX
 | {{Yes}}
-| [[CatchChallenger_specific_messages#900001|Another player request a battle]]
+| [[Battle_messages#900001|Another player request a battle]]
 |}
 
 == Server &rarr; Client without reply ==
@@ -79,25 +79,25 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #ffcc00; color: black;" | 0002
 | 
 | {{Yes}}
-| [[CatchChallenger_specific_messages#D00002|Send the monsters of current player]]
+| [[Battle_messages#D00002|Send the monsters of current player]]
 |-
 | style="background: #90ff90; color: black;" | D0
 | style="background: #ffcc00; color: black;" | 0008
 | 
 | {{Yes}}
-| [[CatchChallenger_specific_messages#D00002|Send the monsters of the other player]]
+| [[Battle_messages#D00002|Send the monsters of the other player]]
 |-
 | style="background: #90ff90; color: black;" | D0
 | style="background: #ffcc00; color: black;" | 0006
 | 
 | {{Yes}}
-| [[CatchChallenger_specific_messages#D00006|The other player use an attack]] (battle)
+| [[Battle_messages#D00006|The other player use an attack]] (battle)
 |-
 | style="background: #90ff90; color: black;" | D0
 | style="background: #ffcc00; color: black;" | 0007
 | 
 | {{Yes}}
-| [[CatchChallenger_specific_messages#D00007|Push the monsters list of the other player]] (battle)
+| [[Battle_messages#D00007|Push the monsters list of the other player]] (battle)
 |}
 
 = Reply =
@@ -112,7 +112,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 0001
 | {{No}}
-| [[CatchChallenger_specific_messages#Reply_100001|Request a player battle]]
+| [[Battle_messages#Reply_100001|Request a player battle]]
 |}
 == Client &rarr; Server ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
@@ -125,5 +125,12 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #90ff90; color: black;" | 90
 | style="background: #ffcc00; color: black;" | 0001
 | {{No}}
-| [[CatchChallenger_specific_messages#Reply_900001|Another player request a battle]]
+| [[Battle_messages#Reply_900001|Another player request a battle]]
 |}
+
+= Details =
+== Server &rarr; Client without reply ==
+=== D00001 ===
+Server -&gt; Client: random bytes: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX[...]XXXXXXXXXXX</span>
+
+ <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX[...]XXXXXXXXXXX</span>
