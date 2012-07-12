@@ -16,19 +16,19 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #ffcc00; color: black;" | 0003
 | XX
 | {{Yes}}
-| [[CatchChallenger_specific_messages#100003|Stock objects]]
+| [[Inventory_messages#100003|Stock objects]]
 |-
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 0004
 | XX
 | {{Yes}}
-| [[CatchChallenger_specific_messages#100004|Object list can be withdraw]]
+| [[Inventory_messages#100004|Object list can be withdraw]]
 |-
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 0005
 | XX
 | {{Yes}}
-| [[CatchChallenger_specific_messages#100005|Withdraw an object]]
+| [[Inventory_messages#100005|Withdraw an object]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
@@ -45,7 +45,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #ffcc00; color: black;" | 0001
 | 
 | {{Yes}}
-| [[CatchChallenger_specific_messages#500001|Use an object/recipe]]
+| [[Inventory_messages#500001|Use an object/recipe]]
 |}
 
 == Server &rarr; Client without reply ==
@@ -61,7 +61,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #ffcc00; color: black;" | 0001
 | 
 | {{Yes}}
-| [[CatchChallenger_specific_messages#D00001|Send the inventory]] 
+| [[Inventory_messages#D00001|Send the inventory]] 
 |}
 
 = Reply =
@@ -76,15 +76,15 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 0003
 | {{No}}
-| [[CatchChallenger_specific_messages#Reply_100003|Stock objects]]
+| [[Inventory_messages#Reply_100003|Stock objects]]
 |-
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 0004
 | {{Yes}}
-| [[CatchChallenger_specific_messages#Reply_100004|Ask object list to receive]]
+| [[Inventory_messages#Reply_100004|Ask object list to receive]]
 |-
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 0005
 | {{Yes}}
-| [[CatchChallenger_specific_messages#Reply_100005|Withdraw an object]]
+| [[Inventory_messages#Reply_100005|Withdraw an object]]
 |}
