@@ -256,11 +256,6 @@ Server -&gt; Client:
 {{Direction_definition}}
 {{Player_type}}
 
-=== C20001 ===
-Server -&gt; Client: random bytes: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX[...]XXXXXXXXXXX</span>
-
- <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX[...]XXXXXXXXXXX</span>
-
 === C20003 ===
 Server -&gt; Client: <span style="color: #40BF00">&quot;file name&quot;</span> (UTF8 + 8Bits of header size), file size: <span style="color: #800080">00000050</span>, last modification time stamps: <span style="color: #FF4000">4ED3C1D3</span>, data: <span style="color: #40BFFF">XXXXXXXXXXXXXXXX[...]XXXXXXXXXX</span>
  <span style="color: #FFBF00">12</span><span style="color: #40BF00">626164206c6f67696e</span><span style="color: #800080">00000050</span><span style="color: #FF4000">4ED3C1D3</span><span style="color: #40BFFF">XXXXXXXXXXXXXXXX[...]XXXXXXXXXX</span>
