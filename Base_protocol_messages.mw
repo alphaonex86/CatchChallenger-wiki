@@ -285,7 +285,7 @@ orientation def:
 * <span style="color: #FF4000">03</span> = disconnected
 
 === C3 ===
-Server -&gt; Client: current: <span style="color: #FF4000">0002</span>
+Server -&gt; Client: number of player connected: {{Number_of_player}}
  <span style="color: #FF4000">0002</span>
 
 === C4 ===
