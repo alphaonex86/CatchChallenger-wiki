@@ -236,7 +236,7 @@ Client -&gt; Server: chat type: <span style="color: #FF4000">06</span> (private 
 == Server &rarr; Client without reply ==
 
 === C0 ===
-Server -&gt; Client:
+Server -&gt; Client, insert player on the map:
 * type other player def: number of map: <span style="color: #FF4000">01</span>
 ** <span style="color: #40BF00">&quot;map name&quot;</span> (UTF8 + 8Bits of size header), number of player: {{Number_of_player}}:
 *** player id: {{Player_id}}, information:
@@ -247,18 +247,9 @@ Server -&gt; Client:
 **** clan: <span style="color: #FF4000">01</span>
 **** pseudo: <span style="color: #40BF00">&quot;toto&quot;</span> (UTF8 + 8Bits of size header)
 **** skin: <span style="color: #40BF00">&quot;skin name&quot;</span> (UTF8 + 8Bits of size header)
-* type other player def: number of player: {{Number_of_player}}
-** player id: {{Player_id}}, move with list size (<span style="color: #FFBF00">02</span>):
-*** previous moved unit: <span style="color: #0000FF">06</span>, direction: <span style="color: #FF4000">02</span>
-*** previous moved unit: <span style="color: #0000FF">08</span>, direction: <span style="color: #FF4000">01</span>
-* type other player def: number of player: {{Number_of_player}}:
-** player id: {{Player_id}}
 
  <span style="color: #FF4000">01</span> <span style="color: #FFBF00">10</span><span style="color: #40BF00">6d6170206e616d65</span> <span style="color: #FF4000">0001</span>
  <span style="color: #BFBF40">2152</span><span style="color: #40BFFF">02</span><span style="color: #FFBF00">02</span><span style="color: #800080">12</span><span style="color: #40BFFF">04</span> <span style="color: #FFBF00">08</span><span style="color: #40BF00">746f746f</span> <span style="color: #FF4000">01</span> <span style="color: #FFBF00">12</span><span style="color: #40BF00">736b696e206e616d65</span>
- <span style="color: #FF4000">0001</span>
- <span style="color: #BFBF40">2153</span><span style="color: #FFBF00">02</span><span style="color: #0000FF">06</span><span style="color: #FF4000">02</span><span style="color: #0000FF">08</span><span style="color: #FF4000">01</span>
- <span style="color: #FF4000">0001</span> <span style="color: #BFBF40">2154</span>
 {{Direction_definition}}
 {{Player_type}}
 
@@ -317,6 +308,24 @@ Server -&gt; Client, mainly used of the teleportation:
  <span style="color: #FF4000">01</span> <span style="color: #FFBF00">10</span><span style="color: #40BF00">6d6170206e616d65</span> <span style="color: #FF4000">0001</span>
  <span style="color: #BFBF40">2152</span><span style="color: #40BFFF">02</span><span style="color: #FFBF00">02</span><span style="color: #FF4000">02</span>
 {{Direction_definition}}
+
+=== C7 ===
+Server -&gt; Client, move the player:
+* type other player def: number of player: {{Number_of_player}}
+** player id: {{Player_id}}, move with list size (<span style="color: #FFBF00">02</span>):
+*** previous moved unit: <span style="color: #0000FF">06</span>, direction: <span style="color: #FF4000">02</span>
+*** previous moved unit: <span style="color: #0000FF">08</span>, direction: <span style="color: #FF4000">01</span>
+
+ <span style="color: #FF4000">0001</span>
+ <span style="color: #BFBF40">2153</span><span style="color: #FFBF00">02</span><span style="color: #0000FF">06</span><span style="color: #FF4000">02</span><span style="color: #0000FF">08</span><span style="color: #FF4000">01</span>
+{{Direction_definition}}
+
+=== C8 ===
+Server -&gt; Client, remove player from map:
+* type other player def: number of player: {{Number_of_player}}:
+** player id: {{Player_id}}
+
+ <span style="color: #FF4000">0001</span> <span style="color: #BFBF40">2154</span>
 
 = Reply =
 == Server &rarr; Client reply ==
