@@ -85,7 +85,7 @@
 | 
 | 
 | {{Yes}}
-| [[Base_protocol_messages#C0|Position + direction of other player]] '''''(Fast)'''''
+| [[Base_protocol_messages#C0|Insert player on map]] '''''(Fast)'''''
 |-
 | style="background: #90ff90; color: black;" | C1
 | 
@@ -134,6 +134,18 @@
 | 
 | {{Yes}}
 | [[Base_protocol_messages#C5|Reinser player on other map]] '''''(Fast)'''''
+|-
+| style="background: #90ff90; color: black;" | C7
+| 
+| 
+| {{Yes}}
+| [[Base_protocol_messages#C5|Move player on map]] '''''(Fast)'''''
+|-
+| style="background: #90ff90; color: black;" | C8
+| 
+| 
+| {{Yes}}
+| [[Base_protocol_messages#C5|Remove player from map]] '''''(Fast)'''''
 |}
 
 = Reply =
