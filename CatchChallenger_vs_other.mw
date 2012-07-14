@@ -1,3 +1,5 @@
+This is just for me, to have comparaison.
+
 = Server =
 ==General information==
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
@@ -17,7 +19,7 @@
 | GPL3
 | {{Yes}}
 | {{Yes}}
-| C++/Qt/Boost
+| C++, lib: Qt/Boost
 | {{Yes}}
 | File
 | MySQL/Postgresql
@@ -205,7 +207,7 @@ Here the important is the coefficient director between the idle and 100 players.
 | GPL3
 | {{Yes}}
 | {{Yes}}
-| C++/Qt/Boost + Qt Quick?/QML?/OpenGL?/SFML2?
+| C++, lib: Qt Quick?/OpenGL?/SFML2?
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
