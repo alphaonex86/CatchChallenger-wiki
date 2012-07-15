@@ -136,17 +136,15 @@ Here the important is the coefficient director between the idle and 100 players.
 ! style="width: 12em" |
 ! Asynchronous
 ! Move of other player not impacted by latency
-! Random list to prevent packet for random event
 ! Multilingual
 ! Compression
-! Crypted
 ! Datapack updating
+! Multiple datapack
 |-
 | CatchChallenger
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
-| NA
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
@@ -155,37 +153,33 @@ Here the important is the coefficient director between the idle and 100 players.
 | {{Yes}}
 | {{Yes}}
 | NA
-| NA
-| {{No}}
 | {{No}}
 | NA
+| {{Yes}}
 |-
 | Terraria
 | {{Yes}}
 | ???
 | NA
-| NA
-| {{No}}
 | {{No}}
 | NA
+| {{Yes}}
 |-
 | Lineage (l2jfree)
 | {{Yes}}
 | {{Yes}}
 | ???
-| {{Partial}}
 | {{No}}
-| ???
 | {{No}}
+| {{Yes}}
 |-class="sortbottom"
 ! style="width: 12em" |
 ! Asynchronous
 ! Move of other player not impacted by latency
-! Random list to prevent packet for random event
 ! Multilingual
 ! Compression
-! Crypted
 ! Datapack updating
+! Multiple datapack
 |}
 
 = Client =
