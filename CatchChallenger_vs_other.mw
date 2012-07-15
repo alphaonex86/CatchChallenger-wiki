@@ -256,6 +256,17 @@ Here the important is the coefficient director between the idle and 100 players.
 | NA
 | NA
 | Windows
+|-
+| PWO
+| {{Free}}
+| {{Proprietary}}
+| {{No}}
+| ???
+| C/OpenGL/Visual studio (not work under wine)
+| {{No}}
+| {{Yes}}
+| NA
+| Windows
 |-class="sortbottom"
 ! style="width: 12em" |
 ! Cost (USD)
