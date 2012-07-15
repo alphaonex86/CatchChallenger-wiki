@@ -262,7 +262,7 @@ Here the important is the coefficient director between the idle and 100 players.
 | {{Proprietary}}
 | {{No}}
 | ???
-| C/OpenGL/Visual studio (not work under wine)
+| C/OpenGL/Visual studio <span style="background:#ff9090;color:black;">(not work under wine)</span>
 | {{No}}
 | {{Yes}}
 | NA
