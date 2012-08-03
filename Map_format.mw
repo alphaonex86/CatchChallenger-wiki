@@ -49,7 +49,7 @@ It's on layer Object with name: Object, Name: what you want
 * text: Xml text
 
 == Teleportation ==
-It's layer Object with name "Tp", only visible on map editor.
+It's layer Object with name "''Moving''", only visible on map editor.
 
 * '''Warning:''' For the protocol, it's like you walk over the teleport tile, but if you continue to press the key, not send interruption (keep last direction = before distance + after distance). If you do 3 step down before pass a door, and 2 step down after, the client send 5 step down (the server calculate the tp).
 * '''Note:''' If you are tp on a teleporter, this tp do nothing, you need quit and re-go on it to activate it. Usage of if (not while), to improve the performance, and have more flexible game.
