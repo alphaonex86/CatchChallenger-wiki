@@ -35,7 +35,7 @@ The size should be egal as '''40,40'''
 * '''Grass:''' grass, where have random chance to find a monster
 
 == Object ==
-It's on layer Object with name: Object, Name: what you want
+It's on layer Object with name: "''Object''", Name: what you want
 
 '''[bot-text]'''
 * Type: bot-text
