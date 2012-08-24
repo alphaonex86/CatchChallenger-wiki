@@ -279,6 +279,7 @@ orientation def:
 === C3 ===
 Server -&gt; Client: number of player connected: {{Number_of_player}}
  <span style="color: #FF4000">0002</span>
+If this number is 0, then the player number is never send to client client (updating disabled).
 
 === C4 ===
 Remove all other player on the map: (Better than remove each id)
