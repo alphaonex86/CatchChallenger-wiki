@@ -346,9 +346,9 @@ Server -&gt; Client, remove player from map:
 <span style="color: #FF4000">01</span> (something is wrong), <span style="color: #40BF00">&quot;bad login&quot;</span> (or other server error)
  <span style="color: #FF4000">01</span><span style="color: #FFBF00">00000012</span><span style="color: #40BF00">0062006100640020006c006f00670069006e</span>
 
-<span style="color: #FF4000">02</span> (all is good), max player: <span style="color: #40BF00">0064</span> (then 100 in decimal) -> this define if the players id is defined on 8Bits (<=255) or 16Bits, the player id: {{Player_id}}, and put the current player private information:
+<span style="color: #FF4000">02</span> (all is good), max player: <span style="color: #40BF00">64</span> (then 100 in decimal) -> this define if the players id is defined on 8Bits (<=255) or 16Bits, the player id: {{Player_id}}, and put the current player private information:
 * cash: <span style="color: #40BFFF">00000000</span> (0$)
- <span style="color: #FF4000">02</span><span style="color: #40BF00">0064</span><span style="color: #BFBF40">52</span><span style="color: #40BFFF">00000000</span>
+ <span style="color: #FF4000">02</span><span style="color: #40BF00">64</span><span style="color: #BFBF40">52</span><span style="color: #40BFFF">00000000</span>
 After the server will send tp command to set the first position.
 
 === Reply 02000C ===
