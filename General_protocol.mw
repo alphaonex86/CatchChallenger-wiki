@@ -43,6 +43,7 @@ The client NEVER wait a reply.
 The server can be optimized in 2 mode: low bandwidth and high bandwidth. The communication way/mode will depends of this choice.
 * The low bandwidth is optimized for client/server with low bandwidth and high latency (third world client, server on adsl), send a minimum of data
 * The high bandwidth send more data, object drop at the end of the battle, is more secure for a large scale server
+* Disable functionality allow to save bandwidth, like number of player online
 The max player < 256 help to keep low bandwidth, because it identify the player with 1Byte (8Bits), no 2Bytes (16Bits). For repeated block like see the other moving player, that's can do 40% of bandwidth.
 
 = Map position/move =
