@@ -1,3 +1,11 @@
+This page show how you can do a keyboard key management to have move like Pokemon/Zelda. It's done via Qt, but can be translated into other languages. That's mean:
+* Change texture during the move, and exact position when the full step is done
+* Quick arrow key press into other direction, just look
+* Long arrow key press into other direction, look and move after 200ms if the arrow key continue to be pressed
+* Quick arrow key press into same direction, just move
+* At the final step, look is the move key continue to be pressed, if yes, continue the walk, else enter into looking (stopped).
+
+= Texture and position =
 The tileset for the player texture is like:
 
 [[File:player_skin_simple.png]]
