@@ -1,0 +1,332 @@
+The tileset for the player texture is like:
+[[File:player_skin_simple.png]]
+Where the tile number is:
+ 0 1 2
+ 3 4 5
+ 6 7 8
+ 9 10 11
+The move is defined with initial position (0%), 2 intermediate position (33% and 66%) and the final position (100%).
+
+= The full source =
+The full source is used into map visualiser for the projet:
+https://github.com/alphaonex86/CatchChallenger/blob/master/tools/map-visualiser-qt/map-visualiser-qt.cpp
+
+= The code =
+ <font color="#1f1c1b"><span><font color="#0057ae">void</font></span> MapVisualiserQt::keyPressEvent(QKeyEvent * event)
+ {
+     '''if'''(event-&gt;isAutoRepeat())
+         '''return'''<nowiki>;
+ 
+     keyPressed &lt;&lt; event-&gt;key();
+ 
+     </nowiki>'''if'''(inMove)
+         '''return'''<nowiki>;
+ 
+     </nowiki>'''switch'''(event-&gt;key())
+     {
+         '''case''' <span><font color="#b08000">16777234</font></span><nowiki>:
+         </nowiki>'''if'''(direction==CatchChallenger::Direction_look_at_left)
+         {
+             '''if'''(!CatchChallenger::MoveOnTheMap::canGoTo(CatchChallenger::Direction_move_at_left,&amp;logicalMap,xPerso,yPerso,'''true'''))
+             {
+                 qDebug() &lt;&lt; <span><font color="#bf0303">"Can't do at the left!"</font></span><nowiki>;
+                 </nowiki>'''return'''<nowiki>;
+             }
+             </nowiki>''<span><font color="#898887">//the first step</font></span>''
+             direction=CatchChallenger::Direction_move_at_left;
+             inMove='''true'''<nowiki>;
+             moveStep=</nowiki><span><font color="#b08000">1</font></span><nowiki>;
+             moveStepSlot();
+         }
+         </nowiki>'''else'''
+         {
+             playerMapObject-&gt;setTile(playerTileset-&gt;tileAt(<span><font color="#b08000">10</font></span>));
+             direction=CatchChallenger::Direction_look_at_left;
+             lookToMove.start();''<span><font color="#898887">//call transformLookToMove() into 200ms</font></span>''
+         }
+         '''break'''<nowiki>;
+         </nowiki>'''case''' <span><font color="#b08000">16777236</font></span><nowiki>:
+         </nowiki>'''if'''(direction==CatchChallenger::Direction_look_at_right)
+         {
+             '''if'''(!CatchChallenger::MoveOnTheMap::canGoTo(CatchChallenger::Direction_move_at_right,&amp;logicalMap,xPerso,yPerso,'''true'''))
+             {
+                 qDebug() &lt;&lt; <span><font color="#bf0303">"Can't do at the right!"</font></span><nowiki>;
+                 </nowiki>'''return'''<nowiki>;
+             }
+             </nowiki>''<span><font color="#898887">//the first step</font></span>''
+             direction=CatchChallenger::Direction_move_at_right;
+             inMove='''true'''<nowiki>;
+             moveStep=</nowiki><span><font color="#b08000">1</font></span><nowiki>;
+             moveStepSlot();
+         }
+         </nowiki>'''else'''
+         {
+             playerMapObject-&gt;setTile(playerTileset-&gt;tileAt(<span><font color="#b08000">4</font></span>));
+             direction=CatchChallenger::Direction_look_at_right;
+             lookToMove.start();''<span><font color="#898887">//call transformLookToMove() into 200ms</font></span>''
+         }
+         '''break'''<nowiki>;
+         </nowiki>'''case''' <span><font color="#b08000">16777235</font></span><nowiki>:
+         </nowiki>'''if'''(direction==CatchChallenger::Direction_look_at_top)
+         {
+             '''if'''(!CatchChallenger::MoveOnTheMap::canGoTo(CatchChallenger::Direction_move_at_top,&amp;logicalMap,xPerso,yPerso,'''true'''))
+             {
+                 qDebug() &lt;&lt; <span><font color="#bf0303">"Can't do at the top!"</font></span><nowiki>;
+                 </nowiki>'''return'''<nowiki>;
+             }
+             </nowiki>''<span><font color="#898887">//the first step</font></span>''
+             direction=CatchChallenger::Direction_move_at_top;
+             inMove='''true'''<nowiki>;
+             moveStep=</nowiki><span><font color="#b08000">1</font></span><nowiki>;
+             moveStepSlot();
+         }
+         </nowiki>'''else'''
+         {
+             playerMapObject-&gt;setTile(playerTileset-&gt;tileAt(<span><font color="#b08000">1</font></span>));
+             direction=CatchChallenger::Direction_look_at_top;
+             lookToMove.start();''<span><font color="#898887">//call transformLookToMove() into 200ms</font></span>''
+         }
+         '''break'''<nowiki>;
+         </nowiki>'''case''' <span><font color="#b08000">16777237</font></span><nowiki>:
+         </nowiki>'''if'''(direction==CatchChallenger::Direction_look_at_bottom)
+         {
+             '''if'''(!CatchChallenger::MoveOnTheMap::canGoTo(CatchChallenger::Direction_move_at_bottom,&amp;logicalMap,xPerso,yPerso,'''true'''))
+             {
+                 qDebug() &lt;&lt; <span><font color="#bf0303">"Can't do at the bottom!"</font></span><nowiki>;
+                 </nowiki>'''return'''<nowiki>;
+             }
+             </nowiki>''<span><font color="#898887">//the first step</font></span>''
+             direction=CatchChallenger::Direction_move_at_bottom;
+             inMove='''true'''<nowiki>;
+             moveStep=</nowiki><span><font color="#b08000">1</font></span><nowiki>;
+             moveStepSlot();
+         }
+         </nowiki>'''else'''
+         {
+             playerMapObject-&gt;setTile(playerTileset-&gt;tileAt(<span><font color="#b08000">7</font></span>));
+             direction=CatchChallenger::Direction_look_at_bottom;
+             lookToMove.start();''<span><font color="#898887">//call transformLookToMove() into 200ms</font></span>''
+         }
+         '''break'''<nowiki>;
+     </nowiki>'''default'''<nowiki>:
+         </nowiki>'''break'''<nowiki>;
+     }
+ 
+     </nowiki>''<span><font color="#898887">//do it here only because it's one player, then max 3 call by second</font></span>''
+     viewport()-&gt;update();''<span><font color="#898887">//update the 2D view</font></span>''
+ }
+ 
+ <span><font color="#0057ae">void</font></span> MapVisualiserQt::moveStepSlot(<span><font color="#0057ae">bool</font></span> justUpdateTheTile)
+ {
+     <span><font color="#0057ae">int</font></span> baseTile=<span><font color="#b08000">1</font></span><nowiki>;
+     </nowiki>'''switch'''(direction)
+     {
+         '''case''' CatchChallenger::Direction_move_at_left:
+         baseTile=<span><font color="#b08000">10</font></span><nowiki>;
+         </nowiki>'''switch'''(moveStep)
+         {
+             '''case''' <span><font color="#b08000">1</font></span><nowiki>:
+             </nowiki>'''case''' <span><font color="#b08000">2</font></span><nowiki>:
+             playerMapObject-&gt;setX(playerMapObject-&gt;x()-</nowiki><span><font color="#b08000">0.33</font></span>);
+             '''break'''<nowiki>;
+         }
+         </nowiki>'''break'''<nowiki>;
+         </nowiki>'''case''' CatchChallenger::Direction_move_at_right:
+         baseTile=<span><font color="#b08000">4</font></span><nowiki>;
+         </nowiki>'''switch'''(moveStep)
+         {
+             '''case''' <span><font color="#b08000">1</font></span><nowiki>:
+             </nowiki>'''case''' <span><font color="#b08000">2</font></span><nowiki>:
+             playerMapObject-&gt;setX(playerMapObject-&gt;x() </nowiki><span><font color="#b08000">0.33</font></span>);
+             '''break'''<nowiki>;
+         }
+         </nowiki>'''break'''<nowiki>;
+         </nowiki>'''case''' CatchChallenger::Direction_move_at_top:
+         baseTile=<span><font color="#b08000">1</font></span><nowiki>;
+         </nowiki>'''switch'''(moveStep)
+         {
+             '''case''' <span><font color="#b08000">1</font></span><nowiki>:
+             </nowiki>'''case''' <span><font color="#b08000">2</font></span><nowiki>:
+             playerMapObject-&gt;setY(playerMapObject-&gt;y()-</nowiki><span><font color="#b08000">0.33</font></span>);
+             '''break'''<nowiki>;
+         }
+         </nowiki>'''break'''<nowiki>;
+         </nowiki>'''case''' CatchChallenger::Direction_move_at_bottom:
+         baseTile=<span><font color="#b08000">7</font></span><nowiki>;
+         </nowiki>'''switch'''(moveStep)
+         {
+             '''case''' <span><font color="#b08000">1</font></span><nowiki>:
+             </nowiki>'''case''' <span><font color="#b08000">2</font></span><nowiki>:
+             playerMapObject-&gt;setY(playerMapObject-&gt;y() </nowiki><span><font color="#b08000">0.33</font></span>);
+             '''break'''<nowiki>;
+         }
+         </nowiki>'''break'''<nowiki>;
+         </nowiki>'''default'''<nowiki>:
+         qDebug() &lt;&lt; QString(</nowiki><span><font color="#bf0303">"moveStepSlot(): moveStep: %1, justUpdateTheTile: %2, wrong direction"</font></span>).arg(moveStep).arg(justUpdateTheTile);
+         '''return'''<nowiki>;
+     }
+ 
+     </nowiki>'''switch'''(moveStep)
+     {
+         ''<span><font color="#898887">//stopped step</font></span>''
+         '''case''' <span><font color="#b08000">0</font></span><nowiki>:
+         playerMapObject-&gt;setTile(playerTileset-&gt;tileAt(baseTile </nowiki><span><font color="#b08000">0</font></span>));
+         '''break'''<nowiki>;
+         </nowiki>''<span><font color="#898887">//transition step</font></span>''
+         '''case''' <span><font color="#b08000">1</font></span><nowiki>:
+         playerMapObject-&gt;setTile(playerTileset-&gt;tileAt(baseTile-</nowiki><span><font color="#b08000">1</font></span>));
+         '''break'''<nowiki>;
+         </nowiki>'''case''' <span><font color="#b08000">2</font></span><nowiki>:
+         playerMapObject-&gt;setTile(playerTileset-&gt;tileAt(baseTile </nowiki><span><font color="#b08000">1</font></span>));
+         '''break'''<nowiki>;
+         </nowiki>''<span><font color="#898887">//stopped step</font></span>''
+         '''case''' <span><font color="#b08000">3</font></span><nowiki>:
+         playerMapObject-&gt;setTile(playerTileset-&gt;tileAt(baseTile </nowiki><span><font color="#b08000">0</font></span>));
+         '''break'''<nowiki>;
+     }
+ 
+     moveStep  ;
+ 
+     </nowiki>''<span><font color="#898887">//have finish the step</font></span>''
+     '''if'''(moveStep&gt;<span><font color="#b08000">3</font></span>)
+     {
+         '''switch'''(direction)
+         {
+             '''case''' CatchChallenger::Direction_move_at_left:
+             direction=CatchChallenger::Direction_look_at_left;
+             xPerso-=<span><font color="#b08000">1</font></span><nowiki>;
+             </nowiki>'''break'''<nowiki>;
+             </nowiki>'''case''' CatchChallenger::Direction_move_at_right:
+             direction=CatchChallenger::Direction_look_at_right;
+             xPerso =<span><font color="#b08000">1</font></span><nowiki>;
+             </nowiki>'''break'''<nowiki>;
+             </nowiki>'''case''' CatchChallenger::Direction_move_at_top:
+             direction=CatchChallenger::Direction_look_at_top;
+             yPerso-=<span><font color="#b08000">1</font></span><nowiki>;
+             </nowiki>'''break'''<nowiki>;
+             </nowiki>'''case''' CatchChallenger::Direction_move_at_bottom:
+             direction=CatchChallenger::Direction_look_at_bottom;
+             yPerso =<span><font color="#b08000">1</font></span><nowiki>;
+             </nowiki>'''break'''<nowiki>;
+             </nowiki>'''default'''<nowiki>:
+             qDebug() &lt;&lt; QString(</nowiki><span><font color="#bf0303">"moveStepSlot(): moveStep: %1, justUpdateTheTile: %2, wrong direction when moveStep&gt;2"</font></span>).arg(moveStep).arg(justUpdateTheTile);
+             '''return'''<nowiki>;
+         }
+         playerMapObject-&gt;setPosition(QPoint(xPerso,yPerso </nowiki><span><font color="#b08000">1</font></span>));
+ 
+         '''if'''(keyPressed.contains(<span><font color="#b08000">16777234</font></span>))
+         {
+             '''if'''(!CatchChallenger::MoveOnTheMap::canGoTo(CatchChallenger::Direction_move_at_left,&amp;logicalMap,xPerso,yPerso,'''true'''))
+                 inMove='''false'''<nowiki>;
+             </nowiki>'''else'''
+             {
+                 direction=CatchChallenger::Direction_move_at_left;
+                 moveStep=<span><font color="#b08000">0</font></span><nowiki>;
+                 moveStepSlot(</nowiki>'''true''');
+             }
+         }
+         '''else''' '''if'''(keyPressed.contains(<span><font color="#b08000">16777236</font></span>))
+         {
+             '''if'''(!CatchChallenger::MoveOnTheMap::canGoTo(CatchChallenger::Direction_move_at_right,&amp;logicalMap,xPerso,yPerso,'''true'''))
+                 inMove='''false'''<nowiki>;
+             </nowiki>'''else'''
+             {
+                 direction=CatchChallenger::Direction_move_at_right;
+                 moveStep=<span><font color="#b08000">0</font></span><nowiki>;
+                 moveStepSlot(</nowiki>'''true''');
+             }
+         }
+         '''else''' '''if'''(keyPressed.contains(<span><font color="#b08000">16777235</font></span>))
+         {
+             '''if'''(!CatchChallenger::MoveOnTheMap::canGoTo(CatchChallenger::Direction_move_at_top,&amp;logicalMap,xPerso,yPerso,'''true'''))
+                 inMove='''false'''<nowiki>;
+             </nowiki>'''else'''
+             {
+                 direction=CatchChallenger::Direction_move_at_top;
+                 moveStep=<span><font color="#b08000">0</font></span><nowiki>;
+                 moveStepSlot(</nowiki>'''true''');
+             }
+         }
+         '''else''' '''if'''(keyPressed.contains(<span><font color="#b08000">16777237</font></span>))
+         {
+             '''if'''(!CatchChallenger::MoveOnTheMap::canGoTo(CatchChallenger::Direction_move_at_bottom,&amp;logicalMap,xPerso,yPerso,'''true'''))
+                 inMove='''false'''<nowiki>;
+             </nowiki>'''else'''
+             {
+                 direction=CatchChallenger::Direction_move_at_bottom;
+                 moveStep=<span><font color="#b08000">0</font></span><nowiki>;
+                 moveStepSlot(</nowiki>'''true''');
+             }
+         }
+         ''<span><font color="#898887">//now stop walking</font></span>''
+         '''else'''
+         {
+             playerMapObject-&gt;setPosition(QPoint(xPerso,yPerso <span><font color="#b08000">1</font></span>));
+             inMove='''false'''<nowiki>;
+         }
+     }
+     </nowiki>'''else'''
+         moveTimer.start();''<span><font color="#898887">//call moveStepSlot() into 66ms</font></span>''
+ 
+     ''<span><font color="#898887">//do it here only because it's one player, then max 3 call by second</font></span>''
+     '''if'''(!justUpdateTheTile)
+         viewport()-&gt;update();''<span><font color="#898887">//update the 2D view</font></span>''
+ }
+ 
+ <span><font color="#0057ae">void</font></span> MapVisualiserQt::transformLookToMove()
+ {
+     '''if'''(inMove)
+         '''return'''<nowiki>;
+ 
+     </nowiki>'''switch'''(direction)
+     {
+         '''case''' CatchChallenger::Direction_look_at_left:
+         '''if'''(keyPressed.contains(<span><font color="#b08000">16777234</font></span>) &amp;&amp; CatchChallenger::MoveOnTheMap::canGoTo(CatchChallenger::Direction_move_at_left,&amp;logicalMap,xPerso,yPerso,'''true'''))
+         {
+             direction=CatchChallenger::Direction_move_at_left;
+             inMove='''true'''<nowiki>;
+             moveStep=</nowiki><span><font color="#b08000">1</font></span><nowiki>;
+             moveStepSlot();
+         }
+         </nowiki>'''break'''<nowiki>;
+         </nowiki>'''case''' CatchChallenger::Direction_look_at_right:
+         '''if'''(keyPressed.contains(<span><font color="#b08000">16777236</font></span>) &amp;&amp; CatchChallenger::MoveOnTheMap::canGoTo(CatchChallenger::Direction_move_at_right,&amp;logicalMap,xPerso,yPerso,'''true'''))
+         {
+             direction=CatchChallenger::Direction_move_at_right;
+             inMove='''true'''<nowiki>;
+             moveStep=</nowiki><span><font color="#b08000">1</font></span><nowiki>;
+             moveStepSlot();
+         }
+         </nowiki>'''break'''<nowiki>;
+         </nowiki>'''case''' CatchChallenger::Direction_look_at_top:
+         '''if'''(keyPressed.contains(<span><font color="#b08000">16777235</font></span>) &amp;&amp; CatchChallenger::MoveOnTheMap::canGoTo(CatchChallenger::Direction_move_at_top,&amp;logicalMap,xPerso,yPerso,'''true'''))
+         {
+             direction=CatchChallenger::Direction_move_at_top;
+             inMove='''true'''<nowiki>;
+             moveStep=</nowiki><span><font color="#b08000">1</font></span><nowiki>;
+             moveStepSlot();
+         }
+         </nowiki>'''break'''<nowiki>;
+         </nowiki>'''case''' CatchChallenger::Direction_look_at_bottom:
+         '''if'''(keyPressed.contains(<span><font color="#b08000">16777237</font></span>) &amp;&amp; CatchChallenger::MoveOnTheMap::canGoTo(CatchChallenger::Direction_move_at_bottom,&amp;logicalMap,xPerso,yPerso,'''true'''))
+         {
+             direction=CatchChallenger::Direction_move_at_bottom;
+             inMove='''true'''<nowiki>;
+             moveStep=</nowiki><span><font color="#b08000">1</font></span><nowiki>;
+             moveStepSlot();
+         }
+         </nowiki>'''break'''<nowiki>;
+         </nowiki>'''default'''<nowiki>:
+         qDebug() &lt;&lt; QString(</nowiki><span><font color="#bf0303">"transformLookToMove(): wrong direction"</font></span>);
+         '''return'''<nowiki>;
+     }
+ }
+ 
+ </nowiki><span><font color="#0057ae">void</font></span> MapVisualiserQt::keyReleaseEvent(QKeyEvent * event)
+ {
+     '''if'''(event-&gt;isAutoRepeat())
+         '''return'''<nowiki>;
+ 
+     keyPressed.remove(event-&gt;key());
+ }
+ </nowiki></font>
