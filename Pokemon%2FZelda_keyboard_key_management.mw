@@ -41,25 +41,6 @@ https://github.com/alphaonex86/CatchChallenger/blob/master/tools/map-visualiser-
      '''if'''(inMove)
          '''return'''<nowiki>;
  
-     </nowiki>''<span><font color="#898887">/*int y=0;</font></span>''
- ''<span><font color="#898887">    while(y&lt;logicalMap.height)</font></span>''
- ''<span><font color="#898887">    {</font></span>''
- ''<span><font color="#898887">        QString line;</font></span>''
- ''<span><font color="#898887">        int x=0;</font></span>''
- ''<span><font color="#898887">        while(x&lt;logicalMap.width)</font></span>''
- ''<span><font color="#898887">        {</font></span>''
- ''<span><font color="#898887">            if(x==xPerso &amp;&amp; y==yPerso)</font></span>''
- ''<span><font color="#898887">                line ="P";</font></span>''
- ''<span><font color="#898887">            else if(logicalMap.parsed_layer.walkable[x y*logicalMap.width])</font></span>''
- ''<span><font color="#898887">                line ="_";</font></span>''
- ''<span><font color="#898887">            else</font></span>''
- ''<span><font color="#898887">                line ="X";</font></span>''
- ''<span><font color="#898887">            x  ;</font></span>''
- ''<span><font color="#898887">        }</font></span>''
- ''<span><font color="#898887">        qDebug() &lt;&lt; line;</font></span>''
- ''<span><font color="#898887">        y  ;</font></span>''
- ''<span><font color="#898887">    }*/</font></span>''
- 
      '''if'''(keyPressed.contains(<span><font color="#b08000">16777234</font></span>))
      {
          ''<span><font color="#898887">//already turned on this direction, then try move into this direction</font></span>''
@@ -329,26 +310,6 @@ https://github.com/alphaonex86/CatchChallenger/blob/master/tools/map-visualiser-
      }
      </nowiki>'''else'''
          moveTimer.start();
- 
-     ''<span><font color="#898887">/*qDebug() &lt;&lt; QString("xPerso: %1, yPerso: %2").arg(xPerso).arg(yPerso);</font></span>''
- ''<span><font color="#898887">    int y=0;</font></span>''
- ''<span><font color="#898887">    while(y&lt;logicalMap.height)</font></span>''
- ''<span><font color="#898887">    {</font></span>''
- ''<span><font color="#898887">        QString line;</font></span>''
- ''<span><font color="#898887">        int x=0;</font></span>''
- ''<span><font color="#898887">        while(x&lt;logicalMap.width)</font></span>''
- ''<span><font color="#898887">        {</font></span>''
- ''<span><font color="#898887">            if(x==xPerso &amp;&amp; y==yPerso)</font></span>''
- ''<span><font color="#898887">                line ="P";</font></span>''
- ''<span><font color="#898887">            else if(logicalMap.parsed_layer.walkable[x y*logicalMap.width])</font></span>''
- ''<span><font color="#898887">                line ="_";</font></span>''
- ''<span><font color="#898887">            else</font></span>''
- ''<span><font color="#898887">                line ="X";</font></span>''
- ''<span><font color="#898887">            x  ;</font></span>''
- ''<span><font color="#898887">        }</font></span>''
- ''<span><font color="#898887">        qDebug() &lt;&lt; line;</font></span>''
- ''<span><font color="#898887">        y  ;</font></span>''
- ''<span><font color="#898887">    }*/</font></span>''
  
      ''<span><font color="#898887">//do it here only because it's one player, then max 3 call by second</font></span>''
      '''if'''(!justUpdateTheTile)
