@@ -39,7 +39,7 @@ https://github.com/alphaonex86/CatchChallenger/blob/master/tools/map-visualiser-
  {
      ''<span><font color="#898887">//ignore is already in move</font></span>''
      '''if'''(inMove)
-         '''return'''<nowiki>;
+         '''return''';
  
      '''if'''(keyPressed.contains(<span><font color="#b08000">16777234</font></span>))
      {
