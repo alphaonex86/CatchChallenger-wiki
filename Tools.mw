@@ -1,0 +1,18 @@
+= Map visualiser =
+This tools is developped for catchchallenger by [[User:Alpha_one_x86]] (catchchallenger).
+
+It spawn a player on the selected map at rescue point or bot spawn. After you can move on the map, included pass the door, the border. It's good way to test the map, the balise is not masked to help to debug.
+
+The tools can be found into tools/ of catchchallenger sources.
+
+= Map2Png =
+This tools is developped for catchchallenger by [[User:Alpha_one_x86]] (catchchallenger).
+
+It show and save as png (with transparent background) the map selected and all adjacent. It's perfect to have good overview of the render, and have big png to show the world map (outdoor).
+
+The tools can be found into tools/ of catchchallenger sources.
+
+= Tiled =
+This tools is developped for/by tiled (http://www.mapeditor.org/).
+
+It's the official editor of map for catchchallenger. But it's used into lot of other projet.
