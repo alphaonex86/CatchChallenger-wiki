@@ -17,8 +17,8 @@ This wiki show all documents and technical informations. CatchChallenger is perf
 * [[Client todo list]]
 * [[Other game usage]]
 * [[CatchChallenger vs other]]
-* [[Quick Benchmark: Gzip vs Bzip2 vs LZMA vs XZ vs LZ4 vs LZO]]
-* [[Benchmark for conception]]
+* [[Benchmarks]]
+* [[Tools]]
 
 = Usage and installation =
 * [[Server requirements]]
