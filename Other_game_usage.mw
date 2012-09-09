@@ -5,5 +5,12 @@ Into the future version when this is stable is planned but with low priority wit
 * Platform game, with gravity
 * Enemy visible by multiple players
 
+= How use it =
+You can extract only the base folder into each folder. With that's you have:
+* Chat
+* Map (move on map, load it, colision, show the other player, ...)
+* All the done by message and protocol, to be multiplayer game, MMO game, single player game. (Need be coded like server/client, same for single player game)
+* Login for multi-player
+
 = Example =
 [[File:catchchallenger-base-into-other-game.png]]
