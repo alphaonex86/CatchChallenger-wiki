@@ -6,11 +6,12 @@ Into the future version when this is stable is planned but with low priority wit
 * Enemy visible by multiple players
 
 = How use it =
-You can extract only the base folder into each folder. With that's you have:
+You can extract only the "base" folder into each folder into the sources. With that's you have:
 * Chat
 * Map (move on map, load it, colision, show the other player, ...)
 * All the done by message and protocol, to be multiplayer game, MMO game, single player game. (Need be coded like server/client, same for single player game)
 * Login for multi-player
+Then you wish do a basic tiled game (like the retro game), from just the basis, you can re-use this base because is isolated.
 
 = Example =
 [[File:catchchallenger-base-into-other-game.png]]
