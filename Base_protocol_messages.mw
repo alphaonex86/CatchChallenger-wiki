@@ -246,12 +246,13 @@ Server -&gt; Client, insert player on the map:
 **** speed: <span style="color: #40BFFF">04</span> (50ms*4, see [[Unit into the game]])
 **** clan: <span style="color: #FF4000">01</span>
 **** pseudo: <span style="color: #40BF00">&quot;toto&quot;</span> (UTF8 + 8Bits of size header)
-**** skin: <span style="color: #40BF00">&quot;skin name&quot;</span> (UTF8 + 8Bits of size header)
+**** skin: <span style="color: #FF4000">00</span>
 
  <span style="color: #FF4000">01</span> <span style="color: #FFBF00">10</span><span style="color: #40BF00">6d6170206e616d65</span> <span style="color: #FF4000">0001</span>
- <span style="color: #BFBF40">2152</span><span style="color: #40BFFF">02</span><span style="color: #FFBF00">02</span><span style="color: #800080">12</span><span style="color: #40BFFF">04</span> <span style="color: #FFBF00">08</span><span style="color: #40BF00">746f746f</span> <span style="color: #FF4000">01</span> <span style="color: #FFBF00">12</span><span style="color: #40BF00">736b696e206e616d65</span>
+ <span style="color: #BFBF40">2152</span><span style="color: #40BFFF">02</span><span style="color: #FFBF00">02</span><span style="color: #800080">12</span><span style="color: #40BFFF">04</span> <span style="color: #FFBF00">08</span><span style="color: #40BF00">746f746f</span> <span style="color: #FF4000">01</span> <span style="color: #FF4000">00</span>
 {{Direction_definition}}
 {{Player_type}}
+{{Skin}}
 
 === C20003 ===
 Server -&gt; Client: <span style="color: #40BF00">&quot;file name&quot;</span> (UTF8 + 8Bits of header size), last modification time stamps: <span style="color: #FF4000">4ED3C1D3</span>, data: <span style="color: #40BFFF">XXXXXXXXXXXXXXXX[...]XXXXXXXXXX</span>
