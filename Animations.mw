@@ -15,32 +15,3 @@ The position (0 start, 2 final of the second step):
 * 1.6 [[File:player_step3.png]]
 * 1.8 [[File:player_step2.png]]
 * 2.0 [[File:player_step2.png]]
-
-= Grass =
-The grass frames for '''2 steps''' are:
-
-The position (0 start, 2 final of the second step):
-* 0.0 [[File:player_step2.png]] + [[File:tile_empty.png]] (WalkBottom) + [[File:tile_empty.png]] (WalkBehind)
-* 0.2 [[File:player_step2.png]] + [[File:grass_tile3.png]] (WalkBottom) + [[File:tile_empty.png]] (WalkBehind)
-* 0.4 [[File:player_step1.png]] + [[File:grass_tile3.png]] (WalkBottom) + [[File:tile_empty.png]] (WalkBehind)
-* 0.6 [[File:player_step1.png]] + [[File:grass_tile2.png]] (WalkBehind) + [[File:grass_tile4.png]] (WalkBehind)
-* 0.8 [[File:player_step2.png]] + [[File:grass_tile2.png]] (WalkBehind) + [[File:grass_tile4.png]] (WalkBehind)
-* 1.0 [[File:player_step2.png]] + [[File:grass_tile2.png]] (WalkBehind) + [[File:grass_tile4.png]] (WalkBehind)
-* 1.2 [[File:player_step2.png]] + [[File:grass_tile2.png]] (WalkBehind) + [[File:grass_tile5.png]] (WalkBehind)
-* 1.4 [[File:player_step3.png]] + [[File:grass_tile2.png]] (WalkBehind) + [[File:grass_tile5.png]] (WalkBehind)
-* 1.6 [[File:player_step3.png]] + [[File:grass_tile2.png]] (WalkBehind) + [[File:grass_tile6.png]] (WalkBehind)
-* 1.8 [[File:player_step2.png]] + [[File:grass_tile2.png]] (WalkBottom) + [[File:grass_tile6.png]] (WalkBehind)
-* 2.0 [[File:player_step2.png]] + [[File:tile_empty.png]] (WalkBottom) + [[File:tile_empty.png]] (WalkBehind)
-
-= Software timer =
-[[File:Timer-multiple-into-kernel.png|200px|thumb|right|Timer into kernel]]
-[[File:Timer-multiple-into-software.png|200px|thumb|right|Timer into sotware]]
-
-The timer is greatly better, ever more to tile what need change at sasme time:
-* Prevent interrupt flood, better power management
-* Prevent have more than hardware limit of timer programmed
-* For all tile change at same time
-* Prevent receive too many epoll event, and multiple very similar kernel code execution
-* Improve greatly the context switch and allow transparent compiler optimisation
-
-[[File:Water-multiple-tile-animation.gif]]
