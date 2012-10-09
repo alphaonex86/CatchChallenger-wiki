@@ -1,0 +1,17 @@
+= Walk =
+The walking frames for '''2 steps''' are:
+
+'''2x'''[[File:player_step2.png]], '''2x'''[[File:player_step1.png]], '''3x'''[[File:player_step2.png]], '''2x'''[[File:player_step3.png]], '''2x'''[[File:player_step2.png]]
+
+The position (0 start, 2 final of the second step):
+* 0.0 [[File:player_step2.png]]
+* 0.2 [[File:player_step2.png]]
+* 0.4 [[File:player_step1.png]]
+* 0.6 [[File:player_step1.png]]
+* 0.8 [[File:player_step2.png]]
+* 1.0 [[File:player_step2.png]]
+* 1.2 [[File:player_step2.png]]
+* 1.4 [[File:player_step3.png]]
+* 1.6 [[File:player_step3.png]]
+* 1.8 [[File:player_step2.png]]
+* 2.0 [[File:player_step2.png]]
