@@ -251,7 +251,7 @@ Server -&gt; Client, insert player on the map:
  <span style="color: #FF4000">01</span> <span style="color: #FFBF00">10</span><span style="color: #40BF00">6d6170206e616d65</span> <span style="color: #FF4000">0001</span>
  <span style="color: #BFBF40">2152</span><span style="color: #40BFFF">02</span><span style="color: #FFBF00">02</span><span style="color: #800080">12</span><span style="color: #40BFFF">04</span> <span style="color: #FF4000">01</span> <span style="color: #FFBF00">08</span><span style="color: #40BF00">746f746f</span> <span style="color: #FF4000">00</span>
 
-Not use max visibility because it's just 4% of bandwidth less, but very more server slow and complexity.
+Not use max visibility because it's just 4% of bandwidth less, but very more server slow and complexity. And only if max player is >255 and min player <255.
 
 {{Direction_definition}}
 {{Player_type}}
