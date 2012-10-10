@@ -19,13 +19,13 @@ The position (0 start, 2 final of the second step):
 = Grass =
 The grass frames for '''2 steps''' are:
 
-'''3x'''[[File:grass_tile2.png]], '''3x'''[[File:grass_tile3.png]], is on the full tile, '''1x'''[[File:grass_tile3.png]], '''3x'''[[File:grass_tile1.png]]
+'''1x'''[[File:tile_empty.png]], '''3x'''[[File:grass_tile2.png]], '''2x'''[[File:grass_tile3.png]], is on the full tile, '''1x'''[[File:grass_tile3.png]], '''3x'''[[File:grass_tile1.png]]
 
 The position (0 start, 2 final of the second step):
-* 0.0 [[File:grass_tile2.png]]
+* 0.0 [[File:tile_empty.png]]
 * 0.2 [[File:grass_tile2.png]]
 * 0.4 [[File:grass_tile2.png]]
-* 0.6 [[File:grass_tile3.png]]
+* 0.6 [[File:grass_tile2.png]]
 * 0.8 [[File:grass_tile3.png]]
 * 1.0 [[File:grass_tile3.png]]
 * 1.2 [[File:grass_tile3.png]]
