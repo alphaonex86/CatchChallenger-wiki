@@ -21,8 +21,8 @@ The grass frames for '''2 steps''' are:
 
 The position (0 start, 2 final of the second step):
 * 0.0 [[File:player_step2.png]] + [[File:tile_empty.png]] (WalkBottom)
-* 0.2 [[File:player_step2.png]] + [[File:grass_tile2.png]] (WalkBottom)
-* 0.4 [[File:player_step1.png]] + [[File:grass_tile2.png]] (WalkBottom)
+* 0.2 [[File:player_step2.png]] + [[File:grass_tile3.png]] (WalkBottom)
+* 0.4 [[File:player_step1.png]] + [[File:grass_tile3.png]] (WalkBottom)
 * 0.6 [[File:player_step1.png]] + [[File:grass_tile2.png]] (WalkBehind)
 * 0.8 [[File:player_step2.png]] + [[File:grass_tile2.png]] (WalkBehind)
 * 1.0 [[File:player_step2.png]] + [[File:grass_tile2.png]] (WalkBehind)
