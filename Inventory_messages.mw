@@ -88,3 +88,11 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | {{Yes}}
 | [[Inventory_messages#Reply_100005|Withdraw an object]]
 |}
+
+= Details =
+== Server &rarr; Client without reply ==
+=== 0D0001 ===
+Send list size <span style="color: #FF4000">00000002</span>, and the object:
+* Id: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>
+* Id: <span style="color: #FFBF00">00000002</span>, quantity: <span style="color: #40BF00">00000005</span>
+ <span style="color: #FF4000">00000002</span><span style="color: #FFBF00">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FFBF00">00000002</span><span style="color: #40BF00">00000005</span>
