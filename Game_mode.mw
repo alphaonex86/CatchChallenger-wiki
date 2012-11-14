@@ -1,7 +1,7 @@
 You have this game mode:
 * Single player
 * Lan game (on the network only)
-* MMORPG game
-You can pass for one type to another without have access to the data (no need the root rights).
+* MMORPG game (internet game)
+You can pass for one type to another without have access to the data (no need the root rights). The game and/or tools just convert the database (or know data), into the new database.
 
 [[File:change-mode.png]]
