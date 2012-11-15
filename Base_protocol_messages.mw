@@ -354,8 +354,8 @@ If all is good:
 * <span style="color: #FF4000">02</span> (all is good)
 * max player: <span style="color: #40BF00">0064</span> (then 100 in decimal) -> this define if the players id is defined on 16Bits ('''unknown max player at this point''', for the client at the startup)
 * the player id: {{Player_id}}
-* cash: <span style="color: #40BFFF">00000000</span> (0$)
- <span style="color: #FF4000">02</span><span style="color: #40BF00">0064</span><span style="color: #BFBF40">52</span><span style="color: #40BFFF">00000000</span>
+* cash: <span style="color: #40BFFF">00000000 00000064</span> (100$)
+ <span style="color: #FF4000">02</span><span style="color: #40BF00">0064</span><span style="color: #BFBF40">52</span><span style="color: #40BFFF">00000000 00000064</span>
 After the server will send tp command to set the first position.
 
 === Reply 02000C ===
