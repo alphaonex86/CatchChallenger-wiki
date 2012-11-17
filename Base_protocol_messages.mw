@@ -263,8 +263,8 @@ Server -&gt; Client: <span style="color: #40BF00">&quot;file name&quot;</span> (
 
 === C20005 ===
 Server -&gt; Client
-*  for player: chat type: <span style="color: #FF4000">02</span>, text: <span style="color: #40BF00">&quot;hello&quot;</span>, player pseudo: <span style="color: #40BF00">&quot;toto&quot;</span> (UTF8 + 8Bits header), status: <span style="color: #40BFFF">01</span>
- <span style="color: #FF4000">02</span><span style="color: #FFBF00">0000000a</span><span style="color: #40BF00">00680065006c006c006f</span><span style="color: #FFBF00">08</span><span style="color: #40BF00">746f746f</span><span style="color: #40BFFF">01</span>
+*  for player: chat type: <span style="color: #FF4000">02</span>, text: <span style="color: #40BF00">&quot;hello&quot;</span>, player pseudo: <span style="color: #40BF00">&quot;toto&quot;</span> (UTF8 + 8Bits header), status: <span style="color: #40BFFF">10</span>
+ <span style="color: #FF4000">02</span><span style="color: #FFBF00">0000000a</span><span style="color: #40BF00">00680065006c006c006f</span><span style="color: #FFBF00">08</span><span style="color: #40BF00">746f746f</span><span style="color: #40BFFF">10</span>
 *  for system: chat type: <span style="color: #FF4000">07</span>, text: <span style="color: #40BF00">&quot;The server will be rebooted&quot;</span>
  <span style="color: #FF4000">07</span><span style="color: #FFBF00">00000036</span><span style="color: #40BF00">0054006800650020007300650072007600650072002000770069006c006c0020006200650020007200650062006f006f007400650064</span>
 
