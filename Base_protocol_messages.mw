@@ -133,19 +133,19 @@
 | 
 | 
 | {{Yes}}
-| [[Base_protocol_messages#C5|Reinser player on other map]] '''''(Fast)'''''
+| [[Base_protocol_messages#C6|Reinser player on other map]] '''''(Fast)'''''
 |-
 | style="background: #90ff90; color: black;" | C7
 | 
 | 
 | {{Yes}}
-| [[Base_protocol_messages#C5|Move player on map]] '''''(Fast)'''''
+| [[Base_protocol_messages#C7|Move player on map]] '''''(Fast)'''''
 |-
 | style="background: #90ff90; color: black;" | C8
 | 
 | 
 | {{Yes}}
-| [[Base_protocol_messages#C5|Remove player from map]] '''''(Fast)'''''
+| [[Base_protocol_messages#C8|Remove player from map]] '''''(Fast)'''''
 |}
 
 = Reply =
