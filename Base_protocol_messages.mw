@@ -238,7 +238,7 @@ Client -&gt; Server: chat type: <span style="color: #FF4000">06</span> (private 
 === C0 ===
 Server -&gt; Client, insert player on the map:
 * type other player def: number of map: <span style="color: #FF4000">01</span>
-** <span style="color: #40BF00">&quot;map name&quot;</span> (UTF8 + 8Bits of size header), number of player: {{Number_of_player}}:
+** {{Map_id}}, number of player: {{Number_of_player}}:
 *** player id: {{Player_id}}, information:
 **** local x: {{Player_x}}
 **** local y: {{Player_y}}
@@ -248,7 +248,7 @@ Server -&gt; Client, insert player on the map:
 **** pseudo: <span style="color: #40BF00">&quot;toto&quot;</span> (UTF8 + 8Bits of size header)
 **** skin: <span style="color: #FF4000">00</span>
 
- <span style="color: #FF4000">01</span> <span style="color: #FFBF00">10</span><span style="color: #40BF00">6d6170206e616d65</span> <span style="color: #FF4000">0001</span>
+ <span style="color: #FF4000">01</span> <span style="color: #FFBF00">10</span> <span style="color: #FF4000">0001</span>
  <span style="color: #BFBF40">2152</span><span style="color: #40BFFF">02</span><span style="color: #FFBF00">02</span><span style="color: #800080">12</span><span style="color: #40BFFF">04</span> <span style="color: #FF4000">01</span> <span style="color: #FFBF00">08</span><span style="color: #40BF00">746f746f</span> <span style="color: #FF4000">00</span>
 
 Not use max visibility because it's just 4% of bandwidth less, but very more server slow and complexity. And only if max player is >255 and min player <255.
