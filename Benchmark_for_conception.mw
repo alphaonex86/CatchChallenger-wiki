@@ -190,3 +190,42 @@ The value is in ms, lower is better
 | 210
 |}
 Qt5 seam have performance, but due to fluctuation of the benchmark, is better of not trust on it.
+
+= Container =
+== To store the player pointer, with full look up ==
+=== With Qt 4.8 ===
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Insert
+! List
+! Remove
+|-
+| QList
+| 5
+| 1
+| 6229
+|-
+| QSet
+| 16
+| 6
+| 20
+|}
+=== With Qt 5.0 ===
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Insert
+! List
+! Remove
+|-
+| QList
+| 6
+| 1
+| 6280
+|-
+| QSet
+| 16
+| 6
+| 21
+|}
