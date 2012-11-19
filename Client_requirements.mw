@@ -1,0 +1,19 @@
+= Hardware =
+== Cpu ==
+* Intel Atom should work
+* Core2duo or more modern work
+== Memory ==
+* 32MB should work
+* 128MB is optimal (depands on the datapack)
+== Graphics card ==
+* No graphics card required, because all the game run in software
+* OpenGL 2 can be used to accelerate the render, but is optional
+
+= Software =
+== OS ==
+* Windows since Windows XP, 32Bits or 64Bits (game in 32Bits)
+* Linux
+* Mac 10.6+
+== Libs ==
+* Should work with Qt 4.5
+* Do for Qt 4.8 (possible remake for Qt5)
