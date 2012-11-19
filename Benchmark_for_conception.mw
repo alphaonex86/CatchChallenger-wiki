@@ -193,6 +193,7 @@ Qt5 seam have performance, but due to fluctuation of the benchmark, is better of
 
 = Container =
 == To store the player pointer, with full look up ==
+Store 65535 pointer.
 === With Qt 4.8 ===
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
