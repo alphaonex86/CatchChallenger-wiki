@@ -206,8 +206,8 @@ Store 65535 pointer.
 |-
 | QList
 | 0
-| 2
-| 0
+| 1
+| 1
 |-
 | QSet
 | 0
