@@ -1,3 +1,2 @@
-* The speed is expressed into 50ms to pass to the next tile
 * The position is expressed on x,y of tile. x=0 is at the left, y=0 is at top
 * The offset stored is ADDED to the player coords
