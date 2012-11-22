@@ -194,6 +194,9 @@ Qt5 seam have performance, but due to fluctuation of the benchmark, is better of
 = Container =
 == To store the player pointer, with full look up ==
 Store 65535 pointer.
+* Insert the current player, into the 65534 list.
+* List the 65535 player to send the broadcast message.
+* Remove the current player of the 65535 list.
 === With Qt 4.8 ===
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
