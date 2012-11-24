@@ -13,3 +13,4 @@ Resell an object previously buyed, is sell at half the buy price.
 * The shop sell ''Berry A'', sell at 80-120$ range. Buy at 40-60$ range.
 * The industries which demand ''Berry A'' will buy a 120$ when very needed, and at 80$ when have stock
 * The industries which product ''Berry A'', will sell at 110$ when have no stock, and at 70$ when then stock is full
+* The industries products are 20% more expensive than the resources cost
