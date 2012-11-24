@@ -1,0 +1,15 @@
+Fix this system
+
+= Sell =
+You can sell at -/+ 20% around this nominal value.
+
+= Buy =
+You can buy at -/+ 20% around this nominal value.
+
+= Resell =
+Resell an object previously buyed, is sell at half the buy price.
+
+== Example ==
+* ''Berry A'', buy at 100$ at the shop, can be buyed at 80-120$ range. Sell at 50$ at the shop, can be sell at 40-60$ range.
+* The industries which demand ''Berry A'' will buy a 120$ when very needed, and at 80$ when have stock
+* The industries which product ''Berry A'', will sell at 110$ when have no stock, and at 70$ when then stock is full
