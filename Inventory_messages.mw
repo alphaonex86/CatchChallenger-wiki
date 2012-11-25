@@ -29,6 +29,18 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | XX
 | {{Yes}}
 | [[Inventory_messages#100005|Withdraw an object]]
+|-
+| style="background: #90ff90; color: black;" | 10
+| style="background: #ffcc00; color: black;" | 0006
+| XX
+| {{Yes}}
+| [[Inventory_messages#100006|Use seed into dirt]]
+|-
+| style="background: #90ff90; color: black;" | 10
+| style="background: #ffcc00; color: black;" | 0007
+| XX
+| {{Yes}}
+| [[Inventory_messages#100007|Colect mature plant]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
