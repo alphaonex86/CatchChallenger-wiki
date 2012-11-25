@@ -61,7 +61,13 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #ffcc00; color: black;" | 0001
 | 
 | {{Yes}}
-| [[Inventory_messages#D00001|Send the inventory]] 
+| [[Inventory_messages#D00001|Send the inventory]]
+|-
+| style="background: #90ff90; color: black;" | D1
+|
+| 
+| {{Yes}}
+| [[Inventory_messages#D1|Send plant on map]] '''''(Fast)'''''
 |}
 
 = Reply =
