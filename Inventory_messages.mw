@@ -149,3 +149,21 @@ Send list size <span style="color: #FF4000">0001</span>, and the plant:
 Send list size <span style="color: #FF4000">0001</span>, and the plant:
 * x: <span style="color: #40BFFF">01</span>, y: <span style="color: #FFBF00">01</span>
  <span style="color: #40BFFF">01</span><span style="color: #FFBF00">01</span>
+
+= Reply =
+== Server &rarr; Client reply ==
+=== Reply 100006 ===
+<span style="color: #40BFFF">01</span> (correctly planted)
+ <span style="color: #40BFFF">01</span>
+
+<span style="color: #40BFFF">02</span> (impossible)
+ <span style="color: #40BFFF">02</span>
+=== Reply 100007 ===
+<span style="color: #40BFFF">01</span> (correctly collected)
+ <span style="color: #40BFFF">01</span>
+
+<span style="color: #40BFFF">02</span> (empty dirt)
+ <span style="color: #40BFFF">02</span>
+
+<span style="color: #40BFFF">03</span> (impossible)
+ <span style="color: #40BFFF">03</span>
