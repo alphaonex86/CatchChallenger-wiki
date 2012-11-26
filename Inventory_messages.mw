@@ -85,13 +85,13 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 |
 | 
 | {{Yes}}
-| [[Inventory_messages#D1|Send plant on map]] '''''(Fast)'''''
+| [[Inventory_messages#D1|Insert plant on map]] '''''(Fast)'''''
 |-
 | style="background: #90ff90; color: black;" | D2
 |
 | 
 | {{Yes}}
-| [[Inventory_messages#D2|Send remove plant on map]] '''''(Fast)'''''
+| [[Inventory_messages#D2|Remove plant on map]] '''''(Fast)'''''
 |}
 
 = Reply =
