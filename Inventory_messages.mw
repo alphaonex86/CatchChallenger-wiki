@@ -161,8 +161,8 @@ Send list size <span style="color: #FF4000">0001</span>, and the plant:
 
 === D2 ===
 Send list size <span style="color: #FF4000">0001</span>, and the plant:
-* x: <span style="color: #40BFFF">01</span>, y: <span style="color: #FFBF00">01</span>
- <span style="color: #40BFFF">01</span><span style="color: #FFBF00">01</span>
+* {{Map_id}}, x: <span style="color: #40BFFF">01</span>, y: <span style="color: #FFBF00">01</span>
+ <span style="color: #FF4000">0001</span><span style="color: #FFBF00">10</span><span style="color: #40BFFF">01</span><span style="color: #FFBF00">01</span>
 
 = Reply =
 == Server &rarr; Client reply ==
