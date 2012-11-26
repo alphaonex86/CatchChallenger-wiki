@@ -165,5 +165,8 @@ Send list size <span style="color: #FF4000">0001</span>, and the plant:
 <span style="color: #40BFFF">02</span> (empty dirt)
  <span style="color: #40BFFF">02</span>
 
-<span style="color: #40BFFF">03</span> (impossible)
+<span style="color: #40BFFF">03</span> (owned by another player)
  <span style="color: #40BFFF">03</span>
+
+<span style="color: #40BFFF">04</span> (impossible)
+ <span style="color: #40BFFF">04</span>
