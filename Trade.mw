@@ -10,7 +10,7 @@ You can buy at -/+ 20% around this nominal value.
 Resell an object previously buyed, is sell at half the buy price.
 
 == Example ==
-* The shop sell ''Berry A'', sell at 90-110$ range. Buy at 40-60$ range.
+* The shop sell ''Berry A'', sell at 100$. Buy at 50$ range.
 * The industries which demand ''Berry A'' will buy a 110$ when very needed, and at 90$ when have stock
 * The industries which product ''Berry A'', will sell at 110$ when have no stock, and at 90$ when then stock is full
 * The industries products are more expensive than the resources cost
