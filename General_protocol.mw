@@ -24,8 +24,6 @@ The size is not calculated on variable into message, because it will be call lot
 
 = Messages type =
 * [[Base protocol messages]]
-= CatchChallenger specific messages =
-* [[Trade messages]]
 * [[Battle messages]]
 * [[Inventory messages]]
 * [[Others messages]]
