@@ -14,7 +14,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Packet size
 ! Data
 |-
-| style="background: #90ff90; color: black;" | 10
+| style="background: #90ff90; color: black;" | 20
 | style="background: #ffcc00; color: black;" | 0001
 | XX
 | {{Yes}}
