@@ -33,13 +33,13 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 0006
 | XX
-| {{No}}
+| {{Yes}}
 | [[Inventory_messages#100006|Use seed into dirt]]
 |-
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 0007
 | XX
-| {{No}}
+| {{Yes}
 | [[Inventory_messages#100007|Collect mature plant]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
