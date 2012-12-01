@@ -2,6 +2,8 @@
 * Why not have choice send text from the server dynamically?
 Because that's do more traffic (mainly static), useless for signs, need choose the right translation, ... You need wait the server, you need translation part on the server, ... the it's not very powerful.
 * No object using during a fight/battle into PvP, because can be an infinite battle (potion usage).
+* Trade out of the inventory because can trade too money, or something not into the inventory
+
 = General =
 == Client &rarr; Server with reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
