@@ -79,7 +79,13 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #ffcc00; color: black;" | 0002
 | 
 | {{Yes}}
-| [[Inventory_messages#D00002|Send object]]
+| [[Inventory_messages#D00002|Add object]]
+|-
+| style="background: #90ff90; color: black;" | D0
+| style="background: #ffcc00; color: black;" | 0003
+| 
+| {{Yes}}
+| [[Inventory_messages#D00003|Remove object]]
 |-
 | style="background: #90ff90; color: black;" | D1
 |
