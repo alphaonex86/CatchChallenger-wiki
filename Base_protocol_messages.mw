@@ -233,6 +233,19 @@ Client -&gt; Server: chat type: <span style="color: #FF4000">06</span> (private 
 
 {{Chat_Type}}
 
+== Server &rarr; Client with reply ==
+
+=== 790001 ===
+Server -&gt; Client, teleport the current player on the map:
+* map id: <span style="color: #FFBF00">10</span> ({{Map_id}})
+* local x: {{Player_x}}
+* local y: {{Player_y}}
+* direction: <span style="color: #FF4000">02</span> can be spawn walking, and do
+
+ <span style="color: #FFBF00">10</span><span style="color: #40BFFF">02</span><span style="color: #FFBF00">02</span><span style="color: #FF4000">02</span>
+
+{{Direction_definition}}
+
 == Server &rarr; Client without reply ==
 
 === C0 ===
