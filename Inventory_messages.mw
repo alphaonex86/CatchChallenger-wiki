@@ -155,10 +155,8 @@ This query have null size
 
 == Client &rarr; Server without reply ==
 === 500002 ===
-Remove list size <span style="color: #FF4000">00000002</span>, and the object:
-* Id: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>
-* Id: <span style="color: #FFBF00">00000002</span>, quantity: <span style="color: #40BF00">00000005</span>
- <span style="color: #FF4000">00000002</span><span style="color: #FFBF00">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FFBF00">00000002</span><span style="color: #40BF00">00000005</span>
+Destroy the object id: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>
+ <span style="color: #FFBF00">00000001</span><span style="color: #40BF00">00000001</span>
 
 == Server &rarr; Client without reply ==
 === D00001 ===
