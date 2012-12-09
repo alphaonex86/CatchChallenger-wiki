@@ -372,6 +372,8 @@ If all is good:
  <span style="color: #FF4000">02</span><span style="color: #40BF00">0064</span><span style="color: #BFBF40">52</span><span style="color: #40BFFF">0000000000000064</span><span style="color: #FF4000">00000002</span>
 After the server will send tp command to set the first position.
 
+This reply is compressed.
+
 === Reply 02000C ===
 Reply a list, with same number of item of the source query (<span style="color: #FF4000">01</span> to found, <span style="color: #FF4000">02</span> to delete):
 * <span style="color: #FF4000">01</span>
