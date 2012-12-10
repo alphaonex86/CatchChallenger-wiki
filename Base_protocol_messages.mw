@@ -369,7 +369,9 @@ If all is good:
 * the player id: {{Player_id}}
 * cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
 * number of map: <span style="color: #FF4000">00000002</span>
- <span style="color: #FF4000">02</span><span style="color: #40BF00">0064</span><span style="color: #BFBF40">52</span><span style="color: #40BFFF">0000000000000064</span><span style="color: #FF4000">00000002</span>
+** size of list of the recipes: <span style="color: #7B00FF">00000001</span>
+** recipe id: <span style="color: #FF4000">00000001</span>
+ <span style="color: #FF4000">02</span><span style="color: #40BF00">0064</span><span style="color: #BFBF40">52</span><span style="color: #40BFFF">0000000000000064</span><span style="color: #FF4000">00000002</span><span style="color: #7B00FF">00000001</span><span style="color: #FF4000">00000001</span>
 After the server will send tp command to set the first position.
 
 This reply is compressed.
