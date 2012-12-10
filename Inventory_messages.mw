@@ -41,6 +41,11 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | XX
 | {{No}}
 | [[Inventory_messages#100007|Collect mature plant]]
+| style="background: #90ff90; color: black;" | 10
+| style="background: #ffcc00; color: black;" | 0008
+| XX
+| {{Yes}}
+| [[Inventory_messages#100008|Usage of recipe]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
