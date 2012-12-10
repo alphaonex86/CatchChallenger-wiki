@@ -1,0 +1,5 @@
+= Databases manipulation =
+* In case of databases manipulation: Always drop the used item from database, before insert update the new data generated.
+** That's prevent hack on crash (if cash you lost the item used, but not use the item without drop from the inventory)
+** '''Right way:''' You use recipe: Drop the recipe from database, if crash after this you lost you recipe, add the learned recipe the the databases.
+** '''Wrong way:''' You use recipe: Add the recipe into the db, if crash after this you have you recipe and your recipe learned.
