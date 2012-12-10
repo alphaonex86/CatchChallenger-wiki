@@ -224,3 +224,13 @@ Send list size <span style="color: #FF4000">0001</span>, and the plant:
 
 <span style="color: #40BFFF">04</span> (impossible)
  <span style="color: #40BFFF">04</span>
+
+=== Reply 100008 ===
+<span style="color: #40BFFF">01</span> (correctly crafted)
+ <span style="color: #40BFFF">01</span>
+
+<span style="color: #40BFFF">02</span> (can't be used, and '''materials not consumed''')
+ <span style="color: #40BFFF">02</span>
+
+<span style="color: #40BFFF">03</span> (failed to craft, '''materials consumed''')
+ <span style="color: #40BFFF">03</span>
