@@ -145,6 +145,11 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #ffcc00; color: black;" | 0007
 | {{No}}
 | [[Inventory_messages#Reply_100007|Collect mature plant]]
+|-
+| style="background: #90ff90; color: black;" | 10
+| style="background: #ffcc00; color: black;" | 0008
+| {{No}}
+| [[Inventory_messages#Reply_100008|Usage of recipe]]
 |}
 
 = Details =
@@ -153,17 +158,17 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 Send the plant id <span style="color: #FF4000">02</span>
  <span style="color: #FF4000">02</span>
 
-[[Base_protocol_messages#Reply_100006|See reply to this query]]
+[[Inventory_messages#Reply_100006|See reply to this query]]
 === 100007 ===
 This query have null size
 
-[[Base_protocol_messages#Reply_100007|See reply to this query]]
+[[Inventory_messages#Reply_100007|See reply to this query]]
 
 === 100008 ===
 Use the recipe id: <span style="color: #FFBF00">00000001</span>
  <span style="color: #FFBF00">00000001</span>
 
-[[Base_protocol_messages#Reply_100008|See reply to this query]]
+[[Inventory_messages#Reply_100008|See reply to this query]]
 
 == Client &rarr; Server without reply ==
 === 500002 ===
