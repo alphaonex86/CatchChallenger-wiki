@@ -156,6 +156,11 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #ffcc00; color: black;" | 0008
 | {{No}}
 | [[Inventory_messages#Reply_100008|Usage of recipe]]
+|-
+| style="background: #90ff90; color: black;" | 10
+| style="background: #ffcc00; color: black;" | 0009
+| {{No}}
+| [[Inventory_messages#Reply_100009|Use object]]
 |}
 
 = Details =
