@@ -52,7 +52,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #ffcc00; color: black;" | 0009
 | XX
 | {{Yes}}
-| [[Base_protocol_messages#100009|Use object]]
+| [[Inventory_messages#100009|Use object]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
@@ -181,7 +181,7 @@ Send the object used: <span style="color: #FF4000">00000003</span>
  <span style="color: #FF4000">00000003</span>
 Not fixed size because future arguments can be added, like on what is applied the object.
 
-[[Base_protocol_messages#Reply_100009|See reply to this query]]
+[[Inventory_messages#Reply_100009|See reply to this query]]
 
 == Client &rarr; Server without reply ==
 === 500002 ===
