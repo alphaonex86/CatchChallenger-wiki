@@ -47,6 +47,12 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | XX
 | {{Yes}}
 | [[Inventory_messages#100008|Usage of recipe]]
+|-
+| style="background: #90ff90; color: black;" | 10
+| style="background: #ffcc00; color: black;" | 0009
+| XX
+| {{Yes}}
+| [[Base_protocol_messages#100009|Use object]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
@@ -170,6 +176,13 @@ Use the recipe id: <span style="color: #FFBF00">00000001</span>
 
 [[Inventory_messages#Reply_100008|See reply to this query]]
 
+=== 100009 ===
+Send the object used: <span style="color: #FF4000">00000003</span>
+ <span style="color: #FF4000">00000003</span>
+Not fixed size because future arguments can be added, like on what is applied the object.
+
+[[Base_protocol_messages#Reply_100009|See reply to this query]]
+
 == Client &rarr; Server without reply ==
 === 500002 ===
 Destroy the object id: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>
@@ -234,3 +247,9 @@ Send list size <span style="color: #FF4000">0001</span>, and the plant:
 
 <span style="color: #40BFFF">03</span> (failed to craft, '''materials consumed''')
  <span style="color: #40BFFF">03</span>
+
+=== Reply 100009 ===
+The reply can be one of this:
+* <span style="color: #40BFFF">01</span> is correctly used
+* <span style="color: #40BFFF">02</span> failed to use with consumption of the object
+* <span style="color: #40BFFF">03</span> failed to use without consumption of the object
