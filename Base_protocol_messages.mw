@@ -25,6 +25,12 @@
 | XX
 | {{Yes}}
 | [[Base_protocol_messages#02000C|Send datapack file list]]
+|-
+| style="background: #90ff90; color: black;" | 02
+| style="background: #ffcc00; color: black;" | 000D
+| XX
+| {{Yes}}
+| [[Base_protocol_messages#02000D|Use object]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
