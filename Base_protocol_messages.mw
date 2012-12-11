@@ -223,6 +223,13 @@ This packet is compressed.
 
 [[Base_protocol_messages#Reply_02000C|See reply to this query]]
 
+=== 02000D ===
+Send the object used: <span style="color: #FF4000">00000003</span>
+ <span style="color: #FF4000">00000003</span>
+Not fixed size because future arguments can be added, like on what is applied the object.
+
+[[Base_protocol_messages#Reply_02000D|See reply to this query]]
+
 == Client &rarr; Server without reply ==
 === 40 ===
 Client -&gt; Server: previous moved unit: <span style="color: #0000FF">06</span>, direction: <span style="color: #FF4000">02</span>
