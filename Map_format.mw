@@ -38,16 +38,10 @@ The size should be egal as '''40,40'''
 == Object ==
 It's on layer Object with name: "''Object''", Name: what you want
 
-'''[bot-text]'''
-* Type: bot-text
-* text: Xml script
-* Optional:
-* move: x,y;x,y;...;x,y
-* look_you: false (default: true)
-
-'''[sign]'''
-* Type: sign
-* text: Xml text
+'''[bot]'''
+* Type: bot
+* file: Xml script
+* id: the id into the bot file
 
 == Teleportation ==
 It's layer Object with name "''Moving''", only visible on map editor.
