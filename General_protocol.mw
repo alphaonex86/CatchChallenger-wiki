@@ -67,3 +67,6 @@ The compression is used for datapack list/datapack content:
 * None: No compression overhead, but some query can use lot of bandwidth
 
 See too: [[Quick Benchmark: Gzip vs Bzip2 vs LZMA vs XZ vs LZ4 vs LZO]]
+
+= Unit into the game =
+[[Unit into the game]]
