@@ -228,8 +228,8 @@ Shop id: <span style="color: #A600FF">00000001</span>
 [[Inventory_messages#Reply_10000A|See reply to this query]]
 
 === 10000B ===
-Buy object: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
- <span style="color: #FFBF00">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FF4000">00000003</span>
+Shop id: <span style="color: #A600FF">00000001</span>, Buy object: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
+ <span style="color: #A600FF">00000001</span><span style="color: #FFBF00">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FF4000">00000003</span>
 
 [[Inventory_messages#Reply_10000B|See reply to this query]]
 
