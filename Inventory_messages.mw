@@ -57,19 +57,19 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 000A
 | XX
-| {{No}}
+| {{Yes}}
 | [[Inventory_messages#10000A|Get shop list]]
 |-
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 000B
 | XX
-| {{No}}
+| {{Yes}}
 | [[Inventory_messages#10000B|Buy object]]
 |-
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 000C
 | XX
-| {{No}}
+| {{Yes}}
 | [[Inventory_messages#10000C|Sell object]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
@@ -187,12 +187,12 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 |-
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 000B
-| {{No}}
+| {{Yes}}
 | [[Inventory_messages#Reply_10000B|Buy object]]
 |-
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 000C
-| {{No}}
+| {{Yes}}
 | [[Inventory_messages#Reply_10000C|Sell object]]
 |}
 
