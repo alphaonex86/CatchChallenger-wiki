@@ -316,8 +316,10 @@ Get shop list size: <span style="color: #FF4000">00000003</span>
 === Reply 10000B ===
 The reply can be one of this:
 * <span style="color: #40BFFF">01</span> Purchased
-* <span style="color: #40BFFF">02</span> Have not the quantity
-* <span style="color: #40BFFF">03</span> Price have changed
+* <span style="color: #40BFFF">02</span> Purchased at better price, price: <span style="color: #FF4000">00000003</span>
+* <span style="color: #40BFFF">03</span> Have not the quantity
+* <span style="color: #40BFFF">04</span> Price have changed
+
 === Reply 10000C ===
 The reply can be one of this:
 * <span style="color: #40BFFF">01</span> Sold
