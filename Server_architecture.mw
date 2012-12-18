@@ -1,4 +1,9 @@
-= Thread for a client =
+= Threads =
+== Why not use all the cpu? ==
+* Use all the cpu mean have big lock on the general data. It slow down all the thread operations, use system time, have dead lock, ...
+* That's structure allow good data locality, then good usage of the cpu cache.
+* All task have one thread, that's allow task isolation, and prevent performance lost on preampt (disk access, wait db, ...)
+== General organisation ==
 * Heavy load thread: Thread to get file, access to mysql, load the map, return to the sender the data done by the query, all where it can be blocked lot of time
 * Thread to read and parse on the network packet
 * broad cast thread: all broad cast object interconnected, complexity: O(n), where n is all player, broadcast too the player disconnection and send it to ''map management thread''
