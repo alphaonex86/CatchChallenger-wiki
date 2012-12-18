@@ -53,12 +53,14 @@ It's layer Object with name "''Moving''", only visible on map editor.
 '''[teleport on push]'''
 * Type: teleport on push
 * map: [file name]
-* x, y: cordon
+* x: coordinates in x
+* y: coordinates in y
 
 '''[teleport on it]'''
 * Type: teleport on it (when the player is fully on it)
 * map: [file name]
-* x, y: cordon
+* x: coordinates in x
+* y: coordinates in y
 
 '''[border]'''
 * Type: border-top, border-bottom, border-left, border-right
@@ -68,7 +70,8 @@ It's layer Object with name "''Moving''", only visible on map editor.
 '''[door]'''
 * Type: door 
 * map: [file name]
-* x & y: cordon on the new map
+* x: coordinates in x
+* y: coordinates in y
 
 '''[rescue]'''
 * Type: set the point to respawn if the monsters at the next heal.
