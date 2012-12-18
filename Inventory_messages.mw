@@ -310,6 +310,8 @@ The reply can be one of this:
 * <span style="color: #40BFFF">02</span> failed to use with consumption of the object
 * <span style="color: #40BFFF">03</span> failed to use without consumption of the object
 === Reply 10000A ===
+Why resend the object list? Because some object can be disabled by the server. Allow global trade where the player can sell/buy to other player. Allow to industries.
+
 Get shop list size: <span style="color: #FF4000">00000003</span>
 * object: <span style="color: #FFBF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>, quantity: <span style="color: #40BF00">00000000</span> (0 = infinity)
  <span style="color: #FF4000">00000003</span><span style="color: #FFBF00">00000001</span><span style="color: #FF4000">00000003</span><span style="color: #40BF00">00000000</span>
