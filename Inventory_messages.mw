@@ -311,8 +311,9 @@ The reply can be one of this:
 * <span style="color: #40BFFF">03</span> failed to use without consumption of the object
 === Reply 10000A ===
 Get shop list size: <span style="color: #FF4000">00000003</span>
-* object: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000000</span> (0 = infinity)
- <span style="color: #FF4000">00000003</span><span style="color: #FFBF00">00000001</span><span style="color: #40BF00">00000000</span>
+* object: <span style="color: #FFBF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>, quantity: <span style="color: #40BF00">00000000</span> (0 = infinity)
+ <span style="color: #FF4000">00000003</span><span style="color: #FFBF00">00000001</span><span style="color: #FF4000">00000003</span><span style="color: #40BF00">00000000</span>
+
 === Reply 10000B ===
 The reply can be one of this:
 * <span style="color: #40BFFF">01</span> Purchased
