@@ -369,9 +369,26 @@ If all is good:
 * the player id: {{Player_id}}
 * cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
 * number of map: <span style="color: #FF4000">00000002</span>
-** size of list of the recipes: <span style="color: #7B00FF">00000001</span>
+* size of list of the recipes: <span style="color: #7B00FF">00000001</span>
 ** recipe id: <span style="color: #FF4000">00000001</span>
- <span style="color: #FF4000">02</span><span style="color: #40BF00">0064</span><span style="color: #BFBF40">52</span><span style="color: #40BFFF">0000000000000064</span><span style="color: #FF4000">00000002</span><span style="color: #7B00FF">00000001</span><span style="color: #FF4000">00000001</span>
+* size of list of the monsters: <span style="color: #7B00FF">00000001</span>
+** monsters id: <span style="color: #FF4000">00000001</span>
+** level: <span style="color: #40BF00">01</span>
+** remaining_xp: <span style="color: #008080">00000001</span>
+** hp: <span style="color: #FFBF00">00000001</span>
+** sp: <span style="color: #FF00FF">00000001</span>
+** captured_with: <span style="color: #40BF00">00000001</span>
+** gender: <span style="color: #FF4000">01</span>
+** egg_step: <span style="color: #FFBF00">00000000</span> (is mature if = 0)
+** size of list of the buff monsters: <span style="color: #7B00FF">00000001</span>
+*** buff: <span style="color: #40BF00">00000001</span>
+*** buff level: <span style="color: #FF4000">01</span>
+** size of list of the skills monsters: <span style="color: #7B00FF">00000001</span>
+*** skill: <span style="color: #40BF00">00000001</span>
+*** skill level: <span style="color: #FF4000">01</span>
+
+ <span style="color: #FF4000">02</span><span style="color: #40BF00">0064</span><span style="color: #BFBF40">52</span><span style="color: #40BFFF">0000000000000064</span><span style="color: #FF4000">00000002</span><span style="color: #7B00FF">00000001</span><span style="color: #FF4000">00000001</span><span style="color: #7B00FF">00000001</span><span style="color: #FF4000">00000001</span><span style="color: #40BF00">01</span><span style="color: #008080">00000001</span><span style="color: #FFBF00">00000001</span><span style="color: #FF00FF">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FF4000">01</span><span style="color: #FFBF00">00000000</span><span style="color: #7B00FF">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FF4000">01</span><span style="color: #7B00FF">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FF4000">01</span>
+
 After the server will send tp command to set the first position.
 
 This reply is compressed.
