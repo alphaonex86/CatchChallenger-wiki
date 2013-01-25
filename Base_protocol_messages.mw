@@ -368,10 +368,6 @@ If all is good:
 * max player: <span style="color: #40BF00">0064</span> (then 100 in decimal) -> this define if the players id is defined on 16Bits ('''unknown max player at this point''', for the client at the startup)
 * the player id: {{Player_id}}
 * cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
-* rescue map: {{Map_id}}
-* rescue x: {{Player_x}}
-* rescue y: {{Player_y}}
-* rescue direction: <span style="color: #FF4000">02</span> can be spawn walking, and do
 * number of map: <span style="color: #FF4000">00000002</span>
 * size of list of the recipes: <span style="color: #7B00FF">00000001</span>
 ** recipe id: <span style="color: #FF4000">00000001</span>
