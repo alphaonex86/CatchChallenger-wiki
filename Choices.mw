@@ -6,3 +6,7 @@ You have here all general choices. To choices specific to the client/server, see
 The partial datapack is send when you want keep hand of the content. Because it's harder to reproduct, but not impossible (l2jfree). The text of the bot is downloaded at live from the MMORPG server, add then increase the bandwith, lower the performance, slow down the game.
 === We choices ===
 We idea is trust of the user (an user witch wishes reproduct the datapack will do it, same for found crack of no free game). And don't block the creativity. Allowing the full datapack downloading, permit to do unstoppable project (if the server close, anyone can reopen new because have the datapack), and you can play as standalone local game with your datapack from favorite MMORPG server.
+=== Lost into the battle ===
+To do easy load teleport, the teleport after lost a battle is do by normal teleport. Reason:
+* More easy on server part
+* Not frequent, then latency on that is acceptable.
