@@ -31,7 +31,7 @@ The size should be egal as '''40,40'''
 * '''Walkable:''' Can walk on this layer, this the bottom layer
 * '''LedgesRight:''' border to jump, the player will jump left to right
 * '''LedgesLeft:''' border to jump, the player will jump right to left
-* '''LedgesDown:''' border to jump, the player will jump up to down
+* '''LedgesBottom:''' border to jump, the player will jump up to down
 * '''LedgesTop:''' border to jump, the player will jump up to top
 * '''Grass:''' grass, where have random chance to find a monster
 * '''Dirt:''' dirt where plant can grow
