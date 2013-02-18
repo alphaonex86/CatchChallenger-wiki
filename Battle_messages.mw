@@ -81,31 +81,25 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Packet size
 ! Data
 |-
-| style="background: #90ff90; color: black;" | D0
-| style="background: #ffcc00; color: black;" | 0002
-| 
-| {{Yes}}
-| [[Battle_messages#D00002|Send the monsters of current player]]
-|-
-| style="background: #90ff90; color: black;" | D0
+| style="background: #90ff90; color: black;" | E0
 | style="background: #ffcc00; color: black;" | 0006
 | 
 | {{Yes}}
 | [[Battle_messages#D00006|The other player use an attack]] (battle)
 |-
-| style="background: #90ff90; color: black;" | D0
+| style="background: #90ff90; color: black;" | E0
 | style="background: #ffcc00; color: black;" | 0007
 | 
 | {{Yes}}
 | [[Battle_messages#D00007|Push the monsters list of the other player]] (battle)
 |-
-| style="background: #90ff90; color: black;" | D0
+| style="background: #90ff90; color: black;" | E0
 | style="background: #ffcc00; color: black;" | 0008
 | 
 | {{Yes}}
 | [[Battle_messages#D00008|Send the monsters of the other player]]
 |-
-| style="background: #90ff90; color: black;" | D0
+| style="background: #90ff90; color: black;" | E0
 | style="background: #ffcc00; color: black;" | 0009
 | 
 | {{Yes}}
