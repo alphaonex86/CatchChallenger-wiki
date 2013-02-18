@@ -248,6 +248,20 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | [[Inventory_messages#Reply_10000C|Sell object]]
 |}
 
+== Client &rarr; Server ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type of the query
+! Sub code type of the query
+! Packet size for the reply
+! Query
+|-
+| style="background: #90ff90; color: black;" | 80
+| style="background: #ffcc00; color: black;" | 0001
+| {{No}}
+| [[Inventory_messages#Reply_800001|Another player request a trade]]
+|}
+
 = Details =
 == Client &rarr; Server with reply ==
 === 100006 ===
