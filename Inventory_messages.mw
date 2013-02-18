@@ -154,6 +154,22 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | [[Inventory_messages#D2|Remove plant on map]] '''''(Fast)'''''
 |}
 
+== Server &rarr; Client with reply ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+|-
+| style="background: #90ff90; color: black;" | A0
+| style="background: #ffcc00; color: black;" | 0002
+| XX
+| {{Yes}}
+| [[Trade_messages#900002|Another player request a trade]]
+|}
+
 = Reply =
 == Server &rarr; Client ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
