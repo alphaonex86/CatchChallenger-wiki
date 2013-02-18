@@ -327,7 +327,7 @@ Send list size <span style="color: #FF4000">0001</span>, and the plant:
 
 == Server &rarr; Client with reply ==
 === 800001 ===
-Trade is requeted by: <span style="color: #40BF00">player</span> (UTF8 + 8Bits header)
+Trade is requested by: <span style="color: #40BF00">player</span> (UTF8 + 8Bits header)
  <span style="color: #FFBF00">08</span><span style="color: #40BF00">746f746f</span>
 
 = Reply =
