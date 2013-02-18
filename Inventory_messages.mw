@@ -152,6 +152,24 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | 
 | {{Yes}}
 | [[Inventory_messages#D2|Remove plant on map]] '''''(Fast)'''''
+|-
+| style="background: #90ff90; color: black;" | E0
+| style="background: #ffcc00; color: black;" | 0003
+| 
+| {{Yes}}
+| [[Trade_messages#D00003|The other player have put object]] (trade)
+|-
+| style="background: #90ff90; color: black;" | E0
+| style="background: #ffcc00; color: black;" | 0004
+| 
+| {{Yes}}
+| [[Trade_messages#D00004|The other player have accepted]] (trade)
+|-
+| style="background: #90ff90; color: black;" | E0
+| style="background: #ffcc00; color: black;" | 0005
+| 
+| {{Yes}}
+| [[Trade_messages#D00005|The other player have canceled]] (trade)
 |}
 
 == Server &rarr; Client with reply ==
