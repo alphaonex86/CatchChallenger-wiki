@@ -13,12 +13,6 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Query number
 ! Packet size
 ! Data
-|-
-| style="background: #90ff90; color: black;" | 30
-| style="background: #ffcc00; color: black;" | 0002
-| XX
-| {{Yes}}
-| [[Trade_messages#100002|Request a player trade]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
@@ -30,24 +24,6 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Query number
 ! Packet size
 ! Data
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0002
-| 
-| {{Yes}}
-| [[Trade_messages#500002|Put object into a trade]] (when trade is accepted)
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0003
-| 
-| {{Yes}}
-| [[Trade_messages#500003|Accept the trade]] (when trade is accepted)
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0004
-| 
-| {{Yes}}
-| [[Trade_messages#500004|Refuse the trade]] (when trade is accepted)
 |-
 | style="background: #90ff90; color: black;" | 60
 | style="background: #ffcc00; color: black;" | 0005
@@ -64,12 +40,6 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Query number
 ! Packet size
 ! Data
-|-
-| style="background: #90ff90; color: black;" | A0
-| style="background: #ffcc00; color: black;" | 0002
-| XX
-| {{Yes}}
-| [[Trade_messages#900002|Another player request a trade]]
 |}
 
 == Server &rarr; Client without reply ==
@@ -80,50 +50,4 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Query number
 ! Packet size
 ! Data
-|-
-| style="background: #90ff90; color: black;" | E0
-| style="background: #ffcc00; color: black;" | 0003
-| 
-| {{Yes}}
-| [[Trade_messages#D00003|The other player have put object]] (trade)
-|-
-| style="background: #90ff90; color: black;" | E0
-| style="background: #ffcc00; color: black;" | 0004
-| 
-| {{Yes}}
-| [[Trade_messages#D00004|The other player have accepted]] (trade)
-|-
-| style="background: #90ff90; color: black;" | E0
-| style="background: #ffcc00; color: black;" | 0005
-| 
-| {{Yes}}
-| [[Trade_messages#D00005|The other player have canceled]] (trade)
-|}
-
-= Reply =
-== Server &rarr; Client ==
-{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! Main code type of the query
-! Sub code type of the query
-! Packet size for the reply
-! Query
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0002
-| {{No}}
-| [[Trade_messages#Reply_100002|Request a player trade]]
-|}
-== Client &rarr; Server ==
-{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! Main code type of the query
-! Sub code type of the query
-! Packet size for the reply
-! Query
-|-
-| style="background: #90ff90; color: black;" | 90
-| style="background: #ffcc00; color: black;" | 0002
-| {{No}}
-| [[Trade_messages#Reply_900002|Another player request a trade]]
 |}
