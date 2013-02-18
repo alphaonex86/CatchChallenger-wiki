@@ -94,6 +94,24 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | 
 | {{No}}
 | [[Inventory_messages#500002|Destroy an object]]
+|-
+| style="background: #90ff90; color: black;" | 50
+| style="background: #ffcc00; color: black;" | 0002
+| 
+| {{Yes}}
+| [[Inventory_messages#500002|Put object into a trade]] (when trade is accepted)
+|-
+| style="background: #90ff90; color: black;" | 50
+| style="background: #ffcc00; color: black;" | 0003
+| 
+| {{Yes}}
+| [[Inventory_messages#500003|Accept the trade]] (when trade is accepted)
+|-
+| style="background: #90ff90; color: black;" | 50
+| style="background: #ffcc00; color: black;" | 0004
+| 
+| {{Yes}}
+| [[Inventory_messages#500004|Refuse the trade]] (when trade is accepted)
 |}
 
 == Server &rarr; Client without reply ==
