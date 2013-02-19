@@ -406,3 +406,11 @@ The reply can be one of this:
 * <span style="color: #40BFFF">02</span> Sold at better price, price: <span style="color: #FF4000">00000003</span>
 * <span style="color: #40BFFF">03</span> Can't sold this quantity
 * <span style="color: #40BFFF">04</span> Price have changed
+
+== Client &rarr; Server reply ==
+=== Reply 800001 ===
+<span style="color: #40BFFF">01</span> (accepted)
+ <span style="color: #40BFFF">01</span>
+
+<span style="color: #40BFFF">02</span> (refused)
+ <span style="color: #40BFFF">02</span>
