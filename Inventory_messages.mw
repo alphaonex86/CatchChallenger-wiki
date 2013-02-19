@@ -348,6 +348,8 @@ Note: only once at time.
  <span style="color: #FFBF00">08</span><span style="color: #40BF00">746f746f</span><span style="color: #FF4000">00</span>
 {{Skin}}
 
+[[Inventory_messages#Reply_800001|See reply to this query]]
+
 = Reply =
 == Server &rarr; Client reply ==
 === Reply 100006 ===
