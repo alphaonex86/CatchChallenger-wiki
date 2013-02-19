@@ -104,13 +104,13 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #90ff90; color: black;" | 50
 | style="background: #ffcc00; color: black;" | 0004
 | 
-| {{Yes}}
+| {{No}}
 | [[Inventory_messages#500004|Finish the trade]] (when trade is accepted)
 |-
 | style="background: #90ff90; color: black;" | 50
 | style="background: #ffcc00; color: black;" | 0005
 | 
-| {{Yes}}
+| {{No}}
 | [[Inventory_messages#500005|Cancel the trade]] (when trade is accepted)
 |}
 
