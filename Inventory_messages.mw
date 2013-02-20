@@ -337,6 +337,14 @@ Remove list size <span style="color: #FF4000">00000002</span>, and the object:
 * Id: <span style="color: #FFBF00">00000002</span>, quantity: <span style="color: #40BF00">00000005</span>
  <span style="color: #FF4000">00000002</span><span style="color: #FFBF00">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FFBF00">00000002</span><span style="color: #40BF00">00000005</span>
 
+=== D00004 ===
+Type: <span style="color: #9D007B">01</span> (cash), quantity: <span style="color: #40BF00">0000000000000001</span>
+ <span style="color: #9D007B">01</span><span style="color: #40BF00">0000000000000001</span>
+Type: <span style="color: #9D007B">02</span> (item), item: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>
+ <span style="color: #9D007B">02</span><span style="color: #FFBF00">00000001</span><span style="color: #40BF00">00000001</span>
+Type: <span style="color: #9D007B">03</span> (monster), monster: <span style="color: #FF4000">00000001</span>, level: <span style="color: #40BF00">01</span>, gender: <span style="color: #FF4000">01</span>
+ <span style="color: #9D007B">03</span><span style="color: #FF4000">00000001</span><span style="color: #40BF00">01</span><span style="color: #FF4000">01</span>
+
 === D1 ===
 Send list size <span style="color: #FF4000">0001</span>, and the plant:
 * {{Map_id}}, x: <span style="color: #40BFFF">01</span>, y: <span style="color: #FFBF00">01</span>, plant: <span style="color: #FF4000">01</span>, seconds to mature: <span style="color: #FFBF00">0064</span> (100s)
