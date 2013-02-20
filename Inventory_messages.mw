@@ -310,6 +310,14 @@ Shop id: <span style="color: #A600FF">00000001</span>, Sell object: <span style=
 Destroy the object id: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>
  <span style="color: #FFBF00">00000001</span><span style="color: #40BF00">00000001</span>
 
+=== 500003 ===
+Type: <span style="color: #9D007B">01</span> (cash), quantity: <span style="color: #40BF00">0000000000000001</span>
+ <span style="color: #9D007B">01</span><span style="color: #40BF00">0000000000000001</span>
+Type: <span style="color: #9D007B">02</span> (item), item: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>
+ <span style="color: #9D007B">02</span><span style="color: #FFBF00">00000001</span><span style="color: #40BF00">00000001</span>
+Type: <span style="color: #9D007B">03</span> (monster), monster id: <span style="color: #40BF00">00000001</span>
+ <span style="color: #9D007B">03</span><span style="color: #40BF00">00000001</span>
+
 == Server &rarr; Client without reply ==
 === D00001 ===
 Send list size <span style="color: #FF4000">00000002</span>, and the object:
