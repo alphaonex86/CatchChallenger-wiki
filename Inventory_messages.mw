@@ -165,6 +165,12 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | {{No}}
 | [[Inventory_messages#D00007|The other player have finished]] (trade)
 |-
+| style="background: #90ff90; color: black;" | D0
+| style="background: #ffcc00; color: black;" | 0008
+| 
+| {{No}}
+| [[Inventory_messages#D00008|Server have validated the trade]] (trade)
+|-
 | style="background: #90ff90; color: black;" | D1
 |
 | 
