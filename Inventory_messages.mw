@@ -150,8 +150,8 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #90ff90; color: black;" | D0
 | style="background: #ffcc00; color: black;" | 0005
 | 
-| {{No}}
-| [[Inventory_messages#D00005|The other player have accepted]] (trade)
+| {{Yes}}
+| [[Inventory_messages#D00005|The other player have accepted]] (trade, send the info too)
 |-
 | style="background: #90ff90; color: black;" | D0
 | style="background: #ffcc00; color: black;" | 0006
