@@ -43,6 +43,8 @@ It's on layer Object with name: "''Object''", Name: what you want
 * Type: bot
 * file: Xml script
 * id: the id into the bot file
+* lookAt: left, right, top, bottom
+* skin: you skin name
 
 == Teleportation ==
 It's layer Object with name "''Moving''", only visible on map editor.
