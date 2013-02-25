@@ -35,19 +35,25 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #ffcc00; color: black;" | 0001
 | 
 | {{Yes}}
-| [[Battle_messages#500001|Use an object/recipe in battle]]
+| [[Battle_messages#600001|Use an object/recipe in battle]]
 |-
 | style="background: #90ff90; color: black;" | 60
 | style="background: #ffcc00; color: black;" | 0002
 | 
 | {{No}}
-| [[Battle_messages#500001|Try escape]]
+| [[Battle_messages#600002|Try escape]]
 |-
 | style="background: #90ff90; color: black;" | 60
 | style="background: #ffcc00; color: black;" | 0003
 | 
 | {{No}}
-| [[Battle_messages#500001|Change monster]]
+| [[Battle_messages#600003|Change monster]]
+|-
+| style="background: #90ff90; color: black;" | 60
+| style="background: #ffcc00; color: black;" | 0004
+| 
+| {{No}}
+| [[Battle_messages#600004|Learn attack]]
 |-
 | style="background: #90ff90; color: black;" | 61
 | 
