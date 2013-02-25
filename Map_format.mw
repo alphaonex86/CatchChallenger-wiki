@@ -11,18 +11,22 @@ Support into the client: lib tiled for QGraphicView or QML
 The spawn point is useless, when map change, your are teleported at the middle. If you are blocked ask to the administrator, command to random teleport to low level village will be implanted too.
 
 = Map content =
-== General map content ==
-Here described the map format, into the tmx
-* '''type''': city, outside, cave, inside, arena
-* '''dayMonster''': 78,90,15-24;79,10,20-24; (each monster separated by ";", and as format: id, % of chance, level)
-* '''nightMonster''': 78,90,15-24;79,10,20-24; (each monster separated by ";", and as format: id, % of chance, level)
-* '''waterMonster''': 78,90,15-24;79,10,20-24; (each monster separated by ";", and as format: id, % of chance, level)
-* '''wildProbability''': 10
-
-The object and layer is described above.
-
+== General properties ==
+* '''type:''' indoor, outdoor
+* '''ambiance:''' the ambiance name (define step sound, background sound, ...)
+* '''zone:''' the zone name (found into zone folder with [name].xml)
 The '''0,0''' is at '''left and top''' for this protocol.
-The size should be egal as '''40,40'''
+
+== Xml file ==
+ &lt;map&gt;
+        &lt;name lang="en"&gt;English name&lt;/name&gt;
+        &lt;name lang="fr"&gt;Nom français&lt;/name&gt;
+        &lt;grass&gt;
+               &lt;monster id="1" minLevel="3" maxLevel="4" luck="20" /&gt;
+               &lt;monster id="2" minLevel="3" maxLevel="5" luck="80" /&gt;
+        &lt;/grass&gt;
+ &lt;/map&gt;
+the balise grass can be wather, cave.
 
 == Layer ==
 * '''WalkBehind:''' do player image behind this layer
