@@ -146,3 +146,9 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 Server -&gt; Client: random bytes: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX[...]XXXXXXXXXXX</span>
 
  <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX[...]XXXXXXXXXXX</span>
+
+== Client &rarr; Server without reply ==
+=== 600004 ===
+Monster id: <span style="color: #40BFFF">00000001</span>, skill: <span style="color: #94CF00">00000001</span>
+
+ <span style="color: #40BFFF">00000001</span><span style="color: #94CF00">00000001</span>
