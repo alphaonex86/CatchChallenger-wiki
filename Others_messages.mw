@@ -25,11 +25,29 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Packet size
 ! Data
 |-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0005
+| style="background: #90ff90; color: black;" | 6a
+| style="background: #ffcc00; color: black;" | 0001
 | 
-| {{Yes}}
-| [[Others_messages#500005|Quest action]] (accept, finish, cancel)
+| {{No}}
+| [[Others_messages#6a0001|Quest start]]
+|-
+| style="background: #90ff90; color: black;" | 6a
+| style="background: #ffcc00; color: black;" | 0002
+| 
+| {{No}}
+| [[Others_messages#6a0002|Quest finish]]
+|-
+| style="background: #90ff90; color: black;" | 6a
+| style="background: #ffcc00; color: black;" | 0003
+| 
+| {{No}}
+| [[Others_messages#6a0003|Quest cancel]]
+|-
+| style="background: #90ff90; color: black;" | 6a
+| style="background: #ffcc00; color: black;" | 0004
+| 
+| {{No}}
+| [[Others_messages#6a0004|Quest next step]]
 |}
 
 == Server &rarr; Client with reply ==
