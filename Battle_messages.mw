@@ -143,7 +143,25 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 
 = Details =
 == Server &rarr; Client without reply ==
-=== D00009 ===
+=== E00008 ===
+Number of monster: <span style="color: #A600FF">01</span>, Stat of the monster: <span style="color: #FFBF00">01</span>, first monster:
+* monsters: <span style="color: #FF4000">00000001</span>
+* level: <span style="color: #40BF00">01</span>
+* remaining_xp: <span style="color: #008080">00000001</span>
+* hp: <span style="color: #FFBF00">00000001</span>
+* captured_with: <span style="color: #40BF00">00000001</span>
+* gender: <span style="color: #FF4000">01</span>
+* size of list of the buff monsters: <span style="color: #7B00FF">00000001</span>
+** buff: <span style="color: #40BF00">00000001</span>
+** buff level: <span style="color: #FF4000">01</span>
+
+ <span style="color: #A600FF">02</span><span style="color: #FFBF00">0102</span><span style="color: #FF4000">00000001</span><span style="color: #40BF00">01</span><span style="color: #008080">00000001</span><span style="color: #FFBF00">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FF4000">01</span><span style="color: #7B00FF">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FF4000">01</span>
+
+Stat of the monster:
+* 0x01: ready for battle
+* 0x02: not able to battle
+
+=== E00009 ===
 Server -&gt; Client: random bytes: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX[...]XXXXXXXXXXX</span>
 
  <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX[...]XXXXXXXXXXX</span>
