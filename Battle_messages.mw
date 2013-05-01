@@ -72,6 +72,11 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Packet size
 ! Data
 |-
+| style="background: #90ff90; color: black;" | 80
+| style="background: #ffcc00; color: black;" | 0001
+| XX
+| {{Yes}}
+| [[Inventory_messages#800001|Another player request a battle]]
 |}
 
 == Server &rarr; Client without reply ==
