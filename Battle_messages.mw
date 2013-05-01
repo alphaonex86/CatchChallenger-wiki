@@ -155,7 +155,7 @@ Number of monster: <span style="color: #A600FF">01</span>, Stat of the monster: 
 ** buff: <span style="color: #40BF00">00000001</span>
 ** buff level: <span style="color: #FF4000">01</span>
 
- <span style="color: #A600FF">02</span><span style="color: #FFBF00">0102</span><span style="color: #FF4000">00000001</span><span style="color: #40BF00">01</span><span style="color: #008080">00000001</span><span style="color: #FFBF00">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FF4000">01</span><span style="color: #7B00FF">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FF4000">01</span>
+ <span style="color: #A600FF">02</span><span style="color: #FFBF00">01</span><span style="color: #FF4000">00000001</span><span style="color: #40BF00">01</span><span style="color: #008080">00000001</span><span style="color: #FFBF00">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FF4000">01</span><span style="color: #7B00FF">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FF4000">01</span>
 
 Stat of the monster:
 * 0x01: ready for battle
