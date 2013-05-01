@@ -14,11 +14,6 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Packet size
 ! Data
 |-
-| style="background: #90ff90; color: black;" | 20
-| style="background: #ffcc00; color: black;" | 0001
-| XX
-| {{Yes}}
-| [[Battle_messages#100001|Request a player battle]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
@@ -54,6 +49,12 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | 
 | {{No}}
 | [[Battle_messages#600004|Learn attack]]
+| -
+| style="background: #90ff90; color: black;" | 60
+| style="background: #ffcc00; color: black;" | 0005
+| XX
+| {{Yes}}
+| [[Battle_messages#60005|Request a player battle]]
 |-
 | style="background: #90ff90; color: black;" | 61
 | 
@@ -71,11 +72,6 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Packet size
 ! Data
 |-
-| style="background: #90ff90; color: black;" | 90
-| style="background: #ffcc00; color: black;" | 0001
-| XX
-| {{Yes}}
-| [[Battle_messages#900001|Another player request a battle]]
 |}
 
 == Server &rarr; Client without reply ==
@@ -91,25 +87,25 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #ffcc00; color: black;" | 0006
 | 
 | {{Yes}}
-| [[Battle_messages#D00006|The other player use an attack]] (battle)
+| [[Battle_messages#E00006|The other player use an attack]] (battle)
 |-
 | style="background: #90ff90; color: black;" | E0
 | style="background: #ffcc00; color: black;" | 0007
 | 
 | {{Yes}}
-| [[Battle_messages#D00007|Push the monsters list of the other player]] (battle)
+| [[Battle_messages#E00007|The other player have declined you battle request]]
 |-
 | style="background: #90ff90; color: black;" | E0
 | style="background: #ffcc00; color: black;" | 0008
 | 
 | {{Yes}}
-| [[Battle_messages#D00008|Send the monsters of the other player]]
+| [[Battle_messages#E00008|The other player have accepted you battle request]]
 |-
 | style="background: #90ff90; color: black;" | E0
 | style="background: #ffcc00; color: black;" | 0009
 | 
 | {{Yes}}
-| [[Battle_messages#D00009|Random seed list]]
+| [[Battle_messages#E00009|Random seed list]]
 |}
 
 = Reply =
