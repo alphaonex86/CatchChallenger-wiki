@@ -146,7 +146,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 === E00006 ===
 Current monster is first to attack: <span style="color: #A600FF">01</span>
 
-First attack (attack: <span style="color: #FF4000">00000001</span>, succes: <span style="color: #7B00FF">01</span>):
+First attack (attack: <span style="color: #FF4000">00000001</span>, success if have change):
 
 Current monster:
 * hp changed (can be negative): <span style="color: #FFBF00">00000001</span>
@@ -163,7 +163,7 @@ Other monster:
 
 -----------------
 
-Second attack (attack: <span style="color: #FF4000">00000001</span>, succes: <span style="color: #7B00FF">01</span>):
+Second attack (attack: <span style="color: #FF4000">00000001</span>, success if have change):
 
 Current monster:
 * hp changed (can be negative): <span style="color: #FFBF00">00000001</span>
