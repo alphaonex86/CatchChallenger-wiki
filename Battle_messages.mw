@@ -146,7 +146,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 === E00006 ===
 Send <span style="color: #FF4000">01</span> attack return, see the reference:
   struct Skill::AttackReturn
-monster number <span style="color: #0000FF">01</span> (different of 0 if the actual monster is ko by the attack):
+monster place <span style="color: #0000FF">01</span> (different of 0 if the actual monster is ko by the attack):
 
 Only if need a new monster:
 * monsters: <span style="color: #FF4000">00000001</span>
@@ -161,7 +161,7 @@ Only if need a new monster:
 === E00008 ===
 Pseudo and skin id is send to have the details.
 
-Number of monster: <span style="color: #A600FF">01</span>, Stat of the monster: <span style="color: #FFBF00">01</span>, monster number <span style="color: #0000FF">01</span>:
+Number of monster: <span style="color: #A600FF">01</span>, Stat of the monster: <span style="color: #FFBF00">01</span>, monster place <span style="color: #0000FF">01</span>:
 * monsters: <span style="color: #FF4000">00000001</span>
 * level: <span style="color: #40BF00">01</span>
 * hp: <span style="color: #FFBF00">00000001</span>
