@@ -144,7 +144,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 = Details =
 == Server &rarr; Client without reply ==
 === E00006 ===
-See the reference (2x):
+Send <span style="color: #FF4000">01</span> attack return, see the reference:
   struct Skill::AttackReturn
 monster number <span style="color: #0000FF">01</span> (different of 0 if the actual monster is ko by the attack):
 
