@@ -148,7 +148,7 @@ See the reference (2x):
   struct Skill::AttackReturn
 
 === E00008 ===
-Number of monster: <span style="color: #A600FF">01</span>, Stat of the monster: <span style="color: #FFBF00">01</span>, first monster:
+Number of monster: <span style="color: #A600FF">01</span>, Stat of the monster: <span style="color: #FFBF00">01</span>, monster number <span style="color: #0000FF">01</span>:
 * monsters: <span style="color: #FF4000">00000001</span>
 * level: <span style="color: #40BF00">01</span>
 * hp: <span style="color: #FFBF00">00000001</span>
@@ -158,7 +158,7 @@ Number of monster: <span style="color: #A600FF">01</span>, Stat of the monster: 
 ** buff: <span style="color: #40BF00">00000001</span>
 ** buff level: <span style="color: #FF4000">01</span>
 
- <span style="color: #A600FF">02</span><span style="color: #FFBF00">01</span><span style="color: #FF4000">00000001</span><span style="color: #40BF00">01</span><span style="color: #FFBF00">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FF4000">01</span><span style="color: #7B00FF">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FF4000">01</span>
+ <span style="color: #A600FF">01</span><span style="color: #FFBF00">01</span><span style="color: #0000FF">01</span><span style="color: #FF4000">00000001</span><span style="color: #40BF00">01</span><span style="color: #FFBF00">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FF4000">01</span><span style="color: #7B00FF">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FF4000">01</span>
 
 Stat of the monster:
 * 0x01: ready for battle
