@@ -146,6 +146,17 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 === E00006 ===
 See the reference (2x):
   struct Skill::AttackReturn
+monster number <span style="color: #0000FF">01</span> (different of 0 if the actual monster is ko by the attack):
+
+Only if need a new monster:
+* monsters: <span style="color: #FF4000">00000001</span>
+* level: <span style="color: #40BF00">01</span>
+* hp: <span style="color: #FFBF00">00000001</span>
+* captured_with: <span style="color: #40BF00">00000001</span>
+* gender: <span style="color: #FF4000">01</span>
+* size of list of the buff monsters: <span style="color: #7B00FF">00000001</span>
+** buff: <span style="color: #40BF00">00000001</span>
+** buff level: <span style="color: #FF4000">01</span>
 
 === E00008 ===
 Number of monster: <span style="color: #A600FF">01</span>, Stat of the monster: <span style="color: #FFBF00">01</span>, monster number <span style="color: #0000FF">01</span>:
