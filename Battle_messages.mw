@@ -159,6 +159,8 @@ Only if need a new monster:
 ** buff level: <span style="color: #FF4000">01</span>
 
 === E00008 ===
+Pseudo and skin id is send to have the details.
+
 Number of monster: <span style="color: #A600FF">01</span>, Stat of the monster: <span style="color: #FFBF00">01</span>, monster number <span style="color: #0000FF">01</span>:
 * monsters: <span style="color: #FF4000">00000001</span>
 * level: <span style="color: #40BF00">01</span>
