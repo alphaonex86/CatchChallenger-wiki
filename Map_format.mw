@@ -87,6 +87,9 @@ It's layer Object with name "''Moving''", only visible on map editor.
 '''[bot spawn]'''
 * Type: set the point to spawn bot
 
+== Animation ==
+The animation apply on an tile, to have it define properties with name: '''''animation''''' and value: '''''500ms;4frames''''' (where 500 and 4 is an exemple).
+
 = Implementation =
 For each map it use into memory:
 * QHash<QString,Map_final> + QHash<quint32,Map_final *>, to have indexed search
