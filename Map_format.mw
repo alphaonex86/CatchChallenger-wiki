@@ -13,7 +13,13 @@ The spawn point is useless, when map change, your are teleported at the middle. 
 = Map content =
 == General properties ==
 Why not all into the xml? To minise the number of file.
-* '''type:''' indoor, outdoor, cave
+* '''type:''' indoor, outdoor, cave, and into the map/music.xml:
+<pre><list>
+	<!-- can be overwriten into the map.xml, keep empty if nothing -->
+	<map type="city">music/city.ogg</map>
+	<map type="indoor">music/indoor.ogg</map>
+	<map type="outdoor">music/outdoor.ogg</map>
+</list></pre>
 * '''ambiance:''' the ambiance name (define step sound, background sound, ...)
 * '''zone:''' the zone name (found into zone folder with [name].xml)
 The '''0,0''' is at '''left and top''' for this protocol.
