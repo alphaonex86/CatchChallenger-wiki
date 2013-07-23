@@ -46,7 +46,7 @@ It's on layer Object with name: "''Object''", Name: what you want
 
 '''[bot]'''
 * Type: bot
-* file: Xml script
+* file: Xml script, see: [[Bot format]]
 * id: the id into the bot file
 * lookAt: left, right, top, bottom
 * skin: you skin name
