@@ -23,8 +23,6 @@
 		<step id="2" type="shop" shop="1" />
 		<step id="3" type="sell" shop="1" />
 		<step id="4" type="quests" />
-		<step id="5" industry="9" type="industry" />
-		<step id="6" type="zonecapture" zone="arcania" />
 
 		<!-- Farm your success -->
 
@@ -59,21 +57,23 @@
 	</bot>
 </bots>
 </pre>
-
 = Quest folder =
 == client_logic.js + text.xml ==
 Only to display the text on the client, client_logic.js:
-<pre>if(currentQuestStep()==0)
-	return '1';//do you want accept the quest
-if(currentQuestStep()==1)
+<pre>function getTextEntryPoint()
 {
-	if(haveQuestStepRequirements())
-		return 50;//give all object to pass to step 2
-	else
-		return 42;//need more object
-}
-if(currentQuestStep()==2)
-	return '55';//to finish the quest</pre>
+	if(currentQuestStep()==0)
+		return '1';//do you want accept the quest
+	if(currentQuestStep()==1)
+	{
+		if(haveQuestStepRequirements())
+			return 50;//give all object to pass to step 2
+		else
+			return 42;//need more object
+	}
+	if(currentQuestStep()==2)
+		return '55';//to finish the quest
+}</pre>
 text.xml:
 <pre><text>
 	<client_logic id="1">
@@ -97,7 +97,6 @@ text.xml:
 		<text lang="en"><![CDATA[You don't have the requiered quantity.]]></text>
 	</client_logic>
 </text></pre>
-
 == Quest logic ==
 <pre><quest id="2" repeatable="yes" bot="2">
 	<name lang="en"><![CDATA[Farm your success]]></name>
@@ -107,7 +106,6 @@ text.xml:
 	<step id="1">
 		<text lang="en"><![CDATA[Abrind 5 craftball to the bandit]]></text>
 		<item id="1" quantity="5" />
-		<fight id="1" />
 	</step>
 	<step id="2" bot="4"><!-- just talk with a bot -->
 		<text lang="en"><![CDATA[Talk to the reaper]]></text>
@@ -115,6 +113,5 @@ text.xml:
 	<rewards>
 		<item id="3" quantity="2" />
 		<reputation type="empire" point="-1" />
-		<allow type="clan" />
 	</rewards>
 </quest></pre>
