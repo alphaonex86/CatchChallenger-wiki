@@ -332,10 +332,13 @@ Type: <span style="color: #9D007B">03</span> (monster), monster id: <span style=
 
 == Server &rarr; Client without reply ==
 === D00001 ===
-Send list size <span style="color: #FF4000">00000002</span>, and the object:
+Send item list size <span style="color: #FF4000">00000002</span>, and the object:
 * Id: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>
 * Id: <span style="color: #FFBF00">00000002</span>, quantity: <span style="color: #40BF00">00000005</span>
- <span style="color: #FF4000">00000002</span><span style="color: #FFBF00">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FFBF00">00000002</span><span style="color: #40BF00">00000005</span>
+Send warehouse item list size <span style="color: #FF4000">00000002</span>, and the object:
+* Id: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>
+* Id: <span style="color: #FFBF00">00000002</span>, quantity: <span style="color: #40BF00">00000005</span>
+ <span style="color: #FF4000">00000002</span><span style="color: #FFBF00">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FFBF00">00000002</span><span style="color: #40BF00">00000005</span><span style="color: #FF4000">00000002</span><span style="color: #FFBF00">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FFBF00">00000002</span><span style="color: #40BF00">00000005</span>
 
 === D00002 ===
 Add list size <span style="color: #FF4000">00000002</span>, and the object:
