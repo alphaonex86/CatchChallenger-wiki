@@ -112,6 +112,12 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | 
 | {{No}}
 | [[Inventory_messages#500005|Cancel the trade]] (when trade is accepted)
+|-
+| style="background: #90ff90; color: black;" | 50
+| style="background: #ffcc00; color: black;" | 0006
+| 
+| {{Yes}}
+| [[Inventory_messages#500006|Deposite/withdraw to warehouse]]
 |}
 
 == Server &rarr; Client without reply ==
