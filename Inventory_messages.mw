@@ -336,6 +336,15 @@ Type: <span style="color: #9D007B">02</span> (item), item: <span style="color: #
 Type: <span style="color: #9D007B">03</span> (monster), monster id: <span style="color: #40BF00">00000001</span>
  <span style="color: #9D007B">03</span><span style="color: #40BF00">00000001</span>
 
+=== 500006 ===
+* Cash to withdraw: <span style="color: #FF0000">00000001</span> if negative, the absolute value is to deposite.
+* List of item to withdraw: <span style="color: #5544DD">00000001</span>
+** Item: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span> if negative, the absolute value is to deposite.
+* List of monster to withdraw: <span style="color: #5544DD">01</span>
+** Monster id: <span style="color: #FFBF00">00000001</span>
+* List of monster to deposite: <span style="color: #5544DD">01</span>
+** Monster id: <span style="color: #FFBF00">00000001</span>
+
 == Server &rarr; Client without reply ==
 === D00001 ===
 Send item list size <span style="color: #FF4000">00000002</span>, and the object:
