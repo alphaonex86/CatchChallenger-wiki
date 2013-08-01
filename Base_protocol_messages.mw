@@ -239,14 +239,6 @@ Client -&gt; Server: chat type: <span style="color: #FF4000">06</span> (private 
 
 {{Chat_Type}}
 
-=== 420004 ===
-Client -&gt; Server:
-* Clan action type: <span style="color: #FF4000">01</span> (create), text: <span style="color: #40BF00">&quot;name&quot;</span>
-* Clan action type: <span style="color: #FF4000">02</span> (leave)
-* Clan action type: <span style="color: #FF4000">03</span> (dissolve)
-* Clan action type: <span style="color: #FF4000">04</span> (invite), text: <span style="color: #40BF00">&quot;pseudo&quot;</span>
-* Clan action type: <span style="color: #FF4000">05</span> (eject), text: <span style="color: #40BF00">&quot;pseudo&quot;</span>
-
 == Server &rarr; Client with reply ==
 
 === 790001 ===
