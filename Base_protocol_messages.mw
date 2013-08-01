@@ -223,6 +223,15 @@ This packet is compressed.
 
 [[Base_protocol_messages#Reply_02000C|See reply to this query]]
 
+=== 02000D ===
+Client -&gt; Server:
+* Clan action type: <span style="color: #FF4000">01</span> (create), text: <span style="color: #40BF00">&quot;name&quot;</span>
+* Clan action type: <span style="color: #FF4000">02</span> (leave)
+* Clan action type: <span style="color: #FF4000">03</span> (dissolve)
+* Clan action type: <span style="color: #FF4000">04</span> (invite), text: <span style="color: #40BF00">&quot;pseudo&quot;</span>
+* Clan action type: <span style="color: #FF4000">05</span> (eject), text: <span style="color: #40BF00">&quot;pseudo&quot;</span>
+[[Base_protocol_messages#Reply_02000D|See reply to this query]]
+
 == Client &rarr; Server without reply ==
 === 40 ===
 Client -&gt; Server: previous moved unit: <span style="color: #0000FF">06</span>, direction: <span style="color: #FF4000">02</span>
