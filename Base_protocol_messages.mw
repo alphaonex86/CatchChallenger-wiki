@@ -367,6 +367,8 @@ If all is good:
 * <span style="color: #FF4000">02</span> (all is good)
 * max player: <span style="color: #40BF00">0064</span> (then 100 in decimal) -> this define if the players id is defined on 16Bits ('''unknown max player at this point''', for the client at the startup)
 * the player id: {{Player_id}}
+* clan id: <span style="color: #40BFFF">00000064</span>
+* clan_leader: <span style="color: #40BFFF">01</span>
 * cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
 * warehouse cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
 * number of map: <span style="color: #FF4000">00000002</span>
