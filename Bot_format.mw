@@ -60,20 +60,17 @@
 = Quest folder =
 == client_logic.js + text.xml ==
 Only to display the text on the client, client_logic.js:
-<pre>function getTextEntryPoint()
+<pre>if(currentQuestStep()==0)
+	return '1';//do you want accept the quest
+if(currentQuestStep()==1)
 {
-	if(currentQuestStep()==0)
-		return '1';//do you want accept the quest
-	if(currentQuestStep()==1)
-	{
-		if(haveQuestStepRequirements())
-			return 50;//give all object to pass to step 2
-		else
-			return 42;//need more object
-	}
-	if(currentQuestStep()==2)
-		return '55';//to finish the quest
-}</pre>
+	if(haveQuestStepRequirements())
+		return 50;//give all object to pass to step 2
+	else
+		return 42;//need more object
+}
+if(currentQuestStep()==2)
+	return '55';//to finish the quest</pre>
 text.xml:
 <pre><text>
 	<client_logic id="1">
@@ -97,6 +94,7 @@ text.xml:
 		<text lang="en"><![CDATA[You don't have the requiered quantity.]]></text>
 	</client_logic>
 </text></pre>
+
 == Quest logic ==
 <pre><quest id="2" repeatable="yes" bot="2">
 	<name lang="en"><![CDATA[Farm your success]]></name>
