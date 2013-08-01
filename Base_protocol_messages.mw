@@ -54,6 +54,12 @@
 | 
 | {{Yes}}
 | [[Base_protocol_messages#420003|Chat]]
+|-
+| style="background: #90ff90; color: black;" | 42
+| style="background: #ffcc00; color: black;" | 0004
+| 
+| {{Yes}}
+| [[Base_protocol_messages#420003|Clan action]]
 |}
 
 == Server &rarr; Client with reply ==
