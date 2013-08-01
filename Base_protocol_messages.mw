@@ -449,6 +449,10 @@ Reply a list, with same number of item of the source query (<span style="color: 
 * <span style="color: #FF4000">01</span>
 This reply is compressed.
 
+=== Reply 02000D ===
+* Clan reply type: <span style="color: #FF4000">01</span> success
+* Clan reply type: <span style="color: #FF4000">02</span> failed
+
 = Other =
 == Map id ==
 You need load the map list, sort() it, check if match with datapack file list, and the id is the position.
