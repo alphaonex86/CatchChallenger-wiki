@@ -31,12 +31,6 @@
 | 
 | {{Yes}}
 | [[Base_protocol_messages#02000D|Clan action]]
-|-
-| style="background: #90ff90; color: black;" | 02
-| style="background: #ffcc00; color: black;" | 000E
-| 
-| {{No}}
-| [[Base_protocol_messages#02000D|Clan invite accept]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
@@ -66,6 +60,12 @@
 | 
 | {{Yes}}
 | [[Base_protocol_messages#420003|Chat]]
+|-
+| style="background: #90ff90; color: black;" | 42
+| style="background: #ffcc00; color: black;" | 0004
+| 
+| {{No}}
+| [[Base_protocol_messages#420004|Clan invite accept]]
 |}
 
 == Server &rarr; Client with reply ==
