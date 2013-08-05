@@ -92,3 +92,6 @@ Cancel quest with id: <span style="color: #FFBF00">00000001</span>
 === 6a0004 ===
 Next step for quest with id: <span style="color: #FFBF00">00000001</span>
  <span style="color: #FFBF00">00000001</span>
+
+=== 6a0005 ===
+Cancel: <span style="color: #FFBF00">00</span> (no, 0x01 for yes)
