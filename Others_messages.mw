@@ -48,6 +48,12 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | 
 | {{No}}
 | [[Others_messages#6a0004|Quest next step]]
+|-
+| style="background: #90ff90; color: black;" | 6a
+| style="background: #ffcc00; color: black;" | 0005
+| 
+| {{No}}
+| [[Others_messages#6a0005|Waiting for city caputre]]
 |}
 
 == Server &rarr; Client with reply ==
