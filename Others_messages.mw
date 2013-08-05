@@ -74,6 +74,12 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Query number
 ! Packet size
 ! Data
+|-
+| style="background: #90ff90; color: black;" | F0
+| style="background: #ffcc00; color: black;" | 0001
+| 
+| {{Yes}}
+| [[Inventory_messages#F00001|City capture validated]]
 |}
 
 == Client &rarr; Server without reply ==
