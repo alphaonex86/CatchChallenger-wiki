@@ -106,12 +106,14 @@ Cancel: <span style="color: #FFBF00">00</span> (no, 0x01 for yes)
 === F00001 ===
 ==== You are not a clan leader to start it ====
 You are not a clan leader to start it: <span style="color: #FF0000">01</span>
+==== You clan leader have start into another city ====
+You are not a clan leader to start it: <span style="color: #FF0000">02</span>, city code name: <span style="color: #40BF00">toto</span>
 ==== Capture have start immediatly ====
-The capture have start: <span style="color: #FF0000">02</span>, number of player: <span style="color: #FFBF00">0001</span>, number of clan: <span style="color: #40BF00">0001</span>
+The capture have start: <span style="color: #FF0000">03</span>, number of player: <span style="color: #FFBF00">0001</span>, number of clan: <span style="color: #40BF00">0001</span>
 
 Fight id: <span style="color: #BF00FF">00000001</span> or nothing to send agains player via: http://catchchallenger.first-world.info/wiki/Battle_messages#E00008
 
 ==== Capture have start in differed ====
 It's mostly because need wait free player to fight with him.
 
-The capture have start: <span style="color: #FF0000">03</span>, number of player: <span style="color: #FFBF00">0001</span>, number of clan: <span style="color: #40BF00">0001</span>
+The capture have start: <span style="color: #FF0000">04</span>, number of player: <span style="color: #FFBF00">0001</span>, number of clan: <span style="color: #40BF00">0001</span>
