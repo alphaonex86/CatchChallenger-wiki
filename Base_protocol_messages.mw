@@ -411,6 +411,8 @@ If all is good:
 * <span style="color: #FF4000">02</span> (all is good)
 * max player: <span style="color: #40BF00">0064</span> (then 100 in decimal) -> this define if the players id is defined on 16Bits ('''unknown max player at this point''', for the client at the startup)
 * the player id: {{Player_id}}
+* Next city capture in: <span style="color: #FFBF00">00000012</span>
+* City capture frenquency: <span style="color: #7B00FF">01</span> (week, 02 for month)
 * allow list: <span style="color: #40BF00">"clan"</span> (allow is string separated by ;)
 * clan id: <span style="color: #40BFFF">00000064</span>
 * clan_leader: <span style="color: #40BFFF">01</span>
