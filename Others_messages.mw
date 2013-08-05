@@ -79,7 +79,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #ffcc00; color: black;" | 0001
 | 
 | {{Yes}}
-| [[Inventory_messages#F00001|City capture validated]]
+| [[Others_messages#F00001|City capture validated]]
 |}
 
 == Client &rarr; Server without reply ==
