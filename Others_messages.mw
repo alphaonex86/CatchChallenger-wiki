@@ -114,8 +114,9 @@ Previous city capture not finished: <span style="color: #FF0000">03</span>
 The capture have start: <span style="color: #FF0000">04</span>, number of player: <span style="color: #FFBF00">0001</span>, number of clan: <span style="color: #40BF00">0001</span>
 
 Fight id: <span style="color: #BF00FF">00000001</span> or nothing to send agains player via: http://catchchallenger.first-world.info/wiki/Battle_messages#E00008
-
 ==== Capture have start in differed ====
 It's mostly because need wait free player to fight with him.
 
 The capture have start: <span style="color: #FF0000">05</span>, number of player: <span style="color: #FFBF00">0001</span>, number of clan: <span style="color: #40BF00">0001</span>
+==== You win ====
+Your clan have win the city: <span style="color: #FF0000">06</span>
