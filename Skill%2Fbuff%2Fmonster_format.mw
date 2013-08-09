@@ -1,167 +1,40 @@
 = Buff =
-<pre><!--
-This can be as "effect" balise attribute or "level" balise attribute
-capture_bonus: if not specified: 1
-duration: if not specified: ThisFight, can be: ThisFight, NumberOfTurn (with attribute durationNumberOfTurn more), Always
--->
-<buffs>
-	<buff id="1">
+<pre><list>
+	<buff id="1" duration="NumberOfTurn" durationNumberOfTurn="2">
 		<name lang="en">Burn</name>
 		<name lang="fr">Brulé</name>
 		<description lang="en">The monster lost life because it's in fire</description>
 		<description lang="fr">Le monster perds de la vie car il est en feu</description>
-		<effect capture_bonus="1.5" duration="NumberOfTurn" durationNumberOfTurn="2">
+		<effect>
 			<level number="1">
 				<inFight hp="-5%" />
 			</level>
-			<level number="2" capture_bonus="1.6" duration="NumberOfTurn" durationNumberOfTurn="3">
+			<level number="2">
 				<inFight hp="-7%" />
 			</level>
 		</effect>
 	</buff>
-	<buff id="2">
+	<buff id="2" duration="ThisFight">
 		<name lang="en">Amor</name>
 		<name lang="fr">Amure</name>
 		<description lang="en">Grow the defense</description>
 		<description lang="fr">Augmente la défense</description>
-		<effect capture_bonus="0.8" duration="ThisFight">
+		<effect>
 			<level number="1">
 				<inFight defense="+100" />
 			</level>
 		</effect>
 	</buff>
-	<buff id="3">
+	<buff id="3" duration="Always">
 		<name lang="en">Poisoned</name>
 		<name lang="fr">Empoisonné</name>
 		<description lang="en">The monster is poisoned</description>
 		<description lang="fr">Le monster est empoisonné</description>
-		<effect duration="Always">
+		<effect>
 			<level number="1">
 				<inFight hp="-5" />
 				<inWalk hp="-5" steps="10" />
 			</level>
 		</effect>
 	</buff>
-</buffs></pre>
-
-= Skill =
-<pre><!-- Default:
-success="100%"
-applyOn="aloneEnemy"
-applyOn can be: aloneEnemy, themself, allEnemy, allAlly
-sp="0", can't be learn naturaly
--->
-
-<skills>
-	<skill id="1" success="90%">
-		<name lang="en">Fire punch</name>
-		<name lang="fr">Point feu</name>
-		<description lang="en">Powerful punch on fire</description>
-		<description lang="fr">Puissant coup de poing en feu</description>
-		<effect>
-			<level number="1" sp="100">
-				<life quantity="-25" applyOn="aloneEnemy" />
-				<buff id="1" applyOn="aloneEnemy" />
-			</level>
-			<level number="2" sp="200">
-				<life quantity="-105" applyOn="aloneEnemy" />
-				<buff id="1" level="2" applyOn="aloneEnemy" />
-			</level>
-		</effect>
-	</skill>
-	<skill id="2">
-		<name lang="en">Heal</name>
-		<name lang="fr">Soin</name>
-		<description lang="en">Heals itself</description>
-		<description lang="fr">Se soigne lui même</description>
-		<effect>
-			<level number="1" sp="100">
-				<life quantity="+100%" applyOn="themself" />
-			</level>
-		</effect>
-	</skill>
-	<skill id="3">
-		<name lang="en">Tackle</name>
-		<name lang="fr">Charge</name>
-		<description lang="en">Tackle the enemy</description>
-		<description lang="fr">Charge l'ennemie</description>
-		<effect>
-			<level number="1" sp="100">
-				<life quantity="-20" applyOn="aloneEnemy" />
-				<buff id="3" success="5%" applyOn="allEnemy" />
-			</level>
-			<level number="2">
-				<life quantity="-45" applyOn="aloneEnemy" />
-				<buff id="3" success="10%" applyOn="allEnemy" />
-			</level>
-		</effect>
-	</skill>
-	<skill id="4">
-		<name lang="en">Armor</name>
-		<name lang="fr">Armure</name>
-		<description lang="en">Up armor</description>
-		<description lang="fr">Augmente l'armure</description>
-		<effect>
-			<level number="1" sp="100">
-				<buff id="2" applyOn="allAlly" />
-			</level>
-		</effect>
-	</skill>
-</skills></pre>
-
-= Monsters =
-The front need be in 80x80, the back in 80x80, the preview 32x32
-<pre><!-- default:
-ratio_gender="50%"
-catch_rate="100"
-attack_level="1"
-if level is 0, it's base attack
-luck is in percent
-evolution type can be: level (attribute level is the level), item (attribute level is the item id), trade (attribute level is useless)
--->
-<monsters>
-
-	<!-- ratio_gender: 0% only male, 100% only female, -1 no gender
-	second line is stat at level 100-->
-	<monster id="1" type="fire" height="0.76m" weight="45kg" ratio_gender="50%" catch_rate="100" egg_step="5000" xp_max="300"
-		hp="300" attack="360" defense="280" special_attack="380" special_defense="340" speed="240" give_sp="100" give_xp="110" pow="1.2">
-		<attack_list>
-			<attack level="0" id="3" />
-			<attack level="0" id="4" />
-			<attack level="8" id="1" />
-			<attack level="16" id="1" attack_level="2" />
-		</attack_list>
-		<drops>
-			<drop item="2003" quantity_min="1" quantity_max="3" luck="20" />
-		</drops>
-		<name lang="en">Liondefeu</name>
-		<name lang="fr">Firelion</name>
-		<description lang="en">Firelion use fire for protect himsell.</description>
-		<description lang="fr">Lion de feu utilise le feu afin de ce protége.</description>
-		<evolutions>
-			<evolution type="level" level="16" evolveTo="2">
-		</evolutions>
-		<!-- extra info optional -->
-		<kind>Toto</kind>
-		<habitat>Home</habitat>
-		<kind lang="en">Toto</kind>
-		<habitat lang="en">Maison</habitat>
-	</monster>
-	<!-- ratio_gender: 0% only male, 100% only female, -1 no gender
-	second line is stat at level 100-->
-	<monster id="2" type="fly" type2="earth" height="0.2m" weight="2kg" ratio_gender="50%" catch_rate="100" egg_step="5000" xp_max="300"
-	hp="260" attack="280" defense="300" special_attack="280" special_defense="320" speed="360" give_sp="100" give_xp="100" pow="1.2">
-		<attack_list>
-			<attack level="0" id="3" />
-			<attack level="8" id="4" attack_level="2" />
-			<attack byitem="59" id="4" attack_level="2" />
-		</attack_list>	
-    <drops>
-			<drop item="3001" quantity_min="1" quantity_max="1" luck="10" />
-		</drops>
-		<name lang="en">Elofly</name>
-		<name lang="fr">Elofly</name>
-		<description lang="en">Elofly</description>
-		<description lang="fr">Elofly</description>
-	</monster>
-</monsters></pre>
+</list></pre>
