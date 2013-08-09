@@ -2,6 +2,7 @@ This wiki show all documents and technical informations. CatchChallenger is perf
 
 = Algorithm, protocol and format =
 * [[Map format]]
+* [[File format]]
 * [[General protocol]]
 * [[Visibility players calculating with delay]]
 * [[Server architecture]]
