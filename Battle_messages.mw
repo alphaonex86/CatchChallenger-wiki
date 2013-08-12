@@ -74,6 +74,12 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | {{No}}
 | [[Battle_messages#600008|Monster up/down]]
 |-
+| style="background: #90ff90; color: black;" | 60
+| style="background: #ffcc00; color: black;" | 0009
+| 
+| {{No}}
+| [[Battle_messages#600009|Monster change in fight]]
+|-
 | style="background: #90ff90; color: black;" | 61
 | 
 | 
@@ -212,6 +218,10 @@ Start a requested bot fight, with bot fightId: <span style="color: #40BFFF">0000
 === 600008 ===
 * Monster action: <span style="color: #FF4000">01</span> (0x01 = up, 0x02 = down)
 * Monster number: <span style="color: #40BF00">01</span> (1 to X)
+
+=== 600009 ===
+* Monster id: <span style="color: #FF4000">00000001</span>
+
 
 === 61 ===
 Attack id: <span style="color: #40BFFF">00000001</span>
