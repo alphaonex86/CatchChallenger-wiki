@@ -209,6 +209,10 @@ Monster id: <span style="color: #40BFFF">00000001</span>, skill: <span style="co
 === 600007 ===
 Start a requested bot fight, with bot fightId: <span style="color: #40BFFF">00000001</span>
 
+=== 600008 ===
+* Monster action: <span style="color: #FF4000">01</span> (0x01 = up, 0x02 = down)
+* Monster number: <span style="color: #40BF00">01</span> (1 to X)
+
 === 61 ===
 Attack id: <span style="color: #40BFFF">00000001</span>
 
