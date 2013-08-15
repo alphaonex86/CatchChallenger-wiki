@@ -595,9 +595,9 @@ List of object, size list <span style="color: #A600FF">00000001</span>:
 List of monster, size list <span style="color: #A600FF">00000001</span>:
 * Monster id: <span style="color: #FFBF00">00000001</span>, monster: <span style="color: #40BF00">00000001</span>, level: <span style="color: #FF4000">03</span>, price: <span style="color: #FF4000">00000003</span>, bitcoin (double): <span style="color: #FF00FF">40047ae147ae147b</span>
 List of onwed object, size list <span style="color: #A600FF">00000001</span>:
-* Market object id: <span style="color: #A600FF">00000001</span>, object id: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>
+* Market object id: <span style="color: #A600FF">00000001</span>, object id: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>, bitcoin (double): <span style="color: #FF00FF">40047ae147ae147b</span>
 List of onwed monster, size list <span style="color: #A600FF">00000001</span>:
-* Monster id: <span style="color: #FFBF00">00000001</span>, monster: <span style="color: #40BF00">00000001</span>, level: <span style="color: #FF4000">03</span>
+* Monster id: <span style="color: #FFBF00">00000001</span>, monster: <span style="color: #40BF00">00000001</span>, level: <span style="color: #FF4000">03</span>, price: <span style="color: #FF4000">00000003</span>, bitcoin (double): <span style="color: #FF00FF">40047ae147ae147b</span>
 
 === Reply 100011 ===
 The reply can be one of this:
