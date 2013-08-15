@@ -612,7 +612,7 @@ The reply can be one of this:
 * <span style="color: #40BFFF">02</span> Put failed
 
 === Reply 100013 ===
-Cash returned: <span style="color: #40BFFF">0000000000000001</span>
+Cash returned: <span style="color: #40BFFF">0000000000000001</span>, bitcoin (double): <span style="color: #FF00FF">40047ae147ae147b</span>
 
 === Reply 100014 ===
 The reply can be one of this:
