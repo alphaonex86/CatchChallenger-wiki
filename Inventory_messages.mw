@@ -395,7 +395,7 @@ Get the market list
 [[Inventory_messages#Reply_100010|See reply to this query]]
 
 === 100011 ===
-Buy into the market, type: <span style="color: #A600FF">01</span> (monster, object), Object/Monster id: <span style="color: #FFBF00">00000001</span>, quantity if object: <span style="color: #40BF00">00000001</span>
+Buy into the market, type: <span style="color: #A600FF">01</span> (01 object, 02 monster), Object/Monster id: <span style="color: #FFBF00">00000001</span>, quantity if object: <span style="color: #40BF00">00000001</span>
 
 [[Inventory_messages#Reply_100011|See reply to this query]]
 
