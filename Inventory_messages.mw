@@ -401,9 +401,9 @@ Buy into the market, type: <span style="color: #A600FF">01</span> (monster, obje
 
 === 100012 ===
 Put the object/monster on the market: <span style="color: #A600FF">01</span> (monster, object), if object:
-* Sell object: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
+* Sell object: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>, bitcoin: <span style="color: #FF4000">00000000</span>
 Or if monster:
-* Sell monster, monster id: <span style="color: #FFBF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
+* Sell monster, monster id: <span style="color: #FFBF00">00000001</span>, price: <span style="color: #FF4000">00000000</span>, bitcoin: <span style="color: #FF4000">00000003</span>
 
 [[Inventory_messages#Reply_100012|See reply to this query]]
 
