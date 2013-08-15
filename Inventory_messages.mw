@@ -389,6 +389,37 @@ Factory id: <span style="color: #A600FF">00000001</span>, Sell object: <span sty
 
 [[Inventory_messages#Reply_10000F|See reply to this query]]
 
+=== 100010 ===
+Get the market list
+
+[[Inventory_messages#Reply_100010|See reply to this query]]
+
+=== 100011 ===
+Buy into the market, type: <span style="color: #A600FF">01</span> (monster, object), Object/Monster id: <span style="color: #FFBF00">00000001</span>, quantity if object: <span style="color: #40BF00">00000001</span>
+
+[[Inventory_messages#Reply_100011|See reply to this query]]
+
+=== 100012 ===
+Put the object/monster on the market: <span style="color: #A600FF">01</span> (monster, object), if object:
+* Sell object: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
+Or if monster:
+* Sell monster, monster id: <span style="color: #FFBF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
+
+[[Inventory_messages#Reply_100012|See reply to this query]]
+
+=== 100013 ===
+Recover cash
+
+[[Inventory_messages#Reply_100013|Recover cash]]
+
+=== 100014 ===
+Recover the object/monster on the market: <span style="color: #A600FF">01</span> (monster, object), if object:
+* Sell object: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>
+Or if monster:
+* Sell monster, monster id: <span style="color: #FFBF00">00000001</span>
+
+[[Inventory_messages#Reply_100014|See reply to this query]]
+
 == Client &rarr; Server without reply ==
 === 500002 ===
 Destroy the object id: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>
