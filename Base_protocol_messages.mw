@@ -418,6 +418,7 @@ If all is good:
 * clan_leader: <span style="color: #40BFFF">01</span>
 * cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
 * warehouse cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
+* bitcoin (double): <span style="color: #40BF00">40047ae147ae147b</span>
 * number of map: <span style="color: #FF4000">00000002</span>
 * size of list of the recipes: <span style="color: #7B00FF">00000001</span>
 ** recipe id: <span style="color: #FF4000">00000001</span>
