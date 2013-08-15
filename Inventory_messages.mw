@@ -587,6 +587,40 @@ The reply can be one of this:
 * <span style="color: #40BFFF">03</span> Can't sold this quantity
 * <span style="color: #40BFFF">04</span> Price have changed
 
+=== Reply 100010 ===
+List of object, size list <span style="color: #A600FF">00000001</span>:
+* Market object id: <span style="color: #A600FF">00000001</span>, object id: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
+List of monster, size list <span style="color: #A600FF">00000001</span>:
+* Monster id: <span style="color: #FFBF00">00000001</span>, monster: <span style="color: #40BF00">00000001</span>, level: <span style="color: #FF4000">03</span>
+List of onwed object, size list <span style="color: #A600FF">00000001</span>:
+* Market object id: <span style="color: #A600FF">00000001</span>, object id: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
+List of onwed monster, size list <span style="color: #A600FF">00000001</span>:
+* Monster id: <span style="color: #FFBF00">00000001</span>, monster: <span style="color: #40BF00">00000001</span>, level: <span style="color: #FF4000">03</span>
+
+=== Reply 100011 ===
+The reply can be one of this:
+* <span style="color: #40BFFF">01</span> Buy done
+* <span style="color: #40BFFF">02</span> Can't buy this quantity
+* <span style="color: #40BFFF">03</span> Buy failed
+If Monster: send player monster
+
+=== Reply 100012 ===
+The reply can be one of this:
+* <span style="color: #40BFFF">01</span> Put ok
+* <span style="color: #40BFFF">02</span> Put failed
+
+=== Reply 100013 ===
+Cash returned: <span style="color: #40BFFF">0000000000000001</span>
+
+=== Reply 100014 ===
+The reply can be one of this:
+* <span style="color: #40BFFF">01</span> Recovert object/monster ok
+* <span style="color: #40BFFF">02</span> Recovert object/monster failed
+* Type: <span style="color: #FFBF00">01</span> (01 object, 02 monster)
+If Object:
+** Object: <span style="color: #40BF00">00000001</span>, quantity: <span style="color: #FF4000">03</span>
+If Monster: send player monster
+
 == Client &rarr; Server reply ==
 === Reply 800001 ===
 <span style="color: #40BFFF">01</span> (accepted)
