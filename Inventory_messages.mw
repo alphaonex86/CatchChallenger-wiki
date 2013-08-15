@@ -89,6 +89,36 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | XX
 | {{Yes}}
 | [[Inventory_messages#10000F|Sell factory object]]
+|-
+| style="background: #90ff90; color: black;" | 10
+| style="background: #ffcc00; color: black;" | 0010
+| XX
+| {{No}}
+| [[Inventory_messages#100010|Get market list]]
+|-
+| style="background: #90ff90; color: black;" | 10
+| style="background: #ffcc00; color: black;" | 0011
+| XX
+| {{Yes}}
+| [[Inventory_messages#100011|Buy into the market]]
+|-
+| style="background: #90ff90; color: black;" | 10
+| style="background: #ffcc00; color: black;" | 0012
+| XX
+| {{Yes}}
+| [[Inventory_messages#100012|Put object into the market]]
+|-
+| style="background: #90ff90; color: black;" | 10
+| style="background: #ffcc00; color: black;" | 0013
+| XX
+| {{No}}
+| [[Inventory_messages#100013|Recover cash]]
+|-
+| style="background: #90ff90; color: black;" | 10
+| style="background: #ffcc00; color: black;" | 0014
+| XX
+| {{Yes}}
+| [[Inventory_messages#100014|Recover object]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
