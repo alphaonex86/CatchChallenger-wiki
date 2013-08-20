@@ -25,7 +25,7 @@ Why not all into the xml? To minise the number of file.
 The '''0,0''' is at '''left and top''' for this protocol.
 
 == Xml file ==
- &lt;map&gt;
+ &lt;map type="outdoor" backgroundsound="toto.ogg" zone="test"&gt;
         &lt;name lang="en"&gt;English name&lt;/name&gt;
         &lt;name lang="fr"&gt;Nom français&lt;/name&gt;
         &lt;grass&gt;
