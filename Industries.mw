@@ -1,22 +1,6 @@
-== industries/list.xml ==
 <pre><industries>
-	<link industry="1" industrialrecipe="1" />
-	<link industry="2" industrialrecipe="1">
-		<!-- Optionnal -->
-		<requirements>
-			<reputation type="crafting" level="1" />
-		</requirements>
-		<!-- Optionnal -->
-		<rewards>
-			<reputation type="crafting" point="1" />
-		</rewards>
-	</link>
-</industries></pre>
-
-== industries/* ==
-<pre><industries>
-	<industrialrecipe id="999" time="360" cycletobefull="4">
+	<industry id="1" time="360" cycletobefull="4">
 		<ressource id="1" quantity="2" />
 		<product id="2" quantity="2" />
-	</industrialrecipe>
+	</industry>
 </industries></pre>
