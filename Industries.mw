@@ -1,0 +1,6 @@
+<pre><industries>
+	<industry id="1" time="360" cycletobefull="4">
+		<ressource id="1" quantity="2" />
+		<product id="2" quantity="2" />
+	</industry>
+</industries></pre>
