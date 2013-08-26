@@ -490,6 +490,8 @@ Reply a list, with same number of item of the source query (<span style="color: 
 * <span style="color: #FF4000">1</span>
 This reply is compressed.
 
+Return 0x00 if empty;
+
 === Reply 02000D ===
 * Clan reply type: <span style="color: #FF4000">01</span> success (some time send the 32Bits id)
 * Clan reply type: <span style="color: #FF4000">02</span> failed
