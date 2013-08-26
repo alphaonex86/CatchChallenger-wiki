@@ -109,7 +109,13 @@
 | style="background: #ffcc00; color: black;" | 0003
 | 
 | {{Yes}}
-| [[Base_protocol_messages#C20003|update file]]
+| [[Base_protocol_messages#C20003|update file (raw)]]
+|-
+| style="background: #90ff90; color: black;" | C2
+| style="background: #ffcc00; color: black;" | 0004
+| 
+| {{Yes}}
+| [[Base_protocol_messages#C20003|update file (compressed)]]
 |-
 | style="background: #90ff90; color: black;" | C2
 | style="background: #ffcc00; color: black;" | 0005
