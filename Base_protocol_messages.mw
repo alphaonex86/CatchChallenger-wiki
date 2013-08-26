@@ -404,8 +404,8 @@ Server -&gt; Client, remove player from map:
 = Reply =
 == Server &rarr; Client reply ==
 === Reply 020001 ===
-<span style="color: #40BFFF">01</span> (is supported)
- <span style="color: #40BFFF">01</span>
+<span style="color: #40BFFF">01</span> (is supported), Compression: <span style="color: #FFBF00">01</span> (01=Zlib, 02=xz)
+ <span style="color: #40BFFF">01</span><span style="color: #FFBF00">01</span>
 
 <span style="color: #40BFFF">02</span> (protocol not supported)
  <span style="color: #40BFFF">02</span>
