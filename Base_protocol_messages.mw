@@ -471,10 +471,11 @@ After the server will send tp command to set the first position.
 This reply is compressed.
 
 === Reply 02000C ===
-Reply a list, with same number of item of the source query (<span style="color: #FF4000">01</span> to found, <span style="color: #FF4000">02</span> to delete):
-* <span style="color: #FF4000">01</span>
-* <span style="color: #FF4000">02</span>
-* <span style="color: #FF4000">01</span>
+The reply is '''BITS''', put 0 bits if needed to do a byte.
+Reply a list, with same number of item of the source query (<span style="color: #FF4000">1</span> to keep, <span style="color: #FF4000">0</span> to delete):
+* <span style="color: #FF4000">1</span>
+* <span style="color: #FF4000">0</span>
+* <span style="color: #FF4000">1</span>
 This reply is compressed.
 
 === Reply 02000D ===
