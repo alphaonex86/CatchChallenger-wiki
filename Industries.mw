@@ -1,7 +1,7 @@
 == industries/list.xml ==
 <pre><industries>
-	<link industry_id="1" factory_id="999" />
-	<link industry_id="2" factory_id="999" />
+	<link industry_id="999" factory_id="1" />
+	<link industry_id="999" factory_id="2" />
 </industries></pre>
 
 == industries/* ==
