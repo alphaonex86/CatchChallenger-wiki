@@ -1,8 +1,9 @@
 == industries/list.xml ==
 <pre><industries>
-	<link industry_id="999" factory_id="1" />
-	<link industry_id="999" factory_id="2" />
+	<link industry_id="1" factory_id="999" />
+	<link industry_id="2" factory_id="999" />
 </industries></pre>
+
 == industries/* ==
 <pre><industries>
 	<industry id="999" time="360" cycletobefull="4">
