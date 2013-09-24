@@ -451,6 +451,7 @@ If all is good:
 ** size of list of the skills monsters: <span style="color: #7B00FF">00000001</span>
 *** skill: <span style="color: #40BF00">00000001</span>
 *** skill level: <span style="color: #FF4000">01</span>
+*** skill remaining usage: <span style="color: #FFBF00">01</span>
 * size of list of the warehouse monsters: <span style="color: #7B00FF">00000001</span>
 ** monsters id in db: <span style="color: #FF4000">00000001</span>
 ** monsters: <span style="color: #FF4000">00000001</span>
@@ -467,6 +468,7 @@ If all is good:
 ** size of list of the skills monsters: <span style="color: #7B00FF">00000001</span>
 *** skill: <span style="color: #40BF00">00000001</span>
 *** skill level: <span style="color: #FF4000">01</span>
+*** skill remaining usage: <span style="color: #FFBF00">01</span>
 * size of reputation list: <span style="color: #7B00FF">01</span>
 ** reputation type: <span style="font-style: italic"><span style="color: #40BF00">&quot;crafting&quot;</span></span>
 ** reputation level: <span style="color: #FF4000">01</span>
