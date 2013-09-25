@@ -123,7 +123,7 @@ luck is in percent
 			<attack level="8" id="1" attack_level="1"/>
 		</attack_list>
 		<drops>
-			<attack item="2003" quantity_min="1" quantity_max="3" luck="20" />
+			<drop item="2003" quantity_min="1" quantity_max="3" luck="20" />
 		</drops>
 		<name lang="en">Liondefeu</name>
 		<name lang="fr">Firelion</name>
@@ -140,7 +140,7 @@ luck is in percent
 			<attack level="8" id="4" attack_level="1" />
 		</attack_list>	
     <drops>
-			<attack item="3001" quantity_min="1" quantity_max="1" luck="10" />
+			<drop item="3001" quantity_min="1" quantity_max="1" luck="10" />
 		</drops>
 		<name lang="en">Elofly</name>
 		<name lang="fr">Elofly</name>
@@ -155,7 +155,7 @@ luck is in percent
 			<attack level="8" id="4" attack_level="1" />
 		</attack_list>		
 		<drops>
-			<attack item="1001" quantity_min="1" quantity_max="1" luck="20" />
+			<drop item="1001" quantity_min="1" quantity_max="1" luck="20" />
 		</drops>
 		<name lang="en">Conifeuille</name>
 		<name lang="fr">Conifeuille</name>
@@ -170,8 +170,8 @@ luck is in percent
 			<attack level="8" id="4" attack_level="1" />
 		</attack_list>		
 		<drops>
-			<attack item="2000" quantity_min="1" quantity_max="3" luck="10" />
-			<attack item="2001" quantity_min="1" quantity_max="2" luck="10" />
+			<drop item="2000" quantity_min="1" quantity_max="3" luck="10" />
+			<drop item="2001" quantity_min="1" quantity_max="2" luck="10" />
 		</drops>
 		<name lang="en">Polyrock</name>
 		<name lang="fr">Polyrock</name>
@@ -186,7 +186,7 @@ luck is in percent
 			<attack level="8" id="1" attack_level="1"/>
 		</attack_list>	
     <drops>
-			<attack item="3002" quantity_min="1" quantity_max="1" luck="10" />
+			<drop item="3002" quantity_min="1" quantity_max="1" luck="10" />
 		</drops>	
 		<name lang="en">Dinoflop</name>
 		<name lang="fr">Dinoflop</name>
@@ -214,8 +214,8 @@ luck is in percent
 			<attack level="8" id="1" attack_level="1"/>
 		</attack_list>	
     <drops>
-			<attack item="1003" quantity_min="1" quantity_max="3" luck="10" />
-			<attack item="1004" quantity_min="1" quantity_max="2" luck="10" />
+			<drop item="1003" quantity_min="1" quantity_max="3" luck="10" />
+			<drop item="1004" quantity_min="1" quantity_max="2" luck="10" />
 		</drops>
 		<name lang="en">Sclairus</name>
 		<name lang="fr">Sclairus</name>
@@ -231,7 +231,7 @@ luck is in percent
 			<attack level="8" id="1" attack_level="1"/>
 		</attack_list>		
     <drops>
-			<attack item="2004" quantity_min="1" quantity_max="2" luck="10" />
+			<drop item="2004" quantity_min="1" quantity_max="2" luck="10" />
 		</drops>
 		<name lang="en">Volcoli</name>
 		<name lang="fr">Volcoli</name>
@@ -247,7 +247,7 @@ luck is in percent
 			<attack level="8" id="1" attack_level="1"/>
 		</attack_list>		
     <drops>
-			<attack item="2005" quantity_min="1" quantity_max="1" luck="7" />
+			<drop item="2005" quantity_min="1" quantity_max="1" luck="7" />
 		</drops>
 		<name lang="en">Nocula</name>
 		<name lang="fr">Nocula</name>
