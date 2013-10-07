@@ -425,6 +425,7 @@ If all is good:
 * the player id: {{Player_id}}
 * Next city capture in second: <span style="color: #FFBF00">00000012</span>
 * City capture frenquency: <span style="color: #7B00FF">01</span> (week, <span style="color: #7B00FF">02</span> for month)
+* Industry price change: <span style="color: #FF4000">14</span>
 * allow list: <span style="color: #40BF00">"clan"</span> (allow is string separated by ;)
 * clan id: <span style="color: #40BFFF">00000064</span>
 * clan_leader: <span style="color: #40BFFF">01</span>
