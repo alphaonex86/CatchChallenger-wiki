@@ -540,10 +540,16 @@ Note: only once at time.
  <span style="color: #40BFFF">03</span>
 
 === Reply 100009 ===
+'''If is a special object, have extra args, see bellow'''
+
 The reply can be one of this:
 * <span style="color: #40BFFF">01</span> is correctly used
 * <span style="color: #40BFFF">02</span> failed to use with consumption of the object
 * <span style="color: #40BFFF">03</span> failed to use without consumption of the object
+
+'''If is a trap'''
+* Add Monster id
+
 === Reply 10000A ===
 Why resend the object list? Because some object can be disabled by the server. Allow global trade where the player can sell/buy to other player.
 
