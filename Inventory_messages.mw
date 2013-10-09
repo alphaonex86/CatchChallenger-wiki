@@ -119,12 +119,6 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | XX
 | {{Yes}}
 | [[Inventory_messages#100014|Withdraw object]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0015
-| XX
-| {{Yes}}
-| [[Inventory_messages#100015|Try capture]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
