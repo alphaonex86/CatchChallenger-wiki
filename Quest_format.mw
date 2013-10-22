@@ -1,5 +1,9 @@
 The file is the title. Are into the folder datapack/quests/[number]/
 
+'''You need''' put into the bot text the link like it:
+<pre><a href="quests">Quests</a></pre>
+Allow to control the text, and customize lot of stuff, it's why is not automatically added.
+
 == client_logic.js ==
 It's the logique to displaye first text on the client:
 <pre>function getTextEntryPoint()
