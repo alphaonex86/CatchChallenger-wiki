@@ -1,0 +1,23 @@
+As usual, inform you about how TOR work. What can reveal your identity, ...
+
+= Server =
+== Protection ==
+Mount your CatchChallenger TOR server under virtual machine on encrypted volume. To prevent direct access reveal you host an CatchChallenger server. That's mean, you can't start up automatically the server. You need start up manually and give the prompted password. Prevent physical access. Prevent bug or security break of your server. Grsec + Pax for linux kernel with option PAX_MEMORY_SANITIZE is good idea on host and guest.
+== CatchChallenger ==
+* Listen on 127.0.0.1 port 42495
+* Auto-create account
+== Tor ==
+Into my /etc/tor/torrc I have:
+<pre>User tor
+PIDFile /var/run/tor/tor.pid
+Log notice syslog
+DataDirectory /var/lib/tor/data
+HiddenServiceDir /home/tor/
+HiddenServicePort 42489 127.0.0.1:42495
+BandwidthRate 100 KB
+ExitPolicy reject *:*
+</pre>
+With command:
+<pre>mkdir -p /home/tor/
+chown tor.tor /home/tor/</pre>
+As well, prefer run CatchChallenger server into limited account. You public host is into '''/home/tor/hostname'''
