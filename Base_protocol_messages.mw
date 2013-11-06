@@ -446,6 +446,7 @@ If all is good:
 * Skin id: <span style="color: #FFBF00">00000012</span>
 * Character id: {{Player_id}}
 * Pseudo: <span style="color: #40BF00">&quot;Character 1&quot;</span>
+* Character manipulation: <span style="color: #40BFFF">01</span>
 
 After the server will send tp command to set the first position.
 
