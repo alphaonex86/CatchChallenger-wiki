@@ -2,7 +2,7 @@ As usual, inform you about how TOR work. What can reveal your identity, ...
 
 = Server =
 == Protection ==
-Mount your CatchChallenger TOR server under virtual machine on encrypted volume. To prevent direct access reveal you host an CatchChallenger server. That's mean, you can't start up automatically the server. You need start up manually and give the prompted password. Prevent physical access. Prevent bug or security break of your server. Grsec + Pax for linux kernel with option PAX_MEMORY_SANITIZE is good idea on host and guest.
+Mount your CatchChallenger TOR server under virtual machine '''on encrypted volume'''. To prevent direct access reveal you host an CatchChallenger server. That's mean, '''you can't start up automatically the server'''. You need start up manually and '''give the prompted password'''. Prevent physical access. Prevent bug or security break of your server. Grsec + Pax for linux kernel with option '''PAX_MEMORY_SANITIZE''' is good idea on host and guest.
 == CatchChallenger ==
 * Listen on 127.0.0.1 port 42495
 * Auto-create account
@@ -20,8 +20,16 @@ ExitPolicy reject *:*
 With command:
 <pre>mkdir -p /home/tor/
 chown tor.tor /home/tor/</pre>
-As well, prefer run CatchChallenger server into limited account. You public host is into '''/home/tor/hostname'''
+As well, prefer run CatchChallenger server into limited account. You public host is into '''/home/tor/hostname''' after start the tor service.
 == Test ==
 You can test it under linux with packet ''Torsocks'' and ''telnet'' by the command:
 <pre>usewithtor telnet y1h7x768hq9nt5xs.onion 42489</pre>
 Where '''y1h7x768hq9nt5xs.onion''' is get from your '''/home/tor/hostname'''
+
+= Client =
+== Linux ==
+Setup '''tor''', '''torsocks''', start the client by:
+<pre>usewithtor ./catchchallenger-full</pre>
+Or:
+<pre>usewithtor catchchallenger-full</pre>
+And connect on '''y1h7x768hq9nt5xs.onion''' port '''42489'''
