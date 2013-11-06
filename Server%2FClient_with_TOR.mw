@@ -21,3 +21,7 @@ With command:
 <pre>mkdir -p /home/tor/
 chown tor.tor /home/tor/</pre>
 As well, prefer run CatchChallenger server into limited account. You public host is into '''/home/tor/hostname'''
+== Test ==
+You can test it under linux with packet ''Torsocks'' and ''telnet'' by the command:
+<pre>usewithtor telnet y1h7x768hq9nt5xs.onion 42489</pre>
+Where '''y1h7x768hq9nt5xs.onion''' is get from your '''/home/tor/hostname'''
