@@ -258,8 +258,7 @@ At the connection, send the protocol supported, <span style="font-weight: bold">
 [[Base_protocol_messages#Reply_020001|See reply to this query]]
 
 === 020002 ===
-Get the first position and direction, and send login clear and pass sha1:<br /><span style="color: #40BF00">&quot;toto&quot;</span>, <span style="color: #FF0040">da39a3ee5e6b4b0d3255bfef95601890afd80709</span><br />
- <span style="color: #FFBF00">00000008</span><span style="color: #40BF00">0074006f0074006f</span><span style="color: #FF0040">da39a3ee5e6b4b0d3255bfef95601890afd80709</span>
+Get the first position and direction, and send login sha512 and pass sha512:<br /><span style="color: #40BF00">be688838ca8686e5c90689bf2ab585cef1137c999b48c70b92f67a5c34dc15697b5d11c982ed6d71be1e1e7f7b4e0733884aa97c3f7a339a8ed03577cf74be09</span>, <span style="color: #FF0040">be688838ca8686e5c90689bf2ab585cef1137c999b48c70b92f67a5c34dc15697b5d11c982ed6d71be1e1e7f7b4e0733884aa97c3f7a339a8ed03577cf74be09</span><br />
 
 [[Base_protocol_messages#Reply_020002|See reply to this query]]
 
