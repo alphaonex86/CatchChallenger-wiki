@@ -440,10 +440,23 @@ Server -&gt; Client, remove player from map:
 If all is good:
 * <span style="color: #FF4000">02</span> (all is good)
 * max player: <span style="color: #40BF00">0064</span> (then 100 in decimal) -> this define if the players id is defined on 16Bits ('''unknown max player at this point''', for the client at the startup)
-* the player id: {{Player_id}}
 * Next city capture in second: <span style="color: #FFBF00">00000012</span>
-* City capture frenquency: <span style="color: #7B00FF">01</span> (week, <span style="color: #7B00FF">02</span> for month)
+* City capture frequency: <span style="color: #7B00FF">01</span> (week, <span style="color: #7B00FF">02</span> for month)
 * Industry price change: <span style="color: #FF4000">14</span>
+* Skin id: <span style="color: #FFBF00">00000012</span>
+* Character id: {{Player_id}}
+* Pseudo: <span style="color: #40BF00">&quot;Character 1&quot;</span>
+
+After the server will send tp command to set the first position.
+
+This reply is compressed.
+
+=== Reply 020005 ===
+<span style="color: #FF4000">01</span> (something is wrong), <span style="color: #40BF00">&quot;bad login&quot;</span> (or other server error)
+ <span style="color: #FF4000">01</span><span style="color: #FFBF00">00000012</span><span style="color: #40BF00">0062006100640020006c006f00670069006e</span>
+
+If all is good:
+* <span style="color: #FF4000">02</span> (all is good)
 * allow list: <span style="color: #40BF00">"clan"</span> (allow is string separated by ;)
 * clan id: <span style="color: #40BFFF">00000064</span>
 * clan_leader: <span style="color: #40BFFF">01</span>
