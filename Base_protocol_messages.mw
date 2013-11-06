@@ -452,7 +452,7 @@ If all is good:
 * Character list size <span style="color: #7B00FF">01</span>
 ** Character id: <span style="color: #BFBF40">00000001</span>
 ** Pseudo: <span style="color: #40BF00">&quot;Character 1&quot;</span>
-** Skin id: <span style="color: #FFBF00">12</span>
+** Skin: <span style="color: #40BF00">&quot;skinA&quot;</span>
 
 
 After the server will send tp command to set the first position.
