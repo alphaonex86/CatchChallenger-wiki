@@ -24,19 +24,19 @@
 | style="background: #ffcc00; color: black;" | 0003
 | XX
 | {{Yes}}
-| [[Base_protocol_messages#020003|Add char]]
+| [[Base_protocol_messages#020003|Add character]]
 |-
 | style="background: #90ff90; color: black;" | 02
 | style="background: #ffcc00; color: black;" | 0004
 | XX
 | {{Yes}}
-| [[Base_protocol_messages#020004|Remove char]]
+| [[Base_protocol_messages#020004|Remove character]]
 |-
 | style="background: #90ff90; color: black;" | 02
 | style="background: #ffcc00; color: black;" | 0005
 | XX
 | {{Yes}}
-| [[Base_protocol_messages#020005|Select char]]
+| [[Base_protocol_messages#020005|Select character]]
 |-
 | style="background: #90ff90; color: black;" | 02
 | style="background: #ffcc00; color: black;" | 000C
