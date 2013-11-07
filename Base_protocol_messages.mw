@@ -454,7 +454,7 @@ If all is good:
 ** Character id: <span style="color: #BFBF40">00000001</span>
 ** Pseudo: <span style="color: #40BF00">&quot;Character 1&quot;</span>
 ** Skin: <span style="color: #40BF00">&quot;skinA&quot;</span>
-** Time left defore delete: <span style="color: #40BFFF">00000000</span> (0s = no delete planned)
+** Time left before delete: <span style="color: #40BFFF">00000000</span> (0s = no delete planned)
 
 After the server will send tp command to set the first position.
 
