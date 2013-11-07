@@ -448,6 +448,7 @@ If all is good:
 * City capture frequency: <span style="color: #7B00FF">01</span> (week, <span style="color: #7B00FF">02</span> for month)
 * Character max: <span style="color: #40BFFF">01</span>
 * Character min: <span style="color: #40BFFF">01</span>
+* Pseudo size max: <span style="color: #40BFFF">10</span>
 * Rate xp: <span style="color: #FFBF00">3f800000</span> (1.0)
 * Rate gold: <span style="color: #FFBF00">3f800000</span> (1.0)
 * Char allow all: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
