@@ -455,6 +455,9 @@ If all is good:
 ** Pseudo: <span style="color: #40BF00">&quot;Character 1&quot;</span>
 ** Skin: <span style="color: #40BF00">&quot;skinA&quot;</span>
 ** Time left before delete: <span style="color: #40BFFF">00000000</span> (0s = no delete planned)
+** Played time: <span style="color: #40BFFF">00000000</span>
+** Last connect: <span style="color: #40BFFF">00000000</span>
+** Map: <span style="color: #40BF00">&quot;world/0.0.tmx&quot;</span>
 
 After the server will send tp command to set the first position.
 
