@@ -454,6 +454,7 @@ If all is good:
 * Character max: <span style="color: #40BFFF">01</span>
 * Character min: <span style="color: #40BFFF">01</span>
 * Pseudo size max: <span style="color: #40BFFF">10</span>
+* Character delete time: <span style="color: #BFFF40">01</span>
 * Rate xp: <span style="color: #FFBF00">3f800000</span> (1.0)
 * Rate gold: <span style="color: #FFBF00">3f800000</span> (1.0)
 * Char allow all: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
