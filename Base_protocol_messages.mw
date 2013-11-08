@@ -267,6 +267,11 @@ Send the profile id: <span style="color: #FF0040">01</span>, pseudo <span style=
 
 [[Base_protocol_messages#Reply_020003|See reply to this query]]
 
+=== 020005 ===
+Send the character id: <span style="color: #FF0040">00000001</span>
+
+[[Base_protocol_messages#Reply_020005|See reply to this query]]
+
 === 02000C ===
 Send file name and timestamps (second since 1/1/1970 in 32Bits) of the file requested:<br />number to file: <span style="color: #FF4000">00000003</span>:
 * <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span> <span style="color: #FF4000">Mon, 28 Nov 2011 17:16:03</span>
