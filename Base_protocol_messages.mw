@@ -483,7 +483,7 @@ The reply is the character id: <span style="color: #BFBF40">00000001</span>
 
 If all is good:
 * <span style="color: #FF4000">02</span> (all is good)
-* Pseudo: <span style="color: #40BF00">&quot;Character 1&quot;</span>
+* Character id: {{Player_id}} (unique generated id on the map)
 * allow list: <span style="color: #40BF00">"clan"</span> (allow is string separated by ;)
 * clan id: <span style="color: #40BFFF">00000064</span>
 * clan_leader: <span style="color: #40BFFF">01</span>
@@ -493,7 +493,6 @@ If all is good:
 * bitcoin address: <span style="color: #40BF00">"1Hz3GtkiDBpbWxZixkQPuTGDh2DUy9bQUJ"</span>
 * number of map: <span style="color: #FF4000">00000002</span>
 * size of list of the recipes: <span style="color: #7B00FF">00000001</span>
-** Character id: {{Player_id}} (unique generated id on the map)
 ** recipe id: <span style="color: #FF4000">00000001</span>
 * size of list of the monsters: <span style="color: #7B00FF">00000001</span>
 ** monsters id in db: <span style="color: #FF4000">00000001</span>
