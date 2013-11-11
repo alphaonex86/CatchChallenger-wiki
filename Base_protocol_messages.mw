@@ -267,6 +267,11 @@ Send the profile id: <span style="color: #FF0040">01</span>, pseudo <span style=
 
 [[Base_protocol_messages#Reply_020003|See reply to this query]]
 
+=== 020004 ===
+Remove character id: <span style="color: #FF0040">00000001</span>
+
+[[Base_protocol_messages#Reply_020004|See reply to this query]]
+
 === 020005 ===
 Send the character id: <span style="color: #FF0040">00000001</span>
 
