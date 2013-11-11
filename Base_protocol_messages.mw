@@ -483,6 +483,13 @@ This reply is compressed.
 === Reply 020003 ===
 The reply is the character id: <span style="color: #BFBF40">00000001</span>
 
+=== Reply 020004 ===
+<span style="color: #FF4000">01</span> (something is wrong), <span style="color: #40BF00">&quot;Already in deleting&quot;</span> (or other server error)
+ <span style="color: #FF4000">01</span><span style="color: #FFBF00">00000012</span><span style="color: #40BF00">0062006100640020006c006f00670069006e</span>
+
+If all is good:
+* <span style="color: #FF4000">02</span> (all is good)
+
 === Reply 020005 ===
 <span style="color: #FF4000">01</span> (something is wrong), <span style="color: #40BF00">&quot;bad login&quot;</span> (or other server error)
  <span style="color: #FF4000">01</span><span style="color: #FFBF00">00000012</span><span style="color: #40BF00">0062006100640020006c006f00670069006e</span>
