@@ -40,4 +40,26 @@ Is the formal definition interpreted by the server and client to know at what st
 </quest></pre>
 
 == text.xml ==
-List of text, the e
+List of text, the entry:
+<pre><text>
+	<client_logic id="1">
+		<text lang="en"><![CDATA[Ho u have realy nice monster.<br />
+			Can u collect 10 crystals to help me.<br />
+			<br />
+			<a href="next_quest_step;42">U can find it on Polyrock</a>]]></text>
+	</client_logic>
+	<client_logic id="42">
+		<text lang="en"><![CDATA[I wait you with the 10 crystals]]></text>
+	</client_logic>
+	<client_logic id="50">
+		<text lang="en"><![CDATA[Do you have the 10 crystals for me?<br />
+			<br />
+			<a href="next_quest_step;52">Yes I have it</a>]]></text>
+	</client_logic>
+	<client_logic id="52">
+		<text lang="en"><![CDATA[Thanks, you have finish my quest.]]></text>
+	</client_logic>
+	<client_logic id="53">
+		<text lang="en"><![CDATA[You don't have the requiered quantity.]]></text>
+	</client_logic>
+</text></pre>
