@@ -27,6 +27,6 @@ You can test it under linux with packet ''Torsocks'' and ''telnet'' by the comma
 Where '''y1h7x768hq9nt5xs.onion''' is get from your '''/home/tor/hostname'''
 
 = Client =
-After have started your tor proxy (Windows client you can use ''Vidalia''), and configure the buyed and full client to use it (proxy 127.0.0.1 port 9050) and connect on '''y1h7x768hq9nt5xs.onion''' port '''42489'''. 
+After have started your tor proxy (Windows client you can use ''Vidalia'', settings, sharing, relay traffic for inside the Tor network, relay port: 9050), and configure the buyed and full client to use it (proxy 127.0.0.1 port 9050) and connect on '''y1h7x768hq9nt5xs.onion''' port '''42489'''. 
 
 '''Don't forget buy the full client to fund the project and have client without crack and virus/trojan.'''
