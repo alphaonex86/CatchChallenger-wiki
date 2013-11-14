@@ -497,6 +497,7 @@ If all is good:
 If all is good:
 * <span style="color: #FF4000">02</span> (all is good)
 * Character id: {{Player_id}} (unique generated id on the map)
+* pseudo: <span style="color: #40BF00">"toto"</span> (allow is string separated by ;)
 * allow list: <span style="color: #40BF00">"clan"</span> (allow is string separated by ;)
 * clan id: <span style="color: #40BFFF">00000064</span>
 * clan_leader: <span style="color: #40BFFF">01</span>
