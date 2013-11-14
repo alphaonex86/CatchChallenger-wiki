@@ -7,21 +7,21 @@ The to value is separated by ;
 -->
 <types>
 	<type name="electric">
-		<name lang="en">Electric</name>
+		<name>Electric</name>
 		<multiplicator number="0.5" to="fire;plant" />
 	</type>
 	<type name="fire">
-		<name lang="en">Fire</name>
+		<name>Fire</name>
 		<multiplicator number="0.5" to="water" />
 		<multiplicator number="2" to="plant" />
 	</type>
 	<type name="water">
-		<name lang="en">Water</name>
+		<name>Water</name>
 		<multiplicator number="0.5" to="plant" />
 		<multiplicator number="2" to="fire" />
 	</type>
 	<type name="plant">
-		<name lang="en">Plant</name>
+		<name>Plant</name>
 		<multiplicator number="0.5" to="fire" />
 		<multiplicator number="2" to="water" />
 	</type>
