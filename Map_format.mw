@@ -30,7 +30,7 @@ The '''0,0''' is at '''left and top''' for this protocol.
         &lt;name lang="fr"&gt;Nom français&lt;/name&gt;
         &lt;grass&gt;
                &lt;monster id="1" minLevel="3" maxLevel="4" luck="20" /&gt;
-               &lt;monster id="2" minLevel="3" maxLevel="5" luck="80" /&gt;
+               &lt;monster id="2" level="2" luck="80" /&gt;
         &lt;/grass&gt;
  &lt;/map&gt;
 the balise grass can be wather, cave.
