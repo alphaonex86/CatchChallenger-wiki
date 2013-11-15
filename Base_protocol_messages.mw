@@ -483,7 +483,7 @@ This reply is compressed.
 === Reply 020003 ===
 The reply is the character id: <span style="color: #BFBF40">00000001</span>
 
-Return: <span style="color: #BFBF40">00000000</span>, mostly due to pseudo already taken.
+Return <span style="color: #BFBF40">00000000</span> if failed, mostly due to pseudo already taken.
 
 === Reply 020004 ===
 <span style="color: #FF4000">01</span> (something is wrong), <span style="color: #40BF00">&quot;Already in deleting&quot;</span> (or other server error)
