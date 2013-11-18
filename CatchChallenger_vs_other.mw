@@ -19,7 +19,7 @@ This is just for me, to have comparaison.
 | GPL3
 | {{Yes}}
 | {{Yes}}
-| C++, lib: Qt/Boost
+| C++, lib: Qt
 | {{Yes}}
 | File
 | MySQL/SQLite/Postgresql
@@ -218,7 +218,7 @@ Here the important is the coefficient director between the idle and 100 players.
 | GPL3
 | {{Yes}}
 | {{Yes}}
-| C++, lib: Qt Quick?/OpenGL?/SFML2?
+| C++, lib: Qt Quick 2 (then OpenGl)
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
@@ -344,10 +344,10 @@ Here the important is the coefficient director between the idle and 100 players.
 ! Optional data
 |}
 
-* '''Full mean:''' All the intelectual properties is into it and you can mount a server with the datapack downloaded on the client (then include too, bot, door, ...).
+* '''Full:''' All the intellectual property is into it and you can mount a server with the datapack downloaded on the client (then include too, bot, door, ...).
 * '''Unique format:''' Usage only of one type of file (.ini, .xml, ...) not multiple
 * '''Correct image:''' Use png with alpha (not color as transparency), no .bmp or other bad/buggy format, don't need read external offset to use it
 * '''Correct data:''' No data duplication, no useless data or obsolete data
 * '''Structured data:''' You known easily with what is linked, no bot string list without context and bot id to identify
 * '''Accessible:''' No more binary data as utile (you need have to access of most data by text editor or common editor)
-* '''Optional data:''' Can have optional data like interface skin, defaulted by the application when not found. Usefull to have light datapack.
+* '''Optional data:''' Can have optional data like interface skin, defaulted by the application when not found. Usefull to have light datapack. Can add extra info about the monster, bot, ...
