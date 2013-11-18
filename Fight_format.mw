@@ -10,6 +10,5 @@ The file is '''fight/*.xml''', the content:
 		</monster>
 		<monster id="13" level="4" />
 		<gain cash="100" />
-		<gain item="100" />
 	</fight>
 </fights></pre>
