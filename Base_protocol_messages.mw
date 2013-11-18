@@ -387,6 +387,9 @@ orientation def:
 * <span style="color: #FF4000">02</span> = ban
 * <span style="color: #FF4000">03</span> = disconnected
 
+=== C2000C ===
+Server -&gt; Client: datapck file number: <span style="color: #FF4000">00000000</span>,  datapck file size: <span style="color: #40BF00">00000000</span>
+
 === C3 ===
 Server -&gt; Client: number of player connected: {{Number_of_player}}
  <span style="color: #FF4000">0002</span>
