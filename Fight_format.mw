@@ -1,0 +1,14 @@
+The file is '''fight/*.xml''', the content:
+
+<pre><fights>
+	<fight id="1">
+		<start lang="en"><![CDATA[Ready for the fight?]]></start>
+		<win lang="en"><![CDATA[You are so strong for me!]]></win>
+		<monster id="13" level="4">
+			<attack id="3" />
+			<attack id="4" />
+		</monster>
+		<monster id="13" level="4" />
+		<gain cash="100" />
+	</fight>
+</fights></pre>
