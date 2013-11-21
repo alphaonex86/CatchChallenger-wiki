@@ -109,6 +109,7 @@ sp="0", can't be learn naturaly
 ratio_gender="50%"
 catch_rate="100"
 luck is in percent
+evolution type can be: level (attribute level is the level), item (attribute level is the item id), exchange (attribute level is useless)
 -->
 <list>
 
@@ -129,6 +130,14 @@ luck is in percent
 		<name lang="fr">Firelion</name>
 		<description lang="en">Firelion use fire for protect himsell.</description>
 		<description lang="fr">Lion de feu utilise le feu afin de ce protége.</description>
+		<evolutions>
+			<evolution type="level" level="16" evolveTo="2">
+		</evolutions>
+		<!-- extra info optional -->
+		<kind>Toto</kind>
+		<habitat>Home</habitat>
+		<kind lang="en">Toto</kind>
+		<habitat lang="en">Maison</habitat>
 	</monster>
 	<!-- ratio_gender: 0% only male, 100% only female, -1 no gender
 	second line is stat at level 100-->
@@ -147,113 +156,4 @@ luck is in percent
 		<description lang="en">Elofly</description>
 		<description lang="fr">Elofly</description>
 	</monster>
-	<monster id="3" type="plant" type2="earth" height="0.54m" weight="20kg" ratio_gender="50%" catch_rate="100" egg_step="5000" xp_max="300"
-	hp="320" attack="360" defense="240" special_attack="380" special_defense="260" speed="240" give_sp="100" give_xp="100" pow="1.2">
-		<attack_list>
-			<!-- if level is 0, it's base attack, default: attack_level="1" -->
-			<attack level="0" id="3" />
-			<attack level="8" id="4" attack_level="1" />
-		</attack_list>		
-		<drops>
-			<drop item="1001" quantity_min="1" quantity_max="1" luck="20" />
-		</drops>
-		<name lang="en">Conifeuille</name>
-		<name lang="fr">Conifeuille</name>
-		<description lang="en">Conifeuille</description>
-		<description lang="fr">Conifeuille</description>
-	</monster>
-	<monster id="5" type="stone" type2="earth" height="1.56m" weight="56kg" ratio_gender="50%" catch_rate="100" egg_step="5000" xp_max="300"
-	hp="400" attack="260" defense="360" special_attack="300" special_defense="480" speed="200" give_sp="100" give_xp="100" pow="1.2">
-		<attack_list>
-			<!-- if level is 0, it's base attack, default: attack_level="1" -->
-			<attack level="0" id="3" />
-			<attack level="8" id="4" attack_level="1" />
-		</attack_list>		
-		<drops>
-			<drop item="2000" quantity_min="1" quantity_max="3" luck="10" />
-			<drop item="2001" quantity_min="1" quantity_max="2" luck="10" />
-		</drops>
-		<name lang="en">Polyrock</name>
-		<name lang="fr">Polyrock</name>
-		<description lang="en">Polyrock</description>
-		<description lang="fr">Polyrock</description>
-	</monster>
-  <monster id="6" type="water" height="0.76m" weight="45kg" ratio_gender="50%" catch_rate="100" egg_step="5000" xp_max="300"
-		hp="300" attack="360" defense="280" special_attack="380" special_defense="240" speed="240" give_sp="100" give_xp="110" pow="1.2">
-		<attack_list>
-			<!-- if level is 0, it's base attack, default: attack_level="1" -->
-			<attack level="0" id="3" />
-			<attack level="8" id="1" attack_level="1"/>
-		</attack_list>	
-    <drops>
-			<drop item="3002" quantity_min="1" quantity_max="1" luck="10" />
-		</drops>	
-		<name lang="en">Dinoflop</name>
-		<name lang="fr">Dinoflop</name>
-		<description lang="en">Dinoflop use water for protect himsell.</description>
-		<description lang="fr">Dinoflop utilise l"eau afin de ce protége.</description>
-	</monster>
-  <monster id="9" type="water" height="0.76m" weight="45kg" ratio_gender="50%" catch_rate="100" egg_step="5000" xp_max="300"
-		hp="150" attack="180" defense="140" special_attack="190" special_defense="170" speed="170" give_sp="100" give_xp="110" pow="1.2">
-		<attack_list>
-			<!-- if level is 0, it's base attack, default: attack_level="1" -->
-			<attack level="0" id="3" />
-			<attack level="8" id="1" attack_level="1"/>
-		</attack_list>		
-		<name lang="en">Trompeau</name>
-		<name lang="fr">Trompeau</name>
-		<description lang="en">Trompeau use water for protect himsell.</description>
-		<description lang="fr">Trompeau utilise l"eau afin de ce protége.</description>
-	</monster>
-  <monster id="13" type="normal" height="0.76m" weight="45kg" ratio_gender="50%" catch_rate="100" egg_step="5000" xp_max="300"
-		hp="250" attack="170" defense="190" special_attack="140" special_defense="170" speed="130" give_sp="100" give_xp="110" pow="1.2">
-		<attack_list>
-			<!-- if level is 0, it's base attack, default: attack_level="1" -->
-			<attack level="0" id="3" />
-			<attack level="0" id="4" />
-			<attack level="8" id="1" attack_level="1"/>
-		</attack_list>	
-    <drops>
-			<drop item="1003" quantity_min="1" quantity_max="3" luck="10" />
-			<drop item="1004" quantity_min="1" quantity_max="2" luck="10" />
-		</drops>
-		<name lang="en">Sclairus</name>
-		<name lang="fr">Sclairus</name>
-		<description lang="en">Sclairus use claw for protect himsell.</description>
-		<description lang="fr">Sclairus utilise ces griffe afin de ce protége.</description>
-	</monster>
-<monster id="17" type="normal" height="0.76m" weight="45kg" ratio_gender="50%" catch_rate="100" egg_step="5000" xp_max="300"
-		hp="150" attack="200" defense="150" special_attack="170" special_defense="150" speed="180" give_sp="100" give_xp="110" pow="1.2">
-		<attack_list>
-			<!-- if level is 0, it's base attack, default: attack_level="1" -->
-			<attack level="0" id="3" />
-			<attack level="0" id="4" />
-			<attack level="8" id="1" attack_level="1"/>
-		</attack_list>		
-    <drops>
-			<drop item="2004" quantity_min="1" quantity_max="2" luck="10" />
-		</drops>
-		<name lang="en">Volcoli</name>
-		<name lang="fr">Volcoli</name>
-		<description lang="en">Volcoli use claw for protect himsell.</description>
-		<description lang="fr">Volcoli utilise ces griffe afin de ce protége.</description>
-	</monster>
-<monster id="18" type="normal" height="0.76m" weight="45kg" ratio_gender="50%" catch_rate="100" egg_step="5000" xp_max="300"
-		hp="200" attack="175" defense="150" special_attack="150" special_defense="150" speed="230" give_sp="100" give_xp="110" pow="1.2">
-		<attack_list>
-			<!-- if level is 0, it's base attack, default: attack_level="1" -->
-			<attack level="0" id="3" />
-			<attack level="0" id="4" />
-			<attack level="8" id="1" attack_level="1"/>
-		</attack_list>		
-    <drops>
-			<drop item="2005" quantity_min="1" quantity_max="1" luck="7" />
-		</drops>
-		<name lang="en">Nocula</name>
-		<name lang="fr">Nocula</name>
-		<description lang="en">Nocula use claw for protect himsell.</description>
-		<description lang="fr">Nocula utilise ces griffe afin de ce protége.</description>
-	</monster>
-	
-	
 </list></pre>
