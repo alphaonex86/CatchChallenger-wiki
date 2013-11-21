@@ -344,8 +344,8 @@ Server -&gt; Client, insert player on the map:
 **** local x: {{Player_x}}
 **** local y: {{Player_y}}
 **** direction | player type: <span style="color: #FF4000">02</span> can be spawn walking, and do | with: <span style="color: #40BFFF">10</span> to the player type = <span style="color: #800080">12</span>
-**** speed: <span style="color: #40BFFF">C8</span> (200, see [[Unit into the game]])
-**** pseudo: <span style="color: #40BF00">&quot;toto&quot;</span> (UTF8 + 8Bits of size header)
+**** speed: <span style="color: #40BFFF">C8</span> (200, see [[Unit into the game]]) (If forcedSpeed==0)
+**** pseudo: <span style="color: #40BF00">&quot;toto&quot;</span> (UTF8 + 8Bits of size header) (If dontSendPseudo==false)
 **** skin: <span style="color: #FF4000">00</span>
 
  <span style="color: #FF4000">01</span> <span style="color: #FFBF00">10</span> <span style="color: #FF4000">0001</span>
