@@ -110,8 +110,7 @@ ratio_gender="50%"
 catch_rate="100"
 luck is in percent
 evolution type can be: level (attribute level is the level), item (attribute level is the item id),
-trade (attribute level is useless), tradeWithItem (attribute level is the item id),
-happiness (attribute level is happiness level)
+trade (attribute level is useless), tradeWithItem (attribute level is the item id)
 -->
 <list>
 
