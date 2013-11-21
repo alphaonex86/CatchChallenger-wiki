@@ -1,0 +1,31 @@
+This is an exemple of items/items.xml, don't cumulate effect
+<pre><items>
+    <item id="1" image="catchtrap/trap-grade-a.png" price="510">
+        <name>IronTrap</name>
+        <name lang="fr">Piége en fer</name>
+        <description>This trap is perfect to capture the very low level monsters.</description>
+        <description lang="fr">Ce piége est parfait pour capturer les monstres de trés bas niveau.</description>
+        <trap max_level="20" min_level="2"/>
+    </item>
+    <item id="5" image="potion/potion-grade-a.png" price="45">
+        <name>Potion grade A</name>
+        <name lang="fr">Potion grade A</name>
+        <description>The potion used to heal few bit your monsters</description>
+        <description lang="fr">La potion est utilisé pour soigner un peu vos monstres</description>
+        <regeneration hp="50"/>
+    </item>
+    <item id="8" image="potion/potion-grade-d.png" price="60000">
+        <name>Potion grade D</name>
+        <name lang="fr">Potion grade D</name>
+        <description>The potion used to heal heavly your monsters</description>
+        <description lang="fr">La potion est utilisé pour soigner grandement vos monstres</description>
+        <regeneration hp="all"/>
+    </item>
+    <item id="9" image="potion/repulse-grade-a.png" price="45">
+        <name>Repulse grade A</name>
+        <name lang="fr">Reppousse grade A</name>
+        <description>Used to repulse the monsters during few time</description>
+        <description lang="fr">Le repousse est utilisé pour éloigner les monstres pendant un peu de temps</description>
+        <repel step="100"/>
+    </item>
+<items></pre>
