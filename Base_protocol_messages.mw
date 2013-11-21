@@ -465,6 +465,9 @@ If all is good:
 * max player: <span style="color: #40BF00">0064</span> (then 100 in decimal) -> this define if the players id is defined on 16Bits ('''unknown max player at this point''', for the client at the startup)
 * Next city capture in second: <span style="color: #FFBF00">00000012</span>
 * City capture frequency: <span style="color: #7B00FF">01</span> (week, <span style="color: #7B00FF">02</span> for month)
+* forcedSpeed: <span style="color: #40BF00">C2</span> (0 == not forced)
+* dontSendPseudo: <span style="color: #FFBF00">00</span>
+* dontSendPlayerType: <span style="color: #7B00FF">00</span>
 * Character max: <span style="color: #40BFFF">01</span>
 * Character min: <span style="color: #40BFFF">01</span>
 * Pseudo size max: <span style="color: #40BFFF">10</span>
