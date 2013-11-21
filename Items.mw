@@ -5,7 +5,7 @@ This is an exemple of items/items.xml, don't cumulate effect
         <name lang="fr">Piége en fer</name>
         <description>This trap is perfect to capture the very low level monsters.</description>
         <description lang="fr">Ce piége est parfait pour capturer les monstres de trés bas niveau.</description>
-        <trap bonus_rate="1"/>
+        <trap max_level="20" min_level="2"/>
     </item>
     <item id="5" image="potion/potion-grade-a.png" price="45">
         <name>Potion grade A</name>
@@ -27,15 +27,5 @@ This is an exemple of items/items.xml, don't cumulate effect
         <description>Used to repulse the monsters during few time</description>
         <description lang="fr">Le repousse est utilisé pour éloigner les monstres pendant un peu de temps</description>
         <repel step="100"/>
-    </item>
-    <item id="25" image="25.png">
-        <name>Buff 5 remove</name>
-        <description>Remove the buff 5</description>
-	<buff remove="5" />
-    </item>
-    <item id="26" image="26.png">
-        <name>All buff remove</name>
-        <description>Remove all the buff</description>
-	<buff remove="all" />
     </item>
 <items></pre>
