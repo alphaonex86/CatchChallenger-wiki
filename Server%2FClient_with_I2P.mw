@@ -1,0 +1,14 @@
+As usual, inform you about how I2P work. What can reveal your identity, ...
+
+= Server =
+== Protection ==
+Mount your CatchChallenger I2P server under virtual machine '''on encrypted volume'''. To prevent direct access reveal you host an CatchChallenger server. That's mean, '''you can't start up automatically the server'''. You need start up manually and '''give the prompted password'''. Prevent physical access. Prevent bug or security break of your server. Grsec + Pax for linux kernel with option '''PAX_MEMORY_SANITIZE''' is good idea on host and guest.
+== CatchChallenger ==
+* Listen on 127.0.0.1 port 42495
+* Auto-create account
+== I2P ==
+== Test ==
+= Client =
+After have started your I2P proxy, and configure the buyed and full client to use it (proxy 127.0.0.1 port 9050) and connect on '''XXXXXX''' port '''42489'''. 
+
+'''Don't forget buy the full client to fund the project and have client without crack and virus/trojan.'''
