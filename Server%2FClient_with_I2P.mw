@@ -1,62 +1,14 @@
 As usual, inform you about how I2P work. What can reveal your identity, ...
 
 = Server =
-See this article too: [[Portable datacenter]]
-
 == Protection ==
 Mount your CatchChallenger I2P server under virtual machine '''on encrypted volume'''. To prevent direct access reveal you host an CatchChallenger server. That's mean, '''you can't start up automatically the server'''. You need start up manually and '''give the prompted password'''. Prevent physical access. Prevent bug or security break of your server. Grsec + Pax for linux kernel with option '''PAX_MEMORY_SANITIZE''' is good idea on host and guest.
-
-== Privacity ==
-It's better if your service is hosted on server without access to the net. A second server will go connect on that's to provide the I2P gateway. As this, in case of hack of your service, the hacker can't access to the net to found the ip.
-
 == CatchChallenger ==
-* Listen on 127.0.0.1 port 42489
+* Listen on 127.0.0.1 port 42495
 * Auto-create account
 == I2P ==
-* http://localhost:7657/i2ptunnelmgr
-* Remove all the service
-* into the group: I2P Server Tunnels, New server tunnel: standard, create:
-** Auto Start(A): Yes (checked)
-** Target: Host(H): 127.0.0.1 Port(P) 42489
-** Tunnel Options: Length(t): 3 hop tunnel
-** Backup Count(B): 2 Backup tunnel
-** Profile(f): interactive connexion
-** Variance(V): +/- 0-1 Hop variance
-** Count(C): 3 inbound/3 outbound tunnel
-
-After the service is up (green star), the address will be show like that's: '''3fddub3iiptg6p7765cj5vjgxll24isagaebiii5m43lwfdho2ka.b32.i2p'''
-
-== Network hide ==
-If you are on the normal web or you expose via gateway into the normal web, you need this. That's allow to have insecure vm with public ip, but route to more secure vm or directly i2p.
-
-=== LXC ===
-You can have one secure vm in front, and connected on it on internal bridge with service splited on lot of vm. After you can reroute into the vm the trafic via i2p, ssh tunnel, ...
-
-=== Vserver ===
-You can have multiple vm using the same ip, but the service on different port
-
+== Test ==
 = Client =
+After have started your I2P proxy, and configure the buyed and full client to use it (proxy 127.0.0.1 port 9050) and connect on '''XXXXXX''' port '''42489'''. 
+
 '''Don't forget buy the full client to fund the project and have client without crack and virus/trojan.'''
-
-* http://localhost:7657/i2ptunnelmgr
-* Remove all the service
-* into the group: I2P Client Tunnels, New client tunnel: SOCKS 4/4a/5 proxy, create:
-** Auto Start(A): Yes (checked)
-** Access Point: Port: 24445, Reachable by(R): 127.0.0.1
-** Tunnel Options: Length(t): 2 hop tunnel
-** Backup Count(B): 2 Backup tunnel
-** Profile(f): interactive connexion
-** Variance(V): +/- 0-1 Hop variance
-** Count(C): 3 inbound/3 outbound tunnel
-
-== CatchChallenger Ultimate ==
-On CatchChallenger add your multi-player:
-* Server: '''3fddub3iiptg6p7765cj5vjgxll24isagaebiii5m43lwfdho2ka.b32.i2p''', port: 42489
-* Proxy: 127.0.0.1, port: 24445 (check the proxy checkbox)
-
-== CatchCahllenger Single Server ==
-Create near the application the file '''server.conf''':
-<pre>[General]
-server_dns_or_ip=3fddub3iiptg6p7765cj5vjgxll24isagaebiii5m43lwfdho2ka.b32.i2p
-server_port=42489
-proxy_port=24445</pre>
