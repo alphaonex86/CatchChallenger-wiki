@@ -9,14 +9,27 @@ Mount your CatchChallenger I2P server under virtual machine '''on encrypted volu
 == I2P ==
 * http://localhost:7657/i2ptunnelmgr
 * Remove all the service
-* into the group: I2P Server Tunnels, New server tunnel standard create:
+* into the group: I2P Server Tunnels, New server tunnel: standard, create:
 ** Auto Start(A): Yes (checked)
 ** Target: Host(H): 127.0.0.1 Port(P) 42489
 ** Tunnel Options: Length(t): 2 hop tunnel
 ** Backup Count(B): 1 Backup tunnel
 ** Profile(f): interactive connexion
 
-= Client =
-After have started your I2P proxy, and configure the buyed and full client to use it (proxy 127.0.0.1 port 9050) and connect on '''XXXXXX''' port '''42489'''. 
+After the service is up (green star), the address will be show like that's: '''3fddub3iiptg6p7765cj5vjgxll24isagaebiii5m43lwfdho2ka.b32.i2p'''
 
+= Client =
 '''Don't forget buy the full client to fund the project and have client without crack and virus/trojan.'''
+
+* http://localhost:7657/i2ptunnelmgr
+* Remove all the service
+* into the group: I2P Client Tunnels, New client tunnel: SOCKS 4/4a/5 proxy, create:
+** Auto Start(A): Yes (checked)
+** Access Point: Port: 4444, Reachable by(R): 127.0.0.1
+** Tunnel Options: Length(t): 2 hop tunnel
+** Backup Count(B): 1 Backup tunnel
+** Profile(f): interactive connexion
+
+On CatchChallenger add your multi-player:
+* Server: '''3fddub3iiptg6p7765cj5vjgxll24isagaebiii5m43lwfdho2ka.b32.i2p''', port: 42489
+* Proxy: 127.0.0.1, port: 4444 (check the proxy checkbox)
