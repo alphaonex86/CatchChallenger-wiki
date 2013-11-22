@@ -28,4 +28,14 @@ This is an exemple of items/items.xml, don't cumulate effect
         <description lang="fr">Le repousse est utilisé pour éloigner les monstres pendant un peu de temps</description>
         <repel step="100"/>
     </item>
+    <item id="25" image="25.png">
+        <name>Buff 5 remove</name>
+        <description>Remove the buff 5</description>
+	<buff remove="5" />
+    </item>
+    <item id="26" image="26.png">
+        <name>All buff remove</name>
+        <description>Remove all the buff</description>
+	<buff remove="all" />
+    </item>
 <items></pre>
