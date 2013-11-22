@@ -29,6 +29,7 @@ The size is not calculated on variable into message, because it will be call lot
 * [[Others messages]]
 
 = Latency =
+* The round-trip delay time (RTD) or round-trip time (RTT) are mostly never present
 * All the query with reply is identified by return code, then multiple query ca&n be send, it will never be blocking.
 * Never ask the server reply because the reply is based on the random. '''A random list is used''' (and send by the server to the client), and both '''client and server do the calculate''' (minimize bandwidth, and not slow down). See the [[Server/Client_link#Random list|random list]].
 * '''Send the previous step do and new direction'''. Then the server can check all move into one direction (more fast), and the request on the network is grouped. The client when receive the other player move, put the other player at the good position, and do moving at the right direction. With this, if latency is < a ms to do a step is always invisible. And if latency < at time to do all the step into a direction, is invisible too
@@ -38,7 +39,7 @@ The size is not calculated on variable into message, because it will be call lot
 The client NEVER wait a reply.
 
 = Low or high bandwidth? =
-The server can be optimized in 2 mode: low bandwidth and high bandwidth. The communication way/mode will depends of this choice.
+The server can be optimized in 2 mode: low bandwidth and high bandwidth. The communication way/mode will depends of this choice. You can too change the compression.
 * The low bandwidth is optimized for client/server with low bandwidth and high latency (third world client, server on adsl), send a minimum of data
 * The high bandwidth send more data, object drop at the end of the battle, is more secure for a large scale server
 * Disable functionality allow to save bandwidth, like number of player online
@@ -49,11 +50,11 @@ All is done to have multiple algorithm into the server, you can calculate that's
 
 The choice is do of display number of player will depends of the max player. To minimize into 8Bits the number if max player < 255, else 16Bits.
 
-The coordinates is limited to 8Bits. And map map into utf8, with 8Bits of size header (max 255 bytes).
+The coordinates is limited to 8Bits. And map string is not transmited by map index into the map list (the map list should by sync).
 
 = Other limit =
 The pseudo is too into UTF8, max 255 bytes.
-The skin path is too into UTF8, max 255 bytes.
+The skin path is too into UTF8, max 255 bytes, limited of 255 skin into fighter folder.
 
 = Usage into other game =
 [[File:catchchallenger-base-into-other-game.png]]
@@ -63,7 +64,7 @@ See: [[Other game usage]]
 The compression is used for datapack list/datapack content:
 * Zlib: To save bandwidth at exchange of cpu
 * Gzip: like Zlib but better ratio, and use more cpu
-* lz4 by [[Lz4CompressionTcpSocket for Qt]]: Have very small cpu overhead, but worse compression ratio than zlib/gzip, lz4hc use few more cpu but remain with worse compression ratio than zlib/gzip.
+* Xz: Very good compression ratio, but hight cpu usage
 * None: No compression overhead, but some query can use lot of bandwidth
 
 See too: [[Quick Benchmark: Gzip vs Bzip2 vs LZMA vs XZ vs LZ4 vs LZO]]
