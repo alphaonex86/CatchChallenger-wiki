@@ -30,6 +30,14 @@ After the service is up (green star), the address will be show like that's: '''3
 ** Backup Count(B): 1 Backup tunnel
 ** Profile(f): interactive connexion
 
+== CatchChallenger Ultimate ==
 On CatchChallenger add your multi-player:
 * Server: '''3fddub3iiptg6p7765cj5vjgxll24isagaebiii5m43lwfdho2ka.b32.i2p''', port: 42489
 * Proxy: 127.0.0.1, port: 4444 (check the proxy checkbox)
+
+== CatchCahllenger Single Server ==
+Create near the application:
+<pre>[General]
+server_dns_or_ip=3fddub3iiptg6p7765cj5vjgxll24isagaebiii5m43lwfdho2ka.b32.i2p
+server_port=42489
+proxy_port=4444</pre>
