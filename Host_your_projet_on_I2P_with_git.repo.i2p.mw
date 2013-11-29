@@ -1,0 +1,25 @@
+= Proxy =
+* I2PTunnel -> I2P Client Tunnels -> New client tunnel: SOCKS 4/4a/5 proxy -> Create
+* Access Point: Port: 8541
+* Auto Start: Yes
+= The ssh key =
+To generate you ssh key, '''if you don't have''':
+<pre>ssh-keygen -t rsa</pre>
+To get:
+<pre>cat ~/.ssh/id_rsa.pub</pre>
+Now you have all the stuff to create the projet
+= Create the projet =
+Go to: http://git.repo.i2p/ create the project, you user, add your user to your projet.
+= Push your work =
+Put into '''''~/.ssh/config''''':
+<pre>host push.git.repo.i2p
+    user [youruser]
+    hostname push.git.repo.i2p
+    port 22
+    proxycommand socat - SOCKS4A:127.0.0.1:%h:%p,socksport=8541</pre>
+Go to your project folder and do the command:
+<pre>git init
+git add
+git commit
+git remote add origin ssh://push.git.repo.i2p/srv/git/[yourprojet].git
+git push --all origin</pre>
