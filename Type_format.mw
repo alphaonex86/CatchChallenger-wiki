@@ -7,7 +7,7 @@ The to value is separated by ;
 color is optional
 -->
 <types>
-	<type name="electric" color="#a8a878">
+	<type name="electric" color="#a9a875">
 		<name>Electric</name>
 		<multiplicator number="0.5" to="fire;plant" />
 	</type>
