@@ -5,7 +5,7 @@ This is an exemple of items/items.xml, don't cumulate effect
         <name lang="fr">Piége en fer</name>
         <description>This trap is perfect to capture the very low level monsters.</description>
         <description lang="fr">Ce piége est parfait pour capturer les monstres de trés bas niveau.</description>
-        <trap max_level="20" min_level="2" success="95%" /><!-- success="95%" is optional, but you can just put the success without level, then will apply for all -->
+        <trap bonus_rate="1"/>
     </item>
     <item id="5" image="potion/potion-grade-a.png" price="45">
         <name>Potion grade A</name>
