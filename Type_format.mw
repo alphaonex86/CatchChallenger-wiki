@@ -27,4 +27,4 @@ color is optional
 		<multiplicator number="2" to="water" />
 	</type>
 </types></pre>
-You can have type image into monsters/type/[lang]/[code].png as 32x14
+You can have type image into monsters/type/[lang]/[code].png with resolution like 32x16
