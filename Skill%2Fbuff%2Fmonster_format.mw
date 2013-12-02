@@ -1,5 +1,6 @@
 = Buff =
 <pre><!--
+This can be as "effect" balise attribute or "level" balise attribute
 capture_bonus: if not specified: 1
 duration: if not specified: ThisFight, can be: ThisFight, NumberOfTurn (with attribute durationNumberOfTurn more), Always
 -->
@@ -9,11 +10,11 @@ duration: if not specified: ThisFight, can be: ThisFight, NumberOfTurn (with att
 		<name lang="fr">Brulé</name>
 		<description lang="en">The monster lost life because it's in fire</description>
 		<description lang="fr">Le monster perds de la vie car il est en feu</description>
-		<effect>
-			<level number="1" capture_bonus="1.5" duration="NumberOfTurn" durationNumberOfTurn="2">
+		<effect capture_bonus="1.5" duration="NumberOfTurn" durationNumberOfTurn="2">
+			<level number="1">
 				<inFight hp="-5%" />
 			</level>
-			<level number="2" capture_bonus="1.5" duration="NumberOfTurn" durationNumberOfTurn="2">
+			<level number="2" capture_bonus="1.6" duration="NumberOfTurn" durationNumberOfTurn="3">
 				<inFight hp="-7%" />
 			</level>
 		</effect>
@@ -23,8 +24,8 @@ duration: if not specified: ThisFight, can be: ThisFight, NumberOfTurn (with att
 		<name lang="fr">Amure</name>
 		<description lang="en">Grow the defense</description>
 		<description lang="fr">Augmente la défense</description>
-		<effect>
-			<level number="1" capture_bonus="0.8" duration="ThisFight">
+		<effect capture_bonus="0.8" duration="ThisFight">
+			<level number="1">
 				<inFight defense="+100" />
 			</level>
 		</effect>
@@ -34,8 +35,8 @@ duration: if not specified: ThisFight, can be: ThisFight, NumberOfTurn (with att
 		<name lang="fr">Empoisonné</name>
 		<description lang="en">The monster is poisoned</description>
 		<description lang="fr">Le monster est empoisonné</description>
-		<effect>
-			<level number="1" duration="Always">
+		<effect duration="Always">
+			<level number="1">
 				<inFight hp="-5" />
 				<inWalk hp="-5" steps="10" />
 			</level>
