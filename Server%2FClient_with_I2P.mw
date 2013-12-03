@@ -36,7 +36,7 @@ On CatchChallenger add your multi-player:
 * Proxy: 127.0.0.1, port: 4444 (check the proxy checkbox)
 
 == CatchCahllenger Single Server ==
-Create near the application:
+Create near the application the file '''server.conf''':
 <pre>[General]
 server_dns_or_ip=3fddub3iiptg6p7765cj5vjgxll24isagaebiii5m43lwfdho2ka.b32.i2p
 server_port=42489
