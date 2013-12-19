@@ -15,6 +15,7 @@ Mount your CatchChallenger I2P server under virtual machine '''on encrypted volu
 ** Tunnel Options: Length(t): 2 hop tunnel
 ** Backup Count(B): 1 Backup tunnel
 ** Profile(f): interactive connexion
+** Variance(V): +/- 0-1 Hop variance
 
 After the service is up (green star), the address will be show like that's: '''3fddub3iiptg6p7765cj5vjgxll24isagaebiii5m43lwfdho2ka.b32.i2p'''
 
@@ -29,6 +30,7 @@ After the service is up (green star), the address will be show like that's: '''3
 ** Tunnel Options: Length(t): 2 hop tunnel
 ** Backup Count(B): 1 Backup tunnel
 ** Profile(f): interactive connexion
+** Variance(V): +/- 0-1 Hop variance
 
 == CatchChallenger Ultimate ==
 On CatchChallenger add your multi-player:
