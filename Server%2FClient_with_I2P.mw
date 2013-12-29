@@ -27,7 +27,7 @@ After the service is up (green star), the address will be show like that's: '''3
 * Remove all the service
 * into the group: I2P Client Tunnels, New client tunnel: SOCKS 4/4a/5 proxy, create:
 ** Auto Start(A): Yes (checked)
-** Access Point: Port: 4444, Reachable by(R): 127.0.0.1
+** Access Point: Port: 24445, Reachable by(R): 127.0.0.1
 ** Tunnel Options: Length(t): 2 hop tunnel
 ** Backup Count(B): 2 Backup tunnel
 ** Profile(f): interactive connexion
@@ -37,11 +37,11 @@ After the service is up (green star), the address will be show like that's: '''3
 == CatchChallenger Ultimate ==
 On CatchChallenger add your multi-player:
 * Server: '''3fddub3iiptg6p7765cj5vjgxll24isagaebiii5m43lwfdho2ka.b32.i2p''', port: 42489
-* Proxy: 127.0.0.1, port: 4444 (check the proxy checkbox)
+* Proxy: 127.0.0.1, port: 24445 (check the proxy checkbox)
 
 == CatchCahllenger Single Server ==
 Create near the application the file '''server.conf''':
 <pre>[General]
 server_dns_or_ip=3fddub3iiptg6p7765cj5vjgxll24isagaebiii5m43lwfdho2ka.b32.i2p
 server_port=42489
-proxy_port=4444</pre>
+proxy_port=24445</pre>
