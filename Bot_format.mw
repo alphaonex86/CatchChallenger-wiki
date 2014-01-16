@@ -23,7 +23,7 @@
 		<step id="2" type="shop" shop="1" />
 		<step id="3" type="sell" shop="1" />
 		<step id="4" type="quests" />
-		<step id="5" type="industry" factory_id="1" />
+		<step id="5" industry="9" type="industry" />
 		<step id="6" type="zonecapture" zone="arcania" />
 
 		<!-- Farm your success -->
