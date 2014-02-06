@@ -93,6 +93,29 @@ It's layer Object with name "''Moving''", only visible on map editor.
 '''[bot spawn]'''
 * Type: set the point to spawn bot
 
+=== Conditionnal teleportation ===
+This apply on: '''teleport on push''', '''teleport on it''', '''door'''
+
+Just add the properties:
+* condition-file: path relative to the map
+* condition-id: id
+
+Condition file:
+<pre><conditions>
+	<condition id="1" type="quest" quest="1">
+		<blockedtext><![CDATA[You have not done the quest <b>The beginner's rod</b>]]></blockedtext>
+	</condition>
+	<condition id="2" type="item" item="1">
+		<blockedtext><![CDATA[You have not an <b>Potion</b> to open the door]]></blockedtext>
+	</condition>
+	<condition id="3" type="clan"><!--if the clan have captured the area-->
+		<blockedtext><![CDATA[Your clan don't own the area]]></blockedtext>
+	</condition>
+	<condition id="4" type="fightBot" fightBot="1">
+		<blockedtext><![CDATA[You have don't win agains the first bot]]></blockedtext>
+	</condition>
+</conditions></pre>
+
 == Animation ==
 The animation apply on an tile, to have it define properties with name: '''''animation''''' and value: '''''500ms;4frames''''' (where 500 and 4 is an exemple).
 
