@@ -214,3 +214,85 @@ Store 65535 pointer.
 | 6
 | 6
 |}
+
+= String =
+Lower is better (https://github.com/alphaonex86/CatchChallenger/tree/master/tools/benchmarkstring), format:
+* QStringLiteral, where QStringLiteral("string")
+* QLatin1String, where QLatin1String("string")
+* QString, where QString("string")
+* QLatin1Literal, where QLatin1Literal("string")
+* Char*, where "string"
+* Prepared, where use directly QString variable
+Test:
+* Condition with != and ==: test into condition
+* QDomElement::hasAttribute(): test as function arguements
+* concat by +: concat
+* replace format to QString: var.replace(FORMAT ABOVE,varQString);
+* replace format to format: var.replace(FORMAT ABOVE,FORMAT ABOVE);
+* search replace string to format: varQString(regex,FORMAT ABOVE);
+* search replace format to string: FORMAT ABOVE.replace(regex,varQString);
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Condition with != and ==
+! QDomElement::hasAttribute()
+! concat by +
+! Replace format to QString
+! Replace format to format
+! Search replace string to format
+! Search replace format to string
+|-
+| QStringLiteral
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3936ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1947ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 4161ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 2957ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 5140ms
+| 11986ms
+| 11877ms
+|-
+| QLatin1String
+| 204ms
+| 1507ms
+| 3771ms
+| 1559ms
+| 2142ms
+| 11194ms
+| NA
+|-
+| QString
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 4586ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 2280ms
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 4589ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3288ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 5741ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 12310ms
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 12145ms
+|-
+| QLatin1Literal
+| 231ms
+| 1505ms
+| 3775ms
+| 1555ms
+| 2130ms
+| 11207ms
+| NA
+|-
+| Char*
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 4630ms
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 2339ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 4275ms
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3364ms
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 5811ms
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 12291ms
+| NA
+|-
+| Prepared
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 92ms
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 31ms
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 2492ms
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1280ms
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 237ms
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 9472ms
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 9313ms
+|}
