@@ -216,7 +216,7 @@ Store 65535 pointer.
 |}
 
 = String =
-Lower is better (https://github.com/alphaonex86/CatchChallenger/tree/master/tools/benchmarkstring), format:
+Lower is better (https://github.com/alphaonex86/CatchChallenger/tree/master/tools/benchmarkstring), done with gcc 4.7, debug Qt 5.2 with c++11, format:
 * QStringLiteral, where QStringLiteral("string")
 * QLatin1String, where QLatin1String("string")
 * QString, where QString("string")
