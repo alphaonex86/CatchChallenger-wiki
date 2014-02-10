@@ -296,4 +296,4 @@ Test:
 | style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 9472ms
 | style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 9313ms
 |}
-Using prepared string, the loading datapack of the datapack (mostly Xml parsing time + file access time) '''1560ms -> 742ms'''.
+Using prepared string, the loading datapack of the datapack (mostly Xml parsing time + file access time) '''1560ms -> 742ms''' (https://github.com/alphaonex86/CatchChallenger/commit/4eeece9d5169d125fcfdbc2126629cdd2a75fe1c).
