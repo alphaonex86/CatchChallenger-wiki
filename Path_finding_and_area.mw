@@ -4,8 +4,6 @@ Most of the MMORPG use path finding. But on server is a bottleneck.
 
 Where the client need have correct visual path, the server just need to know if it's accessible. Then group the accessible tile into area, and just check if same area improve greatly the performance. You can to add link between 2 areas to have multi display map. For CatchChallenger, just line move, not path finding to simplify some problem, and match with the game style.
 
-Another solution can be to resolve the path on the client, and transmit it as line (vector) to the server.
-
 [[File:map-with-area.png]]
 
 = Monsters =
@@ -14,8 +12,3 @@ Another solution can be to resolve the path on the client, and transmit it as li
 The area can be applied on the monster, because 2 monster area can't have the same tile. The cave area is automatically generated if monsterType is here but without layer (then all walkable layer). It's registered as area 0, the other area greater than 0.
 * https://github.com/alphaonex86/datapack/blob/master/datapack/map/monstersCollision.xml
 Then I put 0, 1, 2, ... into simple matrix to determine the monster collision to resolve.
-
-= Multi-path finding =
-[[File:path-possible-to-the-next-block.png]]
-
-In case of multiple way to pass to new zone, to the multiple pathfinding and choice the best path (less direction change and shortest path if egual)
