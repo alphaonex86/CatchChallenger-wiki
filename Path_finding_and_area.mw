@@ -4,6 +4,8 @@ Most of the MMORPG use path finding. But on server is a bottleneck.
 
 Where the client need have correct visual path, the server just need to know if it's accessible. Then group the accessible tile into area, and just check if same area improve greatly the performance. You can to add link between 2 areas to have multi display map. For CatchChallenger, just line move, not path finding to simplify some problem, and match with the game style.
 
+Another solution can be to resolve the path on the client, and transmit it as line (vector) to the server.
+
 [[File:map-with-area.png]]
 
 = Monsters =
