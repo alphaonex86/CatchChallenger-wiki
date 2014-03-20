@@ -182,9 +182,10 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 === E00006 ===
 Send <span style="color: #FF4000">01</span> attack return, see the reference:
   struct Skill::AttackReturn
-monster place <span style="color: #0000FF">01</span> (different of 0 if the actual monster is ko by the attack):
 
-Only if need a new monster:
+monster place <span style="color: #0000FF">01</span> (different of 0 if change monster, then attack and item usage should not be used):
+
+Only if change monster:
 * monsters: <span style="color: #FF4000">00000001</span>
 * level: <span style="color: #40BF00">01</span>
 * hp: <span style="color: #FFBF00">00000001</span>
@@ -193,6 +194,12 @@ Only if need a new monster:
 * size of list of the buff monsters: <span style="color: #7B00FF">00000001</span>
 ** buff: <span style="color: #40BF00">00000001</span>
 ** buff level: <span style="color: #FF4000">01</span>
+
+item used <span style="color: #0000FF">01</span> (different of 0 if use item, then attack and monster change usage should not be used):
+
+Only if item used:
+* on_current_monster: <span style="color: #FF4000">01</span> (01 yes, 00 no)
+* item: <span style="color: #40BF00">00000001</span>
 
 === E00008 ===
 Pseudo and skin id is send to have the details.
