@@ -205,7 +205,7 @@ After send one of this case, depands on case number:
 ** buff: <span style="color: #40BF00">00000001</span>
 ** buff level: <span style="color: #FF4000">01</span>
 
-==== Item change ====
+==== Item usage ====
 * on_current_monster: <span style="color: #FF4000">01</span> (01 yes, 00 no)
 * item: <span style="color: #40BF00">00000001</span>
 
