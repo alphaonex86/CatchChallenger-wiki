@@ -180,12 +180,22 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 = Details =
 == Server &rarr; Client without reply ==
 === E00006 ===
-Send <span style="color: #FF4000">01</span> attack return, see the reference:
-  struct Skill::AttackReturn
+Send <span style="color: #FF4000">01</span> attack return.
 
-monster place <span style="color: #0000FF">01</span> (different of 0 if change monster, then attack and item usage should not be used):
+* doByTheCurrentMonster: <span style="color: #FF4000">01</span> (01 yes, 00 no)
+* Case number: <span style="color: #FF4000">01</span> (01 normal attack, 02 monster change, 03 item used)
 
-Only if change monster:
+After send one of this case, depands on case number:
+
+==== Normal attack ====
+* success: <span style="color: #FF4000">01</span> (01 yes, 00 no)
+* attack: <span style="color: #40BF00">00000001</span>
+* QList<BuffEffect> addBuffEffectMonster
+* QList<BuffEffect> removeBuffEffectMonster
+* QList<LifeEffectReturn> lifeEffectMonster
+* QList<LifeEffectReturn> buffLifeEffectMonster
+
+==== Monster change ====
 * monsters: <span style="color: #FF4000">00000001</span>
 * level: <span style="color: #40BF00">01</span>
 * hp: <span style="color: #FFBF00">00000001</span>
@@ -195,9 +205,7 @@ Only if change monster:
 ** buff: <span style="color: #40BF00">00000001</span>
 ** buff level: <span style="color: #FF4000">01</span>
 
-item used <span style="color: #0000FF">01</span> (different of 0 if use item, then attack and monster change usage should not be used):
-
-Only if item used:
+==== Item change ====
 * on_current_monster: <span style="color: #FF4000">01</span> (01 yes, 00 no)
 * item: <span style="color: #40BF00">00000001</span>
 
