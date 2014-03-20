@@ -196,6 +196,7 @@ After send one of this case, depands on case number:
 * QList<LifeEffectReturn> buffLifeEffectMonster
 
 ==== Monster change ====
+* monster place: <span style="color: #7B00FF">01</span>
 * monsters: <span style="color: #FF4000">00000001</span>
 * level: <span style="color: #40BF00">01</span>
 * hp: <span style="color: #FFBF00">00000001</span>
