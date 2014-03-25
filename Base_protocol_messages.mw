@@ -448,6 +448,9 @@ Server -&gt; Client, remove player from map:
 
  <span style="color: #FF4000">0001</span> <span style="color: #BFBF40">2154</span>
 
+=== C9 ===
+Remove all other player on the border map: (Better than remove each id)
+
 = Reply =
 == Server &rarr; Client reply ==
 === Reply 020001 ===
