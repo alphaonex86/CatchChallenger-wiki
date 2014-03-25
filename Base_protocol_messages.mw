@@ -206,6 +206,12 @@
 | 
 | {{Yes}}
 | [[Base_protocol_messages#C8|Remove player from map]] '''''(Fast)'''''
+|-
+| style="background: #90ff90; color: black;" | C9
+| 
+| 
+| {{No}}
+| [[Base_protocol_messages#C9|Remove all other player on the border map]]
 |}
 
 = Reply =
