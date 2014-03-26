@@ -1,0 +1,21 @@
+Here your have the different algorihtm use into Catchchallenger for the visibility of player. Ordered by lower cpu usage to greater cpu usage.
+
+= Map visibility algorithm none =
+[[File:MapVisibilityAlgorithm-None.png]]
+
+The other player position is not send. No cpu cost for that's, no network usage. Used in '''single player''', in case of '''heavy load''', very '''weak network''' and in case of '''DDOS''' (in this case the chat should be disabled too).
+
+= Map visibility algorithm simple =
+[[File:MapVisibilityAlgorithm-Simple.png]]
+
+Only the player on the same map is send. Then the player near but out of the border is not show. Correct of very low end cpu, or '''when the bottom algorithm do too hight load'''. That's do '''average network usage'''.
+
+= Map visibility algorithm with border =
+[[File:MapVisibilityAlgorithm-WithBorder.png]]
+
+Show all player on current map and border map. That's do hight quality show. But do '''hight network usage'''.
+
+= Map visibility algorithm with border and range =
+[[File:MapVisibilityAlgorithm-WithBorderAndRange.png]]
+
+Show all player in range, include if is on the map border. Work with border to don't parse each player connected range. Do very '''minimal network usage''', but at cost of '''hight cpu usage'''.
