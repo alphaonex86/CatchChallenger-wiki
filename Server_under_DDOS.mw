@@ -6,10 +6,6 @@ You need apply this firewall rules with iptable under linux to limit the connect
 <pre>-A INPUT -m recent --name catchchallenger --rcheck --seconds 1 --hitcount 10 -p tcp -m tcp --dport 42489 -j DROP
 -A INPUT -m recent --name catchchallenger --remove
 -A INPUT -p tcp -m tcp --dport 42489 -m recent --name catchchallenger --set -j ACCEPT</pre>
-= Why DDOS all server level? =
-Because lower it's transport level. Only the server have the capacity to understand the message layer (how split and compose it) and then filter the message by seconds.
-
-That's allow to split the different message type and apply different limit. The move on the map is more frequent than chat message, store on warehouse, ...
 = Settings =
 == General case ==
 The settings to use:
@@ -18,22 +14,10 @@ The settings to use:
 * Disable all chat, to limit the '''cpu and bandwith'''
 * Enable datapack cache, to limit the '''cpu and hdd''' usage
 * Put the compression to none, to limit the '''cpu''' but '''grow the bandwith'''
-* Use http datapack cache if you can, to limit the '''cpu, bandwith and hdd''' usage
-* Disable ''Automatic account creation'' to prevent continuous more entry into the database, to limit the '''cpu, bandwith, space and hdd''' usage
-* reemit: use '''more bandwidth''' because reemit the player move and '''improve the cpu''' performance because it send the same composed packet to all player
-
+* Use http datapack cache if you can, , to limit the '''cpu, bandwith and hdd''' usage
 == Upload saturated ==
 * All above
 * Uncheck send player number
 * Force the seed
 * Don't send pseudo
 * Enable zlib/xz compression if the usage cpu is low (<10%)
-
-== See ==
-See: [http://catchchallenger.first-world.info/wiki/Technologies_used#Anti_DDOS_and_cost_infrastructure Anti DDOS and cost infrastructure]
-
-= Botnet needed =
-* To sature my 2Mbps connexion you need 2 000 bots
-* To sature one 100Mbps server you need 100 000 bots
-* To sature one 1000Mbps server you need 1 000 000 bots
-* To sature 1000 vps around the world at 100Mbps by vps you need 1 000 000 000 bots
