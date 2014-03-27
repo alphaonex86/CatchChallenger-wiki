@@ -1,0 +1,23 @@
+If your server is under DDOS, apply this rules:
+
+= Limit the connect =
+You need apply this firewall rules with iptable under linux to limit the connect on the server, only 1/10s by ip.
+
+<pre>-A INPUT -m recent --name catchchallenger --rcheck --seconds 1 --hitcount 10 -p tcp -m tcp --dport 42489 -j DROP
+-A INPUT -m recent --name catchchallenger --remove
+-A INPUT -p tcp -m tcp --dport 42489 -m recent --name catchchallenger --set -j ACCEPT</pre>
+= Settings =
+== General case ==
+The settings to use:
+* Customise your server login message to inform your user
+* Use the visibility none, to limit the '''cpu and bandwith'''
+* Disable all chat, to limit the '''cpu and bandwith'''
+* Enable datapack cache, to limit the '''cpu and hdd''' usage
+* Put the compression to none, to limit the '''cpu''' but '''grow the bandwith'''
+* Use http datapack cache if you can, , to limit the '''cpu, bandwith and hdd''' usage
+== Upload saturated ==
+* All above
+* Uncheck send player number
+* Force the seed
+* Don't send pseudo
+* Enable zlib/xz compression if the usage cpu is low (<10%)
