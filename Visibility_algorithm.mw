@@ -3,7 +3,7 @@ Here your have the different algorihtm use into Catchchallenger for the visibili
 = Map visibility algorithm none =
 [[File:MapVisibilityAlgorithm-None.png]]
 
-The other player position is not send. No cpu cost for that's, no network usage. Used in '''single player''', in case of '''heavy load''', very '''weak network''' and in case of '''DDOS''' (in this case the chat should be disabled too).
+The other player position is not send. No cpu cost for that's, no network usage. Used in '''single player''', in case of '''heavy load''', very '''weak network''' and in case of '''DDOS''' (see [[Server under DDOS]]).
 
 = Map visibility algorithm simple =
 [[File:MapVisibilityAlgorithm-Simple.png]]
