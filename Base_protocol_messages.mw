@@ -402,6 +402,10 @@ orientation def:
 === C2000C ===
 Server -&gt; Client: datapck file number: <span style="color: #FF4000">00000000</span>,  datapck file size: <span style="color: #40BF00">00000000</span>
 
+=== C2000D ===
+Server -&gt; Client: <span style="color: #40BF00">&quot;http://server/datapack/&quot;</span> (UTF8 + 8Bits of header size), file liste size: <span style="color: #FF4000">01</span><span style="color: #40BF00">&quot;file name&quot;</span> (UTF8 + 8Bits of header size), last modification time stamps: <span style="color: #FF4000">00000000 4ED3C1D3</span>
+ <span style="color: #FFBF00">12</span><span style="color: #40BF00">626164206c6f67696e</span><span style="color: #FF4000">01</span><span style="color: #FFBF00">12</span><span style="color: #40BF00">626164206c6f67696e</span><span style="color: #FF4000">00000000 4ED3C1D3</span>
+
 === C3 ===
 Server -&gt; Client: number of player connected: {{Number_of_player}}
  <span style="color: #FF4000">0002</span>
