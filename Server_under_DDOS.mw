@@ -14,7 +14,9 @@ The settings to use:
 * Disable all chat, to limit the '''cpu and bandwith'''
 * Enable datapack cache, to limit the '''cpu and hdd''' usage
 * Put the compression to none, to limit the '''cpu''' but '''grow the bandwith'''
-* Use http datapack cache if you can, , to limit the '''cpu, bandwith and hdd''' usage
+* Use http datapack cache if you can, to limit the '''cpu, bandwith and hdd''' usage
+* Disable ''Automatic account creation'' to prevent continuous more entry into the database, to limit the '''cpu, bandwith, space and hdd''' usage
+
 == Upload saturated ==
 * All above
 * Uncheck send player number
