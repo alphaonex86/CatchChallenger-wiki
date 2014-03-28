@@ -23,7 +23,6 @@ The tpc/ip protocol split the packet into lot of small packet. Warning, you need
 The size is not calculated on variable into message, because it will be call lot of, to recompose the message, then big lost of performance.
 
 = Messages type =
-{{Note}}'''The server send at connexion 01 if use ssl, 00 if don't use ssl'''
 * [[Base protocol messages]]
 * [[Battle messages]]
 * [[Inventory messages]]
