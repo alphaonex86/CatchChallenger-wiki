@@ -266,6 +266,7 @@
 = Details =
 == Client &rarr; Server with reply ==
 === 020001 ===
+{{Note}}'''The server send at connexion 01 if use ssl, 00 if don't use ssl'''
 {{Note}}This first packet is send as raw + big (see [[General_protocol#Messages_composition|Messages composition]])
 
 At the connection, send the protocol supported, <span style="font-weight: bold">before all!</span><br />query type: query number: <span style="font-style: italic"><span style="color: #40BF00">&quot;catchchallenger-0.0.0.1&quot;</span></span>
