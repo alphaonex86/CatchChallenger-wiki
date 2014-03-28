@@ -1,3 +1,5 @@
+= Core i5 750 =
+== 0.1 ==
 Actual performance on '''19 April 2012''' is with benchmark of '''200''' with GUI:
 * Ram used under linux: 22MB
 * '''Cpu: 4%''' on core i5 750
@@ -11,3 +13,16 @@ Actual performance on '''20 April 2012''' is with benchmark of '''400''' with GU
 Pass 100% of cpu -> 70% when I uncomment into the .pro file:
  QMAKE_CFLAGS="-pipe -march=native -O2 -fomit-frame-pointer -floop-block -floop-interchange -fgraphite -funroll-loops"
  QMAKE_CXXFLAGS="-pipe -march=native -O2 -fomit-frame-pointer -floop-block -floop-interchange -fgraphite -funroll-loops"
+
+= Cubox i pro =
+== 0.4 ==
+At '''200 player on the unique map''' with '''full visibility''', with move and few bit flooded chat, '''in debug''' (Qt and program):
+* '''30B/s client''' -> server, 200KB/s server -> client (du to bad visiblity settings for the benchmark, '''100B/s server -> client with correct settings''')
+* '''32% of cpu usage on quad core'''
+Where is the cpu usage:
+* 75% into ssl, maybe due to missing kernel crypto api
+* 22% into the event parsing
+* '''1% into the program'''
+It use '''22MB of memory for all player''' ('''110KB by player''' including message decoding variable, ssl layer, ...) + 22MB as base, total = 44MB.
+
+All is very fast and don't need greater server.
