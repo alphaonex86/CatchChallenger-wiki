@@ -113,6 +113,8 @@ sp="0", can't be learn naturaly
 <pre><!-- default:
 ratio_gender="50%"
 catch_rate="100"
+attack_level="1"
+if level is 0, it's base attack
 luck is in percent
 evolution type can be: level (attribute level is the level), item (attribute level is the item id), trade (attribute level is useless)
 -->
@@ -123,7 +125,6 @@ evolution type can be: level (attribute level is the level), item (attribute lev
 	<monster id="1" type="fire" height="0.76m" weight="45kg" ratio_gender="50%" catch_rate="100" egg_step="5000" xp_max="300"
 		hp="300" attack="360" defense="280" special_attack="380" special_defense="340" speed="240" give_sp="100" give_xp="110" pow="1.2">
 		<attack_list>
-			<!-- if level is 0, it's base attack, default: attack_level="1" -->
 			<attack level="0" id="3" />
 			<attack level="0" id="4" />
 			<attack level="8" id="1" attack_level="1"/>
@@ -149,9 +150,9 @@ evolution type can be: level (attribute level is the level), item (attribute lev
 	<monster id="2" type="fly" type2="earth" height="0.2m" weight="2kg" ratio_gender="50%" catch_rate="100" egg_step="5000" xp_max="300"
 	hp="260" attack="280" defense="300" special_attack="280" special_defense="320" speed="360" give_sp="100" give_xp="100" pow="1.2">
 		<attack_list>
-			<!-- if level is 0, it's base attack, default: attack_level="1" -->
 			<attack level="0" id="3" />
-			<attack level="8" id="4" attack_level="1" />
+			<attack level="8" id="4" attack_level="2" />
+			<attack byitem="59" id="4" attack_level="2" />
 		</attack_list>	
     <drops>
 			<drop item="3001" quantity_min="1" quantity_max="1" luck="10" />
