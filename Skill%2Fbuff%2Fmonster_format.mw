@@ -127,7 +127,8 @@ evolution type can be: level (attribute level is the level), item (attribute lev
 		<attack_list>
 			<attack level="0" id="3" />
 			<attack level="0" id="4" />
-			<attack level="8" id="1" attack_level="1"/>
+			<attack level="8" id="1" />
+			<attack level="16" id="1" attack_level="2" />
 		</attack_list>
 		<drops>
 			<drop item="2003" quantity_min="1" quantity_max="3" luck="20" />
