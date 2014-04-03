@@ -1,3 +1,83 @@
+= Grab from site =
+To grap from site (bulbapedia) I use this command, and have only the file to parse:
+<pre>-qw%e0C2%P0xs0u1j0z%s%uN0%I0p7DdKc8T6R2H0%kQo0A50000%c10#L99999999%f#f -F "Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.1) Gecko/20020826" -%F " " -%l "en, *" http://bulbapedia.bulbagarden.net/wiki/Main_Page -O1 "C:\\Users\\user\\Desktop\\sites\\bulpedia-only-html" -*.png -*.gif -*.jpg -*.css -*.js -ad.doubleclick.net/* -mime:application/foobar -*cdn.* -*/User:* -*/Utilisateur:* -*action%3dhistory* -*oldid%3d* -*action%3dedit* -*action%3dinfo* -*/Discussion* -*title%3dDiscussion:* -*al:Page_au_hasard* -*/Talk* -*title%3dTalk:* -*Special:Random* -*/Special:* -*/Sp*cial:* -*printable%3dyes* -*/archive/* -*archives.* -*/Fichier:* -*/File:* -*search*</pre>
+Or this config:
+<pre>Near=0
+Test=0
+ParseAll=0
+HTMLFirst=1
+Cache=0
+NoRecatch=0
+Dos=2
+Index=1
+WordIndex=0
+Log=0
+RemoveTimeout=0
+RemoveRateout=0
+KeepAlive=1
+FollowRobotsTxt=0
+NoErrorPages=1
+NoExternalPages=1
+NoPwdInPages=0
+NoQueryStrings=1
+NoPurgeOldFiles=0
+Cookies=1
+CheckType=1
+ParseJava=0
+HTTP10=0
+TolerantRequests=0
+UpdateHack=1
+URLHack=1
+StoreAllInCache=0
+LogType=1
+UseHTTPProxyForFTP=1
+Build=0
+PrimaryScan=1
+Travel=1
+GlobalTravel=0
+RewriteLinks=0
+BuildString=
+Category=
+MaxHtml=
+MaxOther=
+MaxAll=
+MaxWait=
+Sockets=6
+Retry=2
+MaxTime=
+TimeOut=6
+RateOut=
+UserID=Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.1) Gecko/20020826
+Footer= 
+MaxRate=50000
+WildCardFilters=-*.png -*.gif -*.jpg -*.css -*.js -ad.doubleclick.net/* -mime:application/foobar -*cdn.* -*/User:* -*/Utilisateur:* -*action%%3dhistory* -*oldid%%3d* -*action%%3dedit* -*action%%3dinfo* -*/Discussion* -*title%%3dDiscussion:* -*al:Page_au_hasard* -*/Talk* -*title%%3dTalk:* -*Special:Random* -*/Special:* -*/Sp*cial:* -*printable%%3dyes* -*/archive/* -*archives.* -*/Fichier:* -*/File:* -*search*
+Proxy=
+Port=
+Depth=
+ExtDepth=0
+MaxConn=20
+MaxLinks=99999999
+MIMEDefsExt1=
+MIMEDefsExt2=
+MIMEDefsExt3=
+MIMEDefsExt4=
+MIMEDefsExt5=
+MIMEDefsExt6=
+MIMEDefsExt7=
+MIMEDefsExt8=
+MIMEDefsMime1=
+MIMEDefsMime2=
+MIMEDefsMime3=
+MIMEDefsMime4=
+MIMEDefsMime5=
+MIMEDefsMime6=
+MIMEDefsMime7=
+MIMEDefsMime8=
+CurrentUrl=http://bulbapedia.bulbagarden.net/wiki/Main_Page%0d%0a%0d%0a
+CurrentAction=0
+CurrentURLList=
+</pre>
+
 = Map visualiser =
 This tools is developped for catchchallenger by [[User:Alpha_one_x86]] (catchchallenger).
 
