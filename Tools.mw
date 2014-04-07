@@ -1,6 +1,6 @@
 = Grab from site =
 To grap from site (bulbapedia) I use this command, and have only the file to parse:
-<pre>-qw%e0C2%P0xs0u1j0z%s%uN0%I0p7DdKc8T6R2H0%kQo0A50000%c10#L99999999%f#f -F "Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.1) Gecko/20020826" -%F " " -%l "en, *" http://bulbapedia.bulbagarden.net/wiki/Main_Page -O1 "C:\\Users\\user\\Desktop\\sites\\bulpedia-only-html" -*.png -*.gif -*.jpg -*.css -*.js -ad.doubleclick.net/* -mime:application/foobar -*cdn.* -*/User:* -*/Utilisateur:* -*action%3dhistory* -*oldid%3d* -*action%3dedit* -*action%3dinfo* -*/Discussion* -*title%3dDiscussion:* -*al:Page_au_hasard* -*/Talk* -*title%3dTalk:* -*Special:Random* -*/Special:* -*/Special_* -*/Sp*cial:* -*printable%3dyes* -*/archive/* -*archives.* -*/Fichier:* -*/File:* -*search*</pre>
+<pre>-qw%e0C2%P0xs0u1j0z%s%uN0%I0p7DdKc8T6R2H0%kQo0A50000%c10#L99999999%f#f -F "Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.1) Gecko/20020826" -%F " " -%l "en, *" http://bulbapedia.bulbagarden.net/wiki/Main_Page -O1 "C:\\Users\\user\\Desktop\\sites\\bulpedia-only-html" -*.png -*.gif -*.jpg -*.css -*.js -ad.doubleclick.net/* -mime:application/foobar -*cdn.* -*/User:* -*/Utilisateur:* -*action%3dhistory* -*oldid%3d* -*action%3dedit* -*action%3dinfo* -*/Discussion* -*title%3dDiscussion:* -*al:Page_au_hasard* -*/Talk* -*title%3dTalk:* -*Special:Random* -*/Special:* -*/Special* -*/Special_* -*/Sp*cial:* -*printable%3dyes* -*/archive/* -*archives.* -*/Fichier:* -*/File:* -*search*</pre>
 Or this config:
 <pre>Near=0
 Test=0
@@ -50,7 +50,7 @@ RateOut=
 UserID=Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.1) Gecko/20020826
 Footer= 
 MaxRate=50000
-WildCardFilters=-*.png -*.gif -*.jpg -*.css -*.js -ad.doubleclick.net/* -mime:application/foobar -*cdn.* -*/User:* -*/Utilisateur:* -*action%%3dhistory* -*oldid%%3d* -*action%%3dedit* -*action%%3dinfo* -*/Discussion* -*title%%3dDiscussion:* -*al:Page_au_hasard* -*/Talk* -*title%%3dTalk:* -*Special:Random* -*/Special:* -*/Special_* -*/Sp*cial:* -*printable%%3dyes* -*/archive/* -*archives.* -*/Fichier:* -*/File:* -*search*
+WildCardFilters=-*.png -*.gif -*.jpg -*.css -*.js -ad.doubleclick.net/* -mime:application/foobar -*cdn.* -*/User:* -*/Utilisateur:* -*action%%3dhistory* -*oldid%%3d* -*action%%3dedit* -*action%%3dinfo* -*/Discussion* -*title%%3dDiscussion:* -*al:Page_au_hasard* -*/Talk* -*title%%3dTalk:* -*Special:Random* -*/Special:* -*/Special* -*/Special_* -*/Sp*cial:* -*printable%%3dyes* -*/archive/* -*archives.* -*/Fichier:* -*/File:* -*search*
 Proxy=
 Port=
 Depth=
