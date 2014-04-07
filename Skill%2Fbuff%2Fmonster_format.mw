@@ -4,7 +4,7 @@ This can be as "effect" balise attribute or "level" balise attribute
 capture_bonus: if not specified: 1
 duration: if not specified: ThisFight, can be: ThisFight, NumberOfTurn (with attribute durationNumberOfTurn more), Always
 -->
-<list>
+<buffs>
 	<buff id="1">
 		<name lang="en">Burn</name>
 		<name lang="fr">Brulé</name>
@@ -42,7 +42,7 @@ duration: if not specified: ThisFight, can be: ThisFight, NumberOfTurn (with att
 			</level>
 		</effect>
 	</buff>
-</list></pre>
+</buffs></pre>
 
 = Skill =
 <pre><!-- Default:
@@ -52,7 +52,7 @@ applyOn can be: aloneEnemy, themself, allEnemy, allAlly
 sp="0", can't be learn naturaly
 -->
 
-<list>
+<skills>
 	<skill id="1" success="90%">
 		<name lang="en">Fire punch</name>
 		<name lang="fr">Point feu</name>
@@ -107,7 +107,7 @@ sp="0", can't be learn naturaly
 			</level>
 		</effect>
 	</skill>
-</list></pre>
+</skills></pre>
 
 = Monsters =
 <pre><!-- default:
@@ -118,7 +118,7 @@ if level is 0, it's base attack
 luck is in percent
 evolution type can be: level (attribute level is the level), item (attribute level is the item id), trade (attribute level is useless)
 -->
-<list>
+<monsters>
 
 	<!-- ratio_gender: 0% only male, 100% only female, -1 no gender
 	second line is stat at level 100-->
@@ -163,4 +163,4 @@ evolution type can be: level (attribute level is the level), item (attribute lev
 		<description lang="en">Elofly</description>
 		<description lang="fr">Elofly</description>
 	</monster>
-</list></pre>
+</monsters></pre>
