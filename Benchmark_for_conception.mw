@@ -320,4 +320,4 @@ while(index<objectlist.size())
 | Case 2
 | style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 2,5%
 |}
-That's mean: '''8,4x performance improvement'''
+That's mean: '''8,4x performance improvement''' for only 600 objet... imagine with 65535 object (then player) as I plan...
