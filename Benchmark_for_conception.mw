@@ -297,3 +297,27 @@ Test:
 | style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 9313ms
 |}
 Using prepared string, the loading datapack of the datapack (mostly Xml parsing time + file access time) '''1560ms -> 742ms''' (https://github.com/alphaonex86/CatchChallenger/commit/4eeece9d5169d125fcfdbc2126629cdd2a75fe1c).
+
+= Send to all object =
+* Case 1: 600x <pre>connect(timer to object)</pre> to send to all object
+* Case 2: connect(timer to object with QList), into object with QList do:
+<pre>
+int index=0;
+while(index<objectlist.size())
+{
+    objectlist.at(index)->call();
+    index++;
+}
+</pre>
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! % of Cpu
+|-
+| Case 1
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 21%
+|-
+| Case 2
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 2,5%
+|}
+That's mean: '''8,4x performance improvement'''
