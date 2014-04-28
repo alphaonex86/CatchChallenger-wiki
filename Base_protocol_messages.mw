@@ -100,6 +100,12 @@
 | XX
 | {{Yes}}
 | [[Base_protocol_messages#790001|Teleport the player]]
+|-
+| style="background: #90ff90; color: black;" | 79
+| style="background: #ffcc00; color: black;" | 0002
+| XX
+| {{Yes}}
+| [[Base_protocol_messages#790002|Event change]]
 |}
 
 == Server &rarr; Client without reply ==
