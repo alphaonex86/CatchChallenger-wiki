@@ -485,6 +485,8 @@ If all is good:
 * Next city capture in second: <span style="color: #FFBF00">00000012</span>
 * City capture frequency: <span style="color: #7B00FF">01</span> (week, <span style="color: #7B00FF">02</span> for month)
 * maxVisiblePlayerAtSameTime: <span style="color: #FFBF00">0009</span>
+* waitBeforeConnectAfterKick: <span style="color: #FF4000">00000014</span> (20s)
+* Events not with default value list size <span style="color: #7B00FF">00</span>
 * forceClientToSendAtBorder: <span style="color: #FFBF00">00</span> (0 == not forced)
 * forcedSpeed: <span style="color: #40BF00">C2</span> (0 == not forced)
 * dontSendPseudo: <span style="color: #FFBF00">00</span>
