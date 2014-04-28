@@ -352,6 +352,13 @@ Server -&gt; Client, teleport the current player on the map:
 
 {{Direction_definition}}
 
+=== 790002 ===
+Server -&gt; Client, event change ('''Take care: you have time limit to respond'''):
+* event id: <span style="color: #FFBF00">01</span> (day cycle)
+* value id: <span style="color: #FF4000">02</span> (night)
+
+ <span style="color: #FFBF00">01</span><span style="color: #FF4000">02</span>
+
 == Server &rarr; Client without reply ==
 
 === C0 ===
