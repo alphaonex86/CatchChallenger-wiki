@@ -551,6 +551,9 @@ If all is good:
 * allow list: <span style="color: #40BF00">"clan"</span>
 * clan id: <span style="color: #40BFFF">00000064</span>
 * clan_leader: <span style="color: #40BFFF">01</span>
+* Events not with default value list size <span style="color: #7B00FF">01</span>
+** Event id: <span style="color: #BFBF40">01</span>
+** Value id: <span style="color: #40BF00">02</span>
 * cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
 * warehouse cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
 * bitcoin (double): <span style="color: #FF00FF">40047ae147ae147b</span>
