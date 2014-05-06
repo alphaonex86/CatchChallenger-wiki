@@ -3,6 +3,10 @@ As usual, inform you about how I2P work. What can reveal your identity, ...
 = Server =
 == Protection ==
 Mount your CatchChallenger I2P server under virtual machine '''on encrypted volume'''. To prevent direct access reveal you host an CatchChallenger server. That's mean, '''you can't start up automatically the server'''. You need start up manually and '''give the prompted password'''. Prevent physical access. Prevent bug or security break of your server. Grsec + Pax for linux kernel with option '''PAX_MEMORY_SANITIZE''' is good idea on host and guest.
+
+== Privacity ==
+It's better if your service is hosted on server without access to the net. A second server will go connect on that's to provide the I2P gateway. As this, in case of hack of your service, the hacker can't access to the net to found the ip.
+
 == CatchChallenger ==
 * Listen on 127.0.0.1 port 42489
 * Auto-create account
