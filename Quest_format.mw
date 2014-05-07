@@ -21,7 +21,7 @@ if(currentQuestStep()==2)
 
 == definition.xml ==
 Is the formal definition interpreted by the server and client to know at what step you are, how pass to the next step, if is repeatable, ... you have too the format text to display step text when you select the quest into the quests list to remember what you need do.
-<pre><quest repeatable="yes" bot="1002">
+<pre><quest repeatable="yes" bot="1002" autostep="no">
 	<name lang="en"><![CDATA[Farm your success]]></name>
 	<requirements>
 		<quest id="1" />
