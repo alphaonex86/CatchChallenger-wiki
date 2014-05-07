@@ -33,7 +33,7 @@ Is the formal definition interpreted by the server and client to know at what st
 	<step id="2" bot="4"><!-- just talk with a bot -->
 		<text lang="en"><![CDATA[Talk to the reaper]]></text>
 	</step>
-	<rewards>
+	<rewards show="true">
 		<item id="3" quantity="2" />
 		<reputation type="empire" point="-1" />
 	</rewards>
