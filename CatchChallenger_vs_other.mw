@@ -97,7 +97,7 @@ This is just for me, to have comparaison.
 |-
 | CatchChallenger
 | style="background: #90ff90; color: black;" | 400
-| style="background: #90ff90; color: black;" | 100 000
+| style="background: #90ff90; color: black;" | 65535 (1)
 | style="background: #90ff90; color: black;" | 0%
 | 5MB (not yet finished)
 | 10MB (not yet finished)
@@ -146,6 +146,8 @@ This is just for me, to have comparaison.
 |}
 {{note}}The max player is see on correct configuration, it's the benchmarked value on core i5 750, 4GB of memory.
 Here the important is the coefficient director between the idle and 100 players.
+
+1) 16Bits, performance will depends of the settings
 
 = Protocol =
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
