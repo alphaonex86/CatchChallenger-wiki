@@ -321,3 +321,10 @@ while(index<objectlist.size())
 | style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 2,5%
 |}
 That's mean: '''8,4x performance improvement''' for only 600 objet... imagine with 65535 object (then player) as I plan...
+
+= Ssl vs Clear =
+I have do this comparison with: https://github.com/alphaonex86/CatchChallenger/tree/master/tools/epoll-server/epoll-ssl-server-skeleton with typical small packet use in CatchChallenger
+
+It's '''24x more slow with Ssl than clear'''. Mostly because it's small packet (<10 bytes) sended with big interval (>1s), the OS can't group it, then need do lot of syscall. The ssl is not needed in this case:
+* Use over crypted network like I2P or ipsec (I have not found this informations for TOR)
+* Don't need security (don't use crypto currency) and need greate performance (embed device)
