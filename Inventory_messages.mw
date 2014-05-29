@@ -401,9 +401,9 @@ Buy into the market, type: <span style="color: #A600FF">01</span> (01 object, 02
 
 === 100012 ===
 Put the object/monster on the market: <span style="color: #A600FF">01</span> (01 object, 02 monster), if object:
-* Sell object: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>, bitcoin (double): <span style="color: #FF00FF">40047ae147ae147b</span>
+* Sell object: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
 Or if monster:
-* Sell monster, monster id: <span style="color: #FFBF00">00000001</span>, price: <span style="color: #FF4000">00000000</span>, bitcoin (double): <span style="color: #FF00FF">40047ae147ae147b</span>
+* Sell monster, monster id: <span style="color: #FFBF00">00000001</span>, price: <span style="color: #FF4000">00000000</span>
 
 [[Inventory_messages#Reply_100012|See reply to this query]]
 
@@ -594,16 +594,16 @@ The reply can be one of this:
 * <span style="color: #40BFFF">04</span> Price have changed
 
 === Reply 100010 ===
-Price into the market: <span style="color: #FF4000">0000000000000003</span>, bitcoin (double): <span style="color: #FF00FF">40047ae147ae147b</span>
+Price into the market: <span style="color: #FF4000">0000000000000003</span>
 
 List of object, size list <span style="color: #A600FF">00000001</span>:
-* Market object id: <span style="color: #A600FF">00000001</span>, object id: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>, bitcoin (double): <span style="color: #FF00FF">40047ae147ae147b</span>
+* Market object id: <span style="color: #A600FF">00000001</span>, object id: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
 List of monster, size list <span style="color: #A600FF">00000001</span>:
-* Monster id: <span style="color: #FFBF00">00000001</span>, monster: <span style="color: #40BF00">00000001</span>, level: <span style="color: #FF4000">03</span>, price: <span style="color: #FF4000">00000003</span>, bitcoin (double): <span style="color: #FF00FF">40047ae147ae147b</span>
+* Monster id: <span style="color: #FFBF00">00000001</span>, monster: <span style="color: #40BF00">00000001</span>, level: <span style="color: #FF4000">03</span>, price: <span style="color: #FF4000">00000003</span>
 List of onwed object, size list <span style="color: #A600FF">00000001</span>:
-* Market object id: <span style="color: #A600FF">00000001</span>, object id: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>, bitcoin (double): <span style="color: #FF00FF">40047ae147ae147b</span>
+* Market object id: <span style="color: #A600FF">00000001</span>, object id: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
 List of onwed monster, size list <span style="color: #A600FF">00000001</span>:
-* Monster id: <span style="color: #FFBF00">00000001</span>, monster: <span style="color: #40BF00">00000001</span>, level: <span style="color: #FF4000">03</span>, price: <span style="color: #FF4000">00000003</span>, bitcoin (double): <span style="color: #FF00FF">40047ae147ae147b</span>
+* Monster id: <span style="color: #FFBF00">00000001</span>, monster: <span style="color: #40BF00">00000001</span>, level: <span style="color: #FF4000">03</span>, price: <span style="color: #FF4000">00000003</span>
 
 === Reply 100011 ===
 The reply can be one of this:
@@ -618,7 +618,7 @@ The reply can be one of this:
 * <span style="color: #40BFFF">02</span> Put failed
 
 === Reply 100013 ===
-Cash returned: <span style="color: #40BFFF">0000000000000001</span>, bitcoin (double): <span style="color: #FF00FF">40047ae147ae147b</span>
+Cash returned: <span style="color: #40BFFF">0000000000000001</span>
 
 === Reply 100014 ===
 The reply can be one of this:
