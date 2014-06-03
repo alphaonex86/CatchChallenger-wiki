@@ -23,6 +23,7 @@ The tpc/ip protocol split the packet into lot of small packet. Warning, you need
 The size is not calculated on variable into message, because it will be call lot of, to recompose the message, then big lost of performance.
 
 = Messages type =
+{{note}}: The first byte send by server is 0x00 to say no encrypted or 0x01 to say encrypted by Ssl
 * [[Base protocol messages]]
 * [[Battle messages]]
 * [[Inventory messages]]
