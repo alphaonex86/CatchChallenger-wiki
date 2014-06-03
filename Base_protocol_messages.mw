@@ -525,6 +525,7 @@ If all is good:
 ** Played time: <span style="color: #40BFFF">00000000</span>
 ** Last connect: <span style="color: #40BFFF">00000000</span>
 ** Map: <span style="color: #40BF00">&quot;world/0.0.tmx&quot;</span>
+* Mirror to use: &quot;<span style="color: #40BF00">http://serverprimary/datapack/;http://serversecondary/datapack/</span>&quot;, if don't empty, don't send datapack query, you have the datpack list at http://serverprimary/datapack/datapack-list.txt test without prxy and with proxy is set. Test the next server, ...
 
 After the server will send tp command to set the first position.
 
