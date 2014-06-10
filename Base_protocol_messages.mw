@@ -550,11 +550,8 @@ If something is wrong:
 <span style="color: #FF4000">02</span>
 
 === Reply 020005 ===
-<span style="color: #FF4000">01</span> (something is wrong), <span style="color: #40BF00">&quot;bad login&quot;</span> (or other server error)
- <span style="color: #FF4000">01</span><span style="color: #FFBF00">00000012</span><span style="color: #40BF00">0062006100640020006c006f00670069006e</span>
-
 If all is good:
-* <span style="color: #FF4000">02</span> (all is good)
+* <span style="color: #FF4000">01</span> (all is good)
 * Character id: {{Player_id}} (unique generated id on the map)
 * pseudo: <span style="color: #40BF00">"toto"</span> (allow is string separated by ";")
 * allow list: <span style="color: #40BF00">"clan"</span>
@@ -616,6 +613,12 @@ If all is good:
 After the server will send tp command to set the first position.
 
 This reply is compressed.
+
+Wrong, case possible:
+* <span style="color: #FF4000">02</span> (Character not found)
+* <span style="color: #FF4000">03</span> (Already logged)
+* <span style="color: #FF4000">04</span> (Not free id to login)
+* <span style="color: #FF4000">05</span> (Server internal problem)
 
 === Reply 02000C ===
 The reply is '''BITS''', put 0 bits if needed to do a byte.
