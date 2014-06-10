@@ -541,7 +541,7 @@ The reply is the character id: <span style="color: #BFBF40">00000001</span>
 
 === Reply 020004 ===
 If all is good:
-* <span style="color: #FF4000">01</span>
+<span style="color: #FF4000">01</span>
 
 If something is wrong:
 <span style="color: #FF4000">02</span>
