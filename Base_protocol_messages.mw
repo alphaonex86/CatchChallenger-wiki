@@ -535,9 +535,9 @@ After the server will send tp command to set the first position.
 This reply is compressed.
 
 === Reply 020003 ===
-The reply is the character id: <span style="color: #BFBF40">00000001</span>
+Return code: <span style="color: #40BFBF">00</span> (00 = success, 01 = pseudo already taken, 02 = other)
 
-Return <span style="color: #BFBF40">00000000</span> if failed, mostly due to pseudo already taken.
+The reply is the character id: <span style="color: #BFBF40">00000001</span>
 
 === Reply 020004 ===
 <span style="color: #FF4000">01</span> (something is wrong), <span style="color: #40BF00">&quot;Already in deleting&quot;</span> (or other server error)
