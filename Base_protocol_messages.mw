@@ -617,8 +617,7 @@ This reply is compressed.
 Wrong, case possible:
 * <span style="color: #FF4000">02</span> (Character not found)
 * <span style="color: #FF4000">03</span> (Already logged)
-* <span style="color: #FF4000">04</span> (Not free id to login)
-* <span style="color: #FF4000">05</span> (Server internal problem)
+* <span style="color: #FF4000">04</span> (Server internal problem)
 
 === Reply 02000C ===
 The reply is '''BITS''', put 0 bits if needed to do a byte.
