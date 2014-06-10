@@ -493,11 +493,8 @@ Remove all other player on the border map: (Better than remove each id)
 {{Note}}After this, all communication is into the packet size mode send by the protocol.
 
 === Reply 020002 ===
-<span style="color: #FF4000">01</span> (something is wrong), <span style="color: #40BF00">&quot;bad login&quot;</span> (or other server error)
- <span style="color: #FF4000">01</span><span style="color: #FFBF00">00000012</span><span style="color: #40BF00">0062006100640020006c006f00670069006e</span>
-
 If all is good:
-* <span style="color: #FF4000">02</span> (all is good)
+* <span style="color: #FF4000">01</span> (all is good)
 * max player: <span style="color: #40BF00">0064</span> (then 100 in decimal) -> this define if the players id is defined on 16Bits ('''unknown max player at this point''', for the client at the startup)
 * Next city capture in second: <span style="color: #FFBF00">00000012</span>
 * City capture frequency: <span style="color: #7B00FF">01</span> (week, <span style="color: #7B00FF">02</span> for month)
@@ -528,6 +525,12 @@ If all is good:
 ** Played time: <span style="color: #40BFFF">00000000</span>
 ** Last connect: <span style="color: #40BFFF">00000000</span>
 ** Map: <span style="color: #40BF00">&quot;world/0.0.tmx&quot;</span>
+
+If something is wrong, the possible return code are:
+* <span style="color: #FF4000">02</span> (Bad login)
+* <span style="color: #FF4000">03</span> (Wrong login/pass)
+* <span style="color: #FF4000">04</span> (Server internal error)
+* <span style="color: #FF4000">05</span> (Can't create character and don't have character)
 
 
 After the server will send tp command to set the first position.
