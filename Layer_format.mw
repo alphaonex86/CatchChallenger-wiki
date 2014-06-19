@@ -1,0 +1,15 @@
+= map/layers.xml =
+<pre><!-- Can show different monster if you want, depanding of the object use, only with type="actionOn"  -->
+<layers>
+    <monstersCollision monsterType="cave" background="fight/cave/" type="walkOn">
+        <event id="day" value="night" monsterType="caveNight;cave"/>
+    </monstersCollision>
+    <monstersCollision monsterType="grass" background="fight/grass/" layer="Grass" type="walkOn">
+        <event id="day" value="night" monsterType="grassNight;grass"/>
+    </monstersCollision>
+    <monstersCollision monsterType="water" background="fight/water/" layer="Water" type="walkOn" item="135" tile="swim"/>
+    <monstersCollision monsterType="water" background="fight/water/" layer="Water" type="actionOn" item="97" tile="fish"/>
+    <monstersCollision monsterType="water" background="fight/water/" layer="Water" type="actionOn" item="98" tile="fish"/>
+    <monstersCollision monsterType="water" background="fight/water/" layer="Water" type="actionOn" item="99" tile="fish"/>
+</layers>
+</pre>
