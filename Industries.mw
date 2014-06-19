@@ -15,8 +15,8 @@
 
 == industries/* ==
 <pre><industries>
-	<industry id="999" time="360" cycletobefull="4">
+	<industrialrecipe id="999" time="360" cycletobefull="4">
 		<ressource id="1" quantity="2" />
 		<product id="2" quantity="2" />
-	</industry>
+	</industrialrecipe>
 </industries></pre>
