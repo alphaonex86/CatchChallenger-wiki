@@ -14,13 +14,13 @@
 | 
 | XX
 | {{No}}
-| [[Base_protocol_messages#03|Protocol initialization]] '''''(Fast)'''''
+| [[Base_protocol_messages#03|Protocol initialization]] '''''(Fast, 1)'''''
 |-
 | style="background: #90ff90; color: black;" | 04
 | 
 | XX
 | {{No}}
-| [[Base_protocol_messages#04|Get first data and send the login]] '''''(Fast)'''''
+| [[Base_protocol_messages#04|Get first data and send the login]] '''''(Fast, 1)'''''
 |-
 | style="background: #90ff90; color: black;" | 02
 | style="background: #ffcc00; color: black;" | 0003
@@ -53,6 +53,7 @@
 | [[Base_protocol_messages#02000D|Clan action]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
+* 1) Fast to have good performance, to face to bruteforce, DDOS, ...
 
 == Client &rarr; Server without reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
