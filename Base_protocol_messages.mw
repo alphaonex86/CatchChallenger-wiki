@@ -14,13 +14,13 @@
 | 
 | XX
 | {{No}}
-| [[Base_protocol_messages#020001|Protocol initialization]] '''''(Fast)'''''
+| [[Base_protocol_messages#03|Protocol initialization]] '''''(Fast)'''''
 |-
 | style="background: #90ff90; color: black;" | 04
 | 
 | XX
 | {{No}}
-| [[Base_protocol_messages#020002|Get first data and send the login]] '''''(Fast)'''''
+| [[Base_protocol_messages#04|Get first data and send the login]] '''''(Fast)'''''
 |-
 | style="background: #90ff90; color: black;" | 02
 | style="background: #ffcc00; color: black;" | 0003
