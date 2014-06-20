@@ -287,7 +287,7 @@ Final result:
 [[Base_protocol_messages#Reply_03|See reply to this query]]
 
 === 04 ===
-Get the first position and direction, and send login sha512 and pass sha512:<br /><span style="color: #40BF00">be688838ca8686e5c90689bf2ab585cef1137c999b48c70b92f67a5c34dc15697b5d11c982ed6d71be1e1e7f7b4e0733884aa97c3f7a339a8ed03577cf74be09</span>, <span style="color: #FF0040">be688838ca8686e5c90689bf2ab585cef1137c999b48c70b92f67a5c34dc15697b5d11c982ed6d71be1e1e7f7b4e0733884aa97c3f7a339a8ed03577cf74be09</span><br />
+Get the first position and direction, and send login sha224 and pass sha224:<br /><span style="color: #40BF00">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span>, <span style="color: #FF0040">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span><br />
 
 [[Base_protocol_messages#Reply_04|See reply to this query]]
 
