@@ -287,7 +287,11 @@ Final result:
 [[Base_protocol_messages#Reply_03|See reply to this query]]
 
 === 04 ===
-Get the first position and direction, and send login sha224 and pass sha224:<br /><span style="color: #40BF00">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span>, <span style="color: #FF0040">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span><br />
+Get the first position and direction, and send:
+* sha224(login+/*salt*/"RtR3bm9Z1DFMfAC3")
+* sha224(pass+/*salt*/"AwjDvPIzfJPTTgHs")
+Then:
+  <span style="color: #40BF00">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span>, <span style="color: #FF0040">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span><br />
 
 [[Base_protocol_messages#Reply_04|See reply to this query]]
 
