@@ -297,7 +297,7 @@ Then:
 [[Base_protocol_messages#Reply_04|See reply to this query]]
 
 === 020003 ===
-Send the profile id: <span style="color: #FF0040">01</span>, pseudo <span style="color: #40BF00">"toto"</span>, skin id <span style="color: #FF0040">01</span>
+Send the profile id: <span style="color: #FF0040">01</span>, pseudo <span style="color: #40BF00">"toto"</span>, skin <span style="color: #40BF00">"skin"</span>
 
 [[Base_protocol_messages#Reply_020003|See reply to this query]]
 
