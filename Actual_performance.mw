@@ -30,6 +30,6 @@ All is very fast and don't need greater server.
 = Intel hawsell =
 == 0.5 ==
 Without SSL, without optimisation (need 0 copy optimisation).
-* 1% of cpu for 30 creation of charaters by seconds
-* 0% of cpu for 400 player moving on the map
-* 16 000 packets by seconds
+* '''1% of cpu for 30 creation/s''' of charaters
+* '''0% of cpu for 400 player moving''' on the map
+* '''16 000 packets/s'''
