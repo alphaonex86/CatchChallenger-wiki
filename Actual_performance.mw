@@ -34,3 +34,11 @@ Without SSL, epoll version, without optimisation (need 0 copy optimisation, -O2,
 * '''0% of cpu for 400 player moving''' on the map
 * '''16 000 packets/s'''
 * 0.5% cpu usage for postgresql
+
+= Geode LX800 =
+== 0.5 ==
+Without SSL, epoll version, without optimisation (need 0 copy optimisation, -O2, -march=native, C only rewrite, ...), commit d4dbab56f9e578c2c589d61189709cbee76d0a4f.
+* '''49% of cpu for 30 creation/s''' of charaters, 38% for postgresql, 11% for catchchallenger
+* '''3% of cpu for 400 player moving''' on the map
+* '''16 000 packets/s'''
+* 0.5% cpu usage for postgresql
