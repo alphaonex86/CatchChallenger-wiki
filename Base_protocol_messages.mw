@@ -31,13 +31,13 @@
 | style="background: #90ff90; color: black;" | 02
 | style="background: #ffcc00; color: black;" | 0004
 | XX
-| {{Yes}}
+| {{No}}
 | [[Base_protocol_messages#020004|Remove character]]
 |-
 | style="background: #90ff90; color: black;" | 02
 | style="background: #ffcc00; color: black;" | 0005
 | XX
-| {{Yes}}
+| {{No}}
 | [[Base_protocol_messages#020005|Select character]]
 |-
 | style="background: #90ff90; color: black;" | 02
