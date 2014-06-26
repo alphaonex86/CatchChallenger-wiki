@@ -45,49 +45,49 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 0008
 | XX
-| {{Yes}}
+| {{No}}
 | [[Inventory_messages#100008|Usage of recipe]]
 |-
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 0009
 | XX
-| {{Yes}}
+| {{No}}
 | [[Inventory_messages#100009|Use object]]
 |-
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 000A
 | XX
-| {{Yes}}
+| {{No}}
 | [[Inventory_messages#10000A|Get shop list]]
 |-
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 000B
 | XX
-| {{Yes}}
+| {{No}}
 | [[Inventory_messages#10000B|Buy object]]
 |-
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 000C
 | XX
-| {{Yes}}
+| {{No}}
 | [[Inventory_messages#10000C|Sell object]]
 |-
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 000D
 | XX
-| {{Yes}}
+| {{No}}
 | [[Inventory_messages#10000D|Get factory list]]
 |-
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 000E
 | XX
-| {{Yes}}
+| {{No}}
 | [[Inventory_messages#10000E|Buy factory object]]
 |-
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 000F
 | XX
-| {{Yes}}
+| {{No}}
 | [[Inventory_messages#10000F|Sell factory object]]
 |-
 | style="background: #90ff90; color: black;" | 10
