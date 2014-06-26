@@ -489,14 +489,20 @@ Remove all other player on the border map: (Better than remove each id)
 = Reply =
 == Server &rarr; Client reply ==
 === Reply 03 ===
-<span style="color: #40BFFF">01</span> (is supported), Compression: <span style="color: #FFBF00">01</span> (0x00 = None, 0x01=Zlib, 0x02=xz)
- <span style="color: #40BFFF">01</span><span style="color: #FFBF00">01</span>
-
 <span style="color: #40BFFF">02</span> (protocol not supported)
  <span style="color: #40BFFF">02</span>
 
 <span style="color: #40BFFF">03</span> (Server full)
  <span style="color: #40BFFF">03</span>
+
+<span style="color: #40BFFF">04</span> (is supported, compression: None)
+ <span style="color: #40BFFF">04</span>
+
+<span style="color: #40BFFF">05</span> (is supported, compression: Zlib)
+ <span style="color: #40BFFF">05</span>
+
+<span style="color: #40BFFF">06</span> (is supported, compression: Xz)
+ <span style="color: #40BFFF">06</span>
 
 {{Note}}After this, all communication is into the packet size mode send by the protocol.
 
