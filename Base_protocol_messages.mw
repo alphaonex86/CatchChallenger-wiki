@@ -251,10 +251,10 @@
 ! Packet size for the reply
 ! Query
 |-
-| style="background: #90ff90; color: black;" | 02
-| style="background: #ffcc00; color: black;" | 0001
+| style="background: #90ff90; color: black;" | 03
+|
 | {{No}}
-| [[Base_protocol_messages#Reply_020001|Protocol initialization]]
+| [[Base_protocol_messages#Reply_03|Protocol initialization]]
 |-
 | style="background: #90ff90; color: black;" | 02
 | style="background: #ffcc00; color: black;" | 0002
