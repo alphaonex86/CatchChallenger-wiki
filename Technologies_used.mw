@@ -1,105 +1,36 @@
-= Server =
-== Network buffer manipulation ==
-=== 0 copy ===
+= Network buffer manipulation =
+== 0 copy ==
 The 0 copy technologie is way to never copy buffer into another (as well in internal is done, for example to copy network card buffer). You just '''move a cursor on data structure''' and control all the datas.
 After you can or:
 * Isolate the main code, and push the pointer + cursor as data structure
 * Just control and pass all as data structure
 
 The data structure can only be '''defined size''', because the dynamic data need memory copy (you can't transmit pointer of dynamic data over the network).
-If one data is '''greater than 8Bits''', then you need '''fix the bytes order/Endianness'''. Cost memory transactions like memory copy.
-Is to '''transmit commands with temporary parameters'''. The persistent datas need be store, then don't allow 0 copy (you will copy the data from the incoming buffer to persistent storage where can be memory, hdd, ... to keep after the buffer is flush).
+If you data is '''greater than 8Bits''', then or need '''fix the bytes order/Endianness'''. Cost memory transactions like memory copy.
+Is to '''transmit commands with temporary parameters''', because the persistent datas need be store, then don't allow 0 copy (you will copy the data from the incoming buffer to persistent storage where can be memory, hdd, ... to keep after the buffer is flush).
 
-=== SIMD ===
+== SIMD ==
 On Arm is neon, on x86 is SSE-X, AVX-X. The known more, see: http://en.wikipedia.org/wiki/SIMD
 It allow copy block of memory into single instruction, is more power full than a loop because use correctly the hardware without need or compiler Vectorization, see: http://en.wikipedia.org/wiki/Vectorization_(parallel_computing)
 If a range of byte is checked and valid, you can have structure similar of it: 99x8Bits into buffer, '''you can just memcpy() the buffer range into the object with the right structure'''.
 If you data is '''greater than 8Bits''', then or need '''fix the bytes order/Endianness'''. Cost memory transactions like memory copy. Look more as deserializer.
 Is more oriented to datas storage, but in some circumstance can be used with temporary data.
 
-=== Deserializer ===
+== Deserializer ==
 Is more slow than SIMD, but good to have permanent storage for data to parse before use. For example, string inline into the buffer need be transformed into pointer + size (mix with SIMD some time), you need change to Endianness for most of the byte, ...
-Prefer start with the lower address (buffer[0]) util end to higher address (buffer[99]) to improve the performance.
 
-== 0 Memory allocation ==
-Most of the time, don't have memory allocation, or or the stack on the worse case. Mostly due to protocol binary, max packet size, permanent buffer to deserialize the network data is good solution.
+= Memory allocation =
+Most of the time, don't have memory allocation, or or the stack on the worse case. Mostly due to protocol binary, max packet size, permanent buffer to deserialize the network data.
 All the network huge operation like datapack downloading can be externalized. On high performance server only the useful traffic is parsed/sended, then have better latency, lighter server, ...
 
-== Binary ==
-The text is more easy to debug, but use large network and resources. Less than 1 access on billion on http is to reader directly the protocol via network dump (by hacker, network admin, developer -> then you need be able to deal with it), mean the rest of the time the resource is consumed without reason, binary http can be displayed on web browser like the actual http text protocol.
+= Binary =
+The text is useful to debug, but use hurge network and resources. '''To use "Data: 654654"''', you need '''extract "654654"''' (check the string lenght, do dynamic memory allocation) and '''secondly convert into number'''. With binary '''just do memory copy''' and correct the endianness if needed. Then it's very more fast and power full in binary. The protocol header negotiation in text was 66 bytes, in binary only 5, with gain of 50x on the read, compare operation.
 
-'''To use "Data: 654654"''', you need '''extract "654654"''' (check the string length, do dynamic memory allocation, dynamic place) and '''secondly convert into number'''. With binary '''just do memory copy''' and correct the endianness if needed. Then it's very more fast and power full in binary. The protocol header negotiation in text was 66 bytes, in binary only 5, with gain of 50x of cpu on the read/compare operation.
+= Anti DDOS and cost infrastructure =
+All this technologies more good compiler usage like -march=XXX, allow be anti-DDOS by nature because can support huge number of request by second. Minimize the cost infrastructure and than allow cheaper game, more server for the player and then harder to DDOS. It's too easy to administrate.
 
-To write a typical reply/message into CatchChallenger on the server (where the performance are critical), the '''reply/message is pre-computed''', '''altered at the run time''' (just few bytes to change at fixed position, no memory copy due to dynamic next data position).
+= Epoll =
+The epoll is used, solving the C10K problem. The server can easily support lot of more player on 25 years old. I will don't bypass the tcp kernel layer to allow correct para-visualization, but a good optimization allow C10M solving on good hardware, mostly do by raw socket open and custom tcp parser to limit/prevent the memory copy/allocation, but small influence on catchchallenger due to the protocol.
 
-[[File:text-vs-binary-protocol.png]]
-
-So why I use text (xml) into the datapack? Because it's to be easy to change the content and is statically loaded (not dynamically).
-
-It '''improve the need of compression''': the text need often the compression, the binary with correct structure don't need compression and '''improve greatly the compression ratio'''. Of course binary vs hexa divide by 2 the size of random data (or hard to compress)
-
-== Anti DDOS and cost infrastructure ==
-All this technologies and a good compiler usage like -march=XXX, improve the anti-DDOS by nature because can support large number of request/message by second. Minimize the cost infrastructure and than allow cheaper game, more server for the players and then it's harder to DDOS. It's more easiest to administrate. And profiling is done to ensure correct performance and prevent software bloat and sensibility to DDOS attack.
-
-The message/request is firstly order by weight, if is heavy allow few by seconds (or limited few time by session), if is light then allow more by seconds.
-
-An integrated DDOS for OSI model layer 5 session is done to prevent DDOS coupled with firewall for lower layer. It's similar to [https://www.owasp.org/index.php/Web_Application_Firewall|Web Application Firewall]
-
-See: [http://catchchallenger.first-world.info//other/DDOS.odp DDOS (es)]
-
-== Fast path, fast (de)serialiser and 10Gbps ==
-The server have path to improve the performance and especially on common routine. For the read the fast path allow to store faster the information.
-For thr write allow broadcast message without recompose it. That's and low memory allow the usage of 10Gbps like or better than other high performance server (nginx, lighttpd, ...)
-Serialize or deserialise the network into variables but securly is important point.
-
-== Multiple database and async ==
-Multiple database connector (mysql, sqlite, postgresql, ...) is supported. Some connectors is optimized in C and asynchrone to never slow down if the database respond slowly.
-
-* See [[Database support]]
-
-== Epoll ==
-Epoll is used, solving the C10K problem. The server can easily support lot of more player on 25 years old. I will don't bypass the tcp kernel layer to allow correct para-visualization, but a good optimization allow C10M solving on good hardware.
-
-== Plugin ==
-'''The most standard part''' like map visibility, database '''is into classes''' and managed '''as plugin to easy change, test and benchmark''' the different configuration. The plugins of db in text mode need do lot of string to int conversion (usage of cpu time on server), the string manipulation due to the SQL take lof of cpu/memory/memory allocation too, and finally the database on server use resources too. Included with index, and optimized, the database is hugely the most low of the server part, it's why the query is asynchronized.
-
-= Client =
-== Client side prediction ==
-Like other part, allow the client to predict the server status to prevent lag from latency.
-
-== Path finding ==
-It's the unique game as I known what use path find to determine the path with the less direction change but without best path to don't use lot of cpu for now. This algorithmic is radically different from the other game.
-
-= Protocol =
-== Network communication ==
-hash(pass+random) allow to be a minimum secure included without encryption. OpenSsl encryption is used, self signed certificate is supported with transparent public key registering on client part to do more easy the self hosting.
-Proxy socks4/5 to be more flexible around the data communication.
-
-Direct tcp C call is used to have more performance and able to interface with high performance tcp: mTcp, libOS, ...
-
-* See: [[Internode communication]]
-* See: [http://catchchallenger.first-world.info/other/crypto-para-dev.odp Cryto para dev (es)]
-
-== Compression and bandwidth ==
-Usage of compression format when is useful like xz to save a maximum of bandwidth, zlib to have good ratio cpu/bandwidth or nothing to maximize the cpu usage. All is studied to minimize the bandwidth included fixed message size. The [[Datapack's mirrors]] is studied to compressed all data, offload the game server, work as full and partial datapack update (via simplified rsync like protocol).
-Mirror for the datapack via the http/http2/spdy protocol: split the bandwidth across multiple server, keep the main server for game only to preserve bandwith/cpu, improve the data locality if you use content delivery network (CDN), with multiple game server improve the latency
-Browser exploitable content
-
-{{compression}}: The noise is minimized (drop the random data) and isolated by reorder the data (the isolation allow 47% less size with gzip via zopfli, 33% with gzip via zlib, 35% with xz)
-
-= Datapack =
-== Client side server replication ==
-The datapack used to create and host server is automatically cloned on client side. This do a replication of server to reopen a server with same datapack content if needed.
-
-== Web usage ==
-All the content is exploitable by the browser (with php or javascript), html content generator and explorer, tool to convert .tmx to .png for the preview without load the map.
-
-= Cluster =
-
-== O(log(n)) ==
-All the computation is done as topper level when is possible (top to bottom: master, login, game server). Then the scalability factor is more O(log(n)) than O(n).
-
-To understand the complexity: http://bigocheatsheet.com/
-
-== Multiple databases ==
-To split the right, keep the data locality, split the logic, the dynamic content is split into multiple database ('''login''' for the auth (mostly read only), '''base''' for the common dictionary (mostly read only), '''common''' to use the same characters between multiple server, '''server''' to keep the data specific to the server). This allow have good scalability too.
+= Plugin =
+'''The most standard part''' like map visibility, database '''is into classes''' and managed '''as plugin to easy change, test and benchmark''' the different configuration. Mostly because the plugin of db in text mode need do lot of string to int conversion (use cpu time on server), the string manipulation due to the SQL take lof of cpu/memory/memory allocation too, and finally the database on server use resources too. Included with index, and optimized, the database is hugely the most low of the server part, it's why the query is asynchronized.
