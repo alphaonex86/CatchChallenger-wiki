@@ -8,7 +8,7 @@ The other player position is not send. No cpu cost for that's, no network usage.
 = Map visibility algorithm simple =
 [[File:MapVisibilityAlgorithm-Simple.png]]
 
-Only the player on the same map is send. Then the player near but out of the border is not show. Correct of very low end cpu, or '''when the bottom algorithm do too hight load'''. That's do '''average network usage'''.
+Only the player on the same map is send. Then the player near but out of the border is not show. Correct of very low end cpu, or '''when the bottom algorithm do too hight load'''. That's do '''average network usage'''. The algorithmic complexity can be dropped to '''linear complexity''' and not square as the first implementation as see in lot of server.
 
 = Map visibility algorithm with border =
 [[File:MapVisibilityAlgorithm-WithBorder.png]]
