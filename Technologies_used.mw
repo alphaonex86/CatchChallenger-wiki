@@ -6,7 +6,7 @@ After you can or:
 * Just control and pass all as data structure
 
 The data structure can only be '''defined size''', because the dynamic data need memory copy (you can't transmit pointer of dynamic data over the network).
-If you data is '''greater than 8Bits''', then or need '''fix the bytes order/Endianness'''. Cost memory transactions like memory copy.
+If one data is '''greater than 8Bits''', then or need '''fix the bytes order/Endianness'''. Cost memory transactions like memory copy.
 Is to '''transmit commands with temporary parameters''', because the persistent datas need be store, then don't allow 0 copy (you will copy the data from the incoming buffer to persistent storage where can be memory, hdd, ... to keep after the buffer is flush).
 
 == SIMD ==
