@@ -7,7 +7,7 @@ After you can or:
 
 The data structure can only be '''defined size''', because the dynamic data need memory copy (you can't transmit pointer of dynamic data over the network).
 If one data is '''greater than 8Bits''', then you need '''fix the bytes order/Endianness'''. Cost memory transactions like memory copy.
-Is to '''transmit commands with temporary parameters''', because the persistent datas need be store, then don't allow 0 copy (you will copy the data from the incoming buffer to persistent storage where can be memory, hdd, ... to keep after the buffer is flush).
+Is to '''transmit commands with temporary parameters'''. The persistent datas need be store, then don't allow 0 copy (you will copy the data from the incoming buffer to persistent storage where can be memory, hdd, ... to keep after the buffer is flush).
 
 == SIMD ==
 On Arm is neon, on x86 is SSE-X, AVX-X. The known more, see: http://en.wikipedia.org/wiki/SIMD
@@ -18,19 +18,20 @@ Is more oriented to datas storage, but in some circumstance can be used with tem
 
 == Deserializer ==
 Is more slow than SIMD, but good to have permanent storage for data to parse before use. For example, string inline into the buffer need be transformed into pointer + size (mix with SIMD some time), you need change to Endianness for most of the byte, ...
+Prefer start with the lower address (buffer[0]) util end to higher address (buffer[99]) to improve the performance.
 
-= Memory allocation =
-Most of the time, don't have memory allocation, or or the stack on the worse case. Mostly due to protocol binary, max packet size, permanent buffer to deserialize the network data.
+= 0 Memory allocation =
+Most of the time, don't have memory allocation, or or the stack on the worse case. Mostly due to protocol binary, max packet size, permanent buffer to deserialize the network data is good solution.
 All the network huge operation like datapack downloading can be externalized. On high performance server only the useful traffic is parsed/sended, then have better latency, lighter server, ...
 
 = Binary =
-The text is useful to debug, but use hurge network and resources. '''To use "Data: 654654"''', you need '''extract "654654"''' (check the string lenght, do dynamic memory allocation) and '''secondly convert into number'''. With binary '''just do memory copy''' and correct the endianness if needed. Then it's very more fast and power full in binary. The protocol header negotiation in text was 66 bytes, in binary only 5, with gain of 50x on the read, compare operation.
+The text is useful to debug, but use hurge network and resources. Less than 1 access on billion on http is to reader directly the protocol via network dump (by hacker, network admin, developer -> then you need be able to deal with it), mean the rest of the time the resource is consumed without reason, binary http can be displayed on web browser like the actual http text protocol. '''To use "Data: 654654"''', you need '''extract "654654"''' (check the string length, do dynamic memory allocation) and '''secondly convert into number'''. With binary '''just do memory copy''' and correct the endianness if needed. Then it's very more fast and power full in binary. The protocol header negotiation in text was 66 bytes, in binary only 5, with gain of 50x of cpu on the read/compare operation.
 
 = Anti DDOS and cost infrastructure =
-All this technologies more good compiler usage like -march=XXX, allow be anti-DDOS by nature because can support huge number of request by second. Minimize the cost infrastructure and than allow cheaper game, more server for the player and then harder to DDOS. It's too easy to administrate.
+All this technologies and a good compiler usage like -march=XXX, allow be anti-DDOS by nature because can support huge number of request by second. Minimize the cost infrastructure and than allow cheaper game, more server for the players and then it's harder to DDOS. It's too easiest to administrate.
 
 = Epoll =
-The epoll is used, solving the C10K problem. The server can easily support lot of more player on 25 years old. I will don't bypass the tcp kernel layer to allow correct para-visualization, but a good optimization allow C10M solving on good hardware, mostly do by raw socket open and custom tcp parser to limit/prevent the memory copy/allocation, but small influence on catchchallenger due to the protocol.
+Epoll is used, solving the C10K problem. The server can easily support lot of more player on 25 years old. I will don't bypass the tcp kernel layer to allow correct para-visualization, but a good optimization allow C10M solving on good hardware.
 
 = Plugin =
-'''The most standard part''' like map visibility, database '''is into classes''' and managed '''as plugin to easy change, test and benchmark''' the different configuration. Mostly because the plugin of db in text mode need do lot of string to int conversion (use cpu time on server), the string manipulation due to the SQL take lof of cpu/memory/memory allocation too, and finally the database on server use resources too. Included with index, and optimized, the database is hugely the most low of the server part, it's why the query is asynchronized.
+'''The most standard part''' like map visibility, database '''is into classes''' and managed '''as plugin to easy change, test and benchmark''' the different configuration. The plugins of db in text mode need do lot of string to int conversion (usage of cpu time on server), the string manipulation due to the SQL take lof of cpu/memory/memory allocation too, and finally the database on server use resources too. Included with index, and optimized, the database is hugely the most low of the server part, it's why the query is asynchronized.
