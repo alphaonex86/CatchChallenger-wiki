@@ -144,11 +144,11 @@
 | {{Yes}}
 | [[Base_protocol_messages#C20003|update file (compressed)]]
 |-
-| style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 0005
+| style="background: #90ff90; color: black;" | CA
+| 
 | 
 | {{Yes}}
-| [[Base_protocol_messages#C20005|chat]]
+| [[Base_protocol_messages#CA|Chat]]
 |-
 | style="background: #90ff90; color: black;" | C2
 | style="background: #ffcc00; color: black;" | 0008
