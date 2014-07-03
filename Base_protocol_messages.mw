@@ -342,10 +342,10 @@ Client -&gt; Server: previous moved unit: <span style="color: #0000FF">06</span>
 {{Direction definition}}
 
 === 43 ===
-Client -&gt; Server: chat type: <span style="color: #FF4000">02</span>, text: <span style="color: #40BF00">&quot;hello&quot;</span>
- <span style="color: #FF4000">02</span><span style="color: #FFBF00">0000000a</span><span style="color: #40BF00">00680065006c006c006f</span>
-Client -&gt; Server: chat type: <span style="color: #FF4000">06</span> (private message), text: <span style="color: #40BF00">&quot;hello&quot;</span>, pseudo: <span style="color: #40BF00">&quot;toto&quot;</span>
- <span style="color: #FF4000">06</span><span style="color: #FFBF00">0000000a</span><span style="color: #40BF00">00680065006c006c006f</span><span style="color: #FFBF00">00000008</span><span style="color: #40BF00">0074006f0074006f</span>
+Client -&gt; Server: chat type: <span style="color: #FF4000">02</span>, text: <span style="color: #40BF00">&quot;hello&quot;</span> 8bits headers + utf8
+ <span style="color: #FF4000">02</span><span style="color: #FFBF00">05</span><span style="color: #40BF00">68656c6c6f</span>
+Client -&gt; Server: chat type: <span style="color: #FF4000">06</span> (private message), text: <span style="color: #40BF00">&quot;hello&quot;</span> 8bits headers + utf8, pseudo: <span style="color: #40BF00">&quot;toto&quot;</span> 8bits headers + utf8
+ <span style="color: #FF4000">06</span><span style="color: #FFBF00">05</span><span style="color: #40BF00">68656c6c6f</span><span style="color: #FFBF00">04</span><span style="color: #40BF00">746f746f</span>
 * {{Note}}The server will not return sended string to minimize the bandwidth.
 * {{Note}}The system message type can be used, use the [[Command]] here, because to this, you need send the player type, adapt the client to the player type, ...
 
