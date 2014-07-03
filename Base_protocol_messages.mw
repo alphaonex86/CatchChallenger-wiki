@@ -76,11 +76,11 @@
 | style="background: #9CF6FF; color: black;" | Depands
 | [[Base_protocol_messages#41|Reply to server query]] ([[Base_protocol_messages#Reply|See reply]])
 |-
-| style="background: #90ff90; color: black;" | 42
-| style="background: #ffcc00; color: black;" | 0003
+| style="background: #90ff90; color: black;" | 43
+| 
 | 
 | {{Yes}}
-| [[Base_protocol_messages#420003|Chat]]
+| [[Base_protocol_messages#43|Chat]]
 |-
 | style="background: #90ff90; color: black;" | 42
 | style="background: #ffcc00; color: black;" | 0004
