@@ -50,6 +50,8 @@ Without SSL, epoll version, without optimisation (need 0 copy optimisation, -O2,
 * '''4% of cpu for 400 player moving''' on the map with reemit
 * '''16 000 packets/s'''
 * 0.5% cpu usage for postgresql
+* 400Ko/s sended (server -> client) due to bad settings settings to benchmark the visibility. In normal it would be near of the reception.
+* 30Ko/s received
 
 = Cubox i4 pro (iMX6q) =
 == 0.5 ==
