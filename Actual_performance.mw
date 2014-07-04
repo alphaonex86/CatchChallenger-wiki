@@ -43,6 +43,13 @@ Without SSL, epoll version, without optimisation (need 0 copy optimisation, -O2,
 * '''16 000 packets/s'''
 * 0.5% cpu usage for postgresql
 
+== 0.5 ==
+Without SSL, epoll version, without optimisation (need 0 copy optimisation, -O2, -march=native, C only rewrite, ...), commit c7b916bee9f02ed79b65ee38fb9cbb090b41af0e.
+* '''75% of cpu for 30 creation/s''' of charaters, 52% for postgresql, 23% for catchchallenger
+* '''9% of cpu for 400 player moving''' on the map
+* '''16 000 packets/s'''
+* 0.5% cpu usage for postgresql
+
 = Cubox i4 pro (iMX6q) =
 == 0.5 ==
 Without SSL, epoll version, without optimisation (need 0 copy optimisation, -O2, -march=native, C only rewrite, ...), commit d4dbab56f9e578c2c589d61189709cbee76d0a4f.
