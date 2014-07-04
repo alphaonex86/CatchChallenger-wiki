@@ -110,6 +110,7 @@ sp="0", can't be learn naturaly
 </skills></pre>
 
 = Monsters =
+The front need be in 80x80, the back in 80x80, the preview 32x32
 <pre><!-- default:
 ratio_gender="50%"
 catch_rate="100"
