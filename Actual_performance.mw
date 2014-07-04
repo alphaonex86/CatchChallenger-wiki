@@ -1,3 +1,5 @@
+No PaX impact on performance.
+
 = Core i5 750 =
 == 0.1 ==
 Actual performance on '''19 April 2012''' is with benchmark of '''200''' with GUI:
@@ -32,7 +34,6 @@ All is very fast and don't need greater server.
 Without SSL, epoll version, without optimisation (need 0 copy optimisation, -O2, -march=native, C only rewrite, ...), commit d4dbab56f9e578c2c589d61189709cbee76d0a4f.
 * '''1% of cpu for 30 creation/s''' of charaters
 * '''0% of cpu for 400 player moving''' on the map
-* '''16 000 packets/s'''
 * 0.5% cpu usage for postgresql
 
 = Geode LX800 =
@@ -40,7 +41,6 @@ Without SSL, epoll version, without optimisation (need 0 copy optimisation, -O2,
 Without SSL, epoll version, without optimisation (need 0 copy optimisation, -O2, -march=native, C only rewrite, ...), commit d4dbab56f9e578c2c589d61189709cbee76d0a4f.
 * '''49% of cpu for 30 creation/s''' of charaters, 38% for postgresql, 11% for catchchallenger
 * '''3% of cpu for 400 player moving''' on the map
-* '''16 000 packets/s'''
 * 0.5% cpu usage for postgresql
 
 == 0.5 ==
@@ -48,7 +48,6 @@ Without SSL, epoll version, without optimisation (need 0 copy optimisation, -O2,
 * '''75% of cpu for 30 creation/s''' of charaters, 52% for postgresql, 23% for catchchallenger
 * '''9% of cpu for 400 player moving''' on the map
 * '''4% of cpu for 400 player moving''' on the map with reemit
-* '''16 000 packets/s'''
 * 0.5% cpu usage for postgresql
 * 400KB/s sended (server -> client) due to bad settings settings to benchmark the visibility. In normal it would be near of the reception.
 * 30KB/s received
@@ -59,4 +58,3 @@ Without SSL, epoll version, without optimisation (need 0 copy optimisation, -O2,
 Without SSL, epoll version, without optimisation (need 0 copy optimisation, -O2, -march=native, C only rewrite, ...), commit d4dbab56f9e578c2c589d61189709cbee76d0a4f.
 * '''38% of cpu for 30 creation/s''' of charaters, 30% for postgresql, 8% for catchchallenger
 * '''2% of cpu for 400 player moving''' on the map
-* '''16 000 packets/s'''
