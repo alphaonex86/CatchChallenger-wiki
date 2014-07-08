@@ -580,7 +580,7 @@ If all is good:
 * number of map: <span style="color: #FF4000">00000002</span>
 * size of list of the recipes: <span style="color: #7B00FF">00000001</span>
 ** recipe id: <span style="color: #FF4000">00000001</span>
-* size of list of the monsters: <span style="color: #7B00FF">00000001</span>
+* size of list of the monsters: <span style="color: #7B00FF">01</span>
 ** monsters id in db: <span style="color: #FF4000">00000001</span>
 ** monsters: <span style="color: #FF4000">00000001</span>
 ** level: <span style="color: #40BF00">01</span>
@@ -597,7 +597,7 @@ If all is good:
 *** skill: <span style="color: #40BF00">00000001</span>
 *** skill level: <span style="color: #FF4000">01</span>
 *** skill remaining usage: <span style="color: #FFBF00">01</span>
-* size of list of the warehouse monsters: <span style="color: #7B00FF">00000001</span>
+* size of list of the warehouse monsters: <span style="color: #7B00FF">01</span>
 ** monsters id in db: <span style="color: #FF4000">00000001</span>
 ** monsters: <span style="color: #FF4000">00000001</span>
 ** level: <span style="color: #40BF00">01</span>
