@@ -296,14 +296,25 @@ Final result:
 === 04 ===
 [[File:loginpass-catchchallenger-meca.png]]
 
-
-Get the first position and direction, and send:
+Send:
 * sha224(login+/*salt*/"RtR3bm9Z1DFMfAC3")
 * sha224(sha224(pass+/*salt*/"AwjDvPIzfJPTTgHs") + token sended at protocol get)
 Then:
   <span style="color: #40BF00">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span>, <span style="color: #FF0040">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span><br />
 
 [[Base_protocol_messages#Reply_04|See reply to this query]]
+
+=== 05 ===
+[[File:loginpass-catchchallenger-meca.png]]
+
+
+Send:
+* sha224(login+/*salt*/"RtR3bm9Z1DFMfAC3")
+* sha224(pass+/*salt*/"AwjDvPIzfJPTTgHs")
+Then:
+  <span style="color: #40BF00">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span>, <span style="color: #FF0040">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span><br />
+
+[[Base_protocol_messages#Reply_05|See reply to this query]]
 
 === 020003 ===
 Send the profile id: <span style="color: #FF0040">01</span>, pseudo <span style="color: #40BF00">"toto"</span>, skin <span style="color: #40BF00">"skin"</span>
