@@ -290,7 +290,7 @@ Final result:
 === 04 ===
 Get the first position and direction, and send:
 * sha224(login+/*salt*/"RtR3bm9Z1DFMfAC3")
-* sha224(pass+/*salt*/"AwjDvPIzfJPTTgHs")
+* sha224(pass+/*salt*/"AwjDvPIzfJPTTgHs") into 2 part: first 14 bytes part: sended directly, sha224(second part + token sended at protocol get) and send the 14 bytes at right of this result
 Then:
   <span style="color: #40BF00">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span>, <span style="color: #FF0040">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span><br />
 
