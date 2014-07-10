@@ -564,6 +564,11 @@ After the server will send tp command to set the first position.
 
 This reply is compressed.
 
+=== Reply 05 ===
+* <span style="color: #FF4000">01</span> (Created)
+* <span style="color: #FF4000">02</span> (Login already used)
+* <span style="color: #FF4000">03</span> (Not created)
+
 === Reply 020003 ===
 Return code: <span style="color: #40BFBF">00</span> (00 = success, 01 = pseudo already taken, 02 = other)
 
