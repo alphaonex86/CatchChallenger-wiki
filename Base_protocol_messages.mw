@@ -294,6 +294,7 @@ Final result:
 [[Base_protocol_messages#Reply_03|See reply to this query]]
 
 === 04 ===
+[[File:loginpass-catchchallenger-meca.png]]
 Get the first position and direction, and send:
 * sha224(login+/*salt*/"RtR3bm9Z1DFMfAC3")
 * sha224(sha224(pass+/*salt*/"AwjDvPIzfJPTTgHs") + token sended at protocol get)
