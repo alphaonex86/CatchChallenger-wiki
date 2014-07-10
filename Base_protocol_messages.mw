@@ -305,9 +305,6 @@ Then:
 [[Base_protocol_messages#Reply_04|See reply to this query]]
 
 === 05 ===
-[[File:loginpass-catchchallenger-meca.png]]
-
-
 Send:
 * sha224(login+/*salt*/"RtR3bm9Z1DFMfAC3")
 * sha224(pass+/*salt*/"AwjDvPIzfJPTTgHs")
