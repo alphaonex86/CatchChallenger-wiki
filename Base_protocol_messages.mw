@@ -22,6 +22,12 @@
 | {{No}}
 | [[Base_protocol_messages#04|Get first data and send the login]] '''''(Fast, 1)'''''
 |-
+| style="background: #90ff90; color: black;" | 05
+| 
+| XX
+| {{No}}
+| [[Base_protocol_messages#05|Create account]] '''''(Fast, 1)'''''
+|-
 | style="background: #90ff90; color: black;" | 02
 | style="background: #ffcc00; color: black;" | 0003
 | XX
