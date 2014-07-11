@@ -2,7 +2,11 @@
 
 Map format: tmx
 
-Editor: tmx map editor (see lib tiled)
+Editor: 
+
+[[File:screenshot-map-editor.png]]
+
+tmx map editor (see lib tiled): http://www.mapeditor.org/
 
 Support into the server: xml with pre-calculate the collision/water zone
 
