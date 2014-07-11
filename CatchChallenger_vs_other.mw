@@ -179,7 +179,7 @@ Here the important is the coefficient director between the idle and 100 players.
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
 ! style="width: 12em" |
-! Asynchronous
+! Crypted
 ! Move of other player not impacted by latency
 ! Multilingual
 ! Compression
@@ -187,7 +187,7 @@ Here the important is the coefficient director between the idle and 100 players.
 ! Multiple datapack
 |-
 | CatchChallenger
-| {{Yes}}
+| style="background: #90ff90; color: black;" | Yes (1)
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
@@ -195,7 +195,7 @@ Here the important is the coefficient director between the idle and 100 players.
 | {{Yes}}
 |-
 | Minecraft
-| {{Yes}}
+| ???
 | {{Yes}}
 | NA
 | {{No}}
@@ -203,7 +203,7 @@ Here the important is the coefficient director between the idle and 100 players.
 | {{Yes}}
 |-
 | Terraria
-| {{Yes}}
+| ???
 | ???
 | NA
 | {{No}}
@@ -211,7 +211,7 @@ Here the important is the coefficient director between the idle and 100 players.
 | {{Yes}}
 |-
 | Lineage (l2jfree)
-| {{Yes}}
+| ???
 | {{Yes}}
 | ???
 | {{No}}
@@ -226,6 +226,8 @@ Here the important is the coefficient director between the idle and 100 players.
 ! Datapack updating
 ! Multiple datapack
 |}
+
+* 1) SSL/TLS + certificate, Token for clear connection, P2P crypted if use I2P, ...
 
 = Client =
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
