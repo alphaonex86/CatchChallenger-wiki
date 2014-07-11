@@ -94,6 +94,9 @@ This is just for me, to have comparaison.
 ! Cpu at idle
 ! Memory at idle
 ! Memory at 100 players
+! Datapack mirror support (3)
+! Cluster + C10K/C10M solved
+! I2P/TOR supported and fluid
 |-
 | CatchChallenger
 | style="background: #90ff90; color: black;" | 65535 (1)
@@ -101,6 +104,9 @@ This is just for me, to have comparaison.
 | style="background: #90ff90; color: black;" | 0%
 | 5MB (not yet finished)
 | 10MB (not yet finished)
+| {{Yes}}
+| {{Partial}}
+| {{Yes}}
 |-
 | Minecraft
 | ???
@@ -108,6 +114,9 @@ This is just for me, to have comparaison.
 | 3%
 | 42MB
 | ???
+| NA
+| ???
+| {{Partial}}
 |-
 | Terraria
 | 255 supported
@@ -115,6 +124,9 @@ This is just for me, to have comparaison.
 | 0%
 | 800MB
 | ???
+| NA
+| ???
+| {{Partial}}
 |-
 | Lineage (l2jfree)
 | ???
@@ -122,12 +134,18 @@ This is just for me, to have comparaison.
 | 0%
 | ???
 | ???
+| {{Partial}}
+| {{Partial}}
+| {{Partial}}
 |-
 | rathena
 | ???
 | ???
 | 0%
 | 271MB (<span style="background: #90ff90; color: black;">5MB for non map server</span>)
+| ???
+| ???
+| ???
 | ???
 |-
 | PWO
@@ -136,6 +154,9 @@ This is just for me, to have comparaison.
 | ???
 | ???
 | ???
+| {{Partial}}
+| {{No}}
+| ???
 |-class="sortbottom"
 ! style="width: 12em" |
 ! Max players mutually visible
@@ -143,12 +164,16 @@ This is just for me, to have comparaison.
 ! Cpu at idle
 ! Memory at idle
 ! Memory at 100 players
+! Datapack mirror support (3)
+! Cluster + C10K/C10M solved
+! I2P/TOR supported and fluid
 |}
 {{note}}The max player is see on correct configuration, it's the benchmarked value on core i5 750, 4GB of memory.
 Here the important is the coefficient director between the idle and 100 players.
 
 * 1) With correct settings
 * 2) 16Bits, performance will depends of the settings, but work well on 25 years old computer for 65535 player
+* 3) but optional
 
 = Protocol =
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
