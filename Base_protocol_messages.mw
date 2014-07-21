@@ -595,8 +595,8 @@ If all is good:
 * cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
 * warehouse cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
 * number of map: <span style="color: #FF4000">00000002</span>
-* size of list of the recipes: <span style="color: #7B00FF">00000001</span>
-** recipe id: <span style="color: #FF4000">00000001</span>
+* size of list of the recipes: <span style="color: #7B00FF">0001</span>
+** recipe id: <span style="color: #FF4000">0001</span>
 * size of list of the monsters: <span style="color: #7B00FF">01</span>
 ** monsters id in db: <span style="color: #FF4000">00000001</span>
 ** monsters: <span style="color: #FF4000">00000001</span>
@@ -632,15 +632,15 @@ If all is good:
 *** skill level: <span style="color: #FF4000">01</span>
 *** skill remaining usage: <span style="color: #FFBF00">01</span>
 * size of reputation list: <span style="color: #7B00FF">01</span>
-** reputation type: <span style="font-style: italic"><span style="color: #40BF00">&quot;crafting&quot;</span></span>
+** reputation type: <span style="font-style: italic"><span style="color: #40BF00">01</span></span>
 ** reputation level: <span style="color: #FF4000">01</span>
 ** reputation point: <span style="color: #008080">00000001</span>
-* size of quest list: <span style="color: #7B00FF">01</span>
-** quest id: <span style="color: #40BF00">00000001</span>
+* size of quest list: <span style="color: #7B00FF">0001</span>
+** quest id: <span style="color: #40BF00">0001</span>
 ** quest step: <span style="color: #FF4000">01</span>
 ** quest finish one time: <span style="color: #008080">00</span> (false)
-* size of list of the bot win: <span style="color: #7B00FF">00000001</span>
-** bot id win: <span style="color: #40BF00">00000001</span>
+* size of list of the bot win (already betten): <span style="color: #7B00FF">0001</span>
+** bot id win (already betten): <span style="color: #40BF00">0001</span>
 
 After the server will send tp command to set the first position.
 
