@@ -84,8 +84,8 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 
 == Client &rarr; Server without reply ==
 === 6a0001 ===
-Start quest with id: <span style="color: #FFBF00">00000001</span>
- <span style="color: #FFBF00">00000001</span>
+Start quest with id: <span style="color: #FFBF00">0001</span>
+ <span style="color: #FFBF00">0001</span>
 
 === 6a0002 ===
 Finish quest with id: <span style="color: #FFBF00">0001</span>
