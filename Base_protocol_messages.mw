@@ -551,7 +551,7 @@ If all is good:
 ** Time left before delete: <span style="color: #40BFFF">00000000</span> (0s = no delete planned)
 ** Played time: <span style="color: #40BFFF">00000000</span>
 ** Last connect: <span style="color: #40BFFF">00000000</span>
-** MapId: <span style="color: #40BF00">00000001</span> (32Bits)
+** MapId: <span style="color: #40BF00">00000001</span> (32Bits if above number of map is >65535, 16Bits if >255, else 8Bits)
 
 If something is wrong, the possible return code are:
 * <span style="color: #FF4000">02</span> (Bad login)
