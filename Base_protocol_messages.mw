@@ -542,7 +542,8 @@ If all is good:
 * Char allow private: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
 * Char allow clan: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
 * Industry price change: <span style="color: #FF4000">14</span> (+/- 20%)
-* Mirror to use: &quot;<span style="color: #40BF00">http://serverprimary/datapack/;http://serversecondary/datapack/</span>&quot;, if don't empty, don't send datapack query, you have the datpack list at http://serverprimary/datapack/datapack-list.txt test without prxy and with proxy is set. Test the next server, ...
+* Mirror to use: &quot;<span style="color: #40BF00">http://serverprimary/datapack/;http://serversecondary/datapack/</span>&quot;, if don't empty, don't send datapack query, you have the datpack list at http://serverprimary/datapack/datapack-list.txt test without proxy and with proxy is set. Test the next server, ...
+* number of map: <span style="color: #FF4000">00000002</span>
 * Character list size <span style="color: #7B00FF">01</span>
 ** Character id: <span style="color: #BFBF40">00000001</span>
 ** Pseudo: <span style="color: #40BF00">&quot;Character 1&quot;</span>
