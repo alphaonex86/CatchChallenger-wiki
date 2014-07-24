@@ -527,9 +527,9 @@ If all is good:
 * maxVisiblePlayerAtSameTime: <span style="color: #FFBF00">0009</span>
 * waitBeforeConnectAfterKick: <span style="color: #FF4000">00000014</span> (20s)
 * forceClientToSendAtBorder: <span style="color: #FFBF00">00</span> (0 == not forced)
+* forcedSpeed: <span style="color: #40BF00">C2</span> (0 == not forced)
 * Bandwitdh vs latency: <span style="color: #40BF00">01</span> (00 == prefer low letency, 01 prefer low bandwith -> under linux match with TCP CORK)
 * use SP: <span style="color: #40BF00">01</span> (01 == use sp, 00 == sp disabled)
-* forcedSpeed: <span style="color: #40BF00">C2</span> (0 == not forced)
 * dontSendPseudo: <span style="color: #FFBF00">00</span>
 * Character max: <span style="color: #40BFFF">01</span>
 * Character min: <span style="color: #40BFFF">01</span>
