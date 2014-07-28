@@ -538,7 +538,7 @@ The reply can be one of this:
 === Reply 10000A ===
 Why resend the object list? Because some object can be disabled by the server. Allow global trade where the player can sell/buy to other player.
 
-Get shop list size: <span style="color: #FF4000">00000003</span>
+Get shop list size: <span style="color: #FF4000">0003</span>
 * object: <span style="color: #FFBF00">0001</span>, price: <span style="color: #FF4000">00000003</span>, quantity: <span style="color: #40BF00">00000000</span> (0 = infinity)
 
 === Reply 10000B ===
