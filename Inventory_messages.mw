@@ -346,8 +346,7 @@ Use the recipe id: <span style="color: #FFBF00">0001</span>
 [[Inventory_messages#Reply_100008|See reply to this query]]
 
 === 100009 ===
-Send the object used: <span style="color: #FF4000">00000003</span>
- <span style="color: #FF4000">00000003</span>
+Send the object used: <span style="color: #FF4000">0003</span>
 Not fixed size because future arguments can be added, like on what is applied the object.
 
 [[Inventory_messages#Reply_100009|See reply to this query]]
