@@ -246,8 +246,7 @@ Start a requested bot fight, with bot fightId: <span style="color: #40BFFF">0001
 * Monster number: <span style="color: #40BF00">01</span> (1 to X)
 
 === 600009 ===
-* Monster id: <span style="color: #FF4000">00000001</span>
-
+* Monster id: <span style="color: #FF4000">0001</span>
 
 === 61 ===
 Attack id: <span style="color: #40BFFF">0001</span>
