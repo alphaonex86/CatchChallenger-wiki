@@ -610,7 +610,7 @@ The reply can be one of this:
 * <span style="color: #40BFFF">02</span> Withdraw object/monster failed
 * Type: <span style="color: #FFBF00">01</span> (01 object, 02 monster)
 If Object:
-** Object: <span style="color: #40BF00">00000001</span>, quantity: <span style="color: #FF4000">03</span>
+** Object: <span style="color: #40BF00">0001</span>, quantity: <span style="color: #FF4000">03</span>
 If Monster: send player monster
 
 == Client &rarr; Server reply ==
