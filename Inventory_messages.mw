@@ -559,9 +559,9 @@ The reply can be one of this:
 Why resend the object list? Because some object can be disabled by the server. Allow global trade where the player can sell/buy to other player.
 
 Get factory resources list size: <span style="color: #FF4000">00000001</span>
-* object: <span style="color: #FFBF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>, quantity: <span style="color: #40BF00">00000005</span>
+* object: <span style="color: #FFBF00">0001</span>, price: <span style="color: #FF4000">00000003</span>, quantity: <span style="color: #40BF00">00000005</span>
 Get factory products list size: <span style="color: #FF4000">00000001</span>
-* object: <span style="color: #FFBF00">00000002</span>, price: <span style="color: #FF4000">00000015</span>, quantity: <span style="color: #40BF00">00000001</span>
+* object: <span style="color: #FFBF00">0002</span>, price: <span style="color: #FF4000">00000015</span>, quantity: <span style="color: #40BF00">00000001</span>
 
 === Reply 10000E ===
 The reply can be one of this:
