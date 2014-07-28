@@ -236,9 +236,7 @@ Server -&gt; Client: random bytes: <span style="color: #40BFFF">XXXXXXXXXXXXXXXX
 
 == Client &rarr; Server without reply ==
 === 600004 ===
-Monster id: <span style="color: #40BFFF">00000001</span>, skill: <span style="color: #94CF00">00000001</span>
-
- <span style="color: #40BFFF">00000001</span><span style="color: #94CF00">00000001</span>
+Monster id: <span style="color: #40BFFF">0001</span>, skill: <span style="color: #94CF00">0001</span>
 
 === 600007 ===
 Start a requested bot fight, with bot fightId: <span style="color: #40BFFF">00000001</span>
