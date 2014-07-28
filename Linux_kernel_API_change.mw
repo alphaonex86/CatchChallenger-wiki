@@ -1,0 +1,2 @@
+* Write one buffer into multiple FD, to do multicast at IP level without register and fixed group (because can change all the time)
+* Pass the event AND datas into the program via epollWait to prevent buffer copy
