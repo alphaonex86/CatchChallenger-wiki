@@ -395,7 +395,7 @@ Buy into the market, type: <span style="color: #A600FF">01</span> (01 object, 02
 Put the object/monster on the market: <span style="color: #A600FF">01</span> (01 object, 02 monster), if object:
 * Sell object: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
 Or if monster:
-* Sell monster, monster id: <span style="color: #FFBF00">0001</span>, price: <span style="color: #FF4000">00000000</span>
+* Sell monster, monster id: <span style="color: #FFBF00">00000001</span>, price: <span style="color: #FF4000">00000000</span>
 
 [[Inventory_messages#Reply_100012|See reply to this query]]
 
