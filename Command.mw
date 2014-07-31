@@ -23,6 +23,9 @@ The command:
 * Set rights, type can be normal, premium, dev, admin
  /setrights [pseudo] [type:normal|premium|gm|dev]
 
+* Set the event value
+ /setevent [event name] [event value]
+
 * Get the player number
  /playernumber
 
