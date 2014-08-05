@@ -519,7 +519,9 @@ Remove all other player on the border map: (Better than remove each id)
 {{Note}}After this, all communication is into the packet size mode send by the protocol.
 
 === Reply 04 ===
-Note for dev: Is not way (or I have not found) to have max visibility player and simplified id with it without increasing the bandwidth due to id change (current player id pass into visibility zone need id change).
+'''Note for dev: Is not way (or I have not found) to have max visibility player and simplified id with it without increasing the bandwidth due to id change (current player id pass into visibility zone need id change).'''
+
+
 If all is good:
 * <span style="color: #FF4000">01</span> (all is good)
 * max player: <span style="color: #40BF00">0064</span> (then 100 in decimal) -> this define if the players id is defined on 16Bits ('''unknown max player at this point''', for the client at the startup)
