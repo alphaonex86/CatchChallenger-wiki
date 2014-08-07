@@ -36,6 +36,7 @@ Is the formal definition interpreted by the server and client to know at what st
 	<rewards show="true">
 		<item id="3" quantity="2" />
 		<reputation type="empire" point="-1" />
+		<allow type="clan"/>
 	</rewards>
 </quest></pre>
 
