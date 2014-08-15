@@ -331,14 +331,14 @@ Send the character id: <span style="color: #FF0040">00000001</span>
 === 02000C ===
 Blocked is mirror is enabled, is considered as hacking.
 
-Send file name:
-* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span>
-* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span>
-* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span>
+Send file name and first 4Byte of sha224 hash:
+* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span>, <span style="color: #FF4000">XXXXXXXX</span>
+* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span>, <span style="color: #FF4000">XXXXXXXX</span>
+* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span>, <span style="color: #FF4000">XXXXXXXX</span>
  <span style="color: #FF4000">00000003</span>
- <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span>
- <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span>
- <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span>
+ <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span><span style="color: #FF4000">XXXXXXXX</span>
+ <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span><span style="color: #FF4000">XXXXXXXX</span>
+ <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span><span style="color: #FF4000">XXXXXXXX</span>
 This packet is compressed.
 
 [[Base_protocol_messages#Reply_02000C|See reply to this query]]
