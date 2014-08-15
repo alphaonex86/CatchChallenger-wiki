@@ -7,4 +7,4 @@ Mostly you have:
 * http://host/datapack/datapack-list.txt (datapack list format to get what file is missing, excluded him self and non autorised file type, collum: file path relative to datapack, timestamps for the data or coded 16Bits int for anonymous mode, size in Byte /1000)
 * http://host/datapack/datapack.tar.xz (full datapack to get where you don't have any file on the client, excluded him self and non autorised file type)
 * http://host/datapack/datapack-diff-[sha224].tar.xz (datapack changed files to get from particular datapack client state, sha224 is checksum of client datapack file content ordened by relative to datapack base file name, excluded him self and non autorised file type)
-To have easy integration mostly due to xz embedded edition, the unique format supported is: '''tar --posix -c -f - plugin-name/ | xz -9 --check=crc32 > file.tar.xz''' (of course you can change -9 by other stuff)
+To have easy integration mostly due to xz embedded edition, the unique format supported is: '''tar --posix -c -f - datapack/ | xz -9 --check=crc32 > file.tar.xz''' (of course you can change -9 by other stuff)
