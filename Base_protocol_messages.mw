@@ -419,8 +419,8 @@ Server -&gt; Client: file liste size: <span style="color: #FF4000">01</span><spa
 === C20004 ===
 '''This is compressed'''
 
-Server -&gt; Client: file liste size: <span style="color: #FF4000">01</span><span style="color: #40BF00">&quot;file name&quot;</span> (UTF8 + 8Bits of header size), size <span style="color: #FF4000">00000001</span>, last modification time stamps: <span style="color: #FF4000">00000000 4ED3C1D3</span>, data: <span style="color: #40BFFF">XXXXXXXXXXXXXXXX[...]XXXXXXXXXX</span>
- <span style="color: #FF4000">01</span><span style="color: #FFBF00">12</span><span style="color: #40BF00">626164206c6f67696e</span><span style="color: #FF4000">00000001</span><span style="color: #FF4000">00000000 4ED3C1D3</span><span style="color: #40BFFF">XXXXXXXXXXXXXXXX[...]XXXXXXXXXX</span>
+Server -&gt; Client: file liste size: <span style="color: #FF4000">01</span><span style="color: #40BF00">&quot;file name&quot;</span> (UTF8 + 8Bits of header size), size <span style="color: #FF4000">00000001</span>, data: <span style="color: #40BFFF">XXXXXXXXXXXXXXXX[...]XXXXXXXXXX</span>
+ <span style="color: #FF4000">01</span><span style="color: #FFBF00">12</span><span style="color: #40BF00">626164206c6f67696e</span><span style="color: #FF4000">00000001</span><span style="color: #40BFFF">XXXXXXXXXXXXXXXX[...]XXXXXXXXXX</span>
 
 === CA ===
 Server -&gt; Client
