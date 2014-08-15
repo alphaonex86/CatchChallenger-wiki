@@ -2,27 +2,9 @@ Lot of tools for the mirror is into: https://github.com/alphaonex86/CatchChallen
 
 Why http? Because it's very easy to found http hosting service to host static file, is well integrated into mostly of lib (included Qt), and it's in read only. The only lack is on the performance, and bandwith due to text protocol.
 
-Mostly you have (base, main, sub):
+Mostly you have:
 * http://host/datapack/ (the datapack content)
 * http://host/datapack/datapack-list.txt (datapack list format to get what file is missing, excluded him self and non autorised file type, collum: file path relative to datapack, timestamps for the data or coded 16Bits int for anonymous mode, size in Byte /1000)
-* http://host/datapack/pack/datapack.tar.xz (full datapack to get where you don't have any file on the client, excluded him self and non autorised file type)
-* http://host/datapack/pack/diff/datapack-[sha224].tar.xz (datapack changed files to get from particular datapack client state, sha224 is checksum of client datapack file content ordened by relative to datapack base file name, excluded him self and non autorised file type)
-To have easy integration mostly due to xz embedded edition, the unique format supported is: '''tar --posix -c -f - datapack/ | xz -9 --check=crc32 > datapack.tar.xz''' (of course you can change -9 by other stuff)
-
-To have http datapack ready (include by file list), and archive. This is the best compression and anonymity.
-<code><pre>/usr/bin/find /path/atapack/ -type f -not \( -name "*.tmx" -or -name "*.xml" -or -name "*.tsx" -or -name "*.js" -or -name "*.png" -or -name "*.jpg" -or -name "*.gif" -or -name "*.ogg" -or -name "*.qml" -or -name "*.qm" -or -name "*.ts" -or -name "*.txt" \) -exec /usr/bin/ionice -c 3 /usr/bin/nice -n 19 rm -f {} \;
-find /path/datapack/ -type d -empty -delete > /dev/null 2>&1
-find /path/datapack/ -type d -empty -delete > /dev/null 2>&1
-find /path/datapack/ -type d -empty -delete > /dev/null 2>&1
-find /path/datapack/ -type d -empty -delete > /dev/null 2>&1
-find /path/datapack/ -type d -empty -delete > /dev/null 2>&1
-find /path/datapack/ -exec touch -t 197001020000.00 {} \;
-cd /path/
-tar --posix -c -f - datapack/ | xz -9 --check=crc32 > datapack.tar.xz</pre></code>
-
-== Sync problem ==
-=== With http reverse proxy ===
-With a reverse proxy as nginx, you can cache the content. Work only with http datapack exposed. But need poll every time if have the last version of the file or have some time with oldest version.
-
-=== With the gateway ===
-The sync is guaranteed by the protocol, need use a real cacthchallenger client with correct identity.
+* http://host/datapack/datapack.tar.xz (full datapack to get where you don't have any file on the client, excluded him self and non autorised file type)
+* http://host/datapack/datapack-diff-[sha224].tar.xz (datapack changed files to get from particular datapack client state, sha224 is checksum of client datapack file content ordened by relative to datapack base file name, excluded him self and non autorised file type)
+To have easy integration mostly due to xz embedded edition, the unique format supported is: '''tar --posix -c -f - plugin-name/ | xz -9 --check=crc32 > file.tar.xz''' (of course you can change -9 by other stuff)
