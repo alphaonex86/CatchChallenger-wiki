@@ -332,13 +332,13 @@ Send the character id: <span style="color: #FF0040">00000001</span>
 Blocked is mirror is enabled, is considered as hacking.
 
 Send file name and timestamps (second since 1/1/1970 in 32Bits) of the file requested:<br />number to file: <span style="color: #FF4000">00000003</span>:
-* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span> <span style="color: #FF4000">Mon, 28 Nov 2011 17:16:03</span>
-* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span> <span style="color: #FF4000">Mon, 28 Nov 2011 17:16:03</span>
-* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span> <span style="color: #FF4000">Mon, 28 Nov 2011 17:16:03</span>
+* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span>
+* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span>
+* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span>
  <span style="color: #FF4000">00000003</span>
- <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span><span style="color: #FF4000">00000000 4ED3C1D3</span>
- <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span><span style="color: #FF4000">00000000 4ED3C1D3</span>
- <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span><span style="color: #FF4000">00000000 4ED3C1D3</span>
+ <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span>
+ <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span>
+ <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span>
 This packet is compressed.
 
 [[Base_protocol_messages#Reply_02000C|See reply to this query]]
