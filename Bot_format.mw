@@ -55,7 +55,10 @@
 		</step>
 	</bot>
 	<bot id="5">
-		<step id="1" type="fight" fightid="1" />
+		<step id="1" type="fight" fightid="1" /><!-- default range: 5 -->
+	</bot>
+	<bot id="6">
+		<step id="1" type="fight" fightid="2" fightRange="0" /><!-- 0 = only when you talk to him -->
 	</bot>
 </bots>
 </pre>
