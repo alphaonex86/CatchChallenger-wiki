@@ -618,6 +618,7 @@ If all is good:
 ** captured_with: <span style="color: #40BF00">0001</span>
 ** gender: <span style="color: #FF4000">01</span>
 ** egg_step: <span style="color: #FFBF00">00000000</span> (is mature if = 0)
+** character_origin: <span style="color: #FFBF00">00000001</span>
 ** size of list of the buff monsters: <span style="color: #7B00FF">01</span>
 *** buff: <span style="color: #40BF00">01</span>
 *** buff level: <span style="color: #FF4000">01</span>
@@ -635,6 +636,7 @@ If all is good:
 ** captured_with: <span style="color: #40BF00">0001</span>
 ** gender: <span style="color: #FF4000">01</span>
 ** egg_step: <span style="color: #FFBF00">00000000</span> (is mature if = 0)
+** character_origin: <span style="color: #FFBF00">00000001</span>
 ** size of list of the buff monsters: <span style="color: #7B00FF">01</span>
 *** buff: <span style="color: #40BF00">01</span>
 *** buff level: <span style="color: #FF4000">01</span>
