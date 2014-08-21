@@ -63,7 +63,8 @@ It's on layer Object with name: "''Object''", Name: what you want
 
 '''[object]'''
 * item: item id
-* visible: true or false
+* visible: true or false (default: true)
+* infinite: true or false (default: false)
 
 == Teleportation ==
 It's layer Object with name "''Moving''", only visible on map editor.
