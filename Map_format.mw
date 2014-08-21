@@ -61,6 +61,10 @@ It's on layer Object with name: "''Object''", Name: what you want
 * lookAt: left, right, top, bottom (optional, need skin)
 * skin: you skin name (optional)
 
+'''[object]'''
+* item: item id
+* visible: true or false
+
 == Teleportation ==
 It's layer Object with name "''Moving''", only visible on map editor.
 
