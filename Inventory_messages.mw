@@ -166,6 +166,12 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 | 
 | {{Yes}}
 | [[Inventory_messages#500006|Deposite/withdraw to warehouse]]
+|-
+| style="background: #90ff90; color: black;" | 50
+| style="background: #ffcc00; color: black;" | 0007
+| 
+| {{Yes}}
+| [[Inventory_messages#500007|Take an object on map (visible or not)]]
 |}
 
 == Server &rarr; Client without reply ==
