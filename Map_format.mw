@@ -128,3 +128,5 @@ Condition file:
 
 == Animation ==
 The animation apply on an tile, to have it define properties with name: '''''animation''''' and value: '''''500ms;4frames''''' (where 500 and 4 is an exemple).
+
+To have offset to don't start the animation at same frame each time: name: '''''animation''''' and value: '''''500ms;4frames;random-offset'''''
