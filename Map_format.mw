@@ -127,6 +127,9 @@ Condition file:
 </conditions></pre>
 
 == Animation ==
-The animation apply on an tile, to have it define properties with name: '''''animation''''' and value: '''''500ms;4frames''''' (where 500 and 4 is an exemple).
-
-To have offset to don't start the animation at same frame each time: name: '''''animation''''' and value: '''''500ms;4frames;random-offset'''''
+* The animation apply on an tile, to have it define properties with name: '''''animation''''' and value: '''''500ms;4frames''''' (where 500 and 4 is an exemple).
+* To have offset to don't start the animation at same frame each time: name: '''''animation''''' and value: '''''500ms;4frames;random-offset'''''
+=== Trigger ===
+'''''start''''' is when start enter on it. '''''leave''''' is when start leave on it. '''''again''''' is loop played when enter it but not firstly, mean the final state after leave it is not the first tile. '''''over''''' mean on the second line you have tile to display over the player.
+* name: '''''trigger''''' and value: '''''start:60ms;3frames;leave:60ms;3frames;again:60ms;2frames'''''
+* name: '''''trigger''''' and value: '''''start:60ms;3frames;leave:60ms;2frames;over'''''
