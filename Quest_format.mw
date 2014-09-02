@@ -25,6 +25,9 @@ Is the formal definition interpreted by the server and client to know at what st
 	<name lang="en"><![CDATA[Farm your success]]></name>
 	<requirements>
 		<quest id="1" />
+		<quest id="2" inverse="true" /><!-- need never been started, to do mutual exclusion -->
+		<reputation type="empire" level="2" />
+		<reputation type="farming" level="-1" />
 	</requirements>
 	<step id="1">
 		<text lang="en"><![CDATA[Abrind 5 craftball to the bandit]]></text>
