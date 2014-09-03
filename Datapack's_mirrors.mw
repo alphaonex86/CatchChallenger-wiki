@@ -8,3 +8,14 @@ Mostly you have:
 * http://host/datapack/pack/datapack.tar.xz (full datapack to get where you don't have any file on the client, excluded him self and non autorised file type)
 * http://host/datapack/pack/diff/datapack-[sha224].tar.xz (datapack changed files to get from particular datapack client state, sha224 is checksum of client datapack file content ordened by relative to datapack base file name, excluded him self and non autorised file type)
 To have easy integration mostly due to xz embedded edition, the unique format supported is: '''tar --posix -c -f - datapack/ | xz -9 --check=crc32 > datapack.tar.xz''' (of course you can change -9 by other stuff)
+
+To have http datapack ready (include by file list), and archive. This is the best compression and anonymity.
+<code>/usr/bin/find /path/atapack/ -type f -not \( -name "*.tmx" -or -name "*.xml" -or -name "*.tsx" -or -name "*.js" -or -name "*.png" -or -name "*.jpg" -or -name "*.gif" -or -name "*.ogg" -or -name "*.qml" -or -name "*.qm" -or -name "*.ts" -or -name "*.txt" \) -exec /usr/bin/ionice -c 3 /usr/bin/nice -n 19 rm -f {} \;
+find /path/datapack/ -type d -empty -delete > /dev/null 2>&1
+find /path/datapack/ -type d -empty -delete > /dev/null 2>&1
+find /path/datapack/ -type d -empty -delete > /dev/null 2>&1
+find /path/datapack/ -type d -empty -delete > /dev/null 2>&1
+find /path/datapack/ -type d -empty -delete > /dev/null 2>&1
+find /path/datapack/ -exec touch -t 197001020000.00 {} \;
+cd /path/
+tar --posix -c -f - datapack/ | xz -9 --check=crc32 > datapack.tar.xz</code>
