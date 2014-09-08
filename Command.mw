@@ -26,10 +26,14 @@ The command:
 * Get the player list
  /playerlist
 
-== Planned ==
-
 * Teleport player to player
  /tp [player1] [player2]
 
 * Go to a map
  /goto [map] x y
+
+* Give an object
+ /give objectId player [quantity=1]
+
+* Take an object
+ /take objectId player [quantity=1]
