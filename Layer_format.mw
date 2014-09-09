@@ -8,8 +8,8 @@
         <event id="day" value="night" monsterType="grassNight;grass"/>
     </monstersCollision>
     <monstersCollision monsterType="water" background="fight/water/" layer="Water" type="walkOn" item="135" tile="swim"/>
-    <monstersCollision monsterType="water" background="fight/water/" layer="Water" type="actionOn" item="97" tile="fish"/>
-    <monstersCollision monsterType="water" background="fight/water/" layer="Water" type="actionOn" item="98" tile="fish"/>
-    <monstersCollision monsterType="water" background="fight/water/" layer="Water" type="actionOn" item="99" tile="fish"/>
+    <monstersCollision monsterType="waterOldRod;water" background="fight/water/" layer="Water" type="actionOn" item="50" tile="fish"/>
+    <monstersCollision monsterType="waterGoodRod;waterOldRod;water" background="fight/water/" layer="Water" type="actionOn" item="51" tile="fish"/>
+    <monstersCollision monsterType="waterSuperRod;waterGoodRod;waterOldRod;water" background="fight/water/" layer="Water" type="actionOn" item="52" tile="fish"/>
 </layers>
 </pre>
