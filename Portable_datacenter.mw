@@ -22,7 +22,7 @@ COMMIT
 -A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
 -A FORWARD -s 192.168.142.0/24 ! -d 192.168.142.0/24 -i ethLocalNetwork -j ACCEPT
 # for utilite only
--A FORWARD -s 192.168.0.0/24 -d 172.16.0.0 -i ethToInternet -j ACCEPT
+-A FORWARD -s 192.168.0.0/24 -d 172.16.0.0/16 -i ethToInternet -j ACCEPT
 
 COMMIT
 </pre></code>
