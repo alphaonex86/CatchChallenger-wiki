@@ -30,4 +30,4 @@ And:
 <code><pre>sysctl net.ipv4.ip_forward=1</pre></code>
 On toc:
 <code><pre>route add -net 172.16.0.0 netmask 255.255.0.0 gw 192.168.0.2 ethToInternet</pre></code>
-On utilite, deny the access to 192.168.X.X, only forward to internet, but form 192.168.142.X will access to 192.168.0.X and 172.16.X.X
+On '''utilite''', '''deny the access to 192.168.X.X''', only forward to internet. But from 192.168.142.X will access to 192.168.0.X, 172.16.X.X and internet.
