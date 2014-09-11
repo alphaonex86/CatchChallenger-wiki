@@ -1,1 +1,33 @@
+= Target =
+Have fix address, included with change of internet provider, or have multiple internet connexion. This include for other service than http, like: mail (pop, smtp), irc, xmpp, ... Have access to site web via the normal web thanks to inproxy (XXXXXX.b32.i2p.us), and less sensible to dns or routing security leak.
+
+= Topologie and installation =
 [[File:personnal-network-topologie.png]]
+
+On toc and utilite:
+
+<code><pre>*nat
+:PREROUTING ACCEPT [966:55985]
+:INPUT ACCEPT [32:2024]
+:OUTPUT ACCEPT [19:1212]
+:POSTROUTING ACCEPT [0:0]
+-A POSTROUTING -o ethToInternet -j MASQUERADE
+COMMIT
+
+*filter
+:INPUT ACCEPT [112:7798]
+:FORWARD DROP [1:60]
+:OUTPUT ACCEPT [0:0]
+
+-A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A FORWARD -s 192.168.142.0/24 ! -d 192.168.142.0/24 -i ethLocalNetwork -j ACCEPT
+# for utilite only
+-A FORWARD -s 192.168.0.0/24 -d 172.16.0.0 -i ethToInternet -j ACCEPT
+
+COMMIT
+</pre></code>
+And:
+<code><pre>sysctl net.ipv4.ip_forward=1</pre></code>
+On toc:
+<code><pre>route add -net 172.16.0.0 netmask 255.255.0.0 gw 192.168.0.2 ethToInternet</pre></code>
+On utilite, deny the access to 192.168.X.X, only forward to internet, but form 192.168.142.X will access to 192.168.0.X and 172.16.X.X
