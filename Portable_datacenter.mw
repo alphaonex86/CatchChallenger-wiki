@@ -35,5 +35,5 @@ On toc:
 On '''utilite''', '''deny the access to 192.168.X.X''', only forward to internet. But from 192.168.142.X will access to 192.168.0.X, 172.16.X.X and internet.
 
 = Links =
-[[Latency and RTT in Bolivia]]
-[http://catchchallenger.first-world.info/other/proposition-internet-bolivia.odp Proposition internet bolivia]
+* [[Latency and RTT in Bolivia]]
+* [http://catchchallenger.first-world.info/other/proposition-internet-bolivia.odp Proposition internet bolivia]
