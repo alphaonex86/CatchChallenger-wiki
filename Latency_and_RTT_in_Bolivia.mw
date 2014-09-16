@@ -1,0 +1,39 @@
+Wikipedia:
+<blockquote>In telecommunications, the round-trip delay time (RTD) or round-trip time (RTT) is the length of time it takes for a signal to be sent plus the length of time it takes for an acknowledgment of that signal to be received. This time delay therefore consists of the propagation times between the two points of a signal.</blockquote>
+
+The actuals telecommunications in Bolivia is widely touched by latency/RTT due to lack of data locality.
+
+Site tested remotely via http://catchchallenger.first-world.info/ (dedicated server quad core, 64GB of memory, 1000Mbps in data-center):
+
+[[File:remote-internet-full-page.png]]
+
+Need more 1,5s to load the page. Why?
+* Firstly it try connect on the tcp server, it's the first RTT
+* Secondly it try connect on HTTP protocol and send the page to get, it's the second RTT
+* You add third RTT for SSL if your site is under HTTPS
+
+[[File:remote-internet-get-source.png]]
+
+After the browser try get the elements (images, css, …), it add at least one RTT:
+
+[[File:remote-internet-first-image.png]]
+
+It load the final elements (onbodyload) to have good asynchronism on the site, one RTT for local elements, multiples RTT for externals resources like facebook widget, google+ widget, …
+
+[[File:remote-internet-event-after-load.png]]
+
+'''Total: At least 4 RTT to display completely the web site (4x 210ms = 840ms), but in real world it will be more than 8 RTT to display completely the web site without count the time to download the elements (8x 210ms = 1680ms).'''
+
+Site tested localy ('''from one modem cable from Cotas ISP to another modem cable of Cotas ISP, both into santa cruz''', portable datacenter: [[Portable datacenter]] with haproxy as http reverse proxy and i2p as  as secure reverse proxy, Raspberry pi ARM hardware lower power with SD card, and '''10KB/s of upload, but 8ms of latency between this 2 point'''):
+
+[[File:local-internet-full-page.png]]
+
+[[File:local-internet-page-source.png]]
+
+Same load procedure but due to the low latency, the site is fully '''loaded into 100ms, 15x more fast'''!!!!
+
+Tested with: Chrome Version 36, it drop mostly the RTT (without that's, it will be one RTT by elements, then often more than 50 RTT) by loading the elements on the site site in parallel. Spdy or http2 improve few bit more this, but remain with the RTT mentioned, most of browser server don't support this for now.
+
+The bandwidth is the limitation for the big file, but not for the site with small file or with good conception (google, facebook, ...)
+
+Done by Alpha_one_x86 '''BRULE Herman''' (alpha_one_x86) the 16 september '''2014''' for a better internet in bolivia.
