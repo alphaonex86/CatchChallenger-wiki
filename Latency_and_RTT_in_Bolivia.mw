@@ -40,6 +40,6 @@ Same load procedure but due to the low latency, the site is fully '''loaded into
 
 Tested with: Chrome Version 36, it drop mostly the RTT (without that's, it will be one RTT by elements, then often more than 50 RTT) by loading the elements on the site site in parallel. Spdy or http2 improve few bit more this, but remain with the RTT mentioned, most of browser server don't support this for now.
 
-The bandwidth is the limitation for the big file, but not for the site with small file or with good conception (google, facebook, ...)
+The bandwidth is the limitation for the big file, then latency have small impact in this case. But for sites with smalls files or with good conception (google, facebook, ...) the latency have an big impact.
 
 Done by Alpha_one_x86 '''BRULE Herman''' (alpha_one_x86) the 16 september '''2014''' for a better internet in bolivia.
