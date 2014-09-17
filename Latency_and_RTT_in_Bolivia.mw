@@ -3,7 +3,7 @@ Wikipedia:
 
 The actuals telecommunications in Bolivia is widely touched by latency/RTT due to lack of data locality.
 
-Site tested remotely via http://catchchallenger.first-world.info/ (dedicated server quad core, 64GB of memory, 1000Mbps in data-center):
+Site tested remotely via http://catchchallenger.first-world.info/ (dedicated server quad core, 64GB of memory, 1000Mbps in data-center in France):
 
 [[File:remote-internet-full-page.png]]
 
@@ -24,7 +24,7 @@ It load the final elements (onbodyload) to have good asynchronism on the site, o
 
 '''Total: At least 4 RTT to display completely the web site (4x 210ms = 840ms), but in real world it will be more than 8 RTT to display completely the web site without count the time to download the elements (8x 210ms = 1680ms).'''
 
-Site tested localy ('''from one modem cable from Cotas ISP to another modem cable of Cotas ISP, both into santa cruz''', portable datacenter: [[Portable datacenter]] with haproxy as http reverse proxy and i2p as  as secure reverse proxy, Raspberry pi ARM hardware lower power with SD card, and '''10KB/s of upload, but 8ms of latency between this 2 point'''):
+Site tested localy ('''from one modem cable from Cotas ISP to another modem cable of Cotas ISP, both into Santa cruz de la sierra in Bolivia''', portable datacenter: [[Portable datacenter]] with haproxy as http reverse proxy and i2p as  as secure reverse proxy, Raspberry pi ARM hardware lower power with SD card, and '''10KB/s of upload, but 8ms of latency between this 2 point'''):
 
 [[File:local-internet-full-page.png]]
 
