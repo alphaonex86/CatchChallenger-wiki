@@ -36,10 +36,15 @@ Site tested localy ('''from one modem cable from Cotas ISP to another modem cabl
 
 Same load procedure but due to the low latency, the site is fully '''loaded into 100ms, 15x more fast'''!!!!
 
+== Trace route ==
+[[File:traceroute-bolivia.png]]
+
 == Conclusion ==
 
 Tested with: Chrome Version 36, it drop mostly the RTT (without that's, it will be one RTT by elements, then often more than 50 RTT) by loading the elements on the site site in parallel. Spdy or http2 improve few bit more this, but remain with the RTT mentioned, most of browser server don't support this for now.
 
 The bandwidth is the limitation for the big file, then latency have small impact in this case. But for sites with smalls files or with good conception (google, facebook, ...) the latency have an big impact.
+
+Improve the data locality is a target. Some solutions: SDSL offer (or with fiber), no speed limitation for near destination to help the self hosting,  datacenter offer for the large compagnies.
 
 Done by Alpha_one_x86 '''BRULE Herman''' (alpha_one_x86) the 16 september '''2014''' for a better internet in bolivia.
