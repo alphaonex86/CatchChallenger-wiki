@@ -58,3 +58,50 @@ Without SSL, epoll version, without optimisation (need 0 copy optimisation, -O2,
 Without SSL, epoll version, without optimisation (need 0 copy optimisation, -O2, -march=native, C only rewrite, ...), commit d4dbab56f9e578c2c589d61189709cbee76d0a4f.
 * '''38% of cpu for 30 creation/s''' of charaters, 30% for postgresql, 8% for catchchallenger
 * '''2% of cpu for 400 player moving''' on the map
+
+= Internal benchmark =
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Result to connect all player
+! Result internal to connect all player
+! Result to idle server
+! Result internal to idle server
+! Result to moving on server
+! Result internal to moving on server
+! Result to chat
+! Result internal to chat
+|-
+| First test
+| 37
+| 526629
+| 1
+| 6520
+| 2
+| 31860
+| 1
+| 8264
+|-
+| Second test
+| 37
+| 500011
+| 1
+| 5980
+| 2
+| 50998
+| 1
+| 5905
+|-
+| Third test
+| 38
+| 538715
+| 0
+| 5987
+| 3
+| 33429
+| 0
+| 6103
+|}
+
+* Internal is with std::chrono::high_resolution_clock::now() difference
+* Not internet is with /proc/[pid]/stat under linux, value 14 utime
