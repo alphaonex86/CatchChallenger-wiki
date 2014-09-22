@@ -60,6 +60,7 @@ Without SSL, epoll version, without optimisation (need 0 copy optimisation, -O2,
 * '''2% of cpu for 400 player moving''' on the map
 
 = Internal benchmark =
+This is for server only, with 480 client connected.
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
 ! style="width: 12em" |
