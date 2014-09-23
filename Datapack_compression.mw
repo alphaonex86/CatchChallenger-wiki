@@ -1,0 +1,7 @@
+All my tool to compress the datapack is here: https://github.com/alphaonex86/CatchChallenger/tree/master/tools/datapack-compressor the image is quantised, xml cleaned, ...
+
+= Png compression =
+It's parse of:
+* pngquant
+* pngcrush -rem gAMA -rem cHRM -rem iCCP -rem sRGB
+* zopflipng
