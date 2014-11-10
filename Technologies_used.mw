@@ -37,3 +37,9 @@ Epoll is used, solving the C10K problem. The server can easily support lot of mo
 
 = Plugin =
 '''The most standard part''' like map visibility, database '''is into classes''' and managed '''as plugin to easy change, test and benchmark''' the different configuration. The plugins of db in text mode need do lot of string to int conversion (usage of cpu time on server), the string manipulation due to the SQL take lof of cpu/memory/memory allocation too, and finally the database on server use resources too. Included with index, and optimized, the database is hugely the most low of the server part, it's why the query is asynchronized.
+
+= Client side prediction =
+Like other part, allow the client to predict the server status to prevent lag from latency.
+
+= Path finding =
+It's the unique game as I known what use path find to determine the path with the less direction change. This algorithmic is radically different from the other game.
