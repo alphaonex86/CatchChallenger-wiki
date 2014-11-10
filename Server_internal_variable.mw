@@ -18,20 +18,33 @@
 </code>
 == Internal variable ==
 <code>
-reputation.reputation_positive << 0 << 150 << 10000;
-reputation.reputation_negative << -1 << -150 << -10000;
+  reputation.reputation_positive << 0 << 150 << 10000;
+  reputation.reputation_negative << -1 << -150 << -10000;
 </code>
+Mean:
+* Level 2: Max level
+* Level 1: Level up at 10000 point or more
+* Level 0+: Level up at 150 point or more
+* Level 0-: Level down at -150 point or more
+* Level -1: Level down at -10000 point or more
+* Level -2: Max negative level
 === Example of player level 1 ===
 <code>
   PlayerReputation playerReputation;
   playerReputation.level=1;
   playerReputation.point=5;
 </code>
-=== Example of player level 0 ===
+=== Example of player level 0+ ===
 <code>
   PlayerReputation playerReputation;
   playerReputation.level=0;
   playerReputation.point=15;
+</code>
+=== Example of player level 0- ===
+<code>
+  PlayerReputation playerReputation;
+  playerReputation.level=0;
+  playerReputation.point=-21;
 </code>
 === Example of player level -1 ===
 <code>
