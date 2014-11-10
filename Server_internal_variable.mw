@@ -36,6 +36,6 @@ reputation.reputation_negative << -1 << -150 << -10000;
 === Example of player level -1 ===
 <code>
   PlayerReputation playerReputation;
-  playerReputation.level=0;
+  playerReputation.level=-1;
   playerReputation.point=-21;
 </code>
