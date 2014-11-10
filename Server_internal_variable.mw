@@ -1,0 +1,41 @@
+= Reputation =
+<code>
+  <level point="10000">
+    <text>Level 2</text>
+  </level>
+  <level point="150">
+    <text>Level 1</text>
+  </level>
+  <level point="0">
+    <text>Level 0</text>
+  </level>
+  <level point="-150">
+    <text>Level -1</text>
+  </level>
+  <level point="-10000">
+    <text>Level -2</text>
+  </level>
+</code>
+== Internal variable ==
+<code>
+reputation.reputation_positive << 0 << 150 << 10000;
+reputation.reputation_negative << -1 << -150 << -10000;
+</code>
+=== Example of player level 1 ===
+<code>
+  PlayerReputation playerReputation;
+  playerReputation.level=1;
+  playerReputation.point=5;
+</code>
+=== Example of player level 0 ===
+<code>
+  PlayerReputation playerReputation;
+  playerReputation.level=0;
+  playerReputation.point=15;
+</code>
+=== Example of player level -1 ===
+<code>
+  PlayerReputation playerReputation;
+  playerReputation.level=0;
+  playerReputation.point=-21;
+</code>
