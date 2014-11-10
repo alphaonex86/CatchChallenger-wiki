@@ -1,5 +1,6 @@
-= Network buffer manipulation =
-== 0 copy ==
+= Server =
+== Network buffer manipulation ==
+=== 0 copy ===
 The 0 copy technologie is way to never copy buffer into another (as well in internal is done, for example to copy network card buffer). You just '''move a cursor on data structure''' and control all the datas.
 After you can or:
 * Isolate the main code, and push the pointer + cursor as data structure
@@ -9,37 +10,45 @@ The data structure can only be '''defined size''', because the dynamic data need
 If one data is '''greater than 8Bits''', then you need '''fix the bytes order/Endianness'''. Cost memory transactions like memory copy.
 Is to '''transmit commands with temporary parameters'''. The persistent datas need be store, then don't allow 0 copy (you will copy the data from the incoming buffer to persistent storage where can be memory, hdd, ... to keep after the buffer is flush).
 
-== SIMD ==
+=== SIMD ===
 On Arm is neon, on x86 is SSE-X, AVX-X. The known more, see: http://en.wikipedia.org/wiki/SIMD
 It allow copy block of memory into single instruction, is more power full than a loop because use correctly the hardware without need or compiler Vectorization, see: http://en.wikipedia.org/wiki/Vectorization_(parallel_computing)
 If a range of byte is checked and valid, you can have structure similar of it: 99x8Bits into buffer, '''you can just memcpy() the buffer range into the object with the right structure'''.
 If you data is '''greater than 8Bits''', then or need '''fix the bytes order/Endianness'''. Cost memory transactions like memory copy. Look more as deserializer.
 Is more oriented to datas storage, but in some circumstance can be used with temporary data.
 
-== Deserializer ==
+=== Deserializer ===
 Is more slow than SIMD, but good to have permanent storage for data to parse before use. For example, string inline into the buffer need be transformed into pointer + size (mix with SIMD some time), you need change to Endianness for most of the byte, ...
 Prefer start with the lower address (buffer[0]) util end to higher address (buffer[99]) to improve the performance.
 
-= 0 Memory allocation =
+== 0 Memory allocation ==
 Most of the time, don't have memory allocation, or or the stack on the worse case. Mostly due to protocol binary, max packet size, permanent buffer to deserialize the network data is good solution.
 All the network huge operation like datapack downloading can be externalized. On high performance server only the useful traffic is parsed/sended, then have better latency, lighter server, ...
 
-= Binary =
+== Binary ==
 The text is useful to debug, but use hurge network and resources. Less than 1 access on billion on http is to reader directly the protocol via network dump (by hacker, network admin, developer -> then you need be able to deal with it), mean the rest of the time the resource is consumed without reason, binary http can be displayed on web browser like the actual http text protocol. '''To use "Data: 654654"''', you need '''extract "654654"''' (check the string length, do dynamic memory allocation) and '''secondly convert into number'''. With binary '''just do memory copy''' and correct the endianness if needed. Then it's very more fast and power full in binary. The protocol header negotiation in text was 66 bytes, in binary only 5, with gain of 50x of cpu on the read/compare operation.
 
 [[File:text-vs-binary-protocol.png]]
 
-= Anti DDOS and cost infrastructure =
+== Anti DDOS and cost infrastructure ==
 All this technologies and a good compiler usage like -march=XXX, allow be anti-DDOS by nature because can support huge number of request by second. Minimize the cost infrastructure and than allow cheaper game, more server for the players and then it's harder to DDOS. It's too easiest to administrate.
 
-= Epoll =
+== Epoll ==
 Epoll is used, solving the C10K problem. The server can easily support lot of more player on 25 years old. I will don't bypass the tcp kernel layer to allow correct para-visualization, but a good optimization allow C10M solving on good hardware.
 
-= Plugin =
+== Plugin ==
 '''The most standard part''' like map visibility, database '''is into classes''' and managed '''as plugin to easy change, test and benchmark''' the different configuration. The plugins of db in text mode need do lot of string to int conversion (usage of cpu time on server), the string manipulation due to the SQL take lof of cpu/memory/memory allocation too, and finally the database on server use resources too. Included with index, and optimized, the database is hugely the most low of the server part, it's why the query is asynchronized.
 
-= Client side prediction =
+= Client =
+== Client side prediction ==
 Like other part, allow the client to predict the server status to prevent lag from latency.
 
-= Path finding =
+== Path finding ==
 It's the unique game as I known what use path find to determine the path with the less direction change. This algorithmic is radically different from the other game.
+
+= Protocol =
+== Security ==
+Allow be a minimum secured included without encryption. It support OpenSsl encryption, mean: TLS 2 with self signed certificate, with transparent public key registering on client part.
+
+== Compression and bandwidth ==
+Support compression (xz and zlib) and disabled compression. All is studied to minimize the bandwidth included fixed message size. The [[Datapack's mirrors]] is studied to compressed all data, offload the game server, work as full and partial datapack update.
