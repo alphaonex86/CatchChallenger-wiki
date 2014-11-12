@@ -51,7 +51,7 @@ It's the unique game as I known what use path find to determine the path with th
 Allow be a minimum secured included without encryption. It support OpenSsl encryption, mean: TLS 2 with self signed certificate, with transparent public key registering on client part.
 
 == Compression and bandwidth ==
-Support compression (xz and zlib) and disabled compression. All is studied to minimize the bandwidth included fixed message size. The [[Datapack's mirrors]] is studied to compressed all data, offload the game server, work as full and partial datapack update.
+Support compression (xz and zlib) and disabled compression. All is studied to minimize the bandwidth included fixed message size. The [[Datapack's mirrors]] is studied to compressed all data, offload the game server, work as full and partial datapack update (via simplified rsync like protocol).
 
 = Other =
 == Client side server replication ==
