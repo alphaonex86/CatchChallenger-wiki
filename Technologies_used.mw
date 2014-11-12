@@ -52,3 +52,7 @@ Allow be a minimum secured included without encryption. It support OpenSsl encry
 
 == Compression and bandwidth ==
 Support compression (xz and zlib) and disabled compression. All is studied to minimize the bandwidth included fixed message size. The [[Datapack's mirrors]] is studied to compressed all data, offload the game server, work as full and partial datapack update.
+
+= Other =
+== Client side server replication ==
+The datapack used to create and host server is automatically cloned on client side. This do a replication of server to reopen a server with same datapack content if needed.
