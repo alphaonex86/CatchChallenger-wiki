@@ -458,25 +458,24 @@ Remove list size <span style="color: #FF4000">0002</span>, and the object:
 === D00004 ===
 Type: <span style="color: #9D007B">01</span> (cash), quantity: <span style="color: #40BF00">0000000000000001</span>
  <span style="color: #9D007B">01</span><span style="color: #40BF00">0000000000000001</span>
-Type: <span style="color: #9D007B">02</span> (item), item: <span style="color: #FFBF00">00000001</span>, quantity: <span style="color: #40BF00">00000001</span>
- <span style="color: #9D007B">02</span><span style="color: #FFBF00">00000001</span><span style="color: #40BF00">00000001</span>
+Type: <span style="color: #9D007B">02</span> (item), item: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>
+ <span style="color: #9D007B">02</span><span style="color: #FFBF00">0001</span><span style="color: #40BF00">00000001</span>
 Type: <span style="color: #9D007B">03</span> (monster)
 * monsters id in db: <span style="color: #FF4000">00000001</span>
-* monsters: <span style="color: #FF4000">00000001</span>
+* monsters: <span style="color: #FF4000">0001</span>
 * level: <span style="color: #40BF00">01</span>
 * remaining_xp: <span style="color: #008080">00000001</span>
 * hp: <span style="color: #FFBF00">00000001</span>
 * sp: <span style="color: #FF00FF">00000001</span>
-* captured_with: <span style="color: #40BF00">00000001</span>
+* captured_with: <span style="color: #40BF00">0001</span>
 * gender: <span style="color: #FF4000">01</span>
 * egg_step: <span style="color: #FFBF00">00000000</span> (is mature if = 0)
 * size of list of the buff monsters: <span style="color: #7B00FF">00000001</span>
-** buff: <span style="color: #40BF00">00000001</span>
+** buff: <span style="color: #40BF00">01</span>
 ** buff level: <span style="color: #FF4000">01</span>
 * size of list of the skills monsters: <span style="color: #7B00FF">00000001</span>
-** skill: <span style="color: #40BF00">00000001</span>
+** skill: <span style="color: #40BF00">01</span>
 ** skill level: <span style="color: #FF4000">01</span>
- <span style="color: #9D007B">03</span><span style="color: #FF4000">00000001</span><span style="color: #FF4000">00000001</span><span style="color: #40BF00">01</span><span style="color: #008080">00000001</span><span style="color: #FFBF00">00000001</span><span style="color: #FF00FF">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FF4000">01</span><span style="color: #FFBF00">00000000</span><span style="color: #7B00FF">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FF4000">01</span><span style="color: #7B00FF">00000001</span><span style="color: #40BF00">00000001</span><span style="color: #FF4000">01</span>
 
 === D1 ===
 Send list size <span style="color: #FF4000">0001</span>, and the plant:
