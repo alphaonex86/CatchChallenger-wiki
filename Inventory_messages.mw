@@ -474,7 +474,7 @@ Type: <span style="color: #9D007B">03</span> (monster)
 ** buff: <span style="color: #40BF00">01</span>
 ** buff level: <span style="color: #FF4000">01</span>
 * size of list of the skills monsters: <span style="color: #7B00FF">00000001</span>
-** skill: <span style="color: #40BF00">01</span>
+** skill: <span style="color: #40BF00">0001</span>
 ** skill level: <span style="color: #FF4000">01</span>
 
 === D1 ===
