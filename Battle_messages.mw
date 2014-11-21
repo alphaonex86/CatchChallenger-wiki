@@ -197,13 +197,13 @@ After send one of this case, depands on case number:
 
 ==== Monster change ====
 * monster place: <span style="color: #7B00FF">01</span>
-* monsters: <span style="color: #FF4000">00000001</span>
+* monsters: <span style="color: #FF4000">0001</span>
 * level: <span style="color: #40BF00">01</span>
 * hp: <span style="color: #FFBF00">00000001</span>
-* captured_with: <span style="color: #40BF00">00000001</span>
+* captured_with: <span style="color: #40BF00">0001</span>
 * gender: <span style="color: #FF4000">01</span>
 * size of list of the buff monsters: <span style="color: #7B00FF">00000001</span>
-** buff: <span style="color: #40BF00">00000001</span>
+** buff: <span style="color: #40BF00">01</span>
 ** buff level: <span style="color: #FF4000">01</span>
 
 ==== Item usage ====
