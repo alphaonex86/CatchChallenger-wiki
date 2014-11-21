@@ -189,7 +189,7 @@ After send one of this case, depands on case number:
 
 ==== Normal attack ====
 * success: <span style="color: #FF4000">01</span> (01 yes, 00 no)
-* attack: <span style="color: #40BF00">00000001</span>
+* attack: <span style="color: #40BF00">0001</span>
 * QList<BuffEffect> addBuffEffectMonster
 * QList<BuffEffect> removeBuffEffectMonster
 * QList<LifeEffectReturn> lifeEffectMonster
