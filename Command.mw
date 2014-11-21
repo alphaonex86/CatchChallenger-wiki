@@ -1,3 +1,4 @@
+= Admin =
 The command:
 * Kick a player
  /kick [pseudo]
@@ -20,12 +21,6 @@ The command:
 * Set the event value
  /setevent [event name] [event value]
 
-* Get the player number
- /playernumber
-
-* Get the player list
- /playerlist
-
 * Teleport player to player
  /tp [player1] [player2]
 
@@ -37,3 +32,16 @@ The command:
 
 * Take an object
  /take objectId player [quantity=1]
+
+= Player =
+* Get the player number
+ /playernumber
+
+* Get the player list
+ /playerlist
+
+* Trade
+ /trade [player]
+
+* Battle
+ /battle [player]
