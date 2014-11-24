@@ -31,7 +31,15 @@ The text is useful to debug, but use hurge network and resources. Less than 1 ac
 [[File:text-vs-binary-protocol.png]]
 
 == Anti DDOS and cost infrastructure ==
-All this technologies and a good compiler usage like -march=XXX, allow be anti-DDOS by nature because can support huge number of request by second. Minimize the cost infrastructure and than allow cheaper game, more server for the players and then it's harder to DDOS. It's too easiest to administrate.
+All this technologies and a good compiler usage like -march=XXX, allow be anti-DDOS by nature because can support large number of request by second. Minimize the cost infrastructure and than allow cheaper game, more server for the players and then it's harder to DDOS. It's too easiest to administrate. The memory leak was checked in most typical case. And profiling is done to ensure correct performance and prevent software bloat and sensibility to DDOS attack.
+
+== Fast path, fast (de)serialiser and 10Gbps ==
+The server have path to improve the performance and especially on common routine. For the read the fast path allow to store faster the information.
+For thr write allow broadcast message without recompose it. That's and low memory allow the usage of 10Gbps like or better than other high performance server (nginx, lighttpd, ...)
+Serialize or deserialise the network into variables but securly is important point.
+
+== Multiple database and async ==
+Multiple database connector (mysql, sqlite, postgresql, ...) is supported. Some connectors is optimised in C and asynchrone to never slow down if the database respond slowly.
 
 == Epoll ==
 Epoll is used, solving the C10K problem. The server can easily support lot of more player on 25 years old. I will don't bypass the tcp kernel layer to allow correct para-visualization, but a good optimization allow C10M solving on good hardware.
@@ -47,12 +55,18 @@ Like other part, allow the client to predict the server status to prevent lag fr
 It's the unique game as I known what use path find to determine the path with the less direction change. This algorithmic is radically different from the other game.
 
 = Protocol =
-== Security ==
-Allow be a minimum secured included without encryption. It support OpenSsl encryption, mean: TLS 2 with self signed certificate, with transparent public key registering on client part.
+== Network communication ==
+Tokeb allow to be a minimum secure included without encryption. OpenSsl encryption is used, self signed certificate is supported with transparent public key registering on client part to do more easy the self hosting.
+Proxy socks4/5 to be more flexible around the data communication.
 
 == Compression and bandwidth ==
-Support compression (xz and zlib) and disabled compression. All is studied to minimize the bandwidth included fixed message size. The [[Datapack's mirrors]] is studied to compressed all data, offload the game server, work as full and partial datapack update (via simplified rsync like protocol).
+Usage of compression format when is useful like xz to save a maximum of bandwith, zlib to have good ratio cpu/bandwith or nothing to maximize the cpu usage. All is studied to minimize the bandwidth included fixed message size. The [[Datapack's mirrors]] is studied to compressed all data, offload the game server, work as full and partial datapack update (via simplified rsync like protocol).
+Mirror for the datapack via the http/http2/spdy protocol: split the bandwith accross multiple server, keep the main server for game only to preserve bandwith/cpu, improve the data locality if you use content delivery network (CDN), with multiple game server improve the reactivity
+Browser exploitable content
 
-= Other =
+= Datapack =
 == Client side server replication ==
 The datapack used to create and host server is automatically cloned on client side. This do a replication of server to reopen a server with same datapack content if needed.
+
+== Web usage ==
+All the content is exploitable by the browser (with php or javascript), html content generator and explorer, tool to convert .tmx to .png for the preview without load the map.
