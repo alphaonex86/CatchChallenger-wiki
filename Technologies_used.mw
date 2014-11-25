@@ -52,7 +52,7 @@ Epoll is used, solving the C10K problem. The server can easily support lot of mo
 Like other part, allow the client to predict the server status to prevent lag from latency.
 
 == Path finding ==
-It's the unique game as I known what use path find to determine the path with the less direction change. This algorithmic is radically different from the other game.
+It's the unique game as I known what use path find to determine the path with the less direction change but without best path to don't use lot of cpu for now. This algorithmic is radically different from the other game.
 
 = Protocol =
 == Network communication ==
