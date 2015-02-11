@@ -1,0 +1,8 @@
+The server need be able to be splited and work as cluster, or work as one and unique server standalone.
+
+As well, each step need user input like:
+* Login/pass
+* Character selection grouped by group of world (group of game server). Where the same character can evolve into a world and switch to another world (with same inventory, ...)
+* Game server selection, where the world can be the same but is mostly different to change the user experience
+
+[[File:Server-organisation.png]]
