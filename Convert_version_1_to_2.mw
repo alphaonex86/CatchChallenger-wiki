@@ -4,7 +4,6 @@ To do the convertion from version 1 to version 2:
 * player/start.xml -> put id for each start, drop the map value, create the file: map/main/[name]/start.xml with content:
 <pre>
 <!--
-Default:
 /!\ warning, directly put this information into db
 /!\ not check if x,y is into the range of the map
 -->
