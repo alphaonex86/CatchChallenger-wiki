@@ -1,11 +1,10 @@
-== Datapack ==
-
 To do the convertion from version 1 to version 2:
 * move the map from map/ to: map/main/[name]/ that's allow common base with multiple server with different map
 * sub change for monsters: if you have a file: map/main/[name]/city.xml you can create map/main/[name]/sub/[sub-name]/city.xml to have sub specific variation of server, the datapack and map is same, only the monsters/rates will change and is readed
 * player/start.xml -> put id for each start, drop the map value, create the file: map/main/[name]/start.xml with content:
 <pre>
 <!--
+Default:
 /!\ warning, directly put this information into db
 /!\ not check if x,y is into the range of the map
 -->
@@ -23,41 +22,3 @@ To do the convertion from version 1 to version 2:
 * Move quests/ to map/main/[name]/quests/
 * Move shop/ to map/main/[name]/shop/
 * Move zone/ to map/main/[name]/zone/
-
-== Database ==
-Split into 4 part:
-* The login
-** account
-** account_register
-* The base
-** dictionary_allow
-** dictionary_reputation
-** dictionary_skin
-** dictionary_starter '''New'''
-* The common data
-** character
-** character_allow
-** clan
-** dictionary_server '''New'''
-** item
-** item_warehouse
-** monster '''Change''', add place (0x01 for normal, 0x02 for warehouse, 0x03 for market)
-** monster_buff
-** monster_skill
-** monster_warehouse '''Merged into monster'''
-** recipe
-** reputation
-** server_time '''New'''
-* The server data (market here to don't have inter-server sync and improve performance, lower cost and better security)
-** bot_already_beaten
-** character_itemonmap
-** character_forserver '''New''', split the character table into common and server specific
-** city
-** dictionary_pointonmap renamed from dictionary_itemonmap
-** dictionary_map
-** factory
-** item_market
-** monster_market '''Merged into monster'''
-** monster_market_price '''New'''
-** plant '''Change''' use dictionary_pointonmap to improve the database size on plant visible only by player
-** quest
