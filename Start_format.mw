@@ -1,0 +1,46 @@
+== This is for version 2 ==
+player/start.xml:
+<pre>
+<!--
+Default:
+forcedskin value="", separated by ;
+cash value="0"
+reputation: none
+The attack of monster is the 4 last attack for the level
+-->
+<list>
+    <start id="normal">
+        <name>Normal player</name>
+        <description>You start a normal game as player</description>
+        <forcedskin value="boy;girl"/>
+        <cash value="100"/>
+        <monster level="5" captured_with="1" id="1"/>
+        <item quantity="2" id="1"/>
+    </start>
+    <start id="evil">
+        <name>Team evil</name>
+        <description>You start into the team evil</description>
+        <forcedskin value="evil1;evil2"/>
+        <cash value="200"/>
+        <monster level="5" captured_with="2" id="2"/>
+        <item quantity="1" id="1"/>
+        <reputation level="1" type="rep"/>
+    </start>
+</list>
+</pre>
+And into:
+map/main/[name]/start.xml
+<pre>
+<!--
+/!\ warning, directly put this information into db
+/!\ not check if x,y is into the range of the map
+-->
+<list>
+    <start id="normal">
+        <map x="10" y="10" file="test"/>
+    </start>
+    <start id="evil">
+        <map x="10" y="10" file="test"/>
+    </start>
+</list>
+</pre>
