@@ -1,0 +1,24 @@
+To do the convertion from version 1 to version 2:
+* move the map from map/ to: map/main/[name]/ that's allow common base with multiple server with different map
+* sub change for monsters: if you have a file: map/main/[name]/city.xml you can create map/main/[name]/sub/[sub-name]/city.xml to have sub specific variation of server, the datapack and map is same, only the monsters/rates will change and is readed
+* player/start.xml -> put id for each start, drop the map value, create the file: map/main/[name]/start.xml with content:
+<pre>
+<!--
+Default:
+/!\ warning, directly put this information into db
+/!\ not check if x,y is into the range of the map
+-->
+<list>
+    <start id="normal">
+        <map x="10" y="10" file="maptest"/><!-- Searched into: map/main/[name]/maptest -->
+    </start>
+    <start id="test">
+        <map x="10" y="10" file="maptest2"/><!-- Searched into: map/main/[name]/maptest2 -->
+    </start>
+</list>
+</pre>
+* Move map/conditions.xml to map/main/[name]/conditions.xml
+* industries/ and map/main/[name]/industries/ have same content, both is merged, the second overwrite the first if same id
+* Move quests/ to map/main/[name]/quests/
+* Move shop/ to map/main/[name]/shop/
+* Move zone/ to map/main/[name]/zone/
