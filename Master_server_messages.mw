@@ -14,25 +14,25 @@
 | 
 | XX
 | {{No}}
-| [[Base_protocol_messages#01|Protocol initialization and login]]
+| [[Login master server#01|Protocol initialization and login]]
 |-
 | style="background: #90ff90; color: black;" | 02
 | 
 | XX
 | {{No}}
-| [[Base_protocol_messages#02|Register game server]]
+| [[Login master server#02|Register game server]]
 |-
 | style="background: #90ff90; color: black;" | 03
 | 
 | XX
 | {{No}}
-| [[Base_protocol_messages#03|Register login server]]
+| [[Login master server#03|Register login server]]
 |-
 | style="background: #90ff90; color: black;" | 04
 | 
 | XX
 | {{No}}
-| [[Base_protocol_messages#04|Game server ask if token is right]]
+| [[Login master server#04|Game server ask if token is right]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
@@ -49,25 +49,25 @@
 | 
 | 
 | {{No}}
-| [[Base_protocol_messages#40|Number of characters connected]]
+| [[Login master server#40|Number of characters connected]]
 |-
 | style="background: #90ff90; color: black;" | 41
 | 
 | XX
 | style="background: #9CF6FF; color: black;" | Depands
-| [[Base_protocol_messages#41|Reply to server query]] ([[Base_protocol_messages#Reply|See reply]])
+| [[Login master server#41|Reply to server query]] ([[Login master server#Reply|See reply]])
 |-
 | style="background: #90ff90; color: black;" | 42
 | 
 | 
 | {{Yes}}
-| [[Base_protocol_messages#42|Lock charater id]]
+| [[Login master server#42|Lock charater id]]
 |-
 | style="background: #90ff90; color: black;" | 43
 | 
 | 
 | {{No}}
-| [[Base_protocol_messages#43|Unlock and unregister charater id from game server]]
+| [[Login master server#43|Unlock and unregister charater id from game server]]
 |}
 
 = Reply =
@@ -82,22 +82,22 @@
 | style="background: #90ff90; color: black;" | 01
 |
 | {{Yes}}
-| [[Base_protocol_messages#Reply_01|Protocol initialization and login]]
+| [[Login master server#Reply_01|Protocol initialization and login]]
 |-
 | style="background: #90ff90; color: black;" | 02
 |
 | {{Yes}}
-| [[Base_protocol_messages#Reply_02|Register game server]]
+| [[Login master server#Reply_02|Register game server]]
 |-
 | style="background: #90ff90; color: black;" | 03
 |
 | {{Yes}}
-| [[Base_protocol_messages#Reply_03|Register login server]]
+| [[Login master server#Reply_03|Register login server]]
 |-
 | style="background: #90ff90; color: black;" | 04
 |
 | {{No}}
-| [[Base_protocol_messages#Reply_04|Game server ask if token is right]]
+| [[Login master server#Reply_04|Game server ask if token is right]]
 |}
 
 = Details =
@@ -113,4 +113,4 @@ Final result:
 
 {{Note}}After this, all communication is into the packet size mode send by the protocol.
 
-[[Base_protocol_messages#Reply_03|See reply to this query]]
+[[Login master server#Reply_03|See reply to this query]]
