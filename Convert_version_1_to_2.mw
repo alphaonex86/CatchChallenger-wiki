@@ -1,3 +1,5 @@
+== Datapack ==
+
 To do the convertion from version 1 to version 2:
 * move the map from map/ to: map/main/[name]/ that's allow common base with multiple server with different map
 * sub change for monsters: if you have a file: map/main/[name]/city.xml you can create map/main/[name]/sub/[sub-name]/city.xml to have sub specific variation of server, the datapack and map is same, only the monsters/rates will change and is readed
@@ -21,3 +23,35 @@ To do the convertion from version 1 to version 2:
 * Move quests/ to map/main/[name]/quests/
 * Move shop/ to map/main/[name]/shop/
 * Move zone/ to map/main/[name]/zone/
+
+== Database ==
+Split into 3 part:
+* The login
+** account
+** account_register
+* The common data
+** character
+** character_allow
+** clan
+** dictionary_allow
+** dictionary_reputation
+** dictionary_skin
+** item
+** item_warehouse
+** monster
+** monster_buff
+** monster_skill
+** monster_warehouse
+** recipe
+** reputation
+* The server data (market here to don't have inter-server sync and improve performance, lower cost and better security)
+** bot_already_beaten
+** character_itemonmap
+** city
+** dictionary_itemonmap
+** dictionary_map
+** factory
+** item_market
+** monster_market
+** plant
+** quest
