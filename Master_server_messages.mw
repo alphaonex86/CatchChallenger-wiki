@@ -15,6 +15,18 @@
 | XX
 | {{No}}
 | [[Base_protocol_messages#01|Protocol initialization and login]]
+|-
+| style="background: #90ff90; color: black;" | 02
+| 
+| XX
+| {{No}}
+| [[Base_protocol_messages#02|Register game server]]
+|-
+| style="background: #90ff90; color: black;" | 03
+| 
+| XX
+| {{No}}
+| [[Base_protocol_messages#03|Register login server]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
