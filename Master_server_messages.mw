@@ -1,57 +1,77 @@
-{{note}}: The first byte send by server is 0x00 to say no encrypted or 0x01 to say encrypted by Ssl.
+{{note}}: The first byte send by server is 0x00 to say no encrypted or 0x01 to say encrypted by Ssl
 
 = General =
 == Client &rarr; Server with reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Packet Code
+! Main code type
+! Sub code type
+! Query number
+! Packet size
 ! Data
-! Source
-! Destination
-! Fixed Query size
-! Fixed Reply size
-{{Template:Master_server_messages_Client_Server_Reply}}
 |-
-| Login specific
-{{Template:Login_protocol_messages_Client_Server_Reply}}
+| style="background: #90ff90; color: black;" | 01
+| 
+| XX
+| {{No}}
+| [[Base_protocol_messages#01|Protocol initialization and login]]
 |}
-{{Note}}All the main code in this column is considered query with needed reply
+{{Note}}All the main code in this column is considered query with needed reply.
 
 == Client &rarr; Server without reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Packet Code
+! Main code type
+! Sub code type
+! Query number
+! Packet size
 ! Data
-! Source
-! Destination
-! Fixed Message size
-{{Template:Master_server_messages_Client_Server}}
-|}
-
-== Server &rarr; Client with reply ==
-{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Packet Code
-! Data
-! Source
-! Destination
-! Fixed Query size
-! Fixed Reply size
-{{Template:Master_server_messages_Server_Client_Reply}}
-|}
-
-== Server &rarr; Client without reply ==
-{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+| style="background: #90ff90; color: black;" | 40
+| 
+| 
+| {{No}}
+| [[Base_protocol_messages#40|Number of characters connected]]
 |-
-! Packet Code
-! Data
-! Source
-! Destination
-! Fixed Message size
-{{Template:Master_server_messages_Server_Client}}
+| style="background: #90ff90; color: black;" | 41
+| 
+| XX
+| style="background: #9CF6FF; color: black;" | Depands
+| [[Base_protocol_messages#41|Reply to server query]] ([[Base_protocol_messages#Reply|See reply]])
+|-
+| style="background: #90ff90; color: black;" | 42
+| 
+| 
+| {{Yes}}
+| [[Base_protocol_messages#42|Lock charater id]]
+|-
+| style="background: #90ff90; color: black;" | 43
+| 
+| 
+| {{No}}
+| [[Base_protocol_messages#43|Register charater id on game server]]
+|-
+| style="background: #90ff90; color: black;" | 44
+| 
+| 
+| {{No}}
+| [[Base_protocol_messages#44|Unlock and unregister charater id from game server]]
 |}
 
 = Reply =
+== Client &rarr; Server ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type of the query
+! Sub code type of the query
+! Packet size for the reply
+! Query
+|-
+| style="background: #90ff90; color: black;" | 79
+| style="background: #ffcc00; color: black;" | 0001
+| {{No}}
+| [[Base_protocol_messages#Reply_790001|Teleport the player]]
+|}
 == Server &rarr; Client ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
@@ -60,163 +80,38 @@
 ! Packet size for the reply
 ! Query
 |-
-| style="background: #90ff90; color: black;" | 01
+| style="background: #90ff90; color: black;" | 03
 |
 | {{Yes}}
-| [[Master server messages#Reply_01|Protocol initialization and login]]
+| [[Base_protocol_messages#Reply_03|Protocol initialization]]
 |-
-| style="background: #90ff90; color: black;" | 07
-|
+| style="background: #90ff90; color: black;" | 02
+| style="background: #ffcc00; color: black;" | 0002
 | {{Yes}}
-| [[Master server messages#Reply_07|Register game server]]
+| [[Base_protocol_messages#Reply_020002|Get first data and send the login]]
 |-
-| style="background: #90ff90; color: black;" | 08
-|
+| style="background: #90ff90; color: black;" | 02
+| style="background: #ffcc00; color: black;" | 000C
 | {{Yes}}
-| [[Master server messages#Reply_08|Register login server]]
+| [[Base_protocol_messages#Reply_02000C|Send datapack file list]]
+|-
+| style="background: #90ff90; color: black;" | 02
+| style="background: #ffcc00; color: black;" | 000D
+| {{No}}
+| [[Base_protocol_messages#Reply_02000D|Clan action]]
 |}
 
 = Details =
 == Client &rarr; Server with reply ==
-=== 01 ===
+=== 03 ===
 {{Note}}This first packet is send as raw + big (see [[General_protocol#Messages_composition|Messages composition]])
 
 At the connection, send the protocol supported, <span style="font-weight: bold">before all!</span><br />
-protocol magic number: <span style="font-style: italic"><span style="color: #40BF00">8862BCBB679E3DE7</span></span>, version (one of them):
-* <span style="font-style: italic"><span style="color: #BF00FF">01</span></span> (1.0.0.0)
-* <span style="font-style: italic"><span style="color: #BF00FF">10</span></span> (2.0.0.0)
+protocol magic number: <span style="font-style: italic"><span style="color: #40BF00">9cd6498d</span></span>, version: <span style="font-style: italic"><span style="color: #FFBF00">01</span></span>
 
-[[Master server messages#Reply_01|See reply to this query]]
+Final result:
+ <span style="color: #40BF00">9cd6498d</span><span style="color: #FFBF00">01</span>
 
-=== 07 ===
-* Hash sha224 of key + dynamic token: <span style="color: #40BF00">XXX...XXXX</span>
-* charactersGroup: <span style="color: #40BF00">"HightRates"</span> (8Bits header + utf8, only [a-z0-9]+)
-* Unique key: <span style="color: #FFBF00">00000000</span> (32bits, generate from random)
-* <span style="color: #FFBF00">&quot;Host&quot;</span> 8bits headers + utf8
-* <span style="color: #0000FF">9999</span> (port, 16Bits)
-* <span style="color: #40BFFF"><name>Server test 4</name><name lang="fr">Serveur de teste 4</name><description>Description in english</description><description lang="fr">Description en français</description></span> (xml attached) 16bits headers + utf8
-* <span style="color: #7B00FF">folder/path</span> (logical group) 8bits headers + utf8
-* current number of player: <span style="color: #40BF00">0000</span>
-* max player: <span style="color: #40BF00">0064</span> (then 100 in decimal)
-* <span style="color: #0000FF">0001</span> (max player disconnected since the last master connexion, 16Bits)
-** Player database id: <span style="color: #FFBF00">00000000</span> (32bits)
+{{Note}}After this, all communication is into the packet size mode send by the protocol.
 
-[[Master server messages#Reply_07|See reply to this query]]
-
-
-=== 08 ===
-* Hash sha224 of key + dynamic token: <span style="color: #40BF00">XXX...XXXX</span>
-
-[[Master server messages#Reply_08|See reply to this query]]
-
-=== 0207 ===
-
-charactersGroupIndex: <span style="color: #FF0040">01</span>, Server unique key: <span style="color: #40BF00">XXXXXXXX</span> (32Bits), Send the character id: <span style="color: #FF0040">00000001</span>, Send the account id: <span style="color: #FF0040">00000001</span> '''/!\ security important''' perform the account == character account on game server at character loading for performance
-
-See too [[Master_server_messages#8101|Get token for character select]]
-
-[[Login_protocol_messages#Reply_0205|See reply to this query]]
-
-== Client &rarr; Server without reply ==
-=== 4501 ===
-* Character id: <span style="color: #FF0040">00000001</span>
-=== 4502 ===
-* Current player: <span style="color: #FF0040">0001</span> (always 16Bits)
-
-== Server &rarr; Client with reply ==
-=== 8101 ===
-Query because need wait the return (sync/async problem) to send the token for the client connect
-
-Check if the characterId is linked to the correct account on login server
-
-Not initiate the character select until, the real client or proxy is connected and have requested it
-
-* Character id: <span style="color: #FF0040">00000001</span>
-* Account id requested the character: <span style="color: #FFBF00">00000000</span> '''/!\ security important''' perform the account == character account on game server at character loading for performance reason
-* No client ip transmited because it's very very limited session into the time (the token is valid for 30s)
-
-See too [[Master server messages#0207|Select character on master]]
-
-[[Master server messages#Reply_8101|See reply to this query]]
-
-== Server &rarr; Client without reply ==
-
-=== E101 ===
-The current number of player 16Bits * server list size
-
-=== E102 ===
-2 or more game server have claim this character lock, block it for some time (for exemple 5min) by the master server, then disconnect it on game server. It's to prevent data corruption by multiple time character opened.
-
-Character id: 00000001 32Bits
-
-= Reply =
-== Server &rarr; Client reply ==
-=== Reply 01 ===
-* <span style="color: #40BFFF">02</span> (protocol not supported)
-* <span style="color: #40BFFF">04</span> (is supported, compression: None), <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> token of 16bytes for auth
-* <span style="color: #40BFFF">05</span> (is supported, compression: Zlib), <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> token of 16bytes for auth
-* <span style="color: #40BFFF">06</span> (is supported, compression: Xz), <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> token of 16bytes for auth
-* <span style="color: #40BFFF">07</span> (is supported, compression: Lz4), <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> token of 16bytes for auth
-
-=== Reply 07 ===
-* <span style="color: #40BFFF">01</span> (01 = registred)
-* 50 maxMonsterIdList: 50x <span style="color: #40BF00">00000001</span>
-* 5 maxClanIdList: 5x <span style="color: #40BF00">00000001</span>
-* Max player monsters: <span style="color: #40BFFF">01</span> /!\ Never put number greater than 10 here
-* Max warehouse player monsters: <span style="color: #40BFFF">0001</span>
-* Max player items: <span style="color: #40BFFF">01</span>
-* Max warehouse player monsters: <span style="color: #40BFFF">0001</span>
-
-* reputation id dictionary size: <span style="color: #40BF00">01</span>
-** The index is the internal id, database id <span style="color: #FF4000">0001</span>
-* Skin id dictionary size: <span style="color: #40BF00">01</span>
-** The index is the internal id, database id <span style="color: #FF4000">0001</span>
-* starter id dictionary size: <span style="color: #40BF00">01</span>
-** The index is the internal id, database id <span style="color: #FF4000">0001</span>
-
-* sha224 of datapack file list content for the base datapack '''then excluding map/main/''' (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list too (if match, not need sync it).
-
-Or
-* <span style="color: #40BFFF">02</span> (02 = need unique key change)
-* new unique key <span style="color: #40BFFF">00000000</span> (random number)
-* 50 maxMonsterIdList: 50x <span style="color: #40BF00">00000001</span>
-* 5 maxClanIdList: 5x <span style="color: #40BF00">00000001</span>
-* Max player monsters: <span style="color: #40BFFF">01</span> /!\ Never put number greater than 10 here
-* Max warehouse player monsters: <span style="color: #40BFFF">0001</span>
-* Max player items: <span style="color: #40BFFF">01</span>
-* Max warehouse player monsters: <span style="color: #40BFFF">0001</span>
-
-* reputation id dictionary size: <span style="color: #40BF00">01</span>
-** The index is the internal id, database id <span style="color: #FF4000">0001</span>
-* Skin id dictionary size: <span style="color: #40BF00">01</span>
-** The index is the internal id, database id <span style="color: #FF4000">0001</span>
-* starter id dictionary size: <span style="color: #40BF00">01</span>
-** The index is the internal id, database id <span style="color: #FF4000">0001</span>
-
-* sha224 of datapack file list content for the base datapack '''then excluding map/main/''' (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list too (if match, not need sync it).
-
-Or
-* <span style="color: #40BFFF">03</span> (03 = character group not found)
-Or
-* <span style="color: #40BFFF">04</span> (04 = token wrong)
-Or
-* <span style="color: #40BFFF">05</span> (05 = logical group not found)
-
-=== Reply 08 ===
-* <span style="color: #40BFFF">01</span> (01 = token ok)
-See '''C211''' to follow Characters group alphabetical order
-
-* 50 maxAccountIdList: 50x <span style="color: #40BF00">00000001</span>
-
-* By Characters group
-** 50 maxCharacterIdList: 50x <span style="color: #40BF00">00000001</span>
-** 50 maxMonsterIdList: 50x <span style="color: #40BF00">00000001</span>
-
-Or
-* <span style="color: #40BFFF">04</span> (04 = token wrong)
-
-== Client &rarr; Server reply ==
-=== Reply 8101 ===
-Here to don't drop the master server entropy pool.
-
-* Token to connect on game server: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> 256Bits, 32Bytes
+[[Base_protocol_messages#Reply_03|See reply to this query]]
