@@ -67,13 +67,7 @@
 | 
 | 
 | {{No}}
-| [[Base_protocol_messages#43|Register charater id on game server]]
-|-
-| style="background: #90ff90; color: black;" | 44
-| 
-| 
-| {{No}}
-| [[Base_protocol_messages#44|Unlock and unregister charater id from game server]]
+| [[Base_protocol_messages#43|Unlock and unregister charater id from game server]]
 |}
 
 = Reply =
