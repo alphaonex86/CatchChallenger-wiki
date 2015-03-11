@@ -27,6 +27,12 @@
 | XX
 | {{No}}
 | [[Base_protocol_messages#03|Register login server]]
+|-
+| style="background: #90ff90; color: black;" | 04
+| 
+| XX
+| {{No}}
+| [[Base_protocol_messages#04|Game server ask if token is right]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
