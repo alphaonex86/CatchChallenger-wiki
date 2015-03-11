@@ -82,22 +82,22 @@
 | style="background: #90ff90; color: black;" | 01
 |
 | {{Yes}}
-| [[Base_protocol_messages#Reply_01|Protocol initialization]]
+| [[Base_protocol_messages#Reply_01|Protocol initialization and login]]
 |-
 | style="background: #90ff90; color: black;" | 02
 |
 | {{Yes}}
-| [[Base_protocol_messages#Reply_02|Get first data and send the login]]
+| [[Base_protocol_messages#Reply_02|Register game server]]
 |-
 | style="background: #90ff90; color: black;" | 03
 |
 | {{Yes}}
-| [[Base_protocol_messages#Reply_03|Send datapack file list]]
+| [[Base_protocol_messages#Reply_03|Register login server]]
 |-
 | style="background: #90ff90; color: black;" | 04
 |
 | {{No}}
-| [[Base_protocol_messages#Reply_04|Clan action]]
+| [[Base_protocol_messages#Reply_04|Game server ask if token is right]]
 |}
 
 = Details =
