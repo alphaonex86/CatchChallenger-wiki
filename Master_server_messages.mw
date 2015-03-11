@@ -1,0 +1,117 @@
+{{note}}: The first byte send by server is 0x00 to say no encrypted or 0x01 to say encrypted by Ssl
+
+= General =
+== Client &rarr; Server with reply ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+|-
+| style="background: #90ff90; color: black;" | 01
+| 
+| XX
+| {{No}}
+| [[Base_protocol_messages#01|Protocol initialization and login]]
+|}
+{{Note}}All the main code in this column is considered query with needed reply.
+
+== Client &rarr; Server without reply ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+|-
+| style="background: #90ff90; color: black;" | 40
+| 
+| 
+| {{No}}
+| [[Base_protocol_messages#40|Number of characters connected]]
+|-
+| style="background: #90ff90; color: black;" | 41
+| 
+| XX
+| style="background: #9CF6FF; color: black;" | Depands
+| [[Base_protocol_messages#41|Reply to server query]] ([[Base_protocol_messages#Reply|See reply]])
+|-
+| style="background: #90ff90; color: black;" | 42
+| 
+| 
+| {{Yes}}
+| [[Base_protocol_messages#42|Lock charater id]]
+|-
+| style="background: #90ff90; color: black;" | 43
+| 
+| 
+| {{No}}
+| [[Base_protocol_messages#43|Register charater id on game server]]
+|-
+| style="background: #90ff90; color: black;" | 44
+| 
+| 
+| {{No}}
+| [[Base_protocol_messages#44|Unlock and unregister charater id from game server]]
+|}
+
+= Reply =
+== Client &rarr; Server ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type of the query
+! Sub code type of the query
+! Packet size for the reply
+! Query
+|-
+| style="background: #90ff90; color: black;" | 79
+| style="background: #ffcc00; color: black;" | 0001
+| {{No}}
+| [[Base_protocol_messages#Reply_790001|Teleport the player]]
+|}
+== Server &rarr; Client ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type of the query
+! Sub code type of the query
+! Packet size for the reply
+! Query
+|-
+| style="background: #90ff90; color: black;" | 03
+|
+| {{Yes}}
+| [[Base_protocol_messages#Reply_03|Protocol initialization]]
+|-
+| style="background: #90ff90; color: black;" | 02
+| style="background: #ffcc00; color: black;" | 0002
+| {{Yes}}
+| [[Base_protocol_messages#Reply_020002|Get first data and send the login]]
+|-
+| style="background: #90ff90; color: black;" | 02
+| style="background: #ffcc00; color: black;" | 000C
+| {{Yes}}
+| [[Base_protocol_messages#Reply_02000C|Send datapack file list]]
+|-
+| style="background: #90ff90; color: black;" | 02
+| style="background: #ffcc00; color: black;" | 000D
+| {{No}}
+| [[Base_protocol_messages#Reply_02000D|Clan action]]
+|}
+
+= Details =
+== Client &rarr; Server with reply ==
+=== 03 ===
+{{Note}}This first packet is send as raw + big (see [[General_protocol#Messages_composition|Messages composition]])
+
+At the connection, send the protocol supported, <span style="font-weight: bold">before all!</span><br />
+protocol magic number: <span style="font-style: italic"><span style="color: #40BF00">9cd6498d</span></span>, version: <span style="font-style: italic"><span style="color: #FFBF00">01</span></span>
+
+Final result:
+ <span style="color: #40BF00">9cd6498d</span><span style="color: #FFBF00">01</span>
+
+{{Note}}After this, all communication is into the packet size mode send by the protocol.
+
+[[Base_protocol_messages#Reply_03|See reply to this query]]
