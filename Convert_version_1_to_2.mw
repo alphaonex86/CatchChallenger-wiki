@@ -47,6 +47,7 @@ Split into 3 part:
 * The server data (market here to don't have inter-server sync and improve performance, lower cost and better security)
 ** bot_already_beaten
 ** character_itemonmap
+** character_forserver '''New''', split the character table into common and server specific
 ** city
 ** dictionary_itemonmap
 ** dictionary_map
