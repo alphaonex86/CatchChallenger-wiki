@@ -85,14 +85,17 @@
 | [[Base_protocol_messages#Reply_01|Protocol initialization]]
 |-
 | style="background: #90ff90; color: black;" | 02
+|
 | {{Yes}}
 | [[Base_protocol_messages#Reply_02|Get first data and send the login]]
 |-
 | style="background: #90ff90; color: black;" | 03
+|
 | {{Yes}}
 | [[Base_protocol_messages#Reply_03|Send datapack file list]]
 |-
 | style="background: #90ff90; color: black;" | 04
+|
 | {{No}}
 | [[Base_protocol_messages#Reply_04|Clan action]]
 |}
