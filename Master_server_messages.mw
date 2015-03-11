@@ -71,19 +71,6 @@
 |}
 
 = Reply =
-== Client &rarr; Server ==
-{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! Main code type of the query
-! Sub code type of the query
-! Packet size for the reply
-! Query
-|-
-| style="background: #90ff90; color: black;" | 79
-| style="background: #ffcc00; color: black;" | 0001
-| {{No}}
-| [[Base_protocol_messages#Reply_790001|Teleport the player]]
-|}
 == Server &rarr; Client ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
@@ -92,25 +79,22 @@
 ! Packet size for the reply
 ! Query
 |-
-| style="background: #90ff90; color: black;" | 03
+| style="background: #90ff90; color: black;" | 01
 |
 | {{Yes}}
-| [[Base_protocol_messages#Reply_03|Protocol initialization]]
+| [[Base_protocol_messages#Reply_01|Protocol initialization]]
 |-
 | style="background: #90ff90; color: black;" | 02
-| style="background: #ffcc00; color: black;" | 0002
 | {{Yes}}
-| [[Base_protocol_messages#Reply_020002|Get first data and send the login]]
+| [[Base_protocol_messages#Reply_02|Get first data and send the login]]
 |-
-| style="background: #90ff90; color: black;" | 02
-| style="background: #ffcc00; color: black;" | 000C
+| style="background: #90ff90; color: black;" | 03
 | {{Yes}}
-| [[Base_protocol_messages#Reply_02000C|Send datapack file list]]
+| [[Base_protocol_messages#Reply_03|Send datapack file list]]
 |-
-| style="background: #90ff90; color: black;" | 02
-| style="background: #ffcc00; color: black;" | 000D
+| style="background: #90ff90; color: black;" | 04
 | {{No}}
-| [[Base_protocol_messages#Reply_02000D|Clan action]]
+| [[Base_protocol_messages#Reply_04|Clan action]]
 |}
 
 = Details =
