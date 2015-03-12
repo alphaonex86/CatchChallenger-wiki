@@ -171,11 +171,6 @@ Send the character id: <span style="color: #FF0040">00000001</span>
 
 [[Login_protocol_messages#Reply_020005|See reply to this query]]
 
-=== CF ===
-Server -&gt; Client: number of player connected, always on 4Bytes (32Bits), <span style="color: #FF4000">00000002</span>, total player supported: <span style="color: #FF0040">000000FF</span>, total servers online: <span style="color: #40BFFF">00FF</span>
-'''''If the number of player connected is 0''''', then the player number is never send to client client (updating disabled).
- 
-
 = Reply =
 == Server &rarr; Client reply ==
 === Reply 03 ===
