@@ -14,25 +14,25 @@
 | 
 | XX
 | {{No}}
-| [[Login master server#01|Protocol initialization and login]]
+| [[Master server messages#01|Protocol initialization and login]]
 |-
 | style="background: #90ff90; color: black;" | 02
 | 
 | XX
 | {{No}}
-| [[Login master server#02|Register game server]]
+| [[Master server messages#02|Register game server]]
 |-
 | style="background: #90ff90; color: black;" | 03
 | 
 | XX
 | {{No}}
-| [[Login master server#03|Register login server]]
+| [[Master server messages#03|Register login server]]
 |-
 | style="background: #90ff90; color: black;" | 04
 | 
 | XX
 | {{No}}
-| [[Login master server#04|Game server ask if token is right]]
+| [[Master server messages#04|Game server ask if token is right]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
@@ -49,25 +49,25 @@
 | 
 | 
 | {{No}}
-| [[Login master server#40|Number of characters connected]]
+| [[Master server messages#40|Number of characters connected]]
 |-
 | style="background: #90ff90; color: black;" | 41
 | 
 | XX
 | style="background: #9CF6FF; color: black;" | Depands
-| [[Login master server#41|Reply to server query]] ([[Login master server#Reply|See reply]])
+| [[Master server messages#41|Reply to server query]] ([[Master server messages#Reply|See reply]])
 |-
 | style="background: #90ff90; color: black;" | 42
 | 
 | 
 | {{Yes}}
-| [[Login master server#42|Lock charater id]]
+| [[Master server messages#42|Lock charater id]]
 |-
 | style="background: #90ff90; color: black;" | 43
 | 
 | 
 | {{No}}
-| [[Login master server#43|Unlock and unregister charater id from game server]]
+| [[Master server messages#43|Unlock and unregister charater id from game server]]
 |}
 
 = Reply =
@@ -82,22 +82,22 @@
 | style="background: #90ff90; color: black;" | 01
 |
 | {{Yes}}
-| [[Login master server#Reply_01|Protocol initialization and login]]
+| [[Master server messages#Reply_01|Protocol initialization and login]]
 |-
 | style="background: #90ff90; color: black;" | 02
 |
 | {{Yes}}
-| [[Login master server#Reply_02|Register game server]]
+| [[Master server messages#Reply_02|Register game server]]
 |-
 | style="background: #90ff90; color: black;" | 03
 |
 | {{Yes}}
-| [[Login master server#Reply_03|Register login server]]
+| [[Master server messages#Reply_03|Register login server]]
 |-
 | style="background: #90ff90; color: black;" | 04
 |
 | {{No}}
-| [[Login master server#Reply_04|Game server ask if token is right]]
+| [[Master server messages#Reply_04|Game server ask if token is right]]
 |}
 
 = Details =
@@ -111,7 +111,7 @@ protocol magic number: <span style="font-style: italic"><span style="color: #40B
 Final result:
  <span style="color: #40BF00">8862BCBB679E3DE7</span><span style="color: #FFBF00">XXX...XXX</span>
 
-[[Login master server#Reply_01|See reply to this query]]
+[[Master server messages#Reply_01|See reply to this query]]
 
 = Reply =
 == Server &rarr; Client reply ==
