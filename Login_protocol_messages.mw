@@ -1,0 +1,351 @@
+{{note}}: The first byte send by server is 0x00 to say no encrypted or 0x01 to say encrypted by Ssl
+
+= General =
+== Client &rarr; Server with reply ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+|-
+| style="background: #90ff90; color: black;" | 03
+| 
+| XX
+| {{No}}
+| [[Login protocol messages#03|Protocol initialization]] '''''(Fast, 1)'''''
+|-
+| style="background: #90ff90; color: black;" | 04
+| 
+| XX
+| {{No}}
+| [[Login protocol messages#04|Get first data and send the login]] '''''(Fast, 1)'''''
+|-
+| style="background: #90ff90; color: black;" | 05
+| 
+| XX
+| {{No}}
+| [[Login protocol messages#05|Create account]] '''''(Fast, 1)'''''
+|-
+| style="background: #90ff90; color: black;" | 02
+| style="background: #ffcc00; color: black;" | 0003
+| XX
+| {{Yes}}
+| [[Login protocol messages#020003|Add character]]
+|-
+| style="background: #90ff90; color: black;" | 02
+| style="background: #ffcc00; color: black;" | 0004
+| XX
+| {{No}}
+| [[Login protocol messages#020004|Remove character]]
+|-
+| style="background: #90ff90; color: black;" | 02
+| style="background: #ffcc00; color: black;" | 0005
+| XX
+| {{No}}
+| [[Login protocol messages#020005|Select character]]
+|}
+{{Note}}All the main code in this column is considered query with needed reply.
+* 1) Fast to have good performance, to face to bruteforce, DDOS, ...
+
+== Client &rarr; Server without reply ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+|-
+| style="background: #90ff90; color: black;" | 41
+| 
+| XX
+| style="background: #9CF6FF; color: black;" | Depands
+| [[Login protocol messages#41|Reply to server query]] ([[Login protocol messages#Reply|See reply]])
+|-
+|}
+
+== Server &rarr; Client with reply ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+|}
+
+== Server &rarr; Client without reply ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+|-
+| style="background: #90ff90; color: black;" | C1
+| 
+| XX
+| style="background: #9CF6FF; color: black;" | Depands
+| [[Login protocol messages#C1|Reply to client query]] ([[Login protocol messages#Reply|See reply]])
+|-
+| style="background: #90ff90; color: black;" | CF
+| 
+| 
+| {{No}}
+| [[Login protocol messages#CF|All server Player number]]
+|-
+|}
+
+= Reply =
+== Client &rarr; Server ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type of the query
+! Sub code type of the query
+! Packet size for the reply
+! Query
+|}
+== Server &rarr; Client ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type of the query
+! Sub code type of the query
+! Packet size for the reply
+! Query
+|-
+| style="background: #90ff90; color: black;" | 03
+|
+| {{Yes}}
+| [[Login protocol messages#Reply_03|Protocol initialization]]
+|-
+| style="background: #90ff90; color: black;" | 02
+| style="background: #ffcc00; color: black;" | 0002
+| {{Yes}}
+| [[Login protocol messages#Reply_020002|Get first data and send the login]]
+|}
+
+= Details =
+== Client &rarr; Server with reply ==
+=== 03 ===
+{{Note}}This first packet is send as raw + big (see [[General_protocol#Messages_composition|Messages composition]])
+
+At the connection, send the protocol supported, <span style="font-weight: bold">before all!</span><br />
+protocol magic number: <span style="font-style: italic"><span style="color: #40BF00">9cd6498d</span></span>, version: <span style="font-style: italic"><span style="color: #FFBF00">01</span></span>
+
+Final result:
+ <span style="color: #40BF00">9cd6498d</span><span style="color: #FFBF00">01</span>
+
+{{Note}}After this, all communication is into the packet size mode send by the protocol.
+
+[[Login protocol messages#Reply_03|See reply to this query]]
+
+=== 04 ===
+[[File:loginpass-catchchallenger-meca.png]]
+
+Send:
+* sha224(sha224(login+/*salt*/"RtR3bm9Z1DFMfAC3"))
+* sha224(sha224(pass+/*salt*/"AwjDvPIzfJPTTgHs") + token sended at protocol get)
+Then:
+  <span style="color: #40BF00">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span>, <span style="color: #FF0040">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span><br />
+
+[[Login protocol messages#Reply_04|See reply to this query]]
+
+=== 05 ===
+Send:
+* sha224(login+/*salt*/"RtR3bm9Z1DFMfAC3")
+* sha224(pass+/*salt*/"AwjDvPIzfJPTTgHs")
+Then:
+  <span style="color: #40BF00">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span>, <span style="color: #FF0040">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span><br />
+
+[[Login protocol messages#Reply_05|See reply to this query]]
+
+=== 020003 ===
+Send the profile id: <span style="color: #FF0040">01</span>, pseudo <span style="color: #40BF00">"toto"</span>, skinId <span style="color: #40BF00">01</span>
+
+[[Login protocol messages#Reply_020003|See reply to this query]]
+
+=== 020004 ===
+Remove character id: <span style="color: #FF0040">00000001</span>
+
+[[Login protocol messages#Reply_020004|See reply to this query]]
+
+=== 020005 ===
+Send the character id: <span style="color: #FF0040">00000001</span>
+
+[[Login protocol messages#Reply_020005|See reply to this query]]
+
+=== CF ===
+Server -&gt; Client: number of player connected, always on 4Bytes (32Bits), <span style="color: #FF4000">00000002</span>, total player supported: <span style="color: #FF0040">000000FF</span>, total servers online: <span style="color: #40BFFF">00FF</span>
+'''''If the number of player connected is 0''''', then the player number is never send to client client (updating disabled).
+ 
+
+= Reply =
+== Server &rarr; Client reply ==
+=== Reply 03 ===
+<span style="color: #40BFFF">02</span> (protocol not supported)
+
+<span style="color: #40BFFF">03</span> (Server full)
+
+<span style="color: #40BFFF">04</span> (is supported, compression: None), <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> token of 16bytes for auth
+
+<span style="color: #40BFFF">05</span> (is supported, compression: Zlib), <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> token of 16bytes for auth
+
+<span style="color: #40BFFF">06</span> (is supported, compression: Xz), <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> token of 16bytes for auth
+
+{{Note}}After this, all communication is into the packet size mode send by the protocol.
+
+=== Reply 04 ===
+'''Note for dev: Is not way (or I have not found) to have max visibility player and simplified id with it without increasing the bandwidth due to id change (current player id pass into visibility zone need id change).'''
+
+
+If all is good:
+* <span style="color: #FF4000">01</span> (all is good)
+* max player: <span style="color: #40BF00">0064</span> (then 100 in decimal) -> this define if the players id is defined on 16Bits ('''unknown max player at this point''', for the client at the startup)
+* Next city capture in second: <span style="color: #FFBF00">00000012</span>
+* City capture frequency: <span style="color: #7B00FF">01</span> (week, <span style="color: #7B00FF">02</span> for month)
+* waitBeforeConnectAfterKick: <span style="color: #FF4000">00000014</span> (20s)
+* forceClientToSendAtBorder: <span style="color: #FFBF00">00</span> (0 == not forced)
+* forcedSpeed: <span style="color: #40BF00">C2</span> (0 == not forced)
+* Bandwitdh vs latency: <span style="color: #40BF00">01</span> (00 == prefer low letency, 01 prefer low bandwith -> under linux match with TCP CORK)
+* use SP: <span style="color: #40BF00">01</span> (01 == use sp, 00 == sp disabled)
+* dontSendPseudo: <span style="color: #FFBF00">00</span>
+* Character max: <span style="color: #40BFFF">01</span>
+* Character min: <span style="color: #40BFFF">01</span>
+* Pseudo size max: <span style="color: #40BFFF">10</span>
+* Character delete time: <span style="color: #9F5F20">01</span>
+* Rate xp: <span style="color: #FFBF00">3f800000</span> (1.0)
+* Rate gold: <span style="color: #FFBF00">3f800000</span> (1.0)
+* Rate xp_pow: <span style="color: #FFBF00">3f800000</span> (1.0)
+* Rate drop: <span style="color: #FFBF00">3f800000</span> (1.0)
+* Max player monsters: <span style="color: #40BFFF">01</span>
+* Max warehouse player monsters: <span style="color: #40BFFF">01</span>
+* Max player items: <span style="color: #40BFFF">01</span>
+* Max warehouse player monsters: <span style="color: #40BFFF">01</span>
+* Char allow all: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
+* Char allow local: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
+* Char allow private: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
+* Char allow clan: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
+* Industry price change: <span style="color: #FF4000">14</span> (+/- 20%)
+* Mirror to use: &quot;<span style="color: #40BF00">http://serverprimary/datapack/;http://serversecondary/datapack/</span>&quot;, if don't empty, don't send datapack query, you have the datpack list at http://serverprimary/datapack/datapack-list.txt test without proxy and with proxy is set. Test the next server, ...
+* sha224 of datapack file list content (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list without mirror too
+* number of map: <span style="color: #FF4000">00000002</span>
+* Character list size <span style="color: #7B00FF">01</span>
+** Character id: <span style="color: #BFBF40">00000001</span>
+** Pseudo: <span style="color: #40BF00">&quot;Character 1&quot;</span>
+** SkinId: <span style="color: #40BF00">01</span>
+** Time left before delete: <span style="color: #40BFFF">00000000</span> (0s = no delete planned)
+** Played time: <span style="color: #40BFFF">00000000</span>
+** Last connect: <span style="color: #40BFFF">00000000</span>
+** MapId: <span style="color: #40BF00">00000001</span> (32Bits, -1 if not found or buggy)
+
+If something is wrong, the possible return code are:
+* <span style="color: #FF4000">02</span> (Bad login)
+* <span style="color: #FF4000">03</span> (Wrong login/pass)
+* <span style="color: #FF4000">04</span> (Server internal error)
+* <span style="color: #FF4000">05</span> (Can't create character and don't have character)
+* <span style="color: #FF4000">06</span> (Login already in progress)
+* <span style="color: #FF4000">07</span> (Emit in clear the secret token, see the account creation query)
+
+After the server will send tp command to set the first position.
+
+This reply is compressed.
+
+=== Reply 05 ===
+* <span style="color: #FF4000">01</span> (Created)
+* <span style="color: #FF4000">02</span> (Login already used)
+* <span style="color: #FF4000">03</span> (Not created)
+
+=== Reply 020003 ===
+Return code: <span style="color: #40BFBF">00</span> (00 = success, 01 = pseudo already taken, 02 = have already maximum of charaters, 03 = other)
+
+The reply is the character id: <span style="color: #BFBF40">00000001</span>
+
+=== Reply 020004 ===
+If all is good:
+<span style="color: #FF4000">01</span>
+
+If something is wrong:
+<span style="color: #FF4000">02</span>
+
+=== Reply 020005 ===
+If all is good:
+* <span style="color: #FF4000">01</span> (all is good)
+* Character id: {{Player_id}} (unique generated id on the map)
+* pseudo: <span style="color: #40BF00">"toto"</span> (allow is string separated by ";")
+* allow list size: <span style="color: #40BF00">01</span>
+** allow clan: <span style="color: #40BF00">01</span>
+* clan id: <span style="color: #40BFFF">00000064</span>
+* clan_leader: <span style="color: #40BFFF">01</span>
+* Events not with default value list size <span style="color: #7B00FF">01</span>
+** Event id: <span style="color: #BFBF40">01</span>
+** Value id: <span style="color: #40BF00">02</span>
+* cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
+* warehouse cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
+* size of item on map: <span style="color: #7B00FF">01</span>
+** item on map getted: <span style="color: #FF4000">01</span>
+* size of list of the recipes: <span style="color: #7B00FF">0001</span>
+** recipe id: <span style="color: #FF4000">0001</span>
+* size of list of the monsters: <span style="color: #7B00FF">01</span>
+** monsters id in db: <span style="color: #FF4000">00000001</span>
+** monsters: <span style="color: #FF4000">0001</span>
+** level: <span style="color: #40BF00">01</span>
+** remaining_xp: <span style="color: #008080">00000001</span>
+** hp: <span style="color: #FFBF00">00000001</span>
+** sp: <span style="color: #FF00FF">00000001</span>
+** captured_with: <span style="color: #40BF00">0001</span>
+** gender: <span style="color: #FF4000">01</span>
+** egg_step: <span style="color: #FFBF00">00000000</span> (is mature if = 0)
+** character_origin: <span style="color: #FFBF00">00000001</span>
+** size of list of the buff monsters: <span style="color: #7B00FF">01</span>
+*** buff: <span style="color: #40BF00">01</span>
+*** buff level: <span style="color: #FF4000">01</span>
+** size of list of the skills monsters: <span style="color: #7B00FF">0001</span>
+*** skill: <span style="color: #40BF00">0001</span>
+*** skill level: <span style="color: #FF4000">01</span>
+*** skill remaining usage: <span style="color: #FFBF00">01</span>
+* size of list of the warehouse monsters: <span style="color: #7B00FF">01</span>
+** monsters id in db: <span style="color: #FF4000">00000001</span>
+** monsters: <span style="color: #FF4000">0001</span>
+** level: <span style="color: #40BF00">01</span>
+** remaining_xp: <span style="color: #008080">00000001</span>
+** hp: <span style="color: #FFBF00">00000001</span>
+** sp: <span style="color: #FF00FF">00000001</span>
+** captured_with: <span style="color: #40BF00">0001</span>
+** gender: <span style="color: #FF4000">01</span>
+** egg_step: <span style="color: #FFBF00">00000000</span> (is mature if = 0)
+** character_origin: <span style="color: #FFBF00">00000001</span>
+** size of list of the buff monsters: <span style="color: #7B00FF">01</span>
+*** buff: <span style="color: #40BF00">01</span>
+*** buff level: <span style="color: #FF4000">01</span>
+** size of list of the skills monsters: <span style="color: #7B00FF">0001</span>
+*** skill: <span style="color: #40BF00">0001</span>
+*** skill level: <span style="color: #FF4000">01</span>
+*** skill remaining usage: <span style="color: #FFBF00">01</span>
+* size of reputation list: <span style="color: #7B00FF">01</span>
+** reputation type: <span style="font-style: italic"><span style="color: #40BF00">01</span></span>
+** reputation level: <span style="color: #FF4000">01</span>
+** reputation point: <span style="color: #008080">00000001</span>
+* size of quest list: <span style="color: #7B00FF">0001</span>
+** quest id: <span style="color: #40BF00">0001</span>
+** quest step: <span style="color: #FF4000">01</span>
+** quest finish one time: <span style="color: #008080">00</span> (false)
+* size of list of the bot win (already betten): <span style="color: #7B00FF">0001</span>
+** bot id win (already betten): <span style="color: #40BF00">0001</span>
+
+After the server will send tp command to set the first position.
+
+This reply is compressed.
+
+Wrong, case possible:
+* <span style="color: #FF4000">02</span> (Character not found)
+* <span style="color: #FF4000">03</span> (Already logged)
+* <span style="color: #FF4000">04</span> (Server internal problem)
+
+= Other =
+== Map id ==
+You need load the map list, sort() it, check if match with datapack file list, and the id is the position.
+
+If the map list size is <= 255, then send on 8Bits, if <=65535 then on 16Bits, else on 32Bits.
