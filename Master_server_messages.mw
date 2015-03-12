@@ -112,3 +112,12 @@ Final result:
  <span style="color: #40BF00">8862BCBB679E3DE7</span><span style="color: #FFBF00">XXX...XXX</span>
 
 [[Login master server#Reply_01|See reply to this query]]
+
+= Reply =
+== Server &rarr; Client reply ==
+=== Reply 01 ===
+* <span style="color: #40BFFF">02</span> (protocol not supported)
+* <span style="color: #40BFFF">07</span> (Token auth wrong)
+* <span style="color: #40BFFF">04</span> (is supported, compression: None)
+* <span style="color: #40BFFF">05</span> (is supported, compression: Zlib)
+* <span style="color: #40BFFF">06</span> (is supported, compression: Xz)
