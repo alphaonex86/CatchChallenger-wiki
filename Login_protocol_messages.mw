@@ -14,37 +14,37 @@
 | 
 | XX
 | {{No}}
-| [[Login protocol messages#03|Protocol initialization]] '''''(Fast, 1)'''''
+| [[Login_protocol_messages#03|Protocol initialization]] '''''(Fast, 1)'''''
 |-
 | style="background: #90ff90; color: black;" | 04
 | 
 | XX
 | {{No}}
-| [[Login protocol messages#04|Get first data and send the login]] '''''(Fast, 1)'''''
+| [[Login_protocol_messages#04|Get first data and send the login]] '''''(Fast, 1)'''''
 |-
 | style="background: #90ff90; color: black;" | 05
 | 
 | XX
 | {{No}}
-| [[Login protocol messages#05|Create account]] '''''(Fast, 1)'''''
+| [[Login_protocol_messages#05|Create account]] '''''(Fast, 1)'''''
 |-
 | style="background: #90ff90; color: black;" | 02
 | style="background: #ffcc00; color: black;" | 0003
 | XX
 | {{Yes}}
-| [[Login protocol messages#020003|Add character]]
+| [[Login_protocol_messages#020003|Add character]]
 |-
 | style="background: #90ff90; color: black;" | 02
 | style="background: #ffcc00; color: black;" | 0004
 | XX
 | {{No}}
-| [[Login protocol messages#020004|Remove character]]
+| [[Login_protocol_messages#020004|Remove character]]
 |-
 | style="background: #90ff90; color: black;" | 02
 | style="background: #ffcc00; color: black;" | 0005
 | XX
 | {{No}}
-| [[Login protocol messages#020005|Select character]]
+| [[Login_protocol_messages#020005|Select character]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 * 1) Fast to have good performance, to face to bruteforce, DDOS, ...
@@ -62,7 +62,7 @@
 | 
 | XX
 | style="background: #9CF6FF; color: black;" | Depands
-| [[Login protocol messages#41|Reply to server query]] ([[Login protocol messages#Reply|See reply]])
+| [[Login_protocol_messages#41|Reply to server query]] ([[Login_protocol_messages#Reply|See reply]])
 |-
 |}
 
@@ -89,13 +89,13 @@
 | 
 | XX
 | style="background: #9CF6FF; color: black;" | Depands
-| [[Login protocol messages#C1|Reply to client query]] ([[Login protocol messages#Reply|See reply]])
+| [[Login_protocol_messages#C1|Reply to client query]] ([[Login_protocol_messages#Reply|See reply]])
 |-
 | style="background: #90ff90; color: black;" | CF
 | 
 | 
 | {{No}}
-| [[Login protocol messages#CF|All server Player number]]
+| [[Login_protocol_messages#CF|All server Player number]]
 |-
 |}
 
@@ -119,12 +119,12 @@
 | style="background: #90ff90; color: black;" | 03
 |
 | {{Yes}}
-| [[Login protocol messages#Reply_03|Protocol initialization]]
+| [[Login_protocol_messages#Reply_03|Protocol initialization]]
 |-
 | style="background: #90ff90; color: black;" | 02
 | style="background: #ffcc00; color: black;" | 0002
 | {{Yes}}
-| [[Login protocol messages#Reply_020002|Get first data and send the login]]
+| [[Login_protocol_messages#Reply_020002|Get first data and send the login]]
 |}
 
 = Details =
@@ -140,7 +140,7 @@ Final result:
 
 {{Note}}After this, all communication is into the packet size mode send by the protocol.
 
-[[Login protocol messages#Reply_03|See reply to this query]]
+[[Login_protocol_messages#Reply_03|See reply to this query]]
 
 === 04 ===
 [[File:loginpass-catchchallenger-meca.png]]
@@ -151,7 +151,7 @@ Send:
 Then:
   <span style="color: #40BF00">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span>, <span style="color: #FF0040">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span><br />
 
-[[Login protocol messages#Reply_04|See reply to this query]]
+[[Login_protocol_messages#Reply_04|See reply to this query]]
 
 === 05 ===
 Send:
@@ -160,22 +160,22 @@ Send:
 Then:
   <span style="color: #40BF00">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span>, <span style="color: #FF0040">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span><br />
 
-[[Login protocol messages#Reply_05|See reply to this query]]
+[[Login_protocol_messages#Reply_05|See reply to this query]]
 
 === 020003 ===
 Send the profile id: <span style="color: #FF0040">01</span>, pseudo <span style="color: #40BF00">"toto"</span>, skinId <span style="color: #40BF00">01</span>
 
-[[Login protocol messages#Reply_020003|See reply to this query]]
+[[Login_protocol_messages#Reply_020003|See reply to this query]]
 
 === 020004 ===
 Remove character id: <span style="color: #FF0040">00000001</span>
 
-[[Login protocol messages#Reply_020004|See reply to this query]]
+[[Login_protocol_messages#Reply_020004|See reply to this query]]
 
 === 020005 ===
 Send the character id: <span style="color: #FF0040">00000001</span>
 
-[[Login protocol messages#Reply_020005|See reply to this query]]
+[[Login_protocol_messages#Reply_020005|See reply to this query]]
 
 === CF ===
 Server -&gt; Client: number of player connected, always on 4Bytes (32Bits), <span style="color: #FF4000">00000002</span>, total player supported: <span style="color: #FF0040">000000FF</span>, total servers online: <span style="color: #40BFFF">00FF</span>
