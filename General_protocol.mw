@@ -25,7 +25,7 @@ The size is not calculated on variable into message, because it will be call lot
 = Messages type =
 {{note}}: The first byte send by server is 0x00 to say no encrypted or 0x01 to say encrypted by Ssl
 * [[Base protocol messages]]
-* [[Login protocol messages]]
+* [[Login protocol messages]] ''Split allowed from version 2''
 * [[Battle messages]]
 * [[Inventory messages]]
 * [[Others messages]]
