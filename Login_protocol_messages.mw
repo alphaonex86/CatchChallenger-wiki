@@ -91,12 +91,6 @@
 | style="background: #9CF6FF; color: black;" | Depands
 | [[Login_protocol_messages#C1|Reply to client query]] ([[Login_protocol_messages#Reply|See reply]])
 |-
-| style="background: #90ff90; color: black;" | CF
-| 
-| 
-| {{No}}
-| [[Login_protocol_messages#CF|All server Player number]] '''Version 2'''
-|-
 |}
 
 = Reply =
