@@ -102,15 +102,13 @@
 
 = Details =
 == Client &rarr; Server with reply ==
-=== 03 ===
+=== 01 ===
 {{Note}}This first packet is send as raw + big (see [[General_protocol#Messages_composition|Messages composition]])
 
 At the connection, send the protocol supported, <span style="font-weight: bold">before all!</span><br />
-protocol magic number: <span style="font-style: italic"><span style="color: #40BF00">9cd6498d</span></span>, version: <span style="font-style: italic"><span style="color: #FFBF00">01</span></span>
+protocol magic number: <span style="font-style: italic"><span style="color: #40BF00">8862BCBB679E3DE7</span></span>, token for auth: <span style="font-style: italic"><span style="color: #FFBF00">XXX...XXX</span></span>. The right token to send is stored in hexa into the config file on master server, generated after the first start.
 
 Final result:
- <span style="color: #40BF00">9cd6498d</span><span style="color: #FFBF00">01</span>
+ <span style="color: #40BF00">8862BCBB679E3DE7</span><span style="color: #FFBF00">XXX...XXX</span>
 
-{{Note}}After this, all communication is into the packet size mode send by the protocol.
-
-[[Login master server#Reply_03|See reply to this query]]
+[[Login master server#Reply_01|See reply to this query]]
