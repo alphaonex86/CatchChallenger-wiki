@@ -9,30 +9,7 @@
 ! Query number
 ! Packet size
 ! Data
-|-
-| style="background: #90ff90; color: black;" | 01
-| 
-| XX
-| {{No}}
-| [[Master server messages#01|Protocol initialization and login]]
-|-
-| style="background: #90ff90; color: black;" | 02
-| 
-| XX
-| {{No}}
-| [[Master server messages#02|Register game server]]
-|-
-| style="background: #90ff90; color: black;" | 03
-| 
-| XX
-| {{No}}
-| [[Master server messages#03|Register login server]]
-|-
-| style="background: #90ff90; color: black;" | 04
-| 
-| XX
-| {{No}}
-| [[Master server messages#04|Game server ask if token is right]]
+{{Template:Master_server_messages_Client_Server_Reply}}
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
