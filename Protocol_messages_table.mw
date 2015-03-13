@@ -579,4 +579,10 @@
 | XX
 | {{Yes}}
 | [[Inventory_messages#800001|Another player request a trade]]
+|-
+| style="background: #90ff90; color: black;" | F0
+| style="background: #ffcc00; color: black;" | 0001
+| 
+| {{Yes}}
+| [[Others_messages#F00001|City capture validated]]
 |}
