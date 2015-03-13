@@ -341,6 +341,66 @@
 | XX
 | {{Yes}}
 | [[Battle_messages#900001|Another player request a battle]]
+|-
+| style="background: #90ff90; color: black;" | D0
+| style="background: #ffcc00; color: black;" | 0001
+| 
+| {{Yes}}
+| [[Inventory_messages#D00001|Send the inventory]]
+|-
+| style="background: #90ff90; color: black;" | D0
+| style="background: #ffcc00; color: black;" | 0002
+| 
+| {{Yes}}
+| [[Inventory_messages#D00002|Add object]]
+|-
+| style="background: #90ff90; color: black;" | D0
+| style="background: #ffcc00; color: black;" | 0003
+| 
+| {{Yes}}
+| [[Inventory_messages#D00003|Remove object]]
+|-
+| style="background: #90ff90; color: black;" | D0
+| style="background: #ffcc00; color: black;" | 0004
+| 
+| {{Yes}}
+| [[Inventory_messages#D00004|The other player have put object]] (trade)
+|-
+| style="background: #90ff90; color: black;" | D0
+| style="background: #ffcc00; color: black;" | 0005
+| 
+| {{Yes}}
+| [[Inventory_messages#D00005|The other player have accepted]] (trade, send the info too)
+|-
+| style="background: #90ff90; color: black;" | D0
+| style="background: #ffcc00; color: black;" | 0006
+| 
+| {{No}}
+| [[Inventory_messages#D00006|The other player have canceled]] (trade)
+|-
+| style="background: #90ff90; color: black;" | D0
+| style="background: #ffcc00; color: black;" | 0007
+| 
+| {{No}}
+| [[Inventory_messages#D00007|The other player have finished]] (trade)
+|-
+| style="background: #90ff90; color: black;" | D0
+| style="background: #ffcc00; color: black;" | 0008
+| 
+| {{No}}
+| [[Inventory_messages#D00008|Server have validated the trade]] (trade)
+|-
+| style="background: #90ff90; color: black;" | D1
+|
+| 
+| {{Yes}}
+| [[Inventory_messages#D1|Insert plant on map]] '''''(Fast)'''''
+|-
+| style="background: #90ff90; color: black;" | D2
+|
+| 
+| {{Yes}}
+| [[Inventory_messages#D2|Remove plant on map]] '''''(Fast)'''''
 |}
 
 == Server &rarr; Client without reply ==
