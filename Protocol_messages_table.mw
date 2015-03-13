@@ -1,0 +1,234 @@
+= General =
+== Client &rarr; Server with reply ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+|-
+| style="background: #90ff90; color: black;" | 03
+| 
+| XX
+| {{No}}
+| [[Base_protocol_messages#03|Protocol initialization]] '''''(Fast, 1)'''''
+|-
+| style="background: #90ff90; color: black;" | 04
+| 
+| XX
+| {{No}}
+| [[Base_protocol_messages#04|Get first data and send the login]] '''''(Fast, 1)'''''
+|-
+| style="background: #90ff90; color: black;" | 05
+| 
+| XX
+| {{No}}
+| [[Base_protocol_messages#05|Create account]] '''''(Fast, 1)'''''
+|-
+| style="background: #90ff90; color: black;" | 02
+| style="background: #ffcc00; color: black;" | 0003
+| XX
+| {{Yes}}
+| [[Base_protocol_messages#020003|Add character]]
+|-
+| style="background: #90ff90; color: black;" | 02
+| style="background: #ffcc00; color: black;" | 0004
+| XX
+| {{No}}
+| [[Base_protocol_messages#020004|Remove character]]
+|-
+| style="background: #90ff90; color: black;" | 02
+| style="background: #ffcc00; color: black;" | 0005
+| XX
+| {{No}}
+| [[Base_protocol_messages#020005|Select character]]
+|-
+| style="background: #90ff90; color: black;" | 02
+| style="background: #ffcc00; color: black;" | 000C
+| XX
+| {{Yes}}
+| [[Base_protocol_messages#02000C|Send datapack file list]]
+|-
+| style="background: #90ff90; color: black;" | 02
+| style="background: #ffcc00; color: black;" | 000D
+| XX
+| {{Yes}}
+| [[Base_protocol_messages#02000D|Clan action]]
+|}
+{{Note}}All the main code in this column is considered query with needed reply.
+* 1) Fast to have good performance, to face to bruteforce, DDOS, ...
+
+== Client &rarr; Server without reply ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+|-
+| style="background: #90ff90; color: black;" | 40
+| 
+| 
+| {{No}}
+| [[Base_protocol_messages#40|Send position + direction]] '''''(Fast)'''''
+|-
+| style="background: #90ff90; color: black;" | 41
+| 
+| XX
+| style="background: #9CF6FF; color: black;" | Depands
+| [[Base_protocol_messages#41|Reply to server query]] ([[Base_protocol_messages#Reply|See reply]])
+|-
+| style="background: #90ff90; color: black;" | 43
+| 
+| 
+| {{Yes}}
+| [[Base_protocol_messages#43|Chat]]
+|-
+| style="background: #90ff90; color: black;" | 42
+| style="background: #ffcc00; color: black;" | 0004
+| 
+| {{No}}
+| [[Base_protocol_messages#420004|Clan invite accept]]
+|}
+
+== Server &rarr; Client with reply ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+|-
+| style="background: #90ff90; color: black;" | 79
+| style="background: #ffcc00; color: black;" | 0001
+| XX
+| {{Yes}}
+| [[Base_protocol_messages#790001|Teleport the player]]
+|-
+| style="background: #90ff90; color: black;" | 79
+| style="background: #ffcc00; color: black;" | 0002
+| XX
+| {{No}}
+| [[Base_protocol_messages#790002|Event change]]
+|}
+
+== Server &rarr; Client without reply ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+|-
+| style="background: #90ff90; color: black;" | C0
+| 
+| 
+| {{Yes}}
+| [[Base_protocol_messages#C0|Insert player on map]] '''''(Fast)'''''
+|-
+| style="background: #90ff90; color: black;" | C1
+| 
+| XX
+| style="background: #9CF6FF; color: black;" | Depands
+| [[Base_protocol_messages#C1|Reply to client query]] ([[Base_protocol_messages#Reply|See reply]])
+|-
+| style="background: #90ff90; color: black;" | C2
+| style="background: #ffcc00; color: black;" | 0003
+| 
+| {{Yes}}
+| [[Base_protocol_messages#C20003|update file (raw)]]
+|-
+| style="background: #90ff90; color: black;" | C2
+| style="background: #ffcc00; color: black;" | 0004
+| 
+| {{Yes}}
+| [[Base_protocol_messages#C20003|update file (compressed)]]
+|-
+| style="background: #90ff90; color: black;" | CA
+| 
+| 
+| {{Yes}}
+| [[Base_protocol_messages#CA|Chat]]
+|-
+| style="background: #90ff90; color: black;" | C2
+| style="background: #ffcc00; color: black;" | 0008
+| 
+| {{Yes}}
+| [[Base_protocol_messages#C20008|kicked/ban and reason]]
+|-
+| style="background: #90ff90; color: black;" | C2
+| style="background: #ffcc00; color: black;" | 0009
+| 
+| {{No}}
+| [[Base_protocol_messages#C20009|Clan disolved]]
+|-
+| style="background: #90ff90; color: black;" | C2
+| style="background: #ffcc00; color: black;" | 000A
+| 
+| {{Yes}}
+| [[Base_protocol_messages#C2000A|Clan info]]
+|-
+| style="background: #90ff90; color: black;" | C2
+| style="background: #ffcc00; color: black;" | 000B
+| 
+| {{Yes}}
+| [[Base_protocol_messages#C2000B|Clan invite ask]]
+|-
+| style="background: #90ff90; color: black;" | C2
+| style="background: #ffcc00; color: black;" | 000C
+| 
+| {{Yes}}
+| [[Base_protocol_messages#C2000C|Send datapack send size]]
+|-
+| style="background: #90ff90; color: black;" | C2
+| style="background: #ffcc00; color: black;" | 000D
+| 
+| {{Yes}}
+| [[Base_protocol_messages#C2000D|update file (http)]]
+|-
+| style="background: #90ff90; color: black;" | C3
+| 
+| 
+| {{No}}
+| [[Base_protocol_messages#C3|Player number]]
+|-
+| style="background: #90ff90; color: black;" | C4
+| 
+| 
+| {{No}}
+| [[Base_protocol_messages#C4|Remove all other player on the map]]
+|-
+| style="background: #90ff90; color: black;" | C5
+| 
+| 
+| {{Yes}}
+| [[Base_protocol_messages#C5|Reinser player on same map]] '''''(Fast)'''''
+|-
+| style="background: #90ff90; color: black;" | C6
+| 
+| 
+| {{Yes}}
+| [[Base_protocol_messages#C6|Reinser player on other map]] '''''(Fast)'''''
+|-
+| style="background: #90ff90; color: black;" | C7
+| 
+| 
+| {{Yes}}
+| [[Base_protocol_messages#C7|Move player on map]] '''''(Fast)'''''
+|-
+| style="background: #90ff90; color: black;" | C8
+| 
+| 
+| {{Yes}}
+| [[Base_protocol_messages#C8|Remove player from map]] '''''(Fast)'''''
+|-
+| style="background: #90ff90; color: black;" | C9
+| 
+| 
+| {{No}}
+| [[Base_protocol_messages#C9|Remove all other player on the border map]]
+|}
