@@ -38,20 +38,20 @@
 | {{Yes}}
 | [[Master server messages#Reply_01|Protocol initialization and login]]
 |-
-| style="background: #90ff90; color: black;" | 02
+| style="background: #90ff90; color: black;" | 07
 |
 | {{Yes}}
-| [[Master server messages#Reply_02|Register game server]]
+| [[Master server messages#Reply_07|Register game server]]
 |-
-| style="background: #90ff90; color: black;" | 03
+| style="background: #90ff90; color: black;" | 08
 |
 | {{Yes}}
-| [[Master server messages#Reply_03|Register login server]]
+| [[Master server messages#Reply_08|Register login server]]
 |-
-| style="background: #90ff90; color: black;" | 04
+| style="background: #90ff90; color: black;" | 09
 |
 | {{No}}
-| [[Master server messages#Reply_04|Game server ask if token is right]]
+| [[Master server messages#Reply_09|Game server ask if token is right]]
 |}
 
 = Details =
