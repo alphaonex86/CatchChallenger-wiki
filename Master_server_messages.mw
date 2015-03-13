@@ -21,30 +21,7 @@
 ! Query number
 ! Packet size
 ! Data
-|-
-| style="background: #90ff90; color: black;" | 40
-| 
-| 
-| {{No}}
-| [[Master server messages#40|Number of characters connected]]
-|-
-| style="background: #90ff90; color: black;" | 41
-| 
-| XX
-| style="background: #9CF6FF; color: black;" | Depands
-| [[Master server messages#41|Reply to server query]] ([[Master server messages#Reply|See reply]])
-|-
-| style="background: #90ff90; color: black;" | 42
-| 
-| 
-| {{Yes}}
-| [[Master server messages#42|Lock charater id]]
-|-
-| style="background: #90ff90; color: black;" | 43
-| 
-| 
-| {{No}}
-| [[Master server messages#43|Unlock and unregister charater id from game server]]
+{{Template:Master_server_messages_Client_Server}}
 |}
 
 = Reply =
