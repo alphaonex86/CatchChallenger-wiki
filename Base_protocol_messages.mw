@@ -284,7 +284,9 @@
 {{Note}}This first packet is send as raw + big (see [[General_protocol#Messages_composition|Messages composition]])
 
 At the connection, send the protocol supported, <span style="font-weight: bold">before all!</span><br />
-protocol magic number: <span style="font-style: italic"><span style="color: #40BF00">9cd6498d</span></span>, version: <span style="font-style: italic"><span style="color: #FFBF00">01</span></span>
+protocol magic number: <span style="font-style: italic"><span style="color: #40BF00">9cd6498d</span></span>, version:
+* <span style="font-style: italic"><span style="color: #FFBF00">01</span></span> (1.0.0.0)
+* <span style="font-style: italic"><span style="color: #FFBF00">10</span></span> (2.0.0.0)
 
 Final result:
  <span style="color: #40BF00">9cd6498d</span><span style="color: #FFBF00">01</span>
