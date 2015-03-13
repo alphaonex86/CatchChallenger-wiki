@@ -11,7 +11,7 @@
 ! Data
 {{Template:Master_server_messages_Client_Server_Reply}}
 |}
-{{Note}}All the main code in this column is considered query with needed reply.
+{{Note}}All the main code in this column is considered query with needed reply
 
 == Client &rarr; Server without reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
