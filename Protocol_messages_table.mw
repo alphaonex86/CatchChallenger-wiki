@@ -309,4 +309,28 @@
 | 
 | {{No}}
 | [[Base_protocol_messages#C9|Remove all other player on the border map]]
+|-
+| style="background: #90ff90; color: black;" | E0
+| style="background: #ffcc00; color: black;" | 0006
+| 
+| {{Yes}}
+| [[Battle_messages#E00006|Result of the turn]] (battle)
+|-
+| style="background: #90ff90; color: black;" | E0
+| style="background: #ffcc00; color: black;" | 0007
+| 
+| {{No}}
+| [[Battle_messages#E00007|The other player have declined you battle request]]
+|-
+| style="background: #90ff90; color: black;" | E0
+| style="background: #ffcc00; color: black;" | 0008
+| 
+| {{Yes}}
+| [[Battle_messages#E00008|The other player have accepted you battle request]]
+|-
+| style="background: #90ff90; color: black;" | E0
+| style="background: #ffcc00; color: black;" | 0009
+| 
+| {{Yes}}
+| [[Battle_messages#E00009|Random seed list]]
 |}
