@@ -78,23 +78,6 @@ Final result:
 === Reply 08 ===
 * Account creation: <span style="color: #40BFFF">01</span>
 * Character delete time: <span style="color: #40BF00">00000001</span>
-* http mirror <span style="color: #40BF00">"http://localhost/"</span>
 * Character max: <span style="color: #40BFFF">01</span>
 * Character min: <span style="color: #40BFFF">01</span>
 * Pseudo size max: <span style="color: #40BFFF">10</span>
-[db-login]
-* considerDownAfterNumberOfTry: <span style="color: #40BFFF">03</span>
-* mysql_db: <span style="color: #40BF00">"catchchallenger_login"</span>
-* mysql_host: <span style="color: #40BF00">"localhost"</span>
-* mysql_login: <span style="color: #40BF00">"root"</span>
-* mysql_pass: <span style="color: #40BF00">"root"</span>
-* tryInterval: <span style="color: #40BFFF">01</span>
-* type: MySQL (<span style="color: #40BFFF">01</span>), SQLite (<span style="color: #40BFFF">02</span>, forbiden don't allow remote), PostgreSQL (<span style="color: #40BFFF">03</span>)
-[db-common]
-* considerDownAfterNumberOfTry: <span style="color: #40BFFF">03</span>
-* mysql_db: <span style="color: #40BF00">"catchchallenger_common"</span>
-* mysql_host: <span style="color: #40BF00">"localhost"</span>
-* mysql_login: <span style="color: #40BF00">"root"</span>
-* mysql_pass: <span style="color: #40BF00">"root"</span>
-* tryInterval: <span style="color: #40BFFF">01</span>
-* type: MySQL (<span style="color: #40BFFF">01</span>), SQLite (<span style="color: #40BFFF">02</span>, forbiden don't allow remote), PostgreSQL (<span style="color: #40BFFF">03</span>)
