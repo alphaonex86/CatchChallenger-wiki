@@ -163,6 +163,7 @@
 | XX
 | {{Yes}}
 | [[Inventory_messages#100014|Withdraw object]]
+{{Template:Master_server_messages_Client_Server_Reply}}
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 * 1) Fast to have good performance, to face to bruteforce, DDOS, ...
