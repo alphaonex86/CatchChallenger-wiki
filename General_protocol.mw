@@ -30,6 +30,7 @@ The size is not calculated on variable into message, because it will be call lot
 * [[Inventory messages]]
 * [[Others messages]]
 * [[Master server messages]] '''Version 2'''
+* [[Protocol messages table]]
 
 = Latency =
 * The round-trip delay time (RTD) or round-trip time (RTT) are mostly never present
