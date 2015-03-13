@@ -543,4 +543,10 @@
 | 
 | {{Yes}}
 | [[Battle_messages#E00009|Random seed list]]
+|-
+| style="background: #90ff90; color: black;" | 80
+| style="background: #ffcc00; color: black;" | 0001
+| XX
+| {{Yes}}
+| [[Inventory_messages#800001|Another player request a trade]]
 |}
