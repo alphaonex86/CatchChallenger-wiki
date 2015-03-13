@@ -185,6 +185,12 @@
 | XX
 | {{No}}
 | [[Base_protocol_messages#790002|Event change]]
+|-
+| style="background: #90ff90; color: black;" | 90
+| style="background: #ffcc00; color: black;" | 0001
+| XX
+| {{Yes}}
+| [[Battle_messages#900001|Another player request a battle]]
 |}
 
 == Server &rarr; Client without reply ==
