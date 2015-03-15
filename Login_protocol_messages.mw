@@ -45,6 +45,24 @@
 | XX
 | {{No}}
 | [[Login_protocol_messages#020005|Select character]]
+|-
+| style="background: #90ff90; color: black;" | 11
+| style="background: #ffcc00; color: black;" | 0001
+| XX
+| {{No}}
+| [[Login_protocol_messages#110001|get maxAccountId]]
+|-
+| style="background: #90ff90; color: black;" | 11
+| style="background: #ffcc00; color: black;" | 0002
+| XX
+| {{No}}
+| [[Login_protocol_messages#110002|get maxCharacterId]]
+|-
+| style="background: #90ff90; color: black;" | 11
+| style="background: #ffcc00; color: black;" | 0003
+| XX
+| {{No}}
+| [[Login_protocol_messages#110003|get maxClanId]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 * 1) Fast to have good performance, to face to bruteforce, DDOS, ...
