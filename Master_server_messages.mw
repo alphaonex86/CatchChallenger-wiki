@@ -81,3 +81,6 @@ Final result:
 * Character max: <span style="color: #40BFFF">01</span>
 * Character min: <span style="color: #40BFFF">01</span>
 * Pseudo size max: <span style="color: #40BFFF">10</span>
+* 50 maxAccountIdList: <span style="color: #40BF00">00000001</span>
+* 50 maxCharacterIdList: <span style="color: #40BF00">00000001</span>
+* 50 maxClanIdList: <span style="color: #40BF00">00000001</span>
