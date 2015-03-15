@@ -165,6 +165,7 @@
 | XX
 | {{Yes}}
 | [[Inventory_messages#100014|Withdraw object]]
+{{Template:Login_protocol_messages_Client_Server_Reply}}
 {{Template:Master_server_messages_Client_Server_Reply}}
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
