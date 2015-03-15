@@ -12,7 +12,7 @@
 {{Template:Login_protocol_messages_Client_Server_Reply}}
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
-* 1) Fast to have good performance, to face to bruteforce, DDOS, ...
+* 1) Fast to have good performance, to face to bruteforce, DDOS
 
 == Client &rarr; Server without reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
