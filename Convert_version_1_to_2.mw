@@ -55,6 +55,6 @@ Split into 3 part:
 ** factory
 ** item_market
 ** monster_market '''Merged into monster'''
-** monster_market_price
+** monster_market_price '''New'''
 ** plant
 ** quest
