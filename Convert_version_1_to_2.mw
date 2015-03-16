@@ -39,10 +39,10 @@ Split into 3 part:
 ** dictionary_starter '''New'''
 ** item
 ** item_warehouse
-** monster
+** monster '''Change''', add place (0x01 for normal, 0x02 for warehouse, 0x03 for market)
 ** monster_buff
 ** monster_skill
-** monster_warehouse
+** monster_warehouse '''Merged into monster'''
 ** recipe
 ** reputation
 * The server data (market here to don't have inter-server sync and improve performance, lower cost and better security)
@@ -54,6 +54,7 @@ Split into 3 part:
 ** dictionary_map
 ** factory
 ** item_market
-** monster_market
+** monster_market '''Merged into monster'''
+** monster_market_price
 ** plant
 ** quest
