@@ -302,4 +302,4 @@ Wrong, case possible:
 == Map id ==
 You need load the map list, sort() it, check if match with datapack file list, and the id is the position.
 
-If the map list size is <= 255, then send on 8Bits, if <=65535 then on 16Bits, else on 32Bits.
+If the map list size is <= 255, then send on 8Bits, if <=65535 then on 16Bits, else on 32Bits
