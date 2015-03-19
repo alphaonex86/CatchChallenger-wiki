@@ -192,6 +192,12 @@
 | {{Yes}}
 | [[Base_protocol_messages#C2000D|update file (http)]]
 |-
+| style="background: #90ff90; color: black;" | C2
+| style="background: #ffcc00; color: black;" | 000E
+| 
+| {{Yes}}
+| [[Base_protocol_messages#C2000E|Send server list]]
+|-
 | style="background: #90ff90; color: black;" | C3
 | 
 | 
