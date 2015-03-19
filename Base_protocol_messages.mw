@@ -590,8 +590,8 @@ If all is good:
 ** Time left before delete: <span style="color: #40BFFF">00000000</span> (0s = no delete planned)
 ** Played time: <span style="color: #40BFFF">00000000</span>
 ** Last connect: <span style="color: #40BFFF">00000000</span>
-* Server list <span style="color: #7B00FF">01</span>:
 Max player: define if the players id is defined on 16Bits ('''unknown max player at this point''', for the client at the startup)
+* Server list <span style="color: #7B00FF">01</span>:
 ** max player: <span style="color: #40BF00">0064</span> (then 100 in decimal)
 ** connected player: <span style="color: #40BF00">0009</span>
 ** Played time: <span style="color: #40BFFF">00000000</span>
