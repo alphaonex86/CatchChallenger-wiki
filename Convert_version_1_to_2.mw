@@ -37,6 +37,7 @@ Split into 3 part:
 ** dictionary_reputation
 ** dictionary_skin
 ** dictionary_starter '''New'''
+** dictionary_server '''New'''
 ** item
 ** item_warehouse
 ** monster '''Change''', add place (0x01 for normal, 0x02 for warehouse, 0x03 for market)
@@ -45,6 +46,7 @@ Split into 3 part:
 ** monster_warehouse '''Merged into monster'''
 ** recipe
 ** reputation
+** server_time '''New'''
 * The server data (market here to don't have inter-server sync and improve performance, lower cost and better security)
 ** bot_already_beaten
 ** character_itemonmap
