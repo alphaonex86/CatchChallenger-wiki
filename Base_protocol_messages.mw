@@ -520,6 +520,7 @@ Remove all other player on the border map: (Better than remove each id)
 {{Note}}After this, all communication is into the packet size mode send by the protocol.
 
 === Reply 04 ===
+==== Version 1 ====
 '''Note for dev: Is not way (or I have not found) to have max visibility player and simplified id with it without increasing the bandwidth due to id change (current player id pass into visibility zone need id change).'''
 
 
@@ -546,10 +547,10 @@ If all is good:
 * Max warehouse player monsters: <span style="color: #40BFFF">01</span>
 * Max player items: <span style="color: #40BFFF">01</span>
 * Max warehouse player monsters: <span style="color: #40BFFF">01</span>
-* Char allow all: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
-* Char allow local: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
-* Char allow private: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
-* Char allow clan: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
+* Chat allow all: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
+* Chat allow local: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
+* Chat allow private: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
+* Chat allow clan: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
 * Industry price change: <span style="color: #FF4000">14</span> (+/- 20%)
 * Mirror to use: &quot;<span style="color: #40BF00">http://serverprimary/datapack/;http://serversecondary/datapack/</span>&quot;, if don't empty, don't send datapack query, you have the datpack list at http://serverprimary/datapack/datapack-list.txt test without proxy and with proxy is set. Test the next server, ...
 * sha224 of datapack file list content (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list without mirror too
@@ -563,6 +564,41 @@ If all is good:
 ** Last connect: <span style="color: #40BFFF">00000000</span>
 ** MapId: <span style="color: #40BF00">00000001</span> (32Bits, -1 if not found or buggy)
 
+==== Version 2 ====
+'''Send C2 000E''' to static server list before the reply.
+
+'''Note for dev: Is not way (or I have not found) to have max visibility player and simplified id with it without increasing the bandwidth due to id change (current player id pass into visibility zone need id change).'''
+
+
+If all is good:
+* <span style="color: #FF4000">01</span> (all is good)
+* waitBeforeConnectAfterKick: <span style="color: #FF4000">00000014</span> (20s)
+* Character max: <span style="color: #40BFFF">01</span>
+* Character min: <span style="color: #40BFFF">01</span>
+* Pseudo size max: <span style="color: #40BFFF">10</span>
+* Character delete time: <span style="color: #9F5F20">01</span>
+* Max player monsters: <span style="color: #40BFFF">01</span>
+* Max warehouse player monsters: <span style="color: #40BFFF">01</span>
+* Max player items: <span style="color: #40BFFF">01</span>
+* Max warehouse player monsters: <span style="color: #40BFFF">01</span>
+* Mirror to use: &quot;<span style="color: #40BF00">http://serverprimary/datapack/;http://serversecondary/datapack/</span>&quot;, if don't empty, don't send datapack query, you have the datpack list at http://serverprimary/datapack/datapack-list.txt test without proxy and with proxy is set. Test the next server, ...
+* sha224 of datapack file list content (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list without mirror too
+* Character list size <span style="color: #7B00FF">01</span>
+** Character id: <span style="color: #BFBF40">00000001</span>
+** Pseudo: <span style="color: #40BF00">&quot;Character 1&quot;</span>
+** SkinId: <span style="color: #40BF00">01</span>
+** Time left before delete: <span style="color: #40BFFF">00000000</span> (0s = no delete planned)
+** Played time: <span style="color: #40BFFF">00000000</span>
+** Last connect: <span style="color: #40BFFF">00000000</span>
+* Server list:
+Max player: define if the players id is defined on 16Bits ('''unknown max player at this point''', for the client at the startup)
+** max player: <span style="color: #40BF00">0064</span> (then 100 in decimal)
+** connected player: <span style="color: #40BF00">0009</span>
+** Played time: <span style="color: #40BFFF">00000000</span>
+** Last connect: <span style="color: #40BFFF">00000000</span>
+
+
+==== Other code ====
 If something is wrong, the possible return code are:
 * <span style="color: #FF4000">02</span> (Bad login)
 * <span style="color: #FF4000">03</span> (Wrong login/pass)
