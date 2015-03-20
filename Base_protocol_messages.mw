@@ -457,6 +457,8 @@ Server -&gt; Client: <span style="color: #40BF00">http://server/datapack/</span>
 
 === C2000E ===
 Send the xml file to represent the game server list as tree, content (in from, prefer clean before send like drop indent, line return and comment):
+* host="localhost" port="9999" if need reconnect on other server (with token passed by the login server)
+* uniquekey="XXXXXXX" when login server will act as proxy
 <pre>
 <servers>
     <group charactersgroup="group3"/><!-- group not used for now but reserved -->
