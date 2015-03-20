@@ -459,6 +459,7 @@ Server -&gt; Client: <span style="color: #40BF00">http://server/datapack/</span>
 Send the xml file to represent the game server list as tree, content (in from, prefer clean before send like drop indent, line return and comment):
 <pre>
 <servers>
+    <group charactersgroup="group3"/><!-- group not used for now but reserved -->
     <group charactersgroup="group2">
         <name>Root group</name>
         <name lang="fr">Groupe racine</name>
