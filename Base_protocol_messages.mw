@@ -615,7 +615,7 @@ If all is good:
 ** MapId: <span style="color: #40BF00">00000001</span> (32Bits, -1 if not found or buggy)
 
 ==== Version 2 ====
-'''Send C2 000E''' to static server list before the reply.
+'''Send C2000E''' to static server list before the reply.
 
 '''Note for dev: Is not way (or I have not found) to have max visibility player and simplified id with it without increasing the bandwidth due to id change (current player id pass into visibility zone need id change).'''
 
