@@ -459,10 +459,10 @@ Server -&gt; Client: <span style="color: #40BF00">http://server/datapack/</span>
 Send the xml file to represent the game server list as tree, content (in from, prefer clean before send like drop indent, line return and comment):
 <pre>
 <servers>
-    <group>
+    <group charactersgroup="group2">
         <name>Root group</name>
         <name lang="fr">Groupe racine</name>
-        <server key="XXXXXXXX" host="localhost" port="9999">
+        <server key="XXXXXXXX" host="localhost" port="9999" charactersgroup="group1">
             <!-- metadata send by game server at connecting -->
             <name>Server test 1</name>
             <name lang="fr">Serveur de teste 1</name>
@@ -476,7 +476,7 @@ Send the xml file to represent the game server list as tree, content (in from, p
             <name>Description in english</name>
             <name lang="fr">Description en français</name>
         </server>
-        <group>
+        <group charactersgroup="group2">
             <name>sub group</name>
             <name lang="fr">Sous groupe</name>
             <server key="XXXXXXXX" host="localhost" port="9999">
