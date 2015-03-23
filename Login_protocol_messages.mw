@@ -22,12 +22,7 @@
 ! Query number
 ! Packet size
 ! Data
-|-
-| style="background: #90ff90; color: black;" | 41
-| 
-| XX
-| style="background: #9CF6FF; color: black;" | Depands
-| [[Login_protocol_messages#41|Reply to server query]] ([[Login_protocol_messages#Reply|See reply]])
+{{Template:Login_protocol_messages_Client_Server}}
 |-
 |}
 
@@ -150,6 +145,54 @@ charactersGroupIndex: <span style="color: #FF0040">01</span>
 charactersGroupIndex: <span style="color: #FF0040">01</span>
 === 110004 ===
 charactersGroupIndex: <span style="color: #FF0040">01</span>
+
+== Client &rarr; Server without reply ==
+
+=== C2000E ===
+Send the xml file to represent the game server list as tree, content (in from, prefer clean before send like drop indent, line return and comment):
+* host="localhost" port="9999" if need reconnect on other server (with token passed by the login server)
+* uniquekey="XXXXXXX" when login server will act as proxy
+<pre>
+<servers>
+    <group charactersgroup="group3"/><!-- group not used for now but reserved -->
+    <group charactersgroup="group2">
+        <name>Root group</name>
+        <name lang="fr">Groupe racine</name>
+        <server key="XXXXXXXX" host="localhost" port="9999" charactersgroup="group1">
+            <!-- metadata send by game server at connecting -->
+            <name>Server test 1</name>
+            <name lang="fr">Serveur de teste 1</name>
+            <name>Description in english</name>
+            <name lang="fr">Description en français</name>
+        </server>
+        <server key="XXXXXXXX" host="localhost" port="9999">
+            <!-- metadata send by game server at connecting -->
+            <name>Server test 2</name>
+            <name lang="fr">Serveur de teste 2</name>
+            <name>Description in english</name>
+            <name lang="fr">Description en français</name>
+        </server>
+        <group charactersgroup="group2">
+            <name>sub group</name>
+            <name lang="fr">Sous groupe</name>
+            <server key="XXXXXXXX" host="localhost" port="9999">
+                <!-- metadata send by game server at connecting -->
+                <name>Server test 3</name>
+                <name lang="fr">Serveur de teste 3</name>
+                <name>Description in english</name>
+                <name lang="fr">Description en français</name>
+            </server>
+            <server key="XXXXXXXX" host="localhost" port="9999">
+                <!-- metadata send by game server at connecting -->
+                <name>Server test 4</name>
+                <name lang="fr">Serveur de teste 4</name>
+                <name>Description in english</name>
+                <name lang="fr">Description en français</name>
+            </server>
+        </group>
+    </group>
+</servers>
+</pre>
 
 = Reply =
 == Server &rarr; Client reply ==
