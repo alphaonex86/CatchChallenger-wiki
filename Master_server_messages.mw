@@ -89,5 +89,7 @@ Final result:
 * text: <span style="color: #40BF00">&quot;hello&quot;</span> 8bits headers + utf8
 
 * 50 maxAccountIdList: <span style="color: #40BF00">00000001</span>
-* 50 maxCharacterIdList: <span style="color: #40BF00">00000001</span>
-* 50 maxMonsterIdList: <span style="color: #40BF00">00000001</span>
+
+* By Characters group
+** 50 maxCharacterIdList: <span style="color: #40BF00">00000001</span>
+** 50 maxMonsterIdList: <span style="color: #40BF00">00000001</span>
