@@ -92,7 +92,7 @@ Final result:
 
 {{Note}}After this, all communication is into the packet size mode send by the protocol.
 
-[[Base_protocol_messages#Reply_03|See reply to this query]]
+[[Login_protocol_messages#Reply_03|See reply to this query]]
 
 === 04 ===
 [[File:loginpass-catchchallenger-meca.png]]
@@ -103,7 +103,7 @@ Send:
 Then:
   <span style="color: #40BF00">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span>, <span style="color: #FF0040">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span><br />
 
-[[Base_protocol_messages#Reply_04|See reply to this query]]
+[[Login_protocol_messages#Reply_04|See reply to this query]]
 
 === 05 ===
 Send:
@@ -112,22 +112,22 @@ Send:
 Then:
   <span style="color: #40BF00">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span>, <span style="color: #FF0040">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span><br />
 
-[[Base_protocol_messages#Reply_05|See reply to this query]]
+[[Login_protocol_messages#Reply_05|See reply to this query]]
 
 === 020003 ===
 Send the profile id: <span style="color: #FF0040">01</span>, pseudo <span style="color: #40BF00">"toto"</span>, skinId <span style="color: #40BF00">01</span>
 
-[[Base_protocol_messages#Reply_020003|See reply to this query]]
+[[Login_protocol_messages#Reply_020003|See reply to this query]]
 
 === 020004 ===
 Remove character id: <span style="color: #FF0040">00000001</span>
 
-[[Base_protocol_messages#Reply_020004|See reply to this query]]
+[[Login_protocol_messages#Reply_020004|See reply to this query]]
 
 === 020005 ===
 Send the character id: <span style="color: #FF0040">00000001</span>
 
-[[Base_protocol_messages#Reply_020005|See reply to this query]]
+[[Login_protocol_messages#Reply_020005|See reply to this query]]
 
 === 02000C ===
 Blocked is mirror is enabled, is considered as hacking.
@@ -142,7 +142,7 @@ Send file name and first 4Byte of sha224 hash:
  <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span><span style="color: #FF4000">XXXXXXXX</span>
 This packet is compressed.
 
-[[Base_protocol_messages#Reply_02000C|See reply to this query]]
+[[Login_protocol_messages#Reply_02000C|See reply to this query]]
 
 === 110002 ===
 charactersGroupIndex: <span style="color: #FF0040">01</span>
