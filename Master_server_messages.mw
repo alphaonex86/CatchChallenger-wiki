@@ -85,8 +85,8 @@ Final result:
 * Character min: <span style="color: #40BFFF">01</span>
 * Pseudo size max: <span style="color: #40BFFF">10</span>
 
-* Characters group list size: <span style="color: #40BFFF">01</span>
-* text: <span style="color: #40BF00">&quot;hello&quot;</span> 8bits headers + utf8
+* Characters group list size: <span style="color: #40BFFF">01</span>, '''Alphabetical order'''
+** text: <span style="color: #40BF00">&quot;hello&quot;</span> 8bits headers + utf8
 
 * 50 maxAccountIdList: <span style="color: #40BF00">00000001</span>
 
