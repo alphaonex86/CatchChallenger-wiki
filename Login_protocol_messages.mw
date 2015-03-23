@@ -74,16 +74,7 @@
 ! Sub code type of the query
 ! Packet size for the reply
 ! Query
-|-
-| style="background: #90ff90; color: black;" | 03
-|
-| {{Yes}}
-| [[Login_protocol_messages#Reply_03|Protocol initialization]]
-|-
-| style="background: #90ff90; color: black;" | 02
-| style="background: #ffcc00; color: black;" | 0002
-| {{Yes}}
-| [[Login_protocol_messages#Reply_020002|Get first data and send the login]]
+{{Template:Login_protocol_messages_Client_Server_Reply_Reply}}
 |}
 
 = Details =
@@ -92,14 +83,16 @@
 {{Note}}This first packet is send as raw + big (see [[General_protocol#Messages_composition|Messages composition]])
 
 At the connection, send the protocol supported, <span style="font-weight: bold">before all!</span><br />
-protocol magic number: <span style="font-style: italic"><span style="color: #40BF00">9cd6498d</span></span>, version: <span style="font-style: italic"><span style="color: #FFBF00">01</span></span>
+protocol magic number: <span style="font-style: italic"><span style="color: #40BF00">9cd6498d</span></span>, version:
+* <span style="font-style: italic"><span style="color: #FFBF00">01</span></span> (1.0.0.0)
+* <span style="font-style: italic"><span style="color: #FFBF00">10</span></span> (2.0.0.0)
 
 Final result:
  <span style="color: #40BF00">9cd6498d</span><span style="color: #FFBF00">01</span>
 
 {{Note}}After this, all communication is into the packet size mode send by the protocol.
 
-[[Login_protocol_messages#Reply_03|See reply to this query]]
+[[Base_protocol_messages#Reply_03|See reply to this query]]
 
 === 04 ===
 [[File:loginpass-catchchallenger-meca.png]]
@@ -110,7 +103,7 @@ Send:
 Then:
   <span style="color: #40BF00">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span>, <span style="color: #FF0040">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span><br />
 
-[[Login_protocol_messages#Reply_04|See reply to this query]]
+[[Base_protocol_messages#Reply_04|See reply to this query]]
 
 === 05 ===
 Send:
@@ -119,22 +112,37 @@ Send:
 Then:
   <span style="color: #40BF00">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span>, <span style="color: #FF0040">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span><br />
 
-[[Login_protocol_messages#Reply_05|See reply to this query]]
+[[Base_protocol_messages#Reply_05|See reply to this query]]
 
 === 020003 ===
 Send the profile id: <span style="color: #FF0040">01</span>, pseudo <span style="color: #40BF00">"toto"</span>, skinId <span style="color: #40BF00">01</span>
 
-[[Login_protocol_messages#Reply_020003|See reply to this query]]
+[[Base_protocol_messages#Reply_020003|See reply to this query]]
 
 === 020004 ===
 Remove character id: <span style="color: #FF0040">00000001</span>
 
-[[Login_protocol_messages#Reply_020004|See reply to this query]]
+[[Base_protocol_messages#Reply_020004|See reply to this query]]
 
 === 020005 ===
 Send the character id: <span style="color: #FF0040">00000001</span>
 
-[[Login_protocol_messages#Reply_020005|See reply to this query]]
+[[Base_protocol_messages#Reply_020005|See reply to this query]]
+
+=== 02000C ===
+Blocked is mirror is enabled, is considered as hacking.
+
+Send file name and first 4Byte of sha224 hash:
+* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span>, <span style="color: #FF4000">XXXXXXXX</span>
+* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span>, <span style="color: #FF4000">XXXXXXXX</span>
+* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span>, <span style="color: #FF4000">XXXXXXXX</span>
+ <span style="color: #FF4000">00000003</span>
+ <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span><span style="color: #FF4000">XXXXXXXX</span>
+ <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span><span style="color: #FF4000">XXXXXXXX</span>
+ <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span><span style="color: #FF4000">XXXXXXXX</span>
+This packet is compressed.
+
+[[Base_protocol_messages#Reply_02000C|See reply to this query]]
 
 === 110002 ===
 charactersGroupIndex: <span style="color: #FF0040">01</span>
@@ -159,6 +167,7 @@ charactersGroupIndex: <span style="color: #FF0040">01</span>
 {{Note}}After this, all communication is into the packet size mode send by the protocol.
 
 === Reply 04 ===
+==== Version 1 ====
 '''Note for dev: Is not way (or I have not found) to have max visibility player and simplified id with it without increasing the bandwidth due to id change (current player id pass into visibility zone need id change).'''
 
 
@@ -185,10 +194,10 @@ If all is good:
 * Max warehouse player monsters: <span style="color: #40BFFF">01</span>
 * Max player items: <span style="color: #40BFFF">01</span>
 * Max warehouse player monsters: <span style="color: #40BFFF">01</span>
-* Char allow all: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
-* Char allow local: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
-* Char allow private: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
-* Char allow clan: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
+* Chat allow all: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
+* Chat allow local: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
+* Chat allow private: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
+* Chat allow clan: <span style="color: #40BFFF">01</span> (0x00 = false, 0x01 = true)
 * Industry price change: <span style="color: #FF4000">14</span> (+/- 20%)
 * Mirror to use: &quot;<span style="color: #40BF00">http://serverprimary/datapack/;http://serversecondary/datapack/</span>&quot;, if don't empty, don't send datapack query, you have the datpack list at http://serverprimary/datapack/datapack-list.txt test without proxy and with proxy is set. Test the next server, ...
 * sha224 of datapack file list content (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list without mirror too
@@ -202,6 +211,50 @@ If all is good:
 ** Last connect: <span style="color: #40BFFF">00000000</span>
 ** MapId: <span style="color: #40BF00">00000001</span> (32Bits, -1 if not found or buggy)
 
+==== Version 2 ====
+'''Send C2000E''' to static server list before the reply.
+
+'''Note for dev: Is not way (or I have not found) to have max visibility player and simplified id with it without increasing the bandwidth due to id change (current player id pass into visibility zone need id change).'''
+
+
+If all is good:
+* <span style="color: #FF4000">01</span> (all is good)
+* waitBeforeConnectAfterKick: <span style="color: #FF4000">00000014</span> (20s)
+* Character max: <span style="color: #40BFFF">01</span>
+* Character min: <span style="color: #40BFFF">01</span>
+* Pseudo size max: <span style="color: #40BFFF">10</span>
+* Character delete time: <span style="color: #9F5F20">01</span>
+* Max player monsters: <span style="color: #40BFFF">01</span>
+* Max warehouse player monsters: <span style="color: #40BFFF">01</span>
+* Max player items: <span style="color: #40BFFF">01</span>
+* Max warehouse player monsters: <span style="color: #40BFFF">01</span>
+* Mirror to use: &quot;<span style="color: #40BF00">http://serverprimary/datapack/;http://serversecondary/datapack/</span>&quot;, if don't empty, don't send datapack query, you have the datpack list at http://serverprimary/datapack/datapack-list.txt test without proxy and with proxy is set. Test the next server, ...
+* sha224 of datapack file list content (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list without mirror too
+
+* characters group 1 (ordered by alphabetic order)
+** Character list size <span style="color: #7B00FF">01</span>
+*** Character id: <span style="color: #BFBF40">00000001</span>
+*** Pseudo: <span style="color: #40BF00">&quot;Character 1&quot;</span>
+*** SkinId: <span style="color: #40BF00">01</span>
+*** Time left before delete: <span style="color: #40BFFF">00000000</span> (0s = no delete planned)
+*** Played time: <span style="color: #40BFFF">00000000</span>
+*** Last connect: <span style="color: #40BFFF">00000000</span>
+* characters group 2
+** Character list size <span style="color: #7B00FF">01</span>
+*** Character id: <span style="color: #BFBF40">00000001</span>
+*** Pseudo: <span style="color: #40BF00">&quot;Character 1&quot;</span>
+*** SkinId: <span style="color: #40BF00">01</span>
+*** Time left before delete: <span style="color: #40BFFF">00000000</span> (0s = no delete planned)
+*** Played time: <span style="color: #40BFFF">00000000</span>
+*** Last connect: <span style="color: #40BFFF">00000000</span>
+Max player: define if the players id is defined on 16Bits ('''unknown max player at this point''', for the client at the startup)
+** Server list <span style="color: #7B00FF">01</span>:
+*** max player: <span style="color: #40BF00">0064</span> (then 100 in decimal)
+*** connected player: <span style="color: #40BF00">0009</span>
+*** Played time: <span style="color: #40BFFF">00000000</span>
+*** Last connect: <span style="color: #40BFFF">00000000</span>
+
+==== Other code ====
 If something is wrong, the possible return code are:
 * <span style="color: #FF4000">02</span> (Bad login)
 * <span style="color: #FF4000">03</span> (Wrong login/pass)
@@ -304,6 +357,16 @@ Wrong, case possible:
 * <span style="color: #FF4000">02</span> (Character not found)
 * <span style="color: #FF4000">03</span> (Already logged)
 * <span style="color: #FF4000">04</span> (Server internal problem)
+
+=== Reply 02000C ===
+The reply is '''BITS''', put 0 bits if needed to do a byte.
+Reply a list, with same number of item of the source query (<span style="color: #FF4000">1</span> to keep, <span style="color: #FF4000">0</span> to delete):
+* <span style="color: #FF4000">1</span>
+* <span style="color: #FF4000">0</span>
+* <span style="color: #FF4000">1</span>
+This reply is compressed.
+
+Return 0x00 if empty;
 
 = Other =
 == Map id ==
