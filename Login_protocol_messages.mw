@@ -149,50 +149,28 @@ charactersGroupIndex: <span style="color: #FF0040">01</span>
 == Client &rarr; Server without reply ==
 
 === 55000E ===
-Send the xml file to represent the game server list as tree, content (in from, prefer clean before send like drop indent, line return and comment):
-* host=<span style="color: #FFBF00">&quot;Host&quot;</span> port="<span style="color: #0000FF">9999</span>" if need reconnect on other server (with token passed by the login server)
-* <span style="color: #40BF00">key="XXXXXXX"</span> when login server will act as proxy
-<pre>
-<servers>
-    <group charactersgroup="group3"/><!-- group not used for now but reserved -->
-    <group charactersgroup="group2">
-        <name>Root group</name>
-        <name lang="fr">Groupe racine</name>
-        <server key="XXXXXXXX" host="localhost" port="9999" charactersgroup="group1">
-            <!-- metadata send by game server at connecting -->
-            <name>Server test 1</name>
-            <name lang="fr">Serveur de teste 1</name>
-            <description>Description in english</description>
-            <description lang="fr">Description en français</description>
-        </server>
-        <server key="XXXXXXXX" host="localhost" port="9999">
-            <!-- metadata send by game server at connecting -->
-            <name>Server test 2</name>
-            <name lang="fr">Serveur de teste 2</name>
-            <description>Description in english</description>
-            <description lang="fr">Description en français</description>
-        </server>
-        <group charactersgroup="group2">
-            <name>sub group</name>
-            <name lang="fr">Sous groupe</name>
-            <server key="XXXXXXXX" host="localhost" port="9999">
-                <!-- metadata send by game server at connecting -->
-                <name>Server test 3</name>
-                <name lang="fr">Serveur de teste 3</name>
-                <description>Description in english</description>
-                <description lang="fr">Description en français</description>
-            </server>
-            <server key="XXXXXXXX" host="localhost" port="9999">
-                <!-- metadata send by game server at connecting -->
-                <name>Server test 4</name>
-                <name lang="fr">Serveur de teste 4</name>
-                <description>Description in english</description>
-                <description lang="fr">Description en français</description>
-            </server>
-        </group>
-    </group>
-</servers>
-</pre>
+=== 55000E ===
+==== Reconnect ====
+* Logical group size <span style="color: #FF4000">01</span>
+** <span style="color: #40BF00">&quot;folder/path&quot;</span>
+** <span style="color: #FFBF00">&quot;Translation xml&quot;</span>
+* Server mode <span style="color: #FF4000">01</span>=reconnect (host + port)
+* Server list size <span style="color: #FF4000">01</span>
+** <span style="color: #0000FF">&quot;Test&quot;</span> (charactersgroup)
+** <span style="color: #FFBF00">&quot;Host&quot;</span>
+** <span style="color: #0000FF">9999</span> (port)
+** <span style="color: #40BFFF"><name>Server test 4</name><name lang="fr">Serveur de teste 4</name><description>Description in english</description><description lang="fr">Description en français</description></span> (xml attached)
+** <span style="color: #7B00FF">folder/path</span> (group)
+==== Proxy mode ====
+* Logical group size <span style="color: #FF4000">01</span>
+** <span style="color: #40BF00">&quot;folder/path&quot;</span>
+** <span style="color: #FFBF00">&quot;Translation xml&quot;</span>
+* Server mode <span style="color: #FF4000">02</span>=proxy, select by key
+* Server list size <span style="color: #FF4000">01</span>
+** <span style="color: #0000FF">&quot;Test&quot;</span> (charactersgroup)
+** <span style="color: #40BF00">&quot;Key&quot;</span>
+** <span style="color: #40BFFF"><name>Server test 4</name><name lang="fr">Serveur de teste 4</name><description>Description in english</description><description lang="fr">Description en français</description></span> (xml attached)
+** <span style="color: #7B00FF">folder/path</span> (group)
 
 === 55000F ===
 * Logical group size <span style="color: #FF4000">01</span>
