@@ -150,12 +150,6 @@
 | {{Yes}}
 | [[Base_protocol_messages#C2000D|update file (http)]]
 |-
-| style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 000E
-| 
-| {{Yes}}
-| [[Base_protocol_messages#C2000E|Send server list]]
-|-
 | style="background: #90ff90; color: black;" | C3
 | 
 | 
@@ -333,52 +327,6 @@ Server -&gt; Client: datapck file number: <span style="color: #FF4000">00000000<
 
 === C2000D ===
 Server -&gt; Client: <span style="color: #40BF00">http://server/datapack/</span> (UTF8 + 8Bits of header size), file liste size: <span style="color: #FF4000">00000001</span><span style="color: #40BF00">&quot;file name&quot;</span> (UTF8 + 8Bits of header size)
-
-=== C2000E ===
-Send the xml file to represent the game server list as tree, content (in from, prefer clean before send like drop indent, line return and comment):
-* host="localhost" port="9999" if need reconnect on other server (with token passed by the login server)
-* uniquekey="XXXXXXX" when login server will act as proxy
-<pre>
-<servers>
-    <group charactersgroup="group3"/><!-- group not used for now but reserved -->
-    <group charactersgroup="group2">
-        <name>Root group</name>
-        <name lang="fr">Groupe racine</name>
-        <server key="XXXXXXXX" host="localhost" port="9999" charactersgroup="group1">
-            <!-- metadata send by game server at connecting -->
-            <name>Server test 1</name>
-            <name lang="fr">Serveur de teste 1</name>
-            <name>Description in english</name>
-            <name lang="fr">Description en français</name>
-        </server>
-        <server key="XXXXXXXX" host="localhost" port="9999">
-            <!-- metadata send by game server at connecting -->
-            <name>Server test 2</name>
-            <name lang="fr">Serveur de teste 2</name>
-            <name>Description in english</name>
-            <name lang="fr">Description en français</name>
-        </server>
-        <group charactersgroup="group2">
-            <name>sub group</name>
-            <name lang="fr">Sous groupe</name>
-            <server key="XXXXXXXX" host="localhost" port="9999">
-                <!-- metadata send by game server at connecting -->
-                <name>Server test 3</name>
-                <name lang="fr">Serveur de teste 3</name>
-                <name>Description in english</name>
-                <name lang="fr">Description en français</name>
-            </server>
-            <server key="XXXXXXXX" host="localhost" port="9999">
-                <!-- metadata send by game server at connecting -->
-                <name>Server test 4</name>
-                <name lang="fr">Serveur de teste 4</name>
-                <name>Description in english</name>
-                <name lang="fr">Description en français</name>
-            </server>
-        </group>
-    </group>
-</servers>
-</pre>
 
 === C3 ===
 Server -&gt; Client: number of player connected: {{Number_of_player}}
