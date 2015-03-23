@@ -101,6 +101,90 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 ! lzop
 |}
 
+== Compression ratio ==
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! gzip
+! bzip2
+! lzma
+! lzma -e
+! xz
+! xz -e
+! lz4
+! lzop
+|-
+| 1
+| 26.8%	
+| 20.2% 
+| 18.4% 
+| 15.5%
+| 18.4%
+| 15.5%
+| 35.6%
+| 36.0%
+|-
+| 2
+| 25.5%
+| 18.8%
+| 17.5%
+| 15.1%
+| 17.5%
+| 15.1%
+| 35.6%
+| 35.8%
+|-
+| 3
+| 24.7%
+| 18.2%
+| 17.1%
+| 14.8%
+| 17.1%
+| 14.8%
+| 35.6%
+| 35.8%
+|-
+| 5
+| 22.0%
+| 17.6%
+| 14.9%
+| 14.6%
+| 14.9%
+| 14.6%
+| -
+| 35.8%
+|-
+| 7
+| 21.5%
+| 17.2%
+| 14.4%
+| 14.3%
+| 14.4%
+| 14.3%
+| -
+| 24.9%
+|-
+| 9
+| 21.4%
+| 16.9%
+| 14.1%
+| 14.0%
+| 14.1%
+| 14.0%
+| -
+| 24.6%
+|-class="sortbottom"
+! style="width: 12em" |
+! gzip
+! bzip2
+! lzma
+! lzma -e
+! xz
+! xz -e
+! lz4
+! lzop
+|}
+
 == Compression time ==
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
