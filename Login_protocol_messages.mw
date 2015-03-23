@@ -199,6 +199,7 @@ Send the xml file to represent the game server list as tree, content (in from, p
 ** <span style="color: #40BF00">&quot;folder/path&quot;</span>
 ** <span style="color: #FFBF00">&quot;Translation xml&quot;</span>
 * Server list size <span style="color: #FF4000">01</span>
+** <span style="color: #0000FF">&quot;Test&quot;</span> (charactersgroup)
 ** <span style="color: #40BF00">&quot;Key&quot;</span>
 ** <span style="color: #FFBF00">&quot;Host&quot;</span>
 ** <span style="color: #0000FF">9999</span> (port)
