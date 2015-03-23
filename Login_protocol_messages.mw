@@ -136,6 +136,13 @@ Send the character id: <span style="color: #FF0040">00000001</span>
 
 [[Login_protocol_messages#Reply_020005|See reply to this query]]
 
+=== 110002 ===
+charactersGroupIndex: <span style="color: #FF0040">01</span>
+=== 110003 ===
+charactersGroupIndex: <span style="color: #FF0040">01</span>
+=== 110004 ===
+charactersGroupIndex: <span style="color: #FF0040">01</span>
+
 = Reply =
 == Server &rarr; Client reply ==
 === Reply 03 ===
