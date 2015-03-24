@@ -149,7 +149,6 @@ charactersGroupIndex: <span style="color: #FF0040">01</span>
 == Client &rarr; Server without reply ==
 
 === 55000E ===
-=== 55000E ===
 ==== Reconnect ====
 * Logical group size <span style="color: #FF4000">01</span>
 ** <span style="color: #40BF00">&quot;folder/path&quot;</span>
