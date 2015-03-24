@@ -169,6 +169,8 @@ Login server to real player
 ** <span style="color: #FFBF00">&quot;Translation xml&quot;</span> 16bits headers + utf8
 
 === C20010 ===
+'''Master server to login server exclusively'''
+
 * Server list size <span style="color: #FF4000">01</span>
 ** <span style="color: #0000FF">&quot;Test&quot;</span> (charactersgroup) 8bits headers + utf8
 ** <span style="color: #40BF00">XXXXXXXX</span> (32Bits)
