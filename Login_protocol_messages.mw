@@ -174,12 +174,12 @@ charactersGroupIndex: <span style="color: #FF0040">01</span>
 
 === 55000F ===
 * Logical group size <span style="color: #FF4000">01</span>
-** <span style="color: #40BF00">&quot;folder/path&quot;</span>
+** <span style="color: #40BF00">&quot;folder/path&quot;</span> 8bits headers + utf8
 ** <span style="color: #FFBF00">&quot;Translation xml&quot;</span>
 * Server list size <span style="color: #FF4000">01</span>
-** <span style="color: #0000FF">&quot;Test&quot;</span> (charactersgroup)
+** <span style="color: #0000FF">&quot;Test&quot;</span> (charactersgroup) 8bits headers + utf8
 ** <span style="color: #40BF00">XXXXXXXX</span> (32Bits)
-** <span style="color: #FFBF00">&quot;Host&quot;</span>
+** <span style="color: #FFBF00">&quot;Host&quot;</span> 8bits headers + utf8
 ** <span style="color: #0000FF">9999</span> (port)
 ** <span style="color: #40BFFF"><name>Server test 4</name><name lang="fr">Serveur de teste 4</name><description>Description in english</description><description lang="fr">Description en français</description></span> (xml attached)
 ** <span style="color: #7B00FF">folder/path</span> (group)
