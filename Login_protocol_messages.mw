@@ -44,12 +44,7 @@
 ! Query number
 ! Packet size
 ! Data
-|-
-| style="background: #90ff90; color: black;" | C1
-| 
-| XX
-| style="background: #9CF6FF; color: black;" | Depands
-| [[Login_protocol_messages#C1|Reply to client query]] ([[Login_protocol_messages#Reply|See reply]])
+{{Template:Login_protocol_messages_Server_Client}}
 |-
 |}
 
