@@ -143,7 +143,9 @@ charactersGroupIndex: <span style="color: #FF0040">01</span>
 
 == Client &rarr; Server without reply ==
 
-=== 55000E ===
+== Server &rarr; Client without reply ==
+
+=== C2000E ===
 ==== Reconnect ====
 * Logical group size <span style="color: #FF4000">01</span>
 ** <span style="color: #40BF00">&quot;folder/path&quot;</span>
@@ -165,8 +167,6 @@ charactersGroupIndex: <span style="color: #FF0040">01</span>
 ** <span style="color: #40BF00">XXXXXXXX</span> (32Bits)
 ** <span style="color: #40BFFF"><name>Server test 4</name><name lang="fr">Serveur de teste 4</name><description>Description in english</description><description lang="fr">Description en français</description></span> (xml attached)
 ** <span style="color: #7B00FF">folder/path</span> (group)
-
-== Server &rarr; Client without reply ==
 
 === C2000F ===
 * Logical group size <span style="color: #FF4000">01</span>
