@@ -79,14 +79,7 @@ Final result:
 * <span style="color: #40BFFF">05</span> (is supported, compression: Zlib)
 * <span style="color: #40BFFF">06</span> (is supported, compression: Xz)
 === Reply 08 ===
-* Account creation: <span style="color: #40BFFF">01</span>
-* Character delete time: <span style="color: #40BF00">00000001</span>
-* Character max: <span style="color: #40BFFF">01</span>
-* Character min: <span style="color: #40BFFF">01</span>
-* Pseudo size max: <span style="color: #40BFFF">10</span>
-
-* Characters group list size: <span style="color: #40BFFF">01</span>, '''Alphabetical order'''
-** text: <span style="color: #40BF00">&quot;hello&quot;</span> 8bits headers + utf8
+See C20011 to follow Characters group alphabetical order
 
 * 50 maxAccountIdList: <span style="color: #40BF00">00000001</span>
 
