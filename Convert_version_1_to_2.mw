@@ -29,14 +29,14 @@ Split into 3 part:
 * The login
 ** account
 ** account_register
-* The common data
-** character
-** character_allow
-** clan
 ** dictionary_allow
 ** dictionary_reputation
 ** dictionary_skin
 ** dictionary_starter '''New'''
+* The common data
+** character
+** character_allow
+** clan
 ** dictionary_server '''New'''
 ** item
 ** item_warehouse
