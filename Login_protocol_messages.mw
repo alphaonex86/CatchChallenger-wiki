@@ -223,7 +223,7 @@ If all is good:
 * Character max: <span style="color: #40BFFF">01</span>
 * Character min: <span style="color: #40BFFF">01</span>
 * Pseudo size max: <span style="color: #40BFFF">10</span>
-* Character delete time: <span style="color: #9F5F20">01</span>
+* Character delete time: <span style="color: #9F5F20">00000001</span>
 * Rate xp: <span style="color: #FFBF00">3f800000</span> (1.0)
 * Rate gold: <span style="color: #FFBF00">3f800000</span> (1.0)
 * Rate xp_pow: <span style="color: #FFBF00">3f800000</span> (1.0)
@@ -261,13 +261,13 @@ If all is good:
 * Character max: <span style="color: #40BFFF">01</span>
 * Character min: <span style="color: #40BFFF">01</span>
 * Pseudo size max: <span style="color: #40BFFF">10</span>
-* Character delete time: <span style="color: #9F5F20">01</span>
+* Character delete time: <span style="color: #9F5F20">00000001</span>
 * Max player monsters: <span style="color: #40BFFF">01</span>
 * Max warehouse player monsters: <span style="color: #40BFFF">01</span>
 * Max player items: <span style="color: #40BFFF">01</span>
 * Max warehouse player monsters: <span style="color: #40BFFF">01</span>
 * Mirror to use: &quot;<span style="color: #40BF00">http://serverprimary/datapack/;http://serversecondary/datapack/</span>&quot;, if don't empty, don't send datapack query, you have the datpack list at http://serverprimary/datapack/datapack-list.txt test without proxy and with proxy is set. Test the next server, ...
-* sha224 of datapack file list content (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list without mirror too
+* sha224 of datapack file list content for the base datapack '''then excluding map/main/''' (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list without mirror too
 
 * characters group 1 (ordered by alphabetic order)
 ** Character list size <span style="color: #7B00FF">01</span>
