@@ -193,33 +193,26 @@ Login server to real player
 * Max warehouse player monsters: <span style="color: #40BFFF">0001</span>
 * sha224 of datapack file list content for the base datapack '''then excluding map/main/''' (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list too (if match, not need sync it).
 * 
-* <pre>
-    QStringList forcedskinTemp;
-    QList<quint8> forcedskin;
-    quint64 cash;
-    monsters size:
-    {
-        quint16 id;
-        qint8 level;
-        qint32 captured_with;
-hp
-int gender
-QList<Skill>
-{
-skill
-level
-endurance
-}
-    reputation size:
-{
-        quint8 reputationId;
-        qint8 level;
-        qint32 point;
-    }
-    items size:
-        quint32 id;
-        quint32 quantity;
-</pre>
+* forcedskin size: <span style="color: #40BFFF">01</span>
+** forcedskin index <span style="color: #FF4000">14</span> => db id Character delete time: <span style="color: #40BF00">01</span>
+* cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
+* monsters size: <span style="color: #40BFFF">01</span>
+** quint16 monster: <span style="color: #FF4000">0001</span>
+** qint8 level: <span style="color: #40BF00">01</span>
+** qint32 captured_with: <span style="color: #40BF00">0001</span>
+** hp <span style="color: #FFBF00">00000001</span>
+** quint8 gender, percent male, if -1 is unknown
+** size of list of the skills monsters: <span style="color: #7B00FF">0001</span>
+*** skill: <span style="color: #40BF00">0001</span>
+*** skill level: <span style="color: #FF4000">01</span>
+*** skill endurance: <span style="color: #FFBF00">01</span>
+* size of reputation list: <span style="color: #7B00FF">01</span>
+** reputation type: <span style="font-style: italic"><span style="color: #40BF00">01</span></span>
+** reputation level: <span style="color: #FF4000">01</span>
+** reputation point: <span style="color: #008080">00000001</span>
+* Send item list size <span style="color: #FF4000">02</span>, and the object:
+** Id: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>
+** Id: <span style="color: #FFBF00">0002</span>, quantity: <span style="color: #40BF00">00000005</span>
 *
 * Characters group list size: <span style="color: #40BFFF">01</span>, '''Alphabetical order'''
 ** text: <span style="color: #40BF00">&quot;hello&quot;</span> 8bits headers + utf8
