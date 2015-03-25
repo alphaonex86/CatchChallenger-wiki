@@ -193,6 +193,7 @@ Login server to real player
 * Max warehouse player monsters: <span style="color: #40BFFF">0001</span>
 * sha224 of datapack file list content for the base datapack '''then excluding map/main/''' (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list too (if match, not need sync it).
 * 
+* '''This is to drop the datapack requirement on login server''' (can be used but only to sync without mirror):
 * forcedskin size: <span style="color: #40BFFF">01</span>
 ** forcedskin index <span style="color: #FF4000">14</span> => db id Character delete time: <span style="color: #40BF00">01</span>
 * cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
