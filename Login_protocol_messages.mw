@@ -194,14 +194,10 @@ Login server to real player
 * sha224 of datapack file list content for the base datapack '''then excluding map/main/''' (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list too (if match, not need sync it).
 * 
 * <pre>
-{
-    struct Reputation
-    {
-        quint8 reputationId;
-        qint8 level;
-        qint32 point;
-    };
-    struct Monster
+    QStringList forcedskinTemp;
+    QList<quint8> forcedskin;
+    quint64 cash;
+    monsters size:
     {
         quint16 id;
         qint8 level;
@@ -214,19 +210,16 @@ skill
 level
 endurance
 }
-    };
-    struct Item
-    {
+    reputation size:
+{
+        quint8 reputationId;
+        qint8 level;
+        qint32 point;
+    }
+    items size:
         quint32 id;
         quint32 quantity;
-    };
-    QStringList forcedskinTemp;
-    QList<quint8> forcedskin;
-    quint64 cash;
-    QList<Monster> monsters;
-    QList<Reputation> reputation;
-    QList<Item> items;
-};</pre>
+</pre>
 *
 * Characters group list size: <span style="color: #40BFFF">01</span>, '''Alphabetical order'''
 ** text: <span style="color: #40BF00">&quot;hello&quot;</span> 8bits headers + utf8
