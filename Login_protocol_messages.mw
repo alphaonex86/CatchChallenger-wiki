@@ -181,7 +181,7 @@ Login server to real player
 
 === C20011 ===
 * Account creation: <span style="color: #40BFFF">01</span>
-
+* 
 * waitBeforeConnectAfterKick: <span style="color: #FF4000">0014</span> (20s)
 * Character delete time: <span style="color: #40BF00">00000001</span>
 * Character max: <span style="color: #40BFFF">01</span>
@@ -191,7 +191,43 @@ Login server to real player
 * Max warehouse player monsters: <span style="color: #40BFFF">0001</span>
 * Max player items: <span style="color: #40BFFF">01</span>
 * Max warehouse player monsters: <span style="color: #40BFFF">0001</span>
-
+* sha224 of datapack file list content for the base datapack '''then excluding map/main/''' (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list too (if match, not need sync it).
+* 
+* <pre>
+{
+    struct Reputation
+    {
+        quint8 reputationId;
+        qint8 level;
+        qint32 point;
+    };
+    struct Monster
+    {
+        quint16 id;
+        qint8 level;
+        qint32 captured_with;
+hp
+int gender
+QList<Skill>
+{
+skill
+level
+endurance
+}
+    };
+    struct Item
+    {
+        quint32 id;
+        quint32 quantity;
+    };
+    QStringList forcedskinTemp;
+    QList<quint8> forcedskin;
+    quint64 cash;
+    QList<Monster> monsters;
+    QList<Reputation> reputation;
+    QList<Item> items;
+};</pre>
+*
 * Characters group list size: <span style="color: #40BFFF">01</span>, '''Alphabetical order'''
 ** text: <span style="color: #40BF00">&quot;hello&quot;</span> 8bits headers + utf8
 
