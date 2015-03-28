@@ -24,36 +24,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Query number
 ! Packet size
 ! Data
-|-
-| style="background: #90ff90; color: black;" | 6a
-| style="background: #ffcc00; color: black;" | 0001
-| 
-| {{No}}
-| [[Others_messages#6a0001|Quest start]]
-|-
-| style="background: #90ff90; color: black;" | 6a
-| style="background: #ffcc00; color: black;" | 0002
-| 
-| {{No}}
-| [[Others_messages#6a0002|Quest finish]]
-|-
-| style="background: #90ff90; color: black;" | 6a
-| style="background: #ffcc00; color: black;" | 0003
-| 
-| {{No}}
-| [[Others_messages#6a0003|Quest cancel]]
-|-
-| style="background: #90ff90; color: black;" | 6a
-| style="background: #ffcc00; color: black;" | 0004
-| 
-| {{No}}
-| [[Others_messages#6a0004|Quest next step]]
-|-
-| style="background: #90ff90; color: black;" | 6a
-| style="background: #ffcc00; color: black;" | 0005
-| 
-| {{No}}
-| [[Others_messages#6a0005|Waiting for city caputre]]
+{{Template:Others_messages_Client_Server}}
 |}
 
 == Server &rarr; Client with reply ==
@@ -74,36 +45,31 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Query number
 ! Packet size
 ! Data
-|-
-| style="background: #90ff90; color: black;" | F0
-| style="background: #ffcc00; color: black;" | 0001
-| 
-| {{Yes}}
-| [[Others_messages#F00001|City capture validated]]
+{{Template:Others_messages_Server_Client}}
 |}
 
 == Client &rarr; Server without reply ==
-=== 6a0001 ===
+=== 6a01 ===
 Start quest with id: <span style="color: #FFBF00">0001</span>
  <span style="color: #FFBF00">0001</span>
 
-=== 6a0002 ===
+=== 6a02 ===
 Finish quest with id: <span style="color: #FFBF00">0001</span>
  <span style="color: #FFBF00">0001</span>
 
-=== 6a0003 ===
+=== 6a03 ===
 Cancel quest with id: <span style="color: #FFBF00">0001</span>
  <span style="color: #FFBF00">0001</span>
 
-=== 6a0004 ===
+=== 6a04 ===
 Next step for quest with id: <span style="color: #FFBF00">0001</span>
  <span style="color: #FFBF00">0001</span>
 
-=== 6a0005 ===
+=== 6a05 ===
 Cancel: <span style="color: #FFBF00">00</span> (no, 0x01 for yes)
 
 == Server &rarr; Client without reply ==
-=== F00001 ===
+=== F001 ===
 ==== You are not a clan leader to start it ====
 You are not a clan leader to start it: <span style="color: #FF0000">01</span>
 ==== You clan leader have start into another city ====
