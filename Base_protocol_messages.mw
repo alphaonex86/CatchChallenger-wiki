@@ -215,11 +215,6 @@
 ! Packet size for the reply
 ! Query
 {{Template:Login_protocol_messages_Client_Server_Reply_Reply}}
-|-
-| style="background: #90ff90; color: black;" | 02
-| style="background: #ffcc00; color: black;" | 0D
-| {{No}}
-| [[Base_protocol_messages#Reply_020D|Clan action]]
 |}
 
 = Details =
