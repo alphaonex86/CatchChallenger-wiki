@@ -41,12 +41,7 @@
 ! Query number
 ! Packet size
 ! Data
-|-
-| style="background: #90ff90; color: black;" | 90
-| style="background: #ffcc00; color: black;" | 0001
-| XX
-| {{Yes}}
-| [[Battle_messages#900001|Another player request a battle]]
+{{Template:Battle_messages_Server_Client_Reply}}
 {{Template:Inventory_messages_Server_Client_Reply}}
 {{Template:Base_protocol_messages_Server_Client_Reply}}
 |}
