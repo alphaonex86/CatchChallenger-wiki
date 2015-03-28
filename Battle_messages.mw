@@ -27,70 +27,70 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Data
 |-
 | style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0001
+| style="background: #ffcc00; color: black;" | 01
 | 
 | {{Yes}}
 | [[Battle_messages#600001|Use an object/recipe in battle]]
 |-
 | style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0002
+| style="background: #ffcc00; color: black;" | 02
 | 
 | {{No}}
-| [[Battle_messages#600002|Try escape]]
+| [[Battle_messages#6002|Try escape]]
 |-
 | style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0003
+| style="background: #ffcc00; color: black;" | 03
 | 
 | {{No}}
-| [[Battle_messages#600003|Change monster]]
+| [[Battle_messages#6003|Change monster]]
 |-
 | style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0004
+| style="background: #ffcc00; color: black;" | 04
 | 
 | {{No}}
-| [[Battle_messages#600004|Learn attack]]
+| [[Battle_messages#6004|Learn attack]]
 |-
 | style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0005
+| style="background: #ffcc00; color: black;" | 05
 | XX
 | {{Yes}}
-| [[Battle_messages#60005|Request a player battle]]
+| [[Battle_messages#605|Request a player battle]]
 |-
 | style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0006
+| style="background: #ffcc00; color: black;" | 06
 | 
 | {{No}}
-| [[Battle_messages#600006|Heal all the monster]]
+| [[Battle_messages#6006|Heal all the monster]]
 |-
 | style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0007
+| style="background: #ffcc00; color: black;" | 07
 | 
 | {{No}}
-| [[Battle_messages#600007|Start a requested bot fight]]
+| [[Battle_messages#6007|Start a requested bot fight]]
 |-
 | style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0008
+| style="background: #ffcc00; color: black;" | 08
 | 
 | {{No}}
-| [[Battle_messages#600008|Monster up/down]]
+| [[Battle_messages#6008|Monster up/down]]
 |-
 | style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0009
+| style="background: #ffcc00; color: black;" | 09
 | 
 | {{No}}
-| [[Battle_messages#600009|Monster change in fight]]
+| [[Battle_messages#6009|Monster change in fight]]
 |-
 | style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 000A
+| style="background: #ffcc00; color: black;" | 0A
 | 
 | {{No}}
-| [[Battle_messages#60000A|Monster evolution validated]]
+| [[Battle_messages#600A|Monster evolution validated]]
 |-
 | style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 000B
+| style="background: #ffcc00; color: black;" | 0B
 | 
 | {{No}}
-| [[Battle_messages#60000B|Use object on monster]]
+| [[Battle_messages#600B|Use object on monster]]
 |-
 | style="background: #90ff90; color: black;" | 61
 | 
@@ -109,10 +109,10 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Data
 |-
 | style="background: #90ff90; color: black;" | 90
-| style="background: #ffcc00; color: black;" | 0001
+| style="background: #ffcc00; color: black;" | 01
 | XX
 | {{Yes}}
-| [[Battle_messages#900001|Another player request a battle]]
+| [[Battle_messages#9001|Another player request a battle]]
 |}
 
 == Server &rarr; Client without reply ==
@@ -125,28 +125,28 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Data
 |-
 | style="background: #90ff90; color: black;" | E0
-| style="background: #ffcc00; color: black;" | 0006
+| style="background: #ffcc00; color: black;" | 06
 | 
 | {{Yes}}
-| [[Battle_messages#E00006|Result of the turn]] (battle)
+| [[Battle_messages#E006|Result of the turn]] (battle)
 |-
 | style="background: #90ff90; color: black;" | E0
-| style="background: #ffcc00; color: black;" | 0007
+| style="background: #ffcc00; color: black;" | 07
 | 
 | {{No}}
-| [[Battle_messages#E00007|The other player have declined you battle request]]
+| [[Battle_messages#E007|The other player have declined you battle request]]
 |-
 | style="background: #90ff90; color: black;" | E0
-| style="background: #ffcc00; color: black;" | 0008
+| style="background: #ffcc00; color: black;" | 08
 | 
 | {{Yes}}
-| [[Battle_messages#E00008|The other player have accepted you battle request]]
+| [[Battle_messages#E008|The other player have accepted you battle request]]
 |-
 | style="background: #90ff90; color: black;" | E0
-| style="background: #ffcc00; color: black;" | 0009
+| style="background: #ffcc00; color: black;" | 09
 | 
 | {{Yes}}
-| [[Battle_messages#E00009|Random seed list]]
+| [[Battle_messages#E009|Random seed list]]
 |}
 
 = Reply =
@@ -159,9 +159,9 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Query
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0001
+| style="background: #ffcc00; color: black;" | 01
 | {{No}}
-| [[Battle_messages#Reply_100001|Request a player battle]]
+| [[Battle_messages#Reply_1001|Request a player battle]]
 |}
 == Client &rarr; Server ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
@@ -172,14 +172,14 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Query
 |-
 | style="background: #90ff90; color: black;" | 90
-| style="background: #ffcc00; color: black;" | 0001
+| style="background: #ffcc00; color: black;" | 01
 | {{No}}
-| [[Battle_messages#Reply_900001|Another player request a battle]]
+| [[Battle_messages#Reply_9001|Another player request a battle]]
 |}
 
 = Details =
 == Server &rarr; Client without reply ==
-=== E00006 ===
+=== E006 ===
 Send <span style="color: #FF4000">01</span> attack return.
 
 * doByTheCurrentMonster: <span style="color: #FF4000">01</span> (01 yes, 00 no)
@@ -210,7 +210,7 @@ After send one of this case, depands on case number:
 * on_current_monster: <span style="color: #FF4000">01</span> (01 yes, 00 no)
 * item: <span style="color: #40BF00">00000001</span>
 
-=== E00008 ===
+=== E008 ===
 Pseudo and skin id is send to have the details.
 
 Number of monster: <span style="color: #A600FF">01</span>, Stat of the monster: <span style="color: #FFBF00">01</span>, monster place <span style="color: #0000FF">01</span>:
@@ -229,23 +229,23 @@ Stat of the monster:
 * 0x01: ready for battle
 * 0x02: not able to battle
 
-=== E00009 ===
+=== E009 ===
 Server -&gt; Client: random bytes: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX[...]XXXXXXXXXXX</span>
 
  <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX[...]XXXXXXXXXXX</span>
 
 == Client &rarr; Server without reply ==
-=== 600004 ===
+=== 6004 ===
 Monster id: <span style="color: #40BFFF">00000001</span>, skill: <span style="color: #94CF00">0001</span>
 
-=== 600007 ===
+=== 6007 ===
 Start a requested bot fight, with bot fightId: <span style="color: #40BFFF">0001</span>
 
-=== 600008 ===
+=== 6008 ===
 * Monster action: <span style="color: #FF4000">01</span> (0x01 = up, 0x02 = down)
 * Monster number: <span style="color: #40BF00">01</span> (1 to X)
 
-=== 600009 ===
+=== 6009 ===
 * Monster id: <span style="color: #FF4000">0001</span>
 
 === 61 ===
