@@ -281,36 +281,7 @@
 | 
 | {{No}}
 | [[Inventory_messages#500007|Take an object on map (visible or not)]]
-|-
-| style="background: #90ff90; color: black;" | 6a
-| style="background: #ffcc00; color: black;" | 0001
-| 
-| {{No}}
-| [[Others_messages#6a0001|Quest start]]
-|-
-| style="background: #90ff90; color: black;" | 6a
-| style="background: #ffcc00; color: black;" | 0002
-| 
-| {{No}}
-| [[Others_messages#6a0002|Quest finish]]
-|-
-| style="background: #90ff90; color: black;" | 6a
-| style="background: #ffcc00; color: black;" | 0003
-| 
-| {{No}}
-| [[Others_messages#6a0003|Quest cancel]]
-|-
-| style="background: #90ff90; color: black;" | 6a
-| style="background: #ffcc00; color: black;" | 0004
-| 
-| {{No}}
-| [[Others_messages#6a0004|Quest next step]]
-|-
-| style="background: #90ff90; color: black;" | 6a
-| style="background: #ffcc00; color: black;" | 0005
-| 
-| {{No}}
-| [[Others_messages#6a0005|Waiting for city caputre]]
+{{Template:Others_messages_Client_Server}}
 {{Template:Login_protocol_messages_Client_Server}}
 {{Template:Master_server_messages_Client_Server}}
 |}
@@ -549,11 +520,6 @@
 | XX
 | {{Yes}}
 | [[Inventory_messages#800001|Another player request a trade]]
-|-
-| style="background: #90ff90; color: black;" | F0
-| style="background: #ffcc00; color: black;" | 0001
-| 
-| {{Yes}}
-| [[Others_messages#F00001|City capture validated]]
+{{Template:Others_messages_Server_Client}}
 {{Template:Login_protocol_messages_Server_Client}}
 |}
