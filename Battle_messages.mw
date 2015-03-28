@@ -25,78 +25,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Query number
 ! Packet size
 ! Data
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 01
-| 
-| {{Yes}}
-| [[Battle_messages#600001|Use an object/recipe in battle]]
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 02
-| 
-| {{No}}
-| [[Battle_messages#6002|Try escape]]
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 03
-| 
-| {{No}}
-| [[Battle_messages#6003|Change monster]]
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 04
-| 
-| {{No}}
-| [[Battle_messages#6004|Learn attack]]
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 05
-| XX
-| {{Yes}}
-| [[Battle_messages#605|Request a player battle]]
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 06
-| 
-| {{No}}
-| [[Battle_messages#6006|Heal all the monster]]
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 07
-| 
-| {{No}}
-| [[Battle_messages#6007|Start a requested bot fight]]
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 08
-| 
-| {{No}}
-| [[Battle_messages#6008|Monster up/down]]
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 09
-| 
-| {{No}}
-| [[Battle_messages#6009|Monster change in fight]]
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0A
-| 
-| {{No}}
-| [[Battle_messages#600A|Monster evolution validated]]
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0B
-| 
-| {{No}}
-| [[Battle_messages#600B|Use object on monster]]
-|-
-| style="background: #90ff90; color: black;" | 61
-| 
-| 
-| {{No}}
-| [[Battle_messages#51|Use an attack of a monster]]
+{{Template:Battle_messages_Client_Server}}
 |}
 
 == Server &rarr; Client with reply ==
@@ -107,12 +36,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Query number
 ! Packet size
 ! Data
-|-
-| style="background: #90ff90; color: black;" | 90
-| style="background: #ffcc00; color: black;" | 01
-| XX
-| {{Yes}}
-| [[Battle_messages#9001|Another player request a battle]]
+{{Template:Battle_messages_Server_Client_Reply}}
 |}
 
 == Server &rarr; Client ==
@@ -123,30 +47,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Query number
 ! Packet size
 ! Data
-|-
-| style="background: #90ff90; color: black;" | E0
-| style="background: #ffcc00; color: black;" | 06
-| 
-| {{Yes}}
-| [[Battle_messages#E006|Result of the turn]] (battle)
-|-
-| style="background: #90ff90; color: black;" | E0
-| style="background: #ffcc00; color: black;" | 07
-| 
-| {{No}}
-| [[Battle_messages#E007|The other player have declined you battle request]]
-|-
-| style="background: #90ff90; color: black;" | E0
-| style="background: #ffcc00; color: black;" | 08
-| 
-| {{Yes}}
-| [[Battle_messages#E008|The other player have accepted you battle request]]
-|-
-| style="background: #90ff90; color: black;" | E0
-| style="background: #ffcc00; color: black;" | 09
-| 
-| {{Yes}}
-| [[Battle_messages#E009|Random seed list]]
+{{Template:Battle_messages_Server_Client}}
 |}
 
 = Reply =
