@@ -11,10 +11,10 @@
 ! Data
 |-
 | style="background: #90ff90; color: black;" | 02
-| style="background: #ffcc00; color: black;" | 000C
+| style="background: #ffcc00; color: black;" | 0C
 | XX
 | {{Yes}}
-| [[Base_protocol_messages#02000C|Send datapack file list]]
+| [[Base_protocol_messages#020C|Send datapack file list]]
 {{Template:Inventory_messages_Client_Server_Reply}}
 {{Template:Base_protocol_messages_Client_Server_Reply}}
 {{Template:Login_protocol_messages_Client_Server_Reply}}
