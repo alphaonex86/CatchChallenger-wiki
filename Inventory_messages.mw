@@ -11,118 +11,11 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Query number
 ! Packet size
 ! Data
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 03
-| XX
-| {{Yes}}
-| [[Inventory_messages#1003|Stock objects]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 04
-| XX
-| {{Yes}}
-| [[Inventory_messages#1004|Object list can be withdraw]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 05
-| XX
-| {{Yes}}
-| [[Inventory_messages#1005|Withdraw an object]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 06
-| XX
-| {{No}}
-| [[Inventory_messages#1006|Use seed into dirt]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 07
-| XX
-| {{No}}
-| [[Inventory_messages#1007|Collect mature plant]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 08
-| XX
-| {{No}}
-| [[Inventory_messages#1008|Usage of recipe]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 09
-| XX
-| {{No}}
-| [[Inventory_messages#1009|Use object]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0A
-| XX
-| {{No}}
-| [[Inventory_messages#100A|Get shop list]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0B
-| XX
-| {{No}}
-| [[Inventory_messages#100B|Buy object]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0C
-| XX
-| {{No}}
-| [[Inventory_messages#100C|Sell object]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0D
-| XX
-| {{No}}
-| [[Inventory_messages#10000D|Get factory list]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0E
-| XX
-| {{No}}
-| [[Inventory_messages#100E|Buy factory object]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0F
-| XX
-| {{No}}
-| [[Inventory_messages#10000F|Sell factory object]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 10
-| XX
-| {{No}}
-| [[Inventory_messages#1010|Get market list]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 11
-| XX
-| {{Yes}}
-| [[Inventory_messages#1011|Buy into the market]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 12
-| XX
-| {{Yes}}
-| [[Inventory_messages#1012|Put object into the market]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 13
-| XX
-| {{No}}
-| [[Inventory_messages#1013|Withdraw cash]]
-|-
-| style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 14
-| XX
-| {{Yes}}
-| [[Inventory_messages#1014|Withdraw object]]
+{{Template:Inventory_messages_Client_Server_Reply}}
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
-== Client &rarr; Server without reply ==
+== Client &rarr; Server ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
 ! Main code type
@@ -130,118 +23,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Query number
 ! Packet size
 ! Data
-|-
-| style="background: #90ff90; color: black;" | 50
-| style="background: #ffcc00; color: black;" | 01
-| 
-| {{Yes}}
-| [[Inventory_messages#5001|Use an object/recipe]]
-|-
-| style="background: #90ff90; color: black;" | 50
-| style="background: #ffcc00; color: black;" | 02
-| 
-| {{No}}
-| [[Inventory_messages#5002|Destroy an object]]
-|-
-| style="background: #90ff90; color: black;" | 50
-| style="background: #ffcc00; color: black;" | 03
-| 
-| {{Yes}}
-| [[Inventory_messages#5003|Put object into a trade]] (when trade is accepted)
-|-
-| style="background: #90ff90; color: black;" | 50
-| style="background: #ffcc00; color: black;" | 04
-| 
-| {{No}}
-| [[Inventory_messages#5004|Finish the trade]] (when trade is accepted)
-|-
-| style="background: #90ff90; color: black;" | 50
-| style="background: #ffcc00; color: black;" | 05
-| 
-| {{No}}
-| [[Inventory_messages#5005|Cancel the trade]] (when trade is accepted)
-|-
-| style="background: #90ff90; color: black;" | 50
-| style="background: #ffcc00; color: black;" | 06
-| 
-| {{Yes}}
-| [[Inventory_messages#5006|Deposite/withdraw to warehouse]]
-|-
-| style="background: #90ff90; color: black;" | 50
-| style="background: #ffcc00; color: black;" | 07
-| 
-| {{No}}
-| [[Inventory_messages#5007|Take an object on map (visible or not)]]
-|}
-
-== Server &rarr; Client without reply ==
-{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! Main code type
-! Sub code type
-! Query number
-! Packet size
-! Data
-|-
-| style="background: #90ff90; color: black;" | D0
-| style="background: #ffcc00; color: black;" | 01
-| 
-| {{Yes}}
-| [[Inventory_messages#D001|Send the inventory]]
-|-
-| style="background: #90ff90; color: black;" | D0
-| style="background: #ffcc00; color: black;" | 02
-| 
-| {{Yes}}
-| [[Inventory_messages#D002|Add object]]
-|-
-| style="background: #90ff90; color: black;" | D0
-| style="background: #ffcc00; color: black;" | 03
-| 
-| {{Yes}}
-| [[Inventory_messages#D003|Remove object]]
-|-
-| style="background: #90ff90; color: black;" | D0
-| style="background: #ffcc00; color: black;" | 04
-| 
-| {{Yes}}
-| [[Inventory_messages#D004|The other player have put object]] (trade)
-|-
-| style="background: #90ff90; color: black;" | D0
-| style="background: #ffcc00; color: black;" | 05
-| 
-| {{Yes}}
-| [[Inventory_messages#D005|The other player have accepted]] (trade, send the info too)
-|-
-| style="background: #90ff90; color: black;" | D0
-| style="background: #ffcc00; color: black;" | 06
-| 
-| {{No}}
-| [[Inventory_messages#D006|The other player have canceled]] (trade)
-|-
-| style="background: #90ff90; color: black;" | D0
-| style="background: #ffcc00; color: black;" | 07
-| 
-| {{No}}
-| [[Inventory_messages#D007|The other player have finished]] (trade)
-|-
-| style="background: #90ff90; color: black;" | D0
-| style="background: #ffcc00; color: black;" | 08
-| 
-| {{No}}
-| [[Inventory_messages#D008|Server have validated the trade]] (trade)
-|-
-| style="background: #90ff90; color: black;" | D1
-|
-| 
-| {{Yes}}
-| [[Inventory_messages#D1|Insert plant on map]] '''''(Fast)'''''
-|-
-| style="background: #90ff90; color: black;" | D2
-|
-| 
-| {{Yes}}
-| [[Inventory_messages#D2|Remove plant on map]] '''''(Fast)'''''
+{{Template:Inventory_messages_Client_Server}}
 |}
 
 == Server &rarr; Client with reply ==
@@ -252,12 +34,18 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Query number
 ! Packet size
 ! Data
+{{Template:Inventory_messages_Server_Client_Reply}}
+|}
+
+== Server &rarr; Client ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-| style="background: #90ff90; color: black;" | 80
-| style="background: #ffcc00; color: black;" | 01
-| XX
-| {{Yes}}
-| [[Inventory_messages#8001|Another player request a trade]]
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+{{Template:Inventory_messages_Server_Client}}
 |}
 
 = Reply =
