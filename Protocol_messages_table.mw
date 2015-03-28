@@ -16,12 +16,6 @@
 | {{Yes}}
 | [[Base_protocol_messages#02000C|Send datapack file list]]
 |-
-| style="background: #90ff90; color: black;" | 02
-| style="background: #ffcc00; color: black;" | 000D
-| XX
-| {{Yes}}
-| [[Base_protocol_messages#02000D|Clan action]]
-|-
 | style="background: #90ff90; color: black;" | 10
 | style="background: #ffcc00; color: black;" | 0003
 | XX
@@ -129,6 +123,7 @@
 | XX
 | {{Yes}}
 | [[Inventory_messages#100014|Withdraw object]]
+{{Template:Base_protocol_messages_Client_Server_Reply}}
 {{Template:Login_protocol_messages_Client_Server_Reply}}
 {{Template:Master_server_messages_Client_Server_Reply}}
 |}
@@ -143,30 +138,6 @@
 ! Query number
 ! Packet size
 ! Data
-|-
-| style="background: #90ff90; color: black;" | 40
-| 
-| 
-| {{No}}
-| [[Base_protocol_messages#40|Send position + direction]] '''''(Fast)'''''
-|-
-| style="background: #90ff90; color: black;" | 41
-| 
-| XX
-| style="background: #9CF6FF; color: black;" | Depands
-| [[Base_protocol_messages#41|Reply to server query]] ([[Base_protocol_messages#Reply|See reply]])
-|-
-| style="background: #90ff90; color: black;" | 43
-| 
-| 
-| {{Yes}}
-| [[Base_protocol_messages#43|Chat]]
-|-
-| style="background: #90ff90; color: black;" | 42
-| style="background: #ffcc00; color: black;" | 0004
-| 
-| {{No}}
-| [[Base_protocol_messages#420004|Clan invite accept]]
 |-
 | style="background: #90ff90; color: black;" | 60
 | style="background: #ffcc00; color: black;" | 0001
@@ -281,6 +252,7 @@
 | 
 | {{No}}
 | [[Inventory_messages#500007|Take an object on map (visible or not)]]
+{{Template:Base_protocol_messages_Client_Server}}
 {{Template:Others_messages_Client_Server}}
 {{Template:Login_protocol_messages_Client_Server}}
 {{Template:Master_server_messages_Client_Server}}
@@ -294,18 +266,6 @@
 ! Query number
 ! Packet size
 ! Data
-|-
-| style="background: #90ff90; color: black;" | 79
-| style="background: #ffcc00; color: black;" | 0001
-| XX
-| {{Yes}}
-| [[Base_protocol_messages#790001|Teleport the player]]
-|-
-| style="background: #90ff90; color: black;" | 79
-| style="background: #ffcc00; color: black;" | 0002
-| XX
-| {{No}}
-| [[Base_protocol_messages#790002|Event change]]
 |-
 | style="background: #90ff90; color: black;" | 90
 | style="background: #ffcc00; color: black;" | 0001
@@ -372,6 +332,7 @@
 | 
 | {{Yes}}
 | [[Inventory_messages#D2|Remove plant on map]] '''''(Fast)'''''
+{{Template:Base_protocol_messages_Server_Client_Reply}}
 |}
 
 == Server &rarr; Client without reply ==
@@ -382,72 +343,6 @@
 ! Query number
 ! Packet size
 ! Data
-|-
-| style="background: #90ff90; color: black;" | C0
-| 
-| 
-| {{Yes}}
-| [[Base_protocol_messages#C0|Insert player on map]] '''''(Fast)'''''
-|-
-| style="background: #90ff90; color: black;" | C1
-| 
-| XX
-| style="background: #9CF6FF; color: black;" | Depands
-| [[Base_protocol_messages#C1|Reply to client query]] ([[Base_protocol_messages#Reply|See reply]])
-|-
-| style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 0003
-| 
-| {{Yes}}
-| [[Base_protocol_messages#C20003|update file (raw)]]
-|-
-| style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 0004
-| 
-| {{Yes}}
-| [[Base_protocol_messages#C20003|update file (compressed)]]
-|-
-| style="background: #90ff90; color: black;" | CA
-| 
-| 
-| {{Yes}}
-| [[Base_protocol_messages#CA|Chat]]
-|-
-| style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 0008
-| 
-| {{Yes}}
-| [[Base_protocol_messages#C20008|kicked/ban and reason]]
-|-
-| style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 0009
-| 
-| {{No}}
-| [[Base_protocol_messages#C20009|Clan disolved]]
-|-
-| style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 000A
-| 
-| {{Yes}}
-| [[Base_protocol_messages#C2000A|Clan info]]
-|-
-| style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 000B
-| 
-| {{Yes}}
-| [[Base_protocol_messages#C2000B|Clan invite ask]]
-|-
-| style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 000C
-| 
-| {{Yes}}
-| [[Base_protocol_messages#C2000C|Send datapack send size]]
-|-
-| style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 000D
-| 
-| {{Yes}}
-| [[Base_protocol_messages#C2000D|update file (http)]]
 |-
 | style="background: #90ff90; color: black;" | C3
 | 
@@ -520,6 +415,7 @@
 | XX
 | {{Yes}}
 | [[Inventory_messages#800001|Another player request a trade]]
+{{Template:Base_protocol_messages_Server_Client}}
 {{Template:Others_messages_Server_Client}}
 {{Template:Login_protocol_messages_Server_Client}}
 |}
