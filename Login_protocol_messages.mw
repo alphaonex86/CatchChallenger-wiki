@@ -104,22 +104,22 @@ Then:
 
 [[Login_protocol_messages#Reply_05|See reply to this query]]
 
-=== 020003 ===
+=== 0203 ===
 Send the profile id: <span style="color: #FF0040">01</span>, pseudo <span style="color: #40BF00">"toto"</span>, skinId <span style="color: #40BF00">01</span>
 
-[[Login_protocol_messages#Reply_020003|See reply to this query]]
+[[Login_protocol_messages#Reply_0203|See reply to this query]]
 
-=== 020004 ===
+=== 0204 ===
 Remove character id: <span style="color: #FF0040">00000001</span>
 
-[[Login_protocol_messages#Reply_020004|See reply to this query]]
+[[Login_protocol_messages#Reply_0204|See reply to this query]]
 
-=== 020005 ===
+=== 0205 ===
 Send the character id: <span style="color: #FF0040">00000001</span>
 
-[[Login_protocol_messages#Reply_020005|See reply to this query]]
+[[Login_protocol_messages#Reply_0205|See reply to this query]]
 
-=== 02000C ===
+=== 020C ===
 Blocked is mirror is enabled, is considered as hacking.
 
 Send file name and first 4Byte of sha224 hash:
@@ -132,20 +132,20 @@ Send file name and first 4Byte of sha224 hash:
  <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span><span style="color: #FF4000">XXXXXXXX</span>
 This packet is compressed.
 
-[[Login_protocol_messages#Reply_02000C|See reply to this query]]
+[[Login_protocol_messages#Reply_020C|See reply to this query]]
 
-=== 110002 ===
+=== 1102 ===
 charactersGroupIndex: <span style="color: #FF0040">01</span>
-=== 110003 ===
+=== 1103 ===
 charactersGroupIndex: <span style="color: #FF0040">01</span>
-=== 110004 ===
+=== 1104 ===
 charactersGroupIndex: <span style="color: #FF0040">01</span>
 
 == Client &rarr; Server without reply ==
 
 == Server &rarr; Client without reply ==
 
-=== C2000E ===
+=== C20E ===
 Login server to real player
 ==== Reconnect ====
 * Server mode <span style="color: #FF4000">01</span>=reconnect (host + port)
@@ -163,12 +163,12 @@ Login server to real player
 ** <span style="color: #40BFFF"><name>Server test 4</name><name lang="fr">Serveur de teste 4</name><description>Description in english</description><description lang="fr">Description en français</description></span> (xml attached)
 ** <span style="color: #7B00FF">folder/path</span> (group)
 
-=== C2000F ===
+=== C20F ===
 * Logical group size <span style="color: #FF4000">01</span>
 ** <span style="color: #40BF00">&quot;folder/path&quot;</span> 8bits headers + utf8
 ** <span style="color: #FFBF00">&quot;Translation xml&quot;</span> 16bits headers + utf8
 
-=== C20010 ===
+=== C210 ===
 '''Master server to login server exclusively'''
 
 * Server list size <span style="color: #FF4000">01</span>
@@ -179,7 +179,7 @@ Login server to real player
 ** <span style="color: #40BFFF"><name>Server test 4</name><name lang="fr">Serveur de teste 4</name><description>Description in english</description><description lang="fr">Description en français</description></span> (xml attached) 16bits headers + utf8
 ** <span style="color: #7B00FF">folder/path</span> (group) 8bits headers + utf8
 
-=== C20011 ===
+=== C211 ===
 * Account creation: <span style="color: #40BFFF">01</span>
 * 
 * waitBeforeConnectAfterKick: <span style="color: #FF4000">0014</span> (20s)
@@ -283,7 +283,7 @@ If all is good:
 ** MapId: <span style="color: #40BF00">00000001</span> (32Bits, -1 if not found or buggy)
 
 ==== Version 2 ====
-'''Send C2000E''' to static server list before the reply.
+'''Send C20E''' to static server list before the reply.
 
 '''Note for dev: Is not way (or I have not found) to have max visibility player and simplified id with it without increasing the bandwidth due to id change (current player id pass into visibility zone need id change).'''
 
@@ -345,19 +345,19 @@ This reply is compressed.
 * <span style="color: #FF4000">02</span> (Login already used)
 * <span style="color: #FF4000">03</span> (Not created)
 
-=== Reply 020003 ===
+=== Reply 0203 ===
 Return code: <span style="color: #40BFBF">00</span> (00 = success, 01 = pseudo already taken, 02 = have already maximum of charaters, 03 = other)
 
 The reply is the character id: <span style="color: #BFBF40">00000001</span>
 
-=== Reply 020004 ===
+=== Reply 0204 ===
 If all is good:
 <span style="color: #FF4000">01</span>
 
 If something is wrong:
 <span style="color: #FF4000">02</span>
 
-=== Reply 020005 ===
+=== Reply 0205 ===
 If all is good:
 * <span style="color: #FF4000">01</span> (all is good)
 * Character id: {{Player_id}} (unique generated id on the map)
@@ -431,7 +431,7 @@ Wrong, case possible:
 * <span style="color: #FF4000">03</span> (Already logged)
 * <span style="color: #FF4000">04</span> (Server internal problem)
 
-=== Reply 02000C ===
+=== Reply 020C ===
 The reply is '''BITS''', put 0 bits if needed to do a byte.
 Reply a list, with same number of item of the source query (<span style="color: #FF4000">1</span> to keep, <span style="color: #FF4000">0</span> to delete):
 * <span style="color: #FF4000">1</span>
