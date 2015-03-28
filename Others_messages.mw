@@ -16,7 +16,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
-== Client &rarr; Server without reply ==
+== Client &rarr; Server ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
 ! Main code type
@@ -37,7 +37,7 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Data
 |}
 
-== Server &rarr; Client without reply ==
+== Server &rarr; Client ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
 ! Main code type
