@@ -14,7 +14,7 @@
 {{Note}}All the main code in this column is considered query with needed reply.
 * 1) Fast to have good performance, to face to bruteforce, DDOS
 
-== Client &rarr; Server without reply ==
+== Client &rarr; Server ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
 ! Main code type
@@ -36,7 +36,7 @@
 ! Data
 |}
 
-== Server &rarr; Client without reply ==
+== Server &rarr; Client ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
 ! Main code type
