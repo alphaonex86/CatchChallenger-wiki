@@ -25,78 +25,7 @@
 ! Query number
 ! Packet size
 ! Data
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0001
-| 
-| {{Yes}}
-| [[Battle_messages#600001|Use an object/recipe in battle]]
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0002
-| 
-| {{No}}
-| [[Battle_messages#600002|Try escape]]
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0003
-| 
-| {{No}}
-| [[Battle_messages#600003|Change monster]]
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0004
-| 
-| {{No}}
-| [[Battle_messages#600004|Learn attack]]
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0005
-| XX
-| {{Yes}}
-| [[Battle_messages#60005|Request a player battle]]
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0006
-| 
-| {{No}}
-| [[Battle_messages#600006|Heal all the monster]]
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0007
-| 
-| {{No}}
-| [[Battle_messages#600007|Start a requested bot fight]]
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0008
-| 
-| {{No}}
-| [[Battle_messages#600008|Monster up/down]]
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 0009
-| 
-| {{No}}
-| [[Battle_messages#600009|Monster change in fight]]
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 000A
-| 
-| {{No}}
-| [[Battle_messages#60000A|Monster evolution validated]]
-|-
-| style="background: #90ff90; color: black;" | 60
-| style="background: #ffcc00; color: black;" | 000B
-| 
-| {{No}}
-| [[Battle_messages#60000B|Use object on monster]]
-|-
-| style="background: #90ff90; color: black;" | 61
-| 
-| 
-| {{No}}
-| [[Battle_messages#51|Use an attack of a monster]]
+{{Template:Battle_messages_Client_Server}}
 {{Template:Inventory_messages_Client_Server}}
 {{Template:Base_protocol_messages_Client_Server}}
 {{Template:Others_messages_Client_Server}}
