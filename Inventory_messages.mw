@@ -13,112 +13,112 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Data
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0003
+| style="background: #ffcc00; color: black;" | 03
 | XX
 | {{Yes}}
-| [[Inventory_messages#100003|Stock objects]]
+| [[Inventory_messages#1003|Stock objects]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0004
+| style="background: #ffcc00; color: black;" | 04
 | XX
 | {{Yes}}
-| [[Inventory_messages#100004|Object list can be withdraw]]
+| [[Inventory_messages#1004|Object list can be withdraw]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0005
+| style="background: #ffcc00; color: black;" | 05
 | XX
 | {{Yes}}
-| [[Inventory_messages#100005|Withdraw an object]]
+| [[Inventory_messages#1005|Withdraw an object]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0006
+| style="background: #ffcc00; color: black;" | 06
 | XX
 | {{No}}
-| [[Inventory_messages#100006|Use seed into dirt]]
+| [[Inventory_messages#1006|Use seed into dirt]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0007
+| style="background: #ffcc00; color: black;" | 07
 | XX
 | {{No}}
-| [[Inventory_messages#100007|Collect mature plant]]
+| [[Inventory_messages#1007|Collect mature plant]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0008
+| style="background: #ffcc00; color: black;" | 08
 | XX
 | {{No}}
-| [[Inventory_messages#100008|Usage of recipe]]
+| [[Inventory_messages#1008|Usage of recipe]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0009
+| style="background: #ffcc00; color: black;" | 09
 | XX
 | {{No}}
-| [[Inventory_messages#100009|Use object]]
+| [[Inventory_messages#1009|Use object]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 000A
+| style="background: #ffcc00; color: black;" | 0A
 | XX
 | {{No}}
-| [[Inventory_messages#10000A|Get shop list]]
+| [[Inventory_messages#100A|Get shop list]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 000B
+| style="background: #ffcc00; color: black;" | 0B
 | XX
 | {{No}}
-| [[Inventory_messages#10000B|Buy object]]
+| [[Inventory_messages#100B|Buy object]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 000C
+| style="background: #ffcc00; color: black;" | 0C
 | XX
 | {{No}}
-| [[Inventory_messages#10000C|Sell object]]
+| [[Inventory_messages#100C|Sell object]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 000D
+| style="background: #ffcc00; color: black;" | 0D
 | XX
 | {{No}}
 | [[Inventory_messages#10000D|Get factory list]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 000E
+| style="background: #ffcc00; color: black;" | 0E
 | XX
 | {{No}}
-| [[Inventory_messages#10000E|Buy factory object]]
+| [[Inventory_messages#100E|Buy factory object]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 000F
+| style="background: #ffcc00; color: black;" | 0F
 | XX
 | {{No}}
 | [[Inventory_messages#10000F|Sell factory object]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0010
+| style="background: #ffcc00; color: black;" | 10
 | XX
 | {{No}}
-| [[Inventory_messages#100010|Get market list]]
+| [[Inventory_messages#1010|Get market list]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0011
+| style="background: #ffcc00; color: black;" | 11
 | XX
 | {{Yes}}
-| [[Inventory_messages#100011|Buy into the market]]
+| [[Inventory_messages#1011|Buy into the market]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0012
+| style="background: #ffcc00; color: black;" | 12
 | XX
 | {{Yes}}
-| [[Inventory_messages#100012|Put object into the market]]
+| [[Inventory_messages#1012|Put object into the market]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0013
+| style="background: #ffcc00; color: black;" | 13
 | XX
 | {{No}}
-| [[Inventory_messages#100013|Withdraw cash]]
+| [[Inventory_messages#1013|Withdraw cash]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0014
+| style="background: #ffcc00; color: black;" | 14
 | XX
 | {{Yes}}
-| [[Inventory_messages#100014|Withdraw object]]
+| [[Inventory_messages#1014|Withdraw object]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 
@@ -132,46 +132,46 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Data
 |-
 | style="background: #90ff90; color: black;" | 50
-| style="background: #ffcc00; color: black;" | 0001
+| style="background: #ffcc00; color: black;" | 01
 | 
 | {{Yes}}
-| [[Inventory_messages#500001|Use an object/recipe]]
+| [[Inventory_messages#5001|Use an object/recipe]]
 |-
 | style="background: #90ff90; color: black;" | 50
-| style="background: #ffcc00; color: black;" | 0002
+| style="background: #ffcc00; color: black;" | 02
 | 
 | {{No}}
-| [[Inventory_messages#500002|Destroy an object]]
+| [[Inventory_messages#5002|Destroy an object]]
 |-
 | style="background: #90ff90; color: black;" | 50
-| style="background: #ffcc00; color: black;" | 0003
+| style="background: #ffcc00; color: black;" | 03
 | 
 | {{Yes}}
-| [[Inventory_messages#500003|Put object into a trade]] (when trade is accepted)
+| [[Inventory_messages#5003|Put object into a trade]] (when trade is accepted)
 |-
 | style="background: #90ff90; color: black;" | 50
-| style="background: #ffcc00; color: black;" | 0004
+| style="background: #ffcc00; color: black;" | 04
 | 
 | {{No}}
-| [[Inventory_messages#500004|Finish the trade]] (when trade is accepted)
+| [[Inventory_messages#5004|Finish the trade]] (when trade is accepted)
 |-
 | style="background: #90ff90; color: black;" | 50
-| style="background: #ffcc00; color: black;" | 0005
+| style="background: #ffcc00; color: black;" | 05
 | 
 | {{No}}
-| [[Inventory_messages#500005|Cancel the trade]] (when trade is accepted)
+| [[Inventory_messages#5005|Cancel the trade]] (when trade is accepted)
 |-
 | style="background: #90ff90; color: black;" | 50
-| style="background: #ffcc00; color: black;" | 0006
+| style="background: #ffcc00; color: black;" | 06
 | 
 | {{Yes}}
-| [[Inventory_messages#500006|Deposite/withdraw to warehouse]]
+| [[Inventory_messages#5006|Deposite/withdraw to warehouse]]
 |-
 | style="background: #90ff90; color: black;" | 50
-| style="background: #ffcc00; color: black;" | 0007
+| style="background: #ffcc00; color: black;" | 07
 | 
 | {{No}}
-| [[Inventory_messages#500007|Take an object on map (visible or not)]]
+| [[Inventory_messages#5007|Take an object on map (visible or not)]]
 |}
 
 == Server &rarr; Client without reply ==
@@ -184,52 +184,52 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Data
 |-
 | style="background: #90ff90; color: black;" | D0
-| style="background: #ffcc00; color: black;" | 0001
+| style="background: #ffcc00; color: black;" | 01
 | 
 | {{Yes}}
-| [[Inventory_messages#D00001|Send the inventory]]
+| [[Inventory_messages#D001|Send the inventory]]
 |-
 | style="background: #90ff90; color: black;" | D0
-| style="background: #ffcc00; color: black;" | 0002
+| style="background: #ffcc00; color: black;" | 02
 | 
 | {{Yes}}
-| [[Inventory_messages#D00002|Add object]]
+| [[Inventory_messages#D002|Add object]]
 |-
 | style="background: #90ff90; color: black;" | D0
-| style="background: #ffcc00; color: black;" | 0003
+| style="background: #ffcc00; color: black;" | 03
 | 
 | {{Yes}}
-| [[Inventory_messages#D00003|Remove object]]
+| [[Inventory_messages#D003|Remove object]]
 |-
 | style="background: #90ff90; color: black;" | D0
-| style="background: #ffcc00; color: black;" | 0004
+| style="background: #ffcc00; color: black;" | 04
 | 
 | {{Yes}}
-| [[Inventory_messages#D00004|The other player have put object]] (trade)
+| [[Inventory_messages#D004|The other player have put object]] (trade)
 |-
 | style="background: #90ff90; color: black;" | D0
-| style="background: #ffcc00; color: black;" | 0005
+| style="background: #ffcc00; color: black;" | 05
 | 
 | {{Yes}}
-| [[Inventory_messages#D00005|The other player have accepted]] (trade, send the info too)
+| [[Inventory_messages#D005|The other player have accepted]] (trade, send the info too)
 |-
 | style="background: #90ff90; color: black;" | D0
-| style="background: #ffcc00; color: black;" | 0006
+| style="background: #ffcc00; color: black;" | 06
 | 
 | {{No}}
-| [[Inventory_messages#D00006|The other player have canceled]] (trade)
+| [[Inventory_messages#D006|The other player have canceled]] (trade)
 |-
 | style="background: #90ff90; color: black;" | D0
-| style="background: #ffcc00; color: black;" | 0007
+| style="background: #ffcc00; color: black;" | 07
 | 
 | {{No}}
-| [[Inventory_messages#D00007|The other player have finished]] (trade)
+| [[Inventory_messages#D007|The other player have finished]] (trade)
 |-
 | style="background: #90ff90; color: black;" | D0
-| style="background: #ffcc00; color: black;" | 0008
+| style="background: #ffcc00; color: black;" | 08
 | 
 | {{No}}
-| [[Inventory_messages#D00008|Server have validated the trade]] (trade)
+| [[Inventory_messages#D008|Server have validated the trade]] (trade)
 |-
 | style="background: #90ff90; color: black;" | D1
 |
@@ -254,10 +254,10 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Data
 |-
 | style="background: #90ff90; color: black;" | 80
-| style="background: #ffcc00; color: black;" | 0001
+| style="background: #ffcc00; color: black;" | 01
 | XX
 | {{Yes}}
-| [[Inventory_messages#800001|Another player request a trade]]
+| [[Inventory_messages#8001|Another player request a trade]]
 |}
 
 = Reply =
@@ -270,54 +270,54 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Query
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0003
+| style="background: #ffcc00; color: black;" | 03
 | {{No}}
-| [[Inventory_messages#Reply_100003|Stock objects]]
+| [[Inventory_messages#Reply_1003|Stock objects]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0004
+| style="background: #ffcc00; color: black;" | 04
 | {{Yes}}
-| [[Inventory_messages#Reply_100004|Ask object list to receive]]
+| [[Inventory_messages#Reply_1004|Ask object list to receive]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0005
+| style="background: #ffcc00; color: black;" | 05
 | {{Yes}}
-| [[Inventory_messages#Reply_100005|Withdraw an object]]
+| [[Inventory_messages#Reply_1005|Withdraw an object]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0006
+| style="background: #ffcc00; color: black;" | 06
 | {{No}}
-| [[Inventory_messages#Reply_100006|Use seed into dirt]]
+| [[Inventory_messages#Reply_1006|Use seed into dirt]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0007
+| style="background: #ffcc00; color: black;" | 07
 | {{No}}
-| [[Inventory_messages#Reply_100007|Collect mature plant]]
+| [[Inventory_messages#Reply_1007|Collect mature plant]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0008
+| style="background: #ffcc00; color: black;" | 08
 | {{No}}
-| [[Inventory_messages#Reply_100008|Usage of recipe]]
+| [[Inventory_messages#Reply_1008|Usage of recipe]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 0009
+| style="background: #ffcc00; color: black;" | 09
 | {{No}}
-| [[Inventory_messages#Reply_100009|Use object]]
+| [[Inventory_messages#Reply_1009|Use object]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 000A
+| style="background: #ffcc00; color: black;" | 0A
 | {{Yes}}
-| [[Inventory_messages#Reply_10000A|Get shop list]]
+| [[Inventory_messages#Reply_100A|Get shop list]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 000B
+| style="background: #ffcc00; color: black;" | 0B
 | {{Yes}}
-| [[Inventory_messages#Reply_10000B|Buy object]]
+| [[Inventory_messages#Reply_100B|Buy object]]
 |-
 | style="background: #90ff90; color: black;" | 10
-| style="background: #ffcc00; color: black;" | 000C
+| style="background: #ffcc00; color: black;" | 0C
 | {{Yes}}
-| [[Inventory_messages#Reply_10000C|Sell object]]
+| [[Inventory_messages#Reply_100C|Sell object]]
 |}
 
 == Client &rarr; Server ==
@@ -329,105 +329,105 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 ! Query
 |-
 | style="background: #90ff90; color: black;" | 80
-| style="background: #ffcc00; color: black;" | 0001
+| style="background: #ffcc00; color: black;" | 01
 | {{No}}
-| [[Inventory_messages#Reply_800001|Another player request a trade]]
+| [[Inventory_messages#Reply_8001|Another player request a trade]]
 |}
 
 = Details =
 == Client &rarr; Server with reply ==
-=== 100006 ===
+=== 1006 ===
 Send the plant id <span style="color: #FF4000">02</span>
  <span style="color: #FF4000">02</span>
 
-[[Inventory_messages#Reply_100006|See reply to this query]]
-=== 100007 ===
+[[Inventory_messages#Reply_1006|See reply to this query]]
+=== 1007 ===
 This query have null size
 
 [[Inventory_messages#Reply_100007|See reply to this query]]
 
-=== 100008 ===
+=== 1008 ===
 Use the recipe id: <span style="color: #FFBF00">0001</span>
 
-[[Inventory_messages#Reply_100008|See reply to this query]]
+[[Inventory_messages#Reply_1008|See reply to this query]]
 
-=== 100009 ===
+=== 1009 ===
 Send the object used: <span style="color: #FF4000">0003</span>
 Not fixed size because future arguments can be added, like on what is applied the object.
 
-[[Inventory_messages#Reply_100009|See reply to this query]]
+[[Inventory_messages#Reply_1009|See reply to this query]]
 
-=== 10000A ===
+=== 100A ===
 Shop id: <span style="color: #A600FF">0001</span>
 
-[[Inventory_messages#Reply_10000A|See reply to this query]]
+[[Inventory_messages#Reply_100A|See reply to this query]]
 
-=== 10000B ===
+=== 100B ===
 Shop id: <span style="color: #A600FF">0001</span>, Buy object: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
 
-[[Inventory_messages#Reply_10000B|See reply to this query]]
+[[Inventory_messages#Reply_100B|See reply to this query]]
 
-=== 10000C ===
+=== 100C ===
 Shop id: <span style="color: #A600FF">0001</span>, Sell object: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
 
-[[Inventory_messages#Reply_10000C|See reply to this query]]
+[[Inventory_messages#Reply_100C|See reply to this query]]
 
-=== 10000D ===
+=== 100D ===
 Factory id: <span style="color: #A600FF">0001</span>
 
-[[Inventory_messages#Reply_10000D|See reply to this query]]
+[[Inventory_messages#Reply_100D|See reply to this query]]
 
-=== 10000E ===
+=== 100E ===
 Factory id: <span style="color: #A600FF">0001</span>, Buy object: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
 
-[[Inventory_messages#Reply_10000E|See reply to this query]]
+[[Inventory_messages#Reply_100E|See reply to this query]]
 
-=== 10000F ===
+=== 100F ===
 Factory id: <span style="color: #A600FF">0001</span>, Sell object: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
 
-[[Inventory_messages#Reply_10000F|See reply to this query]]
+[[Inventory_messages#Reply_100F|See reply to this query]]
 
-=== 100010 ===
+=== 1010 ===
 Get the market list
 
-[[Inventory_messages#Reply_100010|See reply to this query]]
+[[Inventory_messages#Reply_1010|See reply to this query]]
 
-=== 100011 ===
+=== 1011 ===
 Buy into the market, type: <span style="color: #A600FF">01</span> (01 object, 02 monster), Object/Monster id: <span style="color: #FFBF00">0001</span>, quantity if object: <span style="color: #40BF00">00000001</span>
 
-[[Inventory_messages#Reply_100011|See reply to this query]]
+[[Inventory_messages#Reply_1011|See reply to this query]]
 
-=== 100012 ===
+=== 1012 ===
 Put the object/monster on the market: <span style="color: #A600FF">01</span> (01 object, 02 monster), if object:
 * Sell object: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">00000003</span>
 Or if monster:
 * Sell monster, monster id: <span style="color: #FFBF00">00000001</span>, price: <span style="color: #FF4000">00000000</span>
 
-[[Inventory_messages#Reply_100012|See reply to this query]]
+[[Inventory_messages#Reply_1012|See reply to this query]]
 
-=== 100013 ===
+=== 1013 ===
 Withdraw cash
 
-[[Inventory_messages#Reply_100013|Withdraw cash]]
+[[Inventory_messages#Reply_1013|Withdraw cash]]
 
-=== 100014 ===
+=== 1014 ===
 Withdraw the object/monster on the market: <span style="color: #A600FF">01</span> (01 object, 02 monster), if object:
 * Sell object: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>
 Or if monster:
 * Sell monster, monster id: <span style="color: #FFBF00">00000001</span>
 
-[[Inventory_messages#Reply_100014|See reply to this query]]
+[[Inventory_messages#Reply_1014|See reply to this query]]
 
 == Client &rarr; Server without reply ==
-=== 500002 ===
+=== 5002 ===
 Destroy the object id: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>
 
-=== 500003 ===
+=== 5003 ===
 Type: <span style="color: #9D007B">01</span> (cash), quantity: <span style="color: #40BF00">0000000000000001</span>
 Type: <span style="color: #9D007B">02</span> (item), item: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>
 Type: <span style="color: #9D007B">03</span> (monster), monster id: <span style="color: #40BF00">00000001</span>
 
-=== 500006 ===
+=== 5006 ===
 * Cash to withdraw: <span style="color: #FF0000">00000000 00000001</span> if negative, the absolute value is to deposite.
 * List of item to withdraw: <span style="color: #5544DD">0001</span>
 ** Item: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span> if negative, the absolute value is to deposite.
@@ -437,7 +437,7 @@ Type: <span style="color: #9D007B">03</span> (monster), monster id: <span style=
 ** Monster id: <span style="color: #FFBF00">00000001</span>
 
 == Server &rarr; Client without reply ==
-=== D00001 ===
+=== D001 ===
 Send item list size <span style="color: #FF4000">0002</span>, and the object:
 * Id: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>
 * Id: <span style="color: #FFBF00">0002</span>, quantity: <span style="color: #40BF00">00000005</span>
@@ -445,17 +445,17 @@ Send warehouse item list size <span style="color: #FF4000">00000002</span>, and 
 * Id: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>
 * Id: <span style="color: #FFBF00">0002</span>, quantity: <span style="color: #40BF00">00000005</span>
 
-=== D00002 ===
+=== D002 ===
 Add list size <span style="color: #FF4000">0002</span>, and the object:
 * Id: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>
 * Id: <span style="color: #FFBF00">0002</span>, quantity: <span style="color: #40BF00">00000005</span>
 
-=== D00003 ===
+=== D003 ===
 Remove list size <span style="color: #FF4000">0002</span>, and the object:
 * Id: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>
 * Id: <span style="color: #FFBF00">0002</span>, quantity: <span style="color: #40BF00">00000005</span>
 
-=== D00004 ===
+=== D004 ===
 Type: <span style="color: #9D007B">01</span> (cash), quantity: <span style="color: #40BF00">0000000000000001</span>
  <span style="color: #9D007B">01</span><span style="color: #40BF00">0000000000000001</span>
 Type: <span style="color: #9D007B">02</span> (item), item: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>
@@ -500,7 +500,7 @@ Note: only once at time.
 
 = Reply =
 == Server &rarr; Client reply ==
-=== Reply 100006 ===
+=== Reply 1006 ===
 <span style="color: #40BFFF">01</span> (correctly planted)
  <span style="color: #40BFFF">01</span>
 
@@ -529,7 +529,7 @@ Note: only once at time.
 <span style="color: #40BFFF">03</span> (failed to craft, '''materials consumed''')
  <span style="color: #40BFFF">03</span>
 
-=== Reply 100009 ===
+=== Reply 1009 ===
 '''If is a special object, have extra args, see bellow'''
 
 The reply can be one of this:
@@ -540,27 +540,27 @@ The reply can be one of this:
 '''If is a trap'''
 * Add Monster id, 00000000 if failed
 
-=== Reply 10000A ===
+=== Reply 100A ===
 Why resend the object list? Because some object can be disabled by the server. Allow global trade where the player can sell/buy to other player.
 
 Get shop list size: <span style="color: #FF4000">0003</span>
 * object: <span style="color: #FFBF00">0001</span>, price: <span style="color: #FF4000">00000003</span>, quantity: <span style="color: #40BF00">00000000</span> (0 = infinity)
 
-=== Reply 10000B ===
+=== Reply 100B ===
 The reply can be one of this:
 * <span style="color: #40BFFF">01</span> Purchased
 * <span style="color: #40BFFF">02</span> Purchased at better price, price: <span style="color: #FF4000">00000003</span>
 * <span style="color: #40BFFF">03</span> Have not the quantity
 * <span style="color: #40BFFF">04</span> Price have changed
 
-=== Reply 10000C ===
+=== Reply 100C ===
 The reply can be one of this:
 * <span style="color: #40BFFF">01</span> Sold
 * <span style="color: #40BFFF">02</span> Sold at better price, price: <span style="color: #FF4000">00000003</span>
 * <span style="color: #40BFFF">03</span> Can't sold this quantity
 * <span style="color: #40BFFF">04</span> Price have changed
 
-=== Reply 10000D ===
+=== Reply 100D ===
 Why resend the object list? Because some object can be disabled by the server. Allow global trade where the player can sell/buy to other player.
 
 Get factory resources list size: <span style="color: #FF4000">00000001</span>
@@ -568,21 +568,21 @@ Get factory resources list size: <span style="color: #FF4000">00000001</span>
 Get factory products list size: <span style="color: #FF4000">00000001</span>
 * object: <span style="color: #FFBF00">0002</span>, price: <span style="color: #FF4000">00000015</span>, quantity: <span style="color: #40BF00">00000001</span>
 
-=== Reply 10000E ===
+=== Reply 100E ===
 The reply can be one of this:
 * <span style="color: #40BFFF">01</span> Purchased
 * <span style="color: #40BFFF">02</span> Purchased at better price, price: <span style="color: #FF4000">00000003</span>
 * <span style="color: #40BFFF">03</span> Have not the quantity
 * <span style="color: #40BFFF">04</span> Price have changed
 
-=== Reply 10000F ===
+=== Reply 100F ===
 The reply can be one of this:
 * <span style="color: #40BFFF">01</span> Sold
 * <span style="color: #40BFFF">02</span> Sold at better price, price: <span style="color: #FF4000">00000003</span>
 * <span style="color: #40BFFF">03</span> Can't sold this quantity
 * <span style="color: #40BFFF">04</span> Price have changed
 
-=== Reply 100010 ===
+=== Reply 1010 ===
 Price into the market: <span style="color: #FF4000">0000000000000003</span>
 
 List of object, size list <span style="color: #A600FF">00000001</span>:
@@ -594,22 +594,22 @@ List of onwed object, size list <span style="color: #A600FF">00000001</span>:
 List of onwed monster, size list <span style="color: #A600FF">00000001</span>:
 * Monster id: <span style="color: #FFBF00">00000001</span>, monster: <span style="color: #40BF00">00000001</span>, level: <span style="color: #FF4000">03</span>, price: <span style="color: #FF4000">00000003</span>
 
-=== Reply 100011 ===
+=== Reply 1011 ===
 The reply can be one of this:
 * <span style="color: #40BFFF">01</span> Buy done
 * <span style="color: #40BFFF">02</span> Can't buy this quantity
 * <span style="color: #40BFFF">03</span> Buy failed
 If Monster: send player monster
 
-=== Reply 100012 ===
+=== Reply 1012 ===
 The reply can be one of this:
 * <span style="color: #40BFFF">01</span> Put ok
 * <span style="color: #40BFFF">02</span> Put failed
 
-=== Reply 100013 ===
+=== Reply 1013 ===
 Cash returned: <span style="color: #40BFFF">0000000000000001</span>
 
-=== Reply 100014 ===
+=== Reply 1014 ===
 The reply can be one of this:
 * <span style="color: #40BFFF">01</span> Withdraw object/monster ok
 * <span style="color: #40BFFF">02</span> Withdraw object/monster failed
@@ -619,7 +619,7 @@ If Object:
 If Monster: send player monster
 
 == Client &rarr; Server reply ==
-=== Reply 800001 ===
+=== Reply 8001 ===
 <span style="color: #40BFFF">01</span> (accepted)
  <span style="color: #40BFFF">01</span>
 
