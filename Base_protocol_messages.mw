@@ -11,10 +11,10 @@
 ! Data
 |-
 | style="background: #90ff90; color: black;" | 02
-| style="background: #ffcc00; color: black;" | 000D
+| style="background: #ffcc00; color: black;" | 0D
 | XX
 | {{Yes}}
-| [[Base_protocol_messages#02000D|Clan action]]
+| [[Base_protocol_messages#020D|Clan action]]
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 * 1) Fast to have good performance, to face to bruteforce, DDOS, ...
@@ -47,10 +47,10 @@
 | [[Base_protocol_messages#43|Chat]]
 |-
 | style="background: #90ff90; color: black;" | 42
-| style="background: #ffcc00; color: black;" | 0004
+| style="background: #ffcc00; color: black;" | 04
 | 
 | {{No}}
-| [[Base_protocol_messages#420004|Clan invite accept]]
+| [[Base_protocol_messages#4204|Clan invite accept]]
 |}
 
 == Server &rarr; Client with reply ==
@@ -63,16 +63,16 @@
 ! Data
 |-
 | style="background: #90ff90; color: black;" | 79
-| style="background: #ffcc00; color: black;" | 0001
+| style="background: #ffcc00; color: black;" | 01
 | XX
 | {{Yes}}
-| [[Base_protocol_messages#790001|Teleport the player]]
+| [[Base_protocol_messages#7901|Teleport the player]]
 |-
 | style="background: #90ff90; color: black;" | 79
-| style="background: #ffcc00; color: black;" | 0002
+| style="background: #ffcc00; color: black;" | 02
 | XX
 | {{No}}
-| [[Base_protocol_messages#790002|Event change]]
+| [[Base_protocol_messages#7902|Event change]]
 |}
 
 == Server &rarr; Client without reply ==
@@ -97,16 +97,16 @@
 | [[Base_protocol_messages#C1|Reply to client query]] ([[Base_protocol_messages#Reply|See reply]])
 |-
 | style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 0003
+| style="background: #ffcc00; color: black;" | 03
 | 
 | {{Yes}}
-| [[Base_protocol_messages#C20003|update file (raw)]]
+| [[Base_protocol_messages#C203|update file (raw)]]
 |-
 | style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 0004
+| style="background: #ffcc00; color: black;" | 04
 | 
 | {{Yes}}
-| [[Base_protocol_messages#C20003|update file (compressed)]]
+| [[Base_protocol_messages#C203|update file (compressed)]]
 |-
 | style="background: #90ff90; color: black;" | CA
 | 
@@ -115,40 +115,40 @@
 | [[Base_protocol_messages#CA|Chat]]
 |-
 | style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 0008
+| style="background: #ffcc00; color: black;" | 08
 | 
 | {{Yes}}
-| [[Base_protocol_messages#C20008|kicked/ban and reason]]
+| [[Base_protocol_messages#C208|kicked/ban and reason]]
 |-
 | style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 0009
+| style="background: #ffcc00; color: black;" | 09
 | 
 | {{No}}
-| [[Base_protocol_messages#C20009|Clan disolved]]
+| [[Base_protocol_messages#C209|Clan disolved]]
 |-
 | style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 000A
+| style="background: #ffcc00; color: black;" | 0A
 | 
 | {{Yes}}
-| [[Base_protocol_messages#C2000A|Clan info]]
+| [[Base_protocol_messages#C20A|Clan info]]
 |-
 | style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 000B
+| style="background: #ffcc00; color: black;" | 0B
 | 
 | {{Yes}}
-| [[Base_protocol_messages#C2000B|Clan invite ask]]
+| [[Base_protocol_messages#C20B|Clan invite ask]]
 |-
 | style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 000C
+| style="background: #ffcc00; color: black;" | 0C
 | 
 | {{Yes}}
-| [[Base_protocol_messages#C2000C|Send datapack send size]]
+| [[Base_protocol_messages#C20C|Send datapack send size]]
 |-
 | style="background: #90ff90; color: black;" | C2
-| style="background: #ffcc00; color: black;" | 000D
+| style="background: #ffcc00; color: black;" | 0D
 | 
 | {{Yes}}
-| [[Base_protocol_messages#C2000D|update file (http)]]
+| [[Base_protocol_messages#C20D|update file (http)]]
 |-
 | style="background: #90ff90; color: black;" | C3
 | 
@@ -203,9 +203,9 @@
 ! Query
 |-
 | style="background: #90ff90; color: black;" | 79
-| style="background: #ffcc00; color: black;" | 0001
+| style="background: #ffcc00; color: black;" | 01
 | {{No}}
-| [[Base_protocol_messages#Reply_790001|Teleport the player]]
+| [[Base_protocol_messages#Reply_7901|Teleport the player]]
 |}
 == Server &rarr; Client ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
@@ -217,21 +217,21 @@
 {{Template:Login_protocol_messages_Client_Server_Reply_Reply}}
 |-
 | style="background: #90ff90; color: black;" | 02
-| style="background: #ffcc00; color: black;" | 000D
+| style="background: #ffcc00; color: black;" | 0D
 | {{No}}
-| [[Base_protocol_messages#Reply_02000D|Clan action]]
+| [[Base_protocol_messages#Reply_020D|Clan action]]
 |}
 
 = Details =
 == Client &rarr; Server with reply ==
-=== 02000D ===
+=== 020D ===
 Client -&gt; Server:
 * Clan action type: <span style="color: #FF4000">01</span> (create), text: <span style="color: #40BF00">&quot;name&quot;</span>
 * Clan action type: <span style="color: #FF4000">02</span> (leave)
 * Clan action type: <span style="color: #FF4000">03</span> (dissolve)
 * Clan action type: <span style="color: #FF4000">04</span> (invite), text: <span style="color: #40BF00">&quot;pseudo&quot;</span>
 * Clan action type: <span style="color: #FF4000">05</span> (eject), text: <span style="color: #40BF00">&quot;pseudo&quot;</span>
-[[Base_protocol_messages#Reply_02000D|See reply to this query]]
+[[Base_protocol_messages#Reply_020D|See reply to this query]]
 
 == Client &rarr; Server without reply ==
 === 40 ===
@@ -251,7 +251,7 @@ Client -&gt; Server: chat type: <span style="color: #FF4000">06</span> (private 
 
 == Server &rarr; Client with reply ==
 
-=== 790001 ===
+=== 7901 ===
 Server -&gt; Client, teleport the current player on the map:
 * map id: <span style="color: #FFBF00">10</span> ({{Map_id}})
 * local x: {{Player_x}}
@@ -262,7 +262,7 @@ Server -&gt; Client, teleport the current player on the map:
 
 {{Direction_definition}}
 
-=== 790002 ===
+=== 7902 ===
 Server -&gt; Client, event change ('''Take care: you have time limit to respond'''):
 * event id: <span style="color: #FFBF00">01</span> (day cycle)
 * value id: <span style="color: #FF4000">02</span> (night)
@@ -293,11 +293,11 @@ Not use max visibility because it's just 4% of bandwidth less, but very more ser
 {{Player_type}}
 {{Skin}}
 
-=== C20003 ===
+=== C203 ===
 Server -&gt; Client: file liste size: <span style="color: #FF4000">01</span><span style="color: #40BF00">&quot;file name&quot;</span> (UTF8 + 8Bits of header size), size <span style="color: #FF4000">00000001</span>, data: <span style="color: #40BFFF">XXXXXXXXXXXXXXXX[...]XXXXXXXXXX</span>
  <span style="color: #FF4000">01</span><span style="color: #FFBF00">12</span><span style="color: #40BF00">626164206c6f67696e</span><span style="color: #FF4000">00000001</span><span style="color: #40BFFF">XXXXXXXXXXXXXXXX[...]XXXXXXXXXX</span>
 
-=== C20004 ===
+=== C204 ===
 '''This is compressed'''
 
 Server -&gt; Client: file liste size: <span style="color: #FF4000">01</span><span style="color: #40BF00">&quot;file name&quot;</span> (UTF8 + 8Bits of header size), size <span style="color: #FF4000">00000001</span>, data: <span style="color: #40BFFF">XXXXXXXXXXXXXXXX[...]XXXXXXXXXX</span>
@@ -313,7 +313,7 @@ Server -&gt; Client
 {{Chat_Type}}
 {{Player_type}}
 
-=== C20008 ===
+=== C208 ===
 Server -&gt; Client: type: <span style="color: #FF4000">02</span>, <span style="color: #40BF00">&quot;toto&quot;</span>
  <span style="color: #FF4000">02</span><span style="color: #FFBF00">00000010</span><span style="color: #40BF00">006d006100700020006e0061006d0065</span>
 
@@ -322,10 +322,10 @@ orientation def:
 * <span style="color: #FF4000">02</span> = ban
 * <span style="color: #FF4000">03</span> = disconnected
 
-=== C2000C ===
+=== C20C ===
 Server -&gt; Client: datapck file number: <span style="color: #FF4000">00000000</span>,  datapck file size: <span style="color: #40BF00">00000000</span>
 
-=== C2000D ===
+=== C20D ===
 Server -&gt; Client: <span style="color: #40BF00">http://server/datapack/</span> (UTF8 + 8Bits of header size), file liste size: <span style="color: #FF4000">00000001</span><span style="color: #40BF00">&quot;file name&quot;</span> (UTF8 + 8Bits of header size)
 
 === C3 ===
@@ -386,7 +386,7 @@ Remove all other player on the border map: (Better than remove each id)
 = Reply =
 == Server &rarr; Client reply ==
 
-=== Reply 02000D ===
+=== Reply 020D ===
 * Clan reply type: <span style="color: #FF4000">01</span> success (some time send the 32Bits id)
 * Clan reply type: <span style="color: #FF4000">02</span> failed
 
