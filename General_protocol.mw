@@ -10,6 +10,7 @@
 The tpc/ip protocol split the packet into lot of small packet. Warning, you need recompose the query.
 
 = Messages composition =
+== Version 1 ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 | style="background: #90ff90; color: black;" | Main code type (8Bits)
 | style="background: #ffcc00; color: black;" | Sub code type (16Bits, optional)
@@ -18,6 +19,16 @@ The tpc/ip protocol split the packet into lot of small packet. Warning, you need
 | Packet content
 |}
 
+== Version 2 ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+| style="background: #90ff90; color: black;" | Main code type (8Bits)
+| style="background: #ffcc00; color: black;" | Sub code type (8Bits, optional)
+| Query number (8Bits, optional)
+| style="background: #77eeFF; color: black;" | Packet size (for packet without fixed size)
+| Packet content
+|}
+
+== Other ==
 {{note}}: The packet size definition can:
 * Packet size with: XX if for <255 message size, 00XXXX is for <64KB size, 0000XXXXXXXX if for the rest. (Interesting for raw protocol for 4x packet < 255Bytes than <64KB)
 
