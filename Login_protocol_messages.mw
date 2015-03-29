@@ -213,7 +213,7 @@ Login server to real player
 **** skill level: <span style="color: #FF4000">01</span>
 **** skill endurance: <span style="color: #FFBF00">01</span>
 ** size of reputation list: <span style="color: #7B00FF">01</span>
-*** reputation type: <span style="font-style: italic"><span style="color: #40BF00">01</span></span>
+*** reputation type '''in database''': <span style="font-style: italic"><span style="color: #40BF00">01</span></span>
 *** reputation level: <span style="color: #FF4000">01</span>
 *** reputation point: <span style="color: #008080">00000001</span>
 ** Send item list size <span style="color: #FF4000">02</span>, and the object:
