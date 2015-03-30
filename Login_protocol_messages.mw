@@ -208,7 +208,7 @@ Login server to real player
 *** qint8 level: <span style="color: #40BF00">01</span>
 *** qint32 captured_with: <span style="color: #40BF00">0001</span>
 *** hp <span style="color: #FFBF00">00000001</span>
-*** quint8 gender, percent male, if -1 is unknown
+*** qint8 gender, percent male, if -1 is unknown
 *** size of list of the skills monsters: <span style="color: #7B00FF">01</span>
 **** skill: <span style="color: #40BF00">0001</span>
 **** skill level: <span style="color: #FF4000">01</span>
