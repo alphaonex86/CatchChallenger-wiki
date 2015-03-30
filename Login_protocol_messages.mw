@@ -199,6 +199,7 @@ Login server to real player
 * ----------------------------------
 * '''This is to drop the datapack requirement on login server''' (can be used but only to sync without mirror):
 * profil size: <span style="color: #40BFFF">01</span>
+** quint16 profil '''database id''': <span style="color: #FF4000">0001</span>
 ** forcedskin size: <span style="color: #40BFFF">01</span>
 *** forcedskin index <span style="color: #FF4000">14</span>
 ** cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
