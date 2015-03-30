@@ -220,6 +220,7 @@ Login server to real player
 *** Id: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>
 *** Id: <span style="color: #FFBF00">0002</span>, quantity: <span style="color: #40BF00">00000005</span>
 * ----------------------------------
+* sha224 of datapack file list content for the full datapack (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list too (if match, not need sync it).
 * sha224 of datapack file list content for the base datapack '''then excluding map/main/''' (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list too (if match, not need sync it).
 
 = Reply =
