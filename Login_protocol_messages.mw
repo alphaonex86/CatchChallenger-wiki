@@ -192,7 +192,6 @@ Second list part with same size
 === C211 ===
 * Account creation: <span style="color: #40BFFF">01</span>
 * 
-* waitBeforeConnectAfterKick: <span style="color: #FF4000">0014</span> (20s)
 * Character delete time: <span style="color: #40BF00">00000001</span>
 * Character max: <span style="color: #40BFFF">01</span>
 * Character min: <span style="color: #40BFFF">01</span>
