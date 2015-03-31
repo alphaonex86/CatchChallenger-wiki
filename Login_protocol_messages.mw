@@ -331,9 +331,9 @@ If all is good:
 *** Time left before delete: <span style="color: #40BFFF">00000000</span> (0s = no delete planned)
 *** Played time: <span style="color: #40BFFF">00000000</span>
 *** Last connect: <span style="color: #40BFFF">00000000</span>
-** Server list <span style="color: #7B00FF">01</span>:
-*** Played time: <span style="color: #40BFFF">00000000</span>
-*** Last connect: <span style="color: #40BFFF">00000000</span>
+* Server list <span style="color: #7B00FF">01</span>:
+** Played time: <span style="color: #40BFFF">00000000</span>
+** Last connect: <span style="color: #40BFFF">00000000</span>
 
 ==== Other code ====
 If something is wrong, the possible return code are:
