@@ -1,4 +1,4 @@
-{{note}}: The first byte send by server is 0x00 to say no encrypted or 0x01 to say encrypted by Ssl
+{{note}}: The first byte send by server is 0x00 to say no encrypted or 0x01 to say encrypted by Ssl.
 
 = General =
 == Client &rarr; Server with reply ==
