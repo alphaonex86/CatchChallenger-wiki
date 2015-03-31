@@ -155,6 +155,9 @@ Login server to real player
 ** <span style="color: #0000FF">9999</span> (port)
 ** <span style="color: #40BFFF"><name>Server test 4</name><name lang="fr">Serveur de teste 4</name><description>Description in english</description><description lang="fr">Description en français</description></span> (xml attached)
 ** <span style="color: #7B00FF">folder/path</span> (group)
+Second list part with same size
+** max player: <span style="color: #40BF00">0064</span> (then 100 in decimal)
+** connected player: <span style="color: #40BF00">0009</span>
 ==== Proxy mode ====
 * Server mode <span style="color: #FF4000">02</span>=proxy, select by key
 * Server list size <span style="color: #FF4000">01</span>
@@ -162,6 +165,9 @@ Login server to real player
 ** <span style="color: #40BF00">XXXXXXXX</span> (32Bits)
 ** <span style="color: #40BFFF"><name>Server test 4</name><name lang="fr">Serveur de teste 4</name><description>Description in english</description><description lang="fr">Description en français</description></span> (xml attached)
 ** <span style="color: #7B00FF">folder/path</span> (group)
+Second list part with same size
+** max player: <span style="color: #40BF00">0064</span> (then 100 in decimal)
+** connected player: <span style="color: #40BF00">0009</span>
 
 === C20F ===
 * Logical group size <span style="color: #FF4000">01</span>
