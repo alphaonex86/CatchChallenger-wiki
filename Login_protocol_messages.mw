@@ -373,6 +373,9 @@ If something is wrong:
 <span style="color: #FF4000">02</span>
 
 === Reply 0205 ===
+* Token to connect on game server: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> 256Bits
+
+=== Reply 0206 ===
 If all is good:
 * <span style="color: #FF4000">01</span> (all is good)
 * Character id: {{Player_id}} (unique generated id on the map)
