@@ -105,7 +105,7 @@ Then:
 [[Login_protocol_messages#Reply_05|See reply to this query]]
 
 === 0203 ===
-Send the profile id: <span style="color: #FF0040">01</span>, pseudo <span style="color: #40BF00">"toto"</span>, skinId <span style="color: #40BF00">01</span>
+charactersGroupIndex: <span style="color: #FF0040">01</span>, Send the profile id: <span style="color: #FF0040">01</span>, pseudo <span style="color: #40BF00">"toto"</span>, skinId <span style="color: #40BF00">01</span>
 
 [[Login_protocol_messages#Reply_0203|See reply to this query]]
 
