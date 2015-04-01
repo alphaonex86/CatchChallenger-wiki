@@ -118,6 +118,8 @@ charactersGroupIndex: <span style="color: #FF0040">01</span>, Remove character i
 
 ==== Reconnect ====
 No data.
+[[Login_protocol_messages#Reply_0205|See reply to this query]]
+
 === 0206 ===
 ==== Proxy mode ====
 Server unique key: <span style="color: #40BF00">XXXXXXXX</span> (32Bits), charactersGroupIndex: <span style="color: #FF0040">01</span>, Send the character id: <span style="color: #FF0040">00000001</span>
