@@ -110,7 +110,7 @@ Send the profile id: <span style="color: #FF0040">01</span>, pseudo <span style=
 [[Login_protocol_messages#Reply_0203|See reply to this query]]
 
 === 0204 ===
-Remove character id: <span style="color: #FF0040">00000001</span>
+charactersGroupIndex: <span style="color: #FF0040">01</span>, Remove character id: <span style="color: #FF0040">00000001</span>
 
 [[Login_protocol_messages#Reply_0204|See reply to this query]]
 
