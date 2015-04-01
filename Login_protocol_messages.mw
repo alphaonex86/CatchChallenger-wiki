@@ -155,7 +155,7 @@ charactersGroupIndex: <span style="color: #FF0040">01</span>
 === C20E ===
 Login server to real player
 ==== Reconnect ====
-* Server mode <span style="color: #FF4000">01</span>=reconnect (host + port)
+* Server mode <span style="color: #FF4000">01</span>=reconnect (host + port + select by key)
 * Server list size <span style="color: #FF4000">01</span>
 ** <span style="color: #0000FF">&quot;Test&quot;</span> (charactersgroup)
 ** <span style="color: #FFBF00">&quot;Host&quot;</span>
