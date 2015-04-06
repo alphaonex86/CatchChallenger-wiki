@@ -356,7 +356,7 @@ This reply is compressed.
 * <span style="color: #FF4000">03</span> (Not created)
 
 === Reply 0203 ===
-Return code: <span style="color: #40BFBF">00</span> (00 = success, 01 = pseudo already taken, 02 = have already maximum of charaters, 03 = other)
+Return code: <span style="color: #40BFBF">00</span> (00 = success, 01 = pseudo already taken, 02 = have already maximum of charaters, 03 = Server internal error)
 
 The reply is the character id: <span style="color: #BFBF40">00000001</span>
 
