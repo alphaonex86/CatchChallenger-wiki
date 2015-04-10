@@ -251,7 +251,7 @@ Second list part with same size
 
 === Reply 04 ===
 
-'''Send C20E''' to static server list before the reply.
+'''Send C20E''', '''C20F''' to static server list before the reply.
 Max player: define if the players id is defined on 16Bits ('''unknown max player at this point''', for the client at the startup)
 
 '''Note for dev: Is not way (or I have not found) to have max visibility player and simplified id with it without increasing the bandwidth due to id change (current player id pass into visibility zone need id change).'''
