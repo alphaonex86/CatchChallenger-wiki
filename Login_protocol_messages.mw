@@ -192,6 +192,7 @@ Second list part with same size
 ** connected player: <span style="color: #40BF00">0009</span>
 
 === C211 ===
+'''Master server to login server only'''
 * Account creation: <span style="color: #40BFFF">01</span>
 * 
 * Character delete time: <span style="color: #40BF00">00000001</span>
