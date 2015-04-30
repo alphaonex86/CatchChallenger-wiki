@@ -121,7 +121,9 @@ Server unique key: <span style="color: #40BF00">XXXXXXXX</span> (32Bits), charac
 [[Login_protocol_messages#Reply_0205|See reply to this query]]
 
 === 020C ===
-Blocked is mirror is enabled, is considered as hacking.
+If mirror is enabled is considered as hacking.
+
+'''''Client only:''''' to be more secure, prevent DDOS and more fast, this is denied on server.
 
 Send file name and first 4Byte of sha224 hash:
 * <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span>, <span style="color: #FF4000">XXXXXXXX</span>
