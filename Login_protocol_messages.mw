@@ -207,7 +207,7 @@ Second list part with same size
 * Max player items: <span style="color: #40BFFF">01</span>
 * Max warehouse player monsters: <span style="color: #40BFFF">0001</span>
 * Characters group list size: <span style="color: #40BFFF">01</span>, '''Alphabetical order'''
-** text: <span style="color: #40BF00">&quot;hello&quot;</span> 8bits headers + utf8
+** xml: <span style="color: #40BF00">&quot;xml&quot;</span> 16bits headers + utf8
 * ----------------------------------
 * Skin id dictionary size: <span style="color: #40BF00">01</span>
 ** The index is the internal id, database id <span style="color: #FF4000">0001</span>
