@@ -153,12 +153,12 @@ Login server to real player
 ==== Reconnect ====
 * Server mode <span style="color: #FF4000">01</span>=reconnect (host + port + select by key)
 * Server list size <span style="color: #FF4000">01</span>
-** <span style="color: #0000FF">&quot;Test&quot;</span> (charactersgroup) 8bits headers + utf8
+** <span style="color: #0000FF">01</span> (charactersgroup index) 8bits headers + utf8
 ** <span style="color: #FFBF00">&quot;Host&quot;</span>
 ** <span style="color: #0000FF">9999</span> (port)
 ** unique key into character group <span style="color: #40BF00">XXXXXXXX</span> (32Bits)
 ** <span style="color: #40BFFF"><name>Server test 4</name><name lang="fr">Serveur de teste 4</name><description>Description in english</description><description lang="fr">Description en français</description></span> (xml attached) 16bits headers + utf8
-** <span style="color: #7B00FF">folder/path</span> (Logical group, see C20F)
+** <span style="color: #7B00FF">02</span> (Logical group index, see C20F)
 Second list part with same size
 ** max player: <span style="color: #40BF00">0064</span> (then 100 in decimal)
 ** connected player: <span style="color: #40BF00">0009</span>
@@ -166,10 +166,10 @@ Second list part with same size
 * Server mode <span style="color: #FF4000">02</span>=proxy, select by key
 * Skip server selection <span style="color: #40BF00">00</span> (0x00 = false, 0x01 = true), used for all in one server, if true, the server list need have one element
 * Server list size <span style="color: #FF4000">01</span>
-** <span style="color: #0000FF">&quot;Test&quot;</span> (charactersgroup) 8bits headers + utf8
+** <span style="color: #0000FF">01</span> (charactersgroup index) 8bits headers + utf8
 ** unique key into character group <span style="color: #40BF00">XXXXXXXX</span> (32Bits)
 ** <span style="color: #40BFFF"><name>Server test 4</name><name lang="fr">Serveur de teste 4</name><description>Description in english</description><description lang="fr">Description en français</description></span> (xml attached) 16bits headers + utf8
-** <span style="color: #7B00FF">folder/path</span> (Logical group, see C20F)
+** <span style="color: #7B00FF">02</span> (Logical group index, see C20F)
 Second list part with same size
 ** max player: <span style="color: #40BF00">0064</span> (then 100 in decimal)
 ** connected player: <span style="color: #40BF00">0009</span>
