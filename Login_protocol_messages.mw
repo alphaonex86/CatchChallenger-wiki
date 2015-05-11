@@ -278,7 +278,6 @@ If all is good:
 
 * Number of characters group <span style="color: #FF4000">02</span>
 * characters group 1 (ordered by alphabetic order)
-* characters xml: <span style="color: #40BF00">&quot;xml&quot;</span> 16bits headers + utf8
 ** Character list size <span style="color: #7B00FF">01</span>
 *** Character id: <span style="color: #BFBF40">00000001</span>
 *** Pseudo: <span style="color: #40BF00">&quot;Character 1&quot;</span>
@@ -287,7 +286,6 @@ If all is good:
 *** Played time: <span style="color: #40BFFF">00000000</span>
 *** Last connect: <span style="color: #40BFFF">00000000</span>
 * characters group 2
-* characters xml: <span style="color: #40BF00">&quot;xml&quot;</span> 16bits headers + utf8
 ** Character list size <span style="color: #7B00FF">01</span>
 *** Character id: <span style="color: #BFBF40">00000001</span>
 *** Pseudo: <span style="color: #40BF00">&quot;Character 1&quot;</span>
