@@ -276,7 +276,8 @@ If all is good:
 * 
 * Mirror to use: &quot;<span style="color: #40BF00">http://serverprimary/datapack/;http://serversecondary/datapack/</span>&quot;, if don't empty, don't send datapack query, you have the datpack list at http://serverprimary/datapack/datapack-list.txt test without proxy and with proxy is set. Test the next server, ... 8Bits header to prevent too long mirror list! Turn it on server.
 
-* characters group 1 (ordered by alphabetic order, see '''C211''')
+* characters group 1 (ordered by alphabetic order)
+** characters group name: <span style="color: #40BF00">&quot;hello&quot;</span> 8bits headers + utf8
 ** Character list size <span style="color: #7B00FF">01</span>
 *** Character id: <span style="color: #BFBF40">00000001</span>
 *** Pseudo: <span style="color: #40BF00">&quot;Character 1&quot;</span>
@@ -285,6 +286,7 @@ If all is good:
 *** Played time: <span style="color: #40BFFF">00000000</span>
 *** Last connect: <span style="color: #40BFFF">00000000</span>
 * characters group 2
+** characters group name: <span style="color: #40BF00">&quot;hello&quot;</span> 8bits headers + utf8
 ** Character list size <span style="color: #7B00FF">01</span>
 *** Character id: <span style="color: #BFBF40">00000001</span>
 *** Pseudo: <span style="color: #40BF00">&quot;Character 1&quot;</span>
