@@ -209,7 +209,7 @@ Second list part with same size
 * Characters group list size: <span style="color: #40BFFF">01</span>, '''Alphabetical order'''
 ** text: <span style="color: #40BF00">&quot;hello&quot;</span> 8bits headers + utf8
 * ----------------------------------
-* Skin id dic size: <span style="color: #40BF00">01</span>
+* Skin id dictionary size: <span style="color: #40BF00">01</span>
 ** The index is the internal id, database id <span style="color: #FF4000">0001</span>
 * ----------------------------------
 * '''This is to drop the datapack requirement on login server''' (can be used but only to sync without mirror):
