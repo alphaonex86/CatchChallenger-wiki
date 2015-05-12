@@ -164,7 +164,6 @@ Second list part with same size
 ** connected player: <span style="color: #40BF00">0009</span>
 ==== Proxy mode ====
 * Server mode <span style="color: #FF4000">02</span>=proxy, select by key
-* Skip server selection <span style="color: #40BF00">00</span> (0x00 = false, 0x01 = true), used for all in one server, if true, the server list need have one element
 * Server list size <span style="color: #FF4000">01</span>
 ** <span style="color: #0000FF">01</span> (charactersgroup index)
 ** unique key into character group <span style="color: #40BF00">XXXXXXXX</span> (32Bits)
