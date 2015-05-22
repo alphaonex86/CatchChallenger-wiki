@@ -344,6 +344,11 @@ Switch on caraters reply
 
 If all is good in proxy mode:
 * <span style="color: #FF4000">01</span> (all is good)
+* sha224 of datapack '''main''' file list content for the main datapack '''then excluding sub/''' (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list too (if match, not need sync it).
+* sha224 of datapack '''sub''' file list content for the sub datapack (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list too (if match, not need sync it).
+* Mirror to use: &quot;<span style="color: #40BF00">http://serverprimary/datapack/;http://serversecondary/datapack/</span>&quot;, if don't empty, don't send datapack query, you have the datpack list at http://serverprimary/datapack/datapack-list.txt test without proxy and with proxy is set. Test the next server, ... 8Bits header to prevent too long mirror list! Turn it on server.
+* Main type code: <span style="color: #40BF00">"toto"</span> (Only lower char and number)
+* Sub type code: <span style="color: #40BF00">"toto"</span> (Only lower char and number)
 * Character id: {{Player_id}} (unique generated id on the map)
 * pseudo: <span style="color: #40BF00">"toto"</span> (allow is string separated by ";")
 * allow list size: <span style="color: #40BF00">01</span>
