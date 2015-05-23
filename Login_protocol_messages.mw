@@ -350,7 +350,7 @@ If all is good in proxy mode:
 * Main type code: <span style="color: #40BF00">"main"</span> (Only lower char and number, 8bits headers + utf8)
 * Sub type code: <span style="color: #40BF00">"sub"</span> (Only lower char and number, 8bits headers + utf8, '''can be empty if disabled''')
 * Temporary character id: {{Player_id}} (unique generated id on the map)
-* pseudo: <span style="color: #40BF00">"toto"</span> (allow is string separated by ";")
+* pseudo: <span style="color: #40BF00">"toto"</span> (8bits headers + utf8)
 * allow list size: <span style="color: #40BF00">01</span>
 ** allow clan: <span style="color: #40BF00">01</span>
 * clan id: <span style="color: #40BFFF">00000064</span>
