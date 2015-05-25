@@ -359,9 +359,9 @@ If all is good in proxy mode:
 * rates_xp_pow: <span style="color: #FFBF00">00000000</span>
 * rates_drop: <span style="color: #FFBF00">00000000</span>
 
-* chat_allow_all: <span style="color: #FF4000">00000001</span>
+* chat_allow_all: <span style="color: #FF4000">01</span>
 * chat_allow_local: <span style="color: #FF4000">01</span>
-* chat_allow_private: <span style="color: #40BF00">00000001</span>
+* chat_allow_private: <span style="color: #40BF00">01</span>
 * chat_allow_clan: <span style="color: #008080">01</span>
 * factoryPriceChange: <span style="color: #FFBF00">01</span>
 
