@@ -344,7 +344,6 @@ Switch on caraters reply
 
 If all is good in proxy mode:
 * max player: <span style="color: #40BFFF">0064</span>
-
 * captureRemainingTime: <span style="color: #FF4000">00000001</span>
 * captureFrequencyType: <span style="color: #FF4000">01</span>
 * waitBeforeConnectAfterKick: <span style="color: #40BF00">00000001</span>
@@ -359,6 +358,12 @@ If all is good in proxy mode:
 * rates_gold: <span style="color: #FFBF00">00000000</span>
 * rates_xp_pow: <span style="color: #FFBF00">00000000</span>
 * rates_drop: <span style="color: #FFBF00">00000000</span>
+
+* chat_allow_all: <span style="color: #FF4000">00000001</span>
+* chat_allow_local: <span style="color: #FF4000">01</span>
+* chat_allow_private: <span style="color: #40BF00">00000001</span>
+* chat_allow_clan: <span style="color: #008080">01</span>
+* factoryPriceChange: <span style="color: #FFBF00">01</span>
 
 * <span style="color: #FF4000">01</span> (all is good)
 * sha224 of datapack '''main''' file list content for the main datapack '''then excluding sub/''' (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list too (if match, not need sync it).
