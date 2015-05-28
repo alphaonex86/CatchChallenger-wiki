@@ -89,6 +89,11 @@ Final result:
 * <span style="color: #40BFFF">04</span> (is supported, compression: None)
 * <span style="color: #40BFFF">05</span> (is supported, compression: Zlib)
 * <span style="color: #40BFFF">06</span> (is supported, compression: Xz)
+=== Reply 07 ===
+* <span style="color: #40BFFF">01</span> (01 = registred)
+Or
+* <span style="color: #40BFFF">02</span> (02 = need unique key change)
+* new unique key <span style="color: #40BFFF">00000000</span> (random number)
 === Reply 08 ===
 See '''C211''' to follow Characters group alphabetical order
 
