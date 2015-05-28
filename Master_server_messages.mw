@@ -77,6 +77,7 @@ Final result:
 * <span style="color: #0000FF">9999</span> (port, 16Bits)
 * <span style="color: #40BFFF"><name>Server test 4</name><name lang="fr">Serveur de teste 4</name><description>Description in english</description><description lang="fr">Description en français</description></span> (xml attached) 16bits headers + utf8
 * <span style="color: #7B00FF">folder/path</span> (group) 8bits headers + utf8
+* current number of player: <span style="color: #40BF00">0000</span>
 * max player: <span style="color: #40BF00">0064</span> (then 100 in decimal)
 
 [[Master server messages#Reply_07|See reply to this query]]
