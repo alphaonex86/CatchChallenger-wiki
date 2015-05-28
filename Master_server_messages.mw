@@ -94,14 +94,16 @@ Final result:
 * <span style="color: #40BFFF">06</span> (is supported, compression: Xz)
 === Reply 07 ===
 * <span style="color: #40BFFF">01</span> (01 = registred)
+* 50 maxMonsterIdList: 50x <span style="color: #40BF00">00000001</span>
 Or
 * <span style="color: #40BFFF">02</span> (02 = need unique key change)
 * new unique key <span style="color: #40BFFF">00000000</span> (random number)
+* 50 maxMonsterIdList: 50x <span style="color: #40BF00">00000001</span>
 === Reply 08 ===
 See '''C211''' to follow Characters group alphabetical order
 
-* 50 maxAccountIdList: <span style="color: #40BF00">00000001</span>
+* 50 maxAccountIdList: 50x <span style="color: #40BF00">00000001</span>
 
 * By Characters group
-** 50 maxCharacterIdList: <span style="color: #40BF00">00000001</span>
-** 50 maxMonsterIdList: <span style="color: #40BF00">00000001</span>
+** 50 maxCharacterIdList: 50x <span style="color: #40BF00">00000001</span>
+** 50 maxMonsterIdList: 50x <span style="color: #40BF00">00000001</span>
