@@ -70,6 +70,17 @@ Final result:
 
 [[Master server messages#Reply_01|See reply to this query]]
 
+=== 07 ===
+* charactersGroup: <span style="color: #40BF00">"HightRates"</span> (8Bits header + utf8, only [a-z0-9]+)
+* Unique key: <span style="color: #FFBF00">00000000</span> (32bits, generate from random)
+* <span style="color: #FFBF00">&quot;Host&quot;</span> 8bits headers + utf8
+* <span style="color: #0000FF">9999</span> (port, 16Bits)
+* <span style="color: #40BFFF"><name>Server test 4</name><name lang="fr">Serveur de teste 4</name><description>Description in english</description><description lang="fr">Description en français</description></span> (xml attached) 16bits headers + utf8
+* <span style="color: #7B00FF">folder/path</span> (group) 8bits headers + utf8
+* max player: <span style="color: #40BF00">0064</span> (then 100 in decimal)
+
+[[Master server messages#Reply_07|See reply to this query]]
+
 = Reply =
 == Server &rarr; Client reply ==
 === Reply 01 ===
