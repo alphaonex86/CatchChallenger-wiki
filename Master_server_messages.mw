@@ -79,6 +79,8 @@ Final result:
 * <span style="color: #7B00FF">folder/path</span> (group) 8bits headers + utf8
 * current number of player: <span style="color: #40BF00">0000</span>
 * max player: <span style="color: #40BF00">0064</span> (then 100 in decimal)
+* <span style="color: #0000FF">0001</span> (max player disconnected since the last master connexion, 16Bits)
+** Unique key: <span style="color: #FFBF00">00000000</span> (32bits, player id)
 
 [[Master server messages#Reply_07|See reply to this query]]
 
