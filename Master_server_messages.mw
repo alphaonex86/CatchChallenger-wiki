@@ -129,3 +129,9 @@ See '''C211''' to follow Characters group alphabetical order
 * By Characters group
 ** 50 maxCharacterIdList: 50x <span style="color: #40BF00">00000001</span>
 ** 50 maxMonsterIdList: 50x <span style="color: #40BF00">00000001</span>
+
+== Client &rarr; Server reply ==
+=== Reply 8101 ===
+Here to don't drop the master server entropy pool
+
+* Token to connect on game server: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> 256Bits, 32Bytes
