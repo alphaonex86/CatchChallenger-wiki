@@ -90,12 +90,12 @@ Final result:
 
 [[Master server messages#Reply_07|See reply to this query]]
 
-=== 09 ===
+= Details =
+== Server &rarr; Client without reply ==
+=== F101 ===
 
 * Token to connect on game server: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> 256Bits, 32Bytes
 * Character id: <span style="color: #FF0040">00000001</span>
-
-[[Master_server_messages#Reply_09|See reply to this query]]
 
 = Reply =
 == Server &rarr; Client reply ==
