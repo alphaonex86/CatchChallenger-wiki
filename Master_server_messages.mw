@@ -134,4 +134,4 @@ See '''C211''' to follow Characters group alphabetical order
 === Reply 8101 ===
 Here to don't drop the master server entropy pool.
 
-* Token to connect on game server: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> 256Bits, 32Bytes
+* Token to connect on game server: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> 512Bits, 64Bytes
