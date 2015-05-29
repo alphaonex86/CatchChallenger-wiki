@@ -122,7 +122,7 @@ charactersGroupIndex: <span style="color: #FF0040">01</span>, Server unique key:
 
 === 0206 ===
 
-* Token to connect on game server: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> 256Bits, 32Bytes
+* Token to connect on game server: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> 512Bits, 64Bytes
 
 [[Login_protocol_messages#Reply_0206|See reply to this query]]
 
