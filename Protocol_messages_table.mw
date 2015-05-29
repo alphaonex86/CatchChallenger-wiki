@@ -44,6 +44,7 @@
 {{Template:Battle_messages_Server_Client_Reply}}
 {{Template:Inventory_messages_Server_Client_Reply}}
 {{Template:Base_protocol_messages_Server_Client_Reply}}
+{{Template:Master_server_messages_Server_Client_Reply}}
 |}
 
 == Server &rarr; Client ==
