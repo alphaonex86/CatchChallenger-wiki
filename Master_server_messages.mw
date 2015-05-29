@@ -90,7 +90,10 @@ Final result:
 
 [[Master server messages#Reply_07|See reply to this query]]
 
-= Details =
+== Client &rarr; Server without reply ==
+=== 4501 ===
+* Character id: <span style="color: #FF0040">00000001</span>
+
 == Server &rarr; Client without reply ==
 === 8101 ===
 Query because need wait the return (sync/async problem) to send the token for the client connect
