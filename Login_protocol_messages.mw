@@ -331,7 +331,7 @@ If something is wrong:
 [[File:Select_character.png]]
 
 ==== Reply 0205 Direct mode ====
-* Token to connect on game server: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> 256Bits
+* Token to connect on game server: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> 256Bits, 32Bytes
 
 Wrong, case possible:
 * <span style="color: #FF4000">02</span> (Character not found)
