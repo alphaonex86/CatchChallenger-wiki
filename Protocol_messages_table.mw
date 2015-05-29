@@ -60,4 +60,5 @@
 {{Template:Base_protocol_messages_Server_Client}}
 {{Template:Others_messages_Server_Client}}
 {{Template:Login_protocol_messages_Server_Client}}
+{{Template:Master_server_messages_Server_Client}}
 |}
