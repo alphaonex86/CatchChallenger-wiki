@@ -97,6 +97,8 @@ Query because need wait the return (sync/async problem) to send the token for th
 
 Check if the characterId is linked to the correct account on login server
 
+Not initiate the character select until, the real client or proxy is connected and have requested it
+
 * Token to connect on game server: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> 256Bits, 32Bytes
 * Character id: <span style="color: #FF0040">00000001</span>
 
