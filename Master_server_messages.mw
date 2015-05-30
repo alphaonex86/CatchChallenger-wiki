@@ -103,6 +103,7 @@ Check if the characterId is linked to the correct account on login server
 Not initiate the character select until, the real client or proxy is connected and have requested it
 
 * Character id: <span style="color: #FF0040">00000001</span>
+* Account id requested the character: <span style="color: #FFBF00">00000000</span> /!\ security important
 
 [[Master server messages#Reply_8101|See reply to this query]]
 
