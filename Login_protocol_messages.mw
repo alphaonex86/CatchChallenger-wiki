@@ -122,12 +122,6 @@ In multi server mode, see [[Master_server_messages#8101|Get token for character 
 
 [[Login_protocol_messages#Reply_0205|See reply to this query]]
 
-=== 0206 ===
-
-* Token to connect on game server: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> 512Bits, 64Bytes
-
-[[Login_protocol_messages#Reply_0206|See reply to this query]]
-
 === 020C ===
 If mirror is enabled is considered as hacking.
 
