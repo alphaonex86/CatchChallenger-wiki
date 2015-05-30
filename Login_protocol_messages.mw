@@ -11,7 +11,7 @@
 ! Data
 {{Template:Login_protocol_messages_Client_Server_Reply}}
 |}
-{{Note}}All the main code in this column is considered query with needed reply.
+{{Note}}All the main code in this column is considered query with needed reply
 * 1) Fast to have good performance, to face to bruteforce, DDOS.
 
 == Client &rarr; Server ==
