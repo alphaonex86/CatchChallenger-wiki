@@ -124,6 +124,8 @@ Or
 * new unique key <span style="color: #40BFFF">00000000</span> (random number)
 * 50 maxMonsterIdList: 50x <span style="color: #40BF00">00000001</span>
 * 5 maxClanIdList: 5x <span style="color: #40BF00">00000001</span>
+Or
+* <span style="color: #40BFFF">03</span> (03 = character group not found)
 
 === Reply 08 ===
 See '''C211''' to follow Characters group alphabetical order
