@@ -25,10 +25,11 @@ To do the convertion from version 1 to version 2:
 * Move zone/ to map/main/[name]/zone/
 
 == Database ==
-Split into 3 part:
+Split into 4 part:
 * The login
 ** account
 ** account_register
+* The base
 ** dictionary_allow
 ** dictionary_reputation
 ** dictionary_skin
