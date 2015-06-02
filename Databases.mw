@@ -1,5 +1,5 @@
 = Access =
 What server kind need what database:
-* Login server need: login, common (spec)
-* Master server need: login, base, common (all)
-* Game server need: base, common (spec), server
+* Login server need: login (read in all case, if account automatic creation then read/write), common (all)
+* Master server need: login (read if account automatic creation), base, common (all, read)
+* Game server need: base (read), common (spec), server
