@@ -1,0 +1,5 @@
+= Access =
+What server kind need what database:
+* Login server need: login, common (spec)
+* Master server need: login, base, common (all)
+* Game server need: base, common (spec), server
