@@ -191,7 +191,7 @@ Second list part with same size
 
 * Server list size <span style="color: #FF4000">01</span>
 ** <span style="color: #0000FF">&quot;Test&quot;</span> (charactersgroup) 8bits headers + utf8
-** <span style="color: #40BF00">XXXXXXXX</span> (32Bits)
+** Unique key: <span style="color: #40BF00">XXXXXXXX</span> (32Bits)
 ** <span style="color: #FFBF00">&quot;Host&quot;</span> 8bits headers + utf8
 ** <span style="color: #0000FF">9999</span> (port, 16Bits)
 ** <span style="color: #40BFFF"><name>Server test 4</name><name lang="fr">Serveur de teste 4</name><description>Description in english</description><description lang="fr">Description en français</description></span> (xml attached) 16bits headers + utf8
