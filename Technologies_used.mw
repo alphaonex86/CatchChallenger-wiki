@@ -26,7 +26,11 @@ Most of the time, don't have memory allocation, or or the stack on the worse cas
 All the network huge operation like datapack downloading can be externalized. On high performance server only the useful traffic is parsed/sended, then have better latency, lighter server, ...
 
 == Binary ==
-The text is useful to debug, but use hurge network and resources. Less than 1 access on billion on http is to reader directly the protocol via network dump (by hacker, network admin, developer -> then you need be able to deal with it), mean the rest of the time the resource is consumed without reason, binary http can be displayed on web browser like the actual http text protocol. '''To use "Data: 654654"''', you need '''extract "654654"''' (check the string length, do dynamic memory allocation) and '''secondly convert into number'''. With binary '''just do memory copy''' and correct the endianness if needed. Then it's very more fast and power full in binary. The protocol header negotiation in text was 66 bytes, in binary only 5, with gain of 50x of cpu on the read/compare operation.
+The text is more easy to debug, but use large network and resources. Less than 1 access on billion on http is to reader directly the protocol via network dump (by hacker, network admin, developer -> then you need be able to deal with it), mean the rest of the time the resource is consumed without reason, binary http can be displayed on web browser like the actual http text protocol.
+
+'''To use "Data: 654654"''', you need '''extract "654654"''' (check the string length, do dynamic memory allocation, dynamic place) and '''secondly convert into number'''. With binary '''just do memory copy''' and correct the endianness if needed. Then it's very more fast and power full in binary. The protocol header negotiation in text was 66 bytes, in binary only 5, with gain of 50x of cpu on the read/compare operation.
+
+To write a typical reply/message into CatchChallenger on the server (where the performance are critical), the '''reply/message is pre-computed''', '''altered at the run time''' (just few bytes to change at fixed position, no memory copy due to dynamic next data position).
 
 [[File:text-vs-binary-protocol.png]]
 
