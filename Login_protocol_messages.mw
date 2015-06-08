@@ -190,7 +190,7 @@ Second list part with same size
 '''Master server to login server exclusively'''
 
 * Server list size <span style="color: #FF4000">01</span>
-** <span style="color: #0000FF">&quot;Test&quot;</span> (charactersgroup) 8bits headers + utf8
+** <span style="color: #0000FF">01</span> (charactersgroup index)
 ** Unique key: <span style="color: #40BF00">XXXXXXXX</span> (32Bits)
 ** <span style="color: #FFBF00">&quot;Host&quot;</span> 8bits headers + utf8
 ** <span style="color: #0000FF">9999</span> (port, 16Bits)
