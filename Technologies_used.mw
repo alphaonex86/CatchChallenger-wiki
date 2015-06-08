@@ -80,5 +80,7 @@ All the content is exploitable by the browser (with php or javascript), html con
 == O(log(n)) ==
 All the computation is done as topper level when is possible (top to bottom: master, login, game server). Then the scalability factor is more O(log(n)) than O(n).
 
+To understand the complexity: http://bigocheatsheet.com/
+
 == Multiple databases ==
 To split the right, keep the data locality, split the logic, the dynamic content is split into multiple database ('''login''' for the auth (mostly read only), '''base''' for the common dictionary (mostly read only), '''common''' to use the same characters between multiple server, '''server''' to keep the data specific to the server). This allow have good scalability too.
