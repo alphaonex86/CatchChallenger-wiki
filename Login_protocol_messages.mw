@@ -355,10 +355,11 @@ If something is wrong:
 * Token to connect on game server: <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> 256Bits, 32Bytes
 
 Wrong, case possible:
-* <span style="color: #FF4000">02</span> (Character not found)
+* <span style="color: #FF4000">02</span> (Login not found)
 * <span style="color: #FF4000">03</span> (Already logged)
 * <span style="color: #FF4000">04</span> (Server internal problem)
 * <span style="color: #FF4000">05</span> (Server not found)
+* <span style="color: #FF4000">07</span> (Login not found, but you can create a account)
 
 ==== Reply 0205 Proxy mode ====
 Switch on caraters reply
