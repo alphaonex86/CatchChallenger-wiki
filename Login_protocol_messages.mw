@@ -248,7 +248,7 @@ Second list part with same size
 == Server &rarr; Client reply ==
 === Reply 03 ===
 ==== On login server ====
-<span style="color: #40BFFF">02</span> (protocol not supported)
+<span style="color: #40BFFF">02</span> (protocol not supported), can don't reply to prevent DDOS attack
 
 <span style="color: #40BFFF">03</span> (Server full)
 
@@ -261,7 +261,7 @@ Second list part with same size
 {{Note}}After this, all communication is into the packet size mode send by the protocol.
 
 ==== On game server ====
-<span style="color: #40BFFF">02</span> (protocol not supported)
+<span style="color: #40BFFF">02</span> (protocol not supported), can don't reply to prevent DDOS attack
 
 <span style="color: #40BFFF">03</span> (Server full)
 
