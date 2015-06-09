@@ -324,7 +324,7 @@ If something is wrong, the possible return code are:
 * <span style="color: #FF4000">03</span> (Wrong login/pass)
 * <span style="color: #FF4000">04</span> (Server internal error)
 * <span style="color: #FF4000">05</span> (Can't create character and don't have character)
-* <span style="color: #FF4000">06</span> (Login already in progress)
+* <span style="text-decoration:line-through;"><span style="color: #FF4000">06</span> (Login already in progress)</span> Wrong protocol process usage, don't reply to prevent network saturation
 * <span style="color: #FF4000">07</span> (Emit in clear the secret token, see the account creation query)
 
 After the server will send tp command to set the first position.
