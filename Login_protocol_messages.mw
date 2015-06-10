@@ -118,7 +118,7 @@ charactersGroupIndex: <span style="color: #FF0040">01</span>, Remove character i
 
 charactersGroupIndex: <span style="color: #FF0040">01</span>, Server unique key: <span style="color: #40BF00">XXXXXXXX</span> (32Bits), Send the character id: <span style="color: #FF0040">00000001</span>
 
-In multi server mode, see [[Master_server_messages#8101|Get token for character select]]
+In multi server mode, see [[Master_server_messages#8101|Get token for character select]] and [[Master server messages#0207|Select character on master]]
 
 [[Login_protocol_messages#Reply_0205|See reply to this query]]
 
