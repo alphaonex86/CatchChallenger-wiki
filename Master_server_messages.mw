@@ -116,6 +116,8 @@ Not initiate the character select until, the real client or proxy is connected a
 * Character id: <span style="color: #FF0040">00000001</span>
 * Account id requested the character: <span style="color: #FFBF00">00000000</span> '''/!\ security important''' perform the account == character account on game server at character loading for performance reason
 
+See too [[Master server messages#0207|Select character on master]]
+
 [[Master server messages#Reply_8101|See reply to this query]]
 
 = Reply =
