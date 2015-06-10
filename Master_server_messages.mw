@@ -93,6 +93,14 @@ Final result:
 
 [[Master server messages#Reply_07|See reply to this query]]
 
+=== 0207 ===
+
+charactersGroupIndex: <span style="color: #FF0040">01</span>, Server unique key: <span style="color: #40BF00">XXXXXXXX</span> (32Bits), Send the character id: <span style="color: #FF0040">00000001</span>, Send the account id: <span style="color: #FF0040">00000001</span> '''/!\ security important''' perform the account == character account on game server at character loading for performance
+
+See too [[Master_server_messages#8101|Get token for character select]]
+
+[[Master server messages#Reply_0205|See reply to this query]]
+
 == Client &rarr; Server without reply ==
 === 4501 ===
 * Character id: <span style="color: #FF0040">00000001</span>
