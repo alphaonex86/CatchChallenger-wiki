@@ -118,7 +118,7 @@ See too [[Master_server_messages#8101|Get token for character select]]
 === 4502 ===
 * Current player: <span style="color: #FF0040">0001</span> (always 16Bits)
 
-== Server &rarr; Client without reply ==
+== Server &rarr; Client with reply ==
 === 8101 ===
 Query because need wait the return (sync/async problem) to send the token for the client connect
 
@@ -133,6 +133,11 @@ Not initiate the character select until, the real client or proxy is connected a
 See too [[Master server messages#0207|Select character on master]]
 
 [[Master server messages#Reply_8101|See reply to this query]]
+
+== Server &rarr; Client without reply ==
+
+=== E101 ===
+The curent player list 16Bits * server list size
 
 = Reply =
 == Server &rarr; Client reply ==
