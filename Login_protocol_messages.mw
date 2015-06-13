@@ -196,8 +196,8 @@ Second list part with same size
 ** <span style="color: #0000FF">9999</span> (port, 16Bits)
 ** <span style="color: #40BFFF"><name>Server test 4</name><name lang="fr">Serveur de teste 4</name><description>Description in english</description><description lang="fr">Description en français</description></span> (xml attached) 16bits headers + utf8
 ** <span style="color: #7B00FF">00</span> (logical group index)
-Second list part with same size
 ** max player: <span style="color: #40BF00">0064</span> (then 100 in decimal)
+Second list part with same size
 ** connected player: <span style="color: #40BF00">0009</span>
 
 === C211 ===
