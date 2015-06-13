@@ -104,6 +104,8 @@ See too [[Master_server_messages#8101|Get token for character select]]
 == Client &rarr; Server without reply ==
 === 4501 ===
 * Character id: <span style="color: #FF0040">00000001</span>
+=== 4502 ===
+* Current player: <span style="color: #FF0040">0001</span> (always 16Bits)
 
 == Server &rarr; Client without reply ==
 === 8101 ===
