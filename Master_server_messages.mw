@@ -139,6 +139,11 @@ See too [[Master server messages#0207|Select character on master]]
 === E101 ===
 The curent player list 16Bits * server list size
 
+=== E102 ===
+2 or more game server have claim this character lock, block it for some time (for exemple 5min) by the master server, then disconnect it on game server. It's to prevent data corruption by multiple time character opened.
+
+Character id: 00000001 32Bits
+
 = Reply =
 == Server &rarr; Client reply ==
 === Reply 01 ===
