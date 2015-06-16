@@ -411,3 +411,4 @@ It's '''24x more slow with Ssl than clear'''. Mostly because it's small packet (
 | style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1.2s
 |}
 Then why use memcpy? To large block of data (use SIMD to great speed improvement), access to unaligned 64Bits integer on 32Bits platform.
+Raw mean: pointer + reinterpret cast, effective on small amount of data.
