@@ -394,3 +394,20 @@ I have do this comparison with: https://github.com/alphaonex86/CatchChallenger/t
 It's '''24x more slow with Ssl than clear'''. Mostly because it's small packet (<10 bytes) sended with big interval (>1s), the OS can't group it, then need do lot of syscall. The ssl is not needed in this case:
 * Use over crypted network like I2P or ipsec (I have not found this informations for TOR)
 * Don't need security (don't use crypto currency) and need greate performance (embed device)
+
+= memcpy vs raw =
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! x86 Intel haswell, 64Bits
+! Arm cortex A9 Quad core, 32Bits, with grsecurity (PAX) on linux kernel
+|-
+| memcpy
+| 1.4s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 7.0s
+|-
+| raw
+| 1.2s
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1.2s
+|}
+Then why use memcpy? To large block of data (use SIMD to great speed improvement), access to unaligned 64Bits integer on 32Bits platform.
