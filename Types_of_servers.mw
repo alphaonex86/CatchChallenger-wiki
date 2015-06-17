@@ -1,9 +1,12 @@
 = Home server =
 [[File:catchchallenger-server-gui.png]][[File:home-usage.png]]
+
 Very simple, with interface. Just download, uncompress, start the software. It's all. After forward your port to connect from internet to it. The database is embedded (SQLite) but can be change to MySQL/Postgresql. (1 to 200 players)
 = Single server =
 [[File:console-server.png]][[File:server-usage.png]]
+
 Less simple due to configure via configuration file (.conf file). All is into console, it's perfect to setup on dedicated server without interface, need be downloaded, compiled, and the database configured (account and table created via .sql file or similar). The target is more MySQL/Postgresql. Target medium trafic (100 to 60 000 players)
 = Group of servers =
-[[File:cluster-usage.png]]
+[[File:cluster-usage.png]][[File:connectivity-global-network.jpg]]
+
 The server is across the world, work as team, need good administration known to set the correct right, do the communication. Target Postgresql or other very high performance database. Target large traffic (More than 50 000 players) around the world.
