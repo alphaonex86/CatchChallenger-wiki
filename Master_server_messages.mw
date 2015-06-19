@@ -156,11 +156,19 @@ Character id: 00000001 32Bits
 * <span style="color: #40BFFF">01</span> (01 = registred)
 * 50 maxMonsterIdList: 50x <span style="color: #40BF00">00000001</span>
 * 5 maxClanIdList: 5x <span style="color: #40BF00">00000001</span>
+* Max player monsters: <span style="color: #40BFFF">01</span> /!\ Never put number greater than 10 here
+* Max warehouse player monsters: <span style="color: #40BFFF">0001</span>
+* Max player items: <span style="color: #40BFFF">01</span>
+* Max warehouse player monsters: <span style="color: #40BFFF">0001</span>
 Or
 * <span style="color: #40BFFF">02</span> (02 = need unique key change)
 * new unique key <span style="color: #40BFFF">00000000</span> (random number)
 * 50 maxMonsterIdList: 50x <span style="color: #40BF00">00000001</span>
 * 5 maxClanIdList: 5x <span style="color: #40BF00">00000001</span>
+* Max player monsters: <span style="color: #40BFFF">01</span> /!\ Never put number greater than 10 here
+* Max warehouse player monsters: <span style="color: #40BFFF">0001</span>
+* Max player items: <span style="color: #40BFFF">01</span>
+* Max warehouse player monsters: <span style="color: #40BFFF">0001</span>
 Or
 * <span style="color: #40BFFF">03</span> (03 = character group not found)
 
