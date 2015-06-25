@@ -367,6 +367,7 @@ If all is good in proxy mode:
 * <span style="color: #FF4000">01</span> (all is good)
 
 * max player: <span style="color: #40BFFF">0064</span>
+* plantOnlyVisibleByPlayer: <span style="color: #FFBF00">01</span>
 * captureRemainingTime: <span style="color: #FF4000">00000001</span>
 * captureFrequencyType: <span style="color: #FF4000">01</span>
 * waitBeforeConnectAfterKick: <span style="color: #40BF00">00000001</span>
