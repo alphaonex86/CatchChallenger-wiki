@@ -53,11 +53,11 @@ Split into 4 part:
 ** character_itemonmap
 ** character_forserver '''New''', split the character table into common and server specific
 ** city
-** dictionary_itemonmap
+** dictionary_pointonmap renamed from dictionary_itemonmap
 ** dictionary_map
 ** factory
 ** item_market
 ** monster_market '''Merged into monster'''
 ** monster_market_price '''New'''
-** plant
+** plant '''Change''' use dictionary_pointonmap to improve the database size on plant visible only by player
 ** quest
