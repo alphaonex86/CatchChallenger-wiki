@@ -408,7 +408,7 @@ If all is good in proxy mode:
 * warehouse cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
 * size of item on map: <span style="color: #7B00FF">01</span>
 ** item on map,x,y getted: <span style="color: #FF4000">01</span> (index of item on map, ordened by map and x,y ordened into the xml file, less bandwith than send map,x,y)
-* size of item on map: <span style="color: #7B00FF">01</span> /!\ only if plantOnlyVisibleByPlayer==true
+* size of item on map: <span style="color: #7B00FF">01</span> '''/!\ only if plantOnlyVisibleByPlayer==true'''
 ** item on map,x,y getted: <span style="color: #FF4000">01</span> (index of plant on map, ordened by map and x,y ordened into the xml file, less bandwith than send map,x,y)
 ** plant: <span style="color: #FF4000">01</span>
 ** seconds to mature: <span style="color: #FFBF00">0064</span>
