@@ -407,7 +407,11 @@ If all is good in proxy mode:
 * cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
 * warehouse cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
 * size of item on map: <span style="color: #7B00FF">01</span>
-** item on map getted: <span style="color: #FF4000">01</span> (how get this id? Order by map?)
+** item on map,x,y getted: <span style="color: #FF4000">01</span> (index of item on map, ordened by map and x,y ordened into the xml file, less bandwith than send map,x,y)
+* size of item on map: <span style="color: #7B00FF">01</span> /!\ only if plantOnlyVisibleByPlayer==true
+** item on map,x,y getted: <span style="color: #FF4000">01</span> (index of plant on map, ordened by map and x,y ordened into the xml file, less bandwith than send map,x,y)
+** plant: <span style="color: #FF4000">01</span>
+** seconds to mature: <span style="color: #FFBF00">0064</span>
 * size of list of the recipes: <span style="color: #7B00FF">0001</span>
 ** recipe id: <span style="color: #FF4000">0001</span>
 * size of list of the monsters: <span style="color: #7B00FF">01</span>
