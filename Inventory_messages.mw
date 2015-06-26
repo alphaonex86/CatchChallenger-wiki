@@ -224,6 +224,12 @@ Type: <span style="color: #9D007B">03</span> (monster), monster id: <span style=
 * List of monster to deposite: <span style="color: #5544DD">01</span>
 ** Monster id: <span style="color: #FFBF00">00000001</span>
 
+=== 5008 ===
+Send the plant id <span style="color: #FF4000">02</span>
+
+=== 5009 ===
+This query have null size
+
 == Server &rarr; Client without reply ==
 === D001 ===
 Send item list size <span style="color: #FF4000">0002</span>, and the object:
