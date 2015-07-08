@@ -134,13 +134,13 @@ If mirror is enabled is considered as hacking.
 '''''Client only:''''' to be more secure, prevent DDOS and more fast, this is denied on server.
 
 Send file name and first 4Byte of sha224 hash:
-* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span>, <span style="color: #FF4000">XXXXXXXX</span>
-* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span>, <span style="color: #FF4000">XXXXXXXX</span>
-* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span>, <span style="color: #FF4000">XXXXXXXX</span>
+* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span> in 8Bit header + UTF8, <span style="color: #FF4000">XXXXXXXX</span>
+* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span> in 8Bit header + UTF8, <span style="color: #FF4000">XXXXXXXX</span>
+* <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span> in 8Bit header + UTF8, <span style="color: #FF4000">XXXXXXXX</span>
  <span style="color: #FF4000">00000003</span>
- <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span><span style="color: #FF4000">XXXXXXXX</span>
- <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span><span style="color: #FF4000">XXXXXXXX</span>
- <span style="color: #FFBF00">0000002c</span><span style="color: #40BF00">0069006d0067002f0070006c0061007900650072002f0073006b0069006e002d00300031002e0070006e0067</span><span style="color: #FF4000">XXXXXXXX</span>
+ <span style="color: #FFBF00">16</span><span style="color: #40BF00">696d672f706c617965722f736b696e2d30312e706e67</span><span style="color: #FF4000">XXXXXXXX</span>
+ <span style="color: #FFBF00">16</span><span style="color: #40BF00">696d672f706c617965722f736b696e2d30312e706e67</span><span style="color: #FF4000">XXXXXXXX</span>
+ <span style="color: #FFBF00">16</span><span style="color: #40BF00">696d672f706c617965722f736b696e2d30312e706e67</span><span style="color: #FF4000">XXXXXXXX</span>
 This packet is compressed.
 
 [[Login_protocol_messages#Reply_020C|See reply to this query]]
