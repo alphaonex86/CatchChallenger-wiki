@@ -135,7 +135,7 @@ In multi server mode, see [[Master_server_messages#8101|Get token for character 
 
 '''''Client only:''''' to be more secure, prevent DDOS and more fast, this is denied on server.
 
-* <span style="color: #FF4000">00</span> Step skipped due to hash matching.
+* <span style="color: #FF4000">01</span> Step to get, 0x01=base, 0x02=main, 0x03=sub
 Send file name and first 4Byte of sha224 hash:
 * <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span> in 8Bit header + UTF8, <span style="color: #FF4000">XXXXXXXX</span>
 * <span style="color: #40BF00">&quot;img/player/skin-01.png&quot;</span> in 8Bit header + UTF8, <span style="color: #FF4000">XXXXXXXX</span>
