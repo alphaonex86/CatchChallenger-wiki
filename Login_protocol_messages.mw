@@ -130,7 +130,8 @@ In multi server mode, see [[Master_server_messages#8101|Get token for character 
 
 === 020C ===
 * If mirror is enabled is considered as hacking.
-* Process at 3 step: base, main, sub, after download one step the server refer to the next
+* Process at 3 step: base, main, sub, need request in this order, and no more request if the last content if getted
+* Don't finish with main (not sub), if the subCode is empty
 * Step splited to support server spliting (login server, game server or all in one server)
 
 '''''Client only:''''' to be more secure, prevent DDOS and more fast, this is denied on server.
