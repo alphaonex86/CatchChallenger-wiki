@@ -6,6 +6,10 @@ You need apply this firewall rules with iptable under linux to limit the connect
 <pre>-A INPUT -m recent --name catchchallenger --rcheck --seconds 1 --hitcount 10 -p tcp -m tcp --dport 42489 -j DROP
 -A INPUT -m recent --name catchchallenger --remove
 -A INPUT -p tcp -m tcp --dport 42489 -m recent --name catchchallenger --set -j ACCEPT</pre>
+= Why DDOS all server level? =
+Because lower it's transport level. Only the server have the capacity to understand the message layer (how split and compose it) and then filter the message by seconds.
+
+That's allow to split the different message type and apply different limit. The move on the map is more frequent than chat message, store on warehouse, ...
 = Settings =
 == General case ==
 The settings to use:
