@@ -23,3 +23,6 @@ The client will disconnect to the login server and connect on game server
 The client will keep the connexion to login server and the login server will connect on game server
 * Advantage: Keep the game server ip/location unknow, can act as cache for datapack (prefer CDN), filter the DDOS attack
 * Disavantage: Less performance due relay mode (multiple RTT, routing and filter overhead). Force the login server to be connected on game server then can host maximum 10000 connexion.
+== Gateway ==
+[[File:Gateway.png|thumb]]
+The gateway is here to adapt two unconnected network like normal internet to crypted internet (TOR, i2p, ...).
