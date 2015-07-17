@@ -396,7 +396,7 @@ If all is good in proxy mode:
 * Main type code: <span style="color: #40BF00">"main"</span> (Only lower char and number, 8bits headers + utf8)
 * Sub type code: <span style="color: #40BF00">"sub"</span> (Only lower char and number, 8bits headers + utf8, '''can be empty if disabled''')
 * sha224 of datapack '''main''' file list content for the main datapack '''then excluding sub/''' (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list too (if match, not need sync it).
-* '''Only if sub code not empty''' sha224 of datapack '''sub''' file list content for the sub datapack (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list too (if match, not need sync it).
+* '''Only if sub code not empty, else this 28Bytes is not send.''' sha224 of datapack '''sub''' file list content for the sub datapack (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list too (if match, not need sync it).
 * Mirror to use: &quot;<span style="color: #40BF00">http://serverprimary/datapack/;http://serversecondary/datapack/</span>&quot;, if don't empty, don't send datapack query, you have the datpack list at http://serverprimary/datapack/datapack-list.txt test without proxy and with proxy is set. Test the next server, ... 8Bits header to prevent too long mirror list! Turn it on server.
 
 * Temporary character id: {{Player_id}} (unique generated id on the map)
