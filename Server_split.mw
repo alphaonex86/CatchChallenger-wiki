@@ -14,15 +14,15 @@ The game server connect to Login server (register on it). A unique key and login
 
 = Login server switch =
 == Reconnect ==
-[[File:Reconnect_mode.png|thumb]]
+[[File:Reconnect_mode.png|thumb|50px]]
 The client will disconnect to the login server and connect on game server
 * Advantage: More performance due client connect directly on game server (no multiple RTT, no routing and filter overhead). No connexion limit (C10k, C10M)
 * Disavantage: Don't keep the game server ip/location unknow, directly filter the DDOS attack (can do an overhead).
 == Proxy ==
-[[File:Proxy_mode.png|thumb]]
+[[File:Proxy_mode.png|thumb|50px]]
 The client will keep the connexion to login server and the login server will connect on game server
 * Advantage: Keep the game server ip/location unknow, can act as cache for datapack (prefer CDN), filter the DDOS attack
 * Disavantage: Less performance due relay mode (multiple RTT, routing and filter overhead). Force the login server to be connected on game server then can host maximum 10000 connexion.
 == Gateway ==
-[[File:Gateway.png|thumb]]
+[[File:Gateway.png|thumb|150px]]
 The gateway is here to adapt two unconnected network like normal internet to crypted internet (TOR, i2p, ...).
