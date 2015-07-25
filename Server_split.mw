@@ -26,3 +26,5 @@ The client will keep the connexion to login server and the login server will con
 == Gateway ==
 [[File:Gateway.png|thumb|150px]]
 The gateway is here to adapt two unconnected network like normal internet to crypted internet (TOR, i2p, ...).
+
+You can to cascade the gateway and network: Internet -> TOR -> I2P -> Gnutella -> Other ....
