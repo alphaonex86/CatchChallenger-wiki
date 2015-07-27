@@ -97,7 +97,10 @@ Then:
 
 === 05 ===
 Send:
-* sha224(login+/*salt*/"RtR3bm9Z1DFMfAC3")
+* sha224(sha224(login+/*salt*/"RtR3bm9Z1DFMfAC3"))
+* Double hash on client because:
+** '''Prevent login leak in case of MiM attack re-ask the password'''
+** Do some DDOS protection because it offload the hashing
 * sha224(pass+/*salt*/"AwjDvPIzfJPTTgHs")
 Then:
   <span style="color: #40BF00">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span>, <span style="color: #FF0040">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span><br />
