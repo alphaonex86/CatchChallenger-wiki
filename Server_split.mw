@@ -23,7 +23,7 @@ The client will disconnect to the login server and connect on game server
 The client will keep the connexion to login server and the login server will connect on game server
 * Advantage: Keep the game server ip/location unknow, can act as cache for datapack (prefer CDN), filter the DDOS attack
 * Disavantage: Less performance due relay mode (multiple RTT, routing and filter overhead). Force the login server to be connected on game server then can host maximum 10000 connexion.
-== Gateway ==
+= Gateway =
 [[File:Gateway.png|thumb|150px]]
 The gateway is here to adapt two unconnected network like normal internet to crypted internet (TOR, i2p, ...).
 
@@ -33,7 +33,7 @@ Why exists? Why use it?
 * The datapack can be downloaded via the tcp communication pipe or http mirror, this unify the output
 * Don't use bandwidth of the sub net: some sub net like i2p can have very limited bandwidth, that's boost the speed
 * Autodetect change: I you cache http traffic, you can have some slow down or error. With the integrity control into the protocol, the change is directly detected and the corresponding file downloaded.
-* The gateways will jump by reconnect to the game server
+* The gateways will jump by reconnect to the game server, see above: Login server switch mode reconnect
 
 The limit?
 * This as MiM intercept the traffic (needed to change the datapack traffic to download from the gateway), you need have trust into the gateway. The couple login + password can't be intercepted, but the traffic can be modified.
