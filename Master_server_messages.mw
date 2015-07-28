@@ -175,6 +175,8 @@ Or
 * Max warehouse player monsters: <span style="color: #40BFFF">0001</span>
 Or
 * <span style="color: #40BFFF">03</span> (03 = character group not found)
+Or
+* <span style="color: #40BFFF">04</span> (04 = token wrong)
 
 === Reply 08 ===
 See '''C211''' to follow Characters group alphabetical order
