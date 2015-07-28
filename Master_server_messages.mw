@@ -87,6 +87,7 @@ protocol magic number: <span style="font-style: italic"><span style="color: #40B
 [[Master server messages#Reply_01|See reply to this query]]
 
 === 07 ===
+* Hash sha224 of key + dynamic token: <span style="color: #40BF00">XXX...XXXX</span>
 * charactersGroup: <span style="color: #40BF00">"HightRates"</span> (8Bits header + utf8, only [a-z0-9]+)
 * Unique key: <span style="color: #FFBF00">00000000</span> (32bits, generate from random)
 * <span style="color: #FFBF00">&quot;Host&quot;</span> 8bits headers + utf8
@@ -99,6 +100,12 @@ protocol magic number: <span style="font-style: italic"><span style="color: #40B
 ** Player database id: <span style="color: #FFBF00">00000000</span> (32bits)
 
 [[Master server messages#Reply_07|See reply to this query]]
+
+
+=== 08 ===
+* Hash sha224 of key + dynamic token: <span style="color: #40BF00">XXX...XXXX</span>
+
+[[Master server messages#Reply_08|See reply to this query]]
 
 === 0207 ===
 
