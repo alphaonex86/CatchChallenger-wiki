@@ -149,9 +149,10 @@ Character id: 00000001 32Bits
 === Reply 01 ===
 * <span style="color: #40BFFF">02</span> (protocol not supported)
 * <span style="color: #40BFFF">07</span> (Token auth wrong)
-* <span style="color: #40BFFF">04</span> (is supported, compression: None)
-* <span style="color: #40BFFF">05</span> (is supported, compression: Zlib)
-* <span style="color: #40BFFF">06</span> (is supported, compression: Xz)
+* <span style="color: #40BFFF">04</span> (is supported, compression: None), <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> token of 16bytes for auth
+* <span style="color: #40BFFF">05</span> (is supported, compression: Zlib), <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> token of 16bytes for auth
+* <span style="color: #40BFFF">06</span> (is supported, compression: Xz), <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> token of 16bytes for auth
+
 === Reply 07 ===
 * <span style="color: #40BFFF">01</span> (01 = registred)
 * 50 maxMonsterIdList: 50x <span style="color: #40BF00">00000001</span>
