@@ -83,10 +83,6 @@ At the connection, send the protocol supported, <span style="font-weight: bold">
 protocol magic number: <span style="font-style: italic"><span style="color: #40BF00">8862BCBB679E3DE7</span></span>, version (one of them):
 * <span style="font-style: italic"><span style="color: #BF00FF">01</span></span> (1.0.0.0)
 * <span style="font-style: italic"><span style="color: #BF00FF">10</span></span> (2.0.0.0)
-token for auth: <span style="font-style: italic"><span style="color: #FFBF00">XXX...XXX</span> (32 Bytes)</span>. The right token to send is stored in hexa into the config file on master server, generated after the first start.
-
-Final result:
- <span style="color: #40BF00">8862BCBB679E3DE7</span><span style="font-style: italic"><span style="color: #BF00FF">10</span></span><span style="color: #FFBF00">XXX...XXX</span>
 
 [[Master server messages#Reply_01|See reply to this query]]
 
