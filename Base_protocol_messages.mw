@@ -143,6 +143,8 @@ Not use max visibility because it's just 4% of bandwidth less, but very more ser
 {{Skin}}
 
 === C203 ===
+'''Before reply of 020C, Send datapack file list'''
+
 Server -&gt; Client: file liste size: <span style="color: #FF4000">01</span><span style="color: #40BF00">&quot;file name&quot;</span> (UTF8 + 8Bits of header size), size <span style="color: #FF4000">00000001</span>, data: <span style="color: #40BFFF">XXXXXXXXXXXXXXXX[...]XXXXXXXXXX</span>
  <span style="color: #FF4000">01</span><span style="color: #FFBF00">12</span><span style="color: #40BF00">626164206c6f67696e</span><span style="color: #FF4000">00000001</span><span style="color: #40BFFF">XXXXXXXXXXXXXXXX[...]XXXXXXXXXX</span>
 
