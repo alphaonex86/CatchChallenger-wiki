@@ -265,6 +265,8 @@ Second list part with same size
 
 <span style="color: #40BFFF">06</span> (is supported, compression: Xz), <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> token of 16bytes for auth
 
+<span style="color: #40BFFF">07</span> (is supported, compression: Lz4), <span style="color: #40BFFF">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span> token of 16bytes for auth
+
 {{Note}}After this, all communication is into the packet size mode send by the protocol.
 
 ==== On game server ====
