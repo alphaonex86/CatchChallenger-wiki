@@ -704,3 +704,7 @@ Uploaded at: https://github.com/alphaonex86/debug-devel/tree/master/QTcpCompress
 ! none
 |}
 The most over-head of small packet (3Bytes) is drop by high compression with zlib/gzip for the big packet.
+
+= Graphics =
+[[File:compression-ratio.png]]
+[[File:compression-time.png]]
