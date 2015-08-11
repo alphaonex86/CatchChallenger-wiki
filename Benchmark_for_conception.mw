@@ -422,23 +422,23 @@ Raw mean: pointer + reinterpret cast, effective on small amount of data.
 ! Arm cortex A9 Quad core, 32Bits, with grsecurity (PAX) on linux kernel
 |-
 | sha224
-| 650kH/s
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 36kH/s
+| 650KH/s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 36KH/s
 |-
 | xxhash
-| 115kH/s
+| 115KH/s
 | 
 |-
 | xxhash -march=native -O2
-| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1700kH/s
-| 35kH/s
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1700KH/s
+| 35KH/s
 |-
 | xxhash -march=native -O2 -fomit-frame-pointer -floop-block -floop-interchange -fgraphite -funroll-loops -ffast-math -faggressive-loop-optimizations -funsafe-loop-optimizations
-| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1700kH/s
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1700KH/s
 | 
 |-
 | xxhash -pipe -march=native -O2 -fomit-frame-pointer -floop-block -funroll-loops -ffast-math -funsafe-loop-optimizations
-| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1700kH/s
-| 31kH/s
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1700KH/s
+| 31KH/s
 |}
 Intel haswell have hardware acceleration for sha224. Internal tool (sha224 of Qt) as "''cryptsetup benchmark''" give around the same result, Qt is 10% slower.
