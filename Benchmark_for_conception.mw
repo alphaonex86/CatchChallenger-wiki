@@ -426,7 +426,7 @@ Raw mean: pointer + reinterpret cast, effective on small amount of data.
 | style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 36000H/s
 |-
 | xxhash
-| 115000H/s
 | style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1146000H/s
+| 115000H/s
 |}
 Intel haswell have hardware acceleration for sha224. Internal tool (sha224 of Qt) as "''cryptsetup benchmark''" give around the same result, Qt is 10% slower.
