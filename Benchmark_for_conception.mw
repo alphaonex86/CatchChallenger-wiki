@@ -422,11 +422,23 @@ Raw mean: pointer + reinterpret cast, effective on small amount of data.
 ! Arm cortex A9 Quad core, 32Bits, with grsecurity (PAX) on linux kernel
 |-
 | sha224
-| 650000H/s
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 36000H/s
+| 650kH/s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 36kH/s
 |-
 | xxhash
-| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1146000H/s
-| 115000H/s
+| 115kH/s
+| 
+|-
+| xxhash -march=native -O2
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1700kH/s
+| 35kH/s
+|-
+| xxhash -march=native -O2 -fomit-frame-pointer -floop-block -floop-interchange -fgraphite -funroll-loops -ffast-math -faggressive-loop-optimizations -funsafe-loop-optimizations
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1700kH/s
+| 
+|-
+| xxhash -pipe -march=native -O2 -fomit-frame-pointer -floop-block -funroll-loops -ffast-math -funsafe-loop-optimizations
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1700kH/s
+| 31kH/s
 |}
 Intel haswell have hardware acceleration for sha224. Internal tool (sha224 of Qt) as "''cryptsetup benchmark''" give around the same result, Qt is 10% slower.
