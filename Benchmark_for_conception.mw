@@ -413,3 +413,20 @@ It's '''24x more slow with Ssl than clear'''. Mostly because it's small packet (
 |}
 Then why use memcpy? To large block of data (use SIMD to great speed improvement), access to unaligned 64Bits integer on 32Bits platform.
 Raw mean: pointer + reinterpret cast, effective on small amount of data.
+
+= Hash and control sum =
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! x86 Intel haswell, 64Bits
+! Arm cortex A9 Quad core, 32Bits, with grsecurity (PAX) on linux kernel
+|-
+| sha224
+| 650000H/s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 36000H/s
+|-
+| xxhash
+| 115000H/s
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1146000H/s
+|}
+Intel haswell have hardware acceleration for sha224. Internal tool (sha224 of Qt) as "''cryptsetup benchmark''" give around the same result, Qt is 10% slower.
