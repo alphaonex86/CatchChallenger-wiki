@@ -268,6 +268,10 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 ! lz4
 ! lzop
 |}
+
+* gzip -1 vs lz4 -1 on x86: lz4 6.2x more fast
+* gzip -1 vs lz4 -1 on ARM: lz4 3.6x more fast
+
 == Decompression time ==
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
