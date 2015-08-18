@@ -438,6 +438,7 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 ! lz4
 ! lzop
 |}
+* Note: lz4 it's the program using this size, the code for internal lz4 use very less memory
 
 == Memory requirements on decompression ==
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
