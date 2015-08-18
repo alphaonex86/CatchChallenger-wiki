@@ -524,6 +524,7 @@ Tarball mode from linux-3.3, original size: 466083840 (445M)
 ! lzop
 |}
 
+* Note: lz4 it's the program using this size, the code for internal lz4 use very less memory
 Cli used for -1 compression:
 * time gzip -1 linux-3.3.tar;du -ksh linux-3.3.tar*;ls -l linux-3.3.tar*;time gunzip linux-3.3.tar*
 * time bzip2 -1 linux-3.3.tar;du -ksh linux-3.3.tar*;ls -l linux-3.3.tar*;time bunzip2 linux-3.3.tar.bz2
@@ -533,6 +534,7 @@ Cli used for -1 compression:
 * time xz -e -1 linux-3.3.tar;du -ksh linux-3.3.tar*;ls -l linux-3.3.tar*;read PAUSe;time unxz linux-3.3.tar*
 * time /home/user/lz4-read-only/lz4demo64 -c0 linux-3.3.tar linux-3.3.tar.lz4;du -ksh linux-3.3.tar*;ls -l linux-3.3.tar*;read PAUSe;time /home/user/lz4-read-only/lz4demo64 -d linux-3.3.tar.lz4 linux-3.3.tar;rm linux-3.3.tar.*
 * time lzop -1 linux-3.3.tar;rm linux-3.3.tar;du -ksh linux-3.3.tar*;ls -l linux-3.3.tar*;read PAUSe;time lzop -d linux-3.3.tar*;rm linux-3.3.tar.*
+
 = Stream test =
 
 == Time to compress ==
