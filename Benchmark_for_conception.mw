@@ -365,7 +365,7 @@ And now with CONFIG += c++11:
 |}
 Using prepared string, the loading datapack of the datapack (mostly Xml parsing time + file access time) '''1560ms -> 742ms''' (https://github.com/alphaonex86/CatchChallenger/commit/4eeece9d5169d125fcfdbc2126629cdd2a75fe1c).
 = String in C++ =
-Lower is better (https://github.com/alphaonex86/CatchChallenger/tree/master/tools/benchmarkstring), done with gcc 4.7, debug Qt 5.2 with c++11, format:
+Highter is better, gcc with c++11, format:
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
 ! style="width: 12em" |
@@ -373,18 +373,18 @@ Lower is better (https://github.com/alphaonex86/CatchChallenger/tree/master/tool
 ! Intel x86 haswell
 |-
 | std::string::find("test")
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 526000 cycles
-| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 56000 cycles
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3802281 cycles/s
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 35404496 cycles/s
 |-
 | std::string::find(std::string)
-| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 
-| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 52500 cycles
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 4201680 cycles/s
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 38079281 cycles/s
 |-
 | nop
-| 
-| 4200 cycles
+| 83333333 cycles/s
+| 471920717 cycles/s
 |}
-* Mean (56000-4200)/(52500-4200): 7% better on x86
+* Mean 7% better on x86, 10% better on ARM
 
 = Send to all object =
 * Case 1: 600x <pre>connect(timer to object)</pre> to send to all object
