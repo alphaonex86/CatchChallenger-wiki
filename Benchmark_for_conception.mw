@@ -422,7 +422,7 @@ It's '''24x more slow with Ssl than clear'''. Mostly because it's small packet (
 |-
 ! style="width: 12em" |
 ! x86 Intel haswell, 64Bits
-! Arm cortex A9 Quad core, 32Bits, with grsecurity (PAX) on linux kernel
+! Arm Cortex A9 Quad core, 32Bits, with grsecurity (PAX) on linux kernel
 |-
 | memcpy
 | 1.4s
