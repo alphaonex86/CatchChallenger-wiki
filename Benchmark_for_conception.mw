@@ -373,7 +373,7 @@ Lower is better (https://github.com/alphaonex86/CatchChallenger/tree/master/tool
 ! Intel x86 haswell
 |-
 | std::string::find("test")
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 526000 cycles
 | style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 56000 cycles
 |-
 | std::string::find(std::string)
