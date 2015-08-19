@@ -373,7 +373,7 @@ Highter is better, gcc with c++11, format:
 ! Intel x86 haswell
 |-
 | std::string::find("test")
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3802281 cycles/s
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3802281 cycles/s
 | style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 35404496 cycles/s
 |-
 | std::string::find(std::string)
