@@ -369,7 +369,7 @@ Lower is better (https://github.com/alphaonex86/CatchChallenger/tree/master/tool
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
 ! style="width: 12em" |
-! ARMv7 Cortex A9
+! Arm Cortex A9 Quad core, 32Bits, with grsecurity (PAX)
 ! Intel x86 haswell
 |-
 | std::string::find("test")
