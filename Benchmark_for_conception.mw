@@ -393,7 +393,7 @@ Highter is better, gcc with c++11, format:
 | 471920717 cycles/s
 |}
 * Mean 7% better on x86, 10% better on ARM
-* raw free benmark: std::string::find(std::string) vs QString::indexOf(QString) then both prepared string: 38079281 vs 24181750, 57% more fast in c++11 for the prepared, mean X for unprepared
+* raw free benmark: std::string::find(std::string) vs QString::indexOf(QString) then both prepared string: 38079281 vs 24181750, 57% more fast in c++11 for the prepared, mean 32x for unprepared string
 
 = Send to all object =
 * Case 1: 600x <pre>connect(timer to object)</pre> to send to all object
