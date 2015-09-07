@@ -74,7 +74,7 @@
 = Details =
 == Client &rarr; Server with reply ==
 === 020D ===
-Client -&gt; Server:
+Client -&gt; Server, text is utf8 with 8Bits header:
 * Clan action type: <span style="color: #FF4000">01</span> (create), text: <span style="color: #40BF00">&quot;name&quot;</span>
 * Clan action type: <span style="color: #FF4000">02</span> (leave)
 * Clan action type: <span style="color: #FF4000">03</span> (dissolve)
