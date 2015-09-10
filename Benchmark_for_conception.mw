@@ -483,26 +483,44 @@ Lower is better
 ! Not found set result
 ! Found set Qt result
 ! Not found set Qt result
+! Found set C result
+! Not found set C result
+! Found set C++ result
+! Not found set C++ result
 |-
 | x86 Intel haswell
-| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 48ms
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3411ms
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 4443ms
-| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 470ms
-| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 478ms
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 47ms
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3362ms
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 4378ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 456ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 495ms
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 54ms
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 53ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1366ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 2284ms
 |-
 | x86 Intel haswell -march=native -fomit-frame-pointer -floop-block -floop-interchange -fgraphite -funroll-loops -ffast-math
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 47ms
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3333ms
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 4288ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 468ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 485ms
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 54ms
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 58ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1358ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 2257ms
+|-
+| x86 Intel haswell -march=native -fomit-frame-pointer -floop-block -floop-interchange -fgraphite -funroll-loops -ffast-math -O2
 | style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0ms
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 364ms
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 517ms
-| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 124ms
-| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 108ms
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 369ms
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 498ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 120ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 103ms
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0ms
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 60ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 89ms
 |-
 | ARM Cortex A9 -march=native -fomit-frame-pointer -funroll-loops -ffast-math, Grsec PaX, gcc 4.7 hardened
-| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 17ms
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 176ms
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 105ms
-| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 93ms
-| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 86ms
 |}
 Done with -std=c++0x, gcc 4.9.3 hardened, Qt core 5.4.2
