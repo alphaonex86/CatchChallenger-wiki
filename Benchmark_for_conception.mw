@@ -521,6 +521,6 @@ Lower is better
 | style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 60ms
 | style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 89ms
 |-
-| ARM Cortex A9 -march=native -fomit-frame-pointer -funroll-loops -ffast-math, Grsec PaX, gcc 4.7 hardened
+| ARM Cortex A9 -march=native -fomit-frame-pointer -funroll-loops -ffast-math -O2, Grsec PaX, gcc 4.7 hardened
 |}
 Done with -std=c++0x, gcc 4.9.3 hardened, Qt core 5.4.2
