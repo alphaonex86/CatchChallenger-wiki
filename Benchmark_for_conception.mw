@@ -472,3 +472,30 @@ Raw mean: pointer + reinterpret cast, effective on small amount of data.
 | 31KH/s
 |}
 Intel haswell have hardware acceleration for sha224. Internal tool (sha224 of Qt) as "''cryptsetup benchmark''" give around the same result, Qt is 10% slower.
+
+= Set to packet parsing =
+Lower is better
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Unaligned result
+! Found set result
+! Not found set result
+! Found set Qt result
+! Not found set Qt result
+|-
+| x86 Intel haswell
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 48ms
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3411ms
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 4443ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 470ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 478ms
+|-
+| x86 Intel haswell -march=native -fomit-frame-pointer -floop-block -floop-interchange -fgraphite -funroll-loops -ffast-math
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0ms
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 364ms
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 517ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 124ms
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 108ms
+|}
+Done with -std=c++0x, gcc 4.9.3 hardened, Qt core 5.4.2
