@@ -19,6 +19,9 @@ The tpc/ip protocol split the packet into lot of small packet. Warning, you need
 | Packet content
 |}
 
+{{note}}: The packet size definition can:
+* Packet size with: XX if for <255 message size, 00XXXX is for <64KB size, 0000XXXXXXXX if for the rest. (Interesting for raw protocol for 4x packet < 255Bytes than <64KB)
+
 == Version 2 ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 | style="background: #90ff90; color: black;" | Main code type (8Bits)
@@ -28,11 +31,8 @@ The tpc/ip protocol split the packet into lot of small packet. Warning, you need
 |}
 Compression on upper level to prevent DDOS by flood packet with compression: 1) check if this packet is not already send like datapack list sync, 2) uncompress
 
-== Other ==
 {{note}}: The packet size definition can:
-* Packet size with: XX if for <255 message size, 00XXXX is for <64KB size, 0000XXXXXXXX if for the rest. (Interesting for raw protocol for 4x packet < 255Bytes than <64KB)
-
-The size is not calculated on variable into message, because it will be call lot of, to recompose the message, then big lost of performance.
+* Packet size with: XX if for <255 message size, FFXXXX is for <65535 size, FFFFXXXXXXXX if for the rest.
 
 = Messages type =
 {{note}}: The first byte send by server is 0x00 to say no encrypted or 0x01 to say encrypted by Ssl
