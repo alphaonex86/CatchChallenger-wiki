@@ -1,4 +1,6 @@
-{{note}}: The first byte send by server is 0x00 to say no encrypted or 0x01 to say encrypted by Ssl.
+{{note}}: The first byte send by server is 0x00 to say no encrypted or 0x01 to say encrypted by Ssl
+
+Organised by destination to improve the income performance routing
 
 == Client &rarr; Server ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
@@ -7,11 +9,11 @@
 ! Sub code type
 ! Version 2 Packet Code
 ! Data
-! Server
+! Destination
 ! Fixed Message size
+{{Template:Base_protocol_messages_Client_Server}}
 {{Template:Battle_messages_Client_Server}}
 {{Template:Inventory_messages_Client_Server}}
-{{Template:Base_protocol_messages_Client_Server}}
 {{Template:Others_messages_Client_Server}}
 {{Template:Login_protocol_messages_Client_Server}}
 {{Template:Master_server_messages_Client_Server}}
@@ -24,7 +26,7 @@
 ! Sub code type
 ! Version 2 Packet Code
 ! Data
-! Server
+! Destination
 ! Fixed Message size
 {{Template:Battle_messages_Server_Client}}
 {{Template:Inventory_messages_Server_Client}}
@@ -41,7 +43,7 @@
 ! Sub code type
 ! Version 2 Packet Code
 ! Data
-! Server
+! Destination
 ! Fixed Query size
 ! Fixed Reply size
 {{Template:Inventory_messages_Client_Server_Reply}}
@@ -59,7 +61,7 @@
 ! Sub code type
 ! Version 2 Packet Code
 ! Data
-! Server
+! Destination
 ! Fixed Query size
 ! Fixed Reply size
 {{Template:Battle_messages_Server_Client_Reply}}
