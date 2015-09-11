@@ -1,22 +1,5 @@
 {{note}}: The first byte send by server is 0x00 to say no encrypted or 0x01 to say encrypted by Ssl.
 
-= General =
-== Client &rarr; Server with reply ==
-{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! Main code type
-! Sub code type
-! Query number
-! Packet size
-! Data
-{{Template:Inventory_messages_Client_Server_Reply}}
-{{Template:Base_protocol_messages_Client_Server_Reply}}
-{{Template:Login_protocol_messages_Client_Server_Reply}}
-{{Template:Master_server_messages_Client_Server_Reply}}
-|}
-{{Note}}All the main code in this column is considered query with needed reply.
-* 1) Fast to have good performance, to face to bruteforce, DDOS, ...
-
 == Client &rarr; Server ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
@@ -33,20 +16,6 @@
 {{Template:Master_server_messages_Client_Server}}
 |}
 
-== Server &rarr; Client with reply ==
-{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! Main code type
-! Sub code type
-! Query number
-! Packet size
-! Data
-{{Template:Battle_messages_Server_Client_Reply}}
-{{Template:Inventory_messages_Server_Client_Reply}}
-{{Template:Base_protocol_messages_Server_Client_Reply}}
-{{Template:Master_server_messages_Server_Client_Reply}}
-|}
-
 == Server &rarr; Client ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
@@ -61,4 +30,34 @@
 {{Template:Others_messages_Server_Client}}
 {{Template:Login_protocol_messages_Server_Client}}
 {{Template:Master_server_messages_Server_Client}}
+|}
+
+== Client &rarr; Server with reply ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+{{Template:Inventory_messages_Client_Server_Reply}}
+{{Template:Base_protocol_messages_Client_Server_Reply}}
+{{Template:Login_protocol_messages_Client_Server_Reply}}
+{{Template:Master_server_messages_Client_Server_Reply}}
+|}
+{{Note}}All the main code in this column is considered query with needed reply.
+* 1) Fast to have good performance, to face to bruteforce, DDOS, ...
+
+== Server &rarr; Client with reply ==
+{| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Main code type
+! Sub code type
+! Query number
+! Packet size
+! Data
+{{Template:Battle_messages_Server_Client_Reply}}
+{{Template:Inventory_messages_Server_Client_Reply}}
+{{Template:Base_protocol_messages_Server_Client_Reply}}
+{{Template:Master_server_messages_Server_Client_Reply}}
 |}
