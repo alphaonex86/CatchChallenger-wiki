@@ -26,13 +26,15 @@ The tpc/ip protocol split the packet into lot of small packet. Warning, you need
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 | style="background: #90ff90; color: black;" | Packet code (8Bits, first byte is true if query, else is message without need of reply)
 | Query number (8Bits, optional)
-| style="background: #77eeFF; color: black;" | Packet size
+| style="background: #77eeFF; color: black;" | Packet size (for packet without fixed size)
 | Packet content
 |}
 Compression on upper level to prevent DDOS by flood packet with compression: 1) check if this packet is not already send like datapack list sync, 2) uncompress
 
 {{note}}: The packet size definition can:
 * Packet size with: XX if for <255 message size, FFXXXX is for <65535 size, FFFFXXXXXXXX if for the rest.
+
+The packet fixed size if max 254 to improve the performance, and greater than 254 the size header is a very few overhead
 
 = Messages type =
 {{note}}: The first byte send by server is 0x00 to say no encrypted or 0x01 to say encrypted by Ssl
