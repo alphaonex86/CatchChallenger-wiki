@@ -22,11 +22,11 @@ The tpc/ip protocol split the packet into lot of small packet. Warning, you need
 == Version 2 ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 | style="background: #90ff90; color: black;" | Main code type (8Bits)
-| style="background: #ffcc00; color: black;" | Sub code type (8Bits, optional)
 | Query number (8Bits, optional)
-| style="background: #77eeFF; color: black;" | Packet size (for packet without fixed size)
+| style="background: #77eeFF; color: black;" | Packet size
 | Packet content
 |}
+Compression on upper level to prevent DDOS by flood packet with compression: 1) check if this packet is not already send like datapack list sync, 2) uncompress
 
 == Other ==
 {{note}}: The packet size definition can:
