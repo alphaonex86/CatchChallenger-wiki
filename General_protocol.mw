@@ -34,7 +34,8 @@ Compression on upper level to prevent DDOS by flood packet with compression: 1) 
 {{note}}: The packet size definition can:
 * Packet size with: XX if for <255 message size, FFXXXX is for <65535 size, FFFFXXXXXXXX if for the rest.
 
-The packet fixed size if max 254 to improve the performance, and greater than 254 the size header is a very few overhead
+The packet fixed size if max 253 to improve the performance, and greater than 253 the size header is a very few overhead
+In internal the 254 is existing packet without fixed size, 255 is unknown packet.
 
 = Messages type =
 {{note}}: The first byte send by server is 0x00 to say no encrypted or 0x01 to say encrypted by Ssl
