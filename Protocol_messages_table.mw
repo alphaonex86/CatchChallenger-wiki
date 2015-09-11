@@ -28,10 +28,10 @@
 ! Fixed Message size
 {{Template:Battle_messages_Server_Client}}
 {{Template:Inventory_messages_Server_Client}}
-{{Template:Base_protocol_messages_Server_Client}}
 {{Template:Others_messages_Server_Client}}
 {{Template:Login_protocol_messages_Server_Client}}
 {{Template:Master_server_messages_Server_Client}}
+{{Template:Base_protocol_messages_Server_Client}}
 |}
 
 == Client &rarr; Server with reply ==
