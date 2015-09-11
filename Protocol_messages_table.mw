@@ -39,7 +39,6 @@
 |-
 ! Main code type
 ! Sub code type
-! Query number
 ! Version 2 Packet Code
 ! Data
 ! Server
@@ -58,7 +57,6 @@
 |-
 ! Main code type
 ! Sub code type
-! Query number
 ! Version 2 Packet Code
 ! Data
 ! Server
