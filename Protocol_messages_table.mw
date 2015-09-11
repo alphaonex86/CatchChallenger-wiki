@@ -1,6 +1,6 @@
 {{note}}: The first byte send by server is 0x00 to say no encrypted or 0x01 to say encrypted by Ssl
 
-Organised by destination to improve the income performance routing
+Organised by destination/sources to improve the income performance routing
 
 == Client &rarr; Server ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
@@ -30,11 +30,11 @@ Organised by destination to improve the income performance routing
 ! Source
 ! Destination
 ! Fixed Message size
+{{Template:Login_protocol_messages_Server_Client}}
+{{Template:Master_server_messages_Server_Client}}
 {{Template:Battle_messages_Server_Client}}
 {{Template:Inventory_messages_Server_Client}}
 {{Template:Others_messages_Server_Client}}
-{{Template:Login_protocol_messages_Server_Client}}
-{{Template:Master_server_messages_Server_Client}}
 {{Template:Base_protocol_messages_Server_Client}}
 |}
 
