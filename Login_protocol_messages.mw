@@ -10,6 +10,7 @@
 ! Packet size
 ! Data
 {{Template:Login_protocol_messages_Client_Server_Reply}}
+{{Template:Login_protocol_messages_Client_Server_Reply_Login}}
 |}
 {{Note}}All the main code in this column is considered query with needed reply
 * 1) Fast to have good performance, to face to bruteforce, DDOS.
