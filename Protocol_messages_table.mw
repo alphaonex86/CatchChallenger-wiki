@@ -53,6 +53,7 @@ Organised by destination/sources to improve the income performance routing
 {{Template:Base_protocol_messages_Client_Server_Reply}}
 {{Template:Login_protocol_messages_Client_Server_Reply}}
 {{Template:Master_server_messages_Client_Server_Reply}}
+{{Template:Battle_messages_Client_Server_Reply}}
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
 * 1) Fast to have good performance, to face to bruteforce, DDOS, ...
