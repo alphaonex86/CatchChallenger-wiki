@@ -24,7 +24,7 @@ The tpc/ip protocol split the packet into lot of small packet. Warning, you need
 
 == Version 2 ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-| style="background: #90ff90; color: black;" | Main code type (8Bits, first byte is true if query, else is message without need of reply)
+| style="background: #90ff90; color: black;" | Packet code (8Bits, first byte is true if query, else is message without need of reply)
 | Query number (8Bits, optional)
 | style="background: #77eeFF; color: black;" | Packet size
 | Packet content
