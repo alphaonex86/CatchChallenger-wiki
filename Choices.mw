@@ -14,7 +14,9 @@ To do easy load teleport, the teleport after lost a battle is do by normal telep
 == Path finding ==
 To minimize the cost of the infrastruture, we do an unique algorithm: not the sortest path but the path with less direction changing. Minimise the network bandwith, minimise the context switch to improve the performance (as OS part and application part).
 = Protocol =
-== Message size on each packet ==
+== Message size on each packet (web socket) ==
 The unique case where do that's it's very bad it's when you have multiple very small packet aggregated. I will try never do that's. And for very small trafic the overhead will be 30% but 1KB transmited or 1.3KB it's same.
 
 At exchange of that's you don't have hash table and the packet speed is boosted by 10x.
+
+With drop subcode, the table is into 256Bytes, and the performance in C is correct to don't add the size, then don't add the size for tcp socket (not web socket).
