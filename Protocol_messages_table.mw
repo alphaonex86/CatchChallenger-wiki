@@ -7,6 +7,7 @@
 ! Sub code type
 ! Packet size
 ! Data
+! Server
 {{Template:Battle_messages_Client_Server}}
 {{Template:Inventory_messages_Client_Server}}
 {{Template:Base_protocol_messages_Client_Server}}
@@ -22,6 +23,7 @@
 ! Sub code type
 ! Packet size
 ! Data
+! Server
 {{Template:Battle_messages_Server_Client}}
 {{Template:Inventory_messages_Server_Client}}
 {{Template:Base_protocol_messages_Server_Client}}
@@ -38,6 +40,7 @@
 ! Query number
 ! Packet size
 ! Data
+! Server
 {{Template:Inventory_messages_Client_Server_Reply}}
 {{Template:Base_protocol_messages_Client_Server_Reply}}
 {{Template:Login_protocol_messages_Client_Server_Reply}}
@@ -54,6 +57,7 @@
 ! Query number
 ! Packet size
 ! Data
+! Server
 {{Template:Battle_messages_Server_Client_Reply}}
 {{Template:Inventory_messages_Server_Client_Reply}}
 {{Template:Base_protocol_messages_Server_Client_Reply}}
