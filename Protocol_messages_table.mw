@@ -5,7 +5,7 @@
 |-
 ! Main code type
 ! Sub code type
-! Packet size
+! Version 2 Packet Code
 ! Data
 ! Server
 {{Template:Battle_messages_Client_Server}}
@@ -21,7 +21,7 @@
 |-
 ! Main code type
 ! Sub code type
-! Packet size
+! Version 2 Packet Code
 ! Data
 ! Server
 {{Template:Battle_messages_Server_Client}}
@@ -38,7 +38,7 @@
 ! Main code type
 ! Sub code type
 ! Query number
-! Packet size
+! Version 2 Packet Code
 ! Data
 ! Server
 {{Template:Inventory_messages_Client_Server_Reply}}
@@ -55,7 +55,7 @@
 ! Main code type
 ! Sub code type
 ! Query number
-! Packet size
+! Version 2 Packet Code
 ! Data
 ! Server
 {{Template:Battle_messages_Server_Client_Reply}}
