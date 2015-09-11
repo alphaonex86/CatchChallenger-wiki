@@ -9,6 +9,7 @@ Organised by destination to improve the income performance routing
 ! Sub code type
 ! Version 2 Packet Code
 ! Data
+! Source
 ! Destination
 ! Fixed Message size
 {{Template:Base_protocol_messages_Client_Server}}
@@ -26,6 +27,7 @@ Organised by destination to improve the income performance routing
 ! Sub code type
 ! Version 2 Packet Code
 ! Data
+! Source
 ! Destination
 ! Fixed Message size
 {{Template:Battle_messages_Server_Client}}
@@ -43,6 +45,7 @@ Organised by destination to improve the income performance routing
 ! Sub code type
 ! Version 2 Packet Code
 ! Data
+! Source
 ! Destination
 ! Fixed Query size
 ! Fixed Reply size
@@ -61,6 +64,7 @@ Organised by destination to improve the income performance routing
 ! Sub code type
 ! Version 2 Packet Code
 ! Data
+! Source
 ! Destination
 ! Fixed Query size
 ! Fixed Reply size
