@@ -2,6 +2,8 @@
 
 Organised by destination/sources to improve the income performance routing
 
+'''No packet can be at same time compressed and with fixed size'''
+
 == Client &rarr; Server ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
@@ -12,6 +14,7 @@ Organised by destination/sources to improve the income performance routing
 ! Source
 ! Destination
 ! Fixed Message size
+! Compressed
 {{Template:Base_protocol_messages_Client_Server}}
 {{Template:Battle_messages_Client_Server}}
 {{Template:Inventory_messages_Client_Server}}
@@ -30,6 +33,7 @@ Organised by destination/sources to improve the income performance routing
 ! Source
 ! Destination
 ! Fixed Message size
+! Compressed
 {{Template:Login_protocol_messages_Server_Client}}
 {{Template:Master_server_messages_Server_Client}}
 {{Template:Battle_messages_Server_Client}}
@@ -49,6 +53,8 @@ Organised by destination/sources to improve the income performance routing
 ! Destination
 ! Fixed Query size
 ! Fixed Reply size
+! Compressed Query
+! Compressed Reply
 {{Template:Inventory_messages_Client_Server_Reply}}
 {{Template:Base_protocol_messages_Client_Server_Reply}}
 {{Template:Login_protocol_messages_Client_Server_Reply}}
@@ -70,6 +76,8 @@ Organised by destination/sources to improve the income performance routing
 ! Destination
 ! Fixed Query size
 ! Fixed Reply size
+! Compressed Query
+! Compressed Reply
 {{Template:Battle_messages_Server_Client_Reply}}
 {{Template:Inventory_messages_Server_Client_Reply}}
 {{Template:Base_protocol_messages_Server_Client_Reply}}
