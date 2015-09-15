@@ -2,7 +2,7 @@
 
 Organised by destination/sources to improve the income performance routing
 
-'''No packet can be at same time compressed and with fixed size. Message is decompressed after the packet routing and control to prevent DDOS by dropping the double send (send 2 time or more the datapack list)'''
+'''No packet can be at same time compressed and with fixed size. Message/Query is decompressed after the packet routing and control to prevent DDOS by dropping the double send (send 2 time or more the datapack list)''', only the reply to sended query is directly decoded by the API
 
 == Client &rarr; Server ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
