@@ -37,6 +37,8 @@ Compression on upper level to prevent DDOS by flood packet with compression: 1) 
 The packet fixed size if max 252 to improve the performance, and greater than 252 the size header is a very few overhead
 In internal the 254 is existing packet without fixed size, 255 is unknown packet, 253 is compressed.
 
+'''No packet can be at same time compressed and with fixed size. Message is decompressed after the packet routing and control to prevent DDOS by dropping the double send (send 2 time or more the datapack list)'''
+
 = Messages type =
 {{note}}: The first byte send by server is 0x00 to say no encrypted or 0x01 to say encrypted by Ssl
 * [[Base protocol messages]]
