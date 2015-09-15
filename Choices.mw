@@ -20,3 +20,5 @@ The unique case where do that's it's very bad it's when you have multiple very s
 At exchange of that's you don't have hash table and the packet speed is boosted by 10x.
 
 With drop subcode, the table is into 256Bytes, and the performance in C is correct to don't add the size, then don't add the size for tcp socket (not web socket).
+
+The '''fixed size''' (always 32Bits) is for have defined offset to boost the packet compositing.
