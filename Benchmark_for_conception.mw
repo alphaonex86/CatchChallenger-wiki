@@ -478,15 +478,15 @@ Lower is better
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
 ! style="width: 12em" |
-! Unaligned result
-! Found set result
-! Not found set result
-! Found set Qt result
-! Not found set Qt result
-! Found set C result
-! Not found set C result
-! Found set C++ result
-! Not found set C++ result
+! Unaligned result C
+! Found '''unordered_set C++''' result
+! Not found '''unordered_set C++''' result
+! Found '''set Qt''' result
+! Not found '''set Qt''' result
+! Found '''array C''' result
+! Not found '''array C''' result
+! Found '''vector C++''' result
+! Not found '''vector C++''' result
 |-
 | x86 Intel haswell
 | style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 47ms
@@ -554,4 +554,4 @@ Lower is better
 | style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 466ms
 | style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 857ms
 |}
-Done with -std=c++0x, gcc 4.9.3 hardened, Qt core 5.4.2
+Done with -std=c++0x, gcc 4.9.3 hardened, Qt core 5.4.2. Most of access in memory is read only and 0 copy/allocation, because it's mostly read the datapack content to control. Mean this benchmark is very important due to huge read access at memory.
