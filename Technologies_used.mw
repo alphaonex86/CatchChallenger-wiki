@@ -34,6 +34,8 @@ To write a typical reply/message into CatchChallenger on the server (where the p
 
 [[File:text-vs-binary-protocol.png]]
 
+So why I use text (xml) into the datapack? Because it's to be easy to change the content and is statically loaded (not dynamically)
+
 == Anti DDOS and cost infrastructure ==
 All this technologies and a good compiler usage like -march=XXX, allow be anti-DDOS by nature because can support large number of request by second. Minimize the cost infrastructure and than allow cheaper game, more server for the players and then it's harder to DDOS. It's too easiest to administrate. The memory leak was checked in most typical case. And profiling is done to ensure correct performance and prevent software bloat and sensibility to DDOS attack.
 
