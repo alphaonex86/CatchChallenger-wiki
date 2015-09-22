@@ -152,7 +152,7 @@ Send file name list and first 4Byte of sha224 hash list:
  <span style="color: #FFBF00">16</span><span style="color: #40BF00">696d672f706c617965722f736b696e2d30312e706e67</span>
  <span style="color: #FF4000">XXXXXXXX</span>
  <span style="color: #FF4000">XXXXXXXX</span>
-{{compression}}: This packet is compressed. (104KB -> 28KB with gzip, 21KB with xz for inline partial hash, '''103KB -> 23KB with gzip, 17KB with xz for partial hash at the end''')
+{{compression}}: This packet is compressed. (104KB -> 28KB with gzip, 21KB with xz for inline partial hash, '''103KB -> 23KB with gzip, 17KB with xz for partial hash at the end''', test done on http version)
 
 [[Login_protocol_messages#Reply_020C|See reply to this query]]
 
