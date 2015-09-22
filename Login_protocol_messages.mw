@@ -152,7 +152,7 @@ Send file name list and first 4Byte of sha224 hash list:
  <span style="color: #FFBF00">16</span><span style="color: #40BF00">696d672f706c617965722f736b696e2d30312e706e67</span>
  <span style="color: #FF4000">XXXXXXXX</span>
  <span style="color: #FF4000">XXXXXXXX</span>
-This packet is compressed. (gain 3.7x with gzip, 4.9x with xz)
+{{compression}}: This packet is compressed. (gain 3.7x with gzip, 4.9x with xz)
 
 [[Login_protocol_messages#Reply_020C|See reply to this query]]
 
