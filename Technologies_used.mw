@@ -37,7 +37,9 @@ To write a typical reply/message into CatchChallenger on the server (where the p
 So why I use text (xml) into the datapack? Because it's to be easy to change the content and is statically loaded (not dynamically)
 
 == Anti DDOS and cost infrastructure ==
-All this technologies and a good compiler usage like -march=XXX, allow be anti-DDOS by nature because can support large number of request by second. Minimize the cost infrastructure and than allow cheaper game, more server for the players and then it's harder to DDOS. It's too easiest to administrate. The memory leak was checked in most typical case. And profiling is done to ensure correct performance and prevent software bloat and sensibility to DDOS attack.
+All this technologies and a good compiler usage like -march=XXX, improve the anti-DDOS by nature because can support large number of request/message by second. Minimize the cost infrastructure and than allow cheaper game, more server for the players and then it's harder to DDOS. It's more easiest to administrate. And profiling is done to ensure correct performance and prevent software bloat and sensibility to DDOS attack.
+
+The message/request is firstly order by weight, if is heavy allow few by seconds (or limited few time by session), if is light then allow more by seconds.
 
 == Fast path, fast (de)serialiser and 10Gbps ==
 The server have path to improve the performance and especially on common routine. For the read the fast path allow to store faster the information.
@@ -66,9 +68,11 @@ Tokeb allow to be a minimum secure included without encryption. OpenSsl encrypti
 Proxy socks4/5 to be more flexible around the data communication.
 
 == Compression and bandwidth ==
-Usage of compression format when is useful like xz to save a maximum of bandwith, zlib to have good ratio cpu/bandwith or nothing to maximize the cpu usage. All is studied to minimize the bandwidth included fixed message size. The [[Datapack's mirrors]] is studied to compressed all data, offload the game server, work as full and partial datapack update (via simplified rsync like protocol).
-Mirror for the datapack via the http/http2/spdy protocol: split the bandwith accross multiple server, keep the main server for game only to preserve bandwith/cpu, improve the data locality if you use content delivery network (CDN), with multiple game server improve the reactivity
+Usage of compression format when is useful like xz to save a maximum of bandwidth, zlib to have good ratio cpu/bandwidth or nothing to maximize the cpu usage. All is studied to minimize the bandwidth included fixed message size. The [[Datapack's mirrors]] is studied to compressed all data, offload the game server, work as full and partial datapack update (via simplified rsync like protocol).
+Mirror for the datapack via the http/http2/spdy protocol: split the bandwidth across multiple server, keep the main server for game only to preserve bandwith/cpu, improve the data locality if you use content delivery network (CDN), with multiple game server improve the latency
 Browser exploitable content
+
+{{compression}}: The noise is minimized (drop the random data) and isolated by reorder the data (the isolation allow 47% less size with gzip via zopfli, 33% with gzip via zlib, 35% with xz)
 
 = Datapack =
 == Client side server replication ==
