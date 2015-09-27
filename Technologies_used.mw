@@ -69,6 +69,8 @@ Proxy socks4/5 to be more flexible around the data communication.
 
 Direct tcp C call is used to have more performance and able to interface with high performance tcp: mTcp, libOS, ...
 
+See too: [[Internode communication]]
+
 == Compression and bandwidth ==
 Usage of compression format when is useful like xz to save a maximum of bandwidth, zlib to have good ratio cpu/bandwidth or nothing to maximize the cpu usage. All is studied to minimize the bandwidth included fixed message size. The [[Datapack's mirrors]] is studied to compressed all data, offload the game server, work as full and partial datapack update (via simplified rsync like protocol).
 Mirror for the datapack via the http/http2/spdy protocol: split the bandwidth across multiple server, keep the main server for game only to preserve bandwith/cpu, improve the data locality if you use content delivery network (CDN), with multiple game server improve the latency
