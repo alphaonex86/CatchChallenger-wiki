@@ -1,0 +1,11 @@
+= TCP or UDP =
+Same as client <-> server communication, it's user TCP, the overhead of TCP is minimized by in order packet receive, which allow somes optimizations.
+
+= Node organisation =
+* Parallel: force high connection number, and lot of bandwidth
+* Tree: The final/bottom node communicate only to one or few top lever server, no routing logic, more resistant to DDOS
+* P2P: Will be used for the version 3, to replace the master server to P2P node for the core. Continue to keep the bottom node isolated, the core have their own logic, allow hot plug, high scalability/availability and logic.
+
+= Endianness =
+
+= Unix socket =
