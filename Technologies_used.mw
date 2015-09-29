@@ -41,6 +41,8 @@ All this technologies and a good compiler usage like -march=XXX, improve the ant
 
 The message/request is firstly order by weight, if is heavy allow few by seconds (or limited few time by session), if is light then allow more by seconds.
 
+An integrated DDOS for OSI model layer 5 session is done to prevent DDOS coupled with firewall for lower layer.
+
 == Fast path, fast (de)serialiser and 10Gbps ==
 The server have path to improve the performance and especially on common routine. For the read the fast path allow to store faster the information.
 For thr write allow broadcast message without recompose it. That's and low memory allow the usage of 10Gbps like or better than other high performance server (nginx, lighttpd, ...)
