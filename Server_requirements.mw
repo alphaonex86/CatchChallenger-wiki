@@ -19,3 +19,10 @@ With 20 player, all displayed, the total are:
 Then for small server, ADSL connection can be used. Don't use wifi or mobile connection, the mobile delay is bad (but in this case, the latency will compact more the protocol on map move).
 
 To play with lot of player count 550KB/s (5Mbps) for 1000 player, all visible. 100Mbps seam good for 65535 players (the server limit).
+
+== Embedded ==
+To Work as Embedded:
+* #define CATCHCHALLENGER_MAXBDQUERIES 64
+* #define CATCHCHALLENGER_BIGBUFFERSIZE 512*1024
+* #define EPOLLCATCHCHALLENGERSERVERNOCOMPRESSION
+* Disable internal datapack sync, only with http mirror
