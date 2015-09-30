@@ -1,3 +1,5 @@
+[[File:Server-organisation.png|thumb|150px]]
+
 The server need be able to be splited and work as cluster, or work as one and unique server standalone.
 
 As well, each step need user input like:
@@ -5,8 +7,6 @@ As well, each step need user input like:
 # Game server selection, where the world can be the same but is mostly different to change the user experience (Game server)
 
 As well, if the point 2 is useless (only one Character or/and Game server), the selection is skipped, and the RTT is dropped.
-
-[[File:Server-organisation.png]]
 
 To be more clear for the network, when the server is grouped, only one port is open. If you have the unique server for Login server, Characters server, Game server only one port is open. It's more easy to administrate. And skip inter-server communication and list of performance.
 
@@ -44,6 +44,7 @@ The limit?
 The master will be replaced into the version 3 with p2p to be more scalable and be in high avaibility.
 
 == Exascale computing ==
+[[File:Exascale-graphic-story.jpg|thumb|300px]]
 https://en.wikipedia.org/wiki/Exascale_computing
 
 The power supported is into tree organisation: Power of node ^ Tree depth, example: if my code is able to support 100M of client, with 2 depth tree (100M of game server and one master server), you will have 10  000 000 billions of user supported. As you can see the scalability is not the unique factor, the power of the node too.
