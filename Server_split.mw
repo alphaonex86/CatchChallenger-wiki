@@ -41,7 +41,13 @@ The limit?
 
 = Arch =
 == P2P ==
-The master will be replaced into the version 3 with p2p to be more scalable and be in high avaibility.
+[[File:P2P.jpg|thumb|200px]]
+
+The master will be replaced into the version 3 with p2p to be more scalable and be in high availability.
+
+It's into trusted network but prefer prevent trust.
+
+Not share content, but locks.
 
 == Exascale computing ==
 [[File:Exascale-graphic-story.jpg|thumb|300px]]
