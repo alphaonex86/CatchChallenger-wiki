@@ -50,4 +50,9 @@ The power supported is into tree organisation: Power of node ^ Tree depth, examp
 
 For this kind of processing take care of this cpu factor: in order/out of order, L1/L2/Memory bandwith. Take care to the network layer, network driver and network card.
 
+With single core:
+* I never see more than 65535 player on single MMORPG server, then to minimize the memory and network usage the server limit is 65535. The scale is done by multiplication of server count. Mean: average network bandwidth: 7MB/s, 64MB of memory, 80000 packet per second
+* 4 billion of players implies very large map, logic slow down because need scan large list (map: O(n), player: O(ln(n))), need large resources on each node, can have problem with bottleneck (hardware as software). Mean: average network bandwidth: 400GB/s (yes need an 1000Gbps interface), 4TB of memory, 4 800 000 000 packet per second
+If multiple core, scale better doing multiple server on each core than multi threading
+
 MIMD is important factor, but we speak of more than 2000 core as you have into GPGPU.
