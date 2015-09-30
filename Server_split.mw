@@ -38,3 +38,14 @@ Why exists? Why use it?
 
 The limit?
 * This as MiM intercept the traffic (needed to change the datapack traffic to download from the gateway), you need have trust into the gateway. The couple login + password can't be intercepted, but the traffic can be modified.
+
+= Arch =
+== P2P ==
+The master will be replaced into the version 3 with p2p to be more scalable and be in high avaibility.
+
+== Exascale computing ==
+https://en.wikipedia.org/wiki/Exascale_computing
+
+The power supported is into tree organisation: Power of node ^ Tree depth, example: if my code is able to support 100M of client, with 2 depth tree (100M of game server and one master server), you will have 10  000 000 billions of user supported. As you can see the scalability is not the unique factor, the power of the node too.
+
+For this kind of processing take care of this cpu factor: in order/out of order, L1/L2/Memory bandwith. Take care to the network layer, network driver and network card.
