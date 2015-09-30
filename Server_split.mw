@@ -49,3 +49,5 @@ https://en.wikipedia.org/wiki/Exascale_computing
 The power supported is into tree organisation: Power of node ^ Tree depth, example: if my code is able to support 100M of client, with 2 depth tree (100M of game server and one master server), you will have 10  000 000 billions of user supported. As you can see the scalability is not the unique factor, the power of the node too.
 
 For this kind of processing take care of this cpu factor: in order/out of order, L1/L2/Memory bandwith. Take care to the network layer, network driver and network card.
+
+MIMD is important factor, but we speak of more than 2000 core as you have into GPGPU.
