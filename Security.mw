@@ -1,16 +1,31 @@
-= Databases manipulation =
+= Dev =
+== Databases manipulation ==
 * In case of databases manipulation: Always drop the used item from database, before insert update the new data generated.
 ** That's prevent hack on crash (if cash you lost the item used, but not use the item without drop from the inventory)
 ** '''Right way:''' You use recipe: Drop the recipe from database, if crash after this you lost you recipe, add the learned recipe the the databases.
 ** '''Wrong way:''' You use recipe: Add the recipe into the db, if crash after this you have you recipe and your recipe learned.
-= Anti DDOS and cost infrastructure =
+== Anti DDOS and cost infrastructure ==
 See: [http://catchchallenger.first-world.info/wiki/Technologies_used#Anti_DDOS_and_cost_infrastructure|Anti DDOS and cost infrastructure]
-= Optimization =
+== Optimization ==
 To limit the DDOS attack effect and maximize the botnet required
-= Async =
-Async to prevent a externe element (under mad effect as DDOS) freeze the program
+== Async ==
+Async to prevent a extern element (under mad effect as DDOS) freeze the program
 See: [http://catchchallenger.first-world.info/wiki/Technologies_used#Multiple_database_and_async|Multiple database and async]
-= Auth =
+== Auth ==
 All is after the authentication, then we need hardened the pre auth part.
 * If an account create DDOS, it's easy to block it
 * In case of automatic account creation, you need limit the creation rate
+== Other ==
+* Hash(password + random datas) = protect the auth without encryption
+* Double hash to protect from database dump
+* Salt to protect agains the rainbow table
+* Multiple database from various place into the world (the auth have their own database). Do the right with better security.
+
+= Structure =
+== Other ==
+* All the communications need be encrypted
+* All the destination need to be authenticated: save the public key or public key from i2p network
+* The logins server can be used as reverse proxy to hide the game server address
+* I2P can hide the server location, clients, crypt the communication and authenticate the destination
+* The gateway to pass from one network to other (TOR/I2P → internet), implie packet rewriting, then you need trust into him
+* Why I2P? If a node is disconnected, the packets are rerouted and the connection kept alive, useful to the permanent tcp connection
