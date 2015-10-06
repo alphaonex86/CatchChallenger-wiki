@@ -41,7 +41,7 @@ All this technologies and a good compiler usage like -march=XXX, improve the ant
 
 The message/request is firstly order by weight, if is heavy allow few by seconds (or limited few time by session), if is light then allow more by seconds.
 
-An integrated DDOS for OSI model layer 5 session is done to prevent DDOS coupled with firewall for lower layer.
+An integrated DDOS for OSI model layer 5 session is done to prevent DDOS coupled with firewall for lower layer. It's similar to [https://www.owasp.org/index.php/Web_Application_Firewall|Web Application Firewall]
 
 == Fast path, fast (de)serialiser and 10Gbps ==
 The server have path to improve the performance and especially on common routine. For the read the fast path allow to store faster the information.
