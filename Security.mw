@@ -32,7 +32,8 @@ All is after the authentication, then we need hardened the pre auth part.
 
 = Node =
 == Grsec ==
-Mount your CatchChallenger server under virtual machine '''on encrypted volume'''. That's mean, '''you can't start up automatically the server'''. You need start up manually and '''give the prompted password'''. Prevent physical access. Prevent bug or security break of your server. Grsec + Pax for linux kernel with option '''PAX_MEMORY_SANITIZE''' is good idea.
+Mount your CatchChallenger server under virtual machine '''on encrypted volume'''. That's mean, '''you can't start up automatically the virtual machine'''. You need start up manually and '''give the prompted password'''. Prevent physical access. Prevent bug or security break of your server. Grsec + Pax for linux kernel with option '''PAX_MEMORY_SANITIZE''' is good idea.
 See: [http://catchchallenger.first-world.info/wiki/Server/Client_with_I2P|Client with I2P]
+
 == Lxc ==
 Allow easy migrate, backup and you have always access the the guest event if it's hacked.
