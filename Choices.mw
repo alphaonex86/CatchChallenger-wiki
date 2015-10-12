@@ -14,6 +14,7 @@ To do easy load teleport, the teleport after lost a battle is do by normal telep
 == Path finding ==
 To minimize the cost of the infrastruture, we do an unique algorithm: not the sortest path but the path with less direction changing. Minimise the network bandwith, minimise the context switch to improve the performance (as OS part and application part).
 = Protocol =
+
 == Message size on each packet (web socket) ==
 The unique case where do that's it's very bad it's when you have multiple very small packet aggregated. I will try never do that's. And for very small trafic the overhead will be 30% but 1KB transmited or 1.3KB it's same.
 
@@ -21,4 +22,16 @@ At exchange of that's you don't have hash table and the packet speed is boosted 
 
 With drop subcode, the table is into 256Bytes, and the performance in C is correct to don't add the size, then don't add the size for tcp socket (not web socket).
 
-The '''fixed size''' (always 32Bits) is for have defined offset to boost the packet compositing.
+The '''fixed size''' (always 32Bits) is for have defined offset to boost the packet composing.
+
+== Max player ==
+
+The max player is not fixed size to minimize the bandwidth (lot of individual small packet). Then you have at each code part:
+  if(max player<=255)
+    do 8Bits cast
+  else
+    do 16Bits cast
+
+* Why not only 255? Because is too low to organize big event, and lot of player will feal it too limited.
+* Why 65535 max player? Because 255 is supported but not the max, and the other value is not the best.
+* Why not 4 billions of players? Because most of MMO server don't have more than 200 000 players, then '''nearest of 65535 than 4 billions'''. At this scale, lot of hardware don't scale well, no hardware support 4 billions (lack of memory, include in multi core the [https://en.wikipedia.org/wiki/Instructions_per_second Instructions per second] is too poor to support it, without speak about the network interface limit). The overhead of 32Bits entry is huge at network scale ('''Mostly double the bandwidth'''), and it's better do multiple server than one big server.
