@@ -113,7 +113,7 @@ charactersGroupIndex: <span style="color: #FF0040">01</span>, Server unique key:
 
 See too [[Master_server_messages#8101|Get token for character select]]
 
-[[Master server messages#Reply_0207|See reply to this query]]
+[[Login_protocol_messages#Reply_0205|See reply to this query]]
 
 == Client &rarr; Server without reply ==
 === 4501 ===
