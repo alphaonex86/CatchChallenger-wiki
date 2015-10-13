@@ -34,7 +34,9 @@ To write a typical reply/message into CatchChallenger on the server (where the p
 
 [[File:text-vs-binary-protocol.png]]
 
-So why I use text (xml) into the datapack? Because it's to be easy to change the content and is statically loaded (not dynamically)
+So why I use text (xml) into the datapack? Because it's to be easy to change the content and is statically loaded (not dynamically).
+
+It '''improve the need of compression''': the text need often the compression, the binary with correct structure don't need compression and '''improve greatly the compression ratio'''. Of course binary vs hexa divide by 2 the size of random data (or hard to compress)
 
 == Anti DDOS and cost infrastructure ==
 All this technologies and a good compiler usage like -march=XXX, improve the anti-DDOS by nature because can support large number of request/message by second. Minimize the cost infrastructure and than allow cheaper game, more server for the players and then it's harder to DDOS. It's more easiest to administrate. And profiling is done to ensure correct performance and prevent software bloat and sensibility to DDOS attack.
