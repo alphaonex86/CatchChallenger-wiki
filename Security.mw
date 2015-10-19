@@ -5,7 +5,8 @@
 ** '''Right way:''' You use recipe: Drop the recipe from database, if crash after this you lost you recipe, add the learned recipe the the databases.
 ** '''Wrong way:''' You use recipe: Add the recipe into the db, if crash after this you have you recipe and your recipe learned.
 == Anti DDOS and cost infrastructure ==
-See: [http://catchchallenger.first-world.info/wiki/Technologies_used#Anti_DDOS_and_cost_infrastructure|Anti DDOS and cost infrastructure]
+See: [http://catchchallenger.first-world.info/wiki/Technologies_used#Anti_DDOS_and_cost_infrastructure Anti DDOS and cost infrastructure]
+
 == Optimization ==
 To limit the DDOS attack effect and maximize the botnet required
 == Async ==
