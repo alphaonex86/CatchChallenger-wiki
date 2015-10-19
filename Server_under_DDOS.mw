@@ -27,3 +27,6 @@ The settings to use:
 * Force the seed
 * Don't send pseudo
 * Enable zlib/xz compression if the usage cpu is low (<10%)
+
+== See ==
+See: [http://catchchallenger.first-world.info/wiki/Technologies_used#Anti_DDOS_and_cost_infrastructure|Anti DDOS and cost infrastructure]
