@@ -45,6 +45,8 @@ The message/request is firstly order by weight, if is heavy allow few by seconds
 
 An integrated DDOS for OSI model layer 5 session is done to prevent DDOS coupled with firewall for lower layer. It's similar to [https://www.owasp.org/index.php/Web_Application_Firewall|Web Application Firewall]
 
+See: [http://catchchallenger.first-world.info//other/DDOS.odp]
+
 == Fast path, fast (de)serialiser and 10Gbps ==
 The server have path to improve the performance and especially on common routine. For the read the fast path allow to store faster the information.
 For thr write allow broadcast message without recompose it. That's and low memory allow the usage of 10Gbps like or better than other high performance server (nginx, lighttpd, ...)
