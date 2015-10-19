@@ -70,12 +70,13 @@ It's the unique game as I known what use path find to determine the path with th
 
 = Protocol =
 == Network communication ==
-Token allow to be a minimum secure included without encryption. OpenSsl encryption is used, self signed certificate is supported with transparent public key registering on client part to do more easy the self hosting.
+hash(pass+random) allow to be a minimum secure included without encryption. OpenSsl encryption is used, self signed certificate is supported with transparent public key registering on client part to do more easy the self hosting.
 Proxy socks4/5 to be more flexible around the data communication.
 
 Direct tcp C call is used to have more performance and able to interface with high performance tcp: mTcp, libOS, ...
 
-See too: [[Internode communication]]
+* See: [[Internode communication]]
+* See: [http://catchchallenger.first-world.info/other/crypto-para-dev.odp Cryto para dev (es)]
 
 == Compression and bandwidth ==
 Usage of compression format when is useful like xz to save a maximum of bandwidth, zlib to have good ratio cpu/bandwidth or nothing to maximize the cpu usage. All is studied to minimize the bandwidth included fixed message size. The [[Datapack's mirrors]] is studied to compressed all data, offload the game server, work as full and partial datapack update (via simplified rsync like protocol).
