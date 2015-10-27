@@ -376,6 +376,8 @@ Here the important is the coefficient director between the idle and 100 players.
 ! Optional data
 |}
 
+[[File:catchchallenger-server-hardware.jpg|400px|thumb|CatchChallenger server hardware requirement]]
+
 * <span style="background: #ffc65d; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" class="table-proprietary"|{{{1|[[Proprietary software|Proprietary]]}}}>'''Full:''' All the intellectual property/logic, ... is into it and you can mount a server with the datapack downloaded on the client (then include too, bot, door, ...). That's minimize the RTT, improve the backup, minimize the communication, ...</span>
 * '''Unique format:''' Usage only of one type of file (.ini, .xml, ...) not multiple
 * '''Correct image:''' Use png with alpha (not color as transparency), no .bmp or other bad/buggy format, don't need read external offset to use it
