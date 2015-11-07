@@ -284,6 +284,8 @@ Second list part with same size
 
 <span style="color: #40BFFF">06</span> (is supported, compression: Xz)
 
+<span style="color: #40BFFF">07</span> (is supported, compression: Lz4)
+
 {{Note}}After this, all communication is into the packet size mode send by the protocol.
 
 === Reply 04 ===
