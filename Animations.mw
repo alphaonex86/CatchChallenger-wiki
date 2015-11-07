@@ -37,7 +37,7 @@ The position (0 start, 2 final of the second step):
 [[File:Timer-multiple-into-software.png|200px|thumb|right|Timer into sotware]]
 
 The timer is greatly better, ever more to tile what need change at sasme time:
-* Prevent interrupt flood, better energies management
+* Prevent interrupt flood, better power management
 * Prevent have more than hardware limit of timer programmed
 * For all tile change at same time
 * Prevent receive too many epoll event, and multiple very similar kernel code execution
