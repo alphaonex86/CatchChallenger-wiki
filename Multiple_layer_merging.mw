@@ -1,0 +1,6 @@
+[[File:Multiple-layer.jpg|500px|thumb|left|Multiple layer]]
+
+= Multi layer merge =
+The graphic card don't known what is the changing layer, what is pure static layer. Then It redraw each layer above the other.
+
+It's you in programing to group the static layer, merge it to prevent the GPU do the multiple same draw.
