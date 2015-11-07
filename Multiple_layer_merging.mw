@@ -1,12 +1,6 @@
-[[File:Multiple-layer.jpg|500px|thumb|right|Multiple layer]]
+[[File:Multiple-layer.jpg|500px|thumb|left|Multiple layer]]
 
 = Multi layer merge =
 The graphic card don't known what is the changing layer, what is pure static layer. Then It redraw each layer above the other.
 
-It's you in programing to group the static layer, merge it to prevent the GPU do the multiple same draw (You don't use the CPU/GPU to merge always the static/same image to do the same result).
-
-For CatchChallenger and official datapack, this improve the framerate by 3-6x depending of the map. On Optimised map, this improve the framerate by 2-3x.
-
-[[File:Castel-town-Walkable.png|200px|thumb|left|Castel-town-Walkable layer]]
-[[File:Castel-town-Colision.png|200px|thumb|left|Castel-town-Colision layer]]
-[[File:Castel-town-merge.png|200px|thumb|left|Castel-town-merge layer]]
+It's you in programing to group the static layer, merge it to prevent the GPU do the multiple same draw.
