@@ -42,3 +42,5 @@ The timer is greatly better, ever more to tile what need change at sasme time:
 * For all tile change at same time
 * Prevent receive too many epoll event, and multiple very similar kernel code execution
 * Improve greatly the context switch and allow transparent compiler optimisation
+
+[[File:Water-multiple-tile-animation.gif]]
