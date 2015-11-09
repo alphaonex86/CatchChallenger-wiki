@@ -94,6 +94,17 @@ Send:
 Then:
   <span style="color: #40BF00">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span>, <span style="color: #FF0040">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span><br />
 
+Characteristics:
+* Login
+** Used as index
+** Can't be mixed with token else the index change
+** How get the salt by account before be logged?
+* Password
+** Mixed with token to authenticate by shared secret
+*** If Hash on this shared secret is split you can match the similar account
+** Salt by account can't be mixed with hash because the secret is hidden (Salt by account incompatible Shared secret?)
+
+
 [[Login_protocol_messages#Reply_04|See reply to this query]]
 
 === 05 ===
