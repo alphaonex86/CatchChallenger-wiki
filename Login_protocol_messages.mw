@@ -114,9 +114,9 @@ Send:
 ** '''Prevent login leak in case of MiM attack re-ask the password''' (Trafic modification, replace the server return code OK by ACCOUNT CREATION)
 ** Do some DDOS protection because it offload the hashing
 * sha224(pass+/*salt*/"AwjDvPIzfJPTTgHs")
-* dynamic salt, 4 Byte
+
 Then:
-  <span style="color: #40BF00">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span>, <span style="color: #FF0040">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span><span style="color: #40BF00">32cfa37a</span>
+  <span style="color: #40BF00">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span>, <span style="color: #FF0040">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span>
 
 [[Login_protocol_messages#Reply_05|See reply to this query]]
 
