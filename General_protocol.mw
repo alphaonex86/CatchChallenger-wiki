@@ -36,6 +36,8 @@ In internal the 254 is existing packet without fixed size, 255 is unknown packet
 
 {{Template:FixedSizeAndCompression}}
 
+The '''query number can be only from 0 to 15''', because can only have 16 conccurent query.
+
 = Messages type =
 {{note}}: The first byte send by server is 0x00 to say no encrypted or 0x01 to say encrypted by Ssl
 * [[Base protocol messages]]
