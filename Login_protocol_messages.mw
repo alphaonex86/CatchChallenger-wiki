@@ -104,6 +104,7 @@ Characteristics:
 *** If Hash on this shared secret is split you can match the similar account
 ** Salt by account can't be mixed with hash because the secret is hidden (Salt by account incompatible Shared secret?)
 
+'''Then I choice data communication security''' (shared secret) '''over database security''' (Salt + Hash), login is unique in all case, then hash unique
 
 [[Login_protocol_messages#Reply_04|See reply to this query]]
 
