@@ -45,28 +45,3 @@ This is process running on rpi, each use space into kernel table, increase the k
   root     21858  0.0  0.9   2864  1740 pts/0    R+   18:31   0:00 ps aux
 
 Each time passed into the process is context switch, meam flush L1/L2 of the cpu, to route the correct epoll data from tcp packet to software, need use resolution table, more process listening, more bigger is the table. Same for lot of kernel mechanism (include process scheduling).
-
-= Do a ROM =
-Do a ROM for typical server node, allow clone and deploy it quickly, and have cluster for CatchChallenger.
-
-= Route the event =
-To route the event (network, timer, next process to run, ...), into the kernel you have some tab le like this:
-
-[[File:Btree.png]]
-
-Or
-
-[[File:Linkedlist.jpg]]
-
-Or other structure.
-
-More process, more elements into the list, more time to go to the correct element. Each time you seek into another memory location, you loose performance (Only the next memory block is prefetched). You will increase the cache pression and cache miss:
-
-[[File:Cpu-caching-pyramid.png]]
-
-And the scheduling for IO block but can be applied to network and other area:
-
-[[File:IO_stack_of_the_Linux_kernel.svg.png|thumb|500px]]
-
-
-'''Mean running other vm on same hardwre, include if don't use cpu, network, ... will do bigger and slower this table.'''
