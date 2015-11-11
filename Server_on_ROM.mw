@@ -1,0 +1,47 @@
+Why put the server on rom? To minimize the context change.
+
+This is process running on rpi, each use space into kernel table, increase the kernel routing time/complexity and task management:
+
+  root         1  0.0  0.5   1652  1076 ?        Ss   Sep30   2:11 init [3]  
+  root         2  0.0  0.0      0     0 ?        S    Sep30   0:00 [kthreadd]
+  root         3  0.0  0.0      0     0 ?        S    Sep30   1:47 [ksoftirqd/0]
+  root         5  0.0  0.0      0     0 ?        S<   Sep30   0:00 [kworker/0:0H]
+  root         7  0.0  0.0      0     0 ?        S    Sep30  16:08 [rcu_preempt]
+  root         8  0.0  0.0      0     0 ?        S    Sep30   0:00 [rcu_sched]
+  root         9  0.0  0.0      0     0 ?        S    Sep30   0:00 [rcu_bh]
+  root        10  0.0  0.0      0     0 ?        S<   Sep30   0:00 [khelper]
+  root        11  0.0  0.0      0     0 ?        S    Sep30   0:00 [kdevtmpfs]
+  root        12  0.0  0.0      0     0 ?        S<   Sep30   0:00 [netns]
+  root        13  0.0  0.0      0     0 ?        S<   Sep30   0:00 [writeback]
+  root        14  0.0  0.0      0     0 ?        S<   Sep30   0:00 [crypto]
+  root        15  0.0  0.0      0     0 ?        S<   Sep30   0:00 [kintegrityd]
+  root        16  0.0  0.0      0     0 ?        S<   Sep30   0:00 [bioset]
+  root        17  0.0  0.0      0     0 ?        S<   Sep30   0:00 [kblockd]
+  root        18  0.0  0.0      0     0 ?        S    Sep30   0:00 [kworker/0:1]
+  root        21  0.0  0.0      0     0 ?        S    Sep30   0:00 [kswapd0]
+  root        22  0.0  0.0      0     0 ?        S    Sep30   0:00 [fsnotify_mark]
+  root        71  0.0  0.0      0     0 ?        S<   Sep30   0:00 [kthrotld]
+  root        72  0.0  0.0      0     0 ?        S<   Sep30   0:00 [bcm2708_spi.0]
+  root        73  0.0  0.0      0     0 ?        S<   Sep30   0:00 [dwc_otg]
+  root        74  0.0  0.0      0     0 ?        S<   Sep30   0:00 [DWC Notificatio]
+  root        76  0.0  0.0      0     0 ?        S<   Sep30   0:00 [ipv6_addrconf]
+  root        77  0.0  0.0      0     0 ?        S<   Sep30   0:00 [bioset]
+  root        78  0.0  0.0      0     0 ?        S<   Sep30   0:00 [deferwq]
+  root        80  0.0  0.0      0     0 ?        S    Sep30   0:03 [mmcqd/0]
+  root        81  0.0  0.0      0     0 ?        S    Sep30   0:01 [jbd2/mmcblk0p2-]
+  root        82  0.0  0.0      0     0 ?        S<   Sep30   0:00 [ext4-rsv-conver]
+  root        83  0.0  0.0      0     0 ?        S    Sep30   0:26 [kworker/0:2]
+  root       272  0.0  1.1   9316  2160 ?        Ss   Sep30   0:00 /lib/systemd/systemd-udevd --daemon
+  root       278  0.0  0.0      0     0 ?        S<   Sep30   0:00 [kworker/0:1H]
+  root       844  0.0  1.1   4944  2164 ?        Ss   Sep30   0:53 /usr/sbin/sshd
+  root       890  0.0  4.9  11008  9328 ?        SNs  Sep30  40:53 /usr/bin/perl -wT /usr/sbin/munin-node --config /etc/munin/munin-node.conf
+  munin-a+   913  0.0  3.9   8600  7392 ?        Ss   Sep30  15:27 munin-asyncd [unknown] [idle]
+  root       952  0.0  0.8   2104  1556 ?        Ss   Sep30   0:19 /usr/sbin/cron
+  root       955  0.0  2.5   4988  4756 ?        SLs  Sep30  10:19 /usr/sbin/ntpd -p /var/run/ntpd.pid -g
+  root      9212  0.0  0.0      0     0 ?        S    12:30   0:00 [kworker/u2:2]
+  root     20636  0.0  0.0      0     0 ?        S    17:59   0:00 [kworker/u2:0]                                                                                                                                                                                                
+  root     21852  7.3  2.1   8040  4080 ?        Ss   18:31   0:00 sshd: root@pts/0                                                                                                                                                                                              
+  root     21854  2.6  1.5   3372  2884 pts/0    Ss   18:31   0:00 -bash                                                                                                                                                                                                         
+  root     21858  0.0  0.9   2864  1740 pts/0    R+   18:31   0:00 ps aux
+
+Each time passed into the process is context switch, meam flush L1/L2 of the cpu, to route the correct epoll data from tcp packet to software, need use resolution table, more process listening, more bigger is the table. Same for lot of kernel mechanism (include process scheduling).
