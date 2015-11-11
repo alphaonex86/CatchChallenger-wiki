@@ -45,3 +45,6 @@ This is process running on rpi, each use space into kernel table, increase the k
   root     21858  0.0  0.9   2864  1740 pts/0    R+   18:31   0:00 ps aux
 
 Each time passed into the process is context switch, meam flush L1/L2 of the cpu, to route the correct epoll data from tcp packet to software, need use resolution table, more process listening, more bigger is the table. Same for lot of kernel mechanism (include process scheduling).
+
+= Do a ROM =
+Do a ROM for typical server node, allow clone and deploy it quickly, and have cluster for CatchChallenger.
