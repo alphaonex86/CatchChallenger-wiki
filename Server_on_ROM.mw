@@ -66,4 +66,7 @@ More process, more elements into the list, more time to go to the correct elemen
 
 And the scheduling for IO block but can be applied to network and other area:
 
-[[File:IO_stack_of_the_Linux_kernel.svg.png|thumb|500px|left]]
+[[File:IO_stack_of_the_Linux_kernel.svg.png|thumb|500px]]
+
+
+'''Mean running other vm on same hardwre, include if don't use cpu, network, ... will do bigger and slower this table.'''
