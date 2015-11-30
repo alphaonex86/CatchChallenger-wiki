@@ -1,17 +1,3 @@
 * http://catchchallenger.first-world.info/other/datacenter.odp
 * http://catchchallenger.first-world.info/other/operador-internet.odp
-* [[Latency and RTT in Bolivia]]
-* [http://catchchallenger.first-world.info/other/proposition-internet-bolivia.odp Proposition internet bolivia]
-
-= http2 =
-I confirm the result found by other on the web. Over 0% paclet lost http 2 is really better than http 1.1. But worse if you have packet lost.
-
-= Bolivia problem =
-[[File:Fiber-remote-problem.jpg]]
-[[File:P2p-bolivia.png]]
-
-= Possible datacenter route =
-[[File:datacenter-route.jpg]]
-
-= Details and photo =
-Implementation details on: [[Portable datacenter]]
+En preuva en santa cruz
