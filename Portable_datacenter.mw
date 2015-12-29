@@ -39,6 +39,12 @@ On '''utilite''', '''deny the access to 192.168.X.X''', only forward to internet
 = Income route =
 To route the income connexion, for http I use haproxy for normal ip trafic. But I route via i2p too for secure and more general routing (http, MMORPG server, ...).
 
+= Backup =
+The backup is snapshoted by btrfs, rsync to be exported, and keep as snapshot to have backup diff as high efficienty and compressed backup
+
+= Hot switching =
+Hot switching is allowed by lxc 1.1 to migrate transparently the vm from one hardware to other.
+
 = Links =
 * [[Latency and RTT in Bolivia]]
 * [http://catchchallenger.first-world.info/other/proposition-internet-bolivia.odp Proposition internet bolivia]
