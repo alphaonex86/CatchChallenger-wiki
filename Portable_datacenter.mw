@@ -45,6 +45,9 @@ The backup is snapshoted by btrfs, rsync to be exported, and keep as snapshot to
 = Hot switching =
 Hot switching is allowed by lxc 1.1 to migrate transparently the vm from one hardware to other.
 
+That allow physical mobility:
+[[File:Datacenter-truck.jpg]]
+
 = Advanced router =
 Standard level 2 switch is used, not administrable, then how do you protect? By the virtualisation layer, it force the ip and mac address, route de packet, do some firewall filter.
 
