@@ -370,6 +370,10 @@ This reply is compressed.
 * <span style="color: #FF4000">02</span> (Login already used)
 * <span style="color: #FF4000">03</span> (Not created)
 
+=== Reply AD ===
+* <span style="color: #FF4000">01</span> (Ok)
+* <span style="color: #FF4000">02</span> (Refused)
+
 === Reply 0203 ===
 Return code: <span style="color: #40BFBF">00</span> (00 = success, 01 = pseudo already taken, 02 = have already maximum of charaters, 03 = Server internal error)
 
