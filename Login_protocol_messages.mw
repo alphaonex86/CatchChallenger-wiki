@@ -112,6 +112,8 @@ Characteristics:
 === AD ===
 sha224(9cd6498d unique token + random dynamique token 9cd6498d)
 
+[[Login_protocol_messages#Reply_AD|See reply to this query]]
+
 === 05 ===
 Send:
 * sha224(sha224(login+/*salt*/"RtR3bm9Z1DFMfAC3"))
