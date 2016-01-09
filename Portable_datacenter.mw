@@ -50,6 +50,10 @@ That allow physical mobility:
 [[File:Datacenter-truck.jpg]]
 [[File:Decentralised-datacenter.jpg]]
 
+Else:
+* Easy close datacenter node
+* Equilibrate the load on the hardware
+
 = Advanced router =
 Standard level 2 switch is used, not administrable, then how do you protect? By the virtualisation layer, it force the ip and mac address, route de packet, do some firewall filter.
 
