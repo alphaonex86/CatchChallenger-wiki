@@ -48,6 +48,7 @@ Hot switching is allowed by lxc 1.1 to migrate transparently the vm from one har
 
 That allow physical mobility:
 [[File:Datacenter-truck.jpg]]
+[[File:Decentralised-datacenter.jpg]]
 
 = Advanced router =
 Standard level 2 switch is used, not administrable, then how do you protect? By the virtualisation layer, it force the ip and mac address, route de packet, do some firewall filter.
