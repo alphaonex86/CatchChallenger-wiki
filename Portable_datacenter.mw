@@ -50,7 +50,7 @@ That allow physical mobility:
 [[File:Datacenter-truck.jpg]]
 [[File:Decentralised-datacenter.jpg|800px]]
 
-Else:
+* Place geographically where you have the best bandwith for datacenter and customer
 * Easy close datacenter node
 * Equilibrate the load on the hardware
 * Nearest database to their site
