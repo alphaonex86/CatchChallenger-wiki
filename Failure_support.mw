@@ -1,0 +1,33 @@
+The cluster mode need to be resistant to failure.
+
+= Network =
+== Login ==
+Work, just use another login server. You should load balance the traffic and exclude the no functional node (via ip, dns, ...).
+
+Resuming normal operation: Just repair the network, the login will reconnect him self to the master and be available.
+== Master ==
+Important, it's single point of failure, but: All the player connected on game server will transparently continue to play (via the direct mode or proxy mode). No new connection allowed during this period.
+
+Resuming normal operation: Just repair the network, all the server will reconnect him self and the disconnection will be merged to the lock list.
+== Game server ==
+All the player will be disconnected, this mode of work allow cheaper operation, fastest performance. The player will wait the repair or play to other game server.
+
+Resuming normal operation: Repair the network, after the master re-connection the player will come again.
+
+= Hardware =
+== Login ==
+Work, just use another login server. You should load balance the traffic and exclude the no functional node (via ip, dns, ...).
+* Work with hdd dead if configured with mirror to offload the datapack loading.
+
+Resuming normal operation: Just repair the network, the login will reconnect him self to the master and be available.
+== Master ==
+Important, it's single point of failure, but: All the player connected on game server will transparently continue to play (via the direct mode or proxy mode). No new connection allowed during this period.
+* Work with hdd dead, no disk access after success full server start
+
+Resuming normal operation: Just repair the network, all the server will reconnect him self and the disconnection will be merged to the lock list.
+
+== Game server ==
+All the player will be disconnected, this mode of work allow cheaper operation, fastest performance. The player will wait the repair or play to other game server.
+* Work with hdd dead if configured with mirror to offload the datapack loading.
+
+Resuming normal operation: Repair the network, after the master re-connection the player will come again.
