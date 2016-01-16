@@ -14,6 +14,11 @@ Support into the client: lib tiled for QGraphicView or QML
 
 The spawn point is useless, when map change, your are teleported at the middle. If you are blocked ask to the administrator, command to random teleport to low level village will be implanted too.
 
+= Mapper, map developer =
+* Prefer tiled map as random placement (square tree better than random planted tree): better compression ratio, less direction change, leave empty the layer zone hidden by other top layer
+* Do the map to the player change direction after 64 tiles, no right line to walk more of 64 tile.
+* Prefer map <64x64 but prefer unique map for same elements: example: if you have a big city into more than 64x64 don't split it, '''never do more than 255x255'''
+
 = Map content =
 == General properties ==
 Why not all into the xml? To minise the number of file.
