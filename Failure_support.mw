@@ -24,7 +24,7 @@ Resuming normal operation: Just repair the network, the login will reconnect him
 Important, it's single point of failure, but: All the player connected on game server will transparently continue to play (via the direct mode or proxy mode). No new connection allowed during this period.
 * Work with hdd dead, no disk access after success full server start
 
-Resuming normal operation: Just repair the network, all the server will reconnect him self and the disconnection will be merged to the lock list.
+Resuming normal operation: Just repair the network, all the server will reconnect him self and the disconnection will be merged to the lock list. In case of restart of master server, all the player id/lock connected on game server will be merged to remake the lock list. In case of conflict, both player will be ejected and the player blocked for determined time.
 
 == Game server ==
 All the player will be disconnected, this mode of work allow cheaper operation, fastest performance. The player will wait the repair or play to other game server.
