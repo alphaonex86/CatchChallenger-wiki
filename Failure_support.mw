@@ -19,15 +19,15 @@ Resuming normal operation: Repair the network, after the master re-connection th
 Work, just use another login server. You should load balance the traffic and exclude the no functional node (via ip, dns, ...).
 * Work with hdd dead if configured with mirror to offload the datapack loading.
 
-Resuming normal operation: Just repair the network, the login will reconnect him self to the master and be available.
+Resuming normal operation: Just repair the hardware, restart the login server if needed, and the node will be readded to the network. If HA balancing, it need take care of it.
 == Master ==
 Important, it's single point of failure, but: All the player connected on game server will transparently continue to play (via the direct mode or proxy mode). No new connection allowed during this period.
 * Work with hdd dead, no disk access after success full server start
 
-Resuming normal operation: Just repair the network, all the server will reconnect him self and the disconnection will be merged to the lock list. In case of restart of master server, all the player id/lock connected on game server will be merged to remake the lock list. In case of conflict, both player will be ejected and the player blocked for determined time.
+Resuming normal operation: Just repair the hardware, all the server will reconnect him self and the disconnection will be merged to the lock list. In case of restart of master server, all the player id/lock connected on game server will be merged to remake the lock list. In case of conflict, both player will be ejected and the player blocked for determined time.
 
 == Game server ==
 All the player will be disconnected, this mode of work allow cheaper operation, fastest performance. The player will wait the repair or play to other game server.
 * Work with hdd dead if configured with mirror to offload the datapack loading.
 
-Resuming normal operation: Repair the network, after the master re-connection the player will come again.
+Resuming normal operation: Repair the hardware, after the master re-connection the player will come again.
