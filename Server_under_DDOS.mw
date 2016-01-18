@@ -20,6 +20,7 @@ The settings to use:
 * Put the compression to none, to limit the '''cpu''' but '''grow the bandwith'''
 * Use http datapack cache if you can, to limit the '''cpu, bandwith and hdd''' usage
 * Disable ''Automatic account creation'' to prevent continuous more entry into the database, to limit the '''cpu, bandwith, space and hdd''' usage
+* reemit: use '''more bandwidth''' because reemit the player move and '''improve the cpu''' performance because it send the same composed packet to all player
 
 == Upload saturated ==
 * All above
