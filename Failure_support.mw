@@ -1,5 +1,14 @@
 The cluster mode need to be resistant to failure.
 
+From Wikipedia:
+<blockquote>Disaster recovery (DR) involves a set of policies and procedures to enable the recovery or continuation of vital technology infrastructure and systems following a natural or human-induced disaster. Disaster recovery focuses on the IT or technology systems supporting critical business functions, as opposed to business continuity, which involves keeping all essential aspects of a business functioning despite significant disruptive events. Disaster recovery is therefore a subset of business continuity.</blockquote>
+
+<blockquote>Business continuity encompasses a loosely defined set of planning, preparatory and related activities which are intended to ensure that an organization's critical business functions will either continue to operate despite serious incidents or disasters that might otherwise have interrupted them, or will be recovered to an operational state within a reasonably short period. As such, business continuity includes three key elements and they are
+
+* Resilience: critical business functions and the supporting infrastructure are designed and engineered in such a way that they are materially unaffected by most disruptions, for example through the use of redundancy and spare capacity;
+* Recovery: arrangements are made to recover or restore critical and less critical business functions that fail for some reason.
+* Contingency: the organization establishes a generalized capability and readiness to cope effectively with whatever major incidents and disasters occur, including those that were not, and perhaps could not have been, foreseen. Contingency preparations constitute a last-resort response if resilience and recovery arrangements should prove inadequate in practice.</blockquote>
+
 = Network =
 == Login ==
 Work, just use another login server. You should load balance the traffic and exclude the no functional node (via ip, dns, ...).
