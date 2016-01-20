@@ -31,3 +31,6 @@ All the player will be disconnected, this mode of work allow cheaper operation, 
 * Work with hdd dead if configured with mirror to offload the datapack loading.
 
 Resuming normal operation: Repair the hardware, after the master re-connection the player will come again.
+
+= Database =
+If it disconnected to database (network o database restart), it will loop to reconnect to the database until it reach it.
