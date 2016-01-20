@@ -47,3 +47,14 @@ Grsecurity is an extensive security enhancement to the Linux kernel that defends
 
 == Lxc ==
 Allow easy migrate, backup and you have always access the the guest event if it's hacked.
+
+= Algo =
+== Brute force the hash for auth ==
+Well, the hash for login is easy to bruteforce, double sha224 and you are ready. It's low security because most user will use easy login or same as their character name.
+
+The pass hash is like that's: pass+/*salt*/"AwjDvPIzfJPTTgHs"+login, to minimize the cpu cycle you can:
+* add data to your sha224: pass+/*salt*/"
+* dump it
+* try in loop:
+** test all the login
+** set the dump
