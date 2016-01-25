@@ -177,6 +177,8 @@ Or
 * <span style="color: #40BFFF">03</span> (03 = character group not found)
 Or
 * <span style="color: #40BFFF">04</span> (04 = token wrong)
+Or
+* <span style="color: #40BFFF">05</span> (05 = logical group not found)
 
 === Reply 08 ===
 * <span style="color: #40BFFF">01</span> (01 = token ok)
