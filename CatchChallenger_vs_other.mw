@@ -105,7 +105,7 @@ This is just for me, to have comparaison.
 | style="background: #90ff90; color: black;" | 65535 (2) * Number of server node
 | style="background: #90ff90; color: black;" | 0%
 | 3MB
-| 6MB
+| 3MB at idle + 200KB
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
