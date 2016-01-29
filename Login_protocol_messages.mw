@@ -394,7 +394,7 @@ If something is wrong:
 
 Wrong, case possible:
 * <span style="color: #FF4000">02</span> (Character not found)
-* <span style="color: #FF4000">03</span> (Character already connected/online)
+* <span style="color: #FF4000">03</span> (Character already connected/online or too recently disconnected)
 * <span style="color: #FF4000">04</span> (Server internal problem)
 * <span style="color: #FF4000">05</span> (Server not found)
 
