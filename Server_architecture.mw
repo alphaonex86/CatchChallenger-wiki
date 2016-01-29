@@ -40,3 +40,7 @@ Is used to profile specific code. Not implemented for now into catchchallenger, 
 Is used to profile the normal usage, with step, chat usage, and all used into the normal play.
 
 Implemented into catchchallenger. Useful to know the general memory usage, ... But have few variety of action do (only step for now).
+
+= Game server =
+== Startup procedure ==
+The game server start up first as sequential, after it switch to event mode to support the SQL async return.
