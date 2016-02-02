@@ -1,0 +1,19 @@
+You you have all the guideline for the datapack.
+
+= Tile =
+Do repeated tile partern:
+[[File:map-with-monster-area.png]]
+
+Not do:
+[[File:Wrongtilemapformat.png]]
+
+'''Why?''' It's the choice done into catchchallenger, provide better compression ratio and more easy to map.
+
+= File name and path =
+Do a correct tree and file and path, for example:
+* zoneA/cityA/cityA.tmx
+* zoneA/cityA/house-1.tmx
+* zoneA/cityA/house-2.tmx
+* zoneA/cityA/tower/floor-0.tmx
+* zoneA/cityA/tower/floor-1.tmx
+* zoneA/cityA/tower/floor-2.tmx
