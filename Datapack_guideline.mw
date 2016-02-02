@@ -7,7 +7,7 @@ Do repeated tile partern:
 Not do:
 [[File:Wrongtilemapformat.png]]
 
-'''Why?''' It's the choice done into catchchallenger, provide better compression ratio and more easy to map. And it's more into 8Bits oldschool game style.
+'''Why?''' It's the choice done into catchchallenger, provide better compression ratio and more easy to map.
 
 = File name and path =
 Do a correct tree and file and path, for example:
@@ -17,8 +17,3 @@ Do a correct tree and file and path, for example:
 * zoneA/cityA/tower/floor-0.tmx
 * zoneA/cityA/tower/floor-1.tmx
 * zoneA/cityA/tower/floor-2.tmx
-
-= Skill =
-It's inspirated from lineage. You should do a skill with different level for the most common and unique level for unique and end class level.
-
-You have sp to force the player to choice the between various skill.
