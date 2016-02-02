@@ -14,6 +14,9 @@
 * Windows since Windows XP, 32Bits or 64Bits (game in 32Bits)
 * Linux
 * Mac 10.6+
-== Libs ==
-* Should work with Qt 4.5
-* Do for Qt 4.8 (possible remake for Qt5)
+
+= Target =
+Similar game worked on this hardware:
+CPU:	16.8 MHz 32-bit ARM7TDMI with embedded memory.
+Memory:	32 kilobyte + 96 kilobyte VRAM (internal to the CPU), 256 kilobyte DRAM (outside the CPU).
+Resolution:	240 × 160 pixels (3:2 aspect ratio).
