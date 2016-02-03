@@ -2,8 +2,4 @@ This is file exported by stat client, it's a simple table to list the server.
 
 = json file =
 
-  {"654265422":{"xml":
-  "<name>Server test 4<\/name><name lang=\"fr\">Serveur de teste 4<\/name><description>Description in english<\/description><description lang=\"fr\">Description en fran\u00e7ais<\/description>",
-  "connectedPlayer":25,"maxPlayer":542},"5212178":{"xml":
-  "<name>Server test 3<\/name><name lang=\"fr\">Serveur de teste 3<\/name><description>Description in english<\/description><description lang=\"fr\">Description en fran\u00e7ais<\/description>",
-  "connectedPlayer":1,"maxPlayer":25}}
+  {"1":{"3740739464":{"xml":"<name>Bot server<\\\/name>","connectedPlayer":0,"maxPlayer":200}}}
