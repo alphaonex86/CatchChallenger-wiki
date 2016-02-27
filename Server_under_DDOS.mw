@@ -31,3 +31,9 @@ The settings to use:
 
 == See ==
 See: [http://catchchallenger.first-world.info/wiki/Technologies_used#Anti_DDOS_and_cost_infrastructure Anti DDOS and cost infrastructure]
+
+= Botnet needed =
+* To sature my 2Mbps connexion you need 2 000 bots
+* To sature one 100Mbps server you need 100 000 bots
+* To sature one 1000Mbps server you need 1 000 000 bots
+* To sature 1000 vps around the world at 100Mbps by vps you need 1 000 000 000 bots
