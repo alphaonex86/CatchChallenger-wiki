@@ -107,3 +107,13 @@ This is for server only, with 480 client connected.
 
 * Internal is with std::chrono::high_resolution_clock::now() difference
 * Not internet is with /proc/[pid]/stat under linux, value 14 utime
+
+= Connecting bot =
+At 99 connexion by seconds
+== Rpi ==
+%Cpu(s): 65.9 us, 19.0 sy,  0.0 ni,  0.0 id,  4.8 wa,  0.0 hi, 10.3 si,  0.0 st
+
+  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND                                                                                                                                                                                                     
+ 9102 postgres  20   0  154284   8812   7736 R 42.0  4.7   0:04.42 postgres                                                                                                                                                                                                    
+ 9103 postgres  20   0  154280   8164   7132 S 16.4  4.3   0:01.49 postgres                                                                                                                                                                                                    
+ 9092 root      20   0   66312  54328   5212 S 13.6 28.9   0:20.30 catchchallenger
