@@ -60,6 +60,17 @@ Without SSL, epoll version, without optimisation (need 0 copy optimisation, -O2,
 * '''38% of cpu for 30 creation/s''' of charaters, 30% for postgresql, 8% for catchchallenger
 * '''2% of cpu for 400 player moving''' on the map
 
+= Rpi =
+== Version 2 ==
+=== 9e0c4bf27da779595a73c6832aa7a7409308c4f8 ===
+* With worse settings: max-players:65000, MapVisibilityAlgorithm-Simple: Reshow: 64000, Max:65000, Reemit:false
+* Bot: 400 Bots
+* -pipe -march=native -O2 -fomit-frame-pointer -floop-block -floop-interchange -fgraphite -funroll-loops -ffast-math -faggressive-loop-optimizations -funsafe-loop-optimizations
+
+Result:
+* %Cpu(s): 17.4 us, 11.3 sy,  0.0 ni, 49.8 id,  0.0 wa,  0.0 hi, 21.5 si,  0.0 st
+* Cpu: 37.1% catchchallenger
+
 = Internal benchmark =
 This is for server only, with 480 client connected.
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
