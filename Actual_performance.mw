@@ -66,6 +66,7 @@ Without SSL, epoll version, without optimisation (need 0 copy optimisation, -O2,
 * With worse settings: max-players:65000, MapVisibilityAlgorithm-Simple: Reshow: 64000, Max:65000, Reemit:false
 * Bot: 400 Bots
 * -pipe -march=native -O2 -fomit-frame-pointer -floop-block -floop-interchange -fgraphite -funroll-loops -ffast-math -faggressive-loop-optimizations -funsafe-loop-optimizations
+* EXTRACHECKS define disabled
 
 Result:
 * %Cpu(s): 17.4 us, 11.3 sy,  0.0 ni, 49.8 id,  0.0 wa,  0.0 hi, 21.5 si,  0.0 st
