@@ -71,6 +71,7 @@ Without SSL, epoll version, without optimisation (need 0 copy optimisation, -O2,
 Result:
 * %Cpu(s): 17.4 us, 11.3 sy,  0.0 ni, 49.8 id,  0.0 wa,  0.0 hi, 21.5 si,  0.0 st
 * Cpu: 37.1% catchchallenger
+* For the server by client: 0.18KB/s as input, 2KB/s as output (high bandwidth because it reemit lot of player on same map)
 
 = Internal benchmark =
 This is for server only, with 480 client connected.
