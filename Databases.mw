@@ -4,8 +4,8 @@ What server kind need what database:
 * Master server need: login (read if account automatic creation), base, common (all, read)
 * Game server need: base (read), common (spec), server
 
-= Requierements =
-With the actual database structure (version 2, commit: 085281a66ce52232782a0f56e2339fa7070a350c), the requierements are:
+= Requirements =
+With the actual database structure (version 2, commit: 085281a66ce52232782a0f56e2339fa7070a350c), the requirements are:
 * Search by primary key
 * Search by index on single colomn
 * Search by index on multiple colomn
