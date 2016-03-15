@@ -403,105 +403,108 @@ Wrong, case possible:
 * <span style="color: #FF4000">08</span> (Too recently disconnected)
 
 ==== Reply 0205 Proxy mode ====
-Switch on caraters reply
+Switch on characters reply, by color:
+* <span style="background-color:#FFDFE3">Static fixed config at server start
+* <span style="background-color:#E3E1FF">Stored into database by common group
+* <span style="background-color:#FFFEC2">Stored into database by server
 
 If all is good in proxy mode:
-* <span style="color: #FF4000">01</span> (all is good)
+* <span style="background-color:#FFDFE3"><span style="color:#FF4000">01</span> (all is good)</span>
 
-* max player: <span style="color: #40BFFF">0064</span>
-* captureRemainingTime: <span style="color: #FF4000">00000001</span>
-* captureFrequencyType: <span style="color: #FF4000">01</span>
-* plantOnlyVisibleByPlayer: <span style="color: #FFBF00">01</span> Prevent the confirmation send from the server
-* waitBeforeConnectAfterKick: <span style="color: #40BF00">00000001</span>
-* forceClientToSendAtMapChange: <span style="color: #008080">01</span>
-* forcedSpeed: <span style="color: #FFBF00">01</span>
-* useSP: <span style="color: #FF00FF">01</span>
-* tcpCork: <span style="color: #40BF00">01</span>
-* autoLearn: <span style="color: #FF4000">01</span>
-* dontSendPseudo: <span style="color: #FFBF00">00</span>
+* <span style="background-color:#FFDFE3">max player: <span style="color: #40BFFF">0064</span></span>
+* <span style="background-color:#FFDFE3">captureRemainingTime: <span style="color: #FF4000">00000001</span></span>
+* <span style="background-color:#FFDFE3">captureFrequencyType: <span style="color: #FF4000">01</span></span>
+* <span style="background-color:#FFDFE3">plantOnlyVisibleByPlayer: <span style="color: #FFBF00">01</span> Prevent the confirmation send from the server</span>
+* <span style="background-color:#FFDFE3">waitBeforeConnectAfterKick: <span style="color: #40BF00">00000001</span></span>
+* <span style="background-color:#FFDFE3">forceClientToSendAtMapChange: <span style="color: #008080">01</span></span>
+* <span style="background-color:#FFDFE3">forcedSpeed: <span style="color: #FFBF00">01</span></span>
+* <span style="background-color:#FFDFE3">useSP: <span style="color: #FF00FF">01</span></span>
+* <span style="background-color:#FFDFE3">tcpCork: <span style="color: #40BF00">01</span></span>
+* <span style="background-color:#FFDFE3">autoLearn: <span style="color: #FF4000">01</span></span>
+* <span style="background-color:#FFDFE3">dontSendPseudo: <span style="color: #FFBF00">00</span></span>
 
-* rates_xp: <span style="color: #FFBF00">00000000</span>
-* rates_gold: <span style="color: #FFBF00">00000000</span>
-* rates_xp_pow: <span style="color: #FFBF00">00000000</span>
-* rates_drop: <span style="color: #FFBF00">00000000</span>
+* <span style="background-color:#FFDFE3">rates_xp: <span style="color: #FFBF00">00000000</span></span>
+* <span style="background-color:#FFDFE3">rates_gold: <span style="color: #FFBF00">00000000</span></span>
+* <span style="background-color:#FFDFE3">rates_xp_pow: <span style="color: #FFBF00">00000000</span></span>
+* <span style="background-color:#FFDFE3">rates_drop: <span style="color: #FFBF00">00000000</span></span>
 
-* chat_allow_all: <span style="color: #FF4000">01</span>
-* chat_allow_local: <span style="color: #FF4000">01</span>
-* chat_allow_private: <span style="color: #40BF00">01</span>
-* chat_allow_clan: <span style="color: #008080">01</span>
-* factoryPriceChange: <span style="color: #FFBF00">01</span>
+* <span style="background-color:#FFDFE3">chat_allow_all: <span style="color: #FF4000">01</span></span>
+* <span style="background-color:#FFDFE3">chat_allow_local: <span style="color: #FF4000">01</span></span>
+* <span style="background-color:#FFDFE3">chat_allow_private: <span style="color: #40BF00">01</span></span>
+* <span style="background-color:#FFDFE3">chat_allow_clan: <span style="color: #008080">01</span></span>
+* <span style="background-color:#FFDFE3">factoryPriceChange: <span style="color: #FFBF00">01</span></span>
 
-* Main type code: <span style="color: #40BF00">"main"</span> (Only lower char and number, 8bits headers + utf8)
-* Sub type code: <span style="color: #40BF00">"sub"</span> (Only lower char and number, 8bits headers + utf8, '''can be empty if disabled''')
-* sha224 of datapack '''main''' file list content for the main datapack '''then excluding sub/''' (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list too (if match, not need sync it).
-* '''Only if sub code not empty, else this 28Bytes is not send.''' sha224 of datapack '''sub''' file list content for the sub datapack (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list too (if match, not need sync it).
-* Mirror to use: &quot;<span style="color: #40BF00">http://serverprimary/datapack/;http://serversecondary/datapack/</span>&quot;, if don't empty, don't send datapack query, you have the datpack list at http://serverprimary/datapack/datapack-list.txt test without proxy and with proxy is set. Test the next server, ... 8Bits header to prevent too long mirror list! Turn it on server.
+* <span style="background-color:#FFDFE3">Main type code: <span style="color: #40BF00">"main"</span> (Only lower char and number, 8bits headers + utf8)</span>
+* <span style="background-color:#FFDFE3">Sub type code: <span style="color: #40BF00">"sub"</span> (Only lower char and number, 8bits headers + utf8, '''can be empty if disabled''')</span>
+* <span style="background-color:#FFDFE3">sha224 of datapack '''main''' file list content for the main datapack '''then excluding sub/''' (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list too (if match, not need sync it).</span>
+* <span style="background-color:#FFDFE3">'''Only if sub code not empty, else this 28Bytes is not send.''' sha224 of datapack '''sub''' file list content for the sub datapack (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list too (if match, not need sync it).</span>
+* <span style="background-color:#FFDFE3">Mirror to use: &quot;<span style="color: #40BF00">http://serverprimary/datapack/;http://serversecondary/datapack/</span>&quot;, if don't empty, don't send datapack query, you have the datpack list at http://serverprimary/datapack/datapack-list.txt test without proxy and with proxy is set. Test the next server, ... 8Bits header to prevent too long mirror list! Turn it on server.</span>
 
 * Temporary character id: {{Player_id}} (unique generated id on the map)
-* pseudo: <span style="color: #40BF00">"toto"</span> (8bits headers + utf8)
-* allow list size: <span style="color: #40BF00">01</span>
-** allow clan: <span style="color: #40BF00">01</span>
-* clan id: <span style="color: #40BFFF">00000064</span>
-* clan_leader: <span style="color: #40BFFF">01</span>
+* <span style="background-color:#E3E1FF">pseudo: <span style="color: #40BF00">"toto"</span> (8bits headers + utf8)
+* <span style="background-color:#E3E1FF">allow list size: <span style="color: #40BF00">01</span>
+** <span style="background-color:#E3E1FF">allow clan: <span style="color: #40BF00">01</span>
+* <span style="background-color:#E3E1FF">clan id: <span style="color: #40BFFF">00000064</span>
+* <span style="background-color:#E3E1FF">clan_leader: <span style="color: #40BFFF">01</span>
 * Events not with default value list size <span style="color: #7B00FF">01</span>
 ** Event id: <span style="color: #BFBF40">01</span>
 ** Value id: <span style="color: #40BF00">02</span>
-* cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
-* warehouse cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
-* size of item on map: <span style="color: #7B00FF">01</span>
-** item on map,x,y getted: <span style="color: #FF4000">01</span> (index of item on map, ordened by map and x,y ordened into the xml file, less bandwith than send map,x,y)
-* size of plant on map: <span style="color: #7B00FF">01</span> '''/!\ only if plantOnlyVisibleByPlayer==true'''
-** plant on map,x,y getted: <span style="color: #FF4000">01</span> (index of plant on map, ordened by map and x,y ordened into the xml file, less bandwith than send map,x,y)
-** plant: <span style="color: #FF4000">01</span>
-** seconds to mature: <span style="color: #FFBF00">0064</span>
-* size of list of the recipes: <span style="color: #7B00FF">0001</span>
-** recipe id: <span style="color: #FF4000">0001</span>
-* size of list of the monsters: <span style="color: #7B00FF">01</span>
-** monsters id in db: <span style="color: #FF4000">00000001</span>
-** monsters: <span style="color: #FF4000">0001</span>
-** level: <span style="color: #40BF00">01</span>
-** remaining_xp: <span style="color: #008080">00000001</span>
-** hp: <span style="color: #FFBF00">00000001</span>
-** sp: <span style="color: #FF00FF">00000001</span>
-** captured_with: <span style="color: #40BF00">0001</span>
-** gender: <span style="color: #FF4000">01</span>
-** egg_step: <span style="color: #FFBF00">00000000</span> (is mature if = 0)
-** character_origin: <span style="color: #FFBF00">00000001</span>
-** size of list of the buff monsters: <span style="color: #7B00FF">01</span>
-*** buff: <span style="color: #40BF00">01</span>
-*** buff level: <span style="color: #FF4000">01</span>
-** size of list of the skills monsters: <span style="color: #7B00FF">0001</span>
-*** skill: <span style="color: #40BF00">0001</span>
-*** skill level: <span style="color: #FF4000">01</span>
-*** skill remaining usage: <span style="color: #FFBF00">01</span>
-* size of list of the warehouse monsters: <span style="color: #7B00FF">01</span>
-** monsters id in db: <span style="color: #FF4000">00000001</span>
-** monsters: <span style="color: #FF4000">0001</span>
-** level: <span style="color: #40BF00">01</span>
-** remaining_xp: <span style="color: #008080">00000001</span>
-** hp: <span style="color: #FFBF00">00000001</span>
-** sp: <span style="color: #FF00FF">00000001</span>
-** captured_with: <span style="color: #40BF00">0001</span>
-** gender: <span style="color: #FF4000">01</span>
-** egg_step: <span style="color: #FFBF00">00000000</span> (is mature if = 0)
-** character_origin: <span style="color: #FFBF00">00000001</span>
-** size of list of the buff monsters: <span style="color: #7B00FF">01</span>
-*** buff: <span style="color: #40BF00">01</span>
-*** buff level: <span style="color: #FF4000">01</span>
-** size of list of the skills monsters: <span style="color: #7B00FF">0001</span>
-*** skill: <span style="color: #40BF00">0001</span>
-*** skill level: <span style="color: #FF4000">01</span>
-*** skill remaining usage: <span style="color: #FFBF00">01</span>
-* size of reputation list: <span style="color: #7B00FF">01</span>
-** reputation type: <span style="font-style: italic"><span style="color: #40BF00">01</span></span>
-** reputation level: <span style="color: #FF4000">01</span>
-** reputation point: <span style="color: #008080">00000001</span>
-* size of quest list: <span style="color: #7B00FF">0001</span>
-** quest id: <span style="color: #40BF00">0001</span>
-** quest step: <span style="color: #FF4000">01</span>
-** quest finish one time: <span style="color: #008080">00</span> (false)
-* size of list of the bot win (already betten): <span style="color: #7B00FF">0001</span>
-** bot id win (already betten): <span style="color: #40BF00">0001</span>
+* <span style="background-color:#E3E1FF">cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
+* <span style="background-color:#E3E1FF">warehouse cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
+* <span style="background-color:#FFFEC2">size of item on map: <span style="color: #7B00FF">01</span>
+** <span style="background-color:#FFFEC2">item on map,x,y getted: <span style="color: #FF4000">01</span> (index of item on map, ordened by map and x,y ordened into the xml file, less bandwith than send map,x,y)
+* <span style="background-color:#FFFEC2">size of plant on map: <span style="color: #7B00FF">01</span> '''/!\ only if plantOnlyVisibleByPlayer==true'''
+** <span style="background-color:#FFFEC2">plant on map,x,y getted: <span style="color: #FF4000">01</span> (index of plant on map, ordened by map and x,y ordened into the xml file, less bandwith than send map,x,y)
+** <span style="background-color:#FFFEC2">plant: <span style="color: #FF4000">01</span>
+** <span style="background-color:#FFFEC2">seconds to mature: <span style="color: #FFBF00">0064</span>
+* <span style="background-color:#E3E1FF">size of list of the recipes: <span style="color: #7B00FF">0001</span>
+** <span style="background-color:#E3E1FF">recipe id: <span style="color: #FF4000">0001</span>
+* <span style="background-color:#E3E1FF">size of list of the monsters: <span style="color: #7B00FF">01</span>
+** <span style="background-color:#E3E1FF">monsters id in db: <span style="color: #FF4000">00000001</span>
+** <span style="background-color:#E3E1FF">monsters: <span style="color: #FF4000">0001</span>
+** <span style="background-color:#E3E1FF">level: <span style="color: #40BF00">01</span>
+** <span style="background-color:#E3E1FF">remaining_xp: <span style="color: #008080">00000001</span>
+** <span style="background-color:#E3E1FF">hp: <span style="color: #FFBF00">00000001</span>
+** <span style="background-color:#E3E1FF">sp: <span style="color: #FF00FF">00000001</span>
+** <span style="background-color:#E3E1FF">captured_with: <span style="color: #40BF00">0001</span>
+** <span style="background-color:#E3E1FF">gender: <span style="color: #FF4000">01</span>
+** <span style="background-color:#E3E1FF">egg_step: <span style="color: #FFBF00">00000000</span> (is mature if = 0)
+** <span style="background-color:#E3E1FF">character_origin: <span style="color: #FFBF00">00000001</span>
+** <span style="background-color:#E3E1FF">size of list of the buff monsters: <span style="color: #7B00FF">01</span>
+*** <span style="background-color:#E3E1FF">buff: <span style="color: #40BF00">01</span>
+*** <span style="background-color:#E3E1FF">buff level: <span style="color: #FF4000">01</span>
+** <span style="background-color:#E3E1FF">size of list of the skills monsters: <span style="color: #7B00FF">0001</span>
+*** <span style="background-color:#E3E1FF">skill: <span style="color: #40BF00">0001</span>
+*** <span style="background-color:#E3E1FF">skill level: <span style="color: #FF4000">01</span>
+*** <span style="background-color:#E3E1FF">skill remaining usage: <span style="color: #FFBF00">01</span>
+* <span style="background-color:#E3E1FF">size of list of the warehouse monsters: <span style="color: #7B00FF">01</span>
+** <span style="background-color:#E3E1FF">monsters id in db: <span style="color: #FF4000">00000001</span>
+** <span style="background-color:#E3E1FF">monsters: <span style="color: #FF4000">0001</span>
+** <span style="background-color:#E3E1FF">level: <span style="color: #40BF00">01</span>
+** <span style="background-color:#E3E1FF">remaining_xp: <span style="color: #008080">00000001</span>
+** <span style="background-color:#E3E1FF">hp: <span style="color: #FFBF00">00000001</span>
+** <span style="background-color:#E3E1FF">sp: <span style="color: #FF00FF">00000001</span>
+** <span style="background-color:#E3E1FF">captured_with: <span style="color: #40BF00">0001</span>
+** <span style="background-color:#E3E1FF">gender: <span style="color: #FF4000">01</span>
+** <span style="background-color:#E3E1FF">egg_step: <span style="color: #FFBF00">00000000</span> (is mature if = 0)
+** <span style="background-color:#E3E1FF">character_origin: <span style="color: #FFBF00">00000001</span>
+** <span style="background-color:#E3E1FF">size of list of the buff monsters: <span style="color: #7B00FF">01</span>
+*** <span style="background-color:#E3E1FF">buff: <span style="color: #40BF00">01</span>
+*** <span style="background-color:#E3E1FF">buff level: <span style="color: #FF4000">01</span>
+** <span style="background-color:#E3E1FF">size of list of the skills monsters: <span style="color: #7B00FF">0001</span>
+*** <span style="background-color:#E3E1FF">skill: <span style="color: #40BF00">0001</span>
+*** <span style="background-color:#E3E1FF">skill level: <span style="color: #FF4000">01</span>
+*** <span style="background-color:#E3E1FF">skill remaining usage: <span style="color: #FFBF00">01</span>
+* <span style="background-color:#E3E1FF">size of reputation list: <span style="color: #7B00FF">01</span>
+** <span style="background-color:#E3E1FF">reputation type: <span style="font-style: italic"><span style="color: #40BF00">01</span></span>
+** <span style="background-color:#E3E1FF">reputation level: <span style="color: #FF4000">01</span>
+** <span style="background-color:#E3E1FF">reputation point: <span style="color: #008080">00000001</span>
+* <span style="background-color:#FFFEC2">size of quest list: <span style="color: #7B00FF">0001</span>
+** <span style="background-color:#FFFEC2">quest id: <span style="color: #40BF00">0001</span>
+** <span style="background-color:#FFFEC2">quest step: <span style="color: #FF4000">01</span>
+** <span style="background-color:#FFFEC2">quest finish one time: <span style="color: #008080">00</span> (false)
+* <span style="background-color:#FFFEC2">size of list of the bot win (already betten): <span style="color: #7B00FF">0001</span>
+** <span style="background-color:#FFFEC2">bot id win (already betten): <span style="color: #40BF00">0001</span>
 
 After the server will send tp command to set the first position.
 
