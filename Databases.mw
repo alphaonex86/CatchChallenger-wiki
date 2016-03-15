@@ -11,7 +11,7 @@ With the actual database structure (version 2, commit: 085281a66ce52232782a0f56e
 * Search by index on multiple colomn
 Preferred:
 * Able to work without primary key
-* Able to store 8Bits and 16Bits int
+* Able to store 8Bits and 16Bits int, string (fixed and variables size), blobs
 Not required:
 * Transactions (commit, rollback)
 * Relational (Join, ...)
