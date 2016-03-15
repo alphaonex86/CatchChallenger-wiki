@@ -3,3 +3,16 @@ What server kind need what database:
 * Login server need: login (read in all case, if account automatic creation then read/write), common (all)
 * Master server need: login (read if account automatic creation), base, common (all, read)
 * Game server need: base (read), common (spec), server
+
+= Requierements =
+With the actual database structure (version 2, commit: 085281a66ce52232782a0f56e2339fa7070a350c), the requierements are:
+* Search by primary key
+* Search by index on single colomn
+* Search by index on multiple colomn
+Preferred:
+* Able to work without primary key
+* Able to store 8Bits and 16Bits int
+Not required:
+* Transactions (commit, rollback)
+* Relational (Join, ...)
+* Consistency (The master server lock the globale data linked to the account util the last write is done, then consistency done by the master server)
