@@ -9,9 +9,10 @@ With the actual database structure (version 2, commit: 085281a66ce52232782a0f56e
 * Search by primary key
 * Search by index on single colomn
 * Search by index on multiple colomn
+* Able to store int, string, blobs
 Preferred:
 * Able to work without primary key
-* Able to store 8Bits and 16Bits int, string (fixed and variables size), blobs
+* Able to store 8Bits and 16Bits int, string: fixed and variables size
 Not required:
 * Transactions (commit, rollback)
 * Relational (Join, ...)
