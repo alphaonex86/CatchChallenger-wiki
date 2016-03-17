@@ -1,38 +1,8 @@
 = General =
-== Entropy isolation ==
-The entropy isolation allow better compression ratio. Because it group similar block near, and prevent mode switching (compressed block, uncompressed block, ...)
-
-== Encoding ==
-The data encoding is very important to help the compression to do the job. Pass uint8_t to bit directly allow 8x less size. Very important for random and semi random data.
-
 == By dictionary ==
 The most common word is grouped into a dictionary.
 Form wikipedia:
     Due to its intrinsic characteristic of permitting gains when used in communications, as the example of the mike click demonstrates, there is a pre-understood code system agreed and shared between the emitter and the receptor. It is not without a cause that most communication network oriented compression algorithms rely in some form of dictionary compression.
-
-== Text vs binary ==
-For poorly compressible datas like random or not repeating data, you have:
-
-[[File:compression-of-random-in-hexa.png]]
-
-Then as you see, it's better to improve the format style and use binary.
-
-== Ordened incrementing list ==
-Based on this characteristic:
-* some item follow the previous (as human we organise similar item in same id range)
-* the list is ordened and the id is unique (yes, you had one time this item)
-* LittleEndian o BigEndian change nothing, omited here
-* Raw id list, compressed id list, row incremental list is omited because grow proportionally to the list lenght
-* Compression used is gzip, then zlib same as btrfs compression=zlib and zlib for ssl compression (note: I think of that's for ssh tunnel and postgresql)
-
-[[File:Compression-for-encyclopedia.png]]
-[[File:Compression-for-incremental.png]]
-
-* the incremental usage help the compression to do stable size.
-* for few item the compression is not effective but the size is minimal
-* same size uncompressed with id or incremental value
-* raw bit give 8x of compression ratio, but the size is fixed
-* compressed bit give a good size
 
 = Protocol =
 The compression is used for datapack list/datapack content:
