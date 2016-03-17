@@ -1,0 +1,24 @@
+= General =
+== By dictionary ==
+The most common word is grouped into a dictionary.
+Form wikipedia:
+    Due to its intrinsic characteristic of permitting gains when used in communications, as the example of the mike click demonstrates, there is a pre-understood code system agreed and shared between the emitter and the receptor. It is not without a cause that most communication network oriented compression algorithms rely in some form of dictionary compression.
+
+= Protocol =
+The compression is used for datapack list/datapack content:
+* Zlib: To save bandwidth at exchange of cpu
+* Gzip: like Zlib but better ratio, and use more cpu
+* Xz: Very good compression ratio, but hight cpu usage
+* None: No compression overhead, but some query can use lot of bandwidth
+
+See too: [[Quick Benchmark: Gzip vs Bzip2 vs LZMA vs XZ vs LZ4 vs LZO]]
+== By dictionary ==
+Allow reduce to 8/16Bits the player id, and hide the database id
+
+= Database =
+== By dictionary ==
+That's allow store int, be aligned, don't use enum (should be too often updated, and it's hard), and very more compact than string.
+
+In case in zlib compression, allow better ratio.
+== On file system ==
+CatchChallenger is not sensitive to database latency, then you should have prior less space used than high performance. You should use compression like provided by btrfs.
