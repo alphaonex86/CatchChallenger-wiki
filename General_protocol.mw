@@ -80,15 +80,6 @@ The skin path is too into UTF8, max 255 bytes, limited of 255 skin into fighter 
 [[File:catchchallenger-base-into-other-game.png]]
 See: [[Other game usage]]
 
-= Compression =
-The compression is used for datapack list/datapack content:
-* Zlib: To save bandwidth at exchange of cpu
-* Gzip: like Zlib but better ratio, and use more cpu
-* Xz: Very good compression ratio, but hight cpu usage
-* None: No compression overhead, but some query can use lot of bandwidth
-
-See too: [[Quick Benchmark: Gzip vs Bzip2 vs LZMA vs XZ vs LZ4 vs LZO]]
-
 = Unit into the game =
 [[Unit into the game]]
 
