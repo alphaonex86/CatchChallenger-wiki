@@ -4,6 +4,13 @@ The most common word is grouped into a dictionary.
 Form wikipedia:
     Due to its intrinsic characteristic of permitting gains when used in communications, as the example of the mike click demonstrates, there is a pre-understood code system agreed and shared between the emitter and the receptor. It is not without a cause that most communication network oriented compression algorithms rely in some form of dictionary compression.
 
+== Text vs binary ==
+For poorly compressible datas like random or not repeating data, you have:
+
+[[File:compression-of-random-in-hexa.png]]
+
+Then as you see, it's better to improve the format style and use binary.
+
 = Protocol =
 The compression is used for datapack list/datapack content:
 * Zlib: To save bandwidth at exchange of cpu
