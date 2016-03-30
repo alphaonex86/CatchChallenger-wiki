@@ -22,5 +22,27 @@ Not required:
 == catchchallenger_common ==
 === character ===
 ==== allow ====
-List os allow uint8_t resolved by dictionary:
+List of allow uint8_t resolved by dictionary:
 * 01
+==== item ====
+List of:
+* uint16_t item
+* uint32_t quantity
+==== item_warehouse ====
+List of:
+* uint16_t item
+* uint32_t quantity
+==== recipes ====
+List of:
+* uint8_t recipe
+==== reputations ====
+List of:
+* uint8_t type
+* '''int32_t''' point
+* '''int8_t''' level
+==== encyclopedia_monster ====
+* uint16_t offset from the previous monster id, if not previous then from 1 (if you have the monster 1 then is 0)
+==== encyclopedia_item ====
+* uint16_t offset from the previous monster id, if not previous then from 1 (if you have the item 1 then is 0)
+==== achievements ====
+* uint8_t offset from the previous monster id, if not previous then from 1 (if you have the achievement 1 then is 0)
