@@ -17,3 +17,10 @@ Not required:
 * Transactions (commit, rollback)
 * Relational (Join, ...)
 * Consistency (The master server lock the globale data linked to the account util the last write is done, then consistency done by the master server)
+
+= blob format =
+== catchchallenger_common ==
+=== character ===
+==== allow ====
+List os allow uint8_t resolved by dictionary:
+* 01
