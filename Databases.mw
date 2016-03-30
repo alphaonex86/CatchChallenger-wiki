@@ -59,3 +59,17 @@ List of:
 ==== skills_endurance ====
 List of:
 * uint8_t endurance
+
+== catchchallenger_server ==
+=== character_forserver ===
+==== botfight_id ====
+List of:
+* uint16_t uint8_t skill
+==== itemonmap ====
+List of allow uint8_t resolved by dictionary:
+* pointOnMap
+==== plants ====
+List of:
+* uint8_t resolved by dictionary, pointOnMap
+* uint8_t plant
+* uint64_t plant_timestamps
