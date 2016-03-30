@@ -46,6 +46,12 @@ List of:
 * uint16_t offset from the previous monster id, if not previous then from 1 (if you have the item 1 then is 0)
 ==== achievements ====
 * uint8_t offset from the previous monster id, if not previous then from 1 (if you have the achievement 1 then is 0)
+==== monster ====
+* uint32_t monster id
+==== monster_market ====
+* uint32_t monster id
+==== monster_warehouse ====
+* uint32_t monster id
 
 === monster ===
 ==== buffs ====
