@@ -46,3 +46,16 @@ List of:
 * uint16_t offset from the previous monster id, if not previous then from 1 (if you have the item 1 then is 0)
 ==== achievements ====
 * uint8_t offset from the previous monster id, if not previous then from 1 (if you have the achievement 1 then is 0)
+
+=== monster ===
+==== buffs ====
+List of:
+* uint8_t buff
+* uint8_t level
+==== skills ====
+List of:
+* uint8_t skill
+* uint8_t level
+==== skills_endurance ====
+List of:
+* uint8_t endurance
