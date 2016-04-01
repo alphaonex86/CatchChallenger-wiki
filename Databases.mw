@@ -41,11 +41,11 @@ List of:
 * '''int32_t''' point
 * '''int8_t''' level
 ==== encyclopedia_monster ====
-* uint16_t offset from the previous monster id, if not previous then from 1 (if you have the monster 1 then is 0)
+* bit array
 ==== encyclopedia_item ====
-* uint16_t offset from the previous monster id, if not previous then from 1 (if you have the item 1 then is 0)
+* bit array
 ==== achievements ====
-* uint8_t offset from the previous monster id, if not previous then from 1 (if you have the achievement 1 then is 0)
+* bit array
 ==== monster ====
 '''Can't be reordered. Order is important.'''
 * uint32_t monster id
