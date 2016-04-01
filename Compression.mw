@@ -24,7 +24,7 @@ Based on this characteristic:
 * for few item the compression is not effective but the size is minimal
 * same size uncompressed with id or incremental value
 * raw bit give 8x of compression ratio, but the size is fixed
-* compressed bit give a good size, but worse at starting
+* compressed bit give a good size
 
 = Protocol =
 The compression is used for datapack list/datapack content:
