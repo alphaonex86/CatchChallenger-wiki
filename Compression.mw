@@ -15,8 +15,10 @@ Then as you see, it's better to improve the format style and use binary.
 Based on this characteristic:
 * some item follow the previous (as human we organise similar item in same id range)
 * the list is ordened and the id is unique (yes, you had one time this item)
+* LittleEndian o BigEndian change nothing, omited here
+* Raw id list, compressed id list, row incremental list is omited because grow proportionally to the list lenght
 
-[[File:Compression-for-encyclopedia.png|thumb]]
+[[File:Compression-for-encyclopedia.png]]
 
 * the incremental usage help the compression to do stable size.
 * for few item the compression is not effective but the size is minimal
