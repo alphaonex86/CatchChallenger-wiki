@@ -17,6 +17,7 @@ Based on this characteristic:
 * the list is ordened and the id is unique (yes, you had one time this item)
 * LittleEndian o BigEndian change nothing, omited here
 * Raw id list, compressed id list, row incremental list is omited because grow proportionally to the list lenght
+* Compression used is gzip, then zlib same as btrfs compression=zlib and zlib for ssl compression (note: I think of that's for ssh tunnel and postgresql)
 
 [[File:Compression-for-encyclopedia.png]]
 
