@@ -16,11 +16,13 @@ Based on this characteristic:
 * some item follow the previous (as human we organise similar item in same id range)
 * the list is ordened and the id is unique (yes, you had one time this item)
 
-[[File:Compression-for-encyclopedia.png]]
+[[File:Compression-for-encyclopedia.png|thumb]]
 
 * the incremental usage help the compression to do stable size.
 * for few item the compression is not effective but the size is minimal
 * same size uncompressed with id or incremental value
+* raw bit give 8x of compression ratio, but the size is fixed
+* compressed bit give a good size, but worse at starting
 
 = Protocol =
 The compression is used for datapack list/datapack content:
