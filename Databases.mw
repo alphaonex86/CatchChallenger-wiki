@@ -37,9 +37,9 @@ List of:
 * uint8_t recipe
 ==== reputations ====
 List of:
+* '''int32_t''' point
 * uint8_t type
 * '''int8_t''' level
-* '''int32_t''' point
 
 ==== encyclopedia_monster ====
 * bit array
