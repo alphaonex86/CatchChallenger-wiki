@@ -63,8 +63,9 @@ List of:
 * uint8_t level
 ==== skills ====
 List of:
-* uint8_t skill
+* uint16_t skill
 * uint8_t level
+
 ==== skills_endurance ====
 List of:
 * uint8_t endurance
