@@ -4,6 +4,10 @@ What server kind need what database:
 * Master server need: login (read if account automatic creation), base, common (all, read)
 * Game server need: base (read), common (spec), server
 
+= Working set =
+To optimise the database change, performance, the monster/item is split by working set (frequent change but small size), and big set.
+When the working set is full, the dropped item is destroyed and the monster is transferred to big set (reason: to small free amount to accumulate monster and do grouped transfer).
+
 = Requirements =
 With the actual database structure (version 2, commit: 085281a66ce52232782a0f56e2339fa7070a350c), the requirements are:
 * Search by primary key
