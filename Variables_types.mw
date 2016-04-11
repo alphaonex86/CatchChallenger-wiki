@@ -1,0 +1,6 @@
+Here you have the variables types and explication:
+* recipes: 16Bits, hard to have more than 65536
+* cash: 64Bits, billion of billion
+* bot_already_beaten: uint16_t, hard to have too many bot, hard to manage at server level (to check is already exists)
+* quests: uint16_t hard to have more than 65536 quests writen
+* itemOnMap: uint8_t to coerancy need be hand placed, hard to have more than 255
