@@ -88,3 +88,8 @@ List of:
 * uint8_t resolved by dictionary, pointOnMap
 * uint8_t plant
 * uint64_t plant_timestamps
+==== quest ====
+List of:
+* uint8_t quest
+* finish_one_time boolean
+* uint8_t step
