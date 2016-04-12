@@ -38,7 +38,8 @@ List of:
 * uint32_t quantity
 ==== recipes ====
 List of:
-* uint8_t recipe
+* bit array: recipe
+
 ==== reputations ====
 List of:
 * '''int32_t''' point
