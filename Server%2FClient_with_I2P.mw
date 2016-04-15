@@ -26,6 +26,15 @@ It's better if your service is hosted on server without access to the net. A sec
 
 After the service is up (green star), the address will be show like that's: '''3fddub3iiptg6p7765cj5vjgxll24isagaebiii5m43lwfdho2ka.b32.i2p'''
 
+== Network hide ==
+If you are on the normal web or you expose via gateway into the normal web, you need this. That's allow to have insecure vm with public ip, but route to more secure vm or directly i2p.
+
+=== LXC ===
+You can have one secure vm in front, and connected on it on internal bridge with service splited on lot of vm. After you can reroute into the vm the trafic via i2p, ssh tunnel, ...
+
+=== Vserver ===
+You can have multiple vm using the same ip, but the service on different port
+
 = Client =
 '''Don't forget buy the full client to fund the project and have client without crack and virus/trojan.'''
 
