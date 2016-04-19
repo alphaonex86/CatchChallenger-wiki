@@ -81,7 +81,8 @@ List of:
 === character_forserver ===
 ==== botfight_id ====
 List of:
-* uint16_t uint8_t skill
+* bit array
+
 ==== itemonmap ====
 List of allow uint8_t resolved by dictionary:
 * pointOnMap
