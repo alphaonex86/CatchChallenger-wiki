@@ -1,4 +1,10 @@
 = General =
+== Entropy isolation ==
+The entropy isolation allow better compression ratio. Because it group similar block near, and prevent mode switching (compressed block, uncompressed block, ...)
+
+== Encoding ==
+The data encoding is very important to help the compression to do the job. Pass uint8_t to bit directly allow 8x less size. Very important for random and semi random data.
+
 == By dictionary ==
 The most common word is grouped into a dictionary.
 Form wikipedia:
