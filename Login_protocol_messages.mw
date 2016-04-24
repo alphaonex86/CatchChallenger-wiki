@@ -441,22 +441,17 @@ If all is good in proxy mode:
 * <span style="background-color:#FFDFE3">Mirror to use: &quot;<span style="color: #40BF00">http://serverprimary/datapack/;http://serversecondary/datapack/</span>&quot;, if don't empty, don't send datapack query, you have the datpack list at http://serverprimary/datapack/datapack-list.txt test without proxy and with proxy is set. Test the next server, ... 8Bits header to prevent too long mirror list! Turn it on server.</span>
 
 * Temporary character id: {{Player_id}} (unique generated id on the map)
+* Events not with default value list size <span style="color: #7B00FF">01</span>
+** Event id: <span style="color: #BFBF40">01</span>
+** Value id: <span style="color: #40BF00">02</span>
+
 * <span style="background-color:#E3E1FF">pseudo: <span style="color: #40BF00">"toto"</span> (8bits headers + utf8)
 * <span style="background-color:#E3E1FF">allow list size: <span style="color: #40BF00">01</span>
 ** <span style="background-color:#E3E1FF">allow clan: <span style="color: #40BF00">01</span>
 * <span style="background-color:#E3E1FF">clan id: <span style="color: #40BFFF">00000064</span>
 * <span style="background-color:#E3E1FF">clan_leader: <span style="color: #40BFFF">01</span>
-* Events not with default value list size <span style="color: #7B00FF">01</span>
-** Event id: <span style="color: #BFBF40">01</span>
-** Value id: <span style="color: #40BF00">02</span>
 * <span style="background-color:#E3E1FF">cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
 * <span style="background-color:#E3E1FF">warehouse cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
-* <span style="background-color:#FFFEC2">size of item on map: <span style="color: #7B00FF">01</span>
-** <span style="background-color:#FFFEC2">item on map,x,y getted: <span style="color: #FF4000">01</span> (index of item on map, ordened by map and x,y ordened into the xml file, less bandwith than send map,x,y)
-* <span style="background-color:#FFFEC2">size of plant on map: <span style="color: #7B00FF">01</span> '''/!\ only if plantOnlyVisibleByPlayer==true'''
-** <span style="background-color:#FFFEC2">plant on map,x,y getted: <span style="color: #FF4000">01</span> (index of plant on map, ordened by map and x,y ordened into the xml file, less bandwith than send map,x,y)
-** <span style="background-color:#FFFEC2">plant: <span style="color: #FF4000">01</span>
-** <span style="background-color:#FFFEC2">seconds to mature: <span style="color: #FFBF00">0064</span>
 * <span style="background-color:#E3E1FF">size of list of the recipes: <span style="color: #7B00FF">0001</span>
 ** <span style="background-color:#E3E1FF">recipe id: <span style="color: #FF4000">0001</span>
 * <span style="background-color:#E3E1FF">size of list of the monsters: <span style="color: #7B00FF">01</span>
@@ -505,6 +500,13 @@ If all is good in proxy mode:
 ** <span style="background-color:#FFFEC2">quest finish one time: <span style="color: #008080">00</span> (false)
 * <span style="background-color:#FFFEC2">size of list of the bot win (already betten): <span style="color: #7B00FF">0001</span>
 ** <span style="background-color:#FFFEC2">bot id win (already betten): <span style="color: #40BF00">0001</span>
+* <span style="background-color:#FFFEC2">size of item on map: <span style="color: #7B00FF">01</span>
+** <span style="background-color:#FFFEC2">item on map,x,y getted: <span style="color: #FF4000">01</span> (index of item on map, ordened by map and x,y ordened into the xml file, less bandwith than send map,x,y)
+* <span style="background-color:#FFFEC2">size of plant on map: <span style="color: #7B00FF">01</span> '''/!\ only if plantOnlyVisibleByPlayer==true'''
+** <span style="background-color:#FFFEC2">plant on map,x,y getted: <span style="color: #FF4000">01</span> (index of plant on map, ordened by map and x,y ordened into the xml file, less bandwith than send map,x,y)
+** <span style="background-color:#FFFEC2">plant: <span style="color: #FF4000">01</span>
+** <span style="background-color:#FFFEC2">seconds to mature: <span style="color: #FFBF00">0064</span>
+
 
 After the server will send tp command to set the first position.
 
