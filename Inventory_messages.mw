@@ -6,11 +6,12 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 == Client &rarr; Server with reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Main code type
-! Sub code type
-! Query number
-! Packet size
+! Packet Code
 ! Data
+! Source
+! Destination
+! Fixed Query size
+! Fixed Reply size
 {{Template:Inventory_messages_Client_Server_Reply}}
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
@@ -18,33 +19,34 @@ Because that's do more traffic (mainly static), useless for signs, need choose t
 == Client &rarr; Server ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Main code type
-! Sub code type
-! Query number
-! Packet size
+! Packet Code
 ! Data
+! Source
+! Destination
+! Fixed Message size
 {{Template:Inventory_messages_Client_Server}}
 |}
 
 == Server &rarr; Client with reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Main code type
-! Sub code type
-! Query number
-! Packet size
+! Packet Code
 ! Data
+! Source
+! Destination
+! Fixed Query size
+! Fixed Reply size
 {{Template:Inventory_messages_Server_Client_Reply}}
 |}
 
 == Server &rarr; Client ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Main code type
-! Sub code type
-! Query number
-! Packet size
+! Packet Code
 ! Data
+! Source
+! Destination
+! Fixed Message size
 {{Template:Inventory_messages_Server_Client}}
 |}
 
