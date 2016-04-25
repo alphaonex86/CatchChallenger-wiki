@@ -496,6 +496,12 @@ If all is good in proxy mode:
 ** <span style="background-color:#E3E1FF">reputation type: <span style="font-style: italic"><span style="color: #40BF00">01</span></span>
 ** <span style="background-color:#E3E1FF">reputation level: <span style="color: #FF4000">01</span>
 ** <span style="background-color:#E3E1FF">reputation point: <span style="color: #008080">00000001</span>
+
+* <span style="background-color:#E3E1FF">'''Compressed part''', all into one block to improve the compression and performance:
+* <span style="background-color:#E3E1FF">size of bit array for encyclopedia_monster: <span style="color: #7B00FF">0001</span> <span style="color: #40BF00">01....</span>
+* <span style="background-color:#E3E1FF">size of bit array for encyclopedia_item: <span style="color: #7B00FF">0001</span> <span style="color: #40BF00">01....</span>
+* <span style="background-color:#E3E1FF">size of bit array for achievements: <span style="color: #7B00FF">01</span> <span style="color: #40BF00">01....</span>
+
 * <span style="background-color:#FFFEC2">size of quest list: <span style="color: #7B00FF">0001</span>
 ** <span style="background-color:#FFFEC2">quest id: <span style="color: #40BF00">0001</span>
 ** <span style="background-color:#FFFEC2">quest step: <span style="color: #FF4000">01</span>
