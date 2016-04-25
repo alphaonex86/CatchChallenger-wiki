@@ -455,8 +455,6 @@ If all is good in proxy mode:
 * <span style="background-color:#E3E1FF">clan_leader: <span style="color: #40BFFF">01</span>
 * <span style="background-color:#E3E1FF">cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
 * <span style="background-color:#E3E1FF">warehouse cash: <span style="color: #40BFFF">0000000000000064</span> (100$, set on 64Bits)
-* <span style="background-color:#E3E1FF">size of list of the recipes: <span style="color: #7B00FF">0001</span>
-** <span style="background-color:#E3E1FF">recipe id: <span style="color: #FF4000">0001</span>
 * <span style="background-color:#E3E1FF">size of list of the monsters: <span style="color: #7B00FF">01</span>
 ** <span style="background-color:#E3E1FF">monsters: <span style="color: #FF4000">0001</span>
 ** <span style="background-color:#E3E1FF">level: <span style="color: #40BF00">01</span>
@@ -498,6 +496,7 @@ If all is good in proxy mode:
 ** <span style="background-color:#E3E1FF">reputation point: <span style="color: #008080">00000001</span>
 
 * <span style="background-color:#E3E1FF">'''Compressed part''', all into one block to improve the compression and performance, 32Bits to def compressed block size <span style="color: #FFBF00">00000001</span>:
+* <span style="background-color:#E3E1FF">size of bit array for recipe: <span style="color: #7B00FF">0001</span> <span style="color: #40BF00">01....</span>
 * <span style="background-color:#E3E1FF">size of bit array for encyclopedia_monster: <span style="color: #7B00FF">0001</span> <span style="color: #40BF00">01....</span>
 * <span style="background-color:#E3E1FF">size of bit array for encyclopedia_item: <span style="color: #7B00FF">0001</span> <span style="color: #40BF00">01....</span>
 * <span style="background-color:#E3E1FF">size of bit array for achievements: <span style="color: #7B00FF">01</span> <span style="color: #40BF00">01....</span>
