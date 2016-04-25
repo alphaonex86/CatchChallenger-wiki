@@ -4,11 +4,12 @@
 == Client &rarr; Server with reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Main code type
-! Sub code type
-! Query number
-! Packet size
+! Packet Code
 ! Data
+! Source
+! Destination
+! Fixed Query size
+! Fixed Reply size
 {{Template:Base_protocol_messages_Client_Server_Reply}}
 |}
 {{Note}}All the main code in this column is considered query with needed reply.
@@ -17,33 +18,34 @@
 == Client &rarr; Server without reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Main code type
-! Sub code type
-! Query number
-! Packet size
+! Packet Code
 ! Data
+! Source
+! Destination
+! Fixed Message size
 {{Template:Base_protocol_messages_Client_Server}}
 |}
 
 == Server &rarr; Client with reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Main code type
-! Sub code type
-! Query number
-! Packet size
+! Packet Code
 ! Data
+! Source
+! Destination
+! Fixed Query size
+! Fixed Reply size
 {{Template:Base_protocol_messages_Server_Client_Reply}}
 |}
 
 == Server &rarr; Client without reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Main code type
-! Sub code type
-! Query number
-! Packet size
+! Packet Code
 ! Data
+! Source
+! Destination
+! Fixed Message size
 {{Template:Base_protocol_messages_Server_Client}}
 |}
 
