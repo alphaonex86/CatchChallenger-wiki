@@ -200,9 +200,9 @@ Withdraw cash
 
 === 1014 ===
 Withdraw the object/monster on the market: <span style="color: #A600FF">01</span> (01 object, 02 monster), if object:
-* Object index: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>
+* Object: <span style="color: #FFBF00">0001</span> '''(To ident event if the position have changed''', implie search at server), quantity: <span style="color: #40BF00">00000001</span>
 Or if monster:
-* Monster index: <span style="color: #FFBF00">0001</span>
+* marketMonsterUniqueId: <span style="color: #FFBF00">00000001</span>
 
 [[Inventory_messages#Reply_1014|See reply to this query]]
 
