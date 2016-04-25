@@ -7,9 +7,7 @@ Organised by destination/sources to improve the income performance routing
 == Client &rarr; Server ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Main code type
-! Sub code type
-! Version 2 Packet Code
+! Packet Code
 ! Data
 ! Source
 ! Destination
@@ -25,9 +23,7 @@ Organised by destination/sources to improve the income performance routing
 == Server &rarr; Client ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Main code type
-! Sub code type
-! Version 2 Packet Code
+! Packet Code
 ! Data
 ! Source
 ! Destination
@@ -43,9 +39,7 @@ Organised by destination/sources to improve the income performance routing
 == Client &rarr; Server with reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Main code type
-! Sub code type
-! Version 2 Packet Code
+! Packet Code
 ! Data
 ! Source
 ! Destination
@@ -64,9 +58,7 @@ Organised by destination/sources to improve the income performance routing
 == Server &rarr; Client with reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Main code type
-! Sub code type
-! Version 2 Packet Code
+! Packet Code
 ! Data
 ! Source
 ! Destination
