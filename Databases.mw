@@ -27,7 +27,8 @@ Not required:
 === character ===
 ==== allow ====
 List of allow uint8_t resolved by dictionary:
-* 01
+* 01 (Allow clan)
+
 ==== item ====
 List of:
 * uint16_t item
