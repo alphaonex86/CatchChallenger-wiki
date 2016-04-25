@@ -512,8 +512,6 @@ If all is good in proxy mode:
 
 After the server will send tp command to set the first position.
 
-This reply is compressed.
-
 Wrong, case possible:
 * <span style="color: #FF4000">02</span> (Character not found)
 * <span style="color: #FF4000">03</span> (Character already connected/online)
