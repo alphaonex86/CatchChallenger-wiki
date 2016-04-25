@@ -4,11 +4,12 @@
 == Client &rarr; Server with reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Main code type
-! Sub code type
-! Query number
-! Packet size
+! Packet Code
 ! Data
+! Source
+! Destination
+! Fixed Query size
+! Fixed Reply size
 {{Template:Login_protocol_messages_Client_Server_Reply}}
 {{Template:Login_protocol_messages_Client_Server_Reply_Login}}
 |}
@@ -18,11 +19,11 @@
 == Client &rarr; Server ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Main code type
-! Sub code type
-! Query number
-! Packet size
+! Packet Code
 ! Data
+! Source
+! Destination
+! Fixed Message size
 {{Template:Login_protocol_messages_Client_Server}}
 |-
 |}
@@ -30,21 +31,22 @@
 == Server &rarr; Client with reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Main code type
-! Sub code type
-! Query number
-! Packet size
+! Packet Code
 ! Data
+! Source
+! Destination
+! Fixed Query size
+! Fixed Reply size
 |}
 
 == Server &rarr; Client ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Main code type
-! Sub code type
-! Query number
-! Packet size
+! Packet Code
 ! Data
+! Source
+! Destination
+! Fixed Message size
 {{Template:Login_protocol_messages_Server_Client}}
 |-
 |}
