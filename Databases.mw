@@ -52,14 +52,6 @@ List of:
 * bit array
 ==== achievements ====
 * bit array
-==== monster ====
-'''Can't be reordered. Order is important.'''
-* uint32_t monster id
-
-==== monster_market ====
-* uint32_t monster id
-==== monster_warehouse ====
-* uint32_t monster id
 
 === monster ===
 ==== buffs ====
