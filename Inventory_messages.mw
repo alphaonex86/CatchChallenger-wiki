@@ -377,13 +377,13 @@ The reply can be one of this:
 Price into the market: <span style="color: #FF4000">0000000000000003</span>
 
 List of object, size list <span style="color: #A600FF">00000001</span>:
-* Object id: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">0000000000000003</span>
+* Object index: <span style="color: #FFBF00">0001</span>, Object id: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">0000000000000003</span>
 List of monster, size list <span style="color: #A600FF">00000001</span>:
-* Monster: <span style="color: #40BF00">0001</span>, level: <span style="color: #FF4000">03</span>, price: <span style="color: #FF4000">0000000000000003</span>
-List of onwed object, size list <span style="color: #A600FF">00000001</span>:
-* Object id: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">0000000000000003</span>
-List of onwed monster, size list <span style="color: #A600FF">00000001</span>:
-* Monster: <span style="color: #40BF00">0001</span>, level: <span style="color: #FF4000">03</span>, price: <span style="color: #FF4000">0000000000000003</span>
+* Monster index: <span style="color: #FFBF00">0001</span>, Monster: <span style="color: #40BF00">0001</span>, level: <span style="color: #FF4000">03</span>, price: <span style="color: #FF4000">0000000000000003</span>
+List of object of current player, size list <span style="color: #A600FF">00000001</span>:
+* Object index: <span style="color: #FFBF00">0001</span>, Object id: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>, price: <span style="color: #FF4000">0000000000000003</span>
+List of monster of current player, size list <span style="color: #A600FF">00000001</span>:
+* Monster index: <span style="color: #FFBF00">0001</span>, Monster: <span style="color: #40BF00">0001</span>, level: <span style="color: #FF4000">03</span>, price: <span style="color: #FF4000">0000000000000003</span>
 
 === Reply 1011 ===
 The reply can be one of this:
