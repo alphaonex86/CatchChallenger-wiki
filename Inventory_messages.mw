@@ -331,9 +331,6 @@ The reply can be one of this:
 * <span style="color: #40BFFF">02</span> failed to use with consumption of the object
 * <span style="color: #40BFFF">03</span> failed to use without consumption of the object
 
-'''If is a trap'''
-* Add Monster id, 00000000 if failed
-
 === Reply 100A ===
 Why resend the object list? Because some object can be disabled by the server. Allow global trade where the player can sell/buy to other player.
 
