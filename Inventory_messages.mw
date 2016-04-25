@@ -176,7 +176,7 @@ Factory id: <span style="color: #A600FF">0001</span>, Sell object: <span style="
 [[Inventory_messages#Reply_100F|See reply to this query]]
 
 === 1010 ===
-Get the market list
+Get the market list '''(Unique id to ident even if the position have changed)'''
 
 [[Inventory_messages#Reply_1010|See reply to this query]]
 
