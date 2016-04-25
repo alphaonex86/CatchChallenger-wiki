@@ -4,11 +4,12 @@
 == Client &rarr; Server with reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Main code type
-! Sub code type
-! Query number
-! Packet size
+! Packet Code
 ! Data
+! Source
+! Destination
+! Fixed Query size
+! Fixed Reply size
 {{Template:Master_server_messages_Client_Server_Reply}}
 |-
 | Login specific
@@ -19,22 +20,23 @@
 == Client &rarr; Server without reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Main code type
-! Sub code type
-! Query number
-! Packet size
+! Packet Code
 ! Data
+! Source
+! Destination
+! Fixed Message size
 {{Template:Master_server_messages_Client_Server}}
 |}
 
 == Server &rarr; Client with reply ==
 {| class="wikitable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
-! Main code type
-! Sub code type
-! Query number
-! Packet size
+! Packet Code
 ! Data
+! Source
+! Destination
+! Fixed Query size
+! Fixed Reply size
 {{Template:Master_server_messages_Server_Client_Reply}}
 |}
 
