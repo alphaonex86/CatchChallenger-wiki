@@ -234,6 +234,8 @@ This query have null size
 
 == Server &rarr; Client without reply ==
 === D001 ===
+'''Compressed message'''
+
 Send item list size <span style="color: #FF4000">0002</span>, and the object:
 * Id: <span style="color: #FFBF00">0001</span>, quantity: <span style="color: #40BF00">00000001</span>
 * Id: <span style="color: #FFBF00">0002</span>, quantity: <span style="color: #40BF00">00000005</span>
