@@ -405,7 +405,6 @@ Wrong, case possible:
 * <span style="color: #FF4000">08</span> (Too recently disconnected)
 
 ==== Reply 0205 Proxy mode ====
-'''Compressed message'''
 
 Switch on characters reply, by color:
 * <span style="background-color:#FFDFE3">Static fixed config at server start
@@ -497,7 +496,7 @@ If all is good in proxy mode:
 ** <span style="background-color:#E3E1FF">reputation level: <span style="color: #FF4000">01</span>
 ** <span style="background-color:#E3E1FF">reputation point: <span style="color: #008080">00000001</span>
 
-* <span style="background-color:#E3E1FF">All into one block to improve the compression and performance, 32Bits to def compressed block size <span style="color: #FFBF00">00000001</span>:
+* <span style="background-color:#E3E1FF">'''The bit array are Compressed''', All into one block to improve the compression and performance, 32Bits to def compressed block size <span style="color: #FFBF00">00000001</span>:
 * <span style="background-color:#E3E1FF">size of bit array for recipe: <span style="color: #7B00FF">0001</span> <span style="color: #40BF00">01....</span>
 * <span style="background-color:#E3E1FF">size of bit array for encyclopedia_monster: <span style="color: #7B00FF">0001</span> <span style="color: #40BF00">01....</span>
 * <span style="background-color:#E3E1FF">size of bit array for encyclopedia_item: <span style="color: #7B00FF">0001</span> <span style="color: #40BF00">01....</span>
