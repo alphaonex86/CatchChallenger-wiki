@@ -465,7 +465,7 @@ If all is good in proxy mode:
 ** <span style="background-color:#E3E1FF">captured_with: <span style="color: #40BF00">0001</span>
 ** <span style="background-color:#E3E1FF">gender: <span style="color: #FF4000">01</span>
 ** <span style="background-color:#E3E1FF">egg_step: <span style="color: #FFBF00">00000000</span> (is mature if = 0)
-** <span style="background-color:#E3E1FF">character_origin: <span style="color: #FFBF00">00000001</span>
+** <span style="background-color:#E3E1FF">character of origin: <span style="color: #FFBF00">01</span> (01 = yes, 00 = no: foreign)
 ** <span style="background-color:#E3E1FF">size of list of the buff monsters: <span style="color: #7B00FF">01</span>
 *** <span style="background-color:#E3E1FF">buff: <span style="color: #40BF00">01</span>
 *** <span style="background-color:#E3E1FF">buff level: <span style="color: #FF4000">01</span>
@@ -483,7 +483,7 @@ If all is good in proxy mode:
 ** <span style="background-color:#E3E1FF">captured_with: <span style="color: #40BF00">0001</span>
 ** <span style="background-color:#E3E1FF">gender: <span style="color: #FF4000">01</span>
 ** <span style="background-color:#E3E1FF">egg_step: <span style="color: #FFBF00">00000000</span> (is mature if = 0)
-** <span style="background-color:#E3E1FF">character_origin: <span style="color: #FFBF00">00000001</span>
+** <span style="background-color:#E3E1FF">character of origin: <span style="color: #FFBF00">01</span> (01 = yes, 00 = no: foreign)
 ** <span style="background-color:#E3E1FF">size of list of the buff monsters: <span style="color: #7B00FF">01</span>
 *** <span style="background-color:#E3E1FF">buff: <span style="color: #40BF00">01</span>
 *** <span style="background-color:#E3E1FF">buff level: <span style="color: #FF4000">01</span>
