@@ -31,6 +31,7 @@ Imply:
 * Not problem at data saving due to buffer offset work
 * The offset to store the incremental value need to be as same type as the id
 * The offset to store the incremental value can do integer overflow to decrease the value (maybe can be use as some compression ratio optimisation)
+* Some prefetch optimisation problem, mean slow down.
 == catchchallenger_common ==
 === character ===
 ==== allow ====
