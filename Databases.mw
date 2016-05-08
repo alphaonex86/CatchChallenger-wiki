@@ -23,6 +23,7 @@ Not required:
 * Consistency (The master server lock the globale data linked to the account util the last write is done, then consistency done by the master server)
 
 = blob format =
+== High compression mode ==
 Format, see [[Compression]] to understand better why:
 * Not multiplex the data, to isolate the incompressible data.
 * Id use as incremental because it unique and into range
