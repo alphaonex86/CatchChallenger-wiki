@@ -23,6 +23,12 @@ Not required:
 * Consistency (The master server lock the globale data linked to the account util the last write is done, then consistency done by the master server)
 
 = blob format =
+Format, see [[Compression]] to understand better why:
+* Not multiplex the data, to isolate the incompressible data.
+* Id use as incremental because it unique and into range
+Imply:
+* Multiplex at data loading
+* Not problem at data saving due to buffer offset work
 == catchchallenger_common ==
 === character ===
 ==== allow ====
