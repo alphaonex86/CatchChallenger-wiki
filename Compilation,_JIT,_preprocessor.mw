@@ -4,6 +4,10 @@
 <blockquote>The name "compiler" is primarily used for programs that translate source code from a high-level programming language to a lower level language (e.g., assembly language or machine code). If the compiled program can run on a computer whose CPU or operating system is different from the one on which the compiler runs, the compiler is known as a cross-compiler. More generally, compilers are a specific type of translator.</blockquote>
 Source wikipedia.
 
+* Here you have specific optimisation (SIMD, see below) to do the software CPU specific to improve the performance using the full instruction set
+* Generic optimisation as unroll loop, ...
+* This mode don't take care of compilation time, mean it can do more advanced optimisation than JIT
+
 = JIT =
 <blockquote>In computing, just-in-time (JIT) compilation, also known as dynamic translation, is compilation done during execution of a program – at run time – rather than prior to execution.[1] Most often this consists of translation to machine code, which is then executed directly, but can also refer to translation to another format.</blockquote>
 Source wikipedia.
@@ -23,5 +27,13 @@ The jit will detect that's and do:
   do another thing
 And will optimise as:
   do something
+Mean: Less register used (high speed memory block of 32Bits if the cpu is 32Bits), deterministic behaviour and more optimisation possibility, lighter context and less context change
+* Less CPU cache (L1, L2) flush
+* Better usage of the branch predictor: <blockquote>In computer architecture, a branch predictor is a digital circuit that tries to guess which way a branch (e.g. an if-then-else structure) will go before this is known for sure. The purpose of the branch predictor is to improve the flow in the instruction pipeline. Branch predictors play a critical role in achieving high effective performance in many modern pipelined microprocessor architectures such as x86.</blockquote>
+Source wikipedia.
+* In some case it use opcode (Java, ...), that's allow do the generic optimisation before the JIT part and offload part of the work: The JIT is only hear to compil into assembly and do the platform/assembly specific optimisation
 
-= preprocessor =
+= Preprocessor =
+The Preprocessor into C or C++ and achieve most of JIT part by putting it at compilation time, by this config can't be changed (you need recompil it).
+
+This allow drop some code to have less size (usefull for embedded), disable code with potential security problem
