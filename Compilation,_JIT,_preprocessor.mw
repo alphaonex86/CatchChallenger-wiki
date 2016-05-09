@@ -1,0 +1,27 @@
+= Compilation =
+<blockquote>A compiler is a computer program (or a set of programs) that transforms source code written in a programming language (the source language) into another computer language (the target language), with the latter often having a binary form known as object code.[1] The most common reason for converting source code is to create an executable program.</blockquote>
+
+<blockquote>The name "compiler" is primarily used for programs that translate source code from a high-level programming language to a lower level language (e.g., assembly language or machine code). If the compiled program can run on a computer whose CPU or operating system is different from the one on which the compiler runs, the compiler is known as a cross-compiler. More generally, compilers are a specific type of translator.</blockquote>
+Source wikipedia.
+
+= JIT =
+<blockquote>In computing, just-in-time (JIT) compilation, also known as dynamic translation, is compilation done during execution of a program – at run time – rather than prior to execution.[1] Most often this consists of translation to machine code, which is then executed directly, but can also refer to translation to another format.</blockquote>
+Source wikipedia.
+
+What is the change against the compilation?
+* Use all the instruction set of the cpu, allow usage of SIMD (MMX, SSE, AVX, ...) to improve the performance without change the code (as multi-thread programming)
+* Take care of one time loaded variable:
+  var toto=config[Toto]
+  if(toto==X)
+  do something
+  else
+  do another thing
+The jit will detect that's and do:
+  if(true)//the condition is always true/false
+  do something
+  else
+  do another thing
+And will optimise as:
+  do something
+
+= preprocessor =
