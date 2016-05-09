@@ -34,6 +34,8 @@ Source wikipedia.
 * In some case it use opcode (Java, ...), that's allow do the generic optimisation before the JIT part and offload part of the work: The JIT is only hear to compil into assembly and do the platform/assembly specific optimisation
 
 = Preprocessor =
-The Preprocessor into C or C++ and achieve most of JIT part by putting it at compilation time, by this config can't be changed (you need recompil it).
+<blockquote>In computer science, a preprocessor is a program that processes its input data to produce output that is used as input to another program. The output is said to be a preprocessed form of the input data, which is often used by some subsequent programs like compilers. The amount and kind of processing done depends on the nature of the preprocessor; some preprocessors are only capable of performing relatively simple textual substitutions and macro expansions, while others have the power of full-fledged programming languages.</blockquote>
+Source wikipedia.
 
-This allow drop some code to have less size (usefull for embedded), disable code with potential security problem
+* The Preprocessor into C or C++ and achieve most of JIT part by putting it at compilation time, by this config can't be changed (you need recompil it).
+* This allow drop some code to have less size (usefull for embedded), disable code with potential security problem
