@@ -166,12 +166,16 @@ Character id: 00000001 32Bits
 * Max warehouse player monsters: <span style="color: #40BFFF">0001</span>
 * Max player items: <span style="color: #40BFFF">01</span>
 * Max warehouse player monsters: <span style="color: #40BFFF">0001</span>
-* dictionary reputation size: <span style="color: #FFBF00">01</span>
-** id: <span style="color: #FF4000">01</span>, text: <span style="color: #40BF00">"toto"</span>
-* dictionary skin size: <span style="color: #FFBF00">01</span>
-** id: <span style="color: #FF4000">01</span>, text: <span style="color: #40BF00">"toto"</span>
-* dictionary starter size: <span style="color: #FFBF00">01</span>
-** id: <span style="color: #FF4000">01</span>, text: <span style="color: #40BF00">"toto"</span>
+
+* reputation id dictionary size: <span style="color: #40BF00">01</span>
+** The index is the internal id, database id <span style="color: #FF4000">0001</span>
+* Skin id dictionary size: <span style="color: #40BF00">01</span>
+** The index is the internal id, database id <span style="color: #FF4000">0001</span>
+* starter id dictionary size: <span style="color: #40BF00">01</span>
+** The index is the internal id, database id <span style="color: #FF4000">0001</span>
+
+* sha224 of datapack file list content for the base datapack '''then excluding map/main/''' (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list too (if match, not need sync it).
+
 Or
 * <span style="color: #40BFFF">02</span> (02 = need unique key change)
 * new unique key <span style="color: #40BFFF">00000000</span> (random number)
@@ -181,12 +185,16 @@ Or
 * Max warehouse player monsters: <span style="color: #40BFFF">0001</span>
 * Max player items: <span style="color: #40BFFF">01</span>
 * Max warehouse player monsters: <span style="color: #40BFFF">0001</span>
-* dictionary reputation size: <span style="color: #FFBF00">01</span>
-** id: <span style="color: #FF4000">01</span>, text: <span style="color: #40BF00">"toto"</span>
-* dictionary skin size: <span style="color: #FFBF00">01</span>
-** id: <span style="color: #FF4000">01</span>, text: <span style="color: #40BF00">"toto"</span>
-* dictionary starter size: <span style="color: #FFBF00">01</span>
-** id: <span style="color: #FF4000">01</span>, text: <span style="color: #40BF00">"toto"</span>
+
+* reputation id dictionary size: <span style="color: #40BF00">01</span>
+** The index is the internal id, database id <span style="color: #FF4000">0001</span>
+* Skin id dictionary size: <span style="color: #40BF00">01</span>
+** The index is the internal id, database id <span style="color: #FF4000">0001</span>
+* starter id dictionary size: <span style="color: #40BF00">01</span>
+** The index is the internal id, database id <span style="color: #FF4000">0001</span>
+
+* sha224 of datapack file list content for the base datapack '''then excluding map/main/''' (prevent hack of external mirror), sha224 is checksum of client datapack file content ordened by relative to datapack base file name, used to don't send datapack list too (if match, not need sync it).
+
 Or
 * <span style="color: #40BFFF">03</span> (03 = character group not found)
 Or
