@@ -24,3 +24,6 @@ Delete some meta data can be a good idea. Into the CatchChallenger unpacker I ta
 We continue to use Tar to have an easy integration at server side (99% of unix) for CatchChallenger via a http mirror (the self hosting you have the simplified rsync to send file and sync without any archiving tool need). It's exactly the same reason why I use http protocol, it's very easy to have access to http hosting support.
 
 Do own format is not a problem, the problem is to do/maintain and distribute the encoder and decoder for this format (right to install it?).
+
+And will be as the format '''.tar.xz''' where xz is run with --check=crc32, `--owner=0 --group=0 --mtime='2010-01-01' -H ustar` allow better compression and drop information leak:
+  tar cf - folder/ --owner=0 --group=0 --mtime='2010-01-01' -H ustar | xz -9 --check=crc32 > archive.tar.xz
