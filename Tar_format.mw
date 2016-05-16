@@ -5,25 +5,18 @@ It's a open source which ensures interoperability. It's important to always have
 
 '''To translate:'''
 
-This allows me to separate the storage format and the compression itself. Use the Tar format with gzip, zlib or other.
+Cela me permet de découplé le format de stockage et la compression en elle même. Utiliser le format Tar avec gzip, zlib ou autre.
 
-== Tar structure ==
-You have the datas, the file content. And the meta data, oath, chmod, user, group, creation date ... The Tar format work by block, the holes into the block is fil by binary zeros.
-  The name is derived from (t)ape (ar)chive, as it was originally developed to write data to sequential I/O devices with no file system of their own.
-  The command line utility was first introduced in the seventh edition of unix (v7) in January 1979, replacing the tp program.[1]
-  The file structure to store this information was later standardized in POSIX.1-1988[2] and later POSIX.1-2001.[3] and became a format supported by most modern file archiving systems.
-  (Wikipedia)
+Comment est fait un Tar?
+Vous avez les données, le contenu des fichiers. Et les métadonnées, nom, chemin, chmod, utilisateur, group, date de creation… Le format Tar tar fonctionne par bloque, les trous entre les bloques sont remplit par des 0 binaires. Le format est orienté stockage sur bande, il date de 1979 (normalisation 1988) mais eu des revisions entre temps.
 
-Don't do simple serialization can be awkward for the compression system because you have X binary zeros. This add noise, which is problematic to optimize compression. If in addition we add that the integer is stored into string, that's reduce event more the compression ratio compared to binary (See: [[Compression]] and [[Technologies_used#Binary|Binary]]). This also reduces the performance of Tar encoder and decoder to work in string and not in binary (to not mention the limitations of the length of the numbers represented).
+Le fait de ne pas faire une bête sérialisation peu être gênant pour les systèmes de compression car il y as un trou de X 0 binaire. Cela rajoute du bruit, ce qui est problématique pour optimiser la compression. Si en plus l’ont rajoute le faite que les entier sont stocké en chaine, ce qui réduit encore le ratio de compression comparé au binaire (voir: Compression et Binary dans le wiki de CatchChallenger). Cela reduit aussi les performances de l’encodeur et décodeur Tar de travailler en chaine et non pas en binaire (sans parler des limitations de la longeur des nombres représenté).
 
-A better format could have a much smaller size without compression and a better compression ratio.
+Un format mieux étudié pourrai avoir une taille bien inférieur sans compression et un meilleur ratio de compression.
 
-Delete some meta data can be a good idea. Into the CatchChallenger unpacker I take care ONLY of file name and file content, I ignore: chmod, user, group, creation date, ...
+Supprimer des meta données serai une bonne idée. Par exemple dans mon décompresseur je ne prends en compte QUE le fichier et son nom et j’ignore une grande partie et méta données: chmod, utilisateur, group, date de creation…
 
-== For CatchChallenger ==
-We continue to use Tar to have an easy integration at server side (99% of unix) for CatchChallenger via a http mirror (the self hosting you have the simplified rsync to send file and sync without any archiving tool need). It's exactly the same reason why I use http protocol, it's very easy to have access to http hosting support.
+Conclusion
+Je vais continuer à utiliser Tar dans le cadre de mes logiciels pour faciliter la création de plugin pour Ultracopier/Supercopier et pour l’intégration facile coté serveur dédié (99% de unix) pour CatchChallenger via un mirroir http (car pour le self hosting il y as déjà un rsync simplifié qui rends toute utilisation de Tar inutile).
 
-Do own format is not a problem, the problem is to do/maintain and distribute the encoder and decoder for this format (right to install it?).
-
-And will be as the format '''.tar.xz''' where xz is run with --check=crc32, `--owner=0 --group=0 --mtime='2010-01-01' -H ustar` allow better compression and drop information leak:
-  tar cf - folder/ --owner=0 --group=0 --mtime='2010-01-01' -H ustar | xz -9 --check=crc32 > archive.tar.xz
+Faire mon propre format n’est pas un probléme, le probléme serai de faire/maintenir et distribuer l’encodeur et le décodeur pour ce format.
