@@ -11,11 +11,11 @@ This allows me to separate the storage format and the compression itself. Use th
 You have the datas, the file content. And the meta data, oath, chmod, user, group, creation date ... The Tar format work by block, the holes into the block is fil by binary zeros.
   The name is derived from (t)ape (ar)chive, as it was originally developed to write data to sequential I/O devices with no file system of their own. The command line utility was first introduced in the seventh edition of unix (v7) in January 1979, replacing the tp program.[1] The file structure to store this information was later standardized in POSIX.1-1988[2] and later POSIX.1-2001.[3] and became a format supported by most modern file archiving systems. (Wikipedia)
 
-Don't do simple serialisation can be awkward for the compression system because you have X binary zeros. This add noise, which is problematic to optimize compression. If in addition we add that the integer is stored into string, that's reduce event more the compression ratio compared to binary (See: [[Compression]] and [[Technologies_used#Binary|Binary]]). This also reduces the performance of Tar encoder and decoder to work in string and not in binary (to not mention the limitations of the length of the numbers represented).
+Don't do simple serialization can be awkward for the compression system because you have X binary zeros. This add noise, which is problematic to optimize compression. If in addition we add that the integer is stored into string, that's reduce event more the compression ratio compared to binary (See: [[Compression]] and [[Technologies_used#Binary|Binary]]). This also reduces the performance of Tar encoder and decoder to work in string and not in binary (to not mention the limitations of the length of the numbers represented).
 
 A better format could have a much smaller size without compression and a better compression ratio.
 
-Delete somes meta data can be a good idea. Into the CatchChallenger unpacker I take care ONLY of file name and file content, I ignore: chmod, user, group, creation date, ...
+Delete some meta data can be a good idea. Into the CatchChallenger unpacker I take care ONLY of file name and file content, I ignore: chmod, user, group, creation date, ...
 
 == For CatchChallenger ==
 We continue to use Tar to have an easy integration at server side (99% of unix) for CatchChallenger via a http mirror (the self hosting you have the simplified rsync to send file and sync without any archiving tool need).
