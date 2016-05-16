@@ -21,6 +21,6 @@ A better format could have a much smaller size without compression and a better 
 Delete some meta data can be a good idea. Into the CatchChallenger unpacker I take care ONLY of file name and file content, I ignore: chmod, user, group, creation date, ...
 
 == For CatchChallenger ==
-We continue to use Tar to have an easy integration at server side (99% of unix) for CatchChallenger via a http mirror (the self hosting you have the simplified rsync to send file and sync without any archiving tool need).
+We continue to use Tar to have an easy integration at server side (99% of unix) for CatchChallenger via a http mirror (the self hosting you have the simplified rsync to send file and sync without any archiving tool need). It's exactly the same reason why I use http protocol, it's very easy to have access to http hosting support.
 
 Do own format is not a problem, the problem is to do/maintain and distribute the encoder and decoder for this format (right to install it?).
