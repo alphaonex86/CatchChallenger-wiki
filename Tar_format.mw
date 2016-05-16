@@ -1,0 +1,22 @@
+= The Tar format =
+It's a open source which ensures interoperability. It's important to always have a software to do and read the archive, without license or royalty. That's allow to encode under Windows, Linux, Mac. Do the own lib to read it (then I can reduce the code size because I limit the features that I need).
+
+[[File:TarAndGzip.png]]
+
+'''To translate:'''
+
+Cela me permet de découplé le format de stockage et la compression en elle même. Utiliser le format Tar avec gzip, zlib ou autre.
+
+Comment est fait un Tar?
+Vous avez les données, le contenu des fichiers. Et les métadonnées, nom, chemin, chmod, utilisateur, group, date de creation… Le format Tar tar fonctionne par bloque, les trous entre les bloques sont remplit par des 0 binaires. Le format est orienté stockage sur bande, il date de 1979 (normalisation 1988) mais eu des revisions entre temps.
+
+Le fait de ne pas faire une bête sérialisation peu être gênant pour les systèmes de compression car il y as un trou de X 0 binaire. Cela rajoute du bruit, ce qui est problématique pour optimiser la compression. Si en plus l’ont rajoute le faite que les entier sont stocké en chaine, ce qui réduit encore le ratio de compression comparé au binaire (voir: Compression et Binary dans le wiki de CatchChallenger). Cela reduit aussi les performances de l’encodeur et décodeur Tar de travailler en chaine et non pas en binaire (sans parler des limitations de la longeur des nombres représenté).
+
+Un format mieux étudié pourrai avoir une taille bien inférieur sans compression et un meilleur ratio de compression.
+
+Supprimer des meta données serai une bonne idée. Par exemple dans mon décompresseur je ne prends en compte QUE le fichier et son nom et j’ignore une grande partie et méta données: chmod, utilisateur, group, date de creation…
+
+Conclusion
+Je vais continuer à utiliser Tar dans le cadre de mes logiciels pour faciliter la création de plugin pour Ultracopier/Supercopier et pour l’intégration facile coté serveur dédié (99% de unix) pour CatchChallenger via un mirroir http (car pour le self hosting il y as déjà un rsync simplifié qui rends toute utilisation de Tar inutile).
+
+Faire mon propre format n’est pas un probléme, le probléme serai de faire/maintenir et distribuer l’encodeur et le décodeur pour ce format.
