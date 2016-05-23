@@ -26,6 +26,7 @@ Based on this characteristic:
 * Compression used is gzip, then zlib same as btrfs compression=zlib and zlib for ssl compression (note: I think of that's for ssh tunnel and postgresql)
 
 [[File:Compression-for-encyclopedia.png]]
+[[File:Compression-for-incremental.png]]
 
 * the incremental usage help the compression to do stable size.
 * for few item the compression is not effective but the size is minimal
