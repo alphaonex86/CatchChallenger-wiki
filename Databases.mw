@@ -87,8 +87,8 @@ List of:
 * bit array
 
 ==== itemonmap ====
-List of allow uint8_t resolved by dictionary:
-* pointOnMap
+* uint16_t: pointOnMap
+
 ==== plants ====
 List of:
 * uint8_t resolved by dictionary, pointOnMap
