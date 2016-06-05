@@ -63,7 +63,7 @@ It's on layer Object with name: "''Object''", Name: what you want
 * Type: bot
 * file: Xml script, see: [[Bot format]]
 * id: the id into the bot file
-* lookAt: left, right, top, bottom (optional, need skin)
+* lookAt: left, right, top, bottom, random, loop, move (optional, need skin)
 * skin: you skin name (optional)
 * fightRange: fight range if the step 1 is fight (optional)
 
