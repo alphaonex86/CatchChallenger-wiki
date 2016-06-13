@@ -87,7 +87,7 @@ List of:
 * bit array
 
 ==== itemonmap ====
-* uint16_t: pointOnMap
+* bit array
 
 ==== plants ====
 List of:
