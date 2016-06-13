@@ -506,8 +506,10 @@ If all is good in proxy mode:
 ** <span style="background-color:#FFFEC2">quest id: <span style="color: #40BF00">0001</span>
 ** <span style="background-color:#FFFEC2">quest step: <span style="color: #FF4000">01</span>
 ** <span style="background-color:#FFFEC2">quest finish one time: <span style="color: #008080">00</span> (false)
-* <span style="background-color:#FFFEC2">size of list of the bot win (already betten): <span style="color: #7B00FF">0001</span>
-** <span style="background-color:#FFFEC2">bot id win (already betten): <span style="color: #40BF00">0001</span>
+
+* <span style="background-color:#E3E1FF">'''The bit array are Compressed''', All into one block to improve the compression and performance, 32Bits to def compressed block size <span style="color: #FFBF00">00000001</span>:
+* <span style="background-color:#E3E1FF">size of bit array for bot id win: <span style="color: #7B00FF">01</span> <span style="color: #40BF00">01....</span>
+
 * <span style="background-color:#FFFEC2">size of item on map: <span style="color: #7B00FF">01</span>
 ** <span style="background-color:#FFFEC2">item on map,x,y getted: <span style="color: #FF4000">01</span> (index of item on map, ordened by map and x,y ordened into the xml file, less bandwith than send map,x,y)
 * <span style="background-color:#FFFEC2">size of plant on map: <span style="color: #7B00FF">01</span> '''/!\ only if plantOnlyVisibleByPlayer==true'''
