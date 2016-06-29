@@ -14,17 +14,3 @@ Have more latency to encode, but it's not a problem because CatchChallenger don'
 
 = Vorbis Opus =
 Have medium integration into the software, but it's easy to integrate due to the license. Most of open source software have support of it.
-
-The very more lower bitrate support and then bandwidth do this format perfect for 8Bits sound found into the Gameboy, Gameboy advance, ... Allow very compact sound, some test show 5MB for sound, 3MB for datapack content: well is few sound, but allow 20min of audio.
-
-= Gameboy sound format =
-<blockquote>The Portable Sound Format (PSF) is a sound file format ripped directly from video games from a variety of game consoles. The format was originally used for Sony PlayStation video games, but has since been adapted to support other systems.
-
-GBA Sound Format (GSF) is an emulated Game Boy Advance audio format developed by Caitsith2 and Zoopd. The basic GSF file structure is a subformat of PSF.
-CF: wikipedia</blockquote>
-
-It's programmed sound format, if you prefer it's software, as function compilation compiled for the gameboy CPU (ARM7TDMI), call with parameter. Each function have mathematic output then sound, and it call into determined order, frequency, repeat, ... and more.
-
-The unique way to convert it to CatchChallenger should convert it into javascript, WebAssembly, java. Mean CatchChallenger should be converted into Html5 o Java.
-
-Why not binary file? Because allow the virus, syscall, don't run in sandbox, and it's problematic to distribute a .dll for windows x86, how do you do with linux/mac/android? How do you do for non x86 as ARM, x86_64?
