@@ -1,0 +1,16 @@
+[[File:Vorbis-opus-audio.png|400px|thumb|right]]
+
+Firstly I have excluded all the no free and open source format. Because it force:
+* '''Extra fee to distribute the decoder'''
+* Extra fee to distribute the encoder, to provide a way to edit the datapack
+* Poor integration into open source software audio editing, like audacity
+
+= Ogg vorbis =
+<blockquote>Vorbis is most commonly used in conjunction with the Ogg container format and it is therefore often referred to as Ogg Vorbis. Vorbis is a continuation of audio compression development started in 1993 by Chris Montgomery. CF: wikipedia</blockquote>
+
+It's very popular format, used into open source and free software. Usage allowd into html5, supported by most audio player. Good to have high audio fidelity, to have detailed music, voice, ...
+
+Have more latency to encode, but it's not a problem because CatchChallenger don't use realtime time audio. Only pre-downloaded music.
+
+= Vorbis Opus =
+Have medium integration into the software, but it's easy to integrate due to the license. Most of open source software have support of it.
