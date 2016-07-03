@@ -46,6 +46,6 @@ Cuda and OpenCL as well as most other fairly advanced programming languages can 
 
 CF: wikipedia</blockquote>
 
-The HSA is the first step of this, but for indirect interraction to network layer, need pass to main kernel and CPU, do general slow down, purge the cache, ...
+The HSA is the first step of this but for it indirect interaction to network layer, need pass to main kernel and CPU, do general slow down, purge the cache, ... always will be slow for software with very fast data processing like few condition, few memory read/write.
 
-But is a good concept to see the C++ use the CPU and GPU. Add intermediaria representation, need compilation for target CPU and GPU. Keep the operating system on CPU.
+But is a good concept to see the C++ use the CPU and GPU. Add intermediary representation, need compilation for target CPU and GPU. Keep the operating system on CPU.
