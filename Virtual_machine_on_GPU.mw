@@ -49,3 +49,8 @@ CF: wikipedia</blockquote>
 The HSA is the first step of this but for it indirect interaction to network layer, need pass to main kernel and CPU, do general slow down, purge the cache, ... always will be slow for software with very fast data processing like few condition, few memory read/write.
 
 But is a good concept to see the C++ use the CPU and GPU. Add intermediary representation, need compilation for target CPU and GPU. Keep the operating system on CPU.
+
+= Alternative =
+* The [[Portable datacenter]], each node have their dedicated ressources, exclusive, not shared. It have correct cost. Correct energy efficient. Don't need hurge software hurgely multi-thread fithing to other software. But scale your self the processing (one site, software, customer by node). Each node have their own interrupt, timer, device processing, network processing, then all it's perfectly scalable.
+* Intel Xeon Phi, shared ressources, transparent usage without adaption (source or binary)
+* Large scale ARM as ThunderX of cavium, similar to Intel Xeon Phi, but with virtual network switch all can be deferent.
