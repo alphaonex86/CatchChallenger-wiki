@@ -9,7 +9,7 @@ One of misconception is put all CPU to all vm, do a big overload due to process 
 
 Prefer one CPU by virtual machine to have internal optimisation (SMP vs No SMP linux kernel)
 
-Only some GPU part as network processing, only the software, will do constant context switch, bandwidth to pass the CPU <-> GPU datas, use power and do latency problem.
+'''Only some GPU part''' as network processing, only the software, '''will do constant context switch, bandwidth to pass the CPU <-> GPU datas, use power and do latency problem'''.
 
 = MMU =
 Your MMU, memory management unit should be able to run a kernel/user space and multi-user and processus.
@@ -17,21 +17,21 @@ Your MMU, memory management unit should be able to run a kernel/user space and m
 = Conception =
 [[File:Network-space.png|200px|thumb|right|vm by GPU processor]]
 
-You need have light kernel by CPU of your GPU, and the kernel manage the local process. Each kernel will have unique network namespace, but don't need manage namespace because don't have multiple to manage. Each is responsive of their task, less fast than main CPU for single thread but lot of more processing power than the CPU for cluster (hadoop cluster, big data where the data don't fit in ram). No slow down on fast node when some other node is slow (high independency).
+You need have light kernel by CPU of your GPU, and the kernel manage the local process. '''Each GPU processor kernel will have unique network namespace''', but don't need manage namespace because don't have multiple to manage. Each is responsive of their task, less fast than main CPU for single thread but lot of more processing power than the CPU for cluster (hadoop cluster, big data where the data don't fit in ram). No slow down on fast node when some other node is slow (high independency).
 
 '''Unique big kernel will have scalability problem''', lock contention, some internal function in monothread, other need merge the result to unique node, ...
 
-Then the internal GPU bus will be transformed into switch, don't matter if it's ring, lineare scale, tree conception (in this case you should group the vm by cluster to improve the interconnection).
+Then the internal GPU bus will be transformed into switch, don't matter if it's ring, lineare scale, tree conception (in this case you should group the vm by cluster to improve the interconnection). You can put apache+php+mysql into same vm, or into 3 vm.
 
 The light kernel on GPU will be executed with another instruction than the machine CPU (x86), similarity with RPI (it start the GPU to start the CPU as device).
 
 The main kernel is responsive of storage (direct hardware call? network FS?), complex syscall, and expose it to light kernel on GPU.
 
-GPU receive directly the network stream, switch/route it to light kernel. Then the light kernel have all into the local memory and potentially use their L1 or other cache to grealy improve the [https://en.wikipedia.org/wiki/Instructions_per_second Instructions per second], targeting near billions of instructions per second or [https://en.wikipedia.org/wiki/FLOPS floating-point operations per second], it's decode the TCP stream, expose int high performance way to the software event loop (epoll force memory copy to read and write, need remake to have 0 copy process), the software manage it, and reply to it, the kernel recompose the TCP output stream. This with CPU <-> GPU exchange, without latency.
+'''GPU receive directly the network stream''', switch/route it to light kernel. Then the light kernel have all into the local memory and potentially use their L1 or other cache to grealy improve the [https://en.wikipedia.org/wiki/Instructions_per_second Instructions per second], targeting near billions of instructions per second or [https://en.wikipedia.org/wiki/FLOPS floating-point operations per second], it's decode the TCP stream, expose int high performance way to the software event loop (epoll force memory copy to read and write, need remake to have 0 copy process), the software manage it, and reply to it, the kernel recompose the TCP output stream. This with CPU <-> GPU exchange, without latency.
 
 The binary is directly compiled into GPU assembly.
 
-The network device is directly routed to GPU, then need dedicated network card, maybe one VM can forward a ip to CPU to give network access to the main CPU. It's too why don't give direct access to device at GPU because it deny direct access to CPU and slow down the CPU access to this device (GPU need split and forward the corresponding datas, then from one or few processor more slow then main CPU).
+The network device is directly routed to GPU, then '''need dedicated device''', here the network card, maybe one VM can forward a ip to CPU to give network access to the main CPU. It's too why don't give direct access to device at GPU because it '''deny direct access to CPU and slow down the CPU access to this device''' (GPU need split and forward the corresponding datas, then from one or few processor more slow then main CPU).
 
 = Old to new =
 [[File:Old-architecture.jpg|400px|thumb|left|Old architecture]] to [[File:New-architecture.jpg|400px|thumb|right|New architecture]]
@@ -46,11 +46,14 @@ Cuda and OpenCL as well as most other fairly advanced programming languages can 
 
 CF: wikipedia</blockquote>
 
-The HSA is the first step of this but for it indirect interaction to network layer, need pass to main kernel and CPU, do general slow down, purge the cache, ... always will be slow for software with very fast data processing like few condition, few memory read/write.
+The HSA is the first step of this but for it indirect interaction to network layer (and operating system), need pass to main kernel and CPU, do general slow down, purge the cache, ... always will be slow for software with very fast data processing like few condition, few memory read/write.
 
 But is a good concept to see the C++ use the CPU and GPU. Add intermediary representation, need compilation for target CPU and GPU. Keep the operating system on CPU.
 
 = Alternative =
 * The [[Portable datacenter]], each node have their dedicated ressources, exclusive, not shared. It have correct cost. Correct energy efficient. Don't need hurge software hurgely multi-thread fithing to other software. But scale your self the processing (one site, software, customer by node). Each node have their own interrupt, timer, device processing, network processing, then all it's perfectly scalable.
 * Intel Xeon Phi, shared ressources, transparent usage without adaption (source or binary)
-* Large scale ARM as ThunderX of cavium, similar to Intel Xeon Phi, but with virtual network switch all can be deferent.
+* Large scale ARM as ThunderX of cavium, similar to Intel Xeon Phi, but with virtual network switch all can be different to improve the routing (I don't have access to this hardware to test).
+
+= CatchChallenger =
+*To do: write CatchChallenger into this*
