@@ -31,6 +31,7 @@ GPU receive directly the network stream, switch/route it to light kernel. Then t
 
 = Old to new =
 [[File:Old-architecture.jpg|400px|thumb|left|Old architecture]] to [[File:New-architecture.jpg|400px|thumb|right|New architecture]]
+<br style="clear:both">
 
 = HSA =
 <quote>[https://en.wikipedia.org/wiki/Heterogeneous_System_Architecture Heterogeneous System Architecture]  is a cross-vendor set of specifications that allow for the integration of central processing units and graphics processors on the same bus, with shared memory and tasks.[1] The HSA is being developed by the HSA Foundation, which includes (among many others) AMD and ARM. The platform's stated aim is to reduce communication latency between CPUs, GPUs and other compute devices, and make these various devices more compatible from a programmer's perspective,[2]:3[3] relieving the programmer of the task of planning the moving of data between devices' disjoint memories (as must currently be done with OpenCL or CUDA).[4]
