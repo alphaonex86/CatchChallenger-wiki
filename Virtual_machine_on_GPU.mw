@@ -29,6 +29,10 @@ The main kernel is responsive of storage (direct hardware call? network FS?), co
 
 GPU receive directly the network stream, switch/route it to light kernel. Then the light kernel have all into the local memory and potentially use their L1 or other cache to grealy improve the [https://en.wikipedia.org/wiki/Instructions_per_second Instructions per second], targeting near billions of instructions per second or [https://en.wikipedia.org/wiki/FLOPS floating-point operations per second], it's decode the TCP stream, expose int high performance way to the software event loop (epoll force memory copy to read and write, need remake to have 0 copy process), the software manage it, and reply to it, the kernel recompose the TCP output stream. This with CPU <-> GPU exchange, without latency.
 
+The binary is directly compiled into GPU assembly.
+
+The network device is directly routed to GPU, then need dedicated network card, maybe one VM can forward a ip to CPU to give network access to the main CPU. It's too why don't give direct access to device at GPU because it deny direct access to CPU and slow down the CPU access to this device (GPU need split and forward the corresponding datas, then from one or few processor more slow then main CPU).
+
 = Old to new =
 [[File:Old-architecture.jpg|400px|thumb|left|Old architecture]] to [[File:New-architecture.jpg|400px|thumb|right|New architecture]]
 <br style="clear:both">
