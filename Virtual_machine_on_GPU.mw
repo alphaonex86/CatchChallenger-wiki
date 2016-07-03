@@ -31,9 +31,9 @@ The main kernel is responsive of storage (direct hardware call? network FS?), co
 
 The binary is directly compiled into GPU assembly.
 
-The network device is directly routed to GPU, then '''need dedicated device''', here the network card, maybe one VM can forward a ip to CPU to give network access to the main CPU. It's too why don't give direct access to device at GPU because it '''deny direct access to CPU and slow down the CPU access to this device''' (GPU need split and forward the corresponding datas, then from one or few processor more slow then main CPU).
+The network device is directly routed to GPU, then '''need dedicated device''', here the network card, maybe one VM can forward a ip to CPU to give network access to the main CPU. It's too why don't give direct access to device at GPU because it '''deny direct access to CPU and slow down the CPU access to this device''' (GPU need split and forward the corresponding datas, then from one or few processor more slow then main CPU). '''Mostly the ressources is dedicated and not shared'''.
 
-You see only your virtual machine into the GPU, GCN assembly for exemple, manage the virtual machine as VPS, compile software and run software as VPS.
+You see only your virtual machine into the GPU, GCN assembly for exemple, manage the virtual machine as VPS, compile software and run software as VPS. '''[https://en.wikipedia.org/wiki/Platform_as_a_service Platform as a service]'''
 
 = Old to new =
 [[File:Old-architecture.jpg|400px|thumb|left|Old architecture]] to [[File:New-architecture.jpg|400px|thumb|right|New architecture]]
