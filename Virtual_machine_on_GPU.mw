@@ -34,6 +34,8 @@ GPU receive directly the network stream, switch/route it to light kernel. Then t
 <br style="clear:both">
 
 = HSA =
+[[File:HSA_using_the_GPU_with_HSA.png|200px|thumb|right|HSA concept]]
+
 <blockquote>[https://en.wikipedia.org/wiki/Heterogeneous_System_Architecture Heterogeneous System Architecture]  is a cross-vendor set of specifications that allow for the integration of central processing units and graphics processors on the same bus, with shared memory and tasks.[1] The HSA is being developed by the HSA Foundation, which includes (among many others) AMD and ARM. The platform's stated aim is to reduce communication latency between CPUs, GPUs and other compute devices, and make these various devices more compatible from a programmer's perspective,[2]:3[3] relieving the programmer of the task of planning the moving of data between devices' disjoint memories (as must currently be done with OpenCL or CUDA).[4]
 
 Cuda and OpenCL as well as most other fairly advanced programming languages can use HSA to increase their execution performance.[5] Heterogeneous computing is widely used in system-on-chip devices such as tablets, smartphones, other mobile devices, and video game consoles.[6] HSA allows programs to use the graphics processor for floating point calculations without separate memory or scheduling.[7]
@@ -42,4 +44,4 @@ CF: wikipedia</blockquote>
 
 The HSA is the first step of this, but for indirect interraction to network layer, need pass to main kernel and CPU, do general slow down, purge the cache, ...
 
-But is a good concept to see the C++ use the CPU and GPU.
+But is a good concept to see the C++ use the CPU and GPU. Add intermediaria representation, need compilation for target CPU and GPU. Keep the operating system on CPU.
