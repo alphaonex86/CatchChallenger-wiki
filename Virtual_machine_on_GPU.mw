@@ -28,3 +28,15 @@ The light kernel on GPU will be executed with another instruction than the machi
 The main kernel is responsive of storage (direct hardware call? network FS?), complex syscall, and expose it to light kernel on GPU.
 
 GPU receive directly the network stream, switch/route it to light kernel. Then the light kernel have all into the local memory and potentially use their L1 or other cache to grealy improve the [https://en.wikipedia.org/wiki/Instructions_per_second Instructions per second], targeting near billions of instructions per second or [https://en.wikipedia.org/wiki/FLOPS floating-point operations per second], it's decode the TCP stream, expose int high performance way to the software event loop (epoll force memory copy to read and write, need remake to have 0 copy process), the software manage it, and reply to it, the kernel recompose the TCP output stream. This with CPU <-> GPU exchange, without latency.
+
+= Old to new =
+[[File:Old-architecture.jpg]][[File:New-architecture.jpg]]
+
+= HSA =
+<quote>[https://en.wikipedia.org/wiki/Heterogeneous_System_Architecture Heterogeneous System Architecture]  is a cross-vendor set of specifications that allow for the integration of central processing units and graphics processors on the same bus, with shared memory and tasks.[1] The HSA is being developed by the HSA Foundation, which includes (among many others) AMD and ARM. The platform's stated aim is to reduce communication latency between CPUs, GPUs and other compute devices, and make these various devices more compatible from a programmer's perspective,[2]:3[3] relieving the programmer of the task of planning the moving of data between devices' disjoint memories (as must currently be done with OpenCL or CUDA).[4]
+
+Cuda and OpenCL as well as most other fairly advanced programming languages can use HSA to increase their execution performance.[5] Heterogeneous computing is widely used in system-on-chip devices such as tablets, smartphones, other mobile devices, and video game consoles.[6] HSA allows programs to use the graphics processor for floating point calculations without separate memory or scheduling.[7]
+
+CF: wikipedia</quote>
+
+The HSA is the first step of this, but for indirect interraction to network layer, need pass to main kernel and CPU, do general slow down, purge the cache, ...
