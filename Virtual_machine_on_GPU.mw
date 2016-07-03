@@ -1,138 +1,23 @@
-[[File:Vm-cluster.jpg|200px|thumb|right|GPU view]]
-[[File:Network-namespace-in-linux.png|200px|thumb|right|Network namespace in linux, transposed to one name space = one processor on GPU]]
-
 = Why we want virtual machine on GPU? =
-We want virtual machine on GPU because it have at '''very low cost a large number of virtuals machines''' running. The memory bandwith is very large, large amount of CPU. GPGPU.
-
-'''This apply on all MIMD architecture.'''
-
-See too:
-* [https://www.usenix.org/legacy/event/nsdi11/tech/slides/jang.pdf Application of GPU for High-performance Network Processing]
-* [https://www3.cs.stonybrook.edu/~mikepo/papers/gaspp.atc14.pdf A GPU-Accelerated Stateful Packet Processing Framework]
+We want virtual machine on GPU because it have at '''very low cost a large number of virtuals machines''' running. The memory bandwith is very large, large amount of CPU.
 
 = Misconception =
 One of misconception is put all CPU to all vm, do a big overload due to process balancing, fight for ressources, instable performance.
 
 Prefer one CPU by virtual machine to have internal optimisation (SMP vs No SMP linux kernel)
 
-'''Only some GPU part''' as network processing, only the software, '''will do constant context switch, bandwidth to pass the CPU <-> GPU datas, use power and do latency problem'''.
-
-== Multi thread anti pattern ==
-[[File:Multi-thread-problem.png|200px|thumb|right]]
-
-As show on the picture, the conception is the most common because is the conception valid for mono task (allow monotask as video encoding to use all the ressources) and don't need collaboration (Don't need work with the OS dev), is valid for:
-* A big task
-* Multiple core too many idle
-* Keep into your space (user space mostly)
-* Different task is balanced on the multiple core
-Is incorrect for:
-* Server load, due to multiple task concurrency, the most common server case is all same time usage of database, http server, php, ...
-* Good scalability (this model have problem with so many core, hurge work to exploit all the core correctly)
-* Light task (so small, then due huge lock pressure, when batching is not available to change to big task)
-Possible responds to this case:
-* Have one interface by server (some virtualisation hardware into the network card allow it) to boost the packet processing
-* Split the network trafic on each core, each core have vm/service and merge into only at the end: Very easy to design, the software is monothread (performance boost thanks to cache/data locality by 10x)
-* Just one network card by server, huge network card need, or don't allow work another server
-
 = MMU =
 Your MMU, memory management unit should be able to run a kernel/user space and multi-user and processus.
 
-== Memory is critical ==
-The memory is very critical (due to difficult to wire the external memory chip), you will have only 16GB for 4096 CPU then 4MB by CPU.
-
-Mean your kernel, software need to be very intensively memory optimized. It's possible to group similar segment to improve that's. As keep one kernel for 32 CPU in memory, and each have their private data and their execution pointer.
-
 = Conception =
-[[File:Network-space.png|200px|thumb|right|vm by GPU processor]]
-
-You need have light kernel by CPU of your GPU, and the kernel manage the local process. '''Each GPU processor kernel will have unique network namespace''', but don't need manage namespace because don't have multiple to manage. Each is responsive of their task, less fast than main CPU for single thread but lot of more processing power than the CPU for cluster (hadoop cluster, big data where the data don't fit in ram). No slow down on fast node when some other node is slow (high independency).
+You need have light kernel by CPU of your GPU, and the kernel manage the local process. Each kernel will have unique network namespace, but don't need manage namespace because don't have multiple to manage. Each is responsive of their task, less fast than main CPU for single thread but lot of more processing power than the CPU for cluster (hadoop cluster, big data where the data don't fit in ram). No slow down on fast node when some other node is slow (high independency).
 
 '''Unique big kernel will have scalability problem''', lock contention, some internal function in monothread, other need merge the result to unique node, ...
 
-Then the internal GPU bus will be transformed into switch, don't matter if it's ring, lineare scale, tree conception (in this case you should group the vm by cluster to improve the interconnection). You can put apache+php+mysql into same vm, or into 3 vm.
+Then the internal GPU bus will be transformed into switch, don't matter if it's ring, lineare scale, tree conception (in this case you should group the vm by cluster to improve the interconnection).
 
 The light kernel on GPU will be executed with another instruction than the machine CPU (x86), similarity with RPI (it start the GPU to start the CPU as device).
 
-The main kernel is responsive of storage (direct hardware call? network FS?), complex syscall, and expose it to light kernel on GPU.
+The main kernel is responsive of storage, complex syscall, and expose it to light kernel on GPU.
 
-'''GPU receive directly the network stream''', switch/route it to light kernel. Then the light kernel have all into the local memory and potentially use their L1 or other cache to grealy improve the [https://en.wikipedia.org/wiki/Instructions_per_second Instructions per second], targeting near billions of instructions per second or [https://en.wikipedia.org/wiki/FLOPS floating-point operations per second], it's decode the TCP stream, expose int high performance way to the software event loop (epoll force memory copy to read and write, need remake to have 0 copy process), the software manage it, and reply to it, the kernel recompose the TCP output stream. This with CPU <-> GPU exchange, without latency.
-
-The binary is directly compiled into GPU assembly.
-
-The network device is directly routed to GPU, then '''need dedicated device''', here the network card, maybe one VM can forward a ip to CPU to give network access to the main CPU. It's too why don't give direct access to device at GPU because it '''deny direct access to CPU and slow down the CPU access to this device''' (GPU need split and forward the corresponding datas, then from one or few processor more slow then main CPU). '''Mostly the ressources is dedicated and not shared'''.
-
-You see only your virtual machine into the GPU, GCN assembly for exemple, manage the virtual machine as VPS, compile software and run software as VPS. '''[https://en.wikipedia.org/wiki/Platform_as_a_service Platform as a service]'''
-
-= Old to new =
-[[File:Old-architecture.jpg|400px|thumb|left|Old architecture]] to [[File:New-architecture.jpg|400px|thumb|right|New architecture]]
-<br style="clear:both">
-
-= HSA =
-[[File:HSA_using_the_GPU_with_HSA.png|200px|thumb|right|HSA concept]]
-
-<blockquote>[https://en.wikipedia.org/wiki/Heterogeneous_System_Architecture Heterogeneous System Architecture]  is a cross-vendor set of specifications that allow for the integration of central processing units and graphics processors on the same bus, with shared memory and tasks.[1] The HSA is being developed by the HSA Foundation, which includes (among many others) AMD and ARM. The platform's stated aim is to reduce communication latency between CPUs, GPUs and other compute devices, and make these various devices more compatible from a programmer's perspective,[2]:3[3] relieving the programmer of the task of planning the moving of data between devices' disjoint memories (as must currently be done with OpenCL or CUDA).[4]
-
-Cuda and OpenCL as well as most other fairly advanced programming languages can use HSA to increase their execution performance.[5] Heterogeneous computing is widely used in system-on-chip devices such as tablets, smartphones, other mobile devices, and video game consoles.[6] HSA allows programs to use the graphics processor for floating point calculations without separate memory or scheduling.[7]
-
-CF: wikipedia</blockquote>
-
-The HSA is the first step of this but for it indirect interaction to network layer (and operating system), need pass to main kernel and CPU, do general slow down, purge the cache, ... always will be slow for software with very fast data processing like few condition, few memory read/write.
-
-But is a good concept to see the C++ use the CPU and GPU. Add intermediary representation, need compilation for target CPU and GPU. Keep the operating system on CPU.
-
-= Alternative =
-* The [[Portable datacenter]], each node have their dedicated ressources, exclusive, not shared. It have correct cost. Correct energy efficient. Don't need hurge software hurgely multi-thread fithing to other software. But scale your self the processing (one site, software, customer by node). Each node have their own interrupt, timer, device processing, network processing, then all it's perfectly scalable.
-* Intel Xeon Phi, shared ressources, transparent usage without adaption (source or binary)
-* Large scale ARM as ThunderX of cavium, similar to Intel Xeon Phi, but with virtual network switch all can be different to improve the routing (I don't have access to this hardware to test).
-
-= Cluster usage =
-[[File:Cluster-load.png]]
-
-What's append if:
-* Client to router is 1ms
-* Router forward the packet to 1ms
-* Router to node is 1ms
-* To do... a simple addition into 0.00001ms
-
-This case apply to large scale cluster as micro electronic chip. It's same if you parse the network stream into the OS/CPU, and push to GPU. The compute is so small for CatchChallenger. You will have too many latency, less than 0.001% of the GPU usage, more time to manage the communication and route it than compute it.
-
-In all case '''the latency need be lower than computing time''', the '''computing time to route/forward need be lower than computing task'''.
-
-= CatchChallenger =
-Network packet parsing + high speed interface to the software + CatchChallenger is ideal. Mostly for the written above. Work mostly on small data set or out of cache, then bad scaling for single node. But have infinity scaling for multiples nodes.
-
-Single software on processor of GPU is correct (limit the context switch, do internal optimisation), but it's more easy to manage a lightweight virtual machine.
-
-The need of running CatchChallenger node after start (before start need lot of stuff, include disk/file system access):
-* Time
-* Timer
-* No float
-* SIMD (memory compare, copy and stream)
-* Addition, multiplication
-* Large memory access (need access to few MB with transparent caching, no a KB of local memory and external memory)
-* TCP network access in 0 Copy style (better)
-
-= Hardware =
-[[File:Xeon_Phi_Die.jpg|thumb|left]][[File:NVIDIA-GP104-GPU-Die.jpg|thumb|right]]
-
-You need see into this image:
-* You have group for core to share some ressources, keep data into a group improve the performance
-* It's near a tree computing structure
-* Mostly is have local atomic to access to the nearest cache or global atomic to have coerant data between different group at cost of lower speed
-
-Mean:
-* Shared kernel need work by group of CPU
-* Need and fast way to communicate into a same device
-* The fense/lock, ... need to be more explicit at kernel/language, not used for monothread-multitask
-
-= High density server =
-This way allow have '''high density server''' done with common hardware. You can pack more than 1000+ node into you computer, fix the cooling problem, the price, split better the container across all cpu.
-
-== Network ==
-To connect this high density cluster you need use advanced routing technique. IPv6 will provide the correct quantity of ip. And Supernetwork can be used (depend of your implementation and network topologie), form wikipedia:
-
-<blockquote>A '''supernetwork''', or '''supernet''', is an Internet Protocol (IP) network that is formed, for routing purposes, from the combination of two or more networks (or subnets) into a larger network. The new routing prefix for the combined network represents the constituent networks in a single route table entry. The process of forming a supernet is called '''supernetting''', '''prefix aggregation''', '''route aggregation''', or '''route summarization'''.
-
-Supernetting within the Internet serves as a preventive strategy to avoid topological fragmentation of the IP address space by using a hierarchical allocation system that delegates control of segments of address space to regional network service providers. This method facilitates regional route aggregation.
-
-The benefits of supernetting are conservation of address space and efficiencies gained in routers in terms of memory storage of route information and processing overhead when matching routes. Supernetting, however, has risks.</blockquote>
+GPU receive directly the network stream, switch/route it to light kernel.
