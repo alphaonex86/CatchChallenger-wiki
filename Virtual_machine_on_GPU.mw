@@ -1,0 +1,23 @@
+= Why we want virtual machine on GPU? =
+We want virtual machine on GPU because it have at '''very low cost a large number of virtuals machines''' running. The memory bandwith is very large, large amount of CPU.
+
+= Misconception =
+One of misconception is put all CPU to all vm, do a big overload due to process balancing, fight for ressources, instable performance.
+
+Prefer one CPU by virtual machine to have internal optimisation (SMP vs No SMP linux kernel)
+
+= MMU =
+Your MMU, memory management unit should be able to run a kernel/user space and multi-user and processus.
+
+= Conception =
+You need have light kernel by CPU of your GPU, and the kernel manage the local process. Each kernel will have unique network namespace, but don't need manage namespace because don't have multiple to manage. Each is responsive of their task, less fast than main CPU for single thread but lot of more processing power than the CPU for cluster (hadoop cluster, big data where the data don't fit in ram). No slow down on fast node when some other node is slow (high independency).
+
+'''Unique big kernel will have scalability problem''', lock contention, some internal function in monothread, other need merge the result to unique node, ...
+
+Then the internal GPU bus will be transformed into switch, don't matter if it's ring, lineare scale, tree conception (in this case you should group the vm by cluster to improve the interconnection).
+
+The light kernel on GPU will be executed with another instruction than the machine CPU (x86), similarity with RPI (it start the GPU to start the CPU as device).
+
+The main kernel is responsive of storage, complex syscall, and expose it to light kernel on GPU.
+
+GPU receive directly the network stream, switch/route it to light kernel.
