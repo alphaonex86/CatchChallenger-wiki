@@ -81,4 +81,5 @@ The need of running CatchChallenger node after start (before start need lot of s
 * No float
 * SIMD (memory compare, copy and stream)
 * Addition, multiplication
+* Large memory access (need access to few MB with transparent caching, no a KB of local memory and external memory)
 * TCP network access in 0 Copy style (better)
