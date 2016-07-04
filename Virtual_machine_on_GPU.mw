@@ -57,5 +57,26 @@ But is a good concept to see the C++ use the CPU and GPU. Add intermediary repre
 * Intel Xeon Phi, shared ressources, transparent usage without adaption (source or binary)
 * Large scale ARM as ThunderX of cavium, similar to Intel Xeon Phi, but with virtual network switch all can be different to improve the routing (I don't have access to this hardware to test).
 
+= Cluster usage =
+[[File:Cluster-load.png]]
+
+What's append if:
+* Client to router is 1ms
+* Router forward the packet to 1ms
+* Router to node is 1ms
+* To do... a simple addition into 0.00001ms
+
+This case apply to large scale cluster as micro electronic chip. It's same if you parse the network stream into the OS/CPU, and push to GPU. The compute is so small for CatchChallenger. You will have too many latency, less than 0.001% of the GPU usage, more time to manage the communication and route it than compute it.
+
 = CatchChallenger =
-*To do: write CatchChallenger into this*
+Network packet parsing + high speed interface to the software + CatchChallenger is ideal. Mostly for the written above. Work mostly on small data set or out of cache, then bad scaling for single node. But have infinity scaling for multiples nodes.
+
+Single software on processor of GPU is correct (limit the context switch, do internal optimisation), but it's more easy to manage a lightweight virtual machine.
+
+The need of running CatchChallenger node after start (before start need lot of stuff, include disk/file system access):
+* Time
+* Timer
+* No float
+* SIMD (memory compare, copy and stream)
+* Addition, multiplication
+* TCP network access in 0 Copy style (better)
