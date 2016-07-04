@@ -68,6 +68,8 @@ What's append if:
 
 This case apply to large scale cluster as micro electronic chip. It's same if you parse the network stream into the OS/CPU, and push to GPU. The compute is so small for CatchChallenger. You will have too many latency, less than 0.001% of the GPU usage, more time to manage the communication and route it than compute it.
 
+In all case '''the latency need be lower than computing time''', the '''computing time to route/forward need be lower than computing task'''.
+
 = CatchChallenger =
 Network packet parsing + high speed interface to the software + CatchChallenger is ideal. Mostly for the written above. Work mostly on small data set or out of cache, then bad scaling for single node. But have infinity scaling for multiples nodes.
 
