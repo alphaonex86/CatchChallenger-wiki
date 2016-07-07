@@ -33,6 +33,9 @@ Imply:
 * The offset to store the incremental value need to be as same type as the id
 * The offset to store the incremental value can do integer overflow to decrease the value (maybe can be use as some compression ratio optimisation)
 * Some prefetch optimisation problem, mean slow down.
+
+Then it use NoSQL schema to have a good control on the datas (order, format, ...)
+
 == catchchallenger_common ==
 === character ===
 ==== allow ====
