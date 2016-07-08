@@ -4,6 +4,8 @@
 = Why we want virtual machine on GPU? =
 We want virtual machine on GPU because it have at '''very low cost a large number of virtuals machines''' running. The memory bandwith is very large, large amount of CPU.
 
+This apply on all MIMD architecture.
+
 = Misconception =
 One of misconception is put all CPU to all vm, do a big overload due to process balancing, fight for ressources, instable performance.
 
