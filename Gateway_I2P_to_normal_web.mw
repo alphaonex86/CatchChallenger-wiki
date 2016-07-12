@@ -2,5 +2,12 @@ Here the step to mount a gateway to expose via gateway a catchchallenger hosted 
 
 * Optional: download the i2p site, rewrite the html file to hide the i2p url, and provide it via a http server
 * Expose the i2p server to local 127.0.0.1:XXXXX standard tcp port into i2p pannel
+* configure a socks4 proxy into i2p
 * Restart the gateway and fill the xml file
 * install a transparent socks redirector: redsocks, TranSocks, tranSOCKS_ev, ... NOT: tsocks (not allow dns resolution via I2P)
+* download from https://github.com/rofl0r/proxychains-ng
+* ./configure
+* make
+* make install
+* nano src/proxychains.conf (uncomment localnet 127.0.0.0/255.0.0.0, put socks4  127.0.0.1 proxyportconfiguredthirdpoint)
+* ./proxychains4 -f src/proxychains.conf ./catchchallenger-gateway
