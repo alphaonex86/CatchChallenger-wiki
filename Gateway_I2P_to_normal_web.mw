@@ -1,0 +1,5 @@
+Here the step to mount a gateway to expose via gateway a catchchallenger hosted on i2p to the normal web. Why do it with gateway? Because it rewrite the message to have good compatibility to normal web (i2p mirror rewritten to normal web mirror, i2p server jump hidden to correctly expose to normal web), and cache the content to improve the performance.
+
+* Optional: download the i2p site, rewrite the html file to hide the i2p url, and provide it via a http server
+* Expose the i2p server to local 127.0.0.1:XXXXX standard tcp port into i2p pannel
+* Restart the gateway and fill the xml file
