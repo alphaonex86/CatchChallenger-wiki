@@ -3,4 +3,4 @@ Here the step to mount a gateway to expose via gateway a catchchallenger hosted 
 * Optional: download the i2p site, rewrite the html file to hide the i2p url, and provide it via a http server
 * Expose the i2p server to local 127.0.0.1:XXXXX standard tcp port into i2p pannel
 * Restart the gateway and fill the xml file
-* install a transparent socks redirector: redsocks, TranSocks, tranSOCKS_ev, tsocks, ...
+* install a transparent socks redirector: redsocks, TranSocks, tranSOCKS_ev, ... NOT: tsocks (not allow dns resolution via I2P)
