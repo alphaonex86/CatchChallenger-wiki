@@ -27,12 +27,12 @@ The client will keep the connexion to login server and the login server will con
 [[File:Gateway.png|thumb|150px]]
 The gateway is here to adapt two unconnected network like normal internet to crypted internet (TOR, i2p, ...).
 
-You can to cascade the gateway and network: Internet -> TOR -> I2P -> Gnutella -> Other ....
+You can to cascade the gateway and network: Internet -> TOR -> I2P -> Gnutella -> Other ... the gateway auto send the place into the network to send to the client the cache sync from server to client by passing by X gateways.
 
 Why exists? Why use it?
 * The datapack can be downloaded via the tcp communication pipe or http mirror, this unify the output
 * Don't use bandwidth of the sub net: some sub net like i2p can have very limited bandwidth, that's boost the speed
-* Autodetect change: I you cache http traffic, you can have some slow down or error. With the integrity control into the protocol, the change is directly detected and the corresponding file downloaded.
+* Autodetect change: It cache the datapack (via http or internal protocol). With the integrity control into the protocol, the change is directly detected and the corresponding file downloaded. That's offload the corresponding network (I2P for example) and optimise the datapack download.
 * The gateways will jump by reconnect to the game server, see above: Login server switch mode reconnect
 * Able to change and offload the encryption and compression
 
