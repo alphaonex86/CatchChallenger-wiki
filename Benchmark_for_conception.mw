@@ -555,3 +555,50 @@ Lower is better
 | style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 857ms
 |}
 Done with -std=c++0x, gcc 4.9.3 hardened, Qt core 5.4.2. Most of access in memory is read only and 0 copy/allocation, because it's mostly read the datapack content to control. Mean this benchmark is very important due to huge read access at memory.
+
+= Lock: None, atomic, spinlock, mutex =
+Benchmark used: https://github.com/attractivechaos/benchmarks/blob/master/lock/lock_test.c on ARMv7 (Cortex A9 Quad Core) platform, gcc 4.9, Gentoo Linux, Grsec, PaX, Kernel 3.17m CLI: gcc -std=c++11 -lstdc++ -pthread -fpermissive -O3 -o test test.cpp
+
+Lower is better:
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! No lock
+! gcc builtin
+! spin lock
+! pthread spin
+! mutex
+! semaphore
+! buffer+spin
+! buffer+mutex
+|-
+| ARMv7 Thread=1
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1m3.478s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1m16.873s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1m20.687s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1m14.666s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1m14.633s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1m14.115s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1m11.729s
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1m6.932s
+|-
+| ARMv7 Thread=4
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0m17.495s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0m20.960s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0m38.235s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0m32.086s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1m36.684s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 2m52.436s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0m17.631s
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0m17.415s
+|-
+| ARMv7 Thread=4 under heavy pressure, 4x dd if=/dev/zero of=/dev/null
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 2m29.136s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3m11.012s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3m7.528s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 4m45.539s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3m56.250s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 5m16.327s
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3m32.740s
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 2m4.369s
+|}
