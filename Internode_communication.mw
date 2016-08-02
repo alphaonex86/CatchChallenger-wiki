@@ -1,5 +1,5 @@
 = TCP or UDP =
-Same as client <-> server communication, it's user TCP, the overhead of TCP is minimized by in order packet receive, which allow somes optimizations.
+Same as client <-> server communication, it's TCP, the overhead of TCP is minimized by in order packet receive, crontol, which allow somes optimizations.
 
 = Node organisation =
 * Parallel: force high connection number, and lot of bandwidth
