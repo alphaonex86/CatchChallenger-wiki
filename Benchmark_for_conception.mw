@@ -602,3 +602,5 @@ Lower is better:
 | style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3m32.740s
 | style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 2m4.369s
 |}
+
+Note: Buffer + mutex it's exactly what happen with tcp/unix socket and async communication between process.
