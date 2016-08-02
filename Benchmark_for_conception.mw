@@ -579,7 +579,7 @@ Lower is better:
 | style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1m14.666s
 | style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1m14.633s
 | style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1m14.115s
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1m11.729s
+| style="background:#FFD99E; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1m11.729s
 | style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1m6.932s
 |-
 | ARMv7 Thread=4
@@ -589,7 +589,7 @@ Lower is better:
 | style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0m32.086s
 | style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1m36.684s
 | style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 2m52.436s
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0m17.631s
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0m17.631s
 | style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0m17.415s
 |-
 | ARMv7 Thread=4 under heavy pressure, 4x dd if=/dev/zero of=/dev/null
