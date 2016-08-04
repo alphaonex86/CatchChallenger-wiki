@@ -13,6 +13,23 @@ Prefer one CPU by virtual machine to have internal optimisation (SMP vs No SMP l
 
 '''Only some GPU part''' as network processing, only the software, '''will do constant context switch, bandwidth to pass the CPU <-> GPU datas, use power and do latency problem'''.
 
+== Multi thread anti pattern ==
+[[File:Multi-thread-problem.png|200px|thumb|right]]
+
+As show on the picture, the conception is the most common because is the conception valid for mono task (allow monotask as video encoding to use all the ressources) and don't need collaboration (Don't need work with the OS dev), is valid for:
+* A big task
+* Multiple core too many idle
+* Keep into your space (user space mostly)
+* Different task is balanced on the multiple core
+Is incorrect for:
+* Server load, due to multiple task concurrency, the most common server case is all same time usage of database, http server, php, ...
+* Good scalability (this model have problem with so many core, hurge work to exploit all the core correctly)
+* Light task (so small, then due huge lock pressure, when batching is not available to change to big task)
+Possible responds to this case:
+* Have one interface by server (some virtualisation hardware into the network card allow it) to boost the packet processing
+* Split the network trafic on each core, each core have vm/service and merge into only at the end: Very easy to design, the software is monothread (performance boost thanks to cache/data locality by 10x)
+* Just one network card by server, huge network card need, or don't allow work another server
+
 = MMU =
 Your MMU, memory management unit should be able to run a kernel/user space and multi-user and processus.
 
