@@ -7,8 +7,8 @@ We want virtual machine on GPU because it have at '''very low cost a large numbe
 This apply on all MIMD architecture.
 
 See too:
-[[https://www.usenix.org/legacy/event/nsdi11/tech/slides/jang.pdf|Application of GPU for High-performance Network Processing]]
-[[https://www3.cs.stonybrook.edu/~mikepo/papers/gaspp.atc14.pdf|A GPU-Accelerated Stateful Packet Processing Framework]]
+* [https://www.usenix.org/legacy/event/nsdi11/tech/slides/jang.pdf Application of GPU for High-performance Network Processing]
+* [https://www3.cs.stonybrook.edu/~mikepo/papers/gaspp.atc14.pdf A GPU-Accelerated Stateful Packet Processing Framework]
 
 = Misconception =
 One of misconception is put all CPU to all vm, do a big overload due to process balancing, fight for ressources, instable performance.
