@@ -54,7 +54,7 @@ The '''query number can be only from 0 to 15''', because can only have 16 conccu
 * Never ask the server reply because the reply is based on the random. '''A random list is used''' (and send by the server to the client), and both '''client and server do the calculate''' (minimize bandwidth, and not slow down). See the [[Server/Client_link#Random list|random list]].
 * '''Send the previous step do and new direction'''. Then the server can check all move into one direction (more fast), and the request on the network is grouped. The client when receive the other player move, put the other player at the good position, and do moving at the right direction. With this, if latency is < a ms to do a step is always invisible. And if latency < at time to do all the step into a direction, is invisible too
 * All the network traffic shouldn't be instant, then latency can be added to '''compress the data'''. Very useful because this protocol have high level of compression.
-* All heavy '''task is isolated into a thread''' to not slow down the quick task
+* All heavy '''task is async''' to not slow down the quick task
 [[File:random-list.png]]
 The client NEVER wait a reply.
 
