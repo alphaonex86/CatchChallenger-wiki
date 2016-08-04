@@ -9,7 +9,7 @@
 * Buffer and epoll to prevent blocking socket access
 * broad cast thread: all broad cast object interconnected, complexity: O(n), where n is all player, limited by ddos and cpu usage mutualised to forge onetime the packet
 * map management thread: local map management object interconnected, complexity: O(n) for local player, but in normal case O(n^2) for all players see the other player, where n is local player
-* '''Similar to old structure BUT WITHOUT THREADS'''
+* '''Similar to old structure BUT WITHOUT THREADS''', see [[Virtual_machine_on_GPU#Multi_thread_anti_pattern|Virtual machine on GPU]]
 [[File:server-threads.png]]
 
 = Visibility =
