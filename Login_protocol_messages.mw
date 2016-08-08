@@ -382,7 +382,7 @@ After if ok send one time the 44, and in loop the 40 and 47
 === Reply 0203 ===
 Return code: <span style="color: #40BFBF">00</span> (00 = success, 01 = pseudo already taken, 02 = have already maximum of charaters, 03 = Server internal error)
 
-The reply is the character id: <span style="color: #BFBF40">00000001</span> (00000000 if error)
+The reply is the character id: <span style="color: #BFBF40">00000001</span> (00000000 if error '''to DROP the overheader of dynamic size''')
 
 === Reply 0204 ===
 If all is good:
