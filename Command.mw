@@ -45,3 +45,7 @@ The command:
 
 * Battle
  /battle [player]
+
+= Admin + debug =
+* Request more id (on game server it's monster and clan id)
+ /debug moreid
