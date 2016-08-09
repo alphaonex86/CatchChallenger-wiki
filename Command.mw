@@ -47,7 +47,7 @@ The command:
  /battle [player]
 
 = Admin + debug =
-This is valid only if the server was compiled with the debug flags: CATCHCHALLENGER_SERVER_DEBUG_COMMAND, see VariableServer.h
+This is valid only if the server was compiled with the debug flags: '''CATCHCHALLENGER_SERVER_DEBUG_COMMAND''', see ''VariableServer.h''
 
 * Request more id (on game server it's monster and clan id)
  /debug moreid
