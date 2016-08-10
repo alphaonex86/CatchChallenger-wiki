@@ -37,6 +37,11 @@ Possible responds to this case:
 = MMU =
 Your MMU, memory management unit should be able to run a kernel/user space and multi-user and processus.
 
+== Memory is critical ==
+The memory is very critical (due to difficult to wire the external memory chip), you will have only 16GB for 4096 CPU then 4MB by CPU.
+
+Mean your kernel, software need to be very intensively memory optimized. It's possible to group similar segment to improve that's. As keep one kernel for 32 CPU in memory, and each have their private data and their execution pointer.
+
 = Conception =
 [[File:Network-space.png|200px|thumb|right|vm by GPU processor]]
 
