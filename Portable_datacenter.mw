@@ -73,10 +73,13 @@ More advanced need for complex structure.
 = Datacenter in bolivia =
 More info on: [[Datacenter in bolivia]]
 
-I have done the electrical power bus, it's 2*23 Odroid C2 with gentoo + lxc, 1000Mbps. I used 46 MicroSD of 64GB.
+I have done the electrical power bus, it's 2*23 Odroid C2, 1000Mbps. I used 46 MicroSD of 64GB.
 Power used (mesured at the 220V in Seasonic serie G power supply): 56W, disconnected power supply: 7W. 49W at 100Mbps. Peak: 111W
 When all is working and used, I thinks buy 1000 Odroid C2 or Odroid XU5 (if is released). I really need vanilla linux kernel support (for headless server: Ethernet, MMC, ...).
 Other hardware used: TL-SG1024D (24 1000Mbps port switch not administrable), Industrial power supply Ebest CFS-200-5: OUTPUT: 5V 40A.
+
+OS: Gentoo ARMv8, Official Ubuntu 14.04 kernel (3.14), hypervisor: Lxc
+Hardware by node: Amlogic S905 (4*Cortex A53 at 2GHz with 512KB of L2), memory: Samsung K4B4G1646D : 2GByte DDR3 32bit RAM, Ethernet: Realtek RTL8211F
 
 '''Take care to well grounding all the hardware!''' https://en.wikipedia.org/wiki/Single-phase_electric_power#Grounding
 <blockquote>Typically a third conductor, called ground (or "safety ground") (U.S.) or protective earth (UK, Europe, IEC), is used as a protection against electric shock, and ordinarily only carries significant current when there is a circuit fault. Several different earthing systems are in use.</blockquote>
