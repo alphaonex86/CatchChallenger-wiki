@@ -81,6 +81,8 @@ Other hardware used: TL-SG1024D (24 1000Mbps port switch not administrable), Ind
 '''Take care to well grounding all the hardware!''' https://en.wikipedia.org/wiki/Single-phase_electric_power#Grounding
 <blockquote>Typically a third conductor, called ground (or "safety ground") (U.S.) or protective earth (UK, Europe, IEC), is used as a protection against electric shock, and ordinarily only carries significant current when there is a circuit fault. Several different earthing systems are in use.</blockquote>
 
+I have used odroid c2 power connector of rev0.2 20160226, but too hard to sold. Hole to small to stack 15 odroid. Then I have used the traditional power connector, all is connected on big wire with correct copper diameter to support 20A. (See the photo above)
+
 Video: https://www.youtube.com/watch?v=DZXUCmBf_bg
 
 = Photo =
