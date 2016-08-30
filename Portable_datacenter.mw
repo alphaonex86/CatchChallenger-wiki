@@ -86,8 +86,8 @@ I have used odroid c2 power connector of rev0.2 20160226, but too hard to sold. 
 Video: https://www.youtube.com/watch?v=DZXUCmBf_bg
 
 = Photo =
-[[File:bi-datacenter.jpg|thumb|400px|left]]
-[[File:running-cluster.jpg|thumb|400px|left]]
-[[File:running-cluster2.jpg|thumb|400px|left]]
-[[File:custom-power.jpg|thumb|400px|left]]
-[[File:odroid-c2-power-connector-rev0.2-20160226.jpg|thumb|400px|left]]
+[[File:bi-datacenter.jpg|thumb|400px|Bi portable datacenter, Red and Blue]]
+[[File:running-cluster.jpg|thumb|400px|Running ARM cluster at 1000Mbps/1Gbps|left]]
+[[File:running-cluster2.jpg|thumb|400px|Cloud of Odroid C2 ARMv8 Cortex A53]]
+[[File:custom-power.jpg|thumb|400px|left|Power cord for High density cluster|left]]
+[[File:odroid-c2-power-connector-rev0.2-20160226.jpg|thumb|400px|Custom power via Odroid c2 power connector rev0.2 20160226]]
