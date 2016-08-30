@@ -2,7 +2,6 @@
 * http://catchchallenger.first-world.info/other/operador-internet.odp
 * [[Latency and RTT in Bolivia]]
 * [http://catchchallenger.first-world.info/other/proposition-internet-bolivia.odp Proposition internet bolivia]
-En preuva en santa cruz
 
 = http2 =
 I confirm the result found by other on the web. Over 0% paclet lost http 2 is really better than http 1.1. But worse if you have packet lost.
@@ -15,3 +14,5 @@ I confirm the result found by other on the web. Over 0% paclet lost http 2 is re
 [[File:bi-datacenter.jpg|thumb|400px|left]]
 [[File:running-cluster.jpg|thumb|400px|left]]
 [[File:running-cluster2.jpg|thumb|400px|left]]
+
+Implementation details on: [[Portable datacenter]]
