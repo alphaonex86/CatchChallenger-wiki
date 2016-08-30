@@ -71,7 +71,7 @@ More advanced need for complex structure.
 [[File:final-network-route.png|thumb]]
 
 = Datacenter in bolivia =
-More info on: [Datacenter_in_bolivia]
+More info on: [[Datacenter in bolivia]]
 
 I have done the electrical power bus, it's 2*23 Odroid C2 with gentoo + lxc, 1000Mbps. I used 46 MicroSD of 64GB.
 Power used (mesured at the 220V in Seasonic serie G power supply): 56W, disconnected power supply: 7W. 49W at 100Mbps. Peak: 111W
