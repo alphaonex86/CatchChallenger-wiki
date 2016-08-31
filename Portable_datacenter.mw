@@ -77,7 +77,7 @@ I have done the electrical power bus, it's 2*23 Odroid C2, 1000Mbps. I used 46 M
 Power used (mesured at the 220V in Seasonic serie G power supply): '''56W''', disconnected power supply: 7W. 49W at 100Mbps. Peak: 111W
 When all is working and used, I thinks buy 1000 Odroid C2 or Odroid XU5 (if is released). I really need vanilla linux kernel support (for headless server: Ethernet, MMC, ...), this allow usage of '''BTRFS''' to pass from 20MB/s read and 4MB/s write to 100/MBs read and 20MB/s write for my common case, mean '''average 5x boost''' without speak about space improvements.
 
-* Other hardware used: TL-SG1024D (24 1000Mbps port switch not administrable), Industrial power supply Ebest CFS-200-5: OUTPUT: 5V 40A.
+* Other hardware used: TL-SG1024D (24 1000Mbps port switch not administrable), Industrial power supply Ebest CFS-200-5: OUTPUT: 5V 40A. Custom network wire to have the correct lengt and cat 5e due to sort distance.
 * OS: '''Gentoo ARMv8''', Official Ubuntu 16.04 kernel (3.14LTS), hypervisor: '''Lxc''' + LXCFS (need more isolation because remain see the ressources usage of other VM), not vserver or openvz because ARM provide only vanilla kernel
 * Hardware by node: [https://en.wikipedia.org/wiki/Amlogic#Media_player_SoCs_.28S9_family.29 Amlogic S905] ('''4*Cortex A53''' at 1.5GHz with 512KB of L2), memory: [http://www.samsung.com/semiconductor/global/file/product/DS_K4B4G1646D-BC_I_P_Rev102.pdf Samsung K4B4G1646D]: '''2GByte DDR3''' 32bit RAM, Ethernet: [http://www.datasheetspdf.com/datasheet/RTL8211F-CG.html Realtek RTL8211F] 1000Mbps
 * From /dev/cpuinfo (Note: '''NO AES/SHA1/SHA2 for crypto acceleration'''):
