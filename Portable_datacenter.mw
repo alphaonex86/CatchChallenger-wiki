@@ -74,8 +74,8 @@ More advanced need for complex structure.
 More info on: [[Datacenter in bolivia]]
 
 I have done the electrical power bus, it's 2*23 Odroid C2, 1000Mbps. I used 46 MicroSD of 64GB.
-Power used (mesured at the 220V in Seasonic serie G power supply): 56W, disconnected power supply: 7W. 49W at 100Mbps. Peak: 111W
-When all is working and used, I thinks buy 1000 Odroid C2 or Odroid XU5 (if is released). I really need vanilla linux kernel support (for headless server: Ethernet, MMC, ...), this allow usage of BTRFS to pass from 20MB/s read and 4MB/s write to 100/MBs read and 20MB/s write for my common case.
+Power used (mesured at the 220V in Seasonic serie G power supply): '''56W''', disconnected power supply: 7W. 49W at 100Mbps. Peak: 111W
+When all is working and used, I thinks buy 1000 Odroid C2 or Odroid XU5 (if is released). I really need vanilla linux kernel support (for headless server: Ethernet, MMC, ...), this allow usage of '''BTRFS''' to pass from 20MB/s read and 4MB/s write to 100/MBs read and 20MB/s write for my common case, mean '''average 5x boost''' without speak about space improvements.
 
 * Other hardware used: TL-SG1024D (24 1000Mbps port switch not administrable), Industrial power supply Ebest CFS-200-5: OUTPUT: 5V 40A.
 * OS: '''Gentoo ARMv8''', Official Ubuntu 16.04 kernel (3.14LTS), hypervisor: '''Lxc''' + LXCFS (need more isolation because remain see the ressources usage of other VM), not vserver or openvz because ARM provide only vanilla kernel
