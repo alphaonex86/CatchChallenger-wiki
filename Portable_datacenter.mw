@@ -87,7 +87,7 @@ When all is working and used, I thinks buy 1000 Odroid C2 or Odroid XU5 (if is r
 ** CPU variant     : 0x0
 ** CPU part        : 0xd03
 ** CPU revision    : 4
-* Total cluster horse power: 184 64Bits cpu with SIMD, 138GB/s of main memory bandwidth for non cached data access as big data, 92Gbps external bandwidth, 92GB of DDR3, 2944GB for storage.
+* Total cluster horse power: 184 64Bits cpu with SIMD, 138GB/s of main memory bandwidth for non cached data access as big data, estimated L1 bandwidth: 2TB/s, 92Gbps external bandwidth, 92GB of DDR3, 2944GB for storage.
 
 '''Take care to well grounding all the hardware!''' [https://en.wikipedia.org/wiki/Single-phase_electric_power#Grounding Electric power grounding]
 <blockquote>Typically a third conductor, called ground (or "safety ground") (U.S.) or protective earth (UK, Europe, IEC), is used as a protection against electric shock, and ordinarily only carries significant current when there is a circuit fault. Several different earthing systems are in use.</blockquote>
