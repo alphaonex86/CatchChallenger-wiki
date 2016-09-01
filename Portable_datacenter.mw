@@ -37,6 +37,18 @@ On toc:
 <code><pre>route add -net 172.16.0.0 netmask 255.255.0.0 gw 192.168.0.2 ethToInternet</pre></code>
 On '''utilite''', '''deny the access to 192.168.X.X''', only forward to internet. But from 192.168.142.X will access to 192.168.0.X, 172.16.X.X and internet.
 
+== Kernel ==
+=== Vanilla kernel ===
+The reason to have an vanilla kernel:
+- Have the last fix for the kernel, most of ARM vendor ship an kernel and only update their part, mean forget all the security fixes since it have snapshoted their version
+- Have access to patch as vserver, Grsec, ... the repatched ARM kernel is mostly not capable of this and their new driver not ship the corresponding part. In case of Grsec, some drivers have memory problema revelated with grsec and then not boot
+=== Modern kernel ===
+The modern kernel:
+- Support better the ARM arch, for example by converting more assembly code to C code to be more same and have same behavoiur on all platform
+- Better ARMv8
+- More lock less code to greatly improve the performance on hardware without barrier/lock hardware (mean: ARMv6, ARMv7, ARMv8, support is included into: ARMv8.1+)
+- More code optimisation to have less system time
+
 = Income route =
 To route the income connexion, for http I use haproxy for normal ip trafic. But I route via i2p too for secure and more general routing (http, MMORPG server, ...).
 
