@@ -58,6 +58,11 @@ The backup is snapshoted by btrfs, rsync to be exported, and keep as snapshot to
 
 = Hot switching =
 Hot switching is allowed by lxc 1.1 to migrate transparently the vm from one hardware to other.
+LXC 2 give:
+* More consistent user experience between the various LXC tools.
+* Improved checkpoint/restore support.
+* Complete rework of our CGroup handling code, including support for the CGroup namespace.
+* A massive amount of bugfixes.
 
 That allow physical mobility:
 [[File:Datacenter-truck.jpg]]
