@@ -138,3 +138,12 @@ Condition file:
 '''''start''''' is when start enter on it. '''''leave''''' is when start leave on it. '''''again''''' is loop played when enter it but not firstly, mean the final state after leave it is not the first tile. '''''over''''' mean on the second line you have tile to display over the player.
 * name: '''''trigger''''' and value: '''''start:60ms;3frames;leave:60ms;3frames;again:60ms;2frames'''''
 * name: '''''trigger''''' and value: '''''start:60ms;3frames;leave:60ms;2frames;over'''''
+
+== Guide line ==
+A bad mapping style:
+
+[[File:Badmap.png|A bad mapping style]]
+
+A good mapping style:
+
+[[File:Goodmap.png|A good mapping style]]
