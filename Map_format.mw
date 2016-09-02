@@ -140,6 +140,8 @@ Condition file:
 * name: '''''trigger''''' and value: '''''start:60ms;3frames;leave:60ms;2frames;over'''''
 
 == Guide line ==
+http://www.gnu.org/licenses/fdl.html from https://www.themanaworld.org/index.php/Dev:Mapping_Tutorial
+
 A bad mapping style:
 
 [[File:Badmap.png|A bad mapping style]]
