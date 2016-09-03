@@ -4,10 +4,11 @@ Have fix url or access, included with change of internet provider, or have multi
 Have decentralised service, with minimum latency, when you can't/wan't dynamic dns and ipv6. Or multiple same service on same port, on you network. You can route 2 server on port 80 without change on internet port or have reverse proxy (haproxy and i2p).
 
 = Topologie and installation =
-[[File:personnal-network-topologie.png|thumb]]
+[[File:personnal-network-topologie.png|left|thumb]]
 [[File:nagios-statusmap.png|thumb]]
-[[File:nagios-map-4.1.png|thumb]]
+[[File:nagios-map-4.1.png|left|thumb]]
 [[File:photo-portable-datacenter.jpg|thumb]]
+[[File:nagios-bi-datacenter.jpg|left|thumb]]
 
 On toc and utilite:
 
