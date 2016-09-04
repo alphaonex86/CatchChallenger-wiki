@@ -89,6 +89,11 @@ More advanced need for complex structure.
 [[File:actual-need-network-route.png|thumb]]
 [[File:final-network-route.png|thumb]]
 
+== Temperature cooling ==
+This is the result of overall cluster temperature of each node after 2h at idle (minor burning time) at 14C ambiant temperature without cooling.
+
+[[File:datacenter-temperature-without-cooling.png]]
+
 = Datacenter in bolivia =
 More info on: [[Datacenter in bolivia]]
 
