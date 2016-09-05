@@ -97,6 +97,15 @@ This is the result of overall cluster temperature of each node after 2h at idle 
 Extracted form internet:
 [[File:odroid-temperature.jpg]]
 
+== Power consuption ==
+The power consuption on 5V line is here with kernel 3.14.77+ and connected with 1000Mbps is:
+* With governor performance at idle: 0.32A
+* With governor performance at 100% of CPU: 0.67A
+* With governor ondemand at idle: 0.29A
+* With governor ondemand at 100% of CPU: 0.65A
+* With governor powersave at idle: 0.29A
+* With governor powersave at 100% of CPU: 0.30A
+
 = Datacenter in bolivia =
 More info on: [[Datacenter in bolivia]]
 
