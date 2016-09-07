@@ -1,4 +1,5 @@
 [[File:catchchallenger-generated-content.png]]
 
-CatchChallenger extract from the datapack (Some reason why web format readable with web browser is important and xml is used).
+CatchChallenger extract from the datapack (Some reason why web format readable with web browser is important and xml is used). Allow usage with javascript, C, java, python, ruby, ...
+
 All is parsed, put into good format into intermediary representation, and processed to '''html page''' for deep web and '''mediawiki''' with bot editor for normal web (and allow manual hand writing content)
