@@ -1,0 +1,4 @@
+Multiple database connector (mysql, sqlite, postgresql, ...) is supported or:
+
+* Qt sync connector to be universal
+* C custom connector to be optimized and asynchrone to never slow down if the database respond slowly
