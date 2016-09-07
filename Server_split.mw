@@ -73,4 +73,8 @@ I had lot of problem into the dev phase to have a stable infrastructure. This ha
 The player is more used by the player to see what server is with people. But too the game server can have each their gameplay style. All the statistique is merge with the master server, and dispatched to the login server to send it to the client.
 
 == Admin tools ==
-If a game server is detected as down (registered and connected on master, responds to ping of the master), game server will show offline count. The login server is for authenticate the player (route and proxy it too), is checked by php script with protocol control (check is read and respond correctly to the protocol)
+* if a game server is detected as down (registered and connected on master, responds to ping of the master), game server will show offline count
+* the login server is for authenticate the player (route and proxy it too), is checked by php script with protocol control (check is read and respond correctly to the protocol, don't responds if master disconnected)
+* Mirror: control if is up, if the pack, file list, file is accessible on all the server, and for some file control the content
+* Backup: control if the backup is correctly done, if the database is well streamed and replicated into realtime into other datacenter
+* Other: Other mix of control as if a bot can connect on the full chain: bot -> login -> game server
