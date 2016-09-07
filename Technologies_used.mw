@@ -53,7 +53,9 @@ For thr write allow broadcast message without recompose it. That's and low memor
 Serialize or deserialise the network into variables but securly is important point.
 
 == Multiple database and async ==
-Multiple database connector (mysql, sqlite, postgresql, ...) is supported. Some connectors is optimised in C and asynchrone to never slow down if the database respond slowly.
+Multiple database connector (mysql, sqlite, postgresql, ...) is supported. Some connectors is optimized in C and asynchrone to never slow down if the database respond slowly.
+
+* See [[Database support]]
 
 == Epoll ==
 Epoll is used, solving the C10K problem. The server can easily support lot of more player on 25 years old. I will don't bypass the tcp kernel layer to allow correct para-visualization, but a good optimization allow C10M solving on good hardware.
