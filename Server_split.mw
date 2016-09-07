@@ -63,3 +63,14 @@ With single core:
 If multiple core, scale better doing multiple server on each core than multi threading
 
 MIMD is important factor, but we speak of more than 2000 core as you have into GPGPU.
+
+= Monitoring =
+I had lot of problem into the dev phase to have a stable infrastructure. This have help to do a good monitoring tools.
+
+[[File:catchchallenger-status.png]]
+
+== Player online ==
+The player is more used by the player to see what server is with people. But too the game server can have each their gameplay style. All the statistique is merge with the master server, and dispatched to the login server to send it to the client.
+
+== Admin tools ==
+If a game server is detected as down (registered and connected on master, responds to ping of the master), game server will show offline count. The login server is for authenticate the player (route and proxy it too), is checked by php script with protocol control (check is read and respond correctly to the protocol)
