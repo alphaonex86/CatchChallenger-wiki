@@ -3,13 +3,24 @@ Multiple database connector (mysql, sqlite, postgresql, ...) is supported or:
 * Qt sync connector to be universal (SQLite is more to have single player mode)
 * C custom connector to be optimized and asynchrone to never slow down if the database respond slowly, this is mostly based on epoll for linux
 
-Not used into CatchChallenger:
+= Usage =
+
+'''Used''' into CatchChallenger:
+
+* Fixed data length index (as login hash)
+* Index on integer
+* Partial index (most player don't have clan, then index when the value is 0 is useless)
+
+'''Not used''' into CatchChallenger:
 
 * Relational SQL part:
 ** It will be better for good dev, but bad dev manipulate too much data to do stupid thinks
 ** More hard to read, understand
 ** CatchChallenger read and serialize/unserialise binary, why not do that's?
 ** Some engine/Database don't support it (MyISAM)
+
+'''Minimal usage''' of:
+* Index on arbitrary length of data (pseudo and clan name)
 
 = Support =
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
