@@ -1,4 +1,53 @@
 Multiple database connector (mysql, sqlite, postgresql, ...) is supported or:
 
-* Qt sync connector to be universal
+* Qt sync connector to be universal (SQLite is more to have single player mode)
 * C custom connector to be optimized and asynchrone to never slow down if the database respond slowly
+
+= Support =
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Qt support
+! C async connector
+! Partial index
+! NoSQL
+! Second index
+! Blob index
+! Replication
+|-
+| SQLite
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+|-
+| MySQL/MariaDB/Percona
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|-
+| PostgreSQL
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|-
+| Oracle
+| {{Yes}}
+| {{No}}
+| ???
+| {{No}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|}
