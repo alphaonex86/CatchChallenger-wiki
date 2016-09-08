@@ -1,7 +1,7 @@
 Multiple database connector (mysql, sqlite, postgresql, ...) is supported or:
 
 * Qt sync connector to be universal (SQLite is more to have single player mode)
-* C custom connector to be optimized and asynchrone to never slow down if the database respond slowly
+* C custom connector to be optimized and asynchrone to never slow down if the database respond slowly, this is mostly based on epoll for linux
 
 = Support =
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
