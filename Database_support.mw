@@ -69,4 +69,13 @@ Multiple database connector (mysql, sqlite, postgresql, ...) is supported or:
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
+|-
+| File (not done, into the roadmap)
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{Partial}}
+| {{Yes}}
 |}
