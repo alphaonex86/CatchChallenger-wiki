@@ -98,6 +98,7 @@ Extracted form internet:
 [[File:odroid-temperature.jpg]]
 
 == Power consumption ==
+[[File:professional-pannel-solar-rpi.jpg|left|thumb]]
 The power consumption on 5V line is here with kernel 3.14.77+ and connected with 1000Mbps is:
 * With governor performance at idle: 0.32A
 * With governor performance at 100% of CPU: 0.67A
