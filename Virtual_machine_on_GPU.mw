@@ -119,3 +119,8 @@ You need see into this image:
 * You have group for core to share some ressources, keep data into a group improve the performance
 * It's near a tree computing structure
 * Mostly is have local atomic to access to the nearest cache or global atomic to have coerant data between different group at cost of lower speed
+
+Mean:
+* Shared kernel need work by group of CPU
+* Need and fast way to communicate into a same device
+* The fense/lock, ... need to be more explicit at kernel/language, not used for monothread-multitask
