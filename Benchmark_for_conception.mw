@@ -604,3 +604,7 @@ Lower is better:
 |}
 
 Note: Buffer + mutex it's exactly what happen with tcp/unix socket and async communication between process.
+
+= http server on arm64 debian stretch =
+On Odroid C2 via LXC VM:
+[[File:performance-http-server-arm64-debian-stretch.png]]
