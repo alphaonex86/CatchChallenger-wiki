@@ -620,12 +620,12 @@ Note, same if is std::unordered_set<int32_t> lock; or std::unordered_set<int64_t
 ! Time
 |-
 | std::unordered_set<int> lock;
-| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 452MB
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 452MB
 | style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 9.5s
 |-
 | std::vector<uint8_t> lock;
 | style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 262MB
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0.7s
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0.7s
 |}
 
 With 107x more density on id locked, lock density 50% concentrated on first id (no change for std::vector<uint8_t> lock if on last id):
@@ -636,12 +636,12 @@ With 107x more density on id locked, lock density 50% concentrated on first id (
 ! Time
 |-
 | std::unordered_set<int> lock;
-| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 315MB
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 315MB
 | style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 6.8s
 |-
 | std::vector<uint8_t> lock;
 | style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3.3MB
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0.2s
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0.2s
 |}
 
 More density = more cache locality, very less memory for raw continuous mode, it's why density improvement technique is usefull for catchchallenger_common database.
@@ -655,9 +655,11 @@ With less density on id locked, lock density 1/65536:
 |-
 | std::unordered_set<int> lock;
 | style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3.4MB
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0.07s
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0.07s
 |-
 | std::vector<uint8_t> lock;
-| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 263MB
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 263MB
 | style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0.7s
 |}
+
+Mean when you have database 32Bits id but the server support only 65536 (to have internal + network optimisation), it's better to use std::unordered_set<int>, then mostly game server and maybe login server
