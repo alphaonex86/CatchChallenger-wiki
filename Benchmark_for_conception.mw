@@ -608,3 +608,19 @@ Note: Buffer + mutex it's exactly what happen with tcp/unix socket and async com
 = http server on arm64 debian stretch =
 On Odroid C2 via LXC VM:
 [[File:performance-http-server-arm64-debian-stretch.png]]
+
+= std::unordered_set<int> lock; vs std::vector<uint8_t> lock; =
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Memory
+! Time
+|-
+| std::unordered_set<int> lock;
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 452MB
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 9.5s
+|-
+| std::vector<uint8_t> lock;
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 262MB
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0.7s
+|}
