@@ -719,7 +719,7 @@ The most over-head of small packet (3Bytes) is drop by high compression with zli
 [[File:compression-time.png]]
 
 = Quick benchmark on ARM64 =
-A quick benchmark on ARM64 (odroid, Cortex A53), on kernel Image (12MB), use default compression level (-6)
+A quick benchmark on ARM64 (odroid, Cortex A53), on kernel Image (12MB), use default compression level (-6) because no way to configure the compression level of btrfs
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
 ! style="width: 12em" |
