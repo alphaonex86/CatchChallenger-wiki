@@ -717,3 +717,33 @@ The most over-head of small packet (3Bytes) is drop by high compression with zli
 = Graphics =
 [[File:compression-ratio.png]]
 [[File:compression-time.png]]
+
+= Quick benchmark on ARM64 =
+A quick benchmark on ARM64 (odroid, Cortex A53), on kernel Image (12MB), use default compression level (-6)
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! xz
+! gzip
+! lz4
+! zstd
+|-
+| Size
+| 4.2M
+| 5.5M
+| 7.8M
+| 5.8M
+|-
+| Compression speed
+| 0.2 MB/s
+| 1.8 MB/s
+| 21.4 MB/s
+| 2.8 MB/s
+|-
+| Decompression speed
+| 13.3 MB/s
+| 31.1 MB/s
+| 60.4 MB/s
+| 42.3 MB/s
+|-
+|}
