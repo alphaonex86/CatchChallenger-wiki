@@ -163,7 +163,7 @@ Server -&gt; Client
 *  for player: chat type: <span style="color: #FF4000">02</span>, text: <span style="color: #40BF00">&quot;hello&quot;</span> 8bits headers + utf8, player pseudo: <span style="color: #40BF00">&quot;toto&quot;</span> (UTF8 + 8Bits header), status: <span style="color: #40BFFF">10</span>
  <span style="color: #FF4000">02</span><span style="color: #FFBF00">04</span><span style="color: #40BF00">68656c6c6f</span><span style="color: #FFBF00">08</span><span style="color: #40BF00">746f746f</span><span style="color: #40BFFF">10</span>
 *  for system: chat type: <span style="color: #FF4000">07</span>, text: <span style="color: #40BF00">&quot;The server will be rebooted&quot;</span> 16bits headers + utf8 (player list or other info can be long)
- <span style="color: #FF4000">07</span><span style="color: #FFBF00">1A</span><span style="color: #40BF00">5468652736572766572277696c...</span>
+ <span style="color: #FF4000">07</span><span style="color: #FFBF00">1A00</span><span style="color: #40BF00">5468652736572766572277696c...</span>
 
 {{Chat_Type}}
 {{Player_type}}
