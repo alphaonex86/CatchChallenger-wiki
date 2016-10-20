@@ -87,6 +87,19 @@ Multiple database connector (mysql, sqlite, postgresql, ...) is supported or:
 * Bug prevent: Detect the query syntax error at the startup of the server
 
 = Performance =
-If the disk is '''2MB/s''', the database to be secure will write at this speed, if it usafe it write at the memory speed '''100MB/s''' while the 256MB is not full, mean: 256MB/(100MB/s-2MB/s)=2.6s
+If the disk is '''2MB/s''', the database to be secure will write at this speed, if it usafe it write at the memory speed '''100MB/s''' while the 256MB is not full, mean: 256MB/(100MB/s-2MB/s)='''2.6s'''
 
 This is the best case, without take care of slow down, hdd seak time, barrier problem, sync problem, ...
+
+= Query sort in cluster =
+[[File:query-short-cluster.png]]
+
+In case of not sort, it's more easy to split the user query (more intuitive), and more balanced
+* Cache don't scale: More user = more cache miss
+* Hdd don't scale: Need seek on 100% of the disk
+* Space: need have all the data
+
+In case of sort, the sort should be fast to not introduce latency. You need analise the query to statistically balance it correctly.
+* Cache scale: But for CPU cache and memory: 10x more server it's like 10x cache and memory
+* Hdd scale, Seek on sort part of the disk, 1/4 if 4x server and full content on each server and partitioning, mean 4x less seek time
+* Space: scale with the server count
