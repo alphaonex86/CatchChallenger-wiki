@@ -85,3 +85,8 @@ Multiple database connector (mysql, sqlite, postgresql, ...) is supported or:
 * Security: Have minor benefit on security, because mostly number is manipulated. But as it don't have negative impact on the rest, is good.
 * Network: This allow exploit the native protocol to improve the performance and reduce the bandwidth used.
 * Bug prevent: Detect the query syntax error at the startup of the server
+
+= Performance =
+If the disk is '''2MB/s''', the database to be secure will write at this speed, if it usafe it write at the memory speed '''100MB/s''' while the 256MB is not full, mean: 256MB/(100MB/s-2MB/s)=2.6s
+
+This is the best case, without take care of slow down, hdd seak time, barrier problem, sync problem, ...
