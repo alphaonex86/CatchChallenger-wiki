@@ -93,8 +93,6 @@ Final result:
 Send:
 * sha224(sha224(login+/*salt*/"RtR3bm9Z1DFMfAC3"))
 * sha224(sha224(pass+/*salt*/"AwjDvPIzfJPTTgHs"+login/*add unique salt by account because login can't be double*/) + token sended at protocol get)
-Then:
-  <span style="color: #40BF00">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span>, <span style="color: #FF0040">55ac1e86f45ed93220b9d17a97f13b44a3b3978faf8159a632cfa37a</span><br />
 * 8Bits header for size + UTF8 string, for the hostname
 
 Characteristics:
