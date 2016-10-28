@@ -80,8 +80,10 @@ protocol magic number: <span style="font-style: italic"><span style="color: #40B
 * <span style="font-style: italic"><span style="color: #FFBF00">01</span></span> (1.0.0.0)
 * <span style="font-style: italic"><span style="color: #FFBF00">10</span></span> (2.0.0.0)
 
+* 8Bits header for size + UTF8 string, for the hostname
+
 Final result:
- <span style="color: #40BF00">9cd6498d</span><span style="color: #FFBF00">01</span>
+ <span style="color: #40BF00">9cd6498d</span><span style="color: #FFBF00">01</span><span style="color: #FFBF00">00</span>
 
 {{Note}}After this, all communication is into the packet size mode send by the protocol.
 
