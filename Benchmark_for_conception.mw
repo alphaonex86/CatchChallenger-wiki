@@ -672,8 +672,8 @@ Benchmarked with CatchChallenger 2.0.1.0, PostgreSQL 9.5.2 on Raspberry pi 1 (12
 ! CPU %
 |-
 | Without Prepared statement
-| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 32%
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 32%
 |-
 | With Prepared statement
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 12%
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 12%
 |}
