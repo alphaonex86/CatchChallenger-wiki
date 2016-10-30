@@ -82,6 +82,7 @@ Multiple database connector (mysql, sqlite, postgresql, ...) is supported or:
 
 = Prepared statement =
 * Performance: PostgreSQL using LLVM JIT: 5~7x of speed up included on TPC-H. ''Prepared statement'' into CatchChallenger free the CPU for the compression to even more performance, skip parsing part and interpreting. This is very useful on tiny CPU as ARM or Intel Atom.
+** On PostgreSQL 9.5.2 on Raspberry pi 1 (128KB L2 CPU cache), it's 3x improvement on database CPU time with CatchChallenger allinone CLI epoll server.
 * Security: Have minor benefit on security, because mostly number is manipulated. But as it don't have negative impact on the rest, is good.
 * Network: This allow exploit the native protocol to improve the performance and reduce the bandwidth used.
 * Bug prevent: Detect the query syntax error at the startup of the server
