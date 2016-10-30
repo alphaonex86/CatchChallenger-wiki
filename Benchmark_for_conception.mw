@@ -663,3 +663,17 @@ With less density on id locked, lock density 1/65536:
 |}
 
 Mean when you have database 32Bits id but the server support only 65536 (to have internal + network optimisation), it's better to use std::unordered_set<int>, then mostly game server and maybe login server
+
+= Prepared statement =
+Benchmarked with CatchChallenger 2.0.1.0, PostgreSQL 9.5.2 on Raspberry pi 1 (128KB L2 CPU cache), this is CPU % on PostgreSQL process:
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! CPU %
+|-
+| Without Prepared statement
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 32%
+|-
+| With Prepared statement
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 12%
+|}
