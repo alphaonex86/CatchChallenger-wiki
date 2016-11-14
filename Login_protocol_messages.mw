@@ -231,7 +231,8 @@ Second list part with same size
 ** connected player: <span style="color: #40BF00">0009</span>
 
 === 48 ===
-'''Master server to login server exclusively'''
+* '''Master server to login server exclusively'''
+* '''Need to be executed in this order to respect the connected player order'''
 
 * Remove server list size <span style="color: #FF4000">01</span>
 ** <span style="color: #0000FF">01</span> (charactersgroup index)
