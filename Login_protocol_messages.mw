@@ -230,6 +230,24 @@ Second list part with same size
 Second list part with same size
 ** connected player: <span style="color: #40BF00">0009</span>
 
+=== 48 ===
+'''Master server to login server exclusively'''
+
+* Add server list size <span style="color: #FF4000">01</span>
+** <span style="color: #0000FF">01</span> (charactersgroup index)
+** Unique key: <span style="color: #40BF00">XXXXXXXX</span> (32Bits)
+** <span style="color: #FFBF00">&quot;Host&quot;</span> 8bits headers + utf8
+** <span style="color: #0000FF">9999</span> (port, 16Bits)
+** <span style="color: #40BFFF"><name>Server test 4</name><name lang="fr">Serveur de teste 4</name><description>Description in english</description><description lang="fr">Description en français</description></span> (xml attached) 16bits headers + utf8
+** <span style="color: #7B00FF">00</span> (logical group index)
+** max player: <span style="color: #40BF00">0064</span> (then 100 in decimal)
+Second list part with same size
+** connected player: <span style="color: #40BF00">0009</span>
+
+* Remove server list size <span style="color: #FF4000">01</span>
+** <span style="color: #0000FF">01</span> (charactersgroup index)
+** Unique key: <span style="color: #40BF00">XXXXXXXX</span> (32Bits)
+
 === C211 ===
 '''Master server to login server only'''
 * Account creation: <span style="color: #40BFFF">01</span>
