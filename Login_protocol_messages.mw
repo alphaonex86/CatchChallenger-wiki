@@ -233,6 +233,10 @@ Second list part with same size
 === 48 ===
 '''Master server to login server exclusively'''
 
+* Remove server list size <span style="color: #FF4000">01</span>
+** <span style="color: #0000FF">01</span> (charactersgroup index)
+** Unique key: <span style="color: #40BF00">XXXXXXXX</span> (32Bits)
+
 * Add server list size <span style="color: #FF4000">01</span> '''If not removed it's because it just need an update'''
 ** <span style="color: #0000FF">01</span> (charactersgroup index)
 ** Unique key: <span style="color: #40BF00">XXXXXXXX</span> (32Bits)
@@ -243,10 +247,6 @@ Second list part with same size
 ** max player: <span style="color: #40BF00">0064</span> (then 100 in decimal)
 Second list part with same size as "''Add server list size''"
 ** connected player: <span style="color: #40BF00">0009</span>
-
-* Remove server list size <span style="color: #FF4000">01</span>
-** <span style="color: #0000FF">01</span> (charactersgroup index)
-** Unique key: <span style="color: #40BF00">XXXXXXXX</span> (32Bits)
 
 === C211 ===
 '''Master server to login server only'''
