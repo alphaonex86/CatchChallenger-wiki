@@ -241,7 +241,7 @@ Second list part with same size
 ** <span style="color: #40BFFF"><name>Server test 4</name><name lang="fr">Serveur de teste 4</name><description>Description in english</description><description lang="fr">Description en français</description></span> (xml attached) 16bits headers + utf8
 ** <span style="color: #7B00FF">00</span> (logical group index)
 ** max player: <span style="color: #40BF00">0064</span> (then 100 in decimal)
-Second list part with same size
+Second list part with same size as "''Add server list size''"
 ** connected player: <span style="color: #40BF00">0009</span>
 
 * Remove server list size <span style="color: #FF4000">01</span>
