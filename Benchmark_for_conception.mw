@@ -710,3 +710,4 @@ Benchmarked with CatchChallenger 2.0.1.0, PostgreSQL 9.5.2 on x86 (6MB L2 CPU ca
 | style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 366ms
 | style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1301ms
 |}
+No change at memory usage, maybe the overhead is not here
