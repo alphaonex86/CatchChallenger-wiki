@@ -694,3 +694,19 @@ Benchmarked with CatchChallenger 2.0.1.0, PostgreSQL 9.5.2 on Raspberry pi 1 (12
 | style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 2125ms
 | style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 15506ms
 |}
+
+Benchmarked with CatchChallenger 2.0.1.0, PostgreSQL 9.5.2 on x86 (6MB L2 CPU cache):
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Load time for common datapack, less is better
+! Load time for server static datapack, less is better
+|-
+| TinyXml1
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 475ms
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1428ms
+|-
+| TinyXml2
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 366ms
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 1301ms
+|}
