@@ -84,6 +84,8 @@ The login server act as computing multiplier, cache to limit the master usage an
 [[File:tree-multiplicator.png]]
 
 = Cluster of master =
+[[File:multi-master.png]]
+
 The needs are:
 * Deterministic
 * Redundancy with automatic management of conflict
