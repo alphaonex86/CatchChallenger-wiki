@@ -102,6 +102,7 @@ The needs are:
 * Benchmark pool via tcp ping for the client connected
 * Client save the master node list with number of client connected and max, ping
 * Client need the master node list with hop on each connexion to send to the best connexion the query
+* Master node is prefered be able to do client and server, but can work only only one mode
 
 Maybe:
 * Dynamic range, and transparent one to multiple node act
