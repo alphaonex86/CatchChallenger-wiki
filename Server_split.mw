@@ -82,3 +82,17 @@ The player is more used by the player to see what server is with people. But too
 = Multiplier =
 The login server act as computing multiplier, cache to limit the master usage and network bandwidth multiplier to transmit the diff to stats clients and full list (huge size) to new normal player client.
 [[File:tree-multiplicator.png]]
+
+= Cluster of master =
+The needs are:
+* Deterministic
+* Redundancy with automatic management of conflict
+* Asynchronous
+* Each master route the query to the affected master for this id range
+* Master and client have multiple connexion
+* Client have not same power than master, client is splited into login and game server
+* Save the ip/port of all known node, try connect firstly on last active node
+* Minimise the bandwidth (no real time propagation time to help to this)
+
+Maybe:
+* Dynamic range, and transparent one to multiple node act
