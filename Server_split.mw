@@ -98,6 +98,9 @@ The needs are:
 * Low number of master nodes
 * Possible direct master communication blocked (reroute via another node)
 * Balance when node is shutdown or detected as down
+* Work over i2p
+* Benchmark pool via tcp ping for the client connected
+* Client save the master node list with number of client connected, ping
 
 Maybe:
 * Dynamic range, and transparent one to multiple node act
