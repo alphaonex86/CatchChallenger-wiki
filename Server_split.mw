@@ -93,6 +93,9 @@ The needs are:
 * Client have not same power than master, client is splited into login and game server
 * Save the ip/port of all known node, try connect firstly on last active node
 * Minimise the bandwidth (no real time propagation time to help to this)
+* Low number of master nodes
+* Possible direct master communication blocked (reroute via another node)
+* Balance when node is shutdown or detected as down
 
 Maybe:
 * Dynamic range, and transparent one to multiple node act
