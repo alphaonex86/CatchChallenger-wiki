@@ -4,7 +4,7 @@
 = Why we want virtual machine on GPU? =
 We want virtual machine on GPU because it have at '''very low cost a large number of virtuals machines''' running. The memory bandwith is very large, large amount of CPU. GPGPU.
 
-This apply on all MIMD architecture.
+'''This apply on all MIMD architecture.'''
 
 See too:
 * [https://www.usenix.org/legacy/event/nsdi11/tech/slides/jang.pdf Application of GPU for High-performance Network Processing]
@@ -124,3 +124,12 @@ Mean:
 * Shared kernel need work by group of CPU
 * Need and fast way to communicate into a same device
 * The fense/lock, ... need to be more explicit at kernel/language, not used for monothread-multitask
+
+= Network =
+To connect this high density cluster you need use advanced routing technique. IPv6 will provide the correct quantity of ip. And Supernetwork can be used (depend of your implementation and network topologie), form wikipedia:
+
+<blockquote>A '''supernetwork''', or '''supernet''', is an Internet Protocol (IP) network that is formed, for routing purposes, from the combination of two or more networks (or subnets) into a larger network. The new routing prefix for the combined network represents the constituent networks in a single route table entry. The process of forming a supernet is called '''supernetting''', '''prefix aggregation''', '''route aggregation''', or '''route summarization'''.
+
+Supernetting within the Internet serves as a preventive strategy to avoid topological fragmentation of the IP address space by using a hierarchical allocation system that delegates control of segments of address space to regional network service providers. This method facilitates regional route aggregation.
+
+The benefits of supernetting are conservation of address space and efficiencies gained in routers in terms of memory storage of route information and processing overhead when matching routes. Supernetting, however, has risks.</blockquote>
