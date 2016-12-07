@@ -103,6 +103,7 @@ The needs are:
 * Client save the master node list with number of client connected and max, ping
 * Client need the master node list with hop on each connexion to send to the best connexion the query
 * Master node is prefered be able to do client and server, but can work only only one mode
+* If route change for current request in progress, resend it, duplicate request detected and dropped
 
 Maybe:
 * Dynamic range, and transparent one to multiple node act
