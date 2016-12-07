@@ -140,6 +140,26 @@ Here we can see '''+60% of performance''' when we use Qt5. Any change in any ver
 
 I count 3 signals passed to reply (QTcpSocket -> ClientRead, ClientReadSocket -> Thread to parse, Thread to parse -> ClientWriteSocket). In worse case I'm to 169870/3 ~= 56000. With 10 000 client connected, that's mean 5.6 signals/s by player. With 200ms of foot step (the worst case), that's mean -5 signals/s, then remaining 0.6 req/s. In the worst case, with normal pc, and large number of player, with the worst version of Qt.
 
+== IPC ==
+Done via https://github.com/rigtorp/ipc-bench on my Intel(R) Core(TM) i5-4670 CPU @ 3.40GHz, DDR3 with <message-size=64> <roundtrip-count=64>
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! average latency
+! average throughput
+! average throughput
+|-
+| Tcp
+| 17 193 ns
+| 82 051 msg/s
+| 42 Mb/s
+|-
+| Unix
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 6 915 ns
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 374 269 msg/s
+| style="background: #90ff90; color: black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 191 Mb/s
+|}
+
 == Cpu usage ==
 The value is in ms, lower is better
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
@@ -216,7 +236,62 @@ Store 65535 pointer.
 | 6
 |}
 
-= String =
+== std::unordered_set<int> lock; vs std::vector<uint8_t> lock; ==
+
+Note, same if is std::unordered_set<int32_t> lock; or std::unordered_set<int64_t> lock;, lock density: 0.4%
+
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Memory
+! Time
+|-
+| std::unordered_set<int> lock;
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 452MB
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 9.5s
+|-
+| std::vector<uint8_t> lock;
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 262MB
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0.7s
+|}
+
+With 107x more density on id locked, lock density 50% concentrated on first id (no change for std::vector<uint8_t> lock if on last id):
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Memory
+! Time
+|-
+| std::unordered_set<int> lock;
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 315MB
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 6.8s
+|-
+| std::vector<uint8_t> lock;
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3.3MB
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0.2s
+|}
+
+More density = more cache locality, very less memory for raw continuous mode, it's why density improvement technique is usefull for catchchallenger_common database.
+
+With less density on id locked, lock density 1/65536:
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! style="width: 12em" |
+! Memory
+! Time
+|-
+| std::unordered_set<int> lock;
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3.4MB
+| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0.07s
+|-
+| std::vector<uint8_t> lock;
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 263MB
+| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0.7s
+|}
+
+Mean when you have database 32Bits id but the server support only 65536 (to have internal + network optimisation), it's better to use std::unordered_set<int>, then mostly game server and maybe login server
+
+== String ==
 Lower is better (https://github.com/alphaonex86/CatchChallenger/tree/master/tools/benchmarkstring), done with gcc 4.7, debug Qt 5.2 with c++11, format:
 * QStringLiteral, where QStringLiteral("string")
 * QLatin1String, where QLatin1String("string")
@@ -372,7 +447,7 @@ And now with CONFIG += c++11:
 |}
 Using prepared string, the loading datapack of the datapack (mostly Xml parsing time + file access time) '''1560ms -> 742ms''' (https://github.com/alphaonex86/CatchChallenger/commit/4eeece9d5169d125fcfdbc2126629cdd2a75fe1c).
 
-= String in C++ =
+== String in C++ ==
 Highter is better, gcc with c++11, format:
 {| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
 |-
@@ -395,7 +470,7 @@ Highter is better, gcc with c++11, format:
 * Mean 7% better on x86, 10% better on ARM
 * raw free benmark: std::string::find(std::string) vs QString::indexOf(QString) then both prepared string: 38079281 vs 24181750, 57% more fast in c++11 for the prepared, mean 32x for unprepared string
 
-= Send to all object =
+== Send to all object ==
 * Case 1: 600x <pre>connect(timer to object)</pre> to send to all object
 * Case 2: connect(timer to object with QList), into object with QList do:
 <pre>
@@ -608,61 +683,6 @@ Note: Buffer + mutex it's exactly what happen with tcp/unix socket and async com
 = http server on arm64 debian stretch =
 On Odroid C2 via LXC VM:
 [[File:performance-http-server-arm64-debian-stretch.png]]
-
-= std::unordered_set<int> lock; vs std::vector<uint8_t> lock; =
-
-Note, same if is std::unordered_set<int32_t> lock; or std::unordered_set<int64_t> lock;, lock density: 0.4%
-
-{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! style="width: 12em" |
-! Memory
-! Time
-|-
-| std::unordered_set<int> lock;
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 452MB
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 9.5s
-|-
-| std::vector<uint8_t> lock;
-| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 262MB
-| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0.7s
-|}
-
-With 107x more density on id locked, lock density 50% concentrated on first id (no change for std::vector<uint8_t> lock if on last id):
-{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! style="width: 12em" |
-! Memory
-! Time
-|-
-| std::unordered_set<int> lock;
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 315MB
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 6.8s
-|-
-| std::vector<uint8_t> lock;
-| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3.3MB
-| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0.2s
-|}
-
-More density = more cache locality, very less memory for raw continuous mode, it's why density improvement technique is usefull for catchchallenger_common database.
-
-With less density on id locked, lock density 1/65536:
-{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
-|-
-! style="width: 12em" |
-! Memory
-! Time
-|-
-| std::unordered_set<int> lock;
-| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 3.4MB
-| style="background:#90ff90; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0.07s
-|-
-| std::vector<uint8_t> lock;
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 263MB
-| style="background:#ff9090; color:black; vertical-align: middle; text-align: {{{align|center}}}; {{{style|}}}" | 0.7s
-|}
-
-Mean when you have database 32Bits id but the server support only 65536 (to have internal + network optimisation), it's better to use std::unordered_set<int>, then mostly game server and maybe login server
 
 = Prepared statement =
 Benchmarked with CatchChallenger 2.0.1.0, PostgreSQL 9.5.2 on Raspberry pi 1 (128KB L2 CPU cache), this is CPU % on PostgreSQL process:
