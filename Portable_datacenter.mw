@@ -88,18 +88,18 @@ It's transparent seam less bandwidth. The final server customer don't need care 
 
 The customer don't think before buy. Mean if the need it's just have load balancing, it take 2 server anywhere, producing over consuming of top level network as the backbone. Same for server for http + php and another to database.
 
-Advantage: No over loaded top level network. Effective for high availability strategies.
+'''Advantage:''' No over loaded top level network. Effective for high availability strategies.
 
-Disavantage: More cost for the customer (more expensive hardware and over usage of bandwidth). Tend to random place of server, mean higher latency.
+'''Disavantage:''' More cost for the customer (more expensive hardware and over usage of bandwidth). Tend to random place of server, mean higher latency.
 
 === The similar network ===
 You have the plain bandwidth in local, and slow on server into another rack. The final customer need think where place it.
 
 The customer need studie few bit the server topologie in case of multiple dependent server.
 
-Advantage: Lower price, more accessible technologies
+'''Advantage:''' Lower price, more accessible technologies
 
-Disavantage: Lower bandwidth between server of different place. Need compression and take care for high availability strategies.
+'''Disavantage:''' Lower bandwidth between server of different place. Need compression and take care for high availability strategies.
 
 = Links =
 * [[Latency and RTT in Bolivia]]
