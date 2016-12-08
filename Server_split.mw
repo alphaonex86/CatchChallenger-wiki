@@ -81,7 +81,7 @@ The player is more used by the player to see what server is with people. But too
 
 = Multiplier =
 The login server act as computing multiplier, cache to limit the master usage and network bandwidth multiplier to transmit the diff to stats clients and full list (huge size) to new normal player client.
-[[File:tree-multiplicator.png]]
+[[File:tree-multiplicator.png|Computing and network bandwidth is multiplied by login server]]
 
 = Cluster of master =
 [[File:multi-master.png]]
