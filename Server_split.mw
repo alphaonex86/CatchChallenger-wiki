@@ -84,7 +84,7 @@ The login server act as computing multiplier, cache to limit the master usage an
 [[File:tree-multiplicator.png|Computing and network bandwidth is multiplied by login server]]
 
 = Cluster of master =
-[[File:multi-master.png]]
+[[File:multi-master.png|Cluster of master server with query forward, replication copy by diff, conflict management]]
 
 The needs are:
 * Deterministic
@@ -108,4 +108,4 @@ The needs are:
 Maybe:
 * Dynamic range, and transparent one to multiple node act
 
-[[File:network-problem.png]]
+[[File:network-problem.png|Example with partial link fail and network split]]
