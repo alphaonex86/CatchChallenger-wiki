@@ -1,4 +1,4 @@
-[[File:Server-organisation.png|thumb|150px]]
+[[File:Server-organisation.png|thumb|150px|Split of master to control and external node, here login and game server]]
 
 The server need be able to be splited and work as cluster, or work as one and unique server standalone.
 
@@ -14,17 +14,17 @@ The game server connect to Login server (register on it). A unique key and login
 
 = Login server switch =
 == Reconnect ==
-[[File:Reconnect_mode.png|thumb|50px]]
+[[File:Reconnect_mode.png|thumb|50px|The client jump to another server, as 302 redirect into http]]
 The client will disconnect to the login server and connect on game server
 * Advantage: More performance due client connect directly on game server (no multiple RTT, no routing and filter overhead). No connexion limit (C10k, C10M)
 * Disavantage: Don't keep the game server ip/location unknow, directly filter the DDOS attack (can do an overhead).
 == Proxy ==
-[[File:Proxy_mode.png|thumb|50px]]
+[[File:Proxy_mode.png|thumb|50px|The client keep connected on same server and the server act as proxy]]
 The client will keep the connexion to login server and the login server will connect on game server
 * Advantage: Keep the game server ip/location unknow, can act as cache for datapack (prefer CDN), filter the DDOS attack
 * Disavantage: Less performance due relay mode (multiple RTT, routing and filter overhead). Force the login server to be connected on game server then can host maximum 10000 connexion.
 = Gateway =
-[[File:Gateway.png|thumb|150px]]
+[[File:Gateway.png|thumb|150px|This server adapte the trafic between 2 incompatible network and cache the content]]
 The gateway is here to adapt two unconnected network like normal internet to crypted internet (TOR, i2p, ...).
 
 You can to cascade the gateway and network: Internet -> TOR -> I2P -> Gnutella -> Other ... the gateway auto send the place into the network to send to the client the cache sync from server to client by passing by X gateways.
@@ -41,7 +41,7 @@ The limit?
 
 = Arch =
 == P2P ==
-[[File:P2P.jpg|thumb|200px]]
+[[File:P2P.jpg|thumb|200px|Peer-to-peer architecture]]
 
 The master will be replaced into the version 3 with p2p to be more scalable and be in high availability.
 
@@ -50,7 +50,7 @@ It's into trusted network but prefer prevent trust.
 Not share content, but locks, route, and link the login servers with game servers.
 
 == Exascale computing ==
-[[File:Exascale-graphic-story.jpg|thumb|300px]]
+[[File:Exascale-graphic-story.jpg|thumb|300px|Exascale computing]]
 https://en.wikipedia.org/wiki/Exascale_computing
 
 The power supported is into tree organisation: Power of node ^ Tree depth, example: if my code is able to support 100M of client, with 2 depth tree (100M of game server and one master server), you will have 10  000 000 billions of user supported. As you can see the scalability is not the unique factor, the power of the node too.
@@ -67,7 +67,7 @@ MIMD is important factor, but we speak of more than 2000 core as you have into G
 = Monitoring =
 I had lot of problem into the dev phase to have a stable infrastructure. This have help to do a good monitoring tools.
 
-[[File:catchchallenger-status.png]]
+[[File:catchchallenger-status.png|Example of status monitored and exposed to the site]]
 
 == Player online ==
 The player is more used by the player to see what server is with people. But too the game server can have each their gameplay style. All the statistique is merge with the master server, and dispatched to the login server to send it to the client.
