@@ -1,0 +1,9 @@
+To create virtual world you need give your own definition and target. Yes you can assimilate to matrix movie....
+
+= Technologies =
+To create real large virtual world you need:
+* Finite space
+* Computing reduction method
+** Can be via dimension reduction, have 2D CPU to simulate 1D world, or 3D chip to simulate 2D world
+** Cause-and-effect reduction algorithm: To group and reduce the computing power used to need be able to determinate what action will be repeated 1 million time, and what pattern will change this. For example: the gravity is applied on same way on large scale atom group. But and simple AND information change have an real cause-and-effect impact.
+** Define the world (what is their reality)
