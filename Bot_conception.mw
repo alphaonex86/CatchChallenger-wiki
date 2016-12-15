@@ -5,3 +5,11 @@ Here you have a visual representation of map group and split.
 * Split the zone with different characteristic
 * You have point into a zone to access to some target
 * Some zone is fight zone where you need have the level but you can gain experience
+
+[[File:schematic-view-bot-resolv.png|Schematic view for bot resolution]]
+
+The bot need found:
+* What is the accessible map
+* What is the target
+* The path and condition to access to each target
+* Go to target
