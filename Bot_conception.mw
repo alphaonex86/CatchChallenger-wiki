@@ -13,3 +13,11 @@ The bot need found:
 * What is the target
 * The path and condition to access to each target
 * Go to target
+
+= Example of reduction =
+[[File:0.1-map.png|thumb|left|The 0.1 map]]
+[[File:0.1-reduction.png|thumb|The reduction of 0.1 map]]
+[[File:4.13-map.png|thumb|left|The -4.13 map]]
+[[File:4.13-reduction.png|thumb|The reduction of -4.13 map]]
+[[File:ex1-reduction.png|left|thumb|Example 1 of reduction]]
+[[File:ex2-reduction.png|thumb|Example 2 of reduction]]
