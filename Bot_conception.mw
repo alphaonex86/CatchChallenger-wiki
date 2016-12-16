@@ -21,3 +21,19 @@ The bot need found:
 [[File:4.13-reduction.png|thumb|The reduction of -4.13 map]]
 [[File:ex1-reduction.png|left|thumb|Example 1 of reduction]]
 [[File:ex2-reduction.png|thumb|Example 2 of reduction]]
+
+= Inteligencia artificial =
+The Inteligencia artificial allow have better bot, able to learn, adapt it self to the game content
+
+== Context datas ==
+You need the client + common + server data. Mostly the accessible target determined above.
+
+== Personality ==
+The inteligencia need:
+* a base personality (crafter, farmer, fighter, ...)
+* a short and long term memory
+* Random affect to item
+** Affect to positive thing: when you have positive gain all the related item/place/target is detected and considered as more positive
+** Item (will try few bit more to have it)
+** Place (will try be more in this zone)
+** Target (will try more this kind of target)
