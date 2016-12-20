@@ -14,6 +14,13 @@ The bot need found:
 * The path and condition to access to each target
 * Go to target
 
+= Layer priority =
+Here the most important to less, the most important information overwrite the less important:
+* Not walkable
+* Ledge
+* Monster
+* Walkable
+
 = Example of reduction =
 [[File:0.1-map.png|thumb|left|The 0.1 map]]
 [[File:0.1-reduction.png|thumb|The reduction of 0.1 map]]
