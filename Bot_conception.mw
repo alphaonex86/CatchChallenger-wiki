@@ -21,6 +21,8 @@ Here the most important to less, the most important information overwrite the le
 * Monster
 * Walkable
 
+This is exclusive, mean you can only have one type of above. Note Ledge and Monster implicate Walkable. Walkable mean not Ledge or Monster. And Monster implicate not Ledge and Walkable.
+
 = Example of reduction =
 [[File:0.1-map.png|thumb|left|The 0.1 map]]
 [[File:0.1-reduction.png|thumb|The reduction of 0.1 map]]
