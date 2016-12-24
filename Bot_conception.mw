@@ -6,6 +6,8 @@ Here you have a visual representation of map group and split.
 * You have point into a zone to access to some target
 * Some zone is fight zone where you need have the level but you can gain experience
 
+I use a custom multi precision algorithm to resolv quickly the path, locally it resolv with the biggest zoom and max precision, and for far path is use simplified path with the lowest zoom and less precision. It's few bit as google map/open streat view, depanding of your level of zoom it load less or more detailed image.
+
 [[File:schematic-view-bot-resolv.png|Schematic view for bot resolution]]
 
 The bot need found:
@@ -63,6 +65,43 @@ This is exclusive, mean you can only have one type of above. Note Ledge and Mons
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+= Example of Map =
+[[File:multi-map-human.png|thumb|left|3 Maps as see an human]]
+[[File:multi-map-step2.png|thumb|The map partially parsed as see a bot]]
+[[File:multi-map-block.png|thumb|left|The logical organisation of the bot block to understand the zone and take decision]]
+[[File:multi-map-zoom-out.png|thumb|Simplified block view with less precision, used into multiple map path finding or near target]]
 
 
 
