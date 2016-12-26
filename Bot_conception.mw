@@ -102,37 +102,7 @@ This is exclusive, mean you can only have one type of above. Note Ledge and Mons
 [[File:multi-map-step2.png|thumb|The map partially parsed as see a bot]]
 [[File:multi-map-block.png|thumb|left|The logical organisation of the bot block to understand the zone and take decision]]
 [[File:multi-map-zoom-out.png|thumb|Simplified block view with less precision, used into multiple map path finding or near target]]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[[File:multi-map-view.png|thumb|left|The real multimap view for ranged map]]
 
 = Inteligencia artificial =
 The Inteligencia artificial allow have better bot, able to learn, adapt it self to the game content
