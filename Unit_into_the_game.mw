@@ -1,2 +1,3 @@
 * The position is expressed on x,y of tile. x=0 is at the left, y=0 is at top
 * The offset stored is ADDED to the player coords
+* Speed is into ms to each step, then time to move from one tile to another tile
