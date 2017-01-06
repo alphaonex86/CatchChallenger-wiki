@@ -125,7 +125,10 @@ Mean:
 * Need and fast way to communicate into a same device
 * The fense/lock, ... need to be more explicit at kernel/language, not used for monothread-multitask
 
-= Network =
+= High density server =
+This way allow have '''high density server''' done with common hardware. You can pack more than 1000+ node into you computer, fix the cooling problem, the price, split better the container across all cpu.
+
+== Network ==
 To connect this high density cluster you need use advanced routing technique. IPv6 will provide the correct quantity of ip. And Supernetwork can be used (depend of your implementation and network topologie), form wikipedia:
 
 <blockquote>A '''supernetwork''', or '''supernet''', is an Internet Protocol (IP) network that is formed, for routing purposes, from the combination of two or more networks (or subnets) into a larger network. The new routing prefix for the combined network represents the constituent networks in a single route table entry. The process of forming a supernet is called '''supernetting''', '''prefix aggregation''', '''route aggregation''', or '''route summarization'''.
