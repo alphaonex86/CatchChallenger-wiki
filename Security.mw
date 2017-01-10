@@ -45,6 +45,15 @@ Give:
 Quote from [https://wiki.archlinux.org/index.php/Grsecurity Grsecurity]:
 Grsecurity is an extensive security enhancement to the Linux kernel that defends against a wide range of security threats. The PaX project is included, hardening both userspace applications and the kernel against memory corruption-based exploits. Grsecurity includes a powerful Mandatory Access Control system with an effortless automatic learning mode and a host of other miscellaneous hardening features.
 
+'''Now grsec o PaX is not public''', see another way above
+
+==  llvm and clang ==
+Note: you have similar options with gcc, this not initialise the memory, 
+  QMAKE_CXXFLAGS+="-std=c++0x -Wall -Wextra -fsanitize=address -fno-omit-frame-pointer -fsanitize=memory"
+  QMAKE_CFLAGS+="-Wall -Wextra -fsanitize=address -fno-omit-frame-pointer -fsanitize=memory"
+  QMAKE_LFLAGS+="-fsanitize=address -fno-omit-frame-pointer -Wl,--no-undefined -fsanitize=memory"
+  /usr/lib64/qt5/bin/qmake -spec linux-clang
+
 == Lxc ==
 Allow easy migrate, backup and you have always access the the guest event if it's hacked.
 
