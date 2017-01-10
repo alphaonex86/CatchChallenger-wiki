@@ -49,9 +49,9 @@ Grsecurity is an extensive security enhancement to the Linux kernel that defends
 
 ==  llvm and clang ==
 Note: you have similar options with gcc, this not initialise the memory, 
-  QMAKE_CXXFLAGS+="-std=c++0x -Wall -Wextra -fsanitize=address -fno-omit-frame-pointer -fsanitize=memory"
-  QMAKE_CFLAGS+="-Wall -Wextra -fsanitize=address -fno-omit-frame-pointer -fsanitize=memory"
-  QMAKE_LFLAGS+="-fsanitize=address -fno-omit-frame-pointer -Wl,--no-undefined -fsanitize=memory"
+  QMAKE_CXXFLAGS+="-std=c++0x -Wall -Wextra -fsanitize=address -fno-omit-frame-pointer"
+  QMAKE_CFLAGS+="-Wall -Wextra -fsanitize=address -fno-omit-frame-pointer"
+  QMAKE_LFLAGS+="-fsanitize=address -fno-omit-frame-pointer -Wl,--no-undefined"
   /usr/lib64/qt5/bin/qmake -spec linux-clang
 
 == Lxc ==
