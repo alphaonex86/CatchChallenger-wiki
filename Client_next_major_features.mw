@@ -3,3 +3,5 @@ Thanks to the preload random number list, it's possible to play offline if the s
 
 = Record a play =
 Can record a play to reproduce later same action, seam as the client is alone alone. It's very compact format.
+
+Mean store some aspect, as random number. or maybe just the server packet.
