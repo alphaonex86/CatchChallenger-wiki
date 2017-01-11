@@ -1,0 +1,5 @@
+= Offline server play =
+Thanks to the preload random number list, it's possible to play offline if the server content have not changed and the random is same (mean save it into the database). When you reconnect the client will upload all you move and action as you are doing it. This don't allow action with multiplayer link.
+
+= Record a play =
+Can record a play to reproduce later same action, seam as the client is alone alone. It's very compact format.
