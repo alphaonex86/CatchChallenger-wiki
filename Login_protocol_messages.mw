@@ -186,7 +186,7 @@ charactersGroupIndex: <span style="color: #FF0040">01</span>
 
 == Server &rarr; Client without reply ==
 
-=== C20E ===
+=== 40 ===
 Login server to real player
 ==== Reconnect ====
 * Server mode <span style="color: #FF4000">01</span>=reconnect (host + port + select by key)
