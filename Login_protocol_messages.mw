@@ -216,7 +216,7 @@ Second list part with same size
 ** <span style="color: #40BF00">&quot;folder/path&quot;</span> 8bits headers + utf8
 ** <span style="color: #FFBF00">&quot;Translation xml&quot;</span> 16bits headers + utf8
 
-=== C210 ===
+=== 45 ===
 '''Master server to login server exclusively'''
 
 * Server list size <span style="color: #FF4000">01</span>
