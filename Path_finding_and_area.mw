@@ -17,4 +17,5 @@ Then I put 0, 1, 2, ... into simple matrix to determine the monster collision to
 
 = Multi-path finding =
 [[File:path-possible-to-the-next-block.png]]
+
 In case of multiple way to pass to new zone, to the multiple pathfinding and choice the best path (less direction change and shortest path if egual)
