@@ -104,3 +104,5 @@ In case of sort, the sort should be fast to not introduce latency. '''You need a
 * '''Cache scale:''' But for CPU cache and memory: 10x more server it's like 10x cache and memory
 * '''Hdd scale''': Seek on sort part of the disk, 1/4 if 4x server and full content on each server and partitioning, mean 4x less seek time
 * '''Space scale:''' scale with the server count
+
+Can be applied to lot of kind of query as '''DNS''', ...
