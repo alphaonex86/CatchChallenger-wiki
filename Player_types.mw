@@ -1,0 +1,3 @@
+On a serveur you have different player type, crafter, fighter, farmer, ... it's important to define the best ratio of the datapack elements.
+
+You have bot and humain player, you can try detect it via [https://en.wikipedia.org/wiki/Unsupervised_learning Unsupervised learning]
