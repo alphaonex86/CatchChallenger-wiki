@@ -10,3 +10,5 @@ Mean store some aspect, as random number. or maybe just the server packet.
 The web interface allow to have client online, but it can be offline too.
 
 The WebAssembly allow to compil the C++ code to web and be compatible with javascript, that's allow to share the same common code.
+
+The target is have into the datapack object who add something into the interface without interaction with the server (details into the grass like monster and drop, details on bot near, detection of hidden item).
